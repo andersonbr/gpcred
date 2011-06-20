@@ -14,7 +14,7 @@ class TreeEvaluator{
         bool isOperator(string val);
         bool has(int limite, const char *word, ...);
 
-        double getOperandValue(string operand, string exampleId, string classId);
+        double getOperandValue(string operand, string id, string className, int graphId = 0);
         double getResult(string operatorID, std::stack<double>& values);
     public:
 

@@ -1,6 +1,7 @@
 
 #include <fstream>
 #include <iostream>
+#include <cstdlib>
 
 #include "InOut.h"
 #include "Tokenizer.h"
@@ -10,7 +11,7 @@
 using namespace std;
 #define TAG "InOut"
 
-InOut::InOut(string basename){
+InOut::InOut(string basename, int seed){
 
 	this->basename = basename;
 	
@@ -24,7 +25,10 @@ InOut::InOut(string basename){
 	_usingPredictionsFile = false;
 //    _usingValidationSet = false;
     _usingEvaluateFile = false;
+    _usingFinalOutFile = false;
     numericalCollums = 0;
+
+    srand(seed);
 }
 
 InOut::~InOut(){
@@ -193,5 +197,47 @@ string InOut::getGPParameterConfigFileName(){
 
 void InOut::setGPParameterConfigFileName(string fileName){
     GPParameterConfigFileName = fileName;
+}
+
+void InOut::setFinalOutFile(string finalOutFileName){
+    _usingFinalOutFile = true;
+    finalOutFile.open(finalOutFileName.c_str());
+}
+
+ofstream& InOut::getFinalOutFile(){
+    return finalOutFile;
+}
+
+bool InOut::isUsingFinalOutFile(){
+    return _usingFinalOutFile;
+}
+
+void InOut::mergeTrainAndTest(){
+    numExamplesOriginalTrain = trainSet.size();
+    numExamplesOriginalTest = testSet.size();
+
+    for(ExampleIterator it = testSet.getBegin(); it != testSet.getEnd(); it++){
+        trainSet.add(*it);
+    }
+    testSet.clear();
+    cout<<"Train - old size = " << numExamplesOriginalTrain << " new size " << trainSet.size()<<endl;
+    cout<<"Test - old size = " << numExamplesOriginalTest << " new size " << testSet.size()<<endl;
+}
+
+void InOut::makeNewTest(){
+    int prob = (int)((100.0 * numExamplesOriginalTest) / (numExamplesOriginalTrain + numExamplesOriginalTest));
+
+    for(ExampleIterator it = trainSet.getBegin(); it != trainSet.getEnd(); ){
+        if( rand()%100 > prob ){
+            testSet.add(*it);
+            it = trainSet.erase(it);
+        }
+        else{
+            it++;
+        }
+    }
+    
+    cout<<"Train - newest size " << trainSet.size()<<endl;
+    cout<<"Test - newest size " << testSet.size()<<endl;
 }
 

@@ -32,6 +32,8 @@ class gpcpp : public IGP{
 		void print();
 		void loadPop();
 		void savePop();
+        
+        void printFinalOutFile();
 
 };
 

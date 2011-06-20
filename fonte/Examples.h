@@ -62,7 +62,7 @@ class Examples{
 	public:
 		Examples() {}
 		virtual ~Examples(){}
-		void add(Example&);
+		void add(Example);
 		vector<Example>::iterator getBegin();
 		vector<Example>::iterator getEnd();
 		int size();
@@ -71,6 +71,7 @@ class Examples{
         void sort(unsigned int index);
     
         int getNumberOfNumericalAttibutes();
+        ExampleIterator erase(ExampleIterator it);
 };
 
 

@@ -17,6 +17,8 @@ class IClassifier
 		virtual void setCredibilityConfigurations(bool usingTermCredibility, std::vector<std::string> graphsNames) = 0;
         virtual void showConfusionMatrix() = 0;
         virtual void showPredictions() = 0;
+        
+        virtual void printFinalOutFile(ostream& out, string msg) =0;
 };
 
 

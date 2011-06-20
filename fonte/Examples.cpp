@@ -45,7 +45,7 @@ bool Example::sortByNumericalAttribute(const Example& e, const unsigned int inde
 ///
 //  Examples functions.
 ///
-void Examples::add(Example& e){
+void Examples::add(Example e){
 	sexamples.push_back(e);
 }
 
@@ -73,5 +73,9 @@ int Examples::getNumberOfNumericalAttibutes(){
 
 void Examples::clear(){
     sexamples.clear();
+}
+
+ExampleIterator Examples::erase(ExampleIterator it){
+    return sexamples.erase(it);
 }
 

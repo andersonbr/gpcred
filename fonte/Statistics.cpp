@@ -109,6 +109,8 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
     for(map<int, map<string,Graph> >::iterator graphIt = classGraphs.begin(); graphIt != classGraphs.end(); graphIt++){
         for(map<string,Graph>::iterator	classGraphIt = graphIt->second.begin(); classGraphIt != graphIt->second.end(); classGraphIt++){ 
 
+            cout<<"class= "<<classGraphIt->first<<endl;
+
             GraphInterface *igraph = new IGraph(&(classGraphIt->second));
 
             igraph->calculateHubScore();
@@ -147,7 +149,7 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
                    cout<<"  Hubscore: " << idClassHubScore[graphIt->first][idClassIdx];
                    cout<<"  Authority: " << idClassAuthority[graphIt->first][idClassIdx];
                    cout<<"  Eigen: " << idClassEigenVectorCentrality[graphIt->first][idClassIdx];
-                   cout<<"  Close: " << idClassCloseness[graphIt->first][idClassIdx];
+          cout<<"  Close: " << idClassCloseness[graphIt->first][idClassIdx];
                    cout<<"  Strength: " << idClassStrength[graphIt->first][idClassIdx];
                    cout<<"  Const: " << idClassConstraint[graphIt->first][idClassIdx];
                    cout<<"  PageRank: " << idClassPageRank[graphIt->first][idClassIdx];
@@ -162,9 +164,12 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
             }
             //                       cout<<endl;
             delete igraph;
+            cout<<"out of class "<<classGraphIt->first<<endl;
         }
         classGraphs[graphIt->first].clear();
     }
+    
+    cout<<"out of retrieve graphs mtrics..."<<endl;
 }
 
 

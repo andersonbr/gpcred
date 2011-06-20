@@ -80,7 +80,7 @@ void GPPopulation::evaluate ()
 // function!  We don't know how to do this.  The user should inherit
 // the GP class and rewrite this function.  He should then put the
 // result of the evaluation into the class variable stdFitness.
-void GP::evaluate ()
+void GP::evaluate (bool printFinalOutFile, std::string msg)
 {
   stdFitness=0.0;
 

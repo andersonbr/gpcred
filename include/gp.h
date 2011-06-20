@@ -472,7 +472,7 @@ public:
   virtual void mutate (GPVariables& GPVar, GPAdfNodeSet& adfNs);
   virtual GPContainer& cross (GPContainer* parents, 
 			      int maxdepthforcrossover);
-  virtual void evaluate ();
+  virtual void evaluate (bool printFinalOutFile = false, std::string = "");
 
   virtual int isA () { return GPID; }
   virtual char* load (istream& is);

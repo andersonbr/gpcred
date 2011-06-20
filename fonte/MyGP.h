@@ -142,7 +142,8 @@ public:
     return new MyGene (gpo,stats); }
 
   // Tree evaluation (mandatory)
-  virtual void evaluate ();
+  virtual void evaluate(bool printFinalOutfile, std::string msg);
+
   double finalEvaluate() { return 0.0; }
   double finalEvaluate(std::map<int, std::map<string,double> >&)//versao especial para o comite
 	{return 0.0;}

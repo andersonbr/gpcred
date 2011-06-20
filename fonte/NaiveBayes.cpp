@@ -414,3 +414,7 @@ void NaiveBayes::showPredictions(){
     }
 }
 
+void NaiveBayes::printFinalOutFile(ostream& out, string msg){
+    out<< msg<< "\t"<< microF1<< "\t"<< macroF1<< endl;
+}
+

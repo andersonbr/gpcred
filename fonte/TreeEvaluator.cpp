@@ -42,41 +42,87 @@ void TreeEvaluator::evaluateFromFile(string fileName){
 
             cout<<"line = " << line <<endl;
             std::map<string, double> credibilityMap;
+            std::vector< std::map<string, double> > graphsCredibility(stats->getNumberOfGraphs());
+            
+            if(stats->getUsingTermCredibility()){
 
-            for( set<string>::iterator vocIt = (stats->getVocabulary()).begin(); vocIt != (stats->getVocabulary()).end(); vocIt++) {
-                for(set<string>::iterator clIt = (stats->getClasses()).begin();clIt != (stats->getClasses()).end(); clIt++) {
+               for( set<string>::iterator vocIt = (stats->getVocabulary()).begin(); vocIt != (stats->getVocabulary()).end(); vocIt++) {
+                    for(set<string>::iterator clIt = (stats->getClasses()).begin();clIt != (stats->getClasses()).end(); clIt++) {
                 
-                    std::stack<double> values;
+                        std::stack<double> values;
 
-                    for(vector<string>::reverse_iterator rit = tokens.rbegin(); rit != tokens.rend(); rit++){
-//                        cout<<*rit<<endl;
+                        for(vector<string>::reverse_iterator rit = tokens.rbegin(); rit != tokens.rend(); rit++){
+//                            cout<<*rit<<endl;
 
-                        if(isOperator(*rit)){
-//                            cout<<"operator = " << *rit <<endl;
-                            double result = getResult(*rit, values);
-                            values.push(result);
+                            if(isOperator(*rit)){
+//                               cout<<"operator = " << *rit <<endl;
+                                double result = getResult(*rit, values);
+                                values.push(result);
+                            }
+                            else if(isOperand(*rit)){
+//                                cout<<"operand = " << *rit << endl;
+                                values.push( getOperandValue(*rit, *vocIt, *clIt) );
+                            }
+                            else{
+                                cerr<<"Error..."<< *rit << " is not known."<<endl;
+                                exit(1);
+                            }
                         }
-                        else if(isOperand(*rit)){
-//                            cout<<"operand = " << *rit << endl;
-                            values.push( getOperandValue(*rit, *vocIt, *clIt) );
-                        }
-                        else{
-                            cerr<<"Error..."<< *rit << " is not known."<<endl;
-                            exit(1);
+//                      cout<< endl;
+                        double result = values.top();
+                        values.pop();
+//                      cout << result <<endl;
+                        credibilityMap[ getCompIndex(*vocIt,*clIt) ]  = result;
+                    }
+                }
+            }
+
+            if(stats->getNumberOfGraphs()){
+                cout<<"Using Graph credibility"<<endl;
+                for(int g = 0; g < stats->getNumberOfGraphs(); g++){
+
+                    for(ExampleIterator it = io->getTest().getBegin(); it != io->getTest().getEnd(); it++){
+                        for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++){
+                            string docId = it->getId();
+                            string classId = *classIt;
+                            std::stack<double> values;
+
+                            for(vector<string>::reverse_iterator rit = tokens.rbegin(); rit != tokens.rend(); rit++){
+                                //                            cout<<*rit<<endl;
+
+                                if(isOperator(*rit)){
+                                    //                               cout<<"operator = " << *rit <<endl;
+                                    double result = getResult(*rit, values);
+                                    values.push(result);
+                                }
+                                else if(isOperand(*rit)){
+                                    //                                cout<<"operand = " << *rit << endl;
+                                    values.push( getOperandValue(*rit, docId, classId, g) );
+                                }
+                                else{
+                                    cerr<<"Error..."<< *rit << " is not known."<<endl;
+                                    exit(1);
+                                }
+                            }
+                            //cout<< endl;
+                            double result = values.top();
+                            values.pop();
+                            //                      cout << result <<endl;
+                            graphsCredibility[g][getCompIndex(docId, classId)]  = result;
                         }
                     }
-//                    cout<< endl;
-                    double result = values.top();
-                    values.pop();
-//                    cout << result <<endl;
-                    credibilityMap[ getCompIndex(*vocIt,*clIt) ]  = result;
                 }
             }
             
             NaiveBayes *classifier = new NaiveBayes(stats);
             classifier->useContentCredibility(true);
-            classifier->setContentCredibilityMap(credibilityMap);
             
+            if(stats->getUsingTermCredibility())
+                classifier->setContentCredibilityMap(credibilityMap);
+
+            if(stats->getNumberOfGraphs())
+                classifier->setGraphCredibilityMaps(graphsCredibility);
+
             classifier->train(io->getTrain());
             classifier->test(io->getTest());
 
@@ -155,7 +201,7 @@ bool TreeEvaluator::has(int limit, const char *word, ...)
 	return false;
 }
 
-double TreeEvaluator::getOperandValue(string operand, string id, string className){
+double TreeEvaluator::getOperandValue(string operand, string id, string className, int graphId){
 
     if(operand == "AM"){   
         return stats->getAM(id, className);
@@ -244,6 +290,59 @@ double TreeEvaluator::getOperandValue(string operand, string id, string classNam
     else if(operand == "MaxTFICF"){
         return stats->getMaxTFICF(id);
     }
+
+    else if(operand == "Neighborhood1"){
+        return stats->getNeighborhoodSize1(id,className,graphId);
+    }
+    else if(operand == "Neighborhood2"){
+        return stats->getNeighborhoodSize2(id,className,graphId);
+    }
+    else if(operand == "Neighborhood3"){
+        return stats->getNeighborhoodSize3(id,className,graphId);
+    }
+    else if(operand == "HubScore"){
+        return stats->getHubScore(id, className, graphId);
+    }
+    else if(operand == "Authority"){
+        return stats->getAuthority(id, className, graphId);
+    }
+    else if(operand == "EigenVector"){
+        return stats->getEigenVectorCentrality(id, className, graphId);
+    }
+    else if(operand == "Closeness"){
+        return stats->getCloseness(id, className, graphId);
+    }
+    else if(operand == "Strength"){
+        return stats->getStrength(id, className, graphId);
+    }
+    else if(operand == "Constraint"){
+        return stats->getConstraint(id, className, graphId);	
+    }
+    else if(operand == "PageRank"){
+        return stats->getPageRank(id, className, graphId);
+    }
+    else if(operand == "Betweenness"){
+        return stats->getBetweenness(id, className, graphId);
+    }
+    else if(operand == "BibCoupling"){
+        return stats->getBibCoupling(id, className, graphId);
+    }
+    else if(operand == "CoCitation"){
+        return stats->getCoCitation(id, className, graphId);
+    }
+    else if(operand == "JaccardSimilarity"){
+        return stats->getJaccardSimilarity(id, className, graphId);
+    }
+    else if(operand == "DiceSimilarity"){
+        return stats->getDiceSimilarity(id, className, graphId);
+    }
+    else if(operand == "InverseLigSimilarity"){
+        return stats->getInverseLogSimilarity(id, className, graphId);
+    }
+    else if(operand == "AvgNeighborHoodDegree"){
+        return stats->getAvgNearstNeighborDegree(id, className, graphId);
+    }
+
     else{
         cerr<<"Error!! Invalid operand: " << operand << endl;
         exit(1);

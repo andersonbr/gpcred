@@ -1,13 +1,13 @@
 # Makefile
 include		../Makefile.ini
 
-#PARAMETERS= -treino pequenosTestes/treino -validacao pequenosTestes/validacao -teste pequenosTestes/teste -dontsave -g 2 citation.txt authorship.txt
-#PARAMETERS= -treino pequenosTestes/treino1 -validacao pequenosTestes/validacao -teste pequenosTestes/teste1 -dontsave -g 2 citation.txt authorship.txt
-#PARAMETERS= -treino pequenosTestes/treino1 -validacao pequenosTestes/validacao -teste pequenosTestes/teste1 -dontsave -g 1 citation.txt
+#PARAMETERS= -treino pequenosTestes/treino -validacao pequenosTestes/validacao -teste pequenosTestes/teste -dontsave -g 2 graphs/citation.txt graphs/authorship.txt
+#PARAMETERS= -treino pequenosTestes/treino1 -validacao pequenosTestes/validacao -teste pequenosTestes/teste1 -dontsave -g 2 graphs/citation.txt graphs/authorship.txt
+PARAMETERS= -treino pequenosTestes/treino1 -validacao pequenosTestes/validacao -teste pequenosTestes/teste1 -dontsave -g 1 graphs/citation.txt
 #authorship.txt
 #PARAMETERS= -treino pequenosTestes/treino1 -validacao pequenosTestes/validacao1 -teste pequenosTestes/teste1 -dontsave
-PARAMETERS= -treino pequenosTestes/treino -validacao pequenosTestes/validacao -teste pequenosTestes/teste -dontsave -seed 0
-#PARAMETERS= -treino pequenosTestes/treino -validacao pequenosTestes/validacao -teste pequenosTestes/teste -dontsave -g 1 authorship2.txt
+#PARAMETERS= -treino pequenosTestes/treino -validacao pequenosTestes/validacao -teste pequenosTestes/teste -dontsave -seed 0
+#PARAMETERS= -treino pequenosTestes/treino -validacao pequenosTestes/validacao -teste pequenosTestes/teste -dontsave -g 1 graphs/authorship2.txt
 
 TARGET	= gp-cred
 

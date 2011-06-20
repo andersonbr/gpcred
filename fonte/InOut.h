@@ -36,14 +36,20 @@ class InOut : public IInOut
 
         ofstream evaluateFile;
         bool _usingEvaluateFile;
+    
+        ofstream finalOutFile;
+        bool _usingFinalOutFile;
 
 		void read(const char* filename, int option);
 		enum{ train_option, validation_option, test_option };
     
         int numericalCollums;
 
+        int numExamplesOriginalTrain;
+        int numExamplesOriginalTest;
+
 	public:
-		InOut(string basename);
+		InOut(string basename, int seed);
 	    ~InOut();
 
         void clear();
@@ -80,6 +86,13 @@ class InOut : public IInOut
 
         string getGPParameterConfigFileName();
         void setGPParameterConfigFileName(string fileName);
+
+        void setFinalOutFile(string finalOutFileName);
+        ofstream& getFinalOutFile();
+        bool isUsingFinalOutFile();
+
+        void mergeTrainAndTest();
+        void makeNewTest();
 };
 
 #endif

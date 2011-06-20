@@ -28,6 +28,7 @@ class IGP{
 		void setSavePopFileName(std::string);
         
         virtual void performeFinalTest() = 0;
-};
+        virtual void printFinalOutFile() = 0;
+}; 
 
 #endif

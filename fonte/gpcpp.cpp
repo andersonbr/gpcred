@@ -8,56 +8,36 @@ using namespace std;
 
 gpcpp::gpcpp(Statistics *stats, InOut* io, int seed) : IGP(seed), stats(stats), io(io) {
 
-	GPInit(1,this->seed);
-	GPRegisterClass(new MyGP(stats,io));
-	GPRegisterClass(new MyGene(stats));
-	GPRegisterClass(new MyPopulation(stats,io));
+    GPInit(1,this->seed);
+    GPRegisterClass(new MyGP(stats,io));
+    GPRegisterClass(new MyGene(stats));
+    GPRegisterClass(new MyPopulation(stats,io));
 
-	struct GPConfigVarInformation cfgArray[] = {
-		 {(char*) "PopulationSize", DATAINT, &cfg.PopulationSize},
-	{(char*)"NumberOfGenerations", DATAINT, &cfg.NumberOfGenerations},
-	{(char*)"CreationType", DATAINT, &cfg.CreationType},
-	{(char*)"CrossoverProbability", DATADOUBLE, &cfg.CrossoverProbability},
-	{(char*)"CreationProbability", DATADOUBLE, &cfg.CreationProbability},
-	{(char*)"MaximumDepthForCreation", DATAINT, &cfg.MaximumDepthForCreation},
-	{(char*)"MaximumDepthForCrossover", DATAINT, &cfg.MaximumDepthForCrossover},
-	{(char*)"SelectionType", DATAINT, &cfg.SelectionType},
-	{(char*)"TournamentSize", DATAINT, &cfg.TournamentSize},
-	{(char*)"DemeticGrouping", DATAINT, &cfg.DemeticGrouping},
-	 {(char*)"DemeSize", DATAINT, &cfg.DemeSize},
-	 {(char*)"DemeticMigProbability", DATADOUBLE, &cfg.DemeticMigProbability},
-	 {(char*)"SwapMutationProbability", DATADOUBLE, &cfg.SwapMutationProbability},
-	 {(char*)"ShrinkMutationProbability", DATADOUBLE, &cfg.ShrinkMutationProbability},
-	 {(char*)"AddBestToNewPopulation", DATAINT, &cfg.AddBestToNewPopulation},
-	 {(char*)"SteadyState", DATAINT, &cfg.SteadyState},
-	 {(char*)"SubSetSize", DATAINT, &cfg.SubSetSize},
-	 {(char*)"ActiveGPMode", DATAINT, &cfg.ActiveGPMode},
-	 {(char*)"GenToChangeTrain", DATAINT, &cfg.GenToChangeTrain},
-	 {(char*)"", DATAINT, NULL}
+    struct GPConfigVarInformation cfgArray[] = {
+        {(char*) "PopulationSize", DATAINT, &cfg.PopulationSize},
+        {(char*)"NumberOfGenerations", DATAINT, &cfg.NumberOfGenerations},
+        {(char*)"CreationType", DATAINT, &cfg.CreationType},
+        {(char*)"CrossoverProbability", DATADOUBLE, &cfg.CrossoverProbability},
+        {(char*)"CreationProbability", DATADOUBLE, &cfg.CreationProbability},
+        {(char*)"MaximumDepthForCreation", DATAINT, &cfg.MaximumDepthForCreation},
+        {(char*)"MaximumDepthForCrossover", DATAINT, &cfg.MaximumDepthForCrossover},
+        {(char*)"SelectionType", DATAINT, &cfg.SelectionType},
+        {(char*)"TournamentSize", DATAINT, &cfg.TournamentSize},
+        {(char*)"DemeticGrouping", DATAINT, &cfg.DemeticGrouping},
+        {(char*)"DemeSize", DATAINT, &cfg.DemeSize},
+        {(char*)"DemeticMigProbability", DATADOUBLE, &cfg.DemeticMigProbability},
+        {(char*)"SwapMutationProbability", DATADOUBLE, &cfg.SwapMutationProbability},
+        {(char*)"ShrinkMutationProbability", DATADOUBLE, &cfg.ShrinkMutationProbability},
+        {(char*)"AddBestToNewPopulation", DATAINT, &cfg.AddBestToNewPopulation},
+        {(char*)"SteadyState", DATAINT, &cfg.SteadyState},
+        {(char*)"SubSetSize", DATAINT, &cfg.SubSetSize},
+        {(char*)"ActiveGPMode", DATAINT, &cfg.ActiveGPMode},
+        {(char*)"GenToChangeTrain", DATAINT, &cfg.GenToChangeTrain},
+        {(char*)"", DATAINT, NULL}
 
-	};
-//	configArray[0] = {"PopulationSize", DATAINT, &cfg.PopulationSize};
-/*	configArray[1] = {(char*)"NumberOfGenerations", DATAINT, &cfg.NumberOfGenerations};
-	configArray[2] = {(char*)"CreationType", DATAINT, &cfg.CreationType};
-	configArray[3] = {(char*)"CrossoverProbability", DATADOUBLE, &cfg.CrossoverProbability};
-	configArray[4] = {(char*)"CreationProbability", DATADOUBLE, &cfg.CreationProbability};
-	configArray[5] = {(char*)"MaximumDepthForCreation", DATAINT, &cfg.MaximumDepthForCreation};
-	configArray[6] = {(char*)"MaximumDepthForCrossover", DATAINT, &cfg.MaximumDepthForCrossover};
-	configArray[7] = {(char*)"SelectionType", DATAINT, &cfg.SelectionType};
-	configArray[8] = {(char*)"TournamentSize", DATAINT, &cfg.TournamentSize};
-	configArray[9] = {(char*)"DemeticGrouping", DATAINT, &cfg.DemeticGrouping};
-	configArray[10] = {(char*)"DemeSize", DATAINT, &cfg.DemeSize};
-	configArray[11] = {(char*)"DemeticMigProbability", DATADOUBLE, &cfg.DemeticMigProbability};
-	configArray[12] = {(char*)"SwapMutationProbability", DATADOUBLE, &cfg.SwapMutationProbability};
-	configArray[13] = {(char*)"ShrinkMutationProbability", DATADOUBLE, &cfg.ShrinkMutationProbability};
-	configArray[14] = {(char*)"AddBestToNewPopulation", DATAINT, &cfg.AddBestToNewPopulation};
-	configArray[15] = {(char*)"SteadyState", DATAINT, &cfg.SteadyState};
-	configArray[16] = {(char*)"SubSetSize", DATAINT, &cfg.SubSetSize};
-	configArray[17] = {(char*)"ActiveGPMode", DATAINT, &cfg.ActiveGPMode};
-	configArray[18] = {(char*)"GenToChangeTrain", DATAINT, &cfg.GenToChangeTrain};
-	configArray[19] = {(char*)"", DATAINT, NULL};
-*/
-	// Read configuration file.
+    };
+	
+    // Read configuration file.
 	GPConfiguration config (cout, (char*) (io->getGPParameterConfigFileName()).c_str(), cfgArray);
 	
 	// Print the configuration
@@ -134,10 +114,12 @@ void gpcpp::evolve(){
 }
 
 void gpcpp::performeFinalTest(){
-
-    pop->NthMyGP(pop->bestOfPopulation)->evaluate();
+    pop->NthMyGP(pop->bestOfPopulation)->evaluate(true,"TestBest");
 }
 
+void gpcpp::printFinalOutFile(){
+    pop->NthMyGP(pop->bestOfPopulation)->evaluate(true,"TrainBest");
+}
 
 void gpcpp::savePop(){
 
@@ -243,23 +225,23 @@ void gpcpp::createNodeSet(){
 		ns[i]->putNode (*new GPNode (POW, (char*) "Pow", 2));
 		ns[i]->putNode (*new GPNode (LOG, (char*) "Log", 2));  //Six operators
 
-		ns[i]->putNode(*new GPNode (NEIGHBORHOOD1, (char*) "Neighborhood1(d,c)"));
-		ns[i]->putNode(*new GPNode (NEIGHBORHOOD2, (char*) "Neighborhood2(d,c)"));
-		ns[i]->putNode(*new GPNode (NEIGHBORHOOD3, (char*) "Neighborhood3(d,c)"));
-		ns[i]->putNode(*new GPNode (HUBSCORE, (char*) "HubScore(d,c)"));
-		ns[i]->putNode(*new GPNode (AUTHORITY, (char*) "Authority(d,c)"));
-        ns[i]->putNode(*new GPNode (EIGENVECTOR, (char*) "EigenVector(d,c)"));
-		ns[i]->putNode(*new GPNode (CLOSENESS, (char*) "Closeness(d,c)")); 
-		ns[i]->putNode(*new GPNode (STRENGTH, (char*) "Strength(d,c)"));
-		ns[i]->putNode(*new GPNode (CONSTRAINT, (char*) "Constraint(d,c)"));
-		ns[i]->putNode(*new GPNode (PAGERANK, (char*) "PageRank(d,c)"));
-		ns[i]->putNode(*new GPNode (BETWEENNESS, (char*) "Betweenness(d,c)"));
-		ns[i]->putNode(*new GPNode (BIBCOUPLING, (char*) "BibCoupling (d,c)"));
-		ns[i]->putNode(*new GPNode (COCITATION, (char*) "CoCitation(d,c)"));
-		ns[i]->putNode(*new GPNode (JACCARDSIMILARITY, (char*) "JaccardSimilarity(d,c)"));
-		ns[i]->putNode(*new GPNode (DICESIMILARITY, (char*) "DiceSimilarity(d,c)"));
-		ns[i]->putNode(*new GPNode (INVERSELOGSIMILARITY, (char*) "InverseLigSimilarity(d,c)")); //16 terms
-//NAO USAR!  ns[i]->putNode(*new GPNode (AVGNEIGHBORHOODDEGREE, (char*) "AvgNeighborHoodDegree(d,c)"));
+		ns[i]->putNode(*new GPNode (NEIGHBORHOOD1, (char*) "Neighborhood1"));
+		ns[i]->putNode(*new GPNode (NEIGHBORHOOD2, (char*) "Neighborhood2"));
+		ns[i]->putNode(*new GPNode (NEIGHBORHOOD3, (char*) "Neighborhood3"));
+		ns[i]->putNode(*new GPNode (HUBSCORE, (char*) "HubScore"));
+		ns[i]->putNode(*new GPNode (AUTHORITY, (char*) "Authority"));
+        ns[i]->putNode(*new GPNode (EIGENVECTOR, (char*) "EigenVector"));
+		ns[i]->putNode(*new GPNode (CLOSENESS, (char*) "Closeness")); 
+		ns[i]->putNode(*new GPNode (STRENGTH, (char*) "Strength"));
+		ns[i]->putNode(*new GPNode (CONSTRAINT, (char*) "Constraint"));
+		ns[i]->putNode(*new GPNode (PAGERANK, (char*) "PageRank"));
+		ns[i]->putNode(*new GPNode (BETWEENNESS, (char*) "Betweenness"));
+		ns[i]->putNode(*new GPNode (BIBCOUPLING, (char*) "BibCoupling"));
+		ns[i]->putNode(*new GPNode (COCITATION, (char*) "CoCitation"));
+		ns[i]->putNode(*new GPNode (JACCARDSIMILARITY, (char*) "JaccardSimilarity"));
+		ns[i]->putNode(*new GPNode (DICESIMILARITY, (char*) "DiceSimilarity"));
+		ns[i]->putNode(*new GPNode (INVERSELOGSIMILARITY, (char*) "InverseLigSimilarity")); //16 terms
+//NAO USAR!  ns[i]->putNode(*new GPNode (AVGNEIGHBORHOODDEGREE, (char*) "AvgNeighborHoodDegree"));
 	
     }
 

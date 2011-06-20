@@ -129,6 +129,7 @@ class Statistics {
         bool getUsingTermCredibility(){
             return usingTermCredibility;
         }
+        
         int getNumberOfGraphs(){
             return graphNumberCounter;
         }

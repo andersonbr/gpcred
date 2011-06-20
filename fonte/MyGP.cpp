@@ -7,7 +7,7 @@
 int MyGP::gennum = 0;
 int MyGP::indCounter = 0;
 
-void MyGP::evaluate(){
+void MyGP::evaluate(bool printFinalOutfile, std::string msg){
 
     // Evaluate main tree
     // Iterate through every term/class, computing all
@@ -62,6 +62,9 @@ void MyGP::evaluate(){
     
     classifier->train(io->getTrain());
     classifier->test(io->getTest());
+
+    if(printFinalOutfile)
+        classifier->printFinalOutFile(io->getFinalOutFile(), msg);
 
     // Print trees related to solutions generated (for debugging purposes).
     for(int i = 0; i < termCredibilityOffset + stats->getNumberOfGraphs(); i++){

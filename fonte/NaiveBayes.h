@@ -98,6 +98,8 @@ class NaiveBayes : public IClassifier {
 
 		double getMicroF1();
 		double getMacroF1();
+
+        void printFinalOutFile(ostream& out, string msg);
 };
 
 #endif
