@@ -132,6 +132,12 @@ int main(int argc, char **argv)
         if(genToChange && (gen % genToChange == 0)){
             io.mergeTrainAndTest();
             io.makeNewTest();
+            
+            stats.clear();
+            stats.readExamples(io.getTrain());
+
+            configureTermCredibility(stats, useTermCredibility, normalEstimator, normalizeTermsPerGreatestClassValue);
+            configureGraphCredibility(stats, io, graphsNames);
         }
 
 	}
