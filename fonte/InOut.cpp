@@ -27,6 +27,8 @@ InOut::InOut(string basename, int seed){
     _usingEvaluateFile = false;
     _usingFinalOutFile = false;
     numericalCollums = 0;
+    numExamplesOriginalTrain  = 0;
+    numExamplesOriginalTest   = 0;
 
     srand(seed);
 }
@@ -50,6 +52,8 @@ void InOut::clear(){
     trainSet.clear();
 //    validationSet.clear();
     testSet.clear();
+    numExamplesOriginalTrain = 0;
+    numExamplesOriginalTest = 0;
 }
 
 void InOut::setBrunoroFile(string brunoroFilename){
@@ -140,6 +144,7 @@ void InOut::read(const char* filename, int option){
 void InOut::readTrain(const char* filename){
 	TRACE_V(TAG,"readTrain method -> " <<  filename);
 	
+    numExamplesOriginalTrain += trainSet.size();
 	read(filename,train_option);
 }
 
@@ -153,6 +158,7 @@ void InOut::readTrain(const char* filename){
 void InOut::readTest(const char* filename){
 	TRACE_V(TAG,"readTest method -> " << filename);
 	
+    numExamplesOriginalTest += testSet.size();
 	read(filename, test_option);
 }
 
@@ -213,8 +219,6 @@ bool InOut::isUsingFinalOutFile(){
 }
 
 void InOut::mergeTrainAndTest(){
-    numExamplesOriginalTrain = trainSet.size();
-    numExamplesOriginalTest = testSet.size();
 
     for(ExampleIterator it = testSet.getBegin(); it != testSet.getEnd(); it++){
         trainSet.add(*it);
@@ -228,7 +232,7 @@ void InOut::makeNewTest(){
     int prob = (int)((100.0 * numExamplesOriginalTest) / (numExamplesOriginalTrain + numExamplesOriginalTest));
 
     for(ExampleIterator it = trainSet.getBegin(); it != trainSet.getEnd(); ){
-        if( rand()%100 > prob ){
+        if( rand()%100 < prob ){
             testSet.add(*it);
             it = trainSet.erase(it);
         }
