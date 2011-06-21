@@ -232,7 +232,7 @@ void InOut::makeNewTest(){
     int prob = (int)((100.0 * numExamplesOriginalTest) / (numExamplesOriginalTrain + numExamplesOriginalTest));
 
     for(ExampleIterator it = trainSet.getBegin(); it != trainSet.getEnd(); ){
-        if( rand()%100 < prob ){
+        if( rand()%100 <= prob ){
             testSet.add(*it);
             it = trainSet.erase(it);
         }

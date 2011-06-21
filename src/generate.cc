@@ -139,8 +139,6 @@ void GPPopulation::generate (ostream& os, GPPopulation& newPop)
     else
         demeSize=containerSize ();
 
-    //	cout<<"GPVAR. STEADYSTATE = " << GPVar.SteadyState<<endl;
-
     if (!GPVar.SteadyState)
     {
         // The user has already created a new generation object, but the
@@ -159,7 +157,6 @@ void GPPopulation::generate (ostream& os, GPPopulation& newPop)
             
             vector<int> parent;
             parent.push_back(bestOfPopulation);
-
             printBrunoro(os, bestOfPopulation, parent);
         }
     }
@@ -257,7 +254,6 @@ void GPPopulation::generate (ostream& os, GPPopulation& newPop)
                         }
                         else{
                             newPop.put (demeStart+n, newGP);
-                        
                             printBrunoro(os, n,myParents);
                         }
 
@@ -433,7 +429,7 @@ void GPPopulation::calculateStatistics ()
 void GPPopulation::printBrunoro(ostream& os, int n, vector<int> parent){
 
 //    <tab>reproduction: <id pai 1> <id pai 2> -> <id filho na geração num + 1>
-    if(parent.size() == 0 ) return;
+    if(parent.size() == 0) return;
     
     os<<"\trep: ";
     for(vector<int>:: iterator it = parent.begin(); it!= parent.end(); it++){
