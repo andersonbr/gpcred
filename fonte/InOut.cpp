@@ -144,8 +144,8 @@ void InOut::read(const char* filename, int option){
 void InOut::readTrain(const char* filename){
 	TRACE_V(TAG,"readTrain method -> " <<  filename);
 	
-    numExamplesOriginalTrain += trainSet.size();
 	read(filename,train_option);
+    numExamplesOriginalTrain += trainSet.size();
 }
 
 /*void InOut::readValidation(const char* filename){
@@ -158,8 +158,8 @@ void InOut::readTrain(const char* filename){
 void InOut::readTest(const char* filename){
 	TRACE_V(TAG,"readTest method -> " << filename);
 	
-    numExamplesOriginalTest += testSet.size();
 	read(filename, test_option);
+    numExamplesOriginalTest += testSet.size();
 }
 
 void InOut::setNumericalCollums(int nc){
