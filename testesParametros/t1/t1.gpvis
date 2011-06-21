@@ -1,0 +1,2604 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Log,2) (Pow,2) 
+	terms: MaxTFICF MaxTFIDF MaxCTD MaxOR MaxCC MaxGSS MaxCHI MaxAM MaxIG MaxDom sumDF DF sumTF TF TFIDF TFICF IDF CTD OR CE CC GSS CHI IG DOM GINI P' P AM
+generation 0:
+	ind: 	66.5997	* MaxOR AM
+	ind: 	35.2882	Log * MaxGSS CE + AM TF
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	32.6772	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	23.7397	Log GINI MaxCC
+	ind: 	12.2916	- % TF OR % IG MaxTFIDF
+	ind: 	73.2878	% TFIDF MaxGSS
+	ind: 	71.4802	Pow * P sumTF * P MaxIG
+	ind: 	69.8735	* CTD MaxOR
+	ind: 	21.6108	- Log TF sumDF * GINI TF
+	ind: 	36.5736	% MaxTFICF CTD
+	ind: 	42.0366	Pow - AM sumDF % CHI MaxOR
+	ind: 	59.6505	* CE TF
+	ind: 	68.5881	+ * TF MaxIG % GINI DOM
+	ind: 	67.0817	* MaxDom MaxTFIDF
+	ind: 	46.3949	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	59.2488	* CTD P'
+	ind: 	26.2904	* Log IDF TFICF Pow CE CE
+	ind: 	26.5113	Log GINI CHI
+	ind: 	60.956	% * DF IDF * MaxDom MaxTFICF
+	ind: 	56.9191	* DF CE
+	ind: 	13.0749	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	47.5598	% TFICF TFIDF
+	ind: 	45.9932	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	58.8672	+ MaxCTD TFICF
+	ind: 	45.6317	Pow * TFICF sumDF Pow P' MaxIG
+	ind: 	66.8407	- sumTF MaxCHI
+	ind: 	29.8654	Log * sumDF DF + TFIDF MaxAM
+	ind: 	31.2312	Log TF MaxAM
+	ind: 	37.7586	* Log CHI OR + CE GINI
+	ind: 	26.0896	Log TFICF TFICF
+	ind: 	54.4085	- % TF MaxDom + TFICF sumTF
+	ind: 	70.4358	Pow MaxCC IDF
+	ind: 	53.3842	* * AM CE - DOM CHI
+	ind: 	52.5608	* sumTF MaxCTD
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.2995	Pow CHI MaxCTD
+	ind: 	46.6359	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	71.3195	% AM IG
+	ind: 	8.13416	% + sumTF TFICF - MaxTFICF MaxGSS
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	54.6094	% IG DOM
+	ind: 	53.9667	+ - GSS AM * GSS MaxTFICF
+	ind: 	35.4489	Log DOM AM
+	ind: 	47.9614	* % MaxAM MaxIG * CE TF
+	ind: 	65.4348	+ sumDF CHI
+	ind: 	26.3105	Log Log MaxCHI MaxIG Pow MaxAM MaxTFICF
+	ind: 	68.5479	+ GSS GSS
+	ind: 	70.4961	* % AM MaxCHI Pow P' P
+generation 1:
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	35.2882	Log * MaxGSS CE + AM TF
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	32.6772	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	27.8972	- Log TF sumDF * GINI TF
+	ind: 	12.2916	- % TF OR % IG MaxTFIDF
+	ind: 	73.2878	% TFIDF MaxGSS
+	ind: 	71.4802	Pow * P sumTF * P MaxIG
+	ind: 	54.0872	* * AM CE - DOM CHI
+	ind: 	65.5955	* MaxOR AM
+	ind: 	52.8821	* sumTF MaxCTD
+	ind: 	26.3105	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	45.6718	Log TFICF TFICF
+	ind: 	44.5471	* % MaxAM MaxIG * CE TF
+	ind: 	35.2882	Log * MaxGSS CE + AM TF
+	ind: 	46.3949	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	70.6568	Pow CHI MaxCTD
+	ind: 	45.6116	Pow * TFICF sumDF Pow P' MaxIG
+	ind: 	28.9616	Log TF MaxAM
+	ind: 	25.5674	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	56.9191	* DF CE
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	45.5111	Log TFICF TFICF
+	ind: 	21.7714	- Log TF sumDF * GINI TF
+	ind: 	68.086	+ GSS GSS
+	ind: 	32.6772	* Log MaxGSS MaxCC Log CE MaxOR
+	ind: 	53.3842	% IG DOM
+	ind: 	66.2784	Pow sumTF sumDF
+	ind: 	31.2312	Log TF MaxAM
+	ind: 	72.5447	* + P' TFIDF % MaxDom MaxCC
+	ind: 	26.0896	Log TFICF TFICF
+	ind: 	31.5124	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	71.8417	% TFIDF MaxGSS
+	ind: 	53.0227	* sumTF MaxCTD
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	31.2111	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	53.1633	+ - GSS AM * GSS MaxTFICF
+	ind: 	67.4633	+ sumTF GSS
+	ind: 	71.3195	% AM IG
+	ind: 	19.281	- Log TF sumDF * GINI TF
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	44.5471	* % MaxAM MaxIG * CE TF
+	ind: 	54.6094	% IG DOM
+	ind: 	53.9667	+ - GSS AM * GSS MaxTFICF
+	ind: 	53.9667	+ - GSS AM * GSS MaxTFICF
+	ind: 	47.9614	* % MaxAM MaxIG * CE TF
+	ind: 	71.9422	% AM IG
+	ind: 	58.4254	* CE TF
+	ind: 	68.5479	+ GSS GSS
+	ind: 	73.3079	% TFIDF MaxGSS
+generation 2:
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.4443	% TFIDF MaxGSS
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	32.6772	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	7.5718	- % TF OR % IG MaxTFIDF
+	ind: 	12.2916	- % TF OR % IG MaxTFIDF
+	ind: 	64.4708	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	72.8058	% TFIDF MaxGSS
+	ind: 	65.5955	* MaxOR AM
+	ind: 	39.8273	- Pow CHI MaxCTD % IG MaxTFIDF
+	ind: 	26.3105	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	52.0586	* sumTF MaxCTD
+	ind: 	67.7445	* OR MaxGSS
+	ind: 	26.3105	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	70.6568	Pow CHI MaxCTD
+	ind: 	55.0512	% TF OR
+	ind: 	72.4041	% TFIDF MaxGSS
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	56.9191	* DF CE
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	21.7714	- Log TF sumDF * GINI TF
+	ind: 	68.086	+ GSS GSS
+	ind: 	30.6889	Log TFICF TFICF
+	ind: 	53.3842	% IG DOM
+	ind: 	71.42	% AM IG
+	ind: 	31.2312	Log TF MaxAM
+	ind: 	72.5447	* + P' TFIDF % MaxDom MaxCC
+	ind: 	26.0896	Log TFICF TFICF
+	ind: 	71.1388	* + P' TFIDF % MaxDom MaxCC
+	ind: 	71.8417	% TFIDF MaxGSS
+	ind: 	65.7361	* MaxGSS CE
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	31.2111	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	66.0574	* sumTF TF
+	ind: 	25.2259	Log Pow MaxOR MaxDom DOM
+	ind: 	71.3195	% AM IG
+	ind: 	66.8608	* MaxGSS CE
+	ind: 	24.5632	- Log TF sumDF * GINI TF
+	ind: 	17.5336	Log GINI IDF
+	ind: 	67.5035	Log Pow sumTF sumDF + AM TF
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	53.9667	+ - GSS AM * GSS MaxTFICF
+	ind: 	56.8789	* DF CE
+	ind: 	71.9422	% AM IG
+	ind: 	72.8058	% TFIDF MaxGSS
+	ind: 	68.809	* OR MaxGSS
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+generation 3:
+	ind: 	8.13416	- Log TF sumDF % TFIDF MaxGSS
+	ind: 	56.6981	* DF CE
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	32.6772	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	7.5718	- % TF OR % IG MaxTFIDF
+	ind: 	41.8357	- Log CE TFICF * GINI * P' TFIDF
+	ind: 	35.5091	Log CE TFICF
+	ind: 	72.0225	% TFIDF MaxGSS
+	ind: 	69.7128	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.6927	Pow * + P' TFIDF % MaxDom MaxCC Log CE TFICF
+	ind: 	70.3555	Pow CHI MaxCTD
+	ind: 	56.7182	* DF CE
+	ind: 	71.0183	- MaxCHI CE
+	ind: 	67.7445	* OR MaxGSS
+	ind: 	45.9932	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	64.29	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	71.3597	Pow MaxAM MaxIG
+	ind: 	67.865	* TF % MaxDom MaxCC
+	ind: 	70.2551	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	56.9191	* DF CE
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.42	% AM IG
+	ind: 	56.8789	* DF CE
+	ind: 	67.7646	Pow Pow MaxAM MaxIG % AM IG
+	ind: 	67.9454	- + MaxCC OR * P' DOM
+	ind: 	70.3153	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	31.2312	Log TF MaxAM
+	ind: 	26.3105	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	72.1028	% AM IG
+	ind: 	71.1388	* + P' TFIDF % MaxDom MaxCC
+	ind: 	64.1695	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	71.3195	% AM IG
+	ind: 	69.7931	Pow Pow MaxAM MaxIG * CE TFICF
+	ind: 	31.2111	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	71.3195	% AM IG
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	71.3195	% AM IG
+	ind: 	66.8608	* MaxGSS CE
+	ind: 	67.624	* OR MaxGSS
+	ind: 	39.5863	- Pow CHI MaxCTD % IG MaxTFIDF
+	ind: 	67.5035	Log Pow sumTF sumDF + AM TF
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	70.8576	* + P' TFIDF % MaxDom MaxCC
+	ind: 	71.5003	% AM IG
+	ind: 	68.8291	+ P' TFIDF
+	ind: 	70.5363	Pow Pow MaxAM MaxIG Log TF sumDF
+	ind: 	70.7371	- Log TF sumDF * GINI * P' TFIDF
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+generation 4:
+	ind: 	70.3153	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	31.2111	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	33.9426	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.0225	% TFIDF MaxGSS
+	ind: 	72.1631	* + P' TFIDF % MaxDom MaxCC
+	ind: 	72.0225	% TFIDF MaxGSS
+	ind: 	59.1484	* DF CE
+	ind: 	41.675	- Log CE TFICF * GINI * P' TFIDF
+	ind: 	70.3555	Pow CHI MaxCTD
+	ind: 	66.439	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	70.3153	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.0225	% TFIDF MaxGSS
+	ind: 	45.9932	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	72.0627	% TFIDF MaxGSS
+	ind: 	71.3195	% AM IG
+	ind: 	72.1631	* + P' TFIDF % MaxDom MaxCC
+	ind: 	60.0522	* DF CE
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	56.9191	* DF CE
+	ind: 	71.1388	* + P' TFIDF % MaxDom MaxCC
+	ind: 	55.4931	* DF CE
+	ind: 	26.3105	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	55.955	% TFICF MaxCTD
+	ind: 	72.1832	% TFIDF MaxGSS
+	ind: 	71.7413	% AM IG
+	ind: 	70.9179	Pow CHI MaxCTD
+	ind: 	31.2312	Log TF MaxAM
+	ind: 	72.0627	% TFIDF MaxGSS
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	71.2593	Pow Pow MaxAM MaxIG Log TFIDF MaxGSS
+	ind: 	71.3597	% TFIDF MaxGSS
+	ind: 	41.675	- Log CE TFICF + GINI * P' TFIDF
+	ind: 	71.3597	% TFIDF MaxGSS
+	ind: 	64.1695	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	71.3396	% MaxDom MaxCC
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	31.3115	Log TF MaxAM
+	ind: 	57.5015	* DF CE
+	ind: 	67.624	* OR MaxGSS
+	ind: 	45.6116	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	67.5035	Log Pow sumTF sumDF + AM TF
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	68.8291	+ P' TFIDF
+	ind: 	72.5447	Pow MaxAM MaxIG
+	ind: 	68.8291	+ P' TFIDF
+	ind: 	70.5363	Pow Pow MaxAM MaxIG Log TF sumDF
+	ind: 	71.1187	* + P' TFIDF % MaxDom MaxCC
+	ind: 	69.6927	Pow * DF CE Log CE TFICF
+generation 5:
+	ind: 	70.3153	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	33.9426	Log MaxGSS MaxCC
+	ind: 	69.0299	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	71.9221	Pow % AM IG Log CE TFICF
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	41.675	Log CE MaxOR
+	ind: 	26.6319	Pow sumTF TF
+	ind: 	60.0522	* DF CE
+	ind: 	59.1484	* DF CE
+	ind: 	41.675	- Log CE TFICF * GINI * P' TFIDF
+	ind: 	45.6116	- Log CE TFICF + GINI * P' TFIDF
+	ind: 	31.2111	* Pow CHI MaxCTD Log MaxGSS MaxCC
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	33.9426	Log MaxGSS MaxCC
+	ind: 	64.772	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	72.0627	% TFIDF MaxGSS
+	ind: 	69.3714	+ P' TFIDF
+	ind: 	72.1631	* + P' TFIDF % MaxDom MaxCC
+	ind: 	60.0522	* DF CE
+	ind: 	69.0299	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	35.2882	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	31.2111	* * TF % MaxDom MaxCC * % MaxDom MaxCC Log CE MaxOR
+	ind: 	55.4931	* DF CE
+	ind: 	45.8526	Log CE MaxOR
+	ind: 	55.955	% TFICF MaxCTD
+	ind: 	72.1832	% TFIDF MaxGSS
+	ind: 	71.7413	% AM IG
+	ind: 	72.0627	% TFIDF MaxGSS
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	72.0627	% TFIDF MaxGSS
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	71.2593	Pow Pow MaxAM MaxIG Log TFIDF MaxGSS
+	ind: 	26.6319	Pow sumTF TF
+	ind: 	41.675	- Log CE TFICF + GINI * P' TFIDF
+	ind: 	70.3153	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	64.1695	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	71.3396	% MaxDom MaxCC
+	ind: 	64.772	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	71.0986	% TFIDF MaxGSS
+	ind: 	57.5015	* DF CE
+	ind: 	68.8893	* AM sumDF
+	ind: 	45.6116	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	33.2597	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	33.9426	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	31.2111	* Pow CHI MaxCTD Log MaxGSS MaxCC
+	ind: 	31.2312	Log MaxDom sumDF
+	ind: 	70.5363	Pow Pow MaxAM MaxIG Log TF sumDF
+	ind: 	71.1187	* + P' TFIDF % MaxDom MaxCC
+	ind: 	26.6319	Pow sumTF TF
+generation 6:
+	ind: 	54.6495	Pow * DF MaxCTD MaxAM
+	ind: 	71.9221	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	69.0299	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	27.8972	Pow sumTF TF
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.8217	Pow MaxGSS MaxCC
+	ind: 	31.2111	Log Pow CHI MaxCTD Pow MaxAM MaxIG
+	ind: 	31.2111	* Pow CHI MaxCTD Log MaxGSS MaxCC
+	ind: 	59.1484	* DF CE
+	ind: 	31.2111	* * DF CE * % MaxDom MaxCC Log CE MaxOR
+	ind: 	35.0472	- Log CE TFICF * GINI * P' TFIDF
+	ind: 	31.2111	* Pow CHI MaxCTD Log MaxGSS MaxCC
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	69.1504	* TF % MaxDom MaxCC
+	ind: 	64.772	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	55.4931	* DF CE
+	ind: 	44.6274	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	7.71239	- MaxGSS + GINI * P' TFIDF
+	ind: 	60.0522	* DF CE
+	ind: 	35.2882	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	35.2882	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	64.772	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	55.4931	* DF CE
+	ind: 	72.1631	* + P' TFIDF % MaxDom MaxCC
+	ind: 	55.955	% TFICF MaxCTD
+	ind: 	8.91745	- MaxGSS + GINI * P' TFIDF
+	ind: 	71.9221	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	71.9221	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	65.2942	Pow + sumTF GSS + P' MaxIG
+	ind: 	71.2995	Pow MaxCHI DOM
+	ind: 	58.7066	* DF CE
+	ind: 	70.3153	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	55.4931	* DF CE
+	ind: 	6.32657	- MaxGSS + GINI * P' TFIDF
+	ind: 	65.8767	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	71.0986	% TFIDF MaxGSS
+	ind: 	72.1028	Pow CE MaxOR
+	ind: 	71.9221	* + P' TFIDF % MaxDom MaxCC
+	ind: 	45.6116	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	33.2597	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	55.5734	* DF CE
+	ind: 	54.6495	Pow * DF MaxCTD MaxAM
+	ind: 	40.4298	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	71.3396	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	70.5363	Pow Pow MaxAM MaxIG Log TF sumDF
+	ind: 	71.9221	Pow Log MaxGSS MaxCC Log CE TFICF
+	ind: 	67.9052	Pow P' MaxCC
+generation 7:
+	ind: 	69.8132	+ P' MaxIG
+	ind: 	71.3999	Pow CHI MaxCTD
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	29.2227	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	20.245	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	71.8217	Pow MaxGSS MaxCC
+	ind: 	31.2111	Log Pow CHI MaxCTD Pow MaxAM MaxIG
+	ind: 	72.6451	Pow Pow MaxAM MaxIG - MaxGSS Log MaxGSS MaxCC
+	ind: 	59.1484	* DF CE
+	ind: 	72.9665	% TFIDF MaxGSS
+	ind: 	35.0472	- Log CE TFICF * GINI * P' TFIDF
+	ind: 	31.2111	* Pow CHI MaxCTD Log MaxGSS MaxCC
+	ind: 	26.3908	- Log CE TFICF * GINI * P' TFIDF
+	ind: 	67.6441	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	64.772	Pow + sumTF GSS Pow P' MaxIG
+	ind: 	71.902	Pow Pow MaxAM MaxIG - MaxGSS + GINI * P' TFIDF
+	ind: 	44.6274	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	71.6208	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	60.0522	* DF CE
+	ind: 	26.3708	Pow sumTF TF
+	ind: 	31.2111	Log CE TFICF
+	ind: 	71.179	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	55.4931	* DF CE
+	ind: 	31.2111	Log % TFIDF MaxGSS Pow MaxAM MaxIG
+	ind: 	55.955	% TFICF MaxCTD
+	ind: 	8.91745	- MaxGSS + GINI * P' TFIDF
+	ind: 	71.9221	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	72.0627	Pow Pow MaxAM MaxIG - MaxGSS Log MaxGSS MaxCC
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	46.3949	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	69.753	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	66.8809	Pow + sumTF GSS + P' MaxIG
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	26.3105	* * TF Log MaxGSS MaxCC Log MaxGSS MaxCC
+	ind: 	35.1075	Pow + sumTF GSS Pow * DF MaxCTD MaxAM
+	ind: 	71.0584	* Pow CHI MaxCTD + GINI * P' TFIDF
+	ind: 	45.3304	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	71.0986	% TFIDF MaxGSS
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	69.9136	Pow Pow MaxAM MaxIG - MaxGSS + GINI * P' TFIDF
+	ind: 	45.6116	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	33.2597	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	26.3105	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	54.6495	Pow * DF MaxCTD MaxAM
+	ind: 	40.4298	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	71.3396	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	70.717	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	6.98936	- MaxGSS + GINI * P' TFIDF
+	ind: 	67.9052	Pow P' MaxCC
+generation 8:
+	ind: 	69.8132	+ P' MaxIG
+	ind: 	71.3999	Pow CHI MaxCTD
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	70.1948	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	55.0914	% TFICF MaxCTD
+	ind: 	71.8217	Pow MaxGSS MaxCC
+	ind: 	31.2111	Log Pow CHI MaxCTD Pow MaxAM MaxIG
+	ind: 	70.1747	Pow CHI MaxCTD
+	ind: 	70.7371	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	4.8805	- MaxGSS + GINI * P' TFIDF
+	ind: 	57.5015	- sumDF IDF
+	ind: 	43.1211	- CE DF
+	ind: 	26.3908	- Log CE TFICF * GINI * P' TFIDF
+	ind: 	71.8217	Pow MaxGSS MaxCC
+	ind: 	46.2744	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	71.902	Pow Pow MaxAM MaxIG - MaxGSS + GINI * P' TFIDF
+	ind: 	31.2111	* Pow CHI MaxCTD Log MaxGSS MaxCC
+	ind: 	6.20607	- MaxGSS + GINI * P' TFIDF
+	ind: 	71.179	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	44.6274	* * TF - Log CE TFICF * GINI * P' TFIDF Log MaxGSS MaxCC
+	ind: 	41.675	- MaxGSS Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.179	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	55.4931	* DF CE
+	ind: 	71.179	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	55.955	% TFICF MaxCTD
+	ind: 	69.0701	+ sumTF GSS
+	ind: 	71.9221	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	69.1103	% MaxDom MaxCC
+	ind: 	55.4931	* DF CE
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	46.3949	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	69.753	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	53.9064	Pow * DF MaxCTD MaxAM
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	55.4931	* DF CE
+	ind: 	71.9823	Pow CHI MaxCTD
+	ind: 	58.4254	* * DF MaxCTD MaxAM
+	ind: 	45.3304	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	70.0141	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	61.1167	* * DF MaxCTD MaxAM
+	ind: 	45.6116	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	33.2597	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	61.1167	* * DF MaxCTD MaxAM
+	ind: 	71.2191	+ GINI * P' TFIDF
+	ind: 	71.3999	Pow CHI MaxCTD
+	ind: 	30.6889	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	70.717	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.902	Pow Pow MaxAM MaxIG - MaxGSS + GINI * P' TFIDF
+	ind: 	31.2111	* Pow CHI MaxCTD Log MaxGSS MaxCC
+generation 9:
+	ind: 	57.0998	% TFICF MaxCTD
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	71.199	Pow CHI MaxCTD
+	ind: 	70.4961	Pow CHI MaxCTD
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow CHI MaxCTD
+	ind: 	45.2501	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	70.1747	Pow CHI MaxCTD
+	ind: 	70.3756	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.3513	+ P' MaxIG
+	ind: 	48.2025	% CHI CTD
+	ind: 	69.5923	Pow - MaxTFIDF MaxTFIDF - MaxCC CC
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	46.2744	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	30.9299	Log CE TFICF
+	ind: 	31.2111	* Pow CHI MaxCTD Log MaxGSS MaxCC
+	ind: 	16.4893	Pow Log MaxGSS MaxCC % TFIDF MaxGSS
+	ind: 	69.512	Pow - MaxTFIDF MaxTFIDF - MaxCC CC
+	ind: 	58.5861	* DF CE
+	ind: 	71.7815	Pow Pow CHI MaxCTD % TFIDF MaxGSS
+	ind: 	15.5051	Pow Log MaxGSS MaxCC % TFIDF MaxGSS
+	ind: 	68.0257	% MaxDom MaxCC
+	ind: 	26.3105	* Pow CHI MaxCTD Log MaxGSS MaxCC
+	ind: 	41.9763	Log MaxGSS MaxCC
+	ind: 	69.0701	+ sumTF GSS
+	ind: 	46.2744	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	69.1103	% MaxDom MaxCC
+	ind: 	55.4931	* DF CE
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	28.0779	Log TF MaxGSS
+	ind: 	69.753	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	53.9064	Pow * DF MaxCTD MaxAM
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	55.4931	* DF CE
+	ind: 	37.8389	Log CE TFICF
+	ind: 	71.2593	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	19.281	Pow Log MaxGSS MaxCC % TFIDF MaxGSS
+	ind: 	68.4274	+ P' MaxIG
+	ind: 	7.69231	- P' MaxIG
+	ind: 	45.6116	* * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	26.3105	Log MaxGSS MaxCC
+	ind: 	68.4274	+ P' MaxIG
+	ind: 	32.135	Log TF MaxGSS
+	ind: 	71.3999	Pow CHI MaxCTD
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.7212	% DOM IG
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	31.2111	* Pow CHI MaxCTD Log MaxGSS MaxCC
+generation 10:
+	ind: 	57.0998	% TFICF MaxCTD
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	70.9982	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.6007	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow CHI MaxCTD
+	ind: 	65.475	* * TF % MaxDom MaxCC * TF % MaxDom MaxCC
+	ind: 	70.3354	+ P' MaxIG
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	28.0779	Log TF MaxGSS
+	ind: 	48.2025	% CHI CTD
+	ind: 	26.3105	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	8.95762	Log * TF % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	46.2744	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	72.5045	Pow Pow MaxAM MaxIG * Pow Pow MaxAM MaxIG Log CE TFICF Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	30.9299	Log CE TFICF
+	ind: 	31.2111	* Pow CHI MaxCTD Log MaxGSS MaxCC
+	ind: 	69.3312	* * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.512	Pow - MaxTFIDF MaxTFIDF - MaxCC CC
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.7815	Pow Pow CHI MaxCTD % TFIDF MaxGSS
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.2392	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.6007	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	41.9763	Log MaxGSS MaxCC
+	ind: 	69.0701	+ sumTF GSS
+	ind: 	70.2952	+ MaxDom MaxCC
+	ind: 	69.1103	% MaxDom MaxCC
+	ind: 	61.3376	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF % TFIDF MaxGSS
+	ind: 	71.7815	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	28.0779	Log TF MaxGSS
+	ind: 	71.0986	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	71.0986	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	68.568	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	25.5875	Log CE TFICF
+	ind: 	73.0066	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.3756	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	19.281	Pow Log MaxGSS MaxCC % TFIDF MaxGSS
+	ind: 	68.4274	+ P' MaxIG
+	ind: 	7.69231	- P' MaxIG
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	68.4274	+ P' MaxIG
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.3999	Pow CHI MaxCTD
+	ind: 	28.0779	Log TF MaxGSS
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.7773	% MaxDom MaxCC
+generation 11:
+	ind: 	57.0998	% TFICF MaxCTD
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	68.2667	+ P' MaxIG
+	ind: 	46.2744	Log Log * TF % MaxDom MaxCC Pow MaxAM MaxIG + MaxAM MaxIG
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	65.475	* * TF % MaxDom MaxCC * TF % MaxDom MaxCC
+	ind: 	44.8082	Log Log sumTF IG Log CE TFICF
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.512	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF - MaxCC CC
+	ind: 	66.7202	Pow Pow + MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	8.95762	Log * TF % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	46.2744	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	64.8524	* * TF % MaxDom MaxCC * TF % MaxDom MaxCC
+	ind: 	46.5154	Log sumTF IG
+	ind: 	31.2111	* Pow CHI MaxCTD Log MaxGSS MaxCC
+	ind: 	69.3312	* * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.512	Pow - MaxTFIDF MaxTFIDF - MaxCC CC
+	ind: 	44.8082	Log Log * TF % MaxDom MaxCC Pow MaxAM MaxIG + MaxAM MaxIG
+	ind: 	69.6525	* % MaxDom MaxCC * TF % MaxDom MaxCC
+	ind: 	68.327	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow + P' MaxIG + CE TFICF + P' MaxIG
+	ind: 	45.2501	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	73.2075	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	41.9763	Log MaxGSS MaxCC
+	ind: 	69.0701	+ sumTF GSS
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	44.527	Log sumTF IG
+	ind: 	59.6505	Pow Pow MaxAM MaxIG * * TF + MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.7815	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	28.0779	Log TF MaxGSS
+	ind: 	71.0986	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	38.4415	Pow Pow MaxAM MaxIG * * TF + P' MaxIG Pow CHI MaxCTD
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	70.3354	* TF % MaxDom MaxCC
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	44.8082	Log Log * TF * TF % MaxDom MaxCC Pow MaxAM MaxIG + MaxAM MaxIG
+	ind: 	55.8546	% TFICF MaxCTD
+	ind: 	71.6208	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	46.5154	Log sumTF IG
+	ind: 	7.69231	- P' MaxIG
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.3639	+ CTD AM
+	ind: 	68.4274	+ P' MaxIG
+	ind: 	55.4127	% TFICF MaxCTD
+	ind: 	71.3195	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.5965	* Pow CHI MaxCTD + MaxDom MaxCC
+	ind: 	72.5045	Pow MaxAM MaxIG
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.1631	% MaxDom MaxCC
+generation 12:
+	ind: 	57.1601	Pow Pow MaxAM MaxIG * * TF + MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.4517	Pow GSS MaxCHI
+	ind: 	69.4517	Pow GSS MaxCHI
+	ind: 	68.2667	+ P' MaxIG
+	ind: 	46.2744	Log Log * TF % MaxDom MaxCC Pow MaxAM MaxIG + MaxAM MaxIG
+	ind: 	46.4149	- MaxCC CC
+	ind: 	12.8339	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF + sumTF GSS
+	ind: 	71.7413	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	28.0779	Log MaxGSS MaxCC
+	ind: 	50.3314	Pow Pow MaxAM MaxIG Log * TF % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	12.8339	Pow * TF % MaxDom MaxCC + sumTF GSS
+	ind: 	8.95762	Log * TF % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	71.2593	Pow Pow MaxAM MaxIG * * TF + MaxDom MaxCC Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	71.3195	Pow GSS MaxCHI
+	ind: 	41.8759	Log Log * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF Pow MaxAM MaxIG Pow CHI MaxCTD
+	ind: 	44.8082	Log Log * TF % MaxDom MaxCC Pow MaxAM MaxIG Pow CHI MaxCTD
+	ind: 	69.3312	* * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.512	Pow - MaxTFIDF MaxTFIDF - MaxCC CC
+	ind: 	46.2744	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	69.512	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF - MaxCC CC
+	ind: 	46.2744	% Pow CHI MaxGSS Log P' MaxCHI
+	ind: 	45.2501	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	73.2075	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.7773	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	69.0701	+ sumTF GSS
+	ind: 	69.8333	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	45.5915	Log MaxGSS MaxCC
+	ind: 	26.3105	Log sumTF IG
+	ind: 	71.7815	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	69.8333	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	41.8759	Log Log * TF % MaxDom MaxCC Pow MaxAM MaxIG Pow CHI MaxCTD
+	ind: 	44.8684	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.7413	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	43.7437	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	26.3105	Log TF MaxGSS
+	ind: 	9.03796	Log * TF % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	71.6208	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	46.5154	Log sumTF IG
+	ind: 	69.512	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF - MaxCC CC
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	45.2501	Log * TF Pow CHI MaxCTD Pow MaxAM MaxIG
+	ind: 	55.7542	% TFICF MaxCTD
+	ind: 	44.8082	Log CE TFICF
+	ind: 	70.7773	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	71.6208	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	31.2111	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	69.1303	* * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.1631	% MaxDom MaxCC
+generation 13:
+	ind: 	71.3597	Pow GSS MaxCHI
+	ind: 	37.2565	Pow % TF % MaxDom MaxCC + sumTF GSS
+	ind: 	70.9781	Pow Pow MaxAM MaxIG Pow GSS MaxCHI
+	ind: 	72.3639	Pow MaxAM MaxIG
+	ind: 	38.582	Pow % TF % MaxDom MaxCC + sumTF GSS
+	ind: 	46.4149	- MaxCC CC
+	ind: 	45.6517	Log Log MaxOR CHI MaxTFIDF
+	ind: 	71.9422	Pow MaxAM MaxIG
+	ind: 	69.512	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF - MaxCC CC
+	ind: 	50.3314	Pow Pow MaxAM MaxIG Log * TF % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	44.2057	Log sumTF IG
+	ind: 	72.6451	Pow MaxAM MaxIG
+	ind: 	70.6969	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	71.3195	Pow GSS MaxCHI
+	ind: 	71.42	Pow Log MaxGSS MaxCC Log CE TFICF
+	ind: 	37.7586	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	69.2709	Pow GSS MaxCHI
+	ind: 	45.5915	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.42	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.512	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF - MaxCC CC
+	ind: 	69.0701	+ sumTF GSS
+	ind: 	45.2501	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	73.2075	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	29.3432	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	69.0701	+ sumTF GSS
+	ind: 	26.5917	Log CE TFICF
+	ind: 	45.5915	Log MaxGSS MaxCC
+	ind: 	46.0534	Log Log MaxOR CHI MaxTFIDF
+	ind: 	30.6487	Log sumTF IG
+	ind: 	69.8333	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	41.8759	Log Log * TF % MaxDom MaxCC Pow MaxAM MaxIG Pow CHI MaxCTD
+	ind: 	71.1388	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF - MaxCC CC
+	ind: 	71.7413	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	46.3949	- MaxCC CC
+	ind: 	70.3354	* AM P
+	ind: 	71.1388	Pow Pow MaxAM MaxIG Log Log MaxOR CHI MaxTFIDF
+	ind: 	71.5806	Pow MaxAM MaxIG
+	ind: 	71.5405	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	46.5154	Log sumTF IG
+	ind: 	69.512	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF - MaxCC CC
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	45.2501	Log * TF Pow CHI MaxCTD Pow MaxAM MaxIG
+	ind: 	45.6517	Log CE TFICF
+	ind: 	71.7413	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	70.7773	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	71.6208	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	31.2111	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	72.5447	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	30.6487	Log sumTF IG
+generation 14:
+	ind: 	71.7413	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	45.6718	% CC TFICF
+	ind: 	69.512	Pow * * TF % MaxDom MaxCC + CE TFICF - MaxCC CC
+	ind: 	46.2744	Log sumTF IG
+	ind: 	44.9287	% CC TFICF
+	ind: 	67.2223	+ DF Log MaxIG sumDF
+	ind: 	45.6517	Log Log MaxOR CHI MaxTFIDF
+	ind: 	72.2635	* % MaxDom MaxCC + CE TFICF
+	ind: 	71.8217	Pow GSS MaxCHI
+	ind: 	50.3314	Pow Pow MaxAM MaxIG Log * TF % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	44.2057	Log sumTF IG
+	ind: 	72.2233	* Pow GSS MaxCHI % MaxDom MaxCC
+	ind: 	70.6969	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	30.6487	Log sumTF IG
+	ind: 	71.42	Pow Log MaxGSS MaxCC Log CE TFICF
+	ind: 	71.9823	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	73.3681	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	26.3105	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	68.3671	+ MaxTFICF DF
+	ind: 	69.9136	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF - MaxCC CC
+	ind: 	69.3312	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	45.2501	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.7413	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	29.3432	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	46.2944	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.44	+ MaxAM MaxIG
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	44.2057	Log Pow MaxAM MaxIG MaxTFIDF
+	ind: 	46.0534	Log sumTF IG
+	ind: 	13.1352	Pow Log MaxOR CHI Log * TF % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	15.8064	Pow Log MaxOR CHI Log * TF % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	71.1388	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF - MaxCC CC
+	ind: 	72.9263	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	72.5045	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	67.8249	* % MaxDom MaxCC * TF % MaxDom MaxCC
+	ind: 	71.1388	Pow Pow MaxAM MaxIG Log Log MaxOR CHI MaxTFIDF
+	ind: 	71.5806	Pow MaxAM MaxIG
+	ind: 	71.5405	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	46.5154	Log sumTF IG
+	ind: 	69.512	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF - MaxCC CC
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	46.0534	Log Pow MaxAM MaxIG MaxTFIDF
+	ind: 	45.6517	Log CE TFICF
+	ind: 	71.7413	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	70.7773	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	69.512	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.8735	+ Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	71.7413	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	30.6487	Log sumTF IG
+generation 15:
+	ind: 	67.5638	+ DF Log MaxIG sumDF
+	ind: 	45.6718	% CC TFICF
+	ind: 	26.3105	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	71.7815	% MaxDom MaxCC
+	ind: 	46.3748	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	67.2223	+ DF Log MaxIG sumDF
+	ind: 	68.9697	Pow Pow MaxAM MaxIG * * + CHI MaxCTD % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.2635	* % MaxDom MaxCC + CE TFICF
+	ind: 	26.3105	Log sumTF IG
+	ind: 	72.2836	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.7254	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	54.1474	Pow Pow MaxAM MaxIG * - TF Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.6969	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	46.0534	Log % MaxDom MaxCC MaxTFIDF
+	ind: 	34.7861	Log sumTF IG
+	ind: 	71.9823	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	30.6286	Log sumTF IG
+	ind: 	68.5077	* TF % MaxDom MaxCC
+	ind: 	72.2434	* Pow GSS MaxCHI % MaxDom MaxCC
+	ind: 	69.3714	Pow Pow MaxAM MaxIG * * TF * Pow CHI MaxCTD % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.3111	+ MaxTFICF DF
+	ind: 	46.2141	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.7413	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	29.3432	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	46.2944	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	73.1874	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	37.9996	Log IG DOM
+	ind: 	72.8861	Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	46.3748	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	71.8217	Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.9622	+ CC TFICF
+	ind: 	72.846	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	72.9263	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	72.2635	* % MaxDom MaxCC + CE TFICF
+	ind: 	51.6369	% CC TFICF
+	ind: 	71.3597	Pow CHI MaxCTD
+	ind: 	44.4266	* Log Pow MaxAM MaxIG MaxTFIDF % MaxDom MaxCC
+	ind: 	71.5405	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	70.4157	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	70.1747	Pow CHI MaxCTD
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	46.0534	Log Pow MaxAM MaxIG MaxTFIDF
+	ind: 	45.6517	Log CE TFICF
+	ind: 	70.6969	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.3714	Pow Pow MaxAM MaxIG * * + CHI MaxCTD % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.512	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.8735	+ Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	71.7413	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	30.6487	Log sumTF IG
+generation 16:
+	ind: 	71.6208	Pow % MaxDom MaxCC Log CE TFICF
+	ind: 	72.6049	% MaxAM MaxIG
+	ind: 	71.2995	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	72.0225	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	46.3748	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	67.2223	+ DF Log MaxIG sumDF
+	ind: 	71.3396	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	70.3153	+ IG GSS
+	ind: 	71.8417	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.2836	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	45.953	Pow Log Pow MaxAM MaxIG MaxTFIDF * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.661	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	29.3432	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	51.6369	% CC TFICF
+	ind: 	70.6969	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	71.9823	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	30.6286	Log sumTF IG
+	ind: 	70.3756	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	68.2266	+ MaxTFICF DF
+	ind: 	72.5447	Pow MaxAM MaxIG
+	ind: 	72.8259	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	46.2141	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.7413	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	29.3432	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	70.9781	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	73.1874	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	37.9996	Log IG DOM
+	ind: 	73.107	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.6568	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	67.5839	+ MaxTFICF DF
+	ind: 	69.6124	* % MaxDom MaxCC * TF + MaxAM MaxIG
+	ind: 	72.625	% MaxAM MaxIG
+	ind: 	72.9263	* Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	71.5003	Pow Pow Pow MaxAM MaxIG * Pow Pow MaxAM MaxIG Log CE TFICF Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	51.6369	% CC TFICF
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	38.0398	Log sumTF IG
+	ind: 	71.5405	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	1.24523	% MaxGSS - CE OR
+	ind: 	46.3949	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	36.674	Log IG DOM
+	ind: 	68.5881	+ MaxTFICF DF
+	ind: 	70.6969	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.6969	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	69.512	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	73.0669	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.7413	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	72.625	% MaxAM MaxIG
+generation 17:
+	ind: 	71.9622	+ MaxAM MaxIG
+	ind: 	72.6049	% MaxAM MaxIG
+	ind: 	29.3432	* % MaxDom MaxCC * % MaxDom MaxCC * TF Log MaxGSS MaxCC
+	ind: 	70.8777	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	46.3748	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	45.8526	Pow Log Pow MaxAM MaxIG MaxTFIDF * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.3396	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	73.0267	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.3396	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	29.3432	* % MaxDom MaxCC Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	45.953	Pow Log Pow MaxAM MaxIG MaxTFIDF * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.661	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.7011	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC % CC TFICF
+	ind: 	51.6369	% CC TFICF
+	ind: 	70.6969	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	71.9823	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	30.6286	Log sumTF IG
+	ind: 	72.7455	Pow Pow MaxAM MaxIG + P' MaxIG
+	ind: 	71.9422	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	29.3432	* % MaxDom MaxCC Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.7815	Pow Pow MaxAM MaxIG Log + MaxAM MaxIG + MaxAM MaxIG
+	ind: 	72.7254	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	26.3105	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	29.3432	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	70.9781	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	73.1874	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.9823	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.7413	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	70.6568	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	26.3105	Log sumTF IG
+	ind: 	73.087	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.625	% MaxAM MaxIG
+	ind: 	46.0534	Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.5003	Pow Pow Pow MaxAM MaxIG * Pow Pow MaxAM MaxIG Log CE TFICF Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.6208	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	70.1546	+ IG GSS
+	ind: 	71.5405	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	71.9622	+ MaxAM MaxIG
+	ind: 	70.8375	Pow Pow Pow MaxAM MaxIG Log CE TFICF * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	44.9488	% CC TFICF
+	ind: 	71.0183	Pow Pow Pow MaxAM MaxIG Log CE TFICF * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	68.5881	+ MaxTFICF DF
+	ind: 	71.3195	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	70.6969	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	69.512	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	68.4876	* % MaxDom MaxCC * % MaxDom MaxCC * TF + MaxAM MaxIG
+	ind: 	71.7413	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	45.8526	* % MaxDom MaxCC Log MaxGSS MaxCC
+generation 18:
+	ind: 	29.3432	* % MaxDom MaxCC Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	29.3432	* % MaxDom MaxCC Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.8618	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	71.8016	+ GINI MaxTFICF
+	ind: 	37.8791	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	45.8526	Pow Log Pow MaxAM MaxIG MaxTFIDF * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.7413	Pow * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF * * TF % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	37.8791	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	71.3396	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	29.3432	* % MaxDom MaxCC Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.2075	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.661	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.3756	* % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	51.6369	% CC TFICF
+	ind: 	70.6969	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	71.9823	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.3681	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.2593	+ MaxAM MaxIG
+	ind: 	29.3432	* % MaxDom MaxCC Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.4802	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.3957	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.2551	Pow Pow MaxAM MaxIG * + AM MaxTFICF Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.8777	Pow Pow MaxAM MaxIG Log % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	71.3999	Pow Pow AM OR MaxDom
+	ind: 	73.1874	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.9823	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.7413	+ GINI MaxTFICF
+	ind: 	71.8417	* + AM MaxTFICF * sumDF MaxIG
+	ind: 	71.902	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	73.087	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.2878	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.3756	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.6208	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.5003	Pow Pow Pow MaxAM MaxIG * Pow Pow MaxAM MaxIG Log CE TFICF Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	46.1137	Pow * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG * CE TFICF
+	ind: 	71.179	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	70.8375	Pow Pow Pow MaxAM MaxIG Log CE TFICF * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	40.4901	* Log * TF % MaxDom MaxCC Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	71.0183	Pow Pow Pow MaxAM MaxIG Log CE TFICF * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.4041	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	71.3195	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	70.6969	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	69.512	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	68.4876	* % MaxDom MaxCC * % MaxDom MaxCC * TF + MaxAM MaxIG
+	ind: 	71.3396	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.4802	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+generation 19:
+	ind: 	70.7572	* + MaxAM MaxIG % MaxDom MaxCC
+	ind: 	29.3432	* % MaxDom MaxCC Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.9221	% MaxDom MaxCC
+	ind: 	64.4105	% CE MaxIG
+	ind: 	37.8791	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	70.3555	Pow + MaxAM MaxIG Log % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	45.8526	Pow Log Pow MaxAM MaxIG MaxTFIDF * * TF % MaxDom MaxCC Pow Pow Pow AM OR MaxDom Log CE TFICF
+	ind: 	37.8791	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	71.9622	Pow Log Pow MaxAM MaxIG MaxTFIDF % * TF % MaxDom MaxCC * Log CE TFICF Pow * MaxAM MaxIG Log CE TFICF
+	ind: 	70.9781	Pow MaxAM MaxIG
+	ind: 	71.7212	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	72.1229	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	71.661	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.3756	* % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	45.8526	Pow Log Pow MaxAM MaxIG MaxTFIDF % * TF % MaxDom MaxCC * * TF % MaxDom MaxCC Pow * MaxAM MaxIG Log CE TFICF
+	ind: 	71.3597	Pow % MaxDom MaxCC Log CE TFICF
+	ind: 	73.2878	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	38.6423	* Pow Pow MaxAM MaxIG Log % MaxDom MaxCC + MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	30.4077	* Log * TF % MaxDom MaxCC Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	71.2392	Pow * TF % MaxDom MaxCC Log CE TFICF
+	ind: 	22.153	Pow Pow Pow MaxAM MaxIG * TF % MaxDom MaxCC * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	38.6423	* % MaxDom MaxCC Log MaxGSS MaxCC
+	ind: 	70.2551	Pow Pow MaxAM MaxIG * + AM MaxTFICF Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.8777	Pow Pow MaxAM MaxIG Log % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	64.0088	* MaxCC P'
+	ind: 	73.1874	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.5405	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	73.2878	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	70.1145	Pow MaxCC MaxTFIDF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.087	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.2878	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.3756	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.9781	Pow MaxAM MaxIG
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.5003	Pow Pow Pow MaxAM MaxIG * Pow Pow MaxAM MaxIG Log CE TFICF Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.3396	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.9622	Pow MaxAM MaxIG
+	ind: 	70.8375	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.2392	* + MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	71.0183	Pow Pow Pow MaxAM MaxIG Log CE TFICF * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.4041	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	71.3195	Pow Pow MaxAM MaxIG Log Log MaxGSS MaxCC + MaxAM MaxIG
+	ind: 	71.3195	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.3481	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	68.4876	* % MaxDom MaxCC * % MaxDom MaxCC * TF + MaxAM MaxIG
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.4802	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+generation 20:
+	ind: 	29.3432	* % MaxDom MaxCC Log * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.9221	% MaxDom MaxCC
+	ind: 	67.9655	Pow * sumDF MaxIG - P' MaxCTD
+	ind: 	71.6811	Pow % MaxDom MaxCC % CE MaxIG
+	ind: 	73.0669	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	73.4284	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.7254	Pow Pow Pow MaxAM MaxIG * Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.9622	Pow Log Pow MaxAM MaxIG MaxTFIDF % * TF % MaxDom MaxCC * Log CE TFICF Pow * MaxAM MaxIG Log CE TFICF
+	ind: 	70.9781	Pow MaxAM MaxIG
+	ind: 	71.7212	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	72.1229	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	72.0827	Pow % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	70.3756	* % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	73.3079	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.3597	Pow % MaxDom MaxCC Log CE TFICF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	38.6423	* Pow Pow MaxAM MaxIG Log % MaxDom MaxCC + MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.8819	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.8375	Pow MaxCC MaxTFIDF
+	ind: 	72.8058	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.2551	Pow Pow MaxAM MaxIG * + AM MaxTFICF Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.8777	Pow Pow MaxAM MaxIG Log % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	64.0088	* MaxCC P'
+	ind: 	71.8819	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.2878	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.0267	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.1145	Pow MaxCC MaxTFIDF
+	ind: 	37.2565	* Pow Pow MaxAM MaxIG Log % MaxDom MaxCC + MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	66.5596	* TF % MaxDom MaxCC
+	ind: 	72.9062	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	46.1137	- MaxTFICF GINI
+	ind: 	72.7455	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	73.1472	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.3597	Pow % MaxDom MaxCC Log CE TFICF
+	ind: 	71.3396	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.9622	Pow MaxAM MaxIG
+	ind: 	34.2438	Log CE TFICF
+	ind: 	72.7455	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	68.6684	* * TF % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	72.4041	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	70.3555	+ P' MaxIG
+	ind: 	28.7005	- DOM sumTF
+	ind: 	73.5891	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.7572	Pow Pow MaxAM MaxIG - % MaxDom MaxCC + MaxAM MaxIG
+	ind: 	72.8259	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.4802	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+generation 21:
+	ind: 	72.143	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.6409	Pow MaxCC MaxTFIDF
+	ind: 	70.1546	Pow MaxCC MaxTFIDF
+	ind: 	71.6811	Pow % MaxDom MaxCC % CE MaxIG
+	ind: 	70.7973	Pow MaxCC MaxTFIDF
+	ind: 	73.4284	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	11.3276	- MaxCHI CTD
+	ind: 	71.1388	+ P' MaxIG
+	ind: 	69.7329	Pow MaxCC MaxTFIDF
+	ind: 	71.7212	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	72.1229	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	72.0827	Pow % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	70.476	+ P' MaxIG
+	ind: 	73.3079	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.3597	Pow % MaxDom MaxCC Log CE TFICF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.0066	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	72.1631	Pow MaxCC MaxTFIDF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.8819	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.8174	+ P' MaxIG
+	ind: 	72.8058	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.2551	Pow Pow MaxAM MaxIG * + AM MaxTFICF Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.8978	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	72.3438	+ MaxCC MaxCTD
+	ind: 	71.5003	Pow Pow MaxCC MaxTFIDF % CE MaxIG
+	ind: 	70.7973	Pow MaxCC MaxTFIDF
+	ind: 	70.5162	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.1145	Pow MaxCC MaxTFIDF
+	ind: 	70.9781	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	70.7773	+ MaxCC MaxCTD
+	ind: 	72.9062	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.4802	Pow Pow MaxAM MaxIG * + AM MaxTFICF Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.6166	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.661	Pow Pow MaxAM MaxIG * + AM MaxTFICF Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.4844	+ MaxCC MaxCTD
+	ind: 	7.73248	- MaxOR % AM IDF
+	ind: 	72.1832	Pow Pow Pow MaxAM MaxIG * Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.7413	% MaxDom MaxCC
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	71.4601	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	72.4041	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	70.8375	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	28.7005	- DOM sumTF
+	ind: 	73.5891	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.866	% MaxDom MaxCC
+	ind: 	72.143	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.1145	Pow % MaxDom MaxCC % CE MaxIG
+generation 22:
+	ind: 	72.143	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	55.232	% MaxCC MaxCTD
+	ind: 	13.7779	- MaxOR % AM IDF
+	ind: 	70.7973	Pow MaxCC MaxTFIDF
+	ind: 	73.4284	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	11.3276	- MaxCHI CTD
+	ind: 	11.3075	- MaxOR % AM IDF
+	ind: 	69.7329	Pow MaxCC MaxTFIDF
+	ind: 	71.7212	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	72.846	% MaxDom MaxCC
+	ind: 	72.0827	Pow % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	70.476	+ P' MaxIG
+	ind: 	73.3079	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.3597	Pow % MaxDom MaxCC Log CE TFICF
+	ind: 	70.5363	Pow Pow MaxAM MaxIG Log * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	69.9538	Pow GSS - AM TFICF
+	ind: 	72.8861	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.3957	Pow MaxDom MaxCC
+	ind: 	73.4284	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	64.6917	* CE AM
+	ind: 	72.846	% MaxDom MaxCC
+	ind: 	70.8978	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	72.3438	+ MaxCC MaxCTD
+	ind: 	65.3545	* CE AM
+	ind: 	69.773	Pow Pow MaxAM MaxIG Log * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	70.5162	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.1145	Pow MaxCC MaxTFIDF
+	ind: 	70.9781	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	73.5891	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.9062	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.4242	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.5764	+ MaxCC MaxTFIDF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	7.73248	- MaxOR % AM IDF
+	ind: 	69.532	+ MaxCC MaxTFIDF
+	ind: 	70.3354	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	34.9869	Log GSS AM
+	ind: 	72.4041	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	70.8375	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	7.69231	- MaxOR % AM IDF
+	ind: 	72.5849	Pow % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	73.0468	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.8819	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+generation 23:
+	ind: 	73.0066	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	55.232	% MaxCC MaxCTD
+	ind: 	31.2312	Log Log DOM TFICF + MaxTFICF OR
+	ind: 	72.1229	% MaxDom MaxCC
+	ind: 	73.4284	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.0426	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	11.3075	- MaxOR % AM IDF
+	ind: 	72.9865	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	72.9062	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	70.3555	Pow MaxDom MaxCC
+	ind: 	70.476	Pow MaxCC MaxTFIDF
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	71.1187	Pow MaxCC MaxTFIDF
+	ind: 	71.8016	Pow MaxAM MaxIG
+	ind: 	71.179	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	69.9538	Pow GSS - AM TFICF
+	ind: 	72.8861	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	70.5764	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.5806	Pow MaxAM MaxIG
+	ind: 	70.6367	* IDF IDF
+	ind: 	69.7931	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF Log CE TFICF
+	ind: 	72.846	% MaxDom MaxCC
+	ind: 	70.8978	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	70.1145	+ MaxCC MaxTFIDF
+	ind: 	65.3545	* CE AM
+	ind: 	70.5764	+ MaxCC MaxTFIDF
+	ind: 	70.5162	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.1145	Pow MaxCC MaxTFIDF
+	ind: 	73.2075	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.5891	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.9062	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.5806	Pow MaxAM MaxIG
+	ind: 	69.9136	* IDF IDF
+	ind: 	69.532	+ MaxCC MaxTFIDF
+	ind: 	73.0468	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	73.2075	Pow Pow MaxAM MaxIG + P' MaxIG
+	ind: 	69.532	+ MaxCC MaxTFIDF
+	ind: 	72.846	% MaxDom MaxCC
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	70.8978	Pow MaxCC MaxTFIDF
+	ind: 	70.6367	* IDF IDF
+	ind: 	70.8375	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.0426	Pow MaxCC MaxTFIDF
+	ind: 	69.8132	Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	71.8819	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.4284	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+generation 24:
+	ind: 	72.9464	% MaxDom MaxCC
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.7297	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.8217	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.2276	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.4284	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.0426	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	11.3075	- MaxOR % AM IDF
+	ind: 	72.9865	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	72.9062	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	70.5162	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Log CE TFICF
+	ind: 	71.4802	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow + MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	68.6885	% MaxCC MaxTFIDF
+	ind: 	71.902	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Log CE TFICF + P' MaxIG
+	ind: 	70.8978	* Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	70.5162	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.8861	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	70.5764	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	73.7297	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	68.9496	% MaxCC MaxTFIDF
+	ind: 	72.625	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.6811	Pow MaxCC MaxTFIDF
+	ind: 	70.8978	Pow MaxCC MaxTFIDF
+	ind: 	71.9622	Pow MaxCC MaxTFIDF
+	ind: 	65.3545	* CE AM
+	ind: 	72.5849	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	7.73248	- MaxOR % AM IDF
+	ind: 	72.9062	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.2075	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.9464	% MaxDom MaxCC
+	ind: 	72.9062	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	72.0426	Pow MaxCC MaxTFIDF
+	ind: 	72.4443	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	70.6768	* IDF IDF
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.2075	Pow Pow MaxAM MaxIG + P' MaxIG
+	ind: 	42.2173	- Log CHI MaxOR sumDF
+	ind: 	70.8375	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow + MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.8978	Pow MaxCC MaxTFIDF
+	ind: 	70.6367	* IDF IDF
+	ind: 	71.8016	Pow MaxAM MaxIG
+	ind: 	69.8936	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.1229	% MaxDom MaxCC
+	ind: 	71.4802	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow + MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.8819	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.7815	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+generation 25:
+	ind: 	72.9464	% MaxDom MaxCC
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	68.9496	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	71.8217	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	73.2276	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	7.53163	- MaxOR % AM IDF
+	ind: 	72.0426	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.6811	Pow Pow Pow MaxAM MaxIG - MaxDom MaxCC + P' MaxIG
+	ind: 	72.9062	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	72.9062	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	70.8978	Pow MaxCC MaxTFIDF
+	ind: 	72.7455	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	71.1187	Pow MaxCC MaxTFIDF
+	ind: 	71.7413	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	72.4644	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	70.7572	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.8861	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	72.2836	% MaxDom MaxCC
+	ind: 	72.3639	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.7614	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	70.5162	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	67.3428	Pow GINI CC
+	ind: 	69.8936	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.4802	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow + MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	65.3545	* CE AM
+	ind: 	72.5849	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	34.7861	Log CE TFICF
+	ind: 	70.7773	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	35.1275	- MaxDom MaxCC
+	ind: 	70.7773	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	69.7329	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow + MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	5.001	- MaxOR % AM IDF
+	ind: 	72.4443	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	72.5849	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	35.0673	- MaxDom MaxCC
+	ind: 	73.2075	Pow Pow MaxAM MaxIG + P' MaxIG
+	ind: 	7.51155	- MaxOR % AM IDF
+	ind: 	73.2276	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.902	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Log CE TFICF + P' MaxIG
+	ind: 	70.8978	Pow MaxCC MaxTFIDF
+	ind: 	70.6367	* IDF IDF
+	ind: 	71.8016	Pow MaxAM MaxIG
+	ind: 	69.8936	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.4443	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.4802	Pow Pow Pow MaxAM MaxIG * Log MaxGSS MaxCC Pow + MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.7773	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+generation 26:
+	ind: 	72.9464	% MaxDom MaxCC
+	ind: 	70.5563	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	68.9496	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	3.2135	- MaxOR % AM IDF
+	ind: 	60.8757	Pow % MaxDom MaxCC * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	68.9496	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	72.0426	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	64.3503	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.2191	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	70.5563	Pow GINI CC
+	ind: 	72.7455	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	68.9094	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	46.2744	Log CE TFICF
+	ind: 	71.7413	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	73.4284	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.4644	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	70.7572	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	8.69653	- MaxOR % AM IDF
+	ind: 	72.2836	% MaxDom MaxCC
+	ind: 	72.1028	Pow Pow MaxCC MaxTFIDF + P' MaxIG
+	ind: 	71.7413	% MaxDom MaxCC
+	ind: 	70.5162	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	46.5154	Log MaxDom MaxCC
+	ind: 	71.2995	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	72.7455	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow + MaxAM MaxIG Log CE TFICF
+	ind: 	72.384	Pow Pow MaxCC MaxTFIDF + P' MaxIG
+	ind: 	72.5849	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	34.7861	Log CE TFICF
+	ind: 	71.3396	Pow Pow Pow MaxAM MaxIG - MaxDom MaxCC + P' MaxIG
+	ind: 	72.9464	% MaxDom MaxCC
+	ind: 	70.7773	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	69.753	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	73.328	+ * GSS DOM MaxCTD
+	ind: 	71.8016	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	71.1589	Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	71.1388	Pow MaxCC MaxTFIDF
+	ind: 	72.7455	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.6208	* Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	68.4676	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	66.3788	Pow * * TF Pow Pow MaxAM MaxIG + CE TFICF Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	71.902	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Log CE TFICF + P' MaxIG
+	ind: 	72.8058	Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.661	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	72.4443	% MaxDom MaxCC
+	ind: 	50.8536	% CC P
+	ind: 	72.4443	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.7455	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.0225	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+generation 27:
+	ind: 	68.9094	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	70.5563	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	68.9496	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	70.7572	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	60.8757	Pow % MaxDom MaxCC * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.1589	% MaxDom MaxCC
+	ind: 	72.0426	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	64.3503	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.1229	Pow Pow MaxAM MaxIG * Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.0341	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	72.7455	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	46.2744	Log MaxOR + CTD IG
+	ind: 	72.3037	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.7413	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	59.6505	Pow % MaxDom MaxCC * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	72.4644	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	71.3195	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	8.69653	- MaxOR % AM IDF
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.1028	Pow Pow MaxCC MaxTFIDF + P' MaxIG
+	ind: 	72.846	Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	72.4644	% MaxDom MaxCC
+	ind: 	72.0627	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	72.1028	Pow GINI CC
+	ind: 	72.0225	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	72.384	Pow Pow MaxCC MaxTFIDF + P' MaxIG
+	ind: 	72.5849	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	54.5491	% CC P
+	ind: 	46.2744	Log MaxOR + CTD IG
+	ind: 	72.9464	% MaxDom MaxCC
+	ind: 	69.5521	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	71.8217	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	73.328	+ * GSS DOM MaxCTD
+	ind: 	71.8016	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	71.199	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	54.529	% CC P
+	ind: 	72.0225	Pow % MaxDom MaxCC + P' MaxIG
+	ind: 	72.4644	% MaxDom MaxCC
+	ind: 	68.4676	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	72.9464	% MaxDom MaxCC
+	ind: 	70.4559	Pow * * TF % MaxDom MaxCC Pow + MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	72.8058	Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.661	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	72.7857	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	50.8536	% CC P
+	ind: 	72.0627	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	72.0627	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.0225	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+generation 28:
+	ind: 	68.9094	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	70.5563	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	63.7277	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.5162	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	60.8757	Pow % MaxDom MaxCC * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	69.6927	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	66.7001	Pow * * TF % MaxDom MaxCC * TF % MaxDom MaxCC Pow Pow MaxCC MaxTFIDF + P' MaxIG
+	ind: 	72.9464	+ * GSS DOM MaxCTD
+	ind: 	69.9136	Pow * * TF Pow MaxDom MaxCC % AM IDF + P' MaxIG
+	ind: 	72.7455	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	68.7889	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	69.6726	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	69.8132	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.846	% MaxDom MaxCC
+	ind: 	70.1747	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	71.3195	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	68.7487	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	71.9622	Pow Pow % MaxDom MaxCC * * TF Pow MaxAM MaxIG + CE TFICF Log CE TFICF
+	ind: 	72.1028	Pow Pow MaxCC MaxTFIDF + P' MaxIG
+	ind: 	72.846	Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	70.8978	Pow * * TF % MaxDom MaxCC % AM IDF Pow Pow MaxCC MaxTFIDF + P' MaxIG
+	ind: 	72.1028	Pow Pow MaxCC MaxTFIDF + P' MaxIG
+	ind: 	70.5162	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.0225	* % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.9062	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	68.9496	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	43.5027	Log MaxOR MaxCC
+	ind: 	72.9464	% MaxDom MaxCC
+	ind: 	69.5521	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	71.2995	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	68.4475	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	71.8016	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	71.199	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	64.5109	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	68.7889	Pow * * TF % MaxDom MaxCC Pow % AM IDF Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	72.4644	% MaxDom MaxCC
+	ind: 	68.4676	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	72.3238	Pow Pow MaxCC MaxTFIDF + P' MaxIG
+	ind: 	69.2308	Pow Pow * TF % MaxDom MaxCC Pow MaxAM MaxIG + P' MaxIG
+	ind: 	72.8058	Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	69.8735	+ P' MaxIG
+	ind: 	72.7857	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.0468	Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.9622	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF Log CE TFICF
+	ind: 	69.8333	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG * % MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.7455	% MaxDom MaxCC
+generation 29:
+	ind: 	72.7455	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	68.7889	Pow * * TF * MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	72.8861	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	63.7277	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	5.96505	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC * TF Pow MaxAM MaxIG
+	ind: 	72.5045	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	71.9221	Pow % AM IDF Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	70.0944	Pow * * TF % MaxDom MaxCC + CE TFICF Pow MaxCC MaxTFIDF
+	ind: 	71.9622	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF Log CE TFICF
+	ind: 	72.9464	+ * GSS DOM MaxCTD
+	ind: 	69.6726	Pow * * TF % MaxDom MaxCC * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	68.3471	Pow * * TF * MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	69.6325	* * TF Pow MaxAM MaxIG % MaxDom MaxCC
+	ind: 	69.6726	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	69.8132	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.846	% MaxDom MaxCC
+	ind: 	71.0384	Pow Pow MaxAM MaxIG * % MaxDom MaxCC % AM IDF
+	ind: 	30.9098	Log CE TFICF
+	ind: 	71.3597	Pow * % AM IDF Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.8132	Pow * * TF Pow Pow MaxAM MaxIG Log MaxGSS MaxCC % AM IDF Log CE TFICF
+	ind: 	73.087	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	69.8132	Pow * * TF % MaxDom MaxCC * TF + CE TFICF Log CE TFICF
+	ind: 	70.8978	Pow * * TF % MaxDom MaxCC % AM IDF Pow Pow MaxCC MaxTFIDF + P' MaxIG
+	ind: 	70.5162	Pow % AM IDF Log CE TFICF
+	ind: 	70.5162	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	71.0183	Pow * * TF % MaxDom MaxCC * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	71.6007	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.0183	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	73.1271	+ CE TFICF
+	ind: 	43.5027	Log MaxOR MaxCC
+	ind: 	69.7931	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	69.5521	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	70.5965	Pow Pow Pow - MaxAM MaxIG Log CE TFICF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC % AM IDF
+	ind: 	68.4475	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	71.6811	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF Log CE TFICF
+	ind: 	71.199	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	64.5109	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	71.6007	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.3597	Pow * % AM IDF % AM IDF Log CE TFICF
+	ind: 	68.4676	Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	71.3597	Pow * % AM IDF + P' MaxIG Log CE TFICF
+	ind: 	69.8132	Pow * * TF + CE TFICF % AM IDF Log CE TFICF
+	ind: 	71.3597	Pow * * TF + CE TFICF % AM IDF Log CE TFICF
+	ind: 	72.5447	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	72.384	Pow Pow MaxCC MaxTFIDF + P' MaxIG
+	ind: 	73.0468	Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	72.5849	+ * GSS DOM MaxCTD
+	ind: 	68.4475	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	71.3597	Pow * * TF Pow Pow MaxCC MaxTFIDF + P' MaxIG % AM IDF Log CE TFICF
+	ind: 	72.7455	% MaxDom MaxCC
+generation 30:
+	ind: 	72.7455	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.8174	Pow * Log MaxGSS MaxCC + P' MaxIG Log CE TFICF
+	ind: 	69.5923	Pow * Log MaxGSS MaxCC + P' MaxIG Log CE TFICF
+	ind: 	45.5714	Log CE TFICF
+	ind: 	69.8132	Pow * Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC % AM IDF Log CE TFICF
+	ind: 	72.8861	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.9221	Pow % AM IDF Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	70.0944	Pow * * TF % MaxDom MaxCC + CE TFICF Pow MaxCC MaxTFIDF
+	ind: 	70.3354	+ MaxDom MaxCC
+	ind: 	72.9464	+ * GSS DOM MaxCTD
+	ind: 	69.6726	Pow * * TF % MaxDom MaxCC * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	68.3471	Pow * * TF * MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	69.6726	% MaxGSS IDF
+	ind: 	72.5447	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	69.2308	+ P' MaxIG
+	ind: 	72.846	% MaxDom MaxCC
+	ind: 	70.3756	Pow Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow MaxAM MaxIG Pow MaxCC MaxTFIDF
+	ind: 	72.2836	Pow Pow * * TF % MaxDom MaxCC % AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.3597	Pow * % AM IDF Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.8132	Pow * * TF Pow Pow MaxAM MaxIG Log MaxGSS MaxCC % AM IDF Log CE TFICF
+	ind: 	63.7277	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	69.994	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	72.8861	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.1589	Pow Pow MaxAM MaxIG * % MaxDom MaxCC % AM IDF
+	ind: 	73.2075	+ CE TFICF
+	ind: 	71.0183	Pow * * TF % MaxDom MaxCC * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	70.3957	+ P' MaxIG
+	ind: 	71.0183	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.8259	Pow Pow MaxAM MaxIG + P' MaxIG
+	ind: 	6.08556	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC * TF Pow MaxAM MaxIG
+	ind: 	69.6927	Pow * * TF % MaxDom MaxCC * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	69.5521	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	70.5965	Pow * Log MaxGSS MaxCC + P' MaxIG Log CE TFICF
+	ind: 	68.4475	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	72.846	% MaxDom MaxCC
+	ind: 	70.8375	Pow * * TF % MaxDom MaxCC + CE TFICF Pow MaxCC MaxTFIDF
+	ind: 	64.5109	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	65.6758	Pow * * TF % MaxDom MaxCC * TF + CE TFICF Pow MaxCC MaxTFIDF
+	ind: 	69.8132	Pow * * TF % MaxDom MaxCC * TF + CE TFICF Log CE TFICF
+	ind: 	70.476	Pow + P' MaxIG + P' MaxIG
+	ind: 	71.3597	Pow * % AM IDF + P' MaxIG Log CE TFICF
+	ind: 	69.8132	Pow * * TF + CE TFICF % AM IDF Log CE TFICF
+	ind: 	72.7054	Pow Pow * * TF % MaxDom MaxCC % AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	28.4194	Pow * Log MaxGSS MaxCC + P' MaxIG % MaxDom MaxCC
+	ind: 	69.2308	+ P' MaxIG
+	ind: 	72.846	% MaxDom MaxCC
+	ind: 	64.3704	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	68.4475	Pow * * TF % MaxDom MaxCC Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC Pow MaxCC MaxTFIDF
+	ind: 	72.0827	Pow Pow MaxAM MaxIG * % MaxDom MaxCC % AM IDF
+	ind: 	71.7614	Pow * * TF * MaxDom MaxCC Pow Pow MaxAM MaxIG + CE TFICF * % MaxDom MaxCC % AM IDF
+generation 31:
+	ind: 	72.7455	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.5606	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	69.8132	Pow * Pow * TF % MaxDom MaxCC Pow MaxAM MaxIG % AM IDF Log CE TFICF
+	ind: 	45.5714	Log CE TFICF
+	ind: 	69.8132	Pow * Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC % AM IDF Log CE TFICF
+	ind: 	71.9622	% MaxGSS IDF
+	ind: 	63.2255	- DF TFICF
+	ind: 	69.6927	Pow * * TF % MaxDom MaxCC * * TF % MaxDom MaxCC Log CE TFICF Log CE TFICF
+	ind: 	71.3597	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	72.9464	+ * GSS DOM MaxCTD
+	ind: 	72.0024	Pow Pow MaxAM MaxIG + P' MaxIG
+	ind: 	72.3438	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	69.6726	% MaxGSS IDF
+	ind: 	71.9622	Pow Pow Pow MaxAM MaxIG * * TF Log MaxGSS MaxCC + CE TFICF Pow P' MaxIG
+	ind: 	69.2308	+ P' MaxIG
+	ind: 	69.6124	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	45.6517	Log MaxCTD AM
+	ind: 	69.6726	Pow * * TF * TF % MaxDom MaxCC * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	69.6927	Pow * * TF % MaxDom MaxCC * % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	69.8132	Pow * Pow * TF % MaxDom MaxCC Log MaxGSS MaxCC % AM IDF Log MaxDom MaxCC
+	ind: 	72.8058	Pow Pow * * TF % MaxDom MaxCC % AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	66.3989	- DF TFICF
+	ind: 	72.8861	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	71.7815	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	70.8777	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	71.0183	Pow * * TF % MaxDom MaxCC * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.7054	Pow Pow * * TF % MaxDom MaxCC % AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.0183	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.8259	Pow Pow MaxAM MaxIG + P' MaxIG
+	ind: 	72.3037	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	72.7455	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG - MaxGSS MaxCC + P' MaxIG
+	ind: 	70.8777	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	71.661	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	69.6726	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.846	% MaxDom MaxCC
+	ind: 	70.0542	- Pow MaxCC MaxCTD CE
+	ind: 	64.5109	Pow Pow Pow MaxAM MaxIG * * TF Pow MaxAM MaxIG + CE TFICF + P' MaxIG
+	ind: 	70.8777	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	69.4919	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.476	Pow + P' MaxIG + P' MaxIG
+	ind: 	71.3597	Pow * % AM IDF + P' MaxIG Log CE TFICF
+	ind: 	69.8132	Pow * * TF + CE TFICF % AM IDF Log CE TFICF
+	ind: 	72.7054	Pow Pow * * TF % MaxDom MaxCC % AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	64.1494	Pow - DF TFICF + P' MaxIG
+	ind: 	72.2033	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow - MaxAM MaxIG Log CE TFICF
+	ind: 	63.2657	- DF TFICF
+	ind: 	71.661	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	72.7455	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.5045	% MaxDom MaxCC
+	ind: 	73.328	+ * GSS DOM MaxCTD
+generation 32:
+	ind: 	72.7455	Pow MaxAM MaxIG
+	ind: 	71.5606	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	65.6758	- DF TFICF
+	ind: 	70.6768	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	72.4242	* MaxAM DOM
+	ind: 	71.9622	% MaxGSS IDF
+	ind: 	63.2255	- DF TFICF
+	ind: 	69.3312	* TF % MaxDom MaxCC
+	ind: 	71.3597	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	69.9739	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	71.0986	+ P' MaxIG
+	ind: 	72.3438	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	69.994	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	69.6927	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	69.2308	+ P' MaxIG
+	ind: 	72.2635	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.6568	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.3195	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	72.6451	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.6451	Pow Pow MaxAM MaxIG Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.8058	Pow Pow * * TF % MaxDom MaxCC % AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.2308	+ P' MaxIG
+	ind: 	70.3957	+ P' MaxIG
+	ind: 	71.7815	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	45.1697	Log MaxCTD AM
+	ind: 	70.3957	+ P' MaxIG
+	ind: 	72.7054	Pow Pow * * TF % MaxDom MaxCC % AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.8132	Pow * Pow * TF % MaxDom MaxCC Pow MaxAM MaxIG % AM IDF Log CE TFICF
+	ind: 	72.1631	Pow % AM IDF + P' MaxIG
+	ind: 	72.3037	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	70.0141	% MaxGSS IDF
+	ind: 	70.8777	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	71.661	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	69.6726	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.846	% MaxDom MaxCC
+	ind: 	72.7656	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.661	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	70.8777	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	70.3957	+ P' MaxIG
+	ind: 	71.661	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	66.3989	- DF TFICF
+	ind: 	71.3195	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	69.6124	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	69.2308	+ P' MaxIG
+	ind: 	69.4919	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.4644	Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	73.1472	* MaxAM DOM
+	ind: 	72.1631	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	26.3507	Log MaxGSS MaxCC
+	ind: 	72.8861	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+generation 33:
+	ind: 	46.2744	Log MaxAM MaxIG
+	ind: 	71.5606	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	65.6758	- DF TFICF
+	ind: 	70.6768	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Log CE TFICF
+	ind: 	45.7522	Log TFICF TFIDF
+	ind: 	73.0468	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	63.2255	- DF TFICF
+	ind: 	71.8417	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.3597	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	69.9739	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	63.0046	Pow Pow - DF TFICF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.3438	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	69.994	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	70.6969	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.4644	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.2635	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.6568	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.4919	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.6325	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	69.9337	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	69.9739	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	69.2308	+ P' MaxIG
+	ind: 	70.3957	+ P' MaxIG
+	ind: 	71.7815	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	33.8622	Pow - AM IDF + P' MaxIG
+	ind: 	71.2794	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.5606	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	65.7963	Pow + P' MaxIG + P' MaxIG
+	ind: 	72.1631	Pow % AM IDF + P' MaxIG
+	ind: 	72.3037	Pow Pow MaxAM MaxIG * * TF % MaxDom MaxCC Pow MaxAM MaxIG
+	ind: 	70.0141	% MaxGSS IDF
+	ind: 	72.8058	Pow Pow * * TF % MaxDom MaxCC % AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	63.9687	Pow Pow * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	31.2312	Log MaxCC MaxTFIDF
+	ind: 	71.6208	Pow MaxAM MaxIG
+	ind: 	69.6726	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.8777	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	72.8058	Pow Pow * * TF % MaxDom MaxCC % AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.4443	Pow MaxAM MaxIG
+	ind: 	66.3989	- DF TFICF
+	ind: 	70.3957	+ P' MaxIG
+	ind: 	71.3195	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	72.4242	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	69.4919	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.4919	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.6568	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.2794	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	70.3957	+ P' MaxIG
+	ind: 	72.8861	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+generation 34:
+	ind: 	70.6768	* * TF Pow MaxAM MaxIG + CE TFICF
+	ind: 	71.902	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	65.6758	- DF TFICF
+	ind: 	69.2509	% + TF DF sumDF
+	ind: 	45.7522	Log TFICF TFIDF
+	ind: 	73.0468	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	63.2255	- DF TFICF
+	ind: 	71.8417	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.3195	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.9739	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	71.5606	Pow * * TF % MaxDom MaxCC Log MaxGSS MaxCC Log CE TFICF
+	ind: 	63.2255	- DF TFICF
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	65.7963	Pow + P' MaxIG + P' MaxIG
+	ind: 	72.2635	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.2995	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	70.3957	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	72.8259	Pow Pow MaxAM MaxIG * TF Pow MaxAM MaxIG
+	ind: 	69.6325	Pow * + P' MaxIG + P' MaxIG Log CE TFICF
+	ind: 	65.7963	Pow + P' MaxIG + P' MaxIG
+	ind: 	65.8566	Pow + P' MaxIG + P' MaxIG
+	ind: 	46.3346	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.7815	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	69.3513	Pow Pow * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.2794	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.5606	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	65.7963	Pow + P' MaxIG + P' MaxIG
+	ind: 	72.1631	Pow % AM IDF + P' MaxIG
+	ind: 	69.994	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.1546	Pow Pow * * TF % MaxDom MaxCC Pow Pow MaxAM MaxIG Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	70.0141	Pow + P' MaxIG Pow P' MaxIG
+	ind: 	40.4298	Pow Log TFICF TFIDF + P' MaxIG
+	ind: 	40.4298	Pow Log TFICF TFIDF + P' MaxIG
+	ind: 	69.6325	Pow * + P' MaxIG Log MaxCC MaxTFIDF Log CE TFICF
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	45.7522	Log MaxGSS MaxCC
+	ind: 	68.0257	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.4443	Pow MaxAM MaxIG
+	ind: 	72.1028	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	50.5122	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	71.7815	Pow * * TF % MaxDom MaxCC % AM IDF Log CE TFICF
+	ind: 	72.4242	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	65.7963	Pow + P' MaxIG + P' MaxIG
+	ind: 	72.7455	Pow Pow MaxAM MaxIG * TF Pow MaxAM MaxIG
+	ind: 	72.2635	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	26.2302	Log MaxGSS MaxCC
+	ind: 	46.3346	* Log TFICF TFIDF + CE TFICF
+	ind: 	72.8861	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+generation 35:
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.0468	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	69.2107	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.2509	% + TF DF sumDF
+	ind: 	73.1673	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	37.859	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	63.2255	- DF TFICF
+	ind: 	71.8417	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.5521	Pow Pow MaxAM MaxIG + P' MaxIG
+	ind: 	45.953	Pow Log TFICF TFIDF + P' MaxIG
+	ind: 	71.5606	Pow * * TF % MaxDom MaxCC Log MaxGSS MaxCC Log CE TFICF
+	ind: 	36.2121	Log MaxGSS MaxCC
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	69.994	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	71.2995	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	46.4149	Pow Log TFICF TFIDF + P' MaxIG
+	ind: 	70.3957	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	72.8259	Pow Pow MaxAM MaxIG * TF Pow MaxAM MaxIG
+	ind: 	71.7815	Pow * * TF * Log MaxGSS MaxCC + CE TFICF % AM IDF Log CE TFICF
+	ind: 	65.7963	Pow + P' MaxIG + P' MaxIG
+	ind: 	65.8566	Pow + P' MaxIG + P' MaxIG
+	ind: 	46.3346	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.2709	% + TF DF sumDF
+	ind: 	69.3513	Pow Pow * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	43.6232	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	71.7815	Pow * * TF * Log MaxGSS MaxCC + CE TFICF % AM IDF Log CE TFICF
+	ind: 	69.4316	Pow Pow * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.1631	Pow % AM IDF + P' MaxIG
+	ind: 	69.994	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	66.1779	Pow Pow * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.3639	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	71.6208	Pow Pow MaxAM MaxIG Log MaxGSS MaxCC
+	ind: 	40.4298	Pow Log TFICF TFIDF + P' MaxIG
+	ind: 	74.1715	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.6325	Pow * + P' MaxIG Log MaxCC MaxTFIDF Log CE TFICF
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	45.7522	Log MaxGSS MaxCC
+	ind: 	69.9739	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	72.7054	% MaxDom MaxCC
+	ind: 	70.6969	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.7054	% MaxDom MaxCC
+	ind: 	65.8164	Pow + P' MaxIG + P' MaxIG
+	ind: 	73.3481	* MaxCTD MaxAM
+	ind: 	71.0384	Pow * * TF * Log MaxGSS MaxCC + CE TFICF % AM IDF Log CE TFICF
+	ind: 	69.2107	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	66.66	+ P' MaxIG
+	ind: 	46.3346	Pow Log TFICF TFIDF + P' MaxIG
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.9179	Pow % AM IDF Pow + P' MaxIG + P' MaxIG
+generation 36:
+	ind: 	70.9379	Pow MaxAM MaxIG
+	ind: 	73.0468	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	69.2107	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.2509	% + TF DF sumDF
+	ind: 	73.1673	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	63.2255	- DF TFICF
+	ind: 	71.8417	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.8819	Pow * * TF * Log MaxGSS MaxCC + CE TFICF % AM IDF Log CE TFICF
+	ind: 	66.419	+ GSS DF
+	ind: 	69.532	% MaxDom MaxCC
+	ind: 	36.2121	Log MaxGSS MaxCC
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	69.994	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	71.2995	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	46.4149	Pow Log TFICF TFIDF + P' MaxIG
+	ind: 	72.8259	Pow Pow MaxAM MaxIG * TF Pow MaxAM MaxIG
+	ind: 	72.8259	Pow Pow MaxAM MaxIG * TF Pow MaxAM MaxIG
+	ind: 	71.7815	Pow * * TF * Log MaxGSS MaxCC + CE TFICF % AM IDF Log CE TFICF
+	ind: 	65.7963	Pow + P' MaxIG + P' MaxIG
+	ind: 	65.8566	Pow + P' MaxIG + P' MaxIG
+	ind: 	71.661	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + CE TFICF
+	ind: 	73.0066	Pow Pow MaxAM MaxIG * TF Pow MaxAM MaxIG
+	ind: 	50.5122	Log MaxGSS MaxCC
+	ind: 	67.2826	Pow + P' MaxIG + CE TFICF
+	ind: 	43.6232	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	73.2075	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + CE TFICF
+	ind: 	7.89315	Pow Pow MaxAM MaxIG * TF - DF TFICF
+	ind: 	43.6232	* Log MaxGSS MaxCC + P' MaxIG
+	ind: 	68.9697	Pow Pow * * TF % MaxDom MaxCC + P' MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	71.6208	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	43.6232	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	71.199	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	65.7562	Pow % AM IDF Pow + AM IDF + P' MaxIG
+	ind: 	74.1715	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	45.9329	Log MaxGSS MaxCC
+	ind: 	44.2057	Log MaxGSS MaxCC
+	ind: 	70.4358	Pow + P' MaxIG + P' MaxIG
+	ind: 	72.1832	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	72.7054	% MaxDom MaxCC
+	ind: 	13.2758	Pow Pow MaxAM MaxIG * TF - DF TFICF
+	ind: 	68.7287	+ TF DF
+	ind: 	65.8164	Pow + P' MaxIG + P' MaxIG
+	ind: 	73.3481	* MaxCTD MaxAM
+	ind: 	63.0046	Pow % AM IDF Pow + AM IDF + P' MaxIG
+	ind: 	69.3513	Pow Pow * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	66.66	+ P' MaxIG
+	ind: 	71.0384	Pow * * TF * Log MaxGSS MaxCC + CE TFICF % AM IDF Log CE TFICF
+	ind: 	73.1271	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + CE TFICF
+	ind: 	69.6927	Pow % AM IDF Pow + P' MaxIG + P' MaxIG
+generation 37:
+	ind: 	70.9379	Pow MaxAM MaxIG
+	ind: 	73.0468	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	70.6969	+ IG MaxGSS
+	ind: 	69.2509	% + TF DF sumDF
+	ind: 	40.3495	Log MaxGSS MaxCC
+	ind: 	69.4718	Pow Pow Pow MaxAM MaxIG + AM IDF + MaxGSS IG
+	ind: 	50.5122	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	68.4676	Pow Pow * + P' MaxIG + P' MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	70.476	Pow + P' MaxIG + P' MaxIG
+	ind: 	70.7572	+ IG MaxGSS
+	ind: 	69.532	% MaxDom MaxCC
+	ind: 	72.5648	Pow Pow + CE TFICF Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + CE TFICF
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	69.994	Pow Pow * * TF % MaxDom MaxCC + AM IDF Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	71.2995	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	71.6208	+ MaxGSS IG
+	ind: 	73.6895	Pow - MaxAM MaxIG Log TFICF TFIDF
+	ind: 	72.8259	Pow Pow MaxAM MaxIG * TF Pow MaxAM MaxIG
+	ind: 	46.9171	Log MaxGSS MaxCC
+	ind: 	39.3653	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	38.8431	* Log DF DOM IDF
+	ind: 	71.661	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + CE TFICF
+	ind: 	72.8861	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	50.5122	Log MaxGSS MaxCC
+	ind: 	67.2826	Pow + P' MaxIG + CE TFICF
+	ind: 	59.289	Pow Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	71.199	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	70.7773	+ MaxGSS IG
+	ind: 	43.6232	* Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.717	Pow Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + CE TFICF
+	ind: 	71.6208	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	43.6232	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	71.199	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	65.7562	Pow % AM IDF Pow + AM IDF + P' MaxIG
+	ind: 	74.1715	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.2836	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.4316	Pow Pow * + P' MaxIG + P' MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	55.8747	- MaxTFIDF MaxCTD
+	ind: 	73.5087	* MaxCTD MaxAM
+	ind: 	46.3346	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	72.866	Pow MaxAM MaxIG
+	ind: 	68.7287	+ TF DF
+	ind: 	69.4316	Pow Pow * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.3111	+ TF DF
+	ind: 	72.3639	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	71.44	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	68.5479	Pow Pow * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Pow MaxAM MaxIG + P' MaxIG
+	ind: 	70.717	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + CE TFICF
+	ind: 	73.1271	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + CE TFICF
+	ind: 	72.0426	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+generation 38:
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	71.5405	Pow + P' MaxIG + CE TFICF
+	ind: 	70.6969	+ IG MaxGSS
+	ind: 	69.2509	% + TF DF sumDF
+	ind: 	40.3495	Log MaxGSS MaxCC
+	ind: 	71.6811	Pow Pow * + P' MaxIG + P' MaxIG Pow MaxAM MaxIG - MaxTFIDF MaxCTD
+	ind: 	50.5122	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	68.4676	Pow Pow * + P' MaxIG + P' MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	70.476	Pow + P' MaxIG + P' MaxIG
+	ind: 	73.4686	* MaxCTD MaxAM
+	ind: 	69.3312	+ P' MaxIG
+	ind: 	71.9221	Pow - MaxAM MaxIG Log TFICF TFIDF
+	ind: 	68.2868	Pow Pow Pow MaxAM MaxIG + AM IDF % MaxGSS IG
+	ind: 	46.3346	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	69.9337	Pow Pow Pow MaxAM MaxIG + AM IDF + MaxGSS IG
+	ind: 	71.6208	+ MaxGSS IG
+	ind: 	73.6895	Pow - MaxAM MaxIG Log TFICF TFIDF
+	ind: 	72.8259	Pow Pow MaxAM MaxIG * TF Pow MaxAM MaxIG
+	ind: 	60.6146	- MaxTFIDF MaxCTD
+	ind: 	39.3653	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	38.8431	* Log DF DOM IDF
+	ind: 	69.9337	Pow Pow Pow MaxAM MaxIG + AM IDF + MaxGSS IG
+	ind: 	73.3079	Pow - MaxAM MaxIG Log TFICF TFIDF
+	ind: 	50.5122	Log MaxGSS MaxCC
+	ind: 	46.3547	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	70.0341	Pow Pow Pow MaxAM MaxIG + AM IDF + MaxGSS IG
+	ind: 	71.199	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	71.2191	Pow Pow * + P' MaxIG + P' MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	73.4686	* MaxCTD MaxAM
+	ind: 	70.717	Pow Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + CE TFICF
+	ind: 	71.6208	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	43.6232	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	71.199	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	71.0183	Pow Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + CE TFICF
+	ind: 	71.6811	Pow Pow * + P' MaxIG + P' MaxIG Pow MaxAM MaxIG - MaxTFIDF MaxCTD
+	ind: 	72.2836	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.4316	Pow Pow * + P' MaxIG + P' MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	55.8747	- MaxTFIDF MaxCTD
+	ind: 	71.9221	Pow - MaxAM MaxIG Log TFICF TFIDF
+	ind: 	46.3346	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	67.9052	Pow Pow Pow MaxAM MaxIG + AM IDF + MaxGSS IG
+	ind: 	69.4718	Pow Pow Pow MaxAM MaxIG + AM IDF + MaxGSS IG
+	ind: 	71.7413	* MaxCTD MaxAM
+	ind: 	73.3481	Pow MaxAM MaxIG
+	ind: 	71.199	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	70.7773	Pow Pow * MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	71.199	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	72.2635	* MaxCTD MaxAM
+	ind: 	71.6208	Pow Pow MaxAM MaxIG * TF Log MaxGSS MaxCC
+	ind: 	72.0426	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+generation 39:
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	50.5122	Log MaxGSS MaxCC
+	ind: 	38.7427	* Log DF DOM IDF
+	ind: 	69.6726	Pow Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	31.2312	Log GSS MaxTFIDF
+	ind: 	73.5489	* MaxCTD MaxAM
+	ind: 	72.8058	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.8016	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	69.3513	* MaxCTD MaxAM
+	ind: 	73.4686	* MaxCTD MaxAM
+	ind: 	69.3312	+ P' MaxIG
+	ind: 	71.9622	* MaxCTD MaxAM
+	ind: 	68.2868	Pow Pow Pow MaxAM MaxIG + AM IDF % MaxGSS IG
+	ind: 	71.902	Pow + MaxAM DOM IG
+	ind: 	71.9221	+ GINI OR
+	ind: 	71.2995	Pow Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow + P' MaxIG Pow Pow MaxAM MaxIG + AM IDF + CE TFICF
+	ind: 	70.235	+ P' MaxIG
+	ind: 	73.4083	Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	73.2075	Pow * MaxAM MaxIG + P' MaxIG
+	ind: 	31.2111	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	38.8431	* Log DF DOM IDF
+	ind: 	71.0183	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	73.3079	Pow - MaxAM MaxIG Log TFICF TFIDF
+	ind: 	50.5122	Log MaxGSS MaxCC
+	ind: 	46.3547	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	69.7329	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	71.199	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	71.2191	Pow Pow * + P' MaxIG + P' MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	73.4686	* MaxCTD MaxAM
+	ind: 	70.8777	+ P' MaxIG
+	ind: 	71.6208	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	71.3798	+ GINI OR
+	ind: 	71.0384	+ P' MaxIG
+	ind: 	73.2075	Pow * MaxAM MaxIG + P' MaxIG
+	ind: 	6.18598	- GINI TFIDF
+	ind: 	72.2836	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.2551	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	55.2521	% DF * MaxCTD MaxAM
+	ind: 	72.2836	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	46.3346	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	67.9052	Pow Pow Pow MaxAM MaxIG + AM IDF + MaxGSS IG
+	ind: 	71.8217	Pow Pow MaxAM MaxIG + GINI OR
+	ind: 	71.3798	+ GINI OR
+	ind: 	73.3481	Pow MaxAM MaxIG
+	ind: 	71.661	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	70.7773	Pow Pow * MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	1.50633	% DF - GINI TFIDF
+	ind: 	72.2635	* MaxCTD MaxAM
+	ind: 	71.9622	* MaxCTD MaxAM
+	ind: 	72.0426	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+generation 40:
+	ind: 	51.898	* Log DF DOM IDF
+	ind: 	58.7267	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	38.7427	* Log DF DOM IDF
+	ind: 	72.8058	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	68.8291	% MaxGSS MaxCHI
+	ind: 	73.5489	* MaxCTD MaxAM
+	ind: 	72.8058	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	51.2553	Log MaxGSS MaxCC
+	ind: 	72.4443	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	73.4686	* MaxCTD MaxAM
+	ind: 	71.0584	Pow Pow MaxAM MaxIG + P' MaxIG
+	ind: 	46.1137	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	68.2868	Pow Pow Pow MaxAM MaxIG + AM IDF % MaxGSS IG
+	ind: 	44.2458	Log MaxGSS MaxCC
+	ind: 	70.235	+ P' MaxIG
+	ind: 	71.199	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	70.235	+ P' MaxIG
+	ind: 	71.8819	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	72.2836	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	71.6409	Pow Pow MaxAM MaxIG + P' MaxIG
+	ind: 	56.5174	% DF * MaxCTD MaxAM
+	ind: 	15.5252	- P' MaxIG
+	ind: 	73.3079	Pow - MaxAM MaxIG Log TFICF TFIDF
+	ind: 	73.3079	Pow - MaxAM MaxIG Log TFICF TFIDF
+	ind: 	71.7413	% MaxGSS MaxCHI
+	ind: 	72.9865	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.199	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	71.2191	Pow Pow * + P' MaxIG + P' MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	68.8492	+ P' MaxIG
+	ind: 	70.8777	+ P' MaxIG
+	ind: 	71.6208	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	71.3798	+ GINI OR
+	ind: 	71.9221	+ GINI OR
+	ind: 	73.2075	Pow * MaxAM MaxIG + P' MaxIG
+	ind: 	67.3228	Pow Pow Pow MaxAM MaxIG + AM IDF % MaxGSS IG
+	ind: 	70.7371	+ P' MaxIG
+	ind: 	70.2551	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	55.6939	% DF * MaxCTD MaxAM
+	ind: 	72.2836	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	46.3346	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	69.2509	+ P' MaxIG
+	ind: 	71.8217	Pow Pow MaxAM MaxIG + GINI OR
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.902	Pow - MaxAM MaxIG Log TFICF TFIDF
+	ind: 	71.661	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	72.0426	% MaxGSS IDF
+	ind: 	71.661	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	72.2635	* MaxCTD MaxAM
+	ind: 	71.9622	* MaxCTD MaxAM
+	ind: 	46.1137	* Log DF DOM IDF
+generation 41:
+	ind: 	71.3195	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	65.7361	Pow P' P
+	ind: 	72.8259	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.569	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	73.5087	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.5489	* MaxCTD MaxAM
+	ind: 	72.8058	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.2033	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.1673	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	73.4686	* MaxCTD MaxAM
+	ind: 	72.9263	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.1874	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	68.2868	Pow Pow Pow MaxAM MaxIG + AM IDF % MaxGSS IG
+	ind: 	44.2458	Log MaxGSS MaxCC
+	ind: 	71.902	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	71.199	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	70.235	+ P' MaxIG
+	ind: 	72.0024	Pow Pow Pow MaxAM MaxIG Log DOM GINI + P' MaxIG
+	ind: 	70.3756	Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	46.2944	* Log DF DOM IDF
+	ind: 	56.5174	% DF * MaxCTD MaxAM
+	ind: 	15.5252	- P' MaxIG
+	ind: 	70.3756	Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	73.3079	Pow - MaxAM MaxIG Log TFICF TFIDF
+	ind: 	70.3153	Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	72.9865	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	44.8283	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	72.846	Pow MaxAM MaxIG
+	ind: 	68.8492	+ P' MaxIG
+	ind: 	66.2985	Pow Pow Pow MaxAM MaxIG + AM IDF % MaxGSS IG
+	ind: 	71.6208	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	29.6244	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	71.9221	+ GINI OR
+	ind: 	73.2075	Pow * MaxAM MaxIG + P' MaxIG
+	ind: 	67.3629	Pow % GSS MaxAM Pow TFIDF DF
+	ind: 	70.7371	+ P' MaxIG
+	ind: 	70.2551	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	55.6939	% DF * MaxCTD MaxAM
+	ind: 	70.235	Pow + P' MaxIG + P' MaxIG
+	ind: 	67.4433	Pow P' P
+	ind: 	73.107	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	46.3346	* Log DF DOM IDF
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.4485	* MaxCTD MaxAM
+	ind: 	71.661	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	72.8861	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.661	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	50.5925	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	66.439	Pow Pow MaxAM MaxIG Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	46.1137	* Log DF DOM IDF
+generation 42:
+	ind: 	71.3195	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	65.7361	Pow P' P
+	ind: 	59.5903	% MaxCHI * MaxCTD MaxAM
+	ind: 	73.569	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	71.1388	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.5489	* MaxCTD MaxAM
+	ind: 	72.8058	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.2033	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.1673	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	71.8819	Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.9263	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.569	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	72.2635	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	72.2233	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	72.2033	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	71.902	Pow Pow Pow MaxAM MaxIG Log DOM GINI + P' MaxIG
+	ind: 	72.9062	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow + P' MaxIG Pow MaxAM MaxIG
+	ind: 	72.0024	Pow Pow Pow MaxAM MaxIG Log DOM GINI + P' MaxIG
+	ind: 	72.2434	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	71.9221	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	73.7096	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.1229	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	71.9221	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	71.9622	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	70.3153	Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	72.9865	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.2149	Pow Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF + P' MaxIG
+	ind: 	72.846	Pow MaxAM MaxIG
+	ind: 	72.3238	Pow - MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	73.0066	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.9136	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	29.6244	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	70.476	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.2075	Pow * MaxAM MaxIG + P' MaxIG
+	ind: 	29.0018	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	71.8217	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	70.2551	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	72.9464	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.235	Pow + P' MaxIG + P' MaxIG
+	ind: 	67.142	Pow sumDF + P' MaxIG
+	ind: 	72.866	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.7656	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.661	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	71.5204	Pow Pow Pow MaxAM MaxIG * MaxCTD MaxAM Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	73.4686	* MaxCTD MaxAM
+	ind: 	50.5925	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	66.439	Pow Pow MaxAM MaxIG Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	73.4686	* MaxCTD MaxAM
+generation 43:
+	ind: 	71.0183	* * + P' MaxIG + P' MaxIG + CE TFICF
+	ind: 	65.7361	Pow P' P
+	ind: 	59.5903	% MaxCHI * MaxCTD MaxAM
+	ind: 	70.7572	Pow + Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.7371	Pow + Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.5489	* MaxCTD MaxAM
+	ind: 	72.2233	Pow Pow Pow MaxAM MaxIG Pow + GINI OR + CE TFICF + P' MaxIG
+	ind: 	72.2033	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.569	* MaxCTD MaxAM
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.9263	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.0225	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	72.6049	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	71.902	Pow Pow Pow MaxAM MaxIG Log DOM GINI + P' MaxIG
+	ind: 	72.2033	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	71.3396	Pow Pow % MaxGSS IDF % MaxGSS IDF Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	72.8058	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.3639	Pow Pow MaxAM MaxIG * TF * MaxAM MaxIG
+	ind: 	72.2434	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	46.3145	Log P' sumDF
+	ind: 	73.7096	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	69.9136	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	65.3947	Pow sumDF + P' MaxIG
+	ind: 	71.9622	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	70.3153	Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	72.9865	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.107	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	52.9825	* * + P' MaxIG + P' MaxIG Log MaxGSS MaxCC
+	ind: 	72.3238	Pow - MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	71.42	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	72.2033	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.0183	* * + P' MaxIG + P' MaxIG + CE TFICF
+	ind: 	70.8174	Pow + Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	29.0018	* Log MaxGSS MaxCC + CE TFICF
+	ind: 	72.5246	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	70.2551	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	73.087	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.235	Pow + P' MaxIG + P' MaxIG
+	ind: 	67.142	Pow sumDF + P' MaxIG
+	ind: 	72.866	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.7054	Pow Pow Pow MaxAM MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	74.4326	Pow Pow Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.2836	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	73.3079	Pow % MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	72.0024	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG Pow P' MaxIG
+	ind: 	71.0183	* * + P' MaxIG + P' MaxIG + CE TFICF
+	ind: 	72.5447	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.8016	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+generation 44:
+	ind: 	68.568	* * + P' MaxIG * CE TFIDF + CE TFICF
+	ind: 	8.91745	- GINI GSS
+	ind: 	72.8259	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.7572	Pow + Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.3555	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	70.2551	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	66.5395	* CE TFIDF
+	ind: 	70.7973	+ P' MaxIG
+	ind: 	73.5087	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.0827	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	46.3145	Log P' sumDF
+	ind: 	72.6049	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.569	* MaxCTD MaxAM
+	ind: 	72.9464	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.9506	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	67.865	Pow + Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	71.9823	Pow % MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	46.3145	Log P' sumDF
+	ind: 	73.7096	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	69.9136	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	73.5891	* MaxCTD MaxAM
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	71.0183	* * + P' MaxIG + P' MaxIG + CE TFICF
+	ind: 	72.6652	Pow Pow Pow Pow MaxAM MaxIG * + P' MaxIG Pow P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.2836	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	52.9825	* * + P' MaxIG + P' MaxIG Log MaxGSS MaxCC
+	ind: 	72.5246	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	72.4443	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC
+	ind: 	71.8819	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	67.865	Pow + Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	72.3238	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	70.8174	Pow + Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.7096	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.9506	Pow Pow Pow Pow MaxAM MaxIG * + P' MaxIG Pow P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	70.2551	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	73.087	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.2635	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	67.142	Pow sumDF + P' MaxIG
+	ind: 	71.6409	Pow Pow Pow MaxAM MaxIG Log DOM GINI + P' MaxIG
+	ind: 	72.3238	Pow % MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	70.8174	Pow + Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	46.0534	Log P' sumDF
+	ind: 	72.2836	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	73.2075	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.7096	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	71.0183	* * + P' MaxIG + P' MaxIG + CE TFICF
+	ind: 	72.5447	Pow Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.8016	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+generation 45:
+	ind: 	68.568	* * + P' MaxIG * CE TFIDF + CE TFICF
+	ind: 	70.9781	+ P' MaxIG
+	ind: 	72.8259	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.8217	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.0468	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.2551	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	66.5395	* CE TFIDF
+	ind: 	72.5045	Pow Pow MaxAM MaxIG % MaxAM MaxIG
+	ind: 	72.4844	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.9379	+ P' MaxIG
+	ind: 	46.3145	Log P' sumDF
+	ind: 	58.8472	Log P' sumDF
+	ind: 	73.569	* MaxCTD MaxAM
+	ind: 	72.1229	Pow Pow MaxAM MaxIG % MaxAM MaxIG
+	ind: 	68.4475	Pow + Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG + P' MaxIG
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	73.4284	* MaxCTD MaxAM
+	ind: 	72.9464	Pow Pow Pow MaxAM MaxIG Pow + MaxGSS IDF Log MaxGSS MaxCC Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.143	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.0183	Pow + Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	69.9136	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	73.5891	* MaxCTD MaxAM
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	71.0183	* * + P' MaxIG + P' MaxIG + CE TFICF
+	ind: 	70.6969	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	70.235	Pow Pow * MaxCTD MaxAM Pow MaxAM MaxIG + P' MaxIG
+	ind: 	72.5849	+ Pow CTD MaxDom AM
+	ind: 	58.8472	Log P' sumDF
+	ind: 	72.2033	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	71.8819	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	72.3238	Pow Pow MaxAM MaxIG * TF Log MaxAM MaxIG
+	ind: 	71.3597	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.4844	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	73.9506	Pow Pow Pow Pow MaxAM MaxIG * + P' MaxIG Pow P' MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	70.2551	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	67.6441	* CE TFIDF
+	ind: 	70.4157	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	71.0183	Pow + Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.4844	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	72.4644	Pow Pow MaxAM MaxIG % MaxAM MaxIG
+	ind: 	73.087	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	46.0534	Log P' sumDF
+	ind: 	70.6768	Pow Pow Pow MaxAM MaxIG + + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.2075	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.7096	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.4844	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	46.0735	Pow * TF Log MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	71.8016	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+generation 46:
+	ind: 	73.2276	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	70.9781	+ P' MaxIG
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	74.4326	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.0468	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.4644	Pow Pow MaxAM MaxIG % MaxAM MaxIG
+	ind: 	72.3639	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.2033	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	72.4844	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.9781	+ P' MaxIG
+	ind: 	46.3145	Log P' sumDF
+	ind: 	72.6853	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	68.0257	* P' MaxIG
+	ind: 	72.1229	Pow Pow MaxAM MaxIG % MaxAM MaxIG
+	ind: 	33.7618	Pow MaxCTD TF
+	ind: 	72.6049	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	71.9221	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	72.9464	Pow Pow Pow MaxAM MaxIG Pow + MaxGSS IDF Log MaxGSS MaxCC Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.8861	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	72.9865	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	72.8058	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.4157	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	71.9823	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC Log MaxGSS MaxCC
+	ind: 	72.0024	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	70.6969	Pow Pow Pow MaxAM MaxIG Pow MaxAM MaxIG + P' MaxIG
+	ind: 	70.235	Pow Pow * MaxCTD MaxAM Pow MaxAM MaxIG + P' MaxIG
+	ind: 	72.5849	+ Pow CTD MaxDom AM
+	ind: 	70.4559	+ P' MaxIG
+	ind: 	72.2033	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	72.9464	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	73.8301	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.8058	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.4844	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	73.0267	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.2551	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	67.6441	* CE TFIDF
+	ind: 	70.4157	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	72.4844	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	73.0468	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.7096	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	46.0534	Log P' sumDF
+	ind: 	73.2276	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	70.2952	Pow + Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	73.7096	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	68.0257	* P' MaxIG
+	ind: 	73.4485	* MaxCTD MaxAM
+	ind: 	71.8016	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+generation 47:
+	ind: 	46.0534	Log P' sumDF
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + MaxGSS IDF Log MaxGSS MaxCC Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	74.4326	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.9865	Pow Pow MaxAM MaxIG Pow * P' MaxIG Log MaxGSS MaxCC
+	ind: 	72.4644	Pow Pow MaxAM MaxIG % MaxAM MaxIG
+	ind: 	74.7941	* MaxCTD MaxAM
+	ind: 	72.2033	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow + P' MaxIG + P' MaxIG + AM IDF
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow - MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.9781	+ P' MaxIG
+	ind: 	72.5045	Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC
+	ind: 	72.9865	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	68.0257	* P' MaxIG
+	ind: 	44.5069	Pow - Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.8016	Pow + P' MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG
+	ind: 	72.6049	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	70.9379	+ P' MaxIG
+	ind: 	72.9464	Pow Pow Pow MaxAM MaxIG Pow + MaxGSS IDF Log MaxGSS MaxCC Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	46.0936	Log P' sumDF
+	ind: 	74.4326	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.9982	Pow + P' MaxIG Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	73.3079	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG + P' MaxIG
+	ind: 	71.8016	Pow + P' MaxIG Log P' sumDF
+	ind: 	71.1589	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	72.2033	Pow Pow * MaxCTD MaxAM Pow MaxAM MaxIG + P' MaxIG
+	ind: 	71.5806	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	70.7572	+ P' MaxIG
+	ind: 	70.4559	+ P' MaxIG
+	ind: 	72.0024	% MaxGSS IDF
+	ind: 	70.6768	+ P' MaxIG
+	ind: 	72.2033	Pow Pow % MaxGSS IDF Log MaxGSS MaxCC Pow % MaxGSS IDF + AM IDF
+	ind: 	72.5045	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	46.0936	Pow Log MaxGSS MaxCC Pow MaxAM MaxIG
+	ind: 	74.4326	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.0267	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.2191	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG + AM IDF
+	ind: 	73.1271	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	75.5975	* MaxCTD MaxAM
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	72.9464	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.0468	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	46.0534	Log P' sumDF
+	ind: 	44.0852	Log P' sumDF
+	ind: 	70.2952	Pow + Pow MaxAM MaxIG * + P' MaxIG + P' MaxIG Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	73.7096	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.0267	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	46.0936	Log P' sumDF
+	ind: 	72.5246	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+generation 48:
+	ind: 	46.0936	Log P' sumDF
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	70.9982	Pow + P' MaxIG Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.9865	Pow Pow MaxAM MaxIG Pow * P' MaxIG Log MaxGSS MaxCC
+	ind: 	46.0936	Log P' sumDF
+	ind: 	70.3354	Pow Pow * MaxCTD MaxAM Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow - MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	70.9781	+ P' MaxIG
+	ind: 	72.5045	Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC
+	ind: 	71.42	Pow Pow * MaxCTD MaxAM Pow Log MaxGSS MaxCC Pow MaxAM MaxIG + P' MaxIG
+	ind: 	68.0257	* P' MaxIG
+	ind: 	44.5069	Pow - Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	46.0936	Log P' sumDF
+	ind: 	72.2033	Pow Pow * MaxCTD MaxAM Pow MaxAM MaxIG + P' MaxIG
+	ind: 	71.2593	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	73.3079	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	46.0936	Log P' sumDF
+	ind: 	45.8325	Log P' sumDF
+	ind: 	70.9982	Pow + P' MaxIG Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	73.3079	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG + P' MaxIG
+	ind: 	72.7254	Pow Pow Pow MaxAM MaxIG Pow * MaxGSS MaxCC Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	57.4413	Log P' sumDF
+	ind: 	45.8325	Log P' sumDF
+	ind: 	73.5288	* MaxCTD MaxAM
+	ind: 	70.7572	+ P' MaxIG
+	ind: 	72.5045	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.6049	Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	75.5975	* MaxCTD MaxAM
+	ind: 	46.0534	Log P' sumDF
+	ind: 	46.0534	Log P' sumDF
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	44.286	Pow - Pow MaxAM MaxIG Pow + MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.9422	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.9464	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.1271	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	75.5975	* MaxCTD MaxAM
+	ind: 	71.9422	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.2233	* MaxCTD MaxTFICF
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC Pow Pow MaxAM MaxIG Pow MaxAM MaxIG
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	46.0534	Log P' sumDF
+	ind: 	73.9707	Pow MaxAM MaxIG
+	ind: 	73.5288	* MaxCTD MaxAM
+	ind: 	70.9781	+ P' MaxIG
+	ind: 	73.328	Pow Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+	ind: 	46.0936	Log P' sumDF
+	ind: 	73.5288	* MaxCTD MaxAM
+generation 49:
+	ind: 	46.0936	Log P' sumDF
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	71.9422	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.9865	Pow Pow MaxAM MaxIG Pow * P' MaxIG Log MaxGSS MaxCC
+	ind: 	46.0936	Log P' sumDF
+	ind: 	70.6969	Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG
+	ind: 	68.8291	+ MaxCTD sumTF
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow - MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.6092	Pow Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF Pow MaxAM MaxIG
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	71.9422	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	71.8016	Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG
+	ind: 	44.5069	Pow - Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	26.3306	Log Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.2033	Pow Pow * MaxCTD MaxAM Pow MaxAM MaxIG + P' MaxIG
+	ind: 	71.2593	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.5045	Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC
+	ind: 	73.5288	* MaxCTD MaxAM
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	73.569	* MaxCTD MaxAM
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.9865	Pow Pow MaxAM MaxIG Pow * P' MaxIG Log MaxGSS MaxCC
+	ind: 	72.7054	Pow MaxAM MaxIG
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow + AM IDF Pow - MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.5288	* MaxCTD MaxAM
+	ind: 	45.953	% sumDF Log GSS DOM
+	ind: 	72.5045	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	58.4053	Log P' sumDF
+	ind: 	71.4601	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC
+	ind: 	46.0534	Log P' sumDF
+	ind: 	46.0534	Log P' sumDF
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	73.4284	* MaxCTD MaxAM
+	ind: 	72.9464	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.0225	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF % MaxGSS IDF
+	ind: 	75.5975	* MaxCTD MaxAM
+	ind: 	71.9422	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.2233	* MaxCTD MaxTFICF
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.9464	Pow Pow MaxAM MaxIG Pow * P' MaxIG Log MaxGSS MaxCC
+	ind: 	72.2033	Pow Pow * MaxCTD MaxAM Pow MaxAM MaxIG + P' MaxIG
+	ind: 	46.435	Log P' sumDF
+	ind: 	72.4242	* MaxCTD MaxTFICF
+	ind: 	72.7455	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	69.0299	* MaxCTD MaxTFICF
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	73.4686	Pow Pow Pow MaxAM MaxIG + P' MaxIG + P' MaxIG
+generation 50:
+	ind: 	46.0936	Log P' sumDF
+	ind: 	69.0299	* MaxCTD MaxTFICF
+	ind: 	72.384	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.6049	Pow Pow * MaxCTD MaxAM Pow MaxAM MaxIG + P' MaxIG
+	ind: 	72.9865	Pow Pow MaxAM MaxIG Pow * P' MaxIG Log MaxGSS MaxCC
+	ind: 	56.2161	Log CHI GSS
+	ind: 	70.6969	Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG
+	ind: 	71.8417	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow - MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.5648	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow - MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.2878	Pow Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG
+	ind: 	73.6092	Pow Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF Pow MaxAM MaxIG
+	ind: 	52.9825	Log Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	69.1906	* MaxCTD MaxTFICF
+	ind: 	72.8058	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	44.5069	Pow - Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	26.3306	Log Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.2033	Pow Pow * MaxCTD MaxAM Pow MaxAM MaxIG + P' MaxIG
+	ind: 	71.2593	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	73.4284	* MaxCTD MaxAM
+	ind: 	46.4149	Pow Pow Pow Log CHI GSS + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF Pow MaxAM MaxIG
+	ind: 	72.4242	Pow Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	46.4551	Log P' sumDF
+	ind: 	70.4559	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF % MaxGSS IDF
+	ind: 	72.9865	Pow Pow MaxAM MaxIG Pow * P' MaxIG Log MaxGSS MaxCC
+	ind: 	73.81	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	71.3195	Pow Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow - MaxGSS IDF Log MaxGSS MaxCC Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	69.1705	* MaxCTD MaxTFICF
+	ind: 	59.1283	Pow Pow Pow Log CHI GSS + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF Pow MaxAM MaxIG
+	ind: 	72.5045	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.4601	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG Log MaxGSS MaxCC
+	ind: 	71.44	* MaxCTD MaxAM
+	ind: 	72.7455	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.5045	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF % MaxGSS IDF
+	ind: 	72.3639	Pow MaxAM MaxIG
+	ind: 	44.0852	Log Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	72.0225	Pow Pow MaxAM MaxIG Pow % MaxGSS IDF % MaxGSS IDF
+	ind: 	44.2057	- Log CHI GSS MaxTFIDF
+	ind: 	71.9422	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	71.8016	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow - MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	71.179	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow - MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	46.2744	Log Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	73.1472	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	71.8417	Pow Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG Pow Pow MaxAM MaxIG Pow - MaxGSS IDF Log MaxGSS MaxCC
+	ind: 	72.4242	* MaxCTD MaxTFICF
+	ind: 	72.7455	Pow Pow Pow MaxAM MaxIG Pow + GINI OR Log MaxGSS MaxCC + P' MaxIG
+	ind: 	36.2924	Pow - Pow MaxAM MaxIG Pow % MaxGSS IDF Log MaxGSS MaxCC + P' MaxIG
+	ind: 	72.3238	Pow Pow Pow MaxAM MaxIG + AM IDF Pow Pow MaxAM MaxIG Pow + P' MaxIG % MaxGSS IDF
+	ind: 	73.2878	Pow Pow MaxAM MaxIG Pow Log MaxGSS MaxCC Pow MaxAM MaxIG

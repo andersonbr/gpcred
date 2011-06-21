@@ -1,0 +1,2604 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Log,2) (Pow,2) 
+	terms: MaxTFICF MaxTFIDF MaxCTD MaxOR MaxCC MaxGSS MaxCHI MaxAM MaxIG MaxDom sumDF DF sumTF TF TFIDF TFICF IDF CTD OR CE CC GSS CHI IG DOM GINI P' P AM
+generation 0:
+	ind: 	66.901	* MaxOR AM
+	ind: 	39.5059	Log * MaxGSS CE + AM TF
+	ind: 	27.7767	Pow sumTF TF
+	ind: 	31.6529	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	21.4099	Log GINI MaxCC
+	ind: 	19.1605	- % TF OR % IG MaxTFIDF
+	ind: 	73.9305	% TFIDF MaxGSS
+	ind: 	72.3639	Pow * P sumTF * P MaxIG
+	ind: 	71.6811	* CTD MaxOR
+	ind: 	21.43	- Log TF sumDF * GINI TF
+	ind: 	41.7554	% MaxTFICF CTD
+	ind: 	44.2659	Pow - AM sumDF % CHI MaxOR
+	ind: 	60.7753	* CE TF
+	ind: 	68.9094	+ * TF MaxIG % GINI DOM
+	ind: 	67.2022	* MaxDom MaxTFIDF
+	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	59.2488	* CTD P'
+	ind: 	26.3105	* Log IDF TFICF Pow CE CE
+	ind: 	29.8654	Log GINI CHI
+	ind: 	60.6547	% * DF IDF * MaxDom MaxTFICF
+	ind: 	58.0237	* DF CE
+	ind: 	10.9259	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	47.4995	% TFICF TFIDF
+	ind: 	51.2954	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	58.8271	+ MaxCTD TFICF
+	ind: 	45.471	Pow * TFICF sumDF Pow P' MaxIG
+	ind: 	66.1177	- sumTF MaxCHI
+	ind: 	30.5483	Log * sumDF DF + TFIDF MaxAM
+	ind: 	30.468	Log TF MaxAM
+	ind: 	32.7978	* Log CHI OR + CE GINI
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	55.7743	- % TF MaxDom + TFICF sumTF
+	ind: 	71.2191	Pow MaxCC IDF
+	ind: 	53.9667	* * AM CE - DOM CHI
+	ind: 	53.0227	* sumTF MaxCTD
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	53.8863	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	71.3999	% AM IG
+	ind: 	8.43543	% + sumTF TFICF - MaxTFICF MaxGSS
+	ind: 	74.0309	* DOM MaxDom
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	53.7256	% IG DOM
+	ind: 	56.2764	+ - GSS AM * GSS MaxTFICF
+	ind: 	41.8357	Log DOM AM
+	ind: 	48.0016	* % MaxAM MaxIG * CE TF
+	ind: 	66.8608	+ sumDF CHI
+	ind: 	26.3105	Log Log MaxCHI MaxIG Pow MaxAM MaxTFICF
+	ind: 	68.4475	+ GSS GSS
+	ind: 	71.1187	* % AM MaxCHI Pow P' P
+generation 1:
+	ind: 	50.6527	Log GINI CHI
+	ind: 	53.7056	- % TF MaxDom + TFICF sumTF
+	ind: 	27.7767	Pow sumTF TF
+	ind: 	31.6529	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	61.5385	% * DF IDF * MaxDom MaxTFICF
+	ind: 	19.1605	- % TF OR % IG MaxTFIDF
+	ind: 	73.9305	% TFIDF MaxGSS
+	ind: 	61.3175	* MaxOR AM
+	ind: 	71.6811	* CTD MaxOR
+	ind: 	65.234	* MaxOR AM
+	ind: 	59.289	* MaxOR AM
+	ind: 	68.3069	* MaxOR AM
+	ind: 	60.7753	* CE TF
+	ind: 	61.9401	- DOM CHI
+	ind: 	59.3894	* * AM CE - DOM CHI
+	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	60.6748	% * DF IDF * MaxDom MaxTFICF
+	ind: 	26.3105	* Log IDF TFICF Pow CE CE
+	ind: 	29.8654	Log GINI CHI
+	ind: 	70.3153	* MaxOR AM
+	ind: 	29.8654	Log GINI CHI
+	ind: 	29.765	* Log IDF TFICF Pow CE CE
+	ind: 	52.1591	Log TFICF TFICF
+	ind: 	51.2954	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	10.5443	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	73.1673	* + P' TFIDF % MaxDom MaxCC
+	ind: 	66.1177	- sumTF MaxCHI
+	ind: 	59.4497	* * AM CE - DOM CHI
+	ind: 	63.7879	* MaxOR AM
+	ind: 	31.6529	* Log MaxGSS MaxCC Log CE MaxOR
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	70.3153	* MaxOR AM
+	ind: 	70.958	% TFIDF MaxGSS
+	ind: 	53.9667	* * AM CE - DOM CHI
+	ind: 	53.0227	* sumTF MaxCTD
+	ind: 	20.1848	Pow - AM sumDF * MaxOR AM
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	51.9984	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	20.0442	Pow - AM sumDF * MaxOR AM
+	ind: 	72.143	Pow CHI MaxCTD
+	ind: 	67.6642	* sumTF TF
+	ind: 	60.6949	* * AM CE % TF OR
+	ind: 	37.859	- Log TFICF TFICF + TFICF sumTF
+	ind: 	47.7003	- - DOM CHI % IG MaxTFIDF
+	ind: 	66.5796	- DOM CHI
+	ind: 	48.0016	* % MaxAM MaxIG * CE TF
+	ind: 	34.2639	Pow - AM sumDF % CHI MaxOR
+	ind: 	56.678	* CE TF
+	ind: 	68.4475	+ GSS GSS
+	ind: 	71.1187	* % AM MaxCHI Pow P' P
+generation 2:
+	ind: 	50.6527	Log GINI CHI
+	ind: 	53.7056	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	31.6529	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	61.5385	% * DF IDF * MaxDom MaxTFICF
+	ind: 	-nan	* AM CE
+	ind: 	73.9305	% TFIDF MaxGSS
+	ind: 	-nan	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	* * AM CE * MaxOR AM
+	ind: 	-nan	% IG MaxTFIDF
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	- % TF OR % IG MaxTFIDF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	Pow CE CE
+	ind: 	-nan	* MaxOR AM
+	ind: 	60.6748	% * DF IDF * MaxDom MaxTFICF
+	ind: 	26.3105	* Log IDF TFICF Pow CE CE
+	ind: 	29.8654	Log GINI CHI
+	ind: 	-nan	* * MaxOR AM - DOM CHI
+	ind: 	-nan	* - DOM CHI * MaxOR AM
+	ind: 	29.765	* Log IDF TFICF Pow CE CE
+	ind: 	-nan	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	51.2954	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	-nan	* MaxOR AM
+	ind: 	-nan	% TF OR
+	ind: 	66.1177	- sumTF MaxCHI
+	ind: 	-nan	* * MaxOR AM - DOM CHI
+	ind: 	63.7879	* MaxOR AM
+	ind: 	-nan	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	-nan	% TF OR
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	66.5796	- DOM CHI
+	ind: 	-nan	- % TF OR % IG MaxTFIDF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	20.1848	Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	51.9984	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	20.0442	Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	-nan	* * AM CE - * * AM CE * MaxOR AM % IG MaxTFIDF
+	ind: 	60.6949	* * AM CE % TF OR
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	% TF OR
+	ind: 	66.5796	- DOM CHI
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	Log GINI CHI
+	ind: 	-nan	* * AM CE * MaxOR AM
+	ind: 	68.4475	+ GSS GSS
+	ind: 	-nan	- DOM CHI
+generation 3:
+	ind: 	50.6527	Log GINI CHI
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	31.6529	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	* MaxOR AM
+	ind: 	-nan	* AM CE
+	ind: 	-nan	- * MaxOR AM Pow CHI MaxCTD
+	ind: 	-nan	+ DOM CHI
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	* Log IDF TFICF Pow CE CE
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR Pow CE CE
+	ind: 	-nan	Log GINI CHI
+	ind: 	-nan	% * DF IDF * MaxDom MaxTFICF
+	ind: 	26.3105	* Log IDF TFICF Pow CE CE
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	* * MaxOR AM - DOM CHI
+	ind: 	-nan	* - DOM CHI * MaxOR AM
+	ind: 	29.765	* Log IDF TFICF Pow CE CE
+	ind: 	-nan	* * AM CE Pow CHI MaxCTD
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	% * DF IDF * MaxDom MaxTFICF
+	ind: 	-nan	* Log IDF TFICF Pow CE CE
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- % TF MaxDom Pow CHI MaxCTD
+	ind: 	63.7879	* MaxOR AM
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	% TF OR
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	+ DOM CHI
+	ind: 	-nan	- % TF OR % IG MaxTFIDF
+	ind: 	-nan	% TF OR
+	ind: 	20.1848	Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	20.0442	Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	* * AM CE - * * AM CE * MaxOR AM % IG MaxTFIDF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	* * AM CE + TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	% TF OR
+	ind: 	-nan	- DOM CHI
+	ind: 	68.4475	+ GSS GSS
+	ind: 	-nan	- DOM CHI
+generation 4:
+	ind: 	-nan	* Log IDF TFICF Pow CE CE
+	ind: 	-nan	* * MaxOR AM * * AM CE - DOM CHI
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR Pow CE CE
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR Pow CE CE
+	ind: 	-nan	Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	* Log IDF TFICF Pow CE CE
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR Pow CE CE
+	ind: 	-nan	Log GINI CHI
+	ind: 	-nan	- DOM CHI
+	ind: 	-nan	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	* * MaxOR AM - DOM CHI
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- DOM CHI
+	ind: 	-nan	* * AM CE Pow CHI MaxCTD
+	ind: 	-nan	* MaxDom MaxTFICF
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	63.7879	* MaxOR AM
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	* % TF OR % IG MaxTFIDF
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	20.1848	Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	% TF OR
+	ind: 	20.1848	Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	% * DF IDF Pow CHI MaxCTD
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* * MaxOR AM - DOM CHI
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	% * DF IDF Pow CHI MaxCTD
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	% TF OR
+	ind: 	-nan	- DOM CHI
+	ind: 	-nan	* MaxDom MaxTFICF
+	ind: 	-nan	- DOM CHI
+generation 5:
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR Pow CE CE
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR Pow CE CE
+	ind: 	-nan	* Log IDF TFICF Pow CE CE
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	- DOM CHI
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR Pow CE CE
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- DOM CHI
+	ind: 	-nan	* MaxDom MaxTFICF
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	Pow Pow CE CE * MaxOR AM
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	Pow + AM sumDF * MaxOR AM
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	* * AM CE - DOM CHI
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	20.1848	Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow Pow CE CE * MaxOR AM
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	- DOM CHI
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	% * DF IDF Pow CHI MaxCTD
+	ind: 	-nan	Pow CE CE
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR Pow CE CE
+	ind: 	-nan	- DOM CHI
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+generation 6:
+	ind: 	-nan	% * DF IDF Log IDF TFICF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	* Pow CHI MaxCTD Pow CE CE
+	ind: 	-nan	Pow Pow CE CE * MaxOR AM
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* Log IDF TFICF Pow CE CE
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	Pow Pow CE CE * MaxOR AM
+	ind: 	-nan	% * DF IDF Pow CHI MaxCTD
+	ind: 	-nan	* MaxDom MaxTFICF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	* MaxDom MaxTFICF
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	- DOM CHI
+	ind: 	-nan	% * DF IDF Pow TFICF sumTF
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	* MaxDom MaxTFICF
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* MaxDom MaxTFICF
+	ind: 	-nan	* MaxDom MaxTFICF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow Pow CE CE * MaxOR AM
+	ind: 	-nan	* Log IDF TFICF Pow CE CE
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	% * DF IDF Log IDF TFICF
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	Pow Pow CE CE Pow CHI MaxCTD
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	20.1848	Pow - AM sumDF * MaxOR AM
+	ind: 	-nan	Pow Pow CE CE * MaxOR AM
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow Pow CE CE * MaxOR AM
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	% * DF IDF Pow CHI MaxCTD
+	ind: 	-nan	Pow CE CE
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+generation 7:
+	ind: 	-nan	% * DF IDF Log IDF TFICF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	% * DF IDF Log IDF TFICF
+	ind: 	-nan	Pow Pow Pow CE CE Pow CHI MaxCTD * MaxOR AM
+	ind: 	-nan	Pow Pow CE CE Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* Log IDF TFICF Pow CE CE
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	- % TF OR * CHI MaxCTD
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* MaxDom MaxTFICF
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% * DF IDF Pow TFICF sumTF
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	Pow Pow CE CE Pow CHI MaxCTD
+	ind: 	-nan	Pow Pow CE CE * MaxOR AM
+	ind: 	-nan	% TF OR
+	ind: 	-nan	* MaxDom MaxTFICF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	- AM sumDF
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	- - AM sumDF Pow CHI MaxCTD
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	- % TF OR * MaxOR AM
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Log IDF TFICF Pow CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- - AM sumDF Pow CHI MaxCTD
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* TFICF sumTF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR - AM sumDF Pow CHI MaxCTD
+	ind: 	-nan	% * DF IDF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow Pow CE CE * MaxOR AM
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	% * DF IDF Log IDF TFICF
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+generation 8:
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	* % TF OR - DOM CHI
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- % TF MaxDom - % TF OR Pow CHI MaxCTD
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	Pow Pow Pow CE CE Pow CHI MaxCTD * MaxOR AM
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	% * DF IDF Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% * DF IDF Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Log IDF TFICF Pow CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% * DF IDF Pow TFICF sumTF
+	ind: 	-nan	- % TF OR Pow CHI MaxCTD
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* TFICF sumTF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Log IDF TFICF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow Pow CE CE * MaxOR AM
+	ind: 	-nan	- % TF MaxDom + TFICF sumTF
+	ind: 	-nan	% * DF IDF Log IDF TFICF
+	ind: 	-nan	Pow CHI MaxCTD
+generation 9:
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	* % MaxDom MaxCC Log IDF TFICF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	* TFICF sumTF
+	ind: 	-nan	% * DF IDF Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Log IDF TFICF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- Pow CE CE + TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Log IDF TFICF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow Pow CE CE * MaxOR AM
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+generation 10:
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	* * % MaxDom MaxCC TFICF - AM sumDF
+	ind: 	-nan	% * DF IDF Pow TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Log IDF TFICF Pow CHI MaxCTD
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow Log CE MaxOR sumTF
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF - AM sumDF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+generation 11:
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % CHI MaxCTD Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* Log IDF TFICF - AM sumDF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	* * % CHI MaxCTD Log CE MaxOR - AM sumDF
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	+ % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * Log CE MaxOR Pow TFICF sumTF Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Log IDF TFICF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow Log CE MaxOR sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+	ind: 	-nan	% MaxDom MaxCC
+generation 12:
+	ind: 	-nan	* - * * % MaxDom MaxCC Log CE MaxOR Log IDF TFICF Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ Log CE MaxOR * % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % CHI MaxCTD Log CE MaxOR - AM sumDF
+	ind: 	-nan	+ Log CE MaxOR * % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	+ % MaxDom MaxCC * % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	Log TFICF sumTF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	* * % CHI MaxCTD Log CE MaxOR - AM sumDF
+	ind: 	-nan	- AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	+ % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	Log IDF TFICF
+	ind: 	-nan	- * Pow CHI MaxCTD + IDF TFICF Pow CHI MaxCTD
+	ind: 	-nan	+ - AM sumDF Log CE MaxOR
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % CHI MaxCTD Log CE MaxOR % MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	* - * * % MaxDom MaxCC Log CE MaxOR Log IDF TFICF Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	+ - AM sumDF Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	+ % MaxDom MaxCC * % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * Log CE MaxOR Pow TFICF sumTF Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* - * * % MaxDom MaxCC Log CE MaxOR Log IDF TFICF Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	* - * * % MaxDom MaxCC Log CE MaxOR Log IDF TFICF Pow CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	* * % MaxDom MaxCC Log CE MaxOR - AM sumDF
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+	ind: 	-nan	% MaxDom MaxCC
+generation 13:
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * % CHI MaxCTD Log CE MaxOR - AM sumDF
+	ind: 	-nan	+ % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	+ % MaxDom MaxCC * % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * Log % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ - AM sumDF Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow CHI MaxCTD + IDF TFICF Pow CHI MaxCTD
+	ind: 	-nan	+ - AM sumDF Log CE MaxOR
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow - * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	+ % MaxDom MaxCC * % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow - * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+generation 14:
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * Pow TFICF sumTF Log CE MaxOR - AM sumDF * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow - * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	* * * Pow TFICF sumTF Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	+ - AM sumDF Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* Log CE MaxOR - AM sumDF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- AM sumDF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	* * * Pow TFICF sumTF Log CE MaxOR - AM sumDF * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow - * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+generation 15:
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	+ - AM sumDF Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* Log CE MaxOR - AM sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * Log CE MaxOR Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF - AM sumDF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * - AM sumDF Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* * Log CE MaxOR Log CE MaxOR - AM sumDF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+generation 16:
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	* * * * % MaxDom MaxCC Log CE MaxOR Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	+ - AM sumDF Log CE MaxOR
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ - AM sumDF Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% - AM sumDF MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR MaxDom - AM sumDF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* * Log CE MaxOR * Log CE MaxOR Pow TFICF sumTF - AM sumDF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+generation 17:
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ - AM sumDF Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+generation 18:
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * * % MaxDom MaxCC Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	- Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	+ - AM sumDF Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * - CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log TFICF sumTF
+	ind: 	-nan	* * * % CHI MaxCTD Log CE MaxOR - AM sumDF - AM sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	- * Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+generation 19:
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* * Log CE MaxOR Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* * Log CE MaxOR * % CHI MaxCTD Pow TFICF sumTF * % MaxDom MaxCC Log CE MaxOR
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log TFICF sumTF
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF * CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+generation 20:
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF * CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log TFICF sumTF
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	- * Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF * CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+generation 21:
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log TFICF sumTF
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF * CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF * CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	Log TFICF sumTF
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* % CHI MaxCTD % TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF * CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* Pow TFICF sumTF Pow TFICF sumTF
+	ind: 	-nan	Log TFICF sumTF
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Log CE MaxOR Pow TFICF sumTF Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+generation 22:
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CE MaxOR
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % TFICF sumTF
+	ind: 	-nan	* % CHI MaxCTD % TFICF sumTF
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % TFICF sumTF
+	ind: 	-nan	* % CHI MaxCTD % TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF * CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	+ TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+generation 23:
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * % CHI MaxCTD Pow TFICF sumTF * CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CHI MaxCTD
+generation 24:
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% TFICF sumTF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	Log CHI % MaxDom MaxCC
+	ind: 	-nan	+ MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% CHI % CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	+ MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% CHI % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+generation 25:
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	- Pow MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* Pow TFICF sumTF % MaxDom MaxCC
+	ind: 	-nan	Log CHI % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- Pow MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+generation 26:
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log CHI % MaxDom MaxCC
+	ind: 	-nan	- MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% * MaxDom MaxCC MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+generation 27:
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	Log CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log CHI % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	Log CHI % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+generation 28:
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log CHI % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	Log CHI % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	Pow MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+generation 29:
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+generation 30:
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	P'
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC - * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC * % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC - * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD % CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC - * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC - * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC - * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC - * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+generation 31:
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	P'
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC - * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* % CHI MaxCTD % CHI MaxCTD
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	* % MaxDom MaxCC - * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+generation 32:
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* * CHI MaxCTD CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+generation 33:
+	ind: 	-nan	- % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % CHI MaxCTD % MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD % CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+generation 34:
+	ind: 	-nan	CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* CHI % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD % CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	- * MaxCTD % MaxDom MaxCC Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* MaxCTD % CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	+ MaxDom MaxCC
+generation 35:
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* MaxCTD MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	- MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	DOM
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	Log MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	* MaxCTD MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	+ CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD * MaxCTD % CHI MaxCTD
+	ind: 	-nan	+ CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* MaxCTD % CHI MaxCTD
+	ind: 	-nan	- * Pow TFICF sumTF % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	+ MaxDom MaxCC
+generation 36:
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* MaxCTD MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Log MaxDom MaxCC
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	DOM
+	ind: 	-nan	- MaxCTD % CHI MaxCTD
+	ind: 	-nan	Log MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	DOM
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	Log MaxDom MaxCC
+	ind: 	-nan	+ CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	CHI
+	ind: 	-nan	* % CHI MaxCTD - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	CHI
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	+ MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	Log MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	+ MaxDom MaxCC
+generation 37:
+	ind: 	-nan	Log TFICF sumTF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* + MaxDom MaxCC - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	* MaxCTD MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	* % CHI MaxCTD - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	Pow TFICF sumTF
+	ind: 	-nan	* % CHI MaxCTD - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	+ MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	+ MaxDom MaxCC
+	ind: 	-nan	+ MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	DOM
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	* % CHI MaxCTD - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	TF
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	+ MaxDom MaxCC
+generation 38:
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	+ MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* % CHI MaxCTD - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* % MaxDom MaxCC % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* + MaxDom MaxCC - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	* % CHI MaxCTD - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	DOM
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* CHI - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	+ MaxDom MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	+ MaxDom MaxCC
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	+ MaxDom MaxCC
+generation 39:
+	ind: 	-nan	* CHI - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* CHI - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxDom
+	ind: 	-nan	* + MaxDom MaxCC - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* CHI - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* + MaxDom MaxCC - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- MaxDom MaxCC
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	DOM
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCC
+	ind: 	-nan	* CHI - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* CHI - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCC
+	ind: 	-nan	* CHI - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCC
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	+ MaxDom MaxCC
+generation 40:
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* + MaxDom MaxCC - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* - MaxDom MaxCC - MaxCTD MaxCC
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* CHI - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD * CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	DOM
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* CHI - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCC
+generation 41:
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	CHI
+	ind: 	-nan	* - MaxDom MaxCC - MaxCTD MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI - MaxCTD % CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	DOM
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD * CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI % CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD CHI Pow CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	* CHI - MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCC
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+generation 42:
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	DOM
+	ind: 	-nan	DOM
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD * CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD * CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+generation 43:
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD * CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	DOM
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+generation 44:
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD % MaxDom MaxCC CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD % CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD % MaxDom MaxCC CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD Pow CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	DOM
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD % MaxDom MaxCC CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD % CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	% % CHI MaxCTD MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+generation 45:
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD - Pow CHI MaxCTD % MaxDom MaxCC CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD % CHI MaxCTD CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD * CHI sumDF CHI
+	ind: 	-nan	+ MaxCTD % CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+generation 46:
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - Pow CHI MaxCTD % MaxDom MaxCC CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD MaxCTD CHI
+	ind: 	-nan	- * CHI sumDF CHI
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - Pow CHI MaxCTD % MaxDom MaxCC CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	- * MaxCTD % % MaxDom MaxCC MaxCC CHI
+	ind: 	-nan	- * MaxCTD - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD CHI CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD % % MaxDom MaxCC MaxCC CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Log CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - - Pow CHI MaxCTD % MaxDom MaxCC Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD * CHI sumDF CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD % CHI MaxCTD CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+generation 47:
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* MaxCTD MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD CHI CHI
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD CHI CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD MaxCTD CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- MaxCTD CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	* MaxCTD * CHI sumDF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD CHI CHI
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD CHI CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD * CHI sumDF CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- - * MaxCTD - * MaxCTD MaxCTD CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	- - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+generation 48:
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	- * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	Log CHI sumDF
+	ind: 	-nan	* MaxCTD * MaxCTD - * MaxCTD - CHI MaxCTD * CHI sumDF
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI * CHI sumDF
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD MaxCTD CHI
+	ind: 	-nan	* MaxCTD * CHI sumDF
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD CHI CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* CHI sumDF
+	ind: 	-nan	Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI % % MaxDom MaxCC MaxCC
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD * CHI sumDF CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- - CHI Pow CHI MaxCTD CHI
+generation 49:
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	+ * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI % % MaxDom MaxCC MaxCC
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	- * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	* MaxCTD - * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* MaxCTD - CHI % MaxCTD MaxCC
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI * CHI sumDF
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	- % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD CHI CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% - CHI % MaxCTD MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD CHI CHI
+	ind: 	-nan	- * MaxCTD * MaxCTD - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD CHI CHI
+	ind: 	-nan	* MaxCTD - CHI * CHI sumDF
+	ind: 	-nan	* MaxCTD - CHI % % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD * CHI sumDF CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- CHI Pow CHI MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- - CHI Pow CHI MaxCTD CHI
+generation 50:
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	% MaxDom MaxCC
+	ind: 	-nan	* MaxCTD % MaxDom MaxCC
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI % % MaxDom MaxCC MaxCC
+	ind: 	-nan	- CHI MaxCTD
+	ind: 	-nan	- CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD - CHI % MaxCTD MaxCC
+	ind: 	-nan	+ * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	- * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI * CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI * CHI sumDF
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD % MaxCTD MaxCC CHI
+	ind: 	-nan	* MaxCTD MaxCTD
+	ind: 	-nan	MaxCTD
+	ind: 	-nan	* MaxCTD - CHI * CHI sumDF
+	ind: 	-nan	* MaxCTD % MaxDom MaxCC
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI % MaxCTD MaxCC
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI % MaxCTD MaxCC
+	ind: 	-nan	+ * MaxCTD % CHI MaxCTD Pow CHI MaxCTD
+	ind: 	-nan	* MaxCTD - CHI * CHI sumDF
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* MaxCTD - CHI % MaxCTD MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD * CHI sumDF CHI
+	ind: 	-nan	- * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	+ * MaxCTD * MaxCTD - CHI Pow CHI MaxCTD CHI
+	ind: 	-nan	% % MaxDom MaxCC MaxCC
+	ind: 	-nan	- * MaxCTD - * MaxCTD % CHI MaxCTD Pow CHI MaxCTD CHI
+	ind: 	-nan	* MaxCTD - * MaxCTD * CHI sumDF CHI
+	ind: 	-nan	% CHI MaxCTD
+	ind: 	-nan	- - CHI Pow CHI MaxCTD CHI

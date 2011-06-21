@@ -1,0 +1,255 @@
+Best of generation 0 (Fitness = 25.9691, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (% DiceSimilarity Authority)
+ADF1: (% Neighborhood1 Closeness)
+
+Best of generation 1 (Fitness = 26.0695, Structural Complexity = 9)
+GP: (% TFIDF MaxGSS)
+ADF0: (% Neighborhood3 DiceSimilarity)
+ADF1: (Log Neighborhood2 Neighborhood2)
+
+Best of generation 2 (Fitness = 26.0695, Structural Complexity = 9)
+GP: (% TFIDF MaxGSS)
+ADF0: (% Neighborhood3 DiceSimilarity)
+ADF1: (Log Neighborhood2 Neighborhood2)
+
+Best of generation 3 (Fitness = 31.5525, Structural Complexity = 9)
+GP: (+ GSS GSS)
+ADF0: (* Neighborhood2 Authority)
+ADF1: (Log DiceSimilarity JaccardSimilarity)
+
+Best of generation 4 (Fitness = -nan, Structural Complexity = 13)
+GP: (* (Log IDF TFICF) (Pow CE CE))
+ADF0: (* Neighborhood2 Authority)
+ADF1: (Log DiceSimilarity JaccardSimilarity)
+
+Best of generation 5 (Fitness = -nan, Structural Complexity = 33)
+GP: (* (* (% MaxDom MaxCC) (Log CE MaxOR)) (Pow (- AM sumDF) (* MaxOR AM)))
+ADF0: (* (Log Authority InverseLigSimilarity) (* (Log Strength CoCitation) (% Constraint Neighborhood1)))
+ADF1: (- (Pow JaccardSimilarity Constraint) (Log PageRank Strength))
+
+Best of generation 6 (Fitness = -nan, Structural Complexity = 17)
+GP: (% (* DF IDF) (Log IDF TFICF))
+ADF0: (Log Strength CoCitation)
+ADF1: (+ (+ CoCitation CoCitation) (Pow CoCitation Constraint))
+
+Best of generation 7 (Fitness = -nan, Structural Complexity = 17)
+GP: (% (* DF IDF) (Log IDF TFICF))
+ADF0: (Log Strength CoCitation)
+ADF1: (+ (+ CoCitation CoCitation) (Pow CoCitation Constraint))
+
+Best of generation 8 (Fitness = -nan, Structural Complexity = 17)
+GP: (Pow TFICF sumTF)
+ADF0: (Pow (% HubScore CoCitation) (% HubScore EigenVector))
+ADF1: (Log (% Neighborhood2 BibCoupling) (- InverseLigSimilarity Closeness))
+
+Best of generation 9 (Fitness = -nan, Structural Complexity = 17)
+GP: (Pow TFICF sumTF)
+ADF0: (Pow (% HubScore CoCitation) (* Closeness Neighborhood1))
+ADF1: (Log (% Neighborhood2 BibCoupling) (- InverseLigSimilarity Closeness))
+
+Best of generation 10 (Fitness = -nan, Structural Complexity = 29)
+GP: (Pow TFICF sumTF)
+ADF0: (% (Log Strength CoCitation) (Log InverseLigSimilarity Neighborhood1))
+ADF1: (Log (Log (- DiceSimilarity Neighborhood3) (Log (Log (- DiceSimilarity Neighborhood3) (% DiceSimilarity Neighborhood3)) (Log DiceSimilarity JaccardSimilarity))) (Log DiceSimilarity JaccardSimilarity))
+
+Best of generation 11 (Fitness = -nan, Structural Complexity = 29)
+GP: (Pow TFICF sumTF)
+ADF0: (% (Log Strength CoCitation) (Log InverseLigSimilarity Neighborhood1))
+ADF1: (Log (Log (- DiceSimilarity Neighborhood3) (Log (Log (- DiceSimilarity Neighborhood3) (% DiceSimilarity Neighborhood3)) (Log DiceSimilarity JaccardSimilarity))) (Log DiceSimilarity JaccardSimilarity))
+
+Best of generation 12 (Fitness = -nan, Structural Complexity = 33)
+GP: (* (- (* (* (% MaxDom MaxCC) (Log CE MaxOR)) (Log IDF TFICF)) (Pow CHI MaxCTD)) (% MaxDom MaxCC))
+ADF0: (Pow (% HubScore CoCitation) (- Betweenness Closeness))
+ADF1: (Log (% Neighborhood2 BibCoupling) (- InverseLigSimilarity Closeness))
+
+Best of generation 13 (Fitness = -nan, Structural Complexity = 25)
+GP: (* (* (Log CE MaxOR) (Log CE MaxOR)) (- AM sumDF))
+ADF0: (* (Log Strength CoCitation) (% HubScore EigenVector))
+ADF1: (Log (* Neighborhood2 BibCoupling) (+ InverseLigSimilarity Closeness))
+
+Best of generation 14 (Fitness = -nan, Structural Complexity = 25)
+GP: (* (* (Log CE MaxOR) (Log CE MaxOR)) (- AM sumDF))
+ADF0: (* (Log Strength CoCitation) (% HubScore EigenVector))
+ADF1: (Log (* Neighborhood2 BibCoupling) (+ InverseLigSimilarity Closeness))
+
+Best of generation 15 (Fitness = -nan, Structural Complexity = 25)
+GP: (* (* (Log CE MaxOR) (Log CE MaxOR)) (- AM sumDF))
+ADF0: (* (Log Strength CoCitation) (% HubScore EigenVector))
+ADF1: (Log (* Neighborhood2 BibCoupling) (+ InverseLigSimilarity Closeness))
+
+Best of generation 16 (Fitness = -nan, Structural Complexity = 33)
+GP: (- (* (* (% MaxDom MaxCC) (Log CE MaxOR)) (% MaxDom MaxCC)) (Pow CHI MaxCTD))
+ADF0: (% HubScore EigenVector)
+ADF1: (Log (% Neighborhood2 BibCoupling) (% (% DiceSimilarity Neighborhood3) (- (Pow JaccardSimilarity Constraint) (% Neighborhood2 BibCoupling))))
+
+Best of generation 17 (Fitness = -nan, Structural Complexity = 21)
+GP: (- (* (% CHI MaxCTD) (Pow TFICF sumTF)) (Pow CHI MaxCTD))
+ADF0: (Log Authority InverseLigSimilarity)
+ADF1: (% (% DiceSimilarity Neighborhood3) (% Neighborhood2 BibCoupling))
+
+Best of generation 18 (Fitness = -nan, Structural Complexity = 25)
+GP: (- (* (% CHI MaxCTD) (Pow TFICF sumTF)) (Pow CHI MaxCTD))
+ADF0: (Log Authority InverseLigSimilarity)
+ADF1: (% (% DiceSimilarity Neighborhood3) (- (Log DiceSimilarity JaccardSimilarity) (% Neighborhood2 BibCoupling)))
+
+Best of generation 19 (Fitness = -nan, Structural Complexity = 33)
+GP: (Pow TFICF sumTF)
+ADF0: (* (Log Authority InverseLigSimilarity) (* (Log (- CoCitation EigenVector) (* CoCitation Neighborhood2)) (% Closeness Neighborhood1)))
+ADF1: (Log (% (- (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (Pow JaccardSimilarity Constraint)) (Pow JaccardSimilarity Constraint))
+
+Best of generation 20 (Fitness = -nan, Structural Complexity = 33)
+GP: (Pow TFICF sumTF)
+ADF0: (* (Log Authority InverseLigSimilarity) (* (Log (- CoCitation EigenVector) (* CoCitation Neighborhood2)) (% Closeness Neighborhood1)))
+ADF1: (Log (% (- (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (Pow JaccardSimilarity Constraint)) (Pow JaccardSimilarity Constraint))
+
+Best of generation 21 (Fitness = -nan, Structural Complexity = 17)
+GP: (Pow MaxDom MaxCC)
+ADF0: (* (* Strength CoCitation) (% (- Closeness Neighborhood1) (* Strength CoCitation)))
+ADF1: (% Neighborhood2 BibCoupling)
+
+Best of generation 22 (Fitness = -nan, Structural Complexity = 17)
+GP: (Pow MaxDom MaxCC)
+ADF0: (* (* Strength CoCitation) (% (- Closeness Neighborhood1) (* Strength CoCitation)))
+ADF1: (% Neighborhood2 BibCoupling)
+
+Best of generation 23 (Fitness = -nan, Structural Complexity = 17)
+GP: (Pow MaxDom MaxCC)
+ADF0: (* (* Strength CoCitation) (% (- Closeness Neighborhood1) (* Strength CoCitation)))
+ADF1: (% Neighborhood2 BibCoupling)
+
+Best of generation 24 (Fitness = -nan, Structural Complexity = 29)
+GP: (Log CHI MaxCTD)
+ADF0: (% (% Constraint Neighborhood1) (% (- Closeness Neighborhood1) (Log Strength CoCitation)))
+ADF1: (% (% Neighborhood2 BibCoupling) (Log (% DiceSimilarity Neighborhood3) (% (% Neighborhood2 BibCoupling) (- Strength Neighborhood3))))
+
+Best of generation 25 (Fitness = -nan, Structural Complexity = 29)
+GP: (Log CHI MaxCTD)
+ADF0: (% (% Constraint Neighborhood1) (% (- Closeness Neighborhood1) (Log Strength CoCitation)))
+ADF1: (% (% Neighborhood2 BibCoupling) (Log (% DiceSimilarity Neighborhood3) (% (% Neighborhood2 BibCoupling) (- Strength Neighborhood3))))
+
+Best of generation 26 (Fitness = -nan, Structural Complexity = 29)
+GP: (Log CHI MaxCTD)
+ADF0: (% (% Constraint Neighborhood1) (% (- Closeness Neighborhood1) (Log Strength CoCitation)))
+ADF1: (% (% Neighborhood2 BibCoupling) (Log (% DiceSimilarity Neighborhood3) (% (% Neighborhood2 BibCoupling) (- Strength Neighborhood3))))
+
+Best of generation 27 (Fitness = -nan, Structural Complexity = 41)
+GP: (% CHI MaxCTD)
+ADF0: (% (* Strength CoCitation) (- (% (% Constraint Neighborhood1) (* CoCitation Neighborhood2)) (Pow Strength CoCitation)))
+ADF1: (% (Log (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling))) (Log (- DiceSimilarity Neighborhood3) (- Strength Neighborhood3)))
+
+Best of generation 28 (Fitness = -nan, Structural Complexity = 43)
+GP: MaxCTD
+ADF0: (- (% Constraint Neighborhood1) (% (- Closeness Neighborhood1) (- (% Constraint Neighborhood1) (% (- Closeness Neighborhood1) (Log Strength CoCitation)))))
+ADF1: (% (- (+ JaccardSimilarity Constraint) (- Strength Neighborhood3)) (Log (Log (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling)) (- Strength Neighborhood3)))
+
+Best of generation 29 (Fitness = -nan, Structural Complexity = 35)
+GP: MaxCTD
+ADF0: (% (* Strength CoCitation) (- (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)) (Pow Strength CoCitation)))
+ADF1: (% (Log (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling)) (Log (- DiceSimilarity Neighborhood3) (- Strength Neighborhood3)))
+
+Best of generation 30 (Fitness = -nan, Structural Complexity = 35)
+GP: MaxCTD
+ADF0: (% (* Strength CoCitation) (- (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)) (Pow Strength CoCitation)))
+ADF1: (% (Log (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling)) (Log (- DiceSimilarity Neighborhood3) (- Strength Neighborhood3)))
+
+Best of generation 31 (Fitness = -nan, Structural Complexity = 35)
+GP: MaxCTD
+ADF0: (% (* Strength CoCitation) (- (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)) (Pow Strength CoCitation)))
+ADF1: (% (Log (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling)) (Log (- DiceSimilarity Neighborhood3) (- Strength Neighborhood3)))
+
+Best of generation 32 (Fitness = -nan, Structural Complexity = 35)
+GP: MaxCTD
+ADF0: (% (* Strength CoCitation) (- (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)) (Pow Strength CoCitation)))
+ADF1: (% (Log (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling)) (Log (- DiceSimilarity Neighborhood3) (- Strength Neighborhood3)))
+
+Best of generation 33 (Fitness = -nan, Structural Complexity = 25)
+GP: (- (% CHI MaxCTD) (Pow CHI MaxCTD))
+ADF0: (* (* Strength CoCitation) (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)))
+ADF1: (% (% Neighborhood2 BibCoupling) (- Strength Neighborhood3))
+
+Best of generation 34 (Fitness = -nan, Structural Complexity = 29)
+GP: CHI
+ADF0: (* (* Strength (* (* Strength CoCitation) (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)))) (- Closeness Neighborhood1))
+ADF1: (Log (Log (- Strength Neighborhood3) (% Neighborhood2 BibCoupling)) (Pow JaccardSimilarity Constraint))
+
+Best of generation 35 (Fitness = -nan, Structural Complexity = 33)
+GP: (% CHI MaxCTD)
+ADF0: (* (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)) (* CoCitation Neighborhood2))
+ADF1: (% (% Neighborhood2 BibCoupling) (Log (Log (Log (% Neighborhood2 BibCoupling) (- DiceSimilarity Neighborhood3)) (% Neighborhood2 BibCoupling)) (- Strength Neighborhood3)))
+
+Best of generation 36 (Fitness = -nan, Structural Complexity = 33)
+GP: (% CHI MaxCTD)
+ADF0: (* (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)) (* CoCitation Neighborhood2))
+ADF1: (% (% Neighborhood2 BibCoupling) (Log (Log (Log (% Neighborhood2 BibCoupling) (- DiceSimilarity Neighborhood3)) (% Neighborhood2 BibCoupling)) (- Strength Neighborhood3)))
+
+Best of generation 37 (Fitness = -nan, Structural Complexity = 41)
+GP: (Log TFICF sumTF)
+ADF0: (% (* Strength CoCitation) (- (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)) (Pow Strength CoCitation)))
+ADF1: (% (Log (% Neighborhood2 BibCoupling) (- Strength Neighborhood3)) (Log (% Neighborhood2 BibCoupling) (Log (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling))))
+
+Best of generation 38 (Fitness = -nan, Structural Complexity = 33)
+GP: MaxCTD
+ADF0: (* (* Strength (* (* Strength CoCitation) (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)))) (- Closeness Neighborhood1))
+ADF1: (Log (- (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling))
+
+Best of generation 39 (Fitness = -nan, Structural Complexity = 31)
+GP: (* CHI (- (* MaxCTD (% CHI MaxCTD)) (Pow CHI MaxCTD)))
+ADF0: (* (* Strength (* (* Strength CoCitation) (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)))) (- Closeness Neighborhood1))
+ADF1: (- Strength Neighborhood3)
+
+Best of generation 40 (Fitness = -nan, Structural Complexity = 31)
+GP: MaxCTD
+ADF0: (* (% (- Closeness Neighborhood1) (- Closeness Neighborhood1)) (% (% Constraint Neighborhood1) (- Closeness Neighborhood1)))
+ADF1: (Log (- (Log (% Neighborhood2 BibCoupling) (- Strength Neighborhood3)) (% Neighborhood2 BibCoupling)) (- Strength Neighborhood3))
+
+Best of generation 41 (Fitness = -nan, Structural Complexity = 37)
+GP: CHI
+ADF0: (* Strength (* (% (- Closeness Neighborhood1) (- Closeness Neighborhood1)) (% (% Constraint Neighborhood1) (- Closeness Neighborhood1))))
+ADF1: (% (% Neighborhood2 BibCoupling) (- (Log (Log (- Strength Neighborhood3) (% Neighborhood2 BibCoupling)) (- Strength Neighborhood3)) (% Neighborhood2 BibCoupling)))
+
+Best of generation 42 (Fitness = -nan, Structural Complexity = 33)
+GP: (* CHI sumDF)
+ADF0: (* Strength (- (Log Strength CoCitation) (% (% Constraint Neighborhood1) (- Closeness (+ Strength CoCitation)))))
+ADF1: (- (- Strength Neighborhood3) (Log (Log (% Neighborhood2 BibCoupling) (- DiceSimilarity Neighborhood3)) (% Neighborhood2 BibCoupling)))
+
+Best of generation 43 (Fitness = -nan, Structural Complexity = 43)
+GP: (% (% MaxDom MaxCC) MaxCC)
+ADF0: (* (- (- Closeness Neighborhood1) (* (* Strength CoCitation) (+ (% Constraint Neighborhood1) (- Closeness Neighborhood1)))) (- Closeness Neighborhood1))
+ADF1: (Log (- (Log (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling))
+
+Best of generation 44 (Fitness = -nan, Structural Complexity = 45)
+GP: (* CHI sumDF)
+ADF0: (* (* Strength CoCitation) (% (% Constraint Neighborhood1) (- Closeness (- Closeness (+ Constraint Neighborhood1)))))
+ADF1: (% (Log (% Neighborhood2 BibCoupling) (- Strength Neighborhood3)) (Log (Log (Log (- Strength Neighborhood3) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling)) (Log (% Neighborhood2 BibCoupling) (- Strength Neighborhood3))))
+
+Best of generation 45 (Fitness = -nan, Structural Complexity = 45)
+GP: (- (* MaxCTD (- (* MaxCTD (% CHI MaxCTD)) (Pow CHI MaxCTD))) CHI)
+ADF0: (* (* Strength (* (* Strength CoCitation) (% (* CoCitation Neighborhood2) (- Closeness Neighborhood1)))) (Pow Closeness Neighborhood1))
+ADF1: (Log (- Strength Neighborhood3) (Log (Log (% Neighborhood2 BibCoupling) (- Strength Neighborhood3)) (- Strength Neighborhood3)))
+
+Best of generation 46 (Fitness = -nan, Structural Complexity = 45)
+GP: (- (* MaxCTD (- (* MaxCTD (% CHI MaxCTD)) (Pow CHI MaxCTD))) CHI)
+ADF0: (* (* Strength (* (* Strength CoCitation) (% (* CoCitation Neighborhood2) (- Closeness Neighborhood1)))) (Pow Closeness Neighborhood1))
+ADF1: (Log (- Strength Neighborhood3) (Log (Log (% Neighborhood2 BibCoupling) (- Strength Neighborhood3)) (- Strength Neighborhood3)))
+
+Best of generation 47 (Fitness = -nan, Structural Complexity = 35)
+GP: (- (* MaxCTD (- (* MaxCTD (% CHI MaxCTD)) (Pow CHI MaxCTD))) CHI)
+ADF0: (* (* CoCitation Neighborhood2) (Pow Closeness Neighborhood1))
+ADF1: (Log (% Neighborhood2 BibCoupling) (Log (Log (% Neighborhood2 BibCoupling) (- Strength Neighborhood3)) (- Strength Neighborhood3)))
+
+Best of generation 48 (Fitness = -nan, Structural Complexity = 29)
+GP: MaxCTD
+ADF0: (* (* CoCitation Neighborhood2) (* Strength (* (* Strength CoCitation) (% Constraint Neighborhood1))))
+ADF1: (Log (Pow (Pow Neighborhood2 BibCoupling) (Log (- Strength Neighborhood3) (% Neighborhood2 BibCoupling))) (% Strength Neighborhood3))
+
+Best of generation 49 (Fitness = -nan, Structural Complexity = 27)
+GP: (% MaxDom MaxCC)
+ADF0: (* (* CoCitation Neighborhood2) (* Strength (% Constraint Neighborhood1)))
+ADF1: (Log (- (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling)) (% Strength Neighborhood3))
+
+Best of generation 50 (Fitness = -nan, Structural Complexity = 27)
+GP: (% MaxDom MaxCC)
+ADF0: (* (* CoCitation Neighborhood2) (* Strength (% Constraint Neighborhood1)))
+ADF1: (Log (- (Log (% Neighborhood2 BibCoupling) (% Neighborhood2 BibCoupling)) (% Neighborhood2 BibCoupling)) (% Strength Neighborhood3))
+

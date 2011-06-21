@@ -1,0 +1,255 @@
+Best of generation 0 (Fitness = 25.9892, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (% DiceSimilarity Authority)
+ADF1: (% Neighborhood1 Closeness)
+
+Best of generation 1 (Fitness = 25.9892, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (% DiceSimilarity Authority)
+ADF1: (% Neighborhood1 Closeness)
+
+Best of generation 2 (Fitness = 27.1942, Structural Complexity = 13)
+GP: (% TFIDF MaxGSS)
+ADF0: (- InverseLigSimilarity Constraint)
+ADF1: (- (- Closeness InverseLigSimilarity) (Log PageRank Betweenness))
+
+Best of generation 3 (Fitness = 27.8972, Structural Complexity = 9)
+GP: (% AM IG)
+ADF0: (- Strength Closeness)
+ADF1: (Pow PageRank Constraint)
+
+Best of generation 4 (Fitness = 27.4553, Structural Complexity = 9)
+GP: (Pow MaxAM MaxIG)
+ADF0: (- Strength Closeness)
+ADF1: (* Closeness Neighborhood3)
+
+Best of generation 5 (Fitness = 27.8168, Structural Complexity = 17)
+GP: (% TFIDF MaxGSS)
+ADF0: (Pow DiceSimilarity Neighborhood2)
+ADF1: (- (* Betweenness Neighborhood2) (- (* DiceSimilarity Neighborhood1) (Log PageRank Betweenness)))
+
+Best of generation 6 (Fitness = 27.8369, Structural Complexity = 17)
+GP: (* (+ P' TFIDF) (% MaxDom MaxCC))
+ADF0: (* (% BibCoupling CoCitation) (- Strength Closeness))
+ADF1: (% DiceSimilarity Neighborhood3)
+
+Best of generation 7 (Fitness = 27.0335, Structural Complexity = 13)
+GP: (% TFIDF MaxGSS)
+ADF0: (- InverseLigSimilarity Constraint)
+ADF1: (Log (Pow PageRank Constraint) (* DiceSimilarity Neighborhood1))
+
+Best of generation 8 (Fitness = 28.0177, Structural Complexity = 13)
+GP: (Pow CHI MaxCTD)
+ADF0: (% Strength Closeness)
+ADF1: (Log (Pow PageRank Constraint) (* DiceSimilarity Neighborhood1))
+
+Best of generation 9 (Fitness = 26.8528, Structural Complexity = 25)
+GP: (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (Log CE TFICF))))
+ADF0: (% Strength Closeness)
+ADF1: (Log Neighborhood3 (% InverseLigSimilarity Betweenness))
+
+Best of generation 10 (Fitness = 26.8528, Structural Complexity = 25)
+GP: (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (Log CE TFICF))))
+ADF0: (% Strength Closeness)
+ADF1: (Log Neighborhood3 (% InverseLigSimilarity Betweenness))
+
+Best of generation 11 (Fitness = 26.7925, Structural Complexity = 23)
+GP: (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (Log CE TFICF))))
+ADF0: (% Strength Closeness)
+ADF1: (Pow PageRank Constraint)
+
+Best of generation 12 (Fitness = 26.5314, Structural Complexity = 27)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (+ CE TFICF)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (* DiceSimilarity Neighborhood1)
+
+Best of generation 13 (Fitness = 26.5314, Structural Complexity = 27)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (+ CE TFICF)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (* DiceSimilarity Neighborhood1)
+
+Best of generation 14 (Fitness = 26.5314, Structural Complexity = 27)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (+ CE TFICF)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (* DiceSimilarity Neighborhood1)
+
+Best of generation 15 (Fitness = 26.5314, Structural Complexity = 27)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (+ CE TFICF)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (* DiceSimilarity Neighborhood1)
+
+Best of generation 16 (Fitness = 26.5314, Structural Complexity = 27)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (+ CE TFICF)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (* DiceSimilarity Neighborhood1)
+
+Best of generation 17 (Fitness = 26.5314, Structural Complexity = 27)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (+ CE TFICF)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (* DiceSimilarity Neighborhood1)
+
+Best of generation 18 (Fitness = 26.5314, Structural Complexity = 27)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (+ CE TFICF)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (* DiceSimilarity Neighborhood1)
+
+Best of generation 19 (Fitness = 26.5314, Structural Complexity = 27)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (+ CE TFICF)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (* DiceSimilarity Neighborhood1)
+
+Best of generation 20 (Fitness = 26.4109, Structural Complexity = 35)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (Log MaxGSS MaxCC)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (+ (% (Pow PageRank Constraint) (* DiceSimilarity Neighborhood1)) (* DiceSimilarity Neighborhood1))
+
+Best of generation 21 (Fitness = 26.4109, Structural Complexity = 35)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (Log MaxGSS MaxCC)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (+ (% (Pow PageRank Constraint) (* DiceSimilarity Neighborhood1)) (* DiceSimilarity Neighborhood1))
+
+Best of generation 22 (Fitness = 26.4109, Structural Complexity = 35)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (Log MaxGSS MaxCC)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (+ (% (Pow PageRank Constraint) (* DiceSimilarity Neighborhood1)) (* DiceSimilarity Neighborhood1))
+
+Best of generation 23 (Fitness = 26.4109, Structural Complexity = 35)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (Log MaxGSS MaxCC)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (+ (% (Pow PageRank Constraint) (* DiceSimilarity Neighborhood1)) (* DiceSimilarity Neighborhood1))
+
+Best of generation 24 (Fitness = 26.2703, Structural Complexity = 35)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (Pow MaxAM MaxIG)) (Pow (Pow MaxAM MaxIG) (Log MaxGSS MaxCC)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (+ (% (* PageRank Constraint) (* DiceSimilarity Neighborhood1)) (* DiceSimilarity Neighborhood1))
+
+Best of generation 25 (Fitness = 26.7724, Structural Complexity = 37)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (Log MaxGSS MaxCC)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (+ (% (* PageRank Constraint) (* DiceSimilarity Neighborhood1)) (Log (+ DiceSimilarity HubScore) CoCitation))
+
+Best of generation 26 (Fitness = 26.5716, Structural Complexity = 35)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (* (* TF (% MaxDom MaxCC)) (Pow (Pow MaxAM MaxIG) (Log MaxGSS MaxCC)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (+ (% (* PageRank Constraint) (* DiceSimilarity Neighborhood1)) (* DiceSimilarity Neighborhood1))
+
+Best of generation 27 (Fitness = 26.672, Structural Complexity = 13)
+GP: (+ (* GSS DOM) MaxCTD)
+ADF0: (* (+ HubScore DiceSimilarity) DiceSimilarity)
+ADF1: (+ Neighborhood2 Closeness)
+
+Best of generation 28 (Fitness = 26.9532, Structural Complexity = 35)
+GP: (Pow (Pow MaxAM MaxIG) (* (* TF (Pow MaxAM MaxIG)) (Pow (- MaxAM MaxIG) (Log CE TFICF))))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (+ (+ (% HubScore HubScore) (Pow Betweenness CoCitation)) (+ (* DiceSimilarity Neighborhood1) (* DiceSimilarity Neighborhood1)))
+
+Best of generation 29 (Fitness = 26.8729, Structural Complexity = 9)
+GP: (+ CE TFICF)
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (+ DiceSimilarity HubScore)
+
+Best of generation 30 (Fitness = 26.7925, Structural Complexity = 9)
+GP: (+ CE TFICF)
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (* DiceSimilarity Neighborhood1)
+
+Best of generation 31 (Fitness = 26.672, Structural Complexity = 11)
+GP: (+ (* GSS DOM) MaxCTD)
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: (+ DiceSimilarity HubScore)
+
+Best of generation 32 (Fitness = 26.8528, Structural Complexity = 9)
+GP: (* MaxAM DOM)
+ADF0: (Pow PageRank Betweenness)
+ADF1: (* Strength Strength)
+
+Best of generation 33 (Fitness = 26.9532, Structural Complexity = 23)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (Pow (Pow MaxAM MaxIG) (* (+ P' MaxIG) (+ P' MaxIG)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: CoCitation
+
+Best of generation 34 (Fitness = 26.9532, Structural Complexity = 23)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (Pow (Pow MaxAM MaxIG) (* (+ P' MaxIG) (+ P' MaxIG)))) (+ P' MaxIG))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: CoCitation
+
+Best of generation 35 (Fitness = 25.8285, Structural Complexity = 23)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (Pow (+ P' MaxIG) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC)))) (+ P' MaxIG))
+ADF0: (- InverseLigSimilarity Neighborhood2)
+ADF1: Strength
+
+Best of generation 36 (Fitness = 25.8285, Structural Complexity = 23)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (Pow (+ P' MaxIG) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC)))) (+ P' MaxIG))
+ADF0: (- InverseLigSimilarity Neighborhood2)
+ADF1: Strength
+
+Best of generation 37 (Fitness = 25.8285, Structural Complexity = 23)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (Pow (+ P' MaxIG) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC)))) (+ P' MaxIG))
+ADF0: (- InverseLigSimilarity Neighborhood2)
+ADF1: Strength
+
+Best of generation 38 (Fitness = 26.3105, Structural Complexity = 11)
+GP: (Pow (- MaxAM MaxIG) (Log TFICF TFIDF))
+ADF0: (* Neighborhood2 InverseLigSimilarity)
+ADF1: Strength
+
+Best of generation 39 (Fitness = 26.4511, Structural Complexity = 9)
+GP: (* MaxCTD MaxAM)
+ADF0: (Pow Neighborhood2 Betweenness)
+ADF1: (+ Neighborhood1 Constraint)
+
+Best of generation 40 (Fitness = 26.4511, Structural Complexity = 9)
+GP: (* MaxCTD MaxAM)
+ADF0: (Pow Neighborhood2 Betweenness)
+ADF1: (+ Neighborhood1 Constraint)
+
+Best of generation 41 (Fitness = 26.431, Structural Complexity = 21)
+GP: (Pow (Pow MaxAM MaxIG) (Pow (Pow MaxAM MaxIG) (* (+ P' MaxIG) (+ P' MaxIG))))
+ADF0: (+ (Pow Neighborhood2 InverseLigSimilarity) Betweenness)
+ADF1: DiceSimilarity
+
+Best of generation 42 (Fitness = 26.2904, Structural Complexity = 27)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC))) (Pow (Pow MaxAM MaxIG) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC))))
+ADF0: (+ HubScore InverseLigSimilarity)
+ADF1: Strength
+
+Best of generation 43 (Fitness = 25.5674, Structural Complexity = 35)
+GP: (Pow (Pow (Pow (Pow MaxAM MaxIG) (* (+ P' MaxIG) (+ P' MaxIG))) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC))) (Pow (Pow MaxAM MaxIG) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC))))
+ADF0: (+ HubScore InverseLigSimilarity)
+ADF1: Strength
+
+Best of generation 44 (Fitness = 26.0494, Structural Complexity = 27)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC))) (Pow (Pow MaxAM MaxIG) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC))))
+ADF0: (Pow Neighborhood2 InverseLigSimilarity)
+ADF1: Strength
+
+Best of generation 45 (Fitness = 26.0494, Structural Complexity = 35)
+GP: (Pow (Pow (Pow (Pow MaxAM MaxIG) (* (+ P' MaxIG) (Pow P' MaxIG))) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC))) (Pow (Pow MaxAM MaxIG) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC))))
+ADF0: (+ HubScore InverseLigSimilarity)
+ADF1: Strength
+
+Best of generation 46 (Fitness = 25.5674, Structural Complexity = 21)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (Pow (% MaxGSS IDF) (Log MaxGSS MaxCC))) (+ P' MaxIG))
+ADF0: (+ (+ HubScore InverseLigSimilarity) Betweenness)
+ADF1: Neighborhood3
+
+Best of generation 47 (Fitness = 24.4025, Structural Complexity = 7)
+GP: (* MaxCTD MaxAM)
+ADF0: (+ HubScore InverseLigSimilarity)
+ADF1: DiceSimilarity
+
+Best of generation 48 (Fitness = 24.4025, Structural Complexity = 7)
+GP: (* MaxCTD MaxAM)
+ADF0: (+ HubScore InverseLigSimilarity)
+ADF1: DiceSimilarity
+
+Best of generation 49 (Fitness = 24.4025, Structural Complexity = 7)
+GP: (* MaxCTD MaxAM)
+ADF0: (+ HubScore InverseLigSimilarity)
+ADF1: DiceSimilarity
+
+Best of generation 50 (Fitness = 26.19, Structural Complexity = 23)
+GP: (Pow (Pow (Pow MaxAM MaxIG) (+ AM IDF)) (Pow (Pow MaxAM MaxIG) (Pow (+ P' MaxIG) (% MaxGSS IDF))))
+ADF0: (+ HubScore InverseLigSimilarity)
+ADF1: Strength
+

@@ -1,0 +1,2604 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Log,2) (Pow,2) 
+	terms: MaxTFICF MaxTFIDF MaxCTD MaxOR MaxCC MaxGSS MaxCHI MaxAM MaxIG MaxDom sumDF DF sumTF TF TFIDF TFICF IDF CTD OR CE CC GSS CHI IG DOM GINI P' P AM
+generation 0:
+	ind: 	66.5997	* MaxOR AM
+	ind: 	35.2882	Log * MaxGSS CE + AM TF
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	32.6772	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	23.7397	Log GINI MaxCC
+	ind: 	12.2916	- % TF OR % IG MaxTFIDF
+	ind: 	73.2878	% TFIDF MaxGSS
+	ind: 	71.4802	Pow * P sumTF * P MaxIG
+	ind: 	69.8735	* CTD MaxOR
+	ind: 	21.6108	- Log TF sumDF * GINI TF
+	ind: 	36.5736	% MaxTFICF CTD
+	ind: 	42.0366	Pow - AM sumDF % CHI MaxOR
+	ind: 	59.6505	* CE TF
+	ind: 	68.5881	+ * TF MaxIG % GINI DOM
+	ind: 	67.0817	* MaxDom MaxTFIDF
+	ind: 	46.3949	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	59.2488	* CTD P'
+	ind: 	26.2904	* Log IDF TFICF Pow CE CE
+	ind: 	26.5113	Log GINI CHI
+	ind: 	60.956	% * DF IDF * MaxDom MaxTFICF
+	ind: 	56.9191	* DF CE
+	ind: 	13.0749	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	47.5598	% TFICF TFIDF
+	ind: 	45.9932	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	58.8672	+ MaxCTD TFICF
+	ind: 	45.6317	Pow * TFICF sumDF Pow P' MaxIG
+	ind: 	66.8407	- sumTF MaxCHI
+	ind: 	29.8654	Log * sumDF DF + TFIDF MaxAM
+	ind: 	31.2312	Log TF MaxAM
+	ind: 	37.7586	* Log CHI OR + CE GINI
+	ind: 	26.0896	Log TFICF TFICF
+	ind: 	54.4085	- % TF MaxDom + TFICF sumTF
+	ind: 	70.4358	Pow MaxCC IDF
+	ind: 	53.3842	* * AM CE - DOM CHI
+	ind: 	52.5608	* sumTF MaxCTD
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.2995	Pow CHI MaxCTD
+	ind: 	46.6359	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	71.3195	% AM IG
+	ind: 	8.13416	% + sumTF TFICF - MaxTFICF MaxGSS
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	54.6094	% IG DOM
+	ind: 	53.9667	+ - GSS AM * GSS MaxTFICF
+	ind: 	35.4489	Log DOM AM
+	ind: 	47.9614	* % MaxAM MaxIG * CE TF
+	ind: 	65.4348	+ sumDF CHI
+	ind: 	26.3105	Log Log MaxCHI MaxIG Pow MaxAM MaxTFICF
+	ind: 	68.5479	+ GSS GSS
+	ind: 	70.4961	* % AM MaxCHI Pow P' P
+generation 1:
+	ind: 	70.2952	Pow CHI MaxCTD
+	ind: 	70.3756	+ CHI MaxCTD
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	32.6772	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	67.6039	- sumTF MaxCHI
+	ind: 	12.2916	- % TF OR % IG MaxTFIDF
+	ind: 	73.2878	% TFIDF MaxGSS
+	ind: 	71.4802	Pow * P sumTF * P MaxIG
+	ind: 	54.0872	* * AM CE - DOM CHI
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	45.4911	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	53.3842	% IG DOM
+	ind: 	66.1579	* MaxOR AM
+	ind: 	70.8777	Pow * P sumTF * P MaxIG
+	ind: 	35.2882	Log * MaxGSS CE + AM TF
+	ind: 	25.5674	Log GINI CHI
+	ind: 	3.9767	% - sumDF TF Pow DOM DF
+	ind: 	26.2904	* Log IDF TFICF Pow CE CE
+	ind: 	26.5113	Log GINI CHI
+	ind: 	26.3306	Log GINI CHI
+	ind: 	71.3597	Pow * P sumTF * P MaxIG
+	ind: 	47.9614	* % MaxAM MaxIG * CE TF
+	ind: 	45.5111	Log TFICF TFICF
+	ind: 	21.7714	- Log TF sumDF * GINI TF
+	ind: 	22.0526	* Log IDF TFICF Pow CE CE
+	ind: 	45.3304	- DOM DF
+	ind: 	66.8407	- sumTF MaxCHI
+	ind: 	65.9169	* MaxOR AM
+	ind: 	73.1673	% TFIDF MaxGSS
+	ind: 	54.1876	* sumTF MaxCTD
+	ind: 	44.5471	* % MaxAM MaxIG * CE TF
+	ind: 	72.4242	% AM IG
+	ind: 	71.8417	% TFIDF MaxGSS
+	ind: 	59.3493	% IG DOM
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.2995	Pow CHI MaxCTD
+	ind: 	46.6359	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	71.3195	% AM IG
+	ind: 	71.6208	Pow CHI MaxCTD
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	60.7753	% * DF IDF * MaxDom MaxTFICF
+	ind: 	53.9667	+ - GSS AM * GSS MaxTFICF
+	ind: 	71.2995	Pow CHI MaxCTD
+	ind: 	47.9614	* % MaxAM MaxIG * CE TF
+	ind: 	54.1876	* sumTF MaxCTD
+	ind: 	58.4254	* CE TF
+	ind: 	22.1731	% - sumDF TF % sumTF MaxCTD
+	ind: 	52.0787	* sumTF MaxCTD
+generation 2:
+	ind: 	70.2952	Pow CHI MaxCTD
+	ind: 	67.6441	* MaxOR AM
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	45.712	* Log IDF TFICF Pow CE CE
+	ind: 	8.31492	- % TF OR % IG MaxTFIDF
+	ind: 	73.2476	% TFIDF MaxGSS
+	ind: 	69.7931	Pow Pow MaxAM MaxIG - Pow CHI MaxCTD % IG MaxTFIDF
+	ind: 	5.2621	% - sumDF TF Pow DOM DF
+	ind: 	53.103	* sumTF MaxCTD
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	45.4911	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	53.3842	% IG DOM
+	ind: 	71.9823	% MaxAM MaxIG
+	ind: 	33.8823	Pow Pow MaxAM MaxIG - % TF OR % IG MaxTFIDF
+	ind: 	50.7732	* sumTF MaxCTD
+	ind: 	25.5674	Log GINI CHI
+	ind: 	3.9767	% - sumDF TF Pow DOM DF
+	ind: 	55.7743	% TF OR
+	ind: 	26.5113	Log GINI CHI
+	ind: 	26.3306	Log GINI CHI
+	ind: 	70.9379	+ Pow CHI MaxCTD * GSS MaxTFICF
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	29.7048	* - GSS AM * CE TF
+	ind: 	68.0056	MaxOR
+	ind: 	22.0526	* Log IDF TFICF Pow CE CE
+	ind: 	70.7773	MaxOR
+	ind: 	66.8407	- sumTF MaxCHI
+	ind: 	65.9169	* MaxOR AM
+	ind: 	73.1673	% TFIDF MaxGSS
+	ind: 	54.1876	* sumTF MaxCTD
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	71.7614	+ % MaxAM MaxIG * GSS MaxTFICF
+	ind: 	68.0458	Pow sumTF MaxCHI
+	ind: 	71.3597	+ Pow CHI MaxCTD * GSS MaxTFICF
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	36.1518	Log * MaxGSS CE + AM TF
+	ind: 	46.6359	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	71.3195	% AM IG
+	ind: 	46.4149	Log CE TFICF
+	ind: 	61.8397	+ Pow DOM DF * GSS MaxTFICF
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	71.4802	+ % MaxAM MaxIG * GSS MaxTFICF
+	ind: 	55.6537	* sumTF MaxCTD
+	ind: 	71.2995	Pow CHI MaxCTD
+	ind: 	72.8058	% TFIDF MaxGSS
+	ind: 	71.2995	+ Pow CHI MaxCTD * GSS MaxTFICF
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	70.9379	Pow CHI MaxCTD
+	ind: 	71.3597	Pow CHI MaxCTD
+generation 3:
+	ind: 	70.2952	Pow CHI MaxCTD
+	ind: 	67.6441	* MaxOR AM
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	50.5523	* sumTF MaxCTD
+	ind: 	8.31492	- % TF OR % IG MaxTFIDF
+	ind: 	56.417	* sumTF MaxCTD
+	ind: 	70.5965	+ % MaxAM MaxIG * sumTF MaxCTD
+	ind: 	70.958	+ % MaxAM MaxIG * sumTF MaxCTD
+	ind: 	53.103	* sumTF MaxCTD
+	ind: 	70.476	+ % MaxAM MaxIG * sumTF MaxCTD
+	ind: 	71.179	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	53.3842	% IG DOM
+	ind: 	54.1876	* sumTF MaxCTD
+	ind: 	70.8174	+ AM IG
+	ind: 	72.143	% MaxAM MaxIG
+	ind: 	25.5674	Log GINI CHI
+	ind: 	71.3195	Pow CHI MaxCTD
+	ind: 	55.7743	% TF OR
+	ind: 	26.5113	Log GINI CHI
+	ind: 	26.3306	Log GINI CHI
+	ind: 	71.0986	% AM IG
+	ind: 	72.3037	+ % TFIDF MaxGSS * GSS MaxTFICF
+	ind: 	68.8693	+ % MaxAM MaxIG * sumTF MaxCTD
+	ind: 	66.66	* MaxOR AM
+	ind: 	22.0526	* Log IDF TFICF Pow CE CE
+	ind: 	72.0627	% MaxAM MaxIG
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	71.9823	% MaxAM MaxIG
+	ind: 	73.1673	% TFIDF MaxGSS
+	ind: 	54.1876	* sumTF MaxCTD
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	36.1518	Log * MaxGSS CE + AM TF
+	ind: 	68.8693	+ % MaxAM MaxIG * sumTF MaxCTD
+	ind: 	71.3597	+ Pow CHI MaxCTD * GSS MaxTFICF
+	ind: 	46.435	Log * MaxGSS CE + AM TF
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	27.134	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	71.3999	% AM IG
+	ind: 	71.3195	% AM IG
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	61.8397	+ Pow DOM DF * GSS MaxTFICF
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	56.0755	% TF OR
+	ind: 	70.476	+ % MaxAM MaxIG * sumTF MaxCTD
+	ind: 	71.2995	Pow CHI MaxCTD
+	ind: 	70.6568	% MaxAM MaxIG
+	ind: 	71.5204	Pow Pow MaxAM MaxIG - Pow CHI MaxCTD % IG MaxTFIDF
+	ind: 	67.9052	* MaxOR AM
+	ind: 	72.3438	+ Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.3597	Pow CHI MaxCTD
+generation 4:
+	ind: 	70.2952	Pow CHI MaxCTD
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	27.3147	Pow sumTF TF
+	ind: 	50.5523	* sumTF MaxCTD
+	ind: 	71.4802	Pow CHI MaxCTD
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	66.3788	* MaxOR AM
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	53.7256	* sumTF MaxCTD
+	ind: 	70.476	+ % MaxAM MaxIG * sumTF MaxCTD
+	ind: 	71.179	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.3153	% MaxAM MaxIG
+	ind: 	30.9299	Log GINI CHI
+	ind: 	57.0797	% TF OR
+	ind: 	72.143	% MaxAM MaxIG
+	ind: 	70.7572	Pow CHI MaxCTD
+	ind: 	72.9062	% TFIDF MaxGSS
+	ind: 	51.5164	- MaxAM MaxIG
+	ind: 	72.6652	Pow MaxAM MaxIG
+	ind: 	71.7413	% AM IG
+	ind: 	72.5447	Pow MaxAM MaxIG
+	ind: 	70.7371	% MaxAM MaxIG
+	ind: 	66.8407	* MaxOR AM
+	ind: 	54.5491	% TF OR
+	ind: 	71.3396	Pow MaxAM MaxIG
+	ind: 	72.0627	% MaxAM MaxIG
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	55.5935	% TF OR
+	ind: 	73.1673	% TFIDF MaxGSS
+	ind: 	66.6801	* MaxOR AM
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	70.7572	Pow CHI MaxCTD
+	ind: 	68.8693	+ % MaxAM MaxIG * sumTF MaxCTD
+	ind: 	66.6801	* MaxOR AM
+	ind: 	46.435	Log * MaxGSS CE + AM TF
+	ind: 	73.2476	* MaxAM MaxIG
+	ind: 	27.134	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	72.4242	% TFIDF MaxGSS
+	ind: 	71.9422	Pow CHI MaxCTD
+	ind: 	72.7254	% TFIDF MaxGSS
+	ind: 	71.8819	% MaxAM MaxIG
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	56.0755	% TF OR
+	ind: 	72.0225	% MaxAM MaxIG
+	ind: 	71.8016	Pow CHI MaxCTD
+	ind: 	70.7572	Pow CHI MaxCTD
+	ind: 	70.6568	+ CHI MaxCTD
+	ind: 	57.0797	% TF OR
+	ind: 	71.7413	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.4644	% TFIDF MaxGSS
+generation 5:
+	ind: 	70.2952	Pow CHI MaxCTD
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	26.2302	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	69.8735	Pow CHI MaxCTD
+	ind: 	71.4802	Pow CHI MaxCTD
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	26.19	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	71.5806	Pow CHI MaxCTD
+	ind: 	69.8534	Pow CHI MaxCTD
+	ind: 	46.0534	Log CE TFICF
+	ind: 	71.179	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	30.9299	Log GINI CHI
+	ind: 	55.2922	- MaxAM MaxIG
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	70.7572	Pow CHI MaxCTD
+	ind: 	54.6495	- MaxAM MaxIG
+	ind: 	51.5164	- MaxAM MaxIG
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	27.134	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	73.1472	* MaxAM MaxIG
+	ind: 	56.5575	% TF OR
+	ind: 	66.8407	* MaxOR AM
+	ind: 	54.5491	% TF OR
+	ind: 	71.3396	Pow MaxAM MaxIG
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	4.39847	% - sumDF TF Pow DOM DF
+	ind: 	66.6801	* MaxOR AM
+	ind: 	72.8861	% TFIDF MaxGSS
+	ind: 	70.7572	Pow CHI MaxCTD
+	ind: 	53.9667	- TFIDF MaxGSS
+	ind: 	64.1293	* TF OR
+	ind: 	46.435	Log * MaxGSS CE + AM TF
+	ind: 	73.1472	* MaxAM MaxIG
+	ind: 	27.134	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	72.846	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	72.7254	% TFIDF MaxGSS
+	ind: 	71.8819	% MaxAM MaxIG
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	72.0627	% TFIDF MaxGSS
+	ind: 	25.9289	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	71.8016	Pow CHI MaxCTD
+	ind: 	70.1145	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.1028	Pow TFIDF MaxGSS
+	ind: 	70.9379	Pow CHI MaxCTD
+	ind: 	65.9169	* MaxOR AM
+	ind: 	72.4644	% TFIDF MaxGSS
+generation 6:
+	ind: 	70.2952	Pow CHI MaxCTD
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	26.2302	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	69.8534	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	71.4802	Pow CHI MaxCTD
+	ind: 	69.8333	+ * MaxOR AM * sumTF MaxCTD
+	ind: 	69.6927	Pow CHI MaxCTD
+	ind: 	26.2703	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	69.8534	Pow CHI MaxCTD
+	ind: 	25.9691	Pow sumTF TF
+	ind: 	71.179	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.199	Pow CHI MaxCTD
+	ind: 	26.19	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	72.9062	% TFIDF MaxGSS
+	ind: 	27.2143	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	70.7973	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	26.2302	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	33.802	Log CE TFICF
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	26.913	Pow sumTF TF
+	ind: 	26.5917	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	69.9739	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	26.3105	Pow sumTF TF
+	ind: 	25.9289	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	71.3396	Pow MaxAM MaxIG
+	ind: 	72.2233	% TFIDF MaxGSS
+	ind: 	22.7957	- sumDF TF
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	72.7254	% TFIDF MaxGSS
+	ind: 	71.5204	Pow CHI MaxCTD
+	ind: 	72.8861	% TFIDF MaxGSS
+	ind: 	68.6684	* MaxOR AM
+	ind: 	53.9667	- TFIDF MaxGSS
+	ind: 	64.1293	* TF OR
+	ind: 	61.5987	* TF OR
+	ind: 	73.1472	* MaxAM MaxIG
+	ind: 	26.3105	Pow sumTF TF
+	ind: 	72.846	% TFIDF MaxGSS
+	ind: 	71.661	Pow CHI MaxCTD
+	ind: 	72.7254	% TFIDF MaxGSS
+	ind: 	24.041	% % TFIDF MaxGSS Pow DOM DF
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	70.7572	Pow CHI MaxCTD
+	ind: 	25.9289	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	26.19	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	70.1145	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	72.0627	% TFIDF MaxGSS
+	ind: 	72.5648	% TFIDF MaxGSS
+	ind: 	72.4242	% TFIDF MaxGSS
+	ind: 	72.4644	% TFIDF MaxGSS
+generation 7:
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	72.6451	% TFIDF MaxGSS
+	ind: 	72.846	% TFIDF MaxGSS
+	ind: 	69.8534	Pow Pow MaxAM MaxIG % TFIDF MaxGSS
+	ind: 	71.4802	Pow CHI MaxCTD
+	ind: 	69.8333	+ * MaxOR AM * sumTF MaxCTD
+	ind: 	26.19	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	26.2703	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	69.8534	Pow CHI MaxCTD
+	ind: 	25.9691	Pow sumTF TF
+	ind: 	48.7046	* sumTF MaxCTD
+	ind: 	69.8333	+ * MaxOR AM * sumTF MaxCTD
+	ind: 	71.8618	Pow CHI MaxCTD
+	ind: 	72.9062	% TFIDF MaxGSS
+	ind: 	27.2143	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	40.1285	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	27.6762	Pow sumTF TF
+	ind: 	22.8158	- sumDF TF
+	ind: 	72.3438	Pow TFIDF MaxGSS
+	ind: 	72.5648	% TFIDF MaxGSS
+	ind: 	69.9739	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	26.3105	Pow sumTF TF
+	ind: 	28.6403	Pow sumTF TF
+	ind: 	54.4085	- TFIDF MaxGSS
+	ind: 	26.19	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	22.7957	- sumDF TF
+	ind: 	4.03696	% - sumDF TF Pow DOM DF
+	ind: 	72.7254	% TFIDF MaxGSS
+	ind: 	71.5204	Pow CHI MaxCTD
+	ind: 	72.8861	% TFIDF MaxGSS
+	ind: 	26.3507	Pow sumTF TF
+	ind: 	53.9667	- TFIDF MaxGSS
+	ind: 	72.0426	% TFIDF MaxGSS
+	ind: 	1.50633	Pow sumTF + Pow sumTF TF * sumTF MaxCTD
+	ind: 	48.6041	* sumTF MaxCTD
+	ind: 	26.3105	Pow sumTF TF
+	ind: 	72.846	% TFIDF MaxGSS
+	ind: 	71.661	Pow CHI MaxCTD
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	25.8486	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	25.9289	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	71.8819	Pow CHI MaxCTD
+	ind: 	26.19	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	72.2233	% TFIDF MaxGSS
+	ind: 	72.0627	% TFIDF MaxGSS
+	ind: 	72.5648	% TFIDF MaxGSS
+	ind: 	72.4242	% TFIDF MaxGSS
+	ind: 	72.4644	% TFIDF MaxGSS
+generation 8:
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	71.4802	Pow CHI MaxCTD
+	ind: 	72.8861	% TFIDF MaxGSS
+	ind: 	53.8863	* sumTF MaxCTD
+	ind: 	50.4921	* sumTF MaxCTD
+	ind: 	27.2746	Pow sumTF TF
+	ind: 	71.3999	Pow sumTF MaxCTD
+	ind: 	26.2703	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	73.0468	% TFIDF MaxGSS
+	ind: 	70.9781	+ CHI MaxCTD
+	ind: 	60.4539	% sumTF MaxCTD
+	ind: 	69.8333	+ * MaxOR AM * sumTF MaxCTD
+	ind: 	71.8618	Pow CHI MaxCTD
+	ind: 	72.9062	% TFIDF MaxGSS
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	55.4328	- TFIDF MaxGSS
+	ind: 	40.1285	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	54.6294	- TFIDF MaxGSS
+	ind: 	51.8377	* sumTF MaxCTD
+	ind: 	27.375	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	24.5029	+ Pow sumTF TF - sumDF TF
+	ind: 	72.6652	% TFIDF MaxGSS
+	ind: 	58.8271	% sumTF MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	54.4085	- TFIDF MaxGSS
+	ind: 	26.19	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	22.7957	- sumDF TF
+	ind: 	4.03696	% - sumDF TF Pow DOM DF
+	ind: 	54.2478	- TFIDF MaxGSS
+	ind: 	71.5204	Pow CHI MaxCTD
+	ind: 	72.8861	% TFIDF MaxGSS
+	ind: 	55.5332	- TFIDF MaxGSS
+	ind: 	53.9667	- TFIDF MaxGSS
+	ind: 	55.2521	- TFIDF MaxGSS
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	58.2446	- % sumTF MaxCTD * sumTF MaxCTD
+	ind: 	31.3918	+ Pow sumTF TF Pow sumTF TF
+	ind: 	54.4085	- TFIDF MaxGSS
+	ind: 	71.661	Pow CHI MaxCTD
+	ind: 	71.4601	Pow CHI MaxCTD
+	ind: 	25.8486	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	25.9289	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	25.9289	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	25.9691	Pow sumTF TF
+	ind: 	26.19	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	71.5806	Pow CHI MaxCTD
+	ind: 	72.5648	% TFIDF MaxGSS
+	ind: 	70.9781	+ CHI MaxCTD
+	ind: 	72.4644	% TFIDF MaxGSS
+generation 9:
+	ind: 	31.9743	+ Pow sumTF TF Pow sumTF TF
+	ind: 	71.4802	Pow CHI MaxCTD
+	ind: 	72.8861	% TFIDF MaxGSS
+	ind: 	26.2703	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	50.4921	* sumTF MaxCTD
+	ind: 	30.5684	+ Pow sumTF TF Pow sumTF TF
+	ind: 	71.3999	Pow sumTF MaxCTD
+	ind: 	70.717	Pow CHI MaxCTD
+	ind: 	71.8819	Pow CHI MaxCTD
+	ind: 	70.9781	+ CHI MaxCTD
+	ind: 	53.6453	* sumTF MaxCTD
+	ind: 	25.949	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	71.8618	Pow CHI MaxCTD
+	ind: 	50.3515	* sumTF MaxCTD
+	ind: 	40.6306	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	71.5806	+ CHI MaxCTD
+	ind: 	40.1285	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	72.3438	% TFIDF MaxGSS
+	ind: 	27.5557	+ Pow sumTF TF - TFIDF MaxGSS
+	ind: 	44.6475	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	25.8084	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	72.6652	% TFIDF MaxGSS
+	ind: 	58.8271	% sumTF MaxCTD
+	ind: 	4.39847	% - sumDF TF Pow DOM DF
+	ind: 	4.6194	% - sumDF TF Pow DOM DF
+	ind: 	26.19	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	47.5196	* sumTF MaxCTD
+	ind: 	24.8243	- sumDF TF
+	ind: 	51.8377	* sumTF MaxCTD
+	ind: 	71.5204	Pow CHI MaxCTD
+	ind: 	72.8861	% TFIDF MaxGSS
+	ind: 	2.14903	* Pow sumTF TF * sumTF MaxCTD
+	ind: 	24.3824	+ Pow sumTF TF - sumDF TF
+	ind: 	70.5764	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	31.3918	+ Pow sumTF TF Pow sumTF TF
+	ind: 	54.4085	- TFIDF MaxGSS
+	ind: 	71.661	Pow CHI MaxCTD
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	25.8486	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	49.9297	* sumTF MaxCTD
+	ind: 	25.9289	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	26.19	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	71.2392	+ * sumTF MaxCTD % TFIDF MaxGSS
+	ind: 	71.5806	Pow CHI MaxCTD
+	ind: 	45.3706	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	70.9781	+ CHI MaxCTD
+	ind: 	54.2278	- TFIDF MaxGSS
+generation 10:
+	ind: 	45.5513	Log CHI MaxCTD
+	ind: 	71.4802	Pow CHI MaxCTD
+	ind: 	54.6294	- TFIDF MaxGSS
+	ind: 	71.8819	Pow CHI MaxCTD
+	ind: 	50.4921	* sumTF MaxCTD
+	ind: 	30.5684	+ Pow sumTF TF Pow sumTF TF
+	ind: 	71.3999	Pow sumTF MaxCTD
+	ind: 	25.9088	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	71.8819	Pow CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	70.9781	* CHI MaxCTD
+	ind: 	4.13738	% - sumDF TF Pow DOM DF
+	ind: 	3.89636	% - sumDF TF Pow DOM DF
+	ind: 	53.2838	* sumTF MaxCTD
+	ind: 	72.0627	+ * sumTF MaxCTD % TFIDF MaxGSS
+	ind: 	71.5806	+ CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	22.3338	% - sumDF TF Pow CHI MaxCTD
+	ind: 	27.5557	+ Pow sumTF TF - TFIDF MaxGSS
+	ind: 	54.4085	- TFIDF MaxGSS
+	ind: 	25.8084	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	3.75577	% - sumDF TF Pow DOM DF
+	ind: 	58.8271	% sumTF MaxCTD
+	ind: 	4.39847	% - sumDF TF Pow DOM DF
+	ind: 	54.288	* sumTF MaxCTD
+	ind: 	29.9458	+ Pow sumTF TF Pow sumTF TF
+	ind: 	45.9329	Log CHI MaxCTD
+	ind: 	24.8243	- sumDF TF
+	ind: 	71.8618	Pow CHI MaxCTD
+	ind: 	25.9892	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	3.89636	% - sumDF TF Pow DOM DF
+	ind: 	4.13738	% - sumDF TF Pow DOM DF
+	ind: 	27.6562	+ + Pow sumTF TF * sumTF MaxCTD % TFIDF MaxGSS
+	ind: 	70.5764	* CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	64.3503	Pow DOM DF
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	54.4085	- TFIDF MaxGSS
+	ind: 	71.661	Pow CHI MaxCTD
+	ind: 	72.0627	% TFIDF MaxGSS
+	ind: 	25.8486	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	72.3037	+ * sumTF MaxCTD % TFIDF MaxGSS
+	ind: 	47.2987	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	43.3621	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	73.4083	% TFIDF MaxGSS
+	ind: 	39.4858	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	45.3706	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	54.2278	- TFIDF MaxGSS
+generation 11:
+	ind: 	60.0121	% sumTF MaxCTD
+	ind: 	71.4802	Pow CHI MaxCTD
+	ind: 	45.0291	* + sumDF TF * CHI MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	50.4921	* sumTF MaxCTD
+	ind: 	30.5684	+ Pow sumTF TF Pow sumTF TF
+	ind: 	71.3999	Pow sumTF MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	70.6166	Pow CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	4.90058	% - sumDF TF Pow DOM DF
+	ind: 	4.13738	% - sumDF TF Pow DOM DF
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	60.5744	% + sumDF TF * CHI MaxCTD
+	ind: 	71.5204	Pow CHI Log CHI MaxCTD
+	ind: 	42.3177	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	52.7817	* sumTF MaxCTD
+	ind: 	54.4487	- TFIDF MaxGSS
+	ind: 	59.6706	% sumTF MaxCTD
+	ind: 	25.8084	+ Pow sumTF TF * sumTF MaxCTD
+	ind: 	3.75577	% - sumDF TF Pow DOM DF
+	ind: 	52.9022	+ - TFIDF MaxGSS * sumTF MaxCTD
+	ind: 	45.9329	Log CHI MaxCTD
+	ind: 	54.288	* sumTF MaxCTD
+	ind: 	54.4487	- TFIDF MaxGSS
+	ind: 	45.9329	Log CHI MaxCTD
+	ind: 	45.9329	Log CHI MaxCTD
+	ind: 	71.8618	Pow CHI MaxCTD
+	ind: 	26.7724	Pow sumTF TF
+	ind: 	3.89636	% - sumDF TF Pow DOM DF
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	72.8058	MaxCTD
+	ind: 	60.0121	% sumTF MaxCTD
+	ind: 	64.3503	Pow DOM DF
+	ind: 	72.8259	% TFIDF MaxGSS
+	ind: 	54.4085	- TFIDF MaxGSS
+	ind: 	71.661	Pow CHI MaxCTD
+	ind: 	43.8642	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	60.5744	% + sumDF TF * CHI MaxCTD
+	ind: 	34.9267	Pow - sumDF TF * sumTF MaxCTD
+	ind: 	47.2987	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	71.5204	+ CHI MaxCTD
+	ind: 	73.4083	% TFIDF MaxGSS
+	ind: 	39.4858	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	72.846	% TFIDF MaxGSS
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	54.2278	- TFIDF MaxGSS
+generation 12:
+	ind: 	68.5479	- sumTF MaxCTD
+	ind: 	37.2766	Pow - sumDF TF * sumTF MaxCTD
+	ind: 	45.0291	* + sumDF TF * CHI MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	54.1073	% CHI MaxCTD
+	ind: 	71.3999	Pow sumTF MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	45.0291	* + sumDF TF * CHI MaxCTD
+	ind: 	45.5513	Log CHI MaxCTD
+	ind: 	55.6537	% CHI MaxCTD
+	ind: 	53.1834	+ - TFIDF MaxGSS * sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	63.326	Pow DOM DF
+	ind: 	38.0197	Log CHI MaxCTD
+	ind: 	71.5806	Pow CHI MaxCTD
+	ind: 	46.9171	* + sumDF TF * CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	55.6337	- TFIDF MaxGSS
+	ind: 	63.2858	Pow DOM DF
+	ind: 	64.2298	Pow DOM DF
+	ind: 	35.469	- DOM DF
+	ind: 	60.2129	% sumTF MaxCTD
+	ind: 	45.9329	Log CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	29.524	Log CHI MaxCTD
+	ind: 	39.1645	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	45.9329	Log CHI MaxCTD
+	ind: 	63.326	Pow DOM DF
+	ind: 	26.7724	Pow sumTF TF
+	ind: 	70.1948	* CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	63.7277	Pow DOM DF
+	ind: 	72.8058	MaxCTD
+	ind: 	60.0121	% sumTF MaxCTD
+	ind: 	44.6475	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	72.8259	% TFIDF MaxGSS
+	ind: 	54.4085	- TFIDF MaxGSS
+	ind: 	35.0874	Pow - sumDF TF * sumTF MaxCTD
+	ind: 	43.8642	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	64.3503	Pow DOM DF
+	ind: 	34.9267	Pow - sumDF TF * sumTF MaxCTD
+	ind: 	47.2987	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	63.326	Pow DOM DF
+	ind: 	23.2979	% - sumDF TF Pow CHI MaxCTD
+	ind: 	69.773	Pow sumTF MaxCTD
+	ind: 	71.3597	Pow CHI MaxCTD
+	ind: 	64.2097	Pow DOM DF
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	54.2278	- TFIDF MaxGSS
+generation 13:
+	ind: 	39.1645	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	72.384	* CHI MaxCTD
+	ind: 	69.8534	Pow CHI MaxCTD
+	ind: 	70.1546	* CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	71.3999	Pow sumTF MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	45.0291	* + sumDF TF * CHI MaxCTD
+	ind: 	53.0026	+ - TFIDF MaxGSS * sumTF MaxCTD
+	ind: 	55.6537	% CHI MaxCTD
+	ind: 	53.1834	+ - TFIDF MaxGSS * sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	63.326	Pow DOM DF
+	ind: 	54.2278	% CHI MaxCTD
+	ind: 	71.5806	Pow CHI MaxCTD
+	ind: 	39.1645	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	71.3396	Pow sumTF MaxCTD
+	ind: 	55.6337	- TFIDF MaxGSS
+	ind: 	57.0396	- TFIDF MaxGSS
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	71.3396	- CHI MaxCTD
+	ind: 	54.5491	% CHI MaxCTD
+	ind: 	55.4529	% CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	44.0651	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	39.1645	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	45.9329	Log CHI MaxCTD
+	ind: 	26.9733	Log CHI MaxCTD
+	ind: 	26.7724	Pow sumTF TF
+	ind: 	70.1948	* CHI MaxCTD
+	ind: 	53.5248	* sumTF MaxCTD
+	ind: 	63.7277	Pow DOM DF
+	ind: 	52.1591	% CHI MaxCTD
+	ind: 	53.5248	* sumTF MaxCTD
+	ind: 	53.8462	+ - TFIDF MaxGSS * sumTF MaxCTD
+	ind: 	63.3862	Pow DOM DF
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	35.0874	Pow - sumDF TF * sumTF MaxCTD
+	ind: 	53.8261	* sumTF MaxCTD
+	ind: 	64.3503	Pow DOM DF
+	ind: 	54.047	% CHI MaxCTD
+	ind: 	47.2987	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	47.379	% * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	71.179	Pow sumTF MaxCTD
+	ind: 	70.0542	Pow sumTF MaxCTD
+	ind: 	63.5268	Pow DOM DF
+	ind: 	47.8811	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	54.2278	- TFIDF MaxGSS
+generation 14:
+	ind: 	39.1645	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	35.71	Pow - sumDF TF * sumTF MaxCTD
+	ind: 	69.8534	Pow CHI MaxCTD
+	ind: 	70.1546	* CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	69.7128	- CHI MaxCTD
+	ind: 	71.3999	Pow sumTF MaxCTD
+	ind: 	68.7889	+ sumDF TF
+	ind: 	52.1591	% CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	55.6537	% CHI MaxCTD
+	ind: 	49.8293	% * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	63.326	Pow DOM DF
+	ind: 	54.2278	% CHI MaxCTD
+	ind: 	69.7128	- CHI MaxCTD
+	ind: 	39.1645	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	26.9733	Log CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	57.0396	- TFIDF MaxGSS
+	ind: 	29.6043	Log CHI MaxCTD
+	ind: 	45.5714	Log CHI MaxCTD
+	ind: 	54.5491	% CHI MaxCTD
+	ind: 	67.7244	* Pow DOM DF * CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	52.1591	% CHI MaxCTD
+	ind: 	44.1655	* + sumDF TF * CHI MaxCTD
+	ind: 	45.9329	Log CHI MaxCTD
+	ind: 	26.9733	Log CHI MaxCTD
+	ind: 	71.2794	- CHI MaxCTD
+	ind: 	70.1948	* CHI MaxCTD
+	ind: 	69.5722	Pow sumTF MaxCTD
+	ind: 	63.7277	Pow DOM DF
+	ind: 	63.3862	Pow DOM DF
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	53.8462	+ - TFIDF MaxGSS * sumTF MaxCTD
+	ind: 	54.047	% CHI MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	63.9687	Pow DOM DF
+	ind: 	53.8261	* sumTF MaxCTD
+	ind: 	66.6399	+ sumDF TF
+	ind: 	51.6971	% * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	64.1896	Pow DOM DF
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	39.1645	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	35.5091	Pow - sumDF TF * sumTF MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	26.893	Log CHI MaxCTD
+generation 15:
+	ind: 	71.2191	Pow sumTF MaxCTD
+	ind: 	35.71	Pow - sumDF TF * sumTF MaxCTD
+	ind: 	71.179	Pow CHI MaxCTD
+	ind: 	69.8333	Pow sumTF MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	71.1589	Pow sumTF MaxCTD
+	ind: 	53.6654	* sumTF MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	46.1137	Log CHI MaxCTD
+	ind: 	71.2191	Pow sumTF MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	71.3999	Pow sumTF MaxCTD
+	ind: 	54.2278	% CHI MaxCTD
+	ind: 	46.0735	Log CHI MaxCTD
+	ind: 	39.1645	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	52.139	% CHI MaxCTD
+	ind: 	52.4402	+ % CHI MaxCTD * sumTF MaxCTD
+	ind: 	53.6654	* sumTF MaxCTD
+	ind: 	56.0755	% CHI MaxCTD
+	ind: 	45.5714	Log CHI MaxCTD
+	ind: 	55.011	% CHI MaxCTD
+	ind: 	67.7244	* Pow DOM DF * CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	52.1591	% CHI MaxCTD
+	ind: 	63.2657	Pow DOM DF
+	ind: 	45.5513	Log CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	52.139	% CHI MaxCTD
+	ind: 	45.4308	Log CHI MaxCTD
+	ind: 	69.5722	Pow sumTF MaxCTD
+	ind: 	71.3999	Pow sumTF MaxCTD
+	ind: 	63.3862	Pow DOM DF
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	54.3081	% CHI MaxCTD
+	ind: 	54.047	% CHI MaxCTD
+	ind: 	64.2498	Pow DOM DF
+	ind: 	63.9687	Pow DOM DF
+	ind: 	63.2657	Pow DOM DF
+	ind: 	66.6399	+ sumDF TF
+	ind: 	54.047	% CHI MaxCTD
+	ind: 	64.1896	Pow DOM DF
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	71.3798	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	35.5091	Pow - sumDF TF * sumTF MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	26.893	Log CHI MaxCTD
+generation 16:
+	ind: 	71.2191	Pow sumTF MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.179	Pow CHI MaxCTD
+	ind: 	69.8333	Pow sumTF MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	71.1589	Pow sumTF MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	46.1137	Log CHI MaxCTD
+	ind: 	71.2794	Pow CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	54.047	% CHI MaxCTD
+	ind: 	54.2278	% CHI MaxCTD
+	ind: 	32.0546	Log CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	69.773	Pow sumTF MaxCTD
+	ind: 	67.3228	- sumTF MaxCTD
+	ind: 	71.199	Pow sumTF MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	45.5714	Log CHI MaxCTD
+	ind: 	69.8333	Pow sumTF MaxCTD
+	ind: 	66.7001	+ sumDF TF
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	71.199	Pow sumTF MaxCTD
+	ind: 	49.9699	* sumTF MaxCTD
+	ind: 	45.5513	Log CHI MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	53.806	* sumTF MaxCTD
+	ind: 	46.0534	Log CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	63.3862	Pow DOM DF
+	ind: 	46.0534	Log CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	62.0607	+ Pow DOM DF * sumTF MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	55.6537	% CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	66.6399	+ sumDF TF
+	ind: 	54.047	% CHI MaxCTD
+	ind: 	64.1896	Pow DOM DF
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	70.9781	Pow sumTF MaxCTD
+	ind: 	53.6654	* sumTF MaxCTD
+	ind: 	46.5957	Log CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+generation 17:
+	ind: 	70.0743	Pow CHI MaxCTD
+	ind: 	54.8303	% CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	51.7775	% CHI MaxCTD
+	ind: 	63.567	+ Pow DOM DF Pow DOM DF
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	71.1589	Pow sumTF MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	30.5081	Log CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	70.0743	Pow CHI MaxCTD
+	ind: 	71.2794	Pow CHI MaxCTD
+	ind: 	26.3306	Log CHI MaxCTD
+	ind: 	54.047	% CHI MaxCTD
+	ind: 	54.2278	% CHI MaxCTD
+	ind: 	32.0546	Log CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	69.773	Pow sumTF MaxCTD
+	ind: 	54.9106	% CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	69.6325	+ CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	69.8333	Pow sumTF MaxCTD
+	ind: 	69.7931	* CHI MaxCTD
+	ind: 	70.235	Pow CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	39.1645	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	54.3483	% CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	71.9221	Pow sumTF MaxCTD
+	ind: 	71.199	Pow CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	70.1145	Pow sumTF MaxCTD
+	ind: 	46.0534	Log CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	62.0607	+ Pow DOM DF * sumTF MaxCTD
+	ind: 	30.5081	Log CHI MaxCTD
+	ind: 	55.6537	% CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	54.047	% CHI MaxCTD
+	ind: 	54.9106	% CHI MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	71.9221	Pow sumTF MaxCTD
+	ind: 	51.4963	* sumTF MaxCTD
+	ind: 	46.5957	Log CHI MaxCTD
+	ind: 	71.9221	Pow CHI MaxCTD
+	ind: 	54.2278	% CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+generation 18:
+	ind: 	70.0743	Pow CHI MaxCTD
+	ind: 	54.8303	% CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.5204	CHI
+	ind: 	70.7773	Pow sumTF MaxCTD
+	ind: 	69.5722	Pow sumTF MaxCTD
+	ind: 	71.1589	Pow sumTF MaxCTD
+	ind: 	42.86	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	70.7773	Pow sumTF MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	71.2794	Pow CHI MaxCTD
+	ind: 	71.2794	Pow sumTF MaxCTD
+	ind: 	71.3195	Pow sumTF MaxCTD
+	ind: 	39.1645	+ * sumTF MaxCTD * sumTF MaxCTD
+	ind: 	52.3197	* sumTF MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	69.6325	+ CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	69.7931	* CHI MaxCTD
+	ind: 	71.9221	Pow sumTF MaxCTD
+	ind: 	54.529	% CHI MaxCTD
+	ind: 	71.3999	Pow sumTF MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.2995	Pow CHI MaxCTD
+	ind: 	66.0574	* * CHI MaxCTD MaxCTD
+	ind: 	51.195	* sumTF MaxCTD
+	ind: 	71.199	Pow CHI MaxCTD
+	ind: 	70.5563	Pow sumTF MaxCTD
+	ind: 	70.1145	Pow sumTF MaxCTD
+	ind: 	50.0703	* sumTF MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	71.9221	Pow CHI MaxCTD
+	ind: 	50.0703	* sumTF MaxCTD
+	ind: 	64.1695	Pow DOM DF
+	ind: 	54.8303	% CHI MaxCTD
+	ind: 	53.324	% CHI MaxCTD
+	ind: 	70.0944	Pow sumTF MaxCTD
+	ind: 	51.2151	* sumTF MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	51.195	* sumTF MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	46.5957	Log CHI MaxCTD
+	ind: 	49.5481	* sumTF MaxCTD
+	ind: 	54.2278	% CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+generation 19:
+	ind: 	70.6568	CHI
+	ind: 	54.8303	% CHI MaxCTD
+	ind: 	70.1948	CHI
+	ind: 	49.6686	* sumTF MaxCTD
+	ind: 	71.0384	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	70.6166	Pow sumTF MaxCTD
+	ind: 	71.2794	Pow sumTF MaxCTD
+	ind: 	69.994	Pow sumTF MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	71.2794	Pow CHI MaxCTD
+	ind: 	71.2794	Pow sumTF MaxCTD
+	ind: 	71.3195	Pow sumTF MaxCTD
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	52.3197	* sumTF MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	53.4846	* sumTF MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	70.7773	Pow sumTF MaxCTD
+	ind: 	51.0745	* sumTF MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	71.9221	Pow sumTF MaxCTD
+	ind: 	54.529	% CHI MaxCTD
+	ind: 	70.7371	* CHI MaxCTD
+	ind: 	69.7931	* CHI MaxCTD
+	ind: 	49.6485	* sumTF MaxCTD
+	ind: 	66.0574	* * CHI MaxCTD MaxCTD
+	ind: 	49.5682	* sumTF MaxCTD
+	ind: 	69.8534	Pow sumTF MaxCTD
+	ind: 	73.107	* CHI MaxCTD
+	ind: 	70.1145	Pow sumTF MaxCTD
+	ind: 	71.8217	Pow sumTF MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	71.9221	Pow CHI MaxCTD
+	ind: 	50.0703	* sumTF MaxCTD
+	ind: 	54.4487	* sumTF MaxCTD
+	ind: 	54.8303	% CHI MaxCTD
+	ind: 	71.2794	CHI
+	ind: 	53.103	% CHI MaxCTD
+	ind: 	49.6686	* sumTF MaxCTD
+	ind: 	70.6768	Pow sumTF MaxCTD
+	ind: 	70.6768	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	70.0944	Pow sumTF MaxCTD
+	ind: 	74.2117	* CHI MaxCTD
+	ind: 	71.2794	CHI
+	ind: 	72.3037	* CHI MaxCTD
+generation 20:
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	54.8303	% CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	55.7542	* sumTF MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	54.5692	* sumTF MaxCTD
+	ind: 	71.2794	Pow sumTF MaxCTD
+	ind: 	49.5682	* sumTF MaxCTD
+	ind: 	59.9719	% sumTF MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	71.2794	Pow CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.3195	Pow sumTF MaxCTD
+	ind: 	72.2836	* CHI MaxCTD
+	ind: 	71.6007	* CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	71.3999	Pow sumTF MaxCTD
+	ind: 	70.3153	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	54.8303	% CHI MaxCTD
+	ind: 	71.6409	* CHI MaxCTD
+	ind: 	69.6927	CHI
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	70.7371	* CHI MaxCTD
+	ind: 	73.9707	* CHI MaxCTD
+	ind: 	73.7698	* CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	49.5682	* sumTF MaxCTD
+	ind: 	71.3195	Pow sumTF MaxCTD
+	ind: 	71.3597	CHI
+	ind: 	54.5692	* sumTF MaxCTD
+	ind: 	71.8217	Pow sumTF MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	49.5481	* sumTF MaxCTD
+	ind: 	53.4846	* sumTF MaxCTD
+	ind: 	70.3153	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	70.3153	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	70.2551	* CHI MaxCTD
+	ind: 	55.7743	* sumTF MaxCTD
+	ind: 	70.6768	* CHI MaxCTD
+	ind: 	70.5563	Pow sumTF MaxCTD
+	ind: 	70.0944	Pow sumTF MaxCTD
+	ind: 	71.5003	CHI
+	ind: 	53.4846	* sumTF MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+generation 21:
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.42	Pow sumTF MaxCTD
+	ind: 	72.7254	* CHI MaxCTD
+	ind: 	55.7542	* sumTF MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	52.862	% CHI MaxCTD
+	ind: 	52.3599	* sumTF MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	59.9719	% sumTF MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	54.3282	* sumTF MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.3195	Pow sumTF MaxCTD
+	ind: 	72.2836	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	54.5692	* sumTF MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	52.3599	* sumTF MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	54.8303	% CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	73.1271	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.8217	Pow sumTF MaxCTD
+	ind: 	73.9707	* CHI MaxCTD
+	ind: 	73.7698	* CHI MaxCTD
+	ind: 	72.4242	* CHI MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	71.3195	Pow sumTF MaxCTD
+	ind: 	52.3599	* sumTF MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	54.8303	% CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	49.5481	* sumTF MaxCTD
+	ind: 	53.4846	* sumTF MaxCTD
+	ind: 	71.2191	Pow sumTF MaxCTD
+	ind: 	72.4041	* CHI MaxCTD
+	ind: 	54.4487	* sumTF MaxCTD
+	ind: 	71.3597	CHI
+	ind: 	71.3195	Pow sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	70.6768	* CHI MaxCTD
+	ind: 	73.9305	* CHI MaxCTD
+	ind: 	70.0944	Pow sumTF MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	71.4601	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+generation 22:
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.42	Pow sumTF MaxCTD
+	ind: 	55.8948	* sumTF MaxCTD
+	ind: 	55.7542	* sumTF MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	52.3599	* sumTF MaxCTD
+	ind: 	71.2191	Pow sumTF MaxCTD
+	ind: 	73.5891	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	70.2149	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	54.4487	* sumTF MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.9622	* CHI MaxCTD
+	ind: 	54.5491	* sumTF MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.5204	Pow sumTF MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	70.1145	* CHI MaxCTD
+	ind: 	69.9136	Pow sumTF MaxCTD
+	ind: 	73.1271	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.8217	Pow sumTF MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	73.7698	* CHI MaxCTD
+	ind: 	49.5481	* sumTF MaxCTD
+	ind: 	53.9265	% CHI MaxCTD
+	ind: 	71.4601	Pow CHI MaxCTD
+	ind: 	52.3599	* sumTF MaxCTD
+	ind: 	71.2794	Pow CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.9221	Pow sumTF MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	54.5692	* sumTF MaxCTD
+	ind: 	71.9622	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	71.9622	* CHI MaxCTD
+	ind: 	70.1145	* CHI MaxCTD
+	ind: 	70.6768	* CHI MaxCTD
+	ind: 	73.9305	* CHI MaxCTD
+	ind: 	74.2719	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	71.4601	* CHI MaxCTD
+	ind: 	71.3195	Pow sumTF MaxCTD
+generation 23:
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.8618	Pow sumTF MaxCTD
+	ind: 	71.42	Pow sumTF MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	71.2191	Pow sumTF MaxCTD
+	ind: 	56.0153	* sumTF MaxCTD
+	ind: 	71.1589	Pow CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	54.4487	* sumTF MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	52.3599	* sumTF MaxCTD
+	ind: 	71.9622	* CHI MaxCTD
+	ind: 	54.5491	* sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.4443	* CHI MaxCTD
+	ind: 	70.1346	Pow sumTF MaxCTD
+	ind: 	71.8217	Pow sumTF MaxCTD
+	ind: 	72.1631	* CHI MaxCTD
+	ind: 	74.2719	* CHI MaxCTD
+	ind: 	73.1271	* CHI MaxCTD
+	ind: 	72.2836	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	73.7698	* CHI MaxCTD
+	ind: 	49.5481	* sumTF MaxCTD
+	ind: 	53.9265	% CHI MaxCTD
+	ind: 	70.7773	Pow sumTF MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	73.6694	* CHI MaxCTD
+	ind: 	72.4041	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	54.8504	* sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.42	Pow sumTF MaxCTD
+	ind: 	72.3438	* CHI MaxCTD
+	ind: 	70.6768	* CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	74.2719	* CHI MaxCTD
+	ind: 	54.4487	* sumTF MaxCTD
+	ind: 	72.1631	* CHI MaxCTD
+	ind: 	54.5491	* sumTF MaxCTD
+generation 24:
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.8618	Pow sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	70.9781	* CHI MaxCTD
+	ind: 	71.42	Pow sumTF MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.3999	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	71.1589	Pow CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	54.4487	* sumTF MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	52.3599	* sumTF MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	54.5491	* sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.1631	* CHI MaxCTD
+	ind: 	55.5734	* sumTF MaxCTD
+	ind: 	71.8217	Pow sumTF MaxCTD
+	ind: 	72.1631	* CHI MaxCTD
+	ind: 	71.2392	* MaxTFIDF MaxCTD
+	ind: 	73.1271	* CHI MaxCTD
+	ind: 	72.2836	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.1589	Pow sumTF MaxCTD
+	ind: 	71.2794	Pow CHI MaxCTD
+	ind: 	53.9265	% CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	54.8504	* sumTF MaxCTD
+	ind: 	64.5511	- MaxTFIDF MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.2794	Pow CHI MaxCTD
+	ind: 	70.2752	Pow sumTF MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	70.6768	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.9622	* CHI MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	54.5491	* sumTF MaxCTD
+generation 25:
+	ind: 	54.1876	* sumTF MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	72.7254	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.0827	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	67.8249	* MaxTFIDF MaxCTD
+	ind: 	71.1589	Pow CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	72.7054	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.6409	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	73.5087	* CHI MaxCTD
+	ind: 	71.8016	Pow CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.1631	* CHI MaxCTD
+	ind: 	72.1631	* CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	54.4286	* sumTF MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	73.1271	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	70.1145	* CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.1589	Pow sumTF MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	73.6694	* CHI MaxCTD
+	ind: 	72.0827	* CHI MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	54.8504	* sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.5806	+ CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	55.9349	* sumTF MaxCTD
+	ind: 	71.2794	Pow CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.2836	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	71.7815	Pow sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.8016	Pow CHI MaxCTD
+generation 26:
+	ind: 	54.1876	* sumTF MaxCTD
+	ind: 	53.6855	* sumTF MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	72.7254	* CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	67.8249	* MaxTFIDF MaxCTD
+	ind: 	71.1589	Pow CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.6409	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	71.4601	- CHI MaxCTD
+	ind: 	54.4286	* sumTF MaxCTD
+	ind: 	71.8217	Pow sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	71.1589	Pow sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	53.5851	* sumTF MaxCTD
+	ind: 	53.8462	* sumTF MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	73.6694	* CHI MaxCTD
+	ind: 	71.2794	Pow sumTF MaxCTD
+	ind: 	54.8504	* sumTF MaxCTD
+	ind: 	55.7943	* sumTF MaxCTD
+	ind: 	54.8504	* sumTF MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	74.2117	* CHI MaxCTD
+	ind: 	71.2794	Pow CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.2836	* CHI MaxCTD
+	ind: 	70.8375	* CHI MaxCTD
+	ind: 	71.7815	Pow sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+generation 27:
+	ind: 	54.1876	* sumTF MaxCTD
+	ind: 	71.5405	- CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.8217	Pow sumTF MaxCTD
+	ind: 	73.5891	* CHI MaxCTD
+	ind: 	53.7256	* sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.2794	Pow sumTF MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	56.8588	* sumTF MaxCTD
+	ind: 	74.7138	* CHI MaxCTD
+	ind: 	71.4601	- CHI MaxCTD
+	ind: 	72.8058	* CHI MaxCTD
+	ind: 	54.4286	* sumTF MaxCTD
+	ind: 	70.1546	- CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	71.1589	Pow sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	71.4601	- CHI MaxCTD
+	ind: 	53.5851	* sumTF MaxCTD
+	ind: 	71.2191	Pow sumTF MaxCTD
+	ind: 	70.3354	* CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.2794	Pow sumTF MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	58.0438	* sumTF MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	56.4973	* sumTF MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.5447	Pow sumTF MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	71.5405	+ CHI MaxCTD
+	ind: 	71.7815	Pow sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+generation 28:
+	ind: 	54.1876	* sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	49.5481	* sumTF MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	73.5891	* CHI MaxCTD
+	ind: 	53.7256	* sumTF MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	72.143	P
+	ind: 	69.5923	* * CHI MaxCTD MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	26.3306	Log sumTF MaxCTD
+	ind: 	49.5481	* sumTF MaxCTD
+	ind: 	74.7138	* CHI MaxCTD
+	ind: 	12.3519	Pow Log sumTF MaxCTD MaxCTD
+	ind: 	45.6517	Log CHI MaxCTD
+	ind: 	70.8174	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.42	Pow sumTF MaxCTD
+	ind: 	73.5891	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	9.39948	Pow Log sumTF MaxCTD MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	9.39948	Pow Log sumTF MaxCTD MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	71.2794	Pow sumTF MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	72.7254	* CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	74.754	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	72.2836	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	73.6092	* CHI MaxCTD
+generation 29:
+	ind: 	54.1876	* sumTF MaxCTD
+	ind: 	71.8618	Pow sumTF MaxCTD
+	ind: 	49.5481	* sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	72.2836	* CHI MaxCTD
+	ind: 	71.7011	+ CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	74.2117	* CHI MaxCTD
+	ind: 	53.7256	* sumTF MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.3195	Pow sumTF MaxCTD
+	ind: 	69.5923	* * CHI MaxCTD MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	49.5481	* sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	45.3906	Log CHI MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	71.42	Pow sumTF MaxCTD
+	ind: 	73.5489	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	45.6718	Log CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	9.39948	Pow Log sumTF MaxCTD MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	69.5722	Pow sumTF MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	71.2794	Pow sumTF MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.2794	Pow sumTF MaxCTD
+	ind: 	68.6684	sumTF
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	74.754	* CHI MaxCTD
+	ind: 	74.2117	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	71.42	Pow Pow sumTF MaxCTD MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+generation 30:
+	ind: 	71.6208	+ CHI * CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	58.7467	* sumTF MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	72.2836	* CHI MaxCTD
+	ind: 	71.6208	+ CHI * CHI MaxCTD
+	ind: 	55.0713	% CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	53.7256	* sumTF MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	55.7943	* sumTF MaxCTD
+	ind: 	50.4318	* sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.4644	MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	45.3906	Log CHI MaxCTD
+	ind: 	70.8174	- CHI MaxCTD
+	ind: 	54.0269	* sumTF MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	45.6718	Log CHI MaxCTD
+	ind: 	72.4644	MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	9.39948	Pow Log sumTF MaxCTD MaxCTD
+	ind: 	26.3105	Log sumTF MaxCTD
+	ind: 	71.3396	Pow sumTF MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	56.1157	* sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.2794	Pow sumTF MaxCTD
+	ind: 	68.6684	sumTF
+	ind: 	26.3306	Log CHI MaxCTD
+	ind: 	71.6208	+ CHI * CHI MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	72.4644	MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	46.2543	Log CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	68.6684	sumTF
+generation 31:
+	ind: 	71.6208	+ CHI * CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	70.7773	Pow sumTF MaxCTD
+	ind: 	45.6718	Log CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	72.9865	DOM
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	71.9622	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	71.5003	+ CHI * CHI MaxCTD
+	ind: 	55.7943	* sumTF MaxCTD
+	ind: 	45.5513	Log CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	49.5481	* sumTF MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	55.7943	* sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	69.6325	sumTF
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	45.6718	Log CHI MaxCTD
+	ind: 	71.8417	Pow sumTF MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	71.44	+ CHI MaxCTD
+	ind: 	55.8144	* sumTF MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	55.7943	* sumTF MaxCTD
+	ind: 	71.2191	Pow sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.1832	AM
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	68.0257	- sumTF MaxCTD
+	ind: 	68.6684	sumTF
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.4644	MaxCTD
+	ind: 	72.9665	AM
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	46.2543	Log CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+generation 32:
+	ind: 	71.6208	+ CHI * CHI MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	70.7773	Pow sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	71.8016	Pow sumTF MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	71.8618	* CHI MaxCTD
+	ind: 	72.9865	DOM
+	ind: 	45.3906	Log CHI MaxCTD
+	ind: 	71.9622	* CHI MaxCTD
+	ind: 	71.9622	* CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	45.5513	Log CHI MaxCTD
+	ind: 	70.1145	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	46.2944	Log CHI MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.8016	+ CHI * CHI MaxCTD
+	ind: 	46.1338	Log CHI MaxCTD
+	ind: 	45.6718	Log CHI MaxCTD
+	ind: 	72.2233	* CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	55.8144	* sumTF MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	55.7943	* sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.0024	+ CHI * CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	68.0257	- sumTF MaxCTD
+	ind: 	68.6684	sumTF
+	ind: 	72.2233	* CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	69.6325	sumTF
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	72.9865	DOM
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+generation 33:
+	ind: 	71.6208	+ CHI * CHI MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	72.1631	* CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	69.1504	sumTF
+	ind: 	73.6292	DOM
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	71.8618	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	71.4601	CHI
+	ind: 	68.8492	sumTF
+	ind: 	69.4919	* * CHI MaxCTD MaxCTD
+	ind: 	72.0426	Pow sumTF MaxCTD
+	ind: 	72.2233	* CHI MaxCTD
+	ind: 	69.1906	sumTF
+	ind: 	72.2233	* CHI MaxCTD
+	ind: 	74.0309	DOM
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.3037	* CHI MaxCTD
+	ind: 	45.9731	Log CHI MaxCTD
+	ind: 	46.0735	Log CHI MaxCTD
+	ind: 	46.2944	Log CHI MaxCTD
+	ind: 	46.2944	Log CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.9865	DOM
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	45.6718	Log CHI MaxCTD
+	ind: 	72.2233	* CHI MaxCTD
+	ind: 	46.0534	Log CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	73.5891	DOM
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	55.7943	* sumTF MaxCTD
+	ind: 	72.7054	DOM
+	ind: 	73.8502	* CHI MaxCTD
+	ind: 	72.0024	+ CHI * CHI MaxCTD
+	ind: 	68.9697	* * CHI MaxCTD MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.8618	* CHI MaxCTD
+	ind: 	72.2233	* CHI MaxCTD
+	ind: 	71.199	Pow sumTF MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	69.6325	sumTF
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+generation 34:
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	67.0416	sumDF
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	69.1504	sumTF
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	71.8618	* CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	71.4601	CHI
+	ind: 	68.8492	sumTF
+	ind: 	69.4919	* * CHI MaxCTD MaxCTD
+	ind: 	72.0426	Pow sumTF MaxCTD
+	ind: 	72.866	MaxCTD
+	ind: 	45.712	Log CHI MaxCTD
+	ind: 	72.2233	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	46.0735	Log CHI MaxCTD
+	ind: 	45.6517	Log CHI MaxCTD
+	ind: 	51.657	Log CHI MaxCTD
+	ind: 	70.4358	Pow sumTF MaxCTD
+	ind: 	70.235	* IDF MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	71.902	+ CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	46.3547	Log CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	69.1303	sumTF
+	ind: 	73.4887	* CHI MaxCTD
+	ind: 	55.7943	* sumTF MaxCTD
+	ind: 	72.0024	CHI
+	ind: 	71.3195	Pow sumTF MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	45.5714	Log CHI MaxCTD
+	ind: 	71.6007	+ CHI * CHI MaxCTD
+	ind: 	71.8618	* CHI MaxCTD
+	ind: 	68.9295	sumTF
+	ind: 	71.199	Pow sumTF MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	45.9932	Log CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	46.2543	Log CHI MaxCTD
+	ind: 	70.1747	* IDF MaxCTD
+	ind: 	26.3105	Log CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+generation 35:
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	71.9622	* CHI MaxCTD
+	ind: 	71.5405	Pow sumTF MaxCTD
+	ind: 	46.4149	Log CHI MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	72.1832	* CHI MaxCTD
+	ind: 	45.5513	Log CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	45.9329	Log CHI MaxCTD
+	ind: 	72.0426	Pow sumTF MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	45.712	Log CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.902	Pow CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	46.0735	Log CHI MaxCTD
+	ind: 	45.5513	Log CHI MaxCTD
+	ind: 	51.657	Log CHI MaxCTD
+	ind: 	46.3346	Log CHI MaxCTD
+	ind: 	70.1346	* IDF MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.902	+ CHI MaxCTD
+	ind: 	46.0735	Log CHI MaxCTD
+	ind: 	71.199	Pow CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	69.1303	sumTF
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	72.1631	* CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.6007	+ CHI * CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	68.9295	sumTF
+	ind: 	45.9329	Log CHI MaxCTD
+	ind: 	69.3111	sumTF
+	ind: 	44.8283	Log CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	46.2543	Log CHI MaxCTD
+	ind: 	72.0827	* CHI MaxCTD
+	ind: 	46.2944	Log CHI MaxCTD
+	ind: 	70.1346	* IDF MaxCTD
+generation 36:
+	ind: 	70.1948	* CHI MaxCTD
+	ind: 	73.1271	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	46.4149	Log CHI MaxCTD
+	ind: 	55.5734	* sumTF MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	45.5513	Log CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.902	Pow CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	69.9538	+ CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	70.2149	* CHI MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	70.8777	+ CHI MaxCTD
+	ind: 	72.143	+ CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.0827	* CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	70.1948	+ CHI MaxCTD
+	ind: 	69.3111	sumTF
+	ind: 	44.8283	Log CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0827	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	71.1388	Pow sumTF MaxCTD
+generation 37:
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	73.1271	* CHI MaxCTD
+	ind: 	55.0713	* sumTF MaxCTD
+	ind: 	53.5047	* sumTF MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	46.4149	Log CHI MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	70.8174	MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.902	Pow CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	73.1271	* CHI MaxCTD
+	ind: 	56.0353	* sumTF MaxCTD
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	71.2794	- CHI MaxCTD
+	ind: 	73.1271	* CHI MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	56.0353	* sumTF MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	55.5734	* sumTF MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	70.8174	MaxCTD
+	ind: 	55.0713	* sumTF MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	73.4083	* CHI MaxCTD
+generation 38:
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	74.1715	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.8016	+ CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.3396	Pow CHI MaxCTD
+	ind: 	46.4149	Log CHI MaxCTD
+	ind: 	71.7212	+ CHI MaxCTD
+	ind: 	72.0827	* CHI MaxCTD
+	ind: 	54.2278	% CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.661	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	73.1271	* CHI MaxCTD
+	ind: 	71.8016	MaxCTD
+	ind: 	71.902	Pow CHI MaxCTD
+	ind: 	71.5806	- CHI MaxCTD
+	ind: 	73.4284	* CHI MaxCTD
+	ind: 	73.1271	* CHI MaxCTD
+	ind: 	71.2794	- CHI MaxCTD
+	ind: 	69.6525	Pow CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	71.2794	- CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.2794	Pow CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	70.8174	MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.9464	MaxCTD
+	ind: 	70.3957	* CHI MaxOR
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	73.4083	* CHI MaxCTD
+generation 39:
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	46.3547	Log CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.8618	- CHI MaxCTD
+	ind: 	71.7815	Pow CHI MaxCTD
+	ind: 	72.2635	* CHI MaxCTD
+	ind: 	46.2543	Log CHI MaxCTD
+	ind: 	71.2191	Pow CHI MaxCTD
+	ind: 	71.7212	+ CHI MaxCTD
+	ind: 	71.8618	- CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	71.2794	- CHI MaxCTD
+	ind: 	45.5915	Log CHI MaxCTD
+	ind: 	71.8016	MaxCTD
+	ind: 	71.902	Pow CHI MaxCTD
+	ind: 	71.5806	- CHI MaxCTD
+	ind: 	73.4284	* CHI MaxCTD
+	ind: 	71.3396	- CHI MaxCTD
+	ind: 	71.2794	- CHI MaxCTD
+	ind: 	74.5531	* CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	71.8819	CHI
+	ind: 	72.0827	* CHI MaxCTD
+	ind: 	45.4911	Log CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	72.6451	MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	70.3957	* CHI MaxOR
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.7212	+ CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.9464	MaxCTD
+	ind: 	70.3957	* CHI MaxOR
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	73.4083	* CHI MaxCTD
+generation 40:
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	71.9823	CHI
+	ind: 	71.9823	CHI
+	ind: 	71.8618	- CHI MaxCTD
+	ind: 	55.9148	% CHI MaxCTD
+	ind: 	71.8819	CHI
+	ind: 	46.2543	Log CHI MaxCTD
+	ind: 	70.5764	MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	71.8618	- CHI MaxCTD
+	ind: 	37.859	Log CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	70.3957	* CHI MaxOR
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	55.9148	% CHI MaxCTD
+	ind: 	45.5915	Log CHI MaxCTD
+	ind: 	72.0827	* CHI MaxCTD
+	ind: 	55.5533	% CHI MaxCTD
+	ind: 	71.5806	- CHI MaxCTD
+	ind: 	46.3547	Log CHI MaxCTD
+	ind: 	71.3396	- CHI MaxCTD
+	ind: 	70.3957	* CHI MaxOR
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	46.2342	Log CHI MaxCTD
+	ind: 	45.4911	Log CHI MaxCTD
+	ind: 	71.5606	+ CHI MaxCTD
+	ind: 	72.6451	MaxCTD
+	ind: 	26.3105	Log CHI MaxCTD
+	ind: 	46.3547	Log CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.4601	Pow CHI MaxCTD
+	ind: 	55.5533	% CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	71.7212	+ CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	70.8375	* CHI MaxOR
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	71.902	Pow CHI MaxCTD
+	ind: 	72.0426	* CHI * CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	71.5204	+ CHI MaxCTD
+	ind: 	72.1631	* CHI MaxCTD
+	ind: 	72.8259	MaxCTD
+	ind: 	72.5648	MaxCTD
+	ind: 	70.8375	* CHI MaxOR
+generation 41:
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.9823	CHI
+	ind: 	71.8618	- CHI MaxCTD
+	ind: 	54.047	% CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	46.2543	Log CHI MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	71.0183	* CHI MaxCTD
+	ind: 	71.8618	- CHI MaxCTD
+	ind: 	37.859	Log CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	55.9148	% CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	55.5533	% CHI MaxCTD
+	ind: 	72.866	MaxCTD
+	ind: 	70.4559	* CHI MaxOR
+	ind: 	71.3396	- CHI MaxCTD
+	ind: 	71.0183	* CHI MaxCTD
+	ind: 	71.3396	- CHI MaxCTD
+	ind: 	71.3396	- CHI MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	46.2342	Log CHI MaxCTD
+	ind: 	45.4911	Log CHI MaxCTD
+	ind: 	71.8618	- CHI MaxCTD
+	ind: 	69.6325	CHI
+	ind: 	71.44	CHI
+	ind: 	46.3547	Log CHI MaxCTD
+	ind: 	46.4149	Log CHI MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	69.6325	CHI
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	46.1739	Log CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	71.2794	- CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	72.866	MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.42	+ CHI MaxCTD
+	ind: 	69.6325	CHI
+	ind: 	71.3798	- CHI MaxCTD
+	ind: 	72.8259	MaxCTD
+	ind: 	71.902	* CHI * CHI MaxCTD
+	ind: 	70.8375	* CHI MaxOR
+generation 42:
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.9823	CHI
+	ind: 	72.7254	MaxCTD
+	ind: 	54.047	% CHI MaxCTD
+	ind: 	72.6451	MaxCTD
+	ind: 	72.866	MaxCTD
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	71.2794	- CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	70.7973	- CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	55.5533	% CHI MaxCTD
+	ind: 	70.8375	* CHI MaxOR
+	ind: 	71.4601	* CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	54.6094	% CHI MaxCTD
+	ind: 	71.3396	- CHI MaxCTD
+	ind: 	71.2794	- CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	46.2342	Log CHI MaxCTD
+	ind: 	53.9265	% CHI MaxCTD
+	ind: 	72.2434	* CHI MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	46.4149	Log CHI MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	71.3396	- CHI MaxCTD
+	ind: 	69.6325	CHI
+	ind: 	46.1739	Log CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	53.9265	% CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	45.5915	Log CHI MaxCTD
+	ind: 	72.846	MaxCTD
+	ind: 	45.5915	Log CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.42	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	54.047	% CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	71.902	* CHI * CHI MaxCTD
+	ind: 	70.8375	* CHI MaxOR
+generation 43:
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.9823	CHI
+	ind: 	72.7254	MaxCTD
+	ind: 	55.0713	% CHI MaxCTD
+	ind: 	71.44	CHI
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0024	* CHI MaxCTD
+	ind: 	70.8777	+ CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	72.8058	MaxCTD
+	ind: 	72.7254	MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	71.9221	CHI
+	ind: 	71.4601	* CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	71.3396	- CHI MaxCTD
+	ind: 	71.8819	CHI
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	46.2342	Log CHI MaxCTD
+	ind: 	53.1633	% CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	71.3396	- CHI MaxCTD
+	ind: 	70.1145	* CHI MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	69.9136	+ CHI MaxCTD
+	ind: 	53.9265	% CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	71.5806	- CHI MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	55.3726	% CHI MaxCTD
+	ind: 	71.42	+ CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	71.4601	CHI
+	ind: 	72.0024	* CHI MaxCTD
+	ind: 	71.5806	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+generation 44:
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	71.8217	CHI
+	ind: 	71.9823	CHI
+	ind: 	55.0713	% CHI MaxCTD
+	ind: 	46.2342	Log CHI MaxCTD
+	ind: 	71.44	CHI
+	ind: 	71.4601	CHI
+	ind: 	71.6208	CHI
+	ind: 	52.1189	% CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.7254	MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	45.6517	Log CHI MaxCTD
+	ind: 	45.6517	Log CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	71.7212	CHI
+	ind: 	46.3547	Log CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	29.2629	Log CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	71.902	CHI
+	ind: 	69.9337	CHI
+	ind: 	70.8777	+ CHI MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	45.2701	Log CHI MaxCTD
+	ind: 	69.9538	CHI
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	69.9136	+ CHI MaxCTD
+	ind: 	71.6409	+ CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	71.7413	+ CHI MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	70.8777	+ CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.4601	CHI
+	ind: 	72.0024	* CHI MaxCTD
+	ind: 	46.2342	Log CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+generation 45:
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.8217	CHI
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	72.3639	* CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.6208	CHI
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	29.2629	Log CHI MaxCTD
+	ind: 	72.7254	MaxCTD
+	ind: 	69.9136	+ CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	45.6517	Log CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	71.7212	CHI
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	71.3597	CHI
+	ind: 	29.2629	Log CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.6451	MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	71.1187	MaxCTD
+	ind: 	45.6517	Log CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	71.1388	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	45.5513	Log CHI MaxCTD
+	ind: 	69.9538	CHI
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	69.9136	+ CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.866	MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	46.0735	Log CHI MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.42	+ CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.42	+ CHI MaxCTD
+	ind: 	52.1189	% CHI MaxCTD
+	ind: 	72.0024	* CHI MaxCTD
+	ind: 	71.2995	- CHI MaxCTD
+	ind: 	71.7413	CHI
+generation 46:
+	ind: 	72.143	* CHI MaxCTD
+	ind: 	71.42	+ CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	72.3639	* CHI MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	71.7413	CHI
+	ind: 	69.9136	+ CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	72.7254	MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	46.3346	Log CHI MaxCTD
+	ind: 	44.8484	Log MaxCTD MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	44.8484	Log MaxCTD MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	71.6208	CHI
+	ind: 	29.2629	Log CHI MaxCTD
+	ind: 	71.6208	CHI
+	ind: 	72.6451	MaxCTD
+	ind: 	72.7054	MaxCTD
+	ind: 	71.1187	MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.6409	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	72.7254	MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	45.5513	Log CHI MaxCTD
+	ind: 	71.1187	MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	69.9136	+ CHI MaxCTD
+	ind: 	71.8016	+ CHI MaxCTD
+	ind: 	72.866	MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	71.44	CHI
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.6409	+ CHI MaxCTD
+	ind: 	71.2593	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	46.3748	Log CHI MaxCTD
+	ind: 	72.0024	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+generation 47:
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	71.2593	+ CHI MaxCTD
+	ind: 	46.3547	Log CHI MaxCTD
+	ind: 	72.3639	* CHI MaxCTD
+	ind: 	71.7413	CHI
+	ind: 	55.0713	% CHI MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.4601	Pow CHI MaxCTD
+	ind: 	26.3306	Log CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	70.2149	* CHI MaxCTD
+	ind: 	44.8484	Log MaxCTD MaxCTD
+	ind: 	70.2149	* CHI MaxCTD
+	ind: 	45.23	Log CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.42	+ CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	29.2629	Log CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	71.7212	+ CHI MaxCTD
+	ind: 	45.6517	Log CHI MaxCTD
+	ind: 	70.6969	CHI
+	ind: 	45.6317	Log CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.1187	MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	69.9136	+ CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	71.4601	Pow CHI MaxCTD
+	ind: 	46.1739	Log MaxCTD MaxCTD
+	ind: 	71.3597	CHI
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	69.9136	+ CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.8417	+ CHI MaxCTD
+	ind: 	46.2744	Log CHI MaxCTD
+	ind: 	71.3597	CHI
+	ind: 	45.6517	Log CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+generation 48:
+	ind: 	27.2545	Log MaxCTD MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	45.712	Log CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.7413	CHI
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.4601	Pow CHI MaxCTD
+	ind: 	70.6367	+ CHI MaxCTD
+	ind: 	72.2033	* CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.2794	- CHI MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	29.2629	Log CHI MaxCTD
+	ind: 	71.6208	+ CHI MaxCTD
+	ind: 	71.44	CHI
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	70.6969	CHI
+	ind: 	70.3555	MaxCC
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	45.712	Log CHI MaxCTD
+	ind: 	69.9337	CHI
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	71.2191	MaxCC
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	27.6963	Log MaxCTD MaxCTD
+	ind: 	69.9136	+ CHI MaxCTD
+	ind: 	46.1739	Log MaxCTD MaxCTD
+	ind: 	71.3597	CHI
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	70.1145	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.3238	* CHI MaxCTD
+	ind: 	69.9136	+ CHI MaxCTD
+	ind: 	71.2191	MaxCC
+	ind: 	45.6517	Log CHI MaxCTD
+	ind: 	29.6847	Log CHI MaxCTD
+generation 49:
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	71.2995	+ CHI MaxCTD
+	ind: 	45.3304	Log CHI MaxCTD
+	ind: 	71.4601	Pow CHI MaxCTD
+	ind: 	71.6208	CHI
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.4601	Pow CHI MaxCTD
+	ind: 	29.2629	Log MaxCTD MaxCTD
+	ind: 	72.0024	* CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	45.712	Log CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	72.1631	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.5204	+ CHI MaxCTD
+	ind: 	45.471	Log CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.6208	+ CHI MaxCTD
+	ind: 	71.8417	Pow CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.5204	+ CHI MaxCTD
+	ind: 	71.5606	+ CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	72.1028	MaxCC
+	ind: 	72.1028	MaxCC
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.7011	* CHI MaxCTD
+	ind: 	54.288	% CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	27.6963	Log MaxCTD MaxCTD
+	ind: 	71.6007	+ CHI MaxCTD
+	ind: 	71.4601	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.8016	Pow CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.2191	MaxCC
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	52.4001	% CHI MaxCTD
+generation 50:
+	ind: 	71.8618	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	72.0024	* CHI MaxCTD
+	ind: 	71.8417	Pow CHI MaxCTD
+	ind: 	71.8016	+ CHI MaxCTD
+	ind: 	71.6208	CHI
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	69.753	* CHI MaxCTD
+	ind: 	71.9221	+ CHI MaxCTD
+	ind: 	71.8417	MaxCC
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	29.2629	Log MaxCTD MaxCTD
+	ind: 	72.0024	* CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	72.4844	MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	72.5246	MaxCTD
+	ind: 	71.6208	+ CHI MaxCTD
+	ind: 	71.8417	Pow CHI MaxCTD
+	ind: 	71.4601	+ CHI MaxCTD
+	ind: 	71.5204	+ CHI MaxCTD
+	ind: 	71.5606	+ CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	71.8417	Pow CHI MaxCTD
+	ind: 	72.1028	MaxCC
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.4601	Pow CHI MaxCTD
+	ind: 	54.288	% CHI MaxCTD
+	ind: 	72.0426	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	27.6963	Log MaxCTD MaxCTD
+	ind: 	71.8819	+ CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	71.3798	+ CHI MaxCTD
+	ind: 	72.1229	* CHI MaxCTD
+	ind: 	71.9422	* CHI MaxCTD
+	ind: 	72.0627	* CHI MaxCTD
+	ind: 	72.0225	* CHI MaxCTD
+	ind: 	71.9823	* CHI MaxCTD
+	ind: 	72.2836	MaxCC
+	ind: 	72.1028	* CHI MaxCTD
+	ind: 	71.8016	+ CHI MaxCTD
