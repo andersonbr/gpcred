@@ -1,0 +1,2604 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Log,2) (Pow,2) 
+	terms: MaxTFICF MaxTFIDF MaxCTD MaxOR MaxCC MaxGSS MaxCHI MaxAM MaxIG MaxDom sumDF DF sumTF TF TFIDF TFICF IDF CTD OR CE CC GSS CHI IG DOM GINI P' P AM
+generation 0:
+	ind: 	66.901	* MaxOR AM
+	ind: 	39.5059	Log * MaxGSS CE + AM TF
+	ind: 	27.7767	Pow sumTF TF
+	ind: 	31.6529	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	21.4099	Log GINI MaxCC
+	ind: 	19.1605	- % TF OR % IG MaxTFIDF
+	ind: 	73.9305	% TFIDF MaxGSS
+	ind: 	72.3639	Pow * P sumTF * P MaxIG
+	ind: 	71.6811	* CTD MaxOR
+	ind: 	21.43	- Log TF sumDF * GINI TF
+	ind: 	41.7554	% MaxTFICF CTD
+	ind: 	44.2659	Pow - AM sumDF % CHI MaxOR
+	ind: 	60.7753	* CE TF
+	ind: 	68.9094	+ * TF MaxIG % GINI DOM
+	ind: 	67.2022	* MaxDom MaxTFIDF
+	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	59.2488	* CTD P'
+	ind: 	26.3105	* Log IDF TFICF Pow CE CE
+	ind: 	29.8654	Log GINI CHI
+	ind: 	60.6547	% * DF IDF * MaxDom MaxTFICF
+	ind: 	58.0237	* DF CE
+	ind: 	10.9259	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	47.4995	% TFICF TFIDF
+	ind: 	51.2954	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	58.8271	+ MaxCTD TFICF
+	ind: 	45.471	Pow * TFICF sumDF Pow P' MaxIG
+	ind: 	66.1177	- sumTF MaxCHI
+	ind: 	30.5483	Log * sumDF DF + TFIDF MaxAM
+	ind: 	30.468	Log TF MaxAM
+	ind: 	32.7978	* Log CHI OR + CE GINI
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	55.7743	- % TF MaxDom + TFICF sumTF
+	ind: 	71.2191	Pow MaxCC IDF
+	ind: 	53.9667	* * AM CE - DOM CHI
+	ind: 	53.0227	* sumTF MaxCTD
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	53.8863	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	71.3999	% AM IG
+	ind: 	8.43543	% + sumTF TFICF - MaxTFICF MaxGSS
+	ind: 	74.0309	* DOM MaxDom
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	53.7256	% IG DOM
+	ind: 	56.2764	+ - GSS AM * GSS MaxTFICF
+	ind: 	41.8357	Log DOM AM
+	ind: 	48.0016	* % MaxAM MaxIG * CE TF
+	ind: 	66.8608	+ sumDF CHI
+	ind: 	26.3105	Log Log MaxCHI MaxIG Pow MaxAM MaxTFICF
+	ind: 	68.4475	+ GSS GSS
+	ind: 	71.1187	* % AM MaxCHI Pow P' P
+generation 1:
+	ind: 	50.6527	Log GINI CHI
+	ind: 	53.7056	- % TF MaxDom + TFICF sumTF
+	ind: 	27.7767	Pow sumTF TF
+	ind: 	31.6529	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	61.5385	% * DF IDF * MaxDom MaxTFICF
+	ind: 	19.1605	- % TF OR % IG MaxTFIDF
+	ind: 	73.9305	% TFIDF MaxGSS
+	ind: 	61.3175	* MaxOR AM
+	ind: 	71.6811	* CTD MaxOR
+	ind: 	65.234	* MaxOR AM
+	ind: 	59.289	* MaxOR AM
+	ind: 	68.3069	* MaxOR AM
+	ind: 	60.7753	* CE TF
+	ind: 	61.9401	- DOM CHI
+	ind: 	59.3894	* * AM CE - DOM CHI
+	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	60.6748	% * DF IDF * MaxDom MaxTFICF
+	ind: 	26.3105	* Log IDF TFICF Pow CE CE
+	ind: 	29.8654	Log GINI CHI
+	ind: 	70.3153	* MaxOR AM
+	ind: 	29.8654	Log GINI CHI
+	ind: 	29.765	* Log IDF TFICF Pow CE CE
+	ind: 	52.1591	Log TFICF TFICF
+	ind: 	51.2954	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	10.5443	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	73.1673	* + P' TFIDF % MaxDom MaxCC
+	ind: 	66.1177	- sumTF MaxCHI
+	ind: 	59.4497	* * AM CE - DOM CHI
+	ind: 	63.7879	* MaxOR AM
+	ind: 	31.6529	* Log MaxGSS MaxCC Log CE MaxOR
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	70.3153	* MaxOR AM
+	ind: 	70.958	% TFIDF MaxGSS
+	ind: 	53.9667	* * AM CE - DOM CHI
+	ind: 	53.0227	* sumTF MaxCTD
+	ind: 	20.1848	Pow - AM sumDF * MaxOR AM
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	51.9984	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	20.0442	Pow - AM sumDF * MaxOR AM
+	ind: 	72.143	Pow CHI MaxCTD
+	ind: 	67.6642	* sumTF TF
+	ind: 	60.6949	* * AM CE % TF OR
+	ind: 	37.859	- Log TFICF TFICF + TFICF sumTF
+	ind: 	47.7003	- - DOM CHI % IG MaxTFIDF
+	ind: 	66.5796	- DOM CHI
+	ind: 	48.0016	* % MaxAM MaxIG * CE TF
+	ind: 	34.2639	Pow - AM sumDF % CHI MaxOR
+	ind: 	56.678	* CE TF
+	ind: 	68.4475	+ GSS GSS
+	ind: 	71.1187	* % AM MaxCHI Pow P' P
+generation 2:
+	ind: 	50.6527	Log GINI CHI
+	ind: 	53.7056	- % TF MaxDom + TFICF sumTF
+	ind: 	27.7767	Pow sumTF TF
+	ind: 	31.6529	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	61.5385	% * DF IDF * MaxDom MaxTFICF
+	ind: 	84.6351	% * DF IDF * MaxDom MaxTFICF
+	ind: 	73.9305	% TFIDF MaxGSS
+	ind: 	86.8233	Pow CHI MaxCTD
+	ind: 	7.95852	- % TF OR % IG MaxTFIDF
+	ind: 	85.167	- % TF OR Log GINI CHI
+	ind: 	11.3789	- % TF OR % IG MaxTFIDF
+	ind: 	9.39267	- % TF OR % IG MaxTFIDF
+	ind: 	31.9149	Log - MaxTFICF MaxTFICF % MaxDom MaxCC
+	ind: 	84.8438	% TF OR
+	ind: 	59.3894	* * AM CE - DOM CHI
+	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	26.589	- MaxTFICF MaxTFICF
+	ind: 	27.498	Log GINI CHI
+	ind: 	29.8654	Log GINI CHI
+	ind: 	9.39267	- % TF OR % IG MaxTFIDF
+	ind: 	29.8654	Log GINI CHI
+	ind: 	29.765	* Log IDF TFICF Pow CE CE
+	ind: 	84.4533	% * DF IDF * MaxDom MaxTFICF
+	ind: 	51.2954	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	9.50714	- % TF OR % IG MaxTFIDF
+	ind: 	73.1673	* + P' TFIDF % MaxDom MaxCC
+	ind: 	66.1177	- sumTF MaxCHI
+	ind: 	84.4465	% * DF IDF * MaxDom MaxTFICF
+	ind: 	24.9596	Log IG MaxTFIDF
+	ind: 	87.9141	* + P' TFIDF + GSS MaxAM
+	ind: 	84.4533	% * DF IDF * MaxDom MaxTFICF
+	ind: 	24.9596	Log GINI CHI
+	ind: 	70.958	% TFIDF MaxGSS
+	ind: 	30.9857	Log GINI CHI
+	ind: 	86.3789	Pow CHI MaxCTD
+	ind: 	20.1848	Pow - AM sumDF * MaxOR AM
+	ind: 	27.7767	Pow sumTF TF
+	ind: 	85.0323	% * DF IDF * MaxDom MaxTFICF
+	ind: 	85.874	- % TF OR Log GINI CHI
+	ind: 	31.9149	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	67.6642	* sumTF TF
+	ind: 	83.5308	% TFIDF MaxGSS
+	ind: 	86.1365	Pow CHI MaxCTD
+	ind: 	31.6388	Log GINI CHI
+	ind: 	66.5796	- DOM CHI
+	ind: 	84.2984	% TFIDF MaxGSS
+	ind: 	83.2884	% TFIDF MaxGSS
+	ind: 	56.678	* CE TF
+	ind: 	68.4475	+ GSS GSS
+	ind: 	71.1187	* % AM MaxCHI Pow P' P
+generation 3:
+	ind: 	31.3224	Pow sumTF TF
+	ind: 	53.7056	- % TF MaxDom + TFICF sumTF
+	ind: 	27.7767	Pow sumTF TF
+	ind: 	31.6529	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	84.0022	% TFIDF MaxGSS
+	ind: 	24.9596	Log IG MaxTFIDF
+	ind: 	51.5621	- * DF IDF % IG MaxTFIDF
+	ind: 	31.6254	Log GINI CHI
+	ind: 	83.9079	* sumTF TF
+	ind: 	26.5755	- MaxTFICF MaxTFICF
+	ind: 	11.3789	- % TF OR % IG MaxTFIDF
+	ind: 	9.39267	- % TF OR % IG MaxTFIDF
+	ind: 	31.9149	Log - MaxTFICF MaxTFICF % MaxDom MaxCC
+	ind: 	87.2475	* + P' TFIDF % MaxDom MaxCC
+	ind: 	22.6165	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	87.5168	Pow CHI MaxCTD
+	ind: 	26.589	- MaxTFICF MaxTFICF
+	ind: 	27.498	Log GINI CHI
+	ind: 	76.3264	* % AM MaxCHI Pow P' P
+	ind: 	9.39267	- % TF OR % IG MaxTFIDF
+	ind: 	31.8408	Log GINI CHI
+	ind: 	85.4565	* sumTF TF
+	ind: 	84.4533	% * DF IDF * MaxDom MaxTFICF
+	ind: 	31.8408	Log GINI CHI
+	ind: 	26.6092	- MaxTFICF MaxTFICF
+	ind: 	22.6165	Log GINI CHI
+	ind: 	31.6254	Log GINI CHI
+	ind: 	71.4247	* CE TF
+	ind: 	24.9596	Log IG MaxTFIDF
+	ind: 	87.9141	* + P' TFIDF + GSS MaxAM
+	ind: 	87.4697	Pow CHI MaxCTD
+	ind: 	87.6986	Pow CHI MaxCTD
+	ind: 	87.6986	Pow CHI MaxCTD
+	ind: 	30.9857	Log GINI CHI
+	ind: 	86.3789	Pow CHI MaxCTD
+	ind: 	20.1848	Pow - AM sumDF * MaxOR AM
+	ind: 	65.8228	% % TF OR * MaxDom MaxTFICF
+	ind: 	76.8853	* % AM MaxCHI Pow P' P
+	ind: 	85.874	- % TF OR Log GINI CHI
+	ind: 	31.4099	Log GINI CHI
+	ind: 	87.1869	Pow CHI MaxCTD
+	ind: 	87.2206	* + P' TFIDF % MaxDom MaxCC
+	ind: 	86.1365	Pow CHI MaxCTD
+	ind: 	31.6388	Log GINI CHI
+	ind: 	11.0759	- % TF OR % IG MaxTFIDF
+	ind: 	27.3297	Log GINI CHI
+	ind: 	86.6348	Pow CHI MaxCTD
+	ind: 	63.5066	- % TF MaxDom + TFICF sumTF
+	ind: 	26.4611	Log GINI CHI
+	ind: 	71.1187	* % AM MaxCHI Pow P' P
+generation 4:
+	ind: 	31.3224	Pow sumTF TF
+	ind: 	76.892	Pow P' P
+	ind: 	31.6388	Log GINI CHI
+	ind: 	31.6529	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	27.7404	Log GINI CHI
+	ind: 	31.6388	- MaxTFICF MaxTFICF
+	ind: 	86.1904	Pow CHI MaxCTD
+	ind: 	76.8853	* % AM MaxCHI Pow P' P
+	ind: 	30.8174	* % AM MaxCHI - MaxTFICF MaxTFICF
+	ind: 	86.1365	Pow CHI MaxCTD
+	ind: 	85.874	- % TF OR Log GINI CHI
+	ind: 	87.0388	+ sumTF TF
+	ind: 	31.9149	Log - MaxTFICF MaxTFICF % MaxDom MaxCC
+	ind: 	22.6165	Log GINI CHI
+	ind: 	76.9324	* % AM MaxCHI Pow P' P
+	ind: 	87.5168	Pow CHI MaxCTD
+	ind: 	87.3485	Pow CHI MaxCTD
+	ind: 	26.892	Log GINI CHI
+	ind: 	76.3264	* % AM MaxCHI Pow P' P
+	ind: 	11.0759	- % TF OR % IG MaxTFIDF
+	ind: 	87.6986	Pow CHI MaxCTD
+	ind: 	76.8853	* % AM MaxCHI Pow P' P
+	ind: 	86.5607	Pow CHI MaxCTD
+	ind: 	87.5505	* + P' TFIDF + GSS MaxAM
+	ind: 	26.6092	- MaxTFICF MaxTFICF
+	ind: 	22.6165	Log GINI CHI
+	ind: 	87.5774	Pow CHI MaxCTD
+	ind: 	71.4247	* CE TF
+	ind: 	24.9596	Log IG MaxTFIDF
+	ind: 	87.9141	* + P' TFIDF + GSS MaxAM
+	ind: 	24.9663	Log GINI CHI
+	ind: 	87.6986	Pow CHI MaxCTD
+	ind: 	26.414	Log GINI CHI
+	ind: 	71.4247	* CE TF
+	ind: 	67.6946	Log GINI % % TF OR * MaxDom MaxTFICF
+	ind: 	20.1848	Pow - AM sumDF * MaxOR AM
+	ind: 	26.414	- MaxTFICF MaxTFICF
+	ind: 	29.3361	Log GINI CHI
+	ind: 	26.892	- MaxTFICF MaxTFICF
+	ind: 	85.874	- % TF OR Log GINI CHI
+	ind: 	85.1131	- % TF OR Log GINI CHI
+	ind: 	87.2206	* + P' TFIDF % MaxDom MaxCC
+	ind: 	22.0846	Log GINI CHI
+	ind: 	31.6388	Log GINI CHI
+	ind: 	24.9394	Log GINI CHI
+	ind: 	27.3297	Log GINI CHI
+	ind: 	86.6348	Pow CHI MaxCTD
+	ind: 	85.8134	Pow CHI MaxCTD
+	ind: 	26.3668	Log GINI CHI
+	ind: 	71.1187	* % AM MaxCHI Pow P' P
+generation 5:
+	ind: 	31.3224	Pow sumTF TF
+	ind: 	76.7439	* % AM MaxCHI Pow P' P
+	ind: 	28.0636	Log GINI CHI
+	ind: 	86.3587	Pow CHI MaxCTD
+	ind: 	27.7404	Log GINI CHI
+	ind: 	86.5675	Pow CHI MaxCTD
+	ind: 	86.1904	Pow CHI MaxCTD
+	ind: 	75.5723	* % AM MaxCHI Pow P' P
+	ind: 	87.9208	* + P' TFIDF + GSS MaxAM
+	ind: 	86.1365	Pow CHI MaxCTD
+	ind: 	27.1681	Log GINI CHI
+	ind: 	26.6092	Log GINI CHI
+	ind: 	31.9149	Log - MaxTFICF MaxTFICF % MaxDom MaxCC
+	ind: 	27.8616	Log GINI CHI
+	ind: 	87.3148	Pow CHI MaxCTD
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	87.234	Pow CHI MaxCTD
+	ind: 	79.3227	* % AM MaxCHI % AM MaxCHI
+	ind: 	76.3264	* % AM MaxCHI Pow P' P
+	ind: 	11.0759	- % TF OR % IG MaxTFIDF
+	ind: 	87.6986	Pow CHI MaxCTD
+	ind: 	87.9141	* + P' TFIDF + GSS MaxAM
+	ind: 	75.5723	* % AM MaxCHI Pow P' P
+	ind: 	22.1384	Log GINI CHI
+	ind: 	26.6092	- MaxTFICF MaxTFICF
+	ind: 	22.6165	Log GINI CHI
+	ind: 	87.5774	Pow CHI MaxCTD
+	ind: 	87.9141	* + P' TFIDF + GSS MaxAM
+	ind: 	24.9596	Log IG MaxTFIDF
+	ind: 	87.9141	* + P' TFIDF + GSS MaxAM
+	ind: 	24.9663	Log GINI CHI
+	ind: 	87.6986	Pow CHI MaxCTD
+	ind: 	26.414	Log GINI CHI
+	ind: 	28.0636	- MaxTFICF MaxTFICF
+	ind: 	87.2542	* Pow CHI MaxCTD + GSS MaxAM
+	ind: 	27.3297	Log GINI CHI
+	ind: 	88.244	* Pow CHI MaxCTD + GSS MaxAM
+	ind: 	87.8872	* + P' TFIDF + GSS MaxAM
+	ind: 	87.6111	Pow CHI MaxCTD
+	ind: 	31.2281	Log IG MaxTFIDF
+	ind: 	85.1131	- % TF OR Log GINI CHI
+	ind: 	32.0092	Log GINI CHI
+	ind: 	87.2542	* Pow CHI MaxCTD + GSS MaxAM
+	ind: 	25.2626	Log GINI CHI
+	ind: 	75.5723	* % AM MaxCHI Pow P' P
+	ind: 	31.1541	* % AM MaxCHI Log GINI CHI
+	ind: 	86.6348	Pow CHI MaxCTD
+	ind: 	87.6852	Pow CHI MaxCTD
+	ind: 	86.5675	Pow CHI MaxCTD
+	ind: 	71.1187	* % AM MaxCHI Pow P' P
+generation 6:
+	ind: 	22.2058	Log GINI CHI
+	ind: 	76.7035	* % AM MaxCHI Pow P' P
+	ind: 	86.8772	Pow CHI MaxCTD
+	ind: 	86.3587	Pow CHI MaxCTD
+	ind: 	27.7404	Log GINI CHI
+	ind: 	85.9615	Pow MaxTFICF MaxTFICF
+	ind: 	27.8144	* Log GINI CHI Pow CHI MaxCTD
+	ind: 	75.5723	* % AM MaxCHI Pow P' P
+	ind: 	87.9208	* + P' TFIDF + GSS MaxAM
+	ind: 	86.1365	Pow CHI MaxCTD
+	ind: 	76.7439	* % AM MaxCHI Pow P' P
+	ind: 	27.7	Log GINI CHI
+	ind: 	87.0186	+ GSS MaxAM
+	ind: 	27.8616	Log GINI CHI
+	ind: 	87.4697	Pow CHI MaxCTD
+	ind: 	27.2421	Log GINI CHI
+	ind: 	86.1904	Pow CHI MaxCTD
+	ind: 	79.3227	* % AM MaxCHI % AM MaxCHI
+	ind: 	86.1769	Pow CHI MaxCTD
+	ind: 	83.7126	% AM MaxCHI
+	ind: 	87.6986	Pow CHI MaxCTD
+	ind: 	79.2957	* % AM MaxCHI % AM MaxCHI
+	ind: 	75.5723	* % AM MaxCHI Pow P' P
+	ind: 	22.1384	Log GINI CHI
+	ind: 	26.6092	- MaxTFICF MaxTFICF
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	31.0867	* % AM MaxCHI Log GINI CHI
+	ind: 	28.5281	- MaxTFICF MaxTFICF
+	ind: 	75.5723	* % AM MaxCHI Pow P' P
+	ind: 	27.8144	* - MaxTFICF MaxTFICF Pow CHI MaxCTD
+	ind: 	26.6429	* - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	83.5308	* % AM MaxCHI Pow CHI MaxCTD
+	ind: 	26.414	Log GINI CHI
+	ind: 	76.3938	* % AM MaxCHI Pow P' P
+	ind: 	76.892	Pow P' P
+	ind: 	27.3297	Log GINI CHI
+	ind: 	88.244	* Pow CHI MaxCTD + GSS MaxAM
+	ind: 	25.8214	Log GINI CHI
+	ind: 	87.133	+ GSS MaxAM
+	ind: 	27.8616	Log GINI CHI
+	ind: 	31.8408	Log GINI CHI
+	ind: 	78.077	* Pow CHI MaxCTD Pow P' P
+	ind: 	27.6192	Log GINI CHI
+	ind: 	27.7	* Pow P' TFIDF Log GINI CHI
+	ind: 	75.4982	* % AM MaxCHI Pow P' P
+	ind: 	31.1541	* % AM MaxCHI Log GINI CHI
+	ind: 	86.6348	Pow CHI MaxCTD
+	ind: 	87.6852	Pow CHI MaxCTD
+	ind: 	86.5675	Pow CHI MaxCTD
+	ind: 	25.3501	Log GINI CHI
+generation 7:
+	ind: 	22.2058	Log GINI CHI
+	ind: 	76.7035	* % AM MaxCHI Pow P' P
+	ind: 	86.8772	Pow CHI MaxCTD
+	ind: 	76.111	* % AM MaxCHI Pow P' P
+	ind: 	82.8037	% AM MaxCHI
+	ind: 	85.9615	Pow MaxTFICF MaxTFICF
+	ind: 	76.1985	* % AM MaxCHI Pow P' P
+	ind: 	87.2408	Pow CHI MaxCTD
+	ind: 	87.9208	* + P' TFIDF + GSS MaxAM
+	ind: 	77.8077	Pow P' P
+	ind: 	76.7439	* % AM MaxCHI Pow P' P
+	ind: 	27.7	Log GINI CHI
+	ind: 	86.1904	Pow CHI MaxCTD
+	ind: 	27.8616	Log GINI CHI
+	ind: 	87.4697	Pow CHI MaxCTD
+	ind: 	27.2421	Log GINI CHI
+	ind: 	86.1904	Pow CHI MaxCTD
+	ind: 	79.3227	* % AM MaxCHI % AM MaxCHI
+	ind: 	86.1769	Pow CHI MaxCTD
+	ind: 	82.7094	% AM MaxCHI
+	ind: 	87.2206	Pow CHI MaxCTD
+	ind: 	86.857	+ GSS MaxAM
+	ind: 	31.8408	* Pow P' TFIDF Log GINI CHI
+	ind: 	25.9224	Log GINI CHI
+	ind: 	26.6092	- MaxTFICF MaxTFICF
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	75.8618	* Pow CHI MaxCTD Pow P' P
+	ind: 	83.7126	% AM MaxCHI
+	ind: 	75.5723	* % AM MaxCHI Pow P' P
+	ind: 	83.7126	% AM MaxCHI
+	ind: 	27.572	* % AM MaxCHI Log GINI CHI
+	ind: 	32.0832	* + P' TFIDF Log GINI CHI
+	ind: 	87.6986	Pow CHI MaxCTD
+	ind: 	76.3938	* % AM MaxCHI Pow P' P
+	ind: 	76.892	Pow P' P
+	ind: 	78.1107	Pow P' P
+	ind: 	27.2421	Log GINI CHI
+	ind: 	31.8408	* + CHI MaxCTD Log GINI CHI
+	ind: 	27.7	Log GINI CHI
+	ind: 	78.1107	* Pow CHI MaxCTD Pow P' P
+	ind: 	85.9615	Pow MaxTFICF MaxTFICF
+	ind: 	78.077	* Pow CHI MaxCTD Pow P' P
+	ind: 	86.5607	Pow CHI MaxCTD
+	ind: 	78.077	* Pow CHI MaxCTD Pow P' P
+	ind: 	75.4982	* % AM MaxCHI Pow P' P
+	ind: 	31.1541	* % AM MaxCHI Log GINI CHI
+	ind: 	22.1586	Log GINI CHI
+	ind: 	87.6852	Pow CHI MaxCTD
+	ind: 	86.5675	Pow CHI MaxCTD
+	ind: 	72.4616	* % AM MaxCHI * % AM MaxCHI Pow P' P
+generation 8:
+	ind: 	30.9117	Log GINI CHI
+	ind: 	78.5281	Pow P' P
+	ind: 	86.2106	Pow CHI MaxCTD
+	ind: 	76.111	* % AM MaxCHI Pow P' P
+	ind: 	82.8037	% AM MaxCHI
+	ind: 	85.9615	Pow MaxTFICF MaxTFICF
+	ind: 	76.4947	* * AM MaxCHI Pow P' P
+	ind: 	86.0558	Pow CHI MaxCTD
+	ind: 	87.9208	* + P' TFIDF + GSS MaxAM
+	ind: 	83.3692	% AM MaxCHI
+	ind: 	78.8311	Pow P' P
+	ind: 	31.4638	Log GINI CHI
+	ind: 	76.7035	* % AM MaxCHI Pow P' P
+	ind: 	86.0558	Pow CHI MaxCTD
+	ind: 	87.4697	Pow CHI MaxCTD
+	ind: 	83.7126	% AM MaxCHI
+	ind: 	76.7439	* % AM MaxCHI Pow P' P
+	ind: 	77.7202	Pow P' P
+	ind: 	76.1783	* % AM MaxCHI Pow P' P
+	ind: 	76.0436	* % AM MaxCHI Pow P' P
+	ind: 	75.4982	* % AM MaxCHI Pow P' P
+	ind: 	86.857	+ GSS MaxAM
+	ind: 	31.8408	* Pow P' TFIDF Log GINI CHI
+	ind: 	75.2289	* % AM MaxCHI Pow P' P
+	ind: 	26.6092	- MaxTFICF MaxTFICF
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	78.1107	* Pow CHI MaxCTD Pow P' P
+	ind: 	78.0501	Pow P' P
+	ind: 	82.6353	% AM MaxCHI
+	ind: 	83.7126	% AM MaxCHI
+	ind: 	86.5607	Pow CHI MaxCTD
+	ind: 	27.8144	* + P' TFIDF Log GINI CHI
+	ind: 	76.3466	* % AM MaxCHI Pow P' P
+	ind: 	77.9558	Pow P' P
+	ind: 	76.892	Pow P' P
+	ind: 	78.1107	Pow P' P
+	ind: 	78.5281	Pow P' P
+	ind: 	87.3552	Pow CHI MaxCTD
+	ind: 	87.6044	Pow CHI MaxCTD
+	ind: 	78.1107	* Pow CHI MaxCTD Pow P' P
+	ind: 	85.9615	Pow MaxTFICF MaxTFICF
+	ind: 	76.3466	* % AM MaxCHI Pow P' P
+	ind: 	82.7094	% AM MaxCHI
+	ind: 	86.9647	Pow MaxTFICF MaxTFICF
+	ind: 	75.4982	* % AM MaxCHI Pow P' P
+	ind: 	31.1541	* % AM MaxCHI Log GINI CHI
+	ind: 	22.1586	Log GINI CHI
+	ind: 	29.2755	Log GINI CHI
+	ind: 	86.5675	Pow CHI MaxCTD
+	ind: 	30.3999	Log GINI CHI
+generation 9:
+	ind: 	77.6528	P'
+	ind: 	87.4495	Pow CHI MaxCTD
+	ind: 	86.2106	Pow CHI MaxCTD
+	ind: 	87.739	+ GSS MaxAM
+	ind: 	82.6219	% AM MaxCHI
+	ind: 	85.9615	Pow MaxTFICF MaxTFICF
+	ind: 	76.4947	* * AM MaxCHI Pow P' P
+	ind: 	86.0558	Pow CHI MaxCTD
+	ind: 	82.7094	% AM MaxCHI
+	ind: 	87.3418	% GSS MaxAM
+	ind: 	78.8311	Pow P' P
+	ind: 	76.8516	Pow P' P
+	ind: 	86.2106	Pow CHI MaxCTD
+	ind: 	86.0558	Pow CHI MaxCTD
+	ind: 	87.4697	Pow CHI MaxCTD
+	ind: 	88.244	* Pow CHI MaxCTD + GSS MaxAM
+	ind: 	77.7202	Pow P' P
+	ind: 	83.7126	% AM MaxCHI
+	ind: 	87.9208	* + P' TFIDF + GSS MaxAM
+	ind: 	87.4495	Pow CHI MaxCTD
+	ind: 	83.4904	* AM MaxCHI
+	ind: 	86.3857	Pow % AM MaxCHI P
+	ind: 	30.3999	Log P' P
+	ind: 	30.3999	Log P' P
+	ind: 	26.6092	- MaxTFICF MaxTFICF
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	85.3622	Pow MaxTFICF MaxTFICF
+	ind: 	82.6219	% AM MaxCHI
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	83.7126	% AM MaxCHI
+	ind: 	82.6353	% AM MaxCHI
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	76.3466	* % AM MaxCHI Pow P' P
+	ind: 	87.739	+ GSS MaxAM
+	ind: 	82.6219	% AM MaxCHI
+	ind: 	82.8037	% AM MaxCHI
+	ind: 	77.9626	Pow P' P
+	ind: 	87.3552	Pow CHI MaxCTD
+	ind: 	87.3418	% GSS MaxAM
+	ind: 	78.1107	* Pow CHI MaxCTD Pow P' P
+	ind: 	85.8538	+ P' TFIDF
+	ind: 	76.3466	* % AM MaxCHI Pow P' P
+	ind: 	82.7094	% AM MaxCHI
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	86.1904	Pow CHI MaxCTD
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	78.0568	Pow P' P
+	ind: 	86.1702	Pow CHI MaxCTD
+	ind: 	78.5214	Pow P' P
+	ind: 	30.3999	Log GINI CHI
+generation 10:
+	ind: 	75.7608	Pow P' P
+	ind: 	23.9833	Pow Log P' P P
+	ind: 	86.2106	Pow CHI MaxCTD
+	ind: 	87.739	+ GSS MaxAM
+	ind: 	77.4912	Pow P' P
+	ind: 	77.4912	Pow P' P
+	ind: 	76.4947	* * AM MaxCHI Pow P' P
+	ind: 	77.6663	Pow P' P
+	ind: 	76.6765	* * AM MaxCHI Pow P' P
+	ind: 	77.8144	Pow P' P
+	ind: 	78.8311	Pow P' P
+	ind: 	76.8516	Pow P' P
+	ind: 	86.2106	Pow CHI MaxCTD
+	ind: 	21.0813	Pow Log P' P P
+	ind: 	22.6097	Log P' P
+	ind: 	83.5376	% AM MaxCHI
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	83.7126	% AM MaxCHI
+	ind: 	77.3095	Pow P' P
+	ind: 	77.5518	Pow P' P
+	ind: 	83.4904	* AM MaxCHI
+	ind: 	86.3857	Pow % AM MaxCHI P
+	ind: 	30.3999	Log P' P
+	ind: 	30.3999	Log P' P
+	ind: 	86.1702	Pow CHI MaxCTD
+	ind: 	86.1837	Pow CHI MaxCTD
+	ind: 	85.3622	Pow MaxTFICF MaxTFICF
+	ind: 	87.0859	Pow CHI MaxCTD
+	ind: 	87.6044	Pow CHI MaxCTD
+	ind: 	83.7126	% AM MaxCHI
+	ind: 	86.1702	Pow CHI MaxCTD
+	ind: 	87.7121	+ GSS MaxAM
+	ind: 	76.3466	* % AM MaxCHI Pow P' P
+	ind: 	77.8144	Pow P' P
+	ind: 	82.6219	% AM MaxCHI
+	ind: 	76.8516	Pow P' P
+	ind: 	77.9626	Pow P' P
+	ind: 	87.3552	Pow CHI MaxCTD
+	ind: 	75.7608	Pow P' P
+	ind: 	83.7126	% AM MaxCHI
+	ind: 	83.4904	* AM MaxCHI
+	ind: 	85.8605	+ P' TFIDF
+	ind: 	82.7094	% AM MaxCHI
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	85.8605	+ P' TFIDF
+	ind: 	78.6359	Pow P' P
+	ind: 	83.7059	% AM MaxCHI
+	ind: 	86.1702	Pow CHI MaxCTD
+	ind: 	87.1532	+ P' TFIDF
+	ind: 	87.5842	Pow CHI MaxCTD
+generation 11:
+	ind: 	78.6695	Pow P' P
+	ind: 	86.2106	Pow CHI MaxCTD
+	ind: 	86.2106	Pow CHI MaxCTD
+	ind: 	83.8136	% AM MaxCHI
+	ind: 	18.1524	Pow Log P' P P
+	ind: 	77.4912	Pow P' P
+	ind: 	26.9661	Log P' P
+	ind: 	77.6663	Pow P' P
+	ind: 	86.0759	Pow CHI MaxCTD
+	ind: 	77.8144	Pow P' P
+	ind: 	87.2206	+ CHI MaxCTD
+	ind: 	87.1532	Pow CHI MaxCTD
+	ind: 	87.436	Pow CHI MaxCTD
+	ind: 	21.0813	Pow Log P' P P
+	ind: 	86.0692	Pow CHI MaxCTD
+	ind: 	78.5012	* Pow CHI MaxCTD Pow P' P
+	ind: 	87.5842	Pow CHI MaxCTD
+	ind: 	87.1061	Pow CHI MaxCTD
+	ind: 	77.3095	Pow P' P
+	ind: 	86.0558	Pow CHI MaxCTD
+	ind: 	83.4904	* AM MaxCHI
+	ind: 	87.1532	Pow CHI MaxCTD
+	ind: 	86.0759	Pow CHI MaxCTD
+	ind: 	30.3999	Log P' P
+	ind: 	86.1702	Pow CHI MaxCTD
+	ind: 	18.1524	Pow Log P' P P
+	ind: 	85.3622	Pow MaxTFICF MaxTFICF
+	ind: 	87.0859	Pow CHI MaxCTD
+	ind: 	87.1061	Pow CHI MaxCTD
+	ind: 	23.7678	Log P' P
+	ind: 	86.1702	Pow CHI MaxCTD
+	ind: 	23.4514	Pow Log P' P P
+	ind: 	86.1702	Pow CHI MaxCTD
+	ind: 	77.8144	Pow P' P
+	ind: 	82.6219	% AM MaxCHI
+	ind: 	76.8516	Pow P' P
+	ind: 	25.6531	Log P' P
+	ind: 	87.3552	Pow CHI MaxCTD
+	ind: 	75.7608	Pow P' P
+	ind: 	86.8637	+ P' TFIDF
+	ind: 	87.0657	Pow Pow CHI MaxCTD P
+	ind: 	26.7573	Log P' P
+	ind: 	82.7094	% AM MaxCHI
+	ind: 	83.3692	% AM MaxCHI
+	ind: 	85.8605	+ P' TFIDF
+	ind: 	86.4395	Pow CHI MaxCTD
+	ind: 	87.1061	Pow CHI MaxCTD
+	ind: 	76.8516	Pow P' P
+	ind: 	87.2677	Pow CHI MaxCTD
+	ind: 	87.5842	Pow CHI MaxCTD
+generation 12:
+	ind: 	78.6695	Pow P' P
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	83.8136	% AM MaxCHI
+	ind: 	84.3347	% AM MaxCHI
+	ind: 	84.9494	% AM MaxCHI
+	ind: 	87.5273	Pow % AM MaxCHI MaxCTD
+	ind: 	87.8842	Pow CHI MaxCTD
+	ind: 	86.0759	Pow CHI MaxCTD
+	ind: 	77.8144	Pow P' P
+	ind: 	85.4848	% AM MaxCHI
+	ind: 	84.3347	% AM MaxCHI
+	ind: 	87.436	Pow CHI MaxCTD
+	ind: 	21.0813	Pow Log P' P P
+	ind: 	86.0692	Pow CHI MaxCTD
+	ind: 	27.6224	Log P' P
+	ind: 	87.436	Pow CHI MaxCTD
+	ind: 	86.278	Pow CHI MaxCTD
+	ind: 	77.3095	Pow P' P
+	ind: 	84.9494	% AM MaxCHI
+	ind: 	87.3091	Pow % AM MaxCHI MaxCTD
+	ind: 	87.1532	Pow CHI MaxCTD
+	ind: 	84.1959	% AM MaxCHI
+	ind: 	87.0657	Pow Pow CHI MaxCTD P
+	ind: 	17.5491	Pow Log P' P P
+	ind: 	84.1959	% AM MaxCHI
+	ind: 	17.5491	Pow Log P' P P
+	ind: 	73.8846	Pow P' P
+	ind: 	87.1061	Pow CHI MaxCTD
+	ind: 	23.7678	Log P' P
+	ind: 	86.1702	Pow CHI MaxCTD
+	ind: 	82.6219	% AM MaxCHI
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	88.0627	Pow CHI MaxCTD
+	ind: 	86.2582	Pow CHI MaxCTD
+	ind: 	84.9693	% AM MaxCHI
+	ind: 	25.6531	Log P' P
+	ind: 	87.3552	Pow CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	86.8637	+ P' TFIDF
+	ind: 	87.0657	Pow Pow CHI MaxCTD P
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	82.7094	% AM MaxCHI
+	ind: 	25.8775	Log P' P
+	ind: 	85.8605	+ P' TFIDF
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	84.9693	% AM MaxCHI
+	ind: 	76.8516	Pow P' P
+	ind: 	87.2677	Pow CHI MaxCTD
+	ind: 	87.5842	Pow CHI MaxCTD
+generation 13:
+	ind: 	78.6695	Pow P' P
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	83.8136	% AM MaxCHI
+	ind: 	84.3347	% AM MaxCHI
+	ind: 	87.8247	Pow CHI MaxCTD
+	ind: 	87.5273	Pow % AM MaxCHI MaxCTD
+	ind: 	87.8842	Pow CHI MaxCTD
+	ind: 	86.0759	Pow CHI MaxCTD
+	ind: 	87.8842	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.5074	Pow % AM MaxCHI MaxCTD
+	ind: 	85.4055	% AM MaxCHI
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	75.3718	Pow P' P
+	ind: 	27.6224	Log P' P
+	ind: 	87.436	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	87.1902	Pow CHI MaxCTD
+	ind: 	87.1108	+ P' TFIDF
+	ind: 	87.1108	+ P' TFIDF
+	ind: 	87.0315	- CHI MaxCTD
+	ind: 	20.6821	Log P' P
+	ind: 	88.0627	Pow CHI MaxCTD
+	ind: 	85.1676	% AM MaxCHI
+	ind: 	87.3686	MaxCHI
+	ind: 	86.8729	Pow CHI MaxCTD
+	ind: 	87.5868	Pow CHI MaxCTD
+	ind: 	87.1061	Pow CHI MaxCTD
+	ind: 	87.9239	Pow CHI MaxCTD
+	ind: 	86.1702	Pow CHI MaxCTD
+	ind: 	87.904	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.6462	Pow CHI MaxCTD
+	ind: 	87.5868	MaxCHI
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	25.6531	Log P' P
+	ind: 	87.3552	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.8637	+ P' TFIDF
+	ind: 	73.7656	Pow P' P
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.8332	Pow CHI MaxCTD
+	ind: 	85.8605	+ P' TFIDF
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	87.3488	Pow CHI MaxCTD
+	ind: 	76.8516	Pow P' P
+	ind: 	84.9296	% AM Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+generation 14:
+	ind: 	87.0315	- CHI MaxCTD
+	ind: 	86.8332	Pow CHI MaxCTD
+	ind: 	87.1108	+ P' TFIDF
+	ind: 	87.8049	Pow CHI MaxCTD
+	ind: 	87.4083	+ P' TFIDF
+	ind: 	86.9324	Pow CHI MaxCTD
+	ind: 	86.4366	+ P' TFIDF
+	ind: 	87.8842	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	86.9126	MaxCHI
+	ind: 	86.159	+ P' TFIDF
+	ind: 	87.5074	Pow % AM MaxCHI MaxCTD
+	ind: 	87.6462	Pow CHI MaxCTD
+	ind: 	88.0428	Pow CHI MaxCTD
+	ind: 	87.8049	Pow CHI MaxCTD
+	ind: 	27.6224	Log P' P
+	ind: 	87.436	Pow CHI MaxCTD
+	ind: 	87.8644	Pow % AM MaxCHI MaxCTD
+	ind: 	87.3091	Pow % AM MaxCHI MaxCTD
+	ind: 	87.1108	+ P' TFIDF
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.0315	- CHI MaxCTD
+	ind: 	87.785	Pow % AM MaxCHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	88.0825	MaxCHI
+	ind: 	85.4452	% AM MaxCHI
+	ind: 	87.0315	- CHI MaxCTD
+	ind: 	86.8729	Pow CHI MaxCTD
+	ind: 	86.159	+ P' TFIDF
+	ind: 	87.9239	Pow CHI MaxCTD
+	ind: 	86.1702	Pow CHI MaxCTD
+	ind: 	87.904	Pow CHI MaxCTD
+	ind: 	87.6462	Pow CHI MaxCTD
+	ind: 	26.6508	Log AM MaxCHI
+	ind: 	87.5868	MaxCHI
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.9522	Pow CHI MaxCTD
+	ind: 	87.3552	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.8637	+ P' TFIDF
+	ind: 	87.5273	Pow % AM MaxCHI MaxCTD
+	ind: 	87.0117	- CHI MaxCTD
+	ind: 	87.8644	Pow % AM MaxCHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.091	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	85.4452	% AM MaxCHI
+	ind: 	87.5868	Pow CHI MaxCTD
+	ind: 	87.8445	Pow % AM MaxCHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+generation 15:
+	ind: 	87.0315	- CHI MaxCTD
+	ind: 	86.8332	Pow CHI MaxCTD
+	ind: 	87.4479	MaxCHI
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	87.4083	+ P' TFIDF
+	ind: 	78.4454	% CHI MaxCTD
+	ind: 	86.4366	+ P' TFIDF
+	ind: 	85.4055	% AM MaxCHI
+	ind: 	87.8842	Pow CHI MaxCTD
+	ind: 	86.278	Pow CHI MaxCTD
+	ind: 	86.159	+ P' TFIDF
+	ind: 	87.3091	Pow % AM MaxCHI MaxCTD
+	ind: 	87.6462	Pow CHI MaxCTD
+	ind: 	86.278	Pow CHI MaxCTD
+	ind: 	87.2695	- CHI MaxCTD
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	86.5755	- CHI MaxCTD
+	ind: 	86.6349	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	86.4366	MaxCHI
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	87.785	Pow % AM MaxCHI MaxCTD
+	ind: 	87.091	- CHI MaxCTD
+	ind: 	87.9437	Pow % AM MaxCHI MaxCTD
+	ind: 	87.9437	MaxCHI
+	ind: 	87.0315	- CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.159	+ P' TFIDF
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	86.278	Pow % AM MaxCHI MaxCTD
+	ind: 	87.3091	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	87.5868	MaxCHI
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.329	Pow % AM MaxCHI MaxCTD
+	ind: 	87.3552	Pow CHI MaxCTD
+	ind: 	77.8108	% CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	87.5074	Pow % AM MaxCHI MaxCTD
+	ind: 	78.4255	% CHI MaxCTD
+	ind: 	87.8644	Pow % AM MaxCHI MaxCTD
+	ind: 	84.9891	% AM MaxCHI
+	ind: 	87.5074	Pow % AM MaxCHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	88.0032	Pow - CHI MaxCTD MaxCTD
+	ind: 	87.8842	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+generation 16:
+	ind: 	87.0315	- CHI MaxCTD
+	ind: 	87.5669	Pow CHI MaxCTD
+	ind: 	87.091	- CHI MaxCTD
+	ind: 	87.0315	- CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	78.4454	% CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.4479	Pow CHI MaxCTD
+	ind: 	86.4366	+ P' TFIDF
+	ind: 	86.4366	+ P' TFIDF
+	ind: 	86.159	+ P' TFIDF
+	ind: 	86.2978	- CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.0117	- CHI MaxCTD
+	ind: 	87.3686	MaxCHI
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	87.1307	Pow CHI MaxCTD
+	ind: 	86.6349	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	86.4366	MaxCHI
+	ind: 	87.6462	- CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	87.785	Pow % AM MaxCHI MaxCTD
+	ind: 	87.091	- CHI MaxCTD
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	87.0315	- CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.6462	- CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	87.7256	+ P' TFIDF
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	87.5669	Pow Pow CHI MaxCTD MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	86.2978	- CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.4083	+ P' TFIDF
+	ind: 	87.8644	- CHI MaxCTD
+	ind: 	87.7256	+ P' TFIDF
+	ind: 	84.9693	% AM MaxCHI
+	ind: 	87.5074	Pow % AM MaxCHI MaxCTD
+	ind: 	78.4255	% CHI MaxCTD
+	ind: 	87.1307	Pow CHI MaxCTD
+	ind: 	78.1678	% CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	88.0032	Pow - CHI MaxCTD MaxCTD
+	ind: 	87.8842	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.0315	- CHI MaxCTD
+generation 17:
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.5669	Pow CHI MaxCTD
+	ind: 	76.8194	* CHI MaxCTD
+	ind: 	86.8332	+ P' TFIDF
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.0117	- CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	86.4366	+ P' TFIDF
+	ind: 	86.2978	- CHI MaxCTD
+	ind: 	86.159	+ P' TFIDF
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.0117	- CHI MaxCTD
+	ind: 	87.3686	MaxCHI
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	87.6661	+ P' TFIDF
+	ind: 	86.6349	Pow CHI MaxCTD
+	ind: 	86.4366	+ P' TFIDF
+	ind: 	86.278	Pow CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	86.1194	- CHI MaxCTD
+	ind: 	87.5273	- CHI MaxCTD
+	ind: 	87.4281	+ P' TFIDF
+	ind: 	87.5669	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.8644	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	86.6349	Pow CHI MaxCTD
+	ind: 	87.4083	+ P' TFIDF
+	ind: 	77.5927	% CHI MaxCTD
+	ind: 	87.21	- CHI MaxCTD
+	ind: 	84.9693	% AM MaxCHI
+	ind: 	87.5074	Pow % AM MaxCHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.1307	Pow CHI MaxCTD
+	ind: 	78.1678	% CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	88.0032	Pow - CHI MaxCTD MaxCTD
+	ind: 	87.8842	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	87.4479	+ P' TFIDF
+generation 18:
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	77.6522	* CHI MaxCTD
+	ind: 	87.6462	Pow CHI MaxCTD
+	ind: 	77.7513	% CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.904	- CHI MaxCTD
+	ind: 	86.2582	MaxCHI
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	86.2978	- CHI MaxCTD
+	ind: 	87.0117	- CHI MaxCTD
+	ind: 	87.8247	- CHI MaxCTD
+	ind: 	88.0627	Pow CHI MaxCTD
+	ind: 	87.0117	- CHI MaxCTD
+	ind: 	87.3686	MaxCHI
+	ind: 	77.8108	% CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.4281	MaxCHI
+	ind: 	86.4366	+ P' TFIDF
+	ind: 	88.0627	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.1194	- CHI MaxCTD
+	ind: 	87.904	Pow CHI MaxCTD
+	ind: 	87.4281	+ P' TFIDF
+	ind: 	87.8247	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	77.2754	% CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	77.8505	% CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.3686	Pow CHI MaxCTD
+	ind: 	86.9126	+ P' TFIDF
+	ind: 	86.6349	Pow CHI MaxCTD
+	ind: 	87.4083	+ P' TFIDF
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.7256	+ P' TFIDF
+	ind: 	87.6462	Pow CHI MaxCTD
+	ind: 	78.4255	% CHI MaxCTD
+	ind: 	86.6349	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	88.0627	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	78.0686	% CHI MaxCTD
+	ind: 	86.6349	Pow CHI MaxCTD
+	ind: 	87.8842	Pow CHI MaxCTD
+generation 19:
+	ind: 	87.6462	Pow CHI MaxCTD
+	ind: 	86.8729	Pow CHI MaxCTD
+	ind: 	87.6462	Pow CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	86.2978	- CHI MaxCTD
+	ind: 	87.8247	- CHI MaxCTD
+	ind: 	87.8247	- CHI MaxCTD
+	ind: 	88.0627	Pow CHI MaxCTD
+	ind: 	87.9239	Pow CHI MaxCTD
+	ind: 	87.3686	MaxCHI
+	ind: 	77.8108	% CHI MaxCTD
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	87.4281	MaxCHI
+	ind: 	86.4366	+ P' TFIDF
+	ind: 	87.3885	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	88.2213	MaxCHI
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	88.0627	Pow CHI MaxCTD
+	ind: 	87.8247	Pow CHI MaxCTD
+	ind: 	87.4281	+ P' TFIDF
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	77.2754	% CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	77.8505	% CHI MaxCTD
+	ind: 	88.0428	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	86.8729	Pow CHI MaxCTD
+	ind: 	87.5273	Pow CHI MaxCTD
+	ind: 	87.091	- CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.3091	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	78.4255	% CHI MaxCTD
+	ind: 	86.6349	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	87.6859	Pow CHI MaxCTD
+	ind: 	86.8729	Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	78.0686	% CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.3488	+ P' TFIDF
+generation 20:
+	ind: 	87.6462	Pow CHI MaxCTD
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	88.2015	Pow CHI MaxCTD
+	ind: 	78.1479	% CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	88.0627	Pow CHI MaxCTD
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	88.2015	Pow CHI MaxCTD
+	ind: 	87.8247	- CHI MaxCTD
+	ind: 	86.8729	Pow CHI MaxCTD
+	ind: 	88.0627	Pow CHI MaxCTD
+	ind: 	87.9239	Pow CHI MaxCTD
+	ind: 	87.3686	MaxCHI
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.1108	- CHI MaxCTD
+	ind: 	88.1618	Pow CHI MaxCTD
+	ind: 	88.0428	Pow CHI MaxCTD
+	ind: 	87.3885	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	86.8729	Pow CHI MaxCTD
+	ind: 	86.8729	Pow CHI MaxCTD
+	ind: 	87.8247	Pow CHI MaxCTD
+	ind: 	87.1108	Pow CHI Pow CHI MaxCTD
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	87.4281	+ P' TFIDF
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	87.8247	Pow CHI MaxCTD
+	ind: 	77.8505	% CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	78.0686	% CHI MaxCTD
+	ind: 	86.8729	Pow CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.3091	Pow CHI MaxCTD
+	ind: 	88.2015	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	88.2015	Pow CHI MaxCTD
+	ind: 	87.091	- CHI MaxCTD
+	ind: 	87.5074	- CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	87.6066	- CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	87.3488	+ P' TFIDF
+generation 21:
+	ind: 	86.9522	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	88.2015	Pow CHI MaxCTD
+	ind: 	87.5471	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	88.0627	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	86.0599	+ P' TFIDF
+	ind: 	87.8247	- CHI MaxCTD
+	ind: 	87.9239	Pow CHI MaxCTD
+	ind: 	77.6125	* CHI MaxCTD
+	ind: 	87.9239	Pow CHI MaxCTD
+	ind: 	87.3686	MaxCHI
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	87.1108	- CHI MaxCTD
+	ind: 	88.1618	Pow CHI MaxCTD
+	ind: 	88.0428	Pow CHI MaxCTD
+	ind: 	75.7684	* CHI MaxCTD
+	ind: 	87.8247	Pow CHI MaxCTD
+	ind: 	86.8729	Pow CHI MaxCTD
+	ind: 	77.4936	% CHI MaxCTD
+	ind: 	87.904	- CHI MaxCTD
+	ind: 	87.1108	Pow CHI Pow CHI MaxCTD
+	ind: 	86.5953	Pow CHI MaxCTD
+	ind: 	87.4281	+ P' TFIDF
+	ind: 	87.6264	Pow CHI Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.6264	Pow CHI Pow CHI MaxCTD
+	ind: 	87.8247	Pow CHI MaxCTD
+	ind: 	77.8505	% CHI MaxCTD
+	ind: 	87.5868	- CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	86.8729	Pow CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	88.1816	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	86.9919	+ P' TFIDF
+	ind: 	88.0627	Pow CHI MaxCTD
+	ind: 	88.2015	Pow CHI MaxCTD
+	ind: 	88.2213	Pow CHI MaxCTD
+	ind: 	88.2015	Pow CHI MaxCTD
+	ind: 	87.4083	+ P' TFIDF
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.1505	+ CHI MaxCTD
+	ind: 	87.6066	- CHI MaxCTD
+	ind: 	87.9437	+ CHI MaxCTD
+	ind: 	87.3488	+ P' TFIDF
+generation 22:
+	ind: 	87.1211	+ CHI MaxCTD
+	ind: 	72.2917	* CHI MaxCTD
+	ind: 	87.3318	Pow CHI MaxCTD
+	ind: 	87.5471	Pow CHI MaxCTD
+	ind: 	86.8357	+ CHI MaxCTD
+	ind: 	87.9437	Pow CHI MaxCTD
+	ind: 	74.5956	* CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.4269	Pow CHI MaxCTD
+	ind: 	86.0599	+ P' TFIDF
+	ind: 	87.8247	- CHI MaxCTD
+	ind: 	87.9239	Pow CHI MaxCTD
+	ind: 	77.6125	* CHI MaxCTD
+	ind: 	87.4813	Pow CHI MaxCTD
+	ind: 	87.3686	MaxCHI
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	88.1618	Pow CHI MaxCTD
+	ind: 	88.0428	Pow CHI MaxCTD
+	ind: 	86.8357	+ CHI MaxCTD
+	ind: 	86.6318	Pow CHI MaxCTD
+	ind: 	87.0192	Pow CHI MaxCTD
+	ind: 	77.4936	% CHI MaxCTD
+	ind: 	87.904	- CHI MaxCTD
+	ind: 	87.4473	Pow CHI MaxCTD
+	ind: 	87.3658	Pow CHI MaxCTD
+	ind: 	87.9833	Pow CHI MaxCTD
+	ind: 	87.6264	Pow CHI Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.6264	Pow CHI Pow CHI MaxCTD
+	ind: 	87.3522	Pow CHI MaxCTD
+	ind: 	85.9318	MaxCHI
+	ind: 	87.3182	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.026	Pow CHI Pow CHI MaxCTD
+	ind: 	87.3386	Pow CHI MaxCTD
+	ind: 	30.3181	Log CHI MaxCTD
+	ind: 	86.924	- CHI MaxCTD
+	ind: 	86.0065	Pow CHI MaxCTD
+	ind: 	87.026	Pow CHI MaxCTD
+	ind: 	87.1551	+ CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	88.2015	Pow CHI MaxCTD
+	ind: 	87.4541	Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	87.1505	+ CHI MaxCTD
+	ind: 	87.3114	Pow CHI MaxCTD
+	ind: 	74.6092	* CHI MaxCTD
+	ind: 	87.3114	Pow CHI MaxCTD
+generation 23:
+	ind: 	87.1211	+ CHI MaxCTD
+	ind: 	87.3522	Pow CHI MaxCTD
+	ind: 	87.3318	Pow CHI MaxCTD
+	ind: 	87.0124	Pow CHI Pow CHI MaxCTD
+	ind: 	86.8357	+ CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	86.7677	Pow CHI Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	78.4355	% CHI MaxCTD
+	ind: 	73.8209	* CHI MaxCTD
+	ind: 	78.4423	% CHI MaxCTD
+	ind: 	87.1075	+ CHI MaxCTD
+	ind: 	77.6125	* CHI MaxCTD
+	ind: 	87.3522	Pow CHI MaxCTD
+	ind: 	87.4609	Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	87.4949	Pow CHI MaxCTD
+	ind: 	87.0124	Pow CHI Pow CHI MaxCTD
+	ind: 	87.2774	Pow CHI MaxCTD
+	ind: 	86.9648	Pow CHI MaxCTD
+	ind: 	86.6318	Pow CHI MaxCTD
+	ind: 	86.8493	Pow CHI MaxCTD
+	ind: 	77.4936	% CHI MaxCTD
+	ind: 	86.8357	+ CHI MaxCTD
+	ind: 	87.4473	Pow CHI MaxCTD
+	ind: 	87.0939	+ CHI MaxCTD
+	ind: 	87.0192	Pow CHI Pow CHI MaxCTD
+	ind: 	87.6264	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9512	MaxCHI
+	ind: 	87.6264	Pow CHI Pow CHI MaxCTD
+	ind: 	87.3522	Pow CHI MaxCTD
+	ind: 	85.9318	MaxCHI
+	ind: 	87.2706	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	85.9318	Pow CHI MaxCTD
+	ind: 	87.3386	Pow CHI MaxCTD
+	ind: 	30.3181	Log CHI MaxCTD
+	ind: 	86.9308	Pow CHI MaxCTD
+	ind: 	87.026	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.4541	Pow CHI MaxCTD
+	ind: 	86.7813	MaxCHI
+	ind: 	88.2015	Pow CHI MaxCTD
+	ind: 	87.4541	Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	87.0192	Pow CHI MaxCTD
+	ind: 	86.8357	+ CHI MaxCTD
+	ind: 	87.3114	Pow CHI MaxCTD
+	ind: 	86.9852	Pow CHI MaxCTD
+	ind: 	88.2015	Pow CHI MaxCTD
+generation 24:
+	ind: 	85.9386	MaxCHI
+	ind: 	87.3522	Pow CHI MaxCTD
+	ind: 	86.9512	MaxCHI
+	ind: 	87.0124	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.1959	+ CHI MaxCTD
+	ind: 	86.7677	Pow CHI Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	86.8832	+ CHI MaxCTD
+	ind: 	86.9512	MaxCHI
+	ind: 	78.4423	% CHI MaxCTD
+	ind: 	87.1075	+ CHI MaxCTD
+	ind: 	77.6125	* CHI MaxCTD
+	ind: 	87.3522	Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	24.2286	Log CHI MaxCTD
+	ind: 	87.0124	Pow CHI Pow CHI MaxCTD
+	ind: 	87.2774	Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	86.7813	MaxCHI
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.6264	Pow CHI Pow CHI MaxCTD
+	ind: 	87.2706	Pow CHI MaxCTD
+	ind: 	87.3794	Pow CHI MaxCTD
+	ind: 	87.0192	Pow CHI MaxCTD
+	ind: 	87.0192	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	86.9376	- CHI MaxCTD
+	ind: 	85.9318	MaxCHI
+	ind: 	87.3114	+ CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.8832	+ CHI MaxCTD
+	ind: 	86.8764	- CHI MaxCTD
+	ind: 	87.1959	+ CHI MaxCTD
+	ind: 	87.3386	Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.7677	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.0599	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	87.4541	Pow CHI MaxCTD
+	ind: 	86.7813	MaxCHI
+	ind: 	85.9318	MaxCHI
+	ind: 	87.1211	+ CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.3114	Pow CHI MaxCTD
+	ind: 	87.0464	Pow CHI MaxCTD
+	ind: 	88.2015	Pow CHI MaxCTD
+generation 25:
+	ind: 	85.9386	MaxCHI
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	87.0735	Pow CHI Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	87.393	MaxCHI
+	ind: 	87.3182	Pow CHI MaxCTD
+	ind: 	87.4281	Pow CHI MaxCTD
+	ind: 	86.8832	+ CHI MaxCTD
+	ind: 	86.9512	MaxCHI
+	ind: 	85.8706	Pow CHI MaxCTD
+	ind: 	86.7609	+ CHI MaxCTD
+	ind: 	87.0464	Pow CHI Pow CHI MaxCTD
+	ind: 	87.3522	Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.9648	- CHI MaxCTD
+	ind: 	86.8357	+ CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.3114	+ CHI MaxCTD
+	ind: 	86.7677	Pow CHI Pow CHI MaxCTD
+	ind: 	87.0396	Pow CHI Pow CHI MaxCTD
+	ind: 	87.6264	Pow CHI Pow CHI MaxCTD
+	ind: 	88.3852	IDF
+	ind: 	87.325	Pow CHI MaxCTD
+	ind: 	87.0192	Pow CHI MaxCTD
+	ind: 	87.4541	Pow CHI MaxCTD
+	ind: 	87.325	Pow CHI MaxCTD
+	ind: 	87.6264	Pow CHI Pow CHI MaxCTD
+	ind: 	87.2706	Pow CHI MaxCTD
+	ind: 	87.3114	+ CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.7677	Pow CHI Pow CHI MaxCTD
+	ind: 	86.8764	- CHI MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	87.3386	Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	86.7609	+ CHI MaxCTD
+	ind: 	87.0192	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.4609	MaxCHI
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	87.4541	Pow CHI MaxCTD
+	ind: 	86.7473	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9512	MaxCHI
+	ind: 	86.9512	MaxCHI
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.3114	Pow CHI MaxCTD
+	ind: 	86.9444	MaxCHI
+	ind: 	88.127	IDF
+generation 26:
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	88.2153	IDF
+	ind: 	88.46	IDF
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	87.393	MaxCHI
+	ind: 	87.3182	Pow CHI MaxCTD
+	ind: 	86.7609	+ CHI MaxCTD
+	ind: 	86.8764	- CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9512	MaxCHI
+	ind: 	86.7609	+ CHI MaxCTD
+	ind: 	87.0464	Pow CHI Pow CHI MaxCTD
+	ind: 	87.3182	Pow CHI MaxCTD
+	ind: 	86.156	Pow CHI MaxCTD
+	ind: 	86.9648	- CHI MaxCTD
+	ind: 	87.0056	- + CHI MaxCTD MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	85.8842	Pow CHI MaxCTD
+	ind: 	87.3114	+ CHI MaxCTD
+	ind: 	86.9172	Pow CHI MaxCTD
+	ind: 	87.2298	Pow CHI MaxCTD
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	88.3852	IDF
+	ind: 	87.325	Pow CHI MaxCTD
+	ind: 	86.6522	Pow CHI Pow CHI MaxCTD
+	ind: 	86.7677	+ CHI MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	86.659	Pow CHI Pow CHI MaxCTD
+	ind: 	87.1415	% CHI Pow CHI MaxCTD
+	ind: 	87.3114	+ CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.8764	- CHI MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	86.958	MaxCHI
+	ind: 	87.325	MaxCHI
+	ind: 	86.6929	% CHI Pow CHI MaxCTD
+	ind: 	88.2017	IDF
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	86.659	Pow CHI Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.19	MaxCHI
+	ind: 	87.0056	- + CHI MaxCTD MaxCTD
+	ind: 	86.7609	+ CHI MaxCTD
+	ind: 	86.9512	MaxCHI
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9444	MaxCHI
+	ind: 	86.7813	MaxCHI
+generation 27:
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	86.659	Pow CHI Pow CHI MaxCTD
+	ind: 	88.46	IDF
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	86.659	Pow CHI Pow CHI MaxCTD
+	ind: 	87.4813	Pow CHI MaxCTD
+	ind: 	87.1415	Pow CHI + CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9648	- CHI MaxCTD
+	ind: 	86.6522	Pow CHI Pow CHI MaxCTD
+	ind: 	87.0464	Pow CHI Pow CHI MaxCTD
+	ind: 	87.2842	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.156	Pow CHI MaxCTD
+	ind: 	86.9648	- CHI MaxCTD
+	ind: 	86.659	CHI
+	ind: 	88.4736	IDF
+	ind: 	85.8842	Pow CHI MaxCTD
+	ind: 	85.8842	Pow CHI MaxCTD
+	ind: 	86.9172	Pow CHI MaxCTD
+	ind: 	86.659	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	86.659	Pow CHI Pow CHI MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	88.5891	IDF
+	ind: 	88.5279	IDF
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	88.5891	IDF
+	ind: 	74.4529	* CHI MaxCTD
+	ind: 	88.6639	IDF
+	ind: 	86.8764	- CHI MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	86.958	MaxCHI
+	ind: 	87.325	MaxCHI
+	ind: 	87.2366	- Pow CHI MaxCTD MaxCTD
+	ind: 	87.0464	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	86.659	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9988	Pow CHI Pow CHI MaxCTD
+	ind: 	88.2765	IDF
+	ind: 	87.0056	- + CHI MaxCTD MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	87.325	- Pow CHI MaxCTD MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	88.5211	IDF
+generation 28:
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	86.4891	- + CHI MaxCTD MaxCTD
+	ind: 	85.9454	DF
+	ind: 	85.6055	- + CHI MaxCTD MaxCTD
+	ind: 	86.9648	- CHI MaxCTD
+	ind: 	86.1357	- CHI MaxCTD
+	ind: 	86.659	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	87.1415	Pow CHI + CHI MaxCTD
+	ind: 	86.6522	Pow CHI Pow CHI MaxCTD
+	ind: 	86.8832	- CHI MaxCTD
+	ind: 	86.6522	Pow CHI Pow CHI MaxCTD
+	ind: 	86.659	Pow CHI Pow CHI MaxCTD
+	ind: 	87.2842	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.9308	Pow CHI Log CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	87.3522	Pow CHI MaxCTD
+	ind: 	85.9454	DF
+	ind: 	85.8842	Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	85.8978	Pow CHI MaxCTD
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	86.557	Pow CHI MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	85.4764	- Pow CHI Pow CHI MaxCTD MaxCTD
+	ind: 	85.9454	DF
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.4133	Pow CHI MaxCTD
+	ind: 	86.8764	- CHI MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	86.523	- CHI MaxCTD
+	ind: 	87.1959	+ CHI MaxCTD
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	87.0464	Pow CHI Pow CHI MaxCTD
+	ind: 	86.8493	- CHI MaxCTD
+	ind: 	86.6522	DF
+	ind: 	87.3114	Pow CHI MaxCTD
+	ind: 	88.2765	IDF
+	ind: 	87.0056	- + CHI MaxCTD MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	87.325	- Pow CHI MaxCTD MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9648	- CHI MaxCTD
+	ind: 	86.9648	- CHI MaxCTD
+generation 29:
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	87.1415	Pow CHI + CHI MaxCTD
+	ind: 	86.7677	Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	87.4133	MaxIG
+	ind: 	86.6658	+ CHI MaxCTD
+	ind: 	86.659	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	24.2762	- CHI Pow CHI MaxCTD
+	ind: 	85.8298	- DF MaxCTD
+	ind: 	86.8832	- CHI MaxCTD
+	ind: 	87.2366	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.6929	- Pow CHI MaxCTD MaxCTD
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	86.9172	Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	87.3522	Pow CHI MaxCTD
+	ind: 	86.9648	- CHI MaxCTD
+	ind: 	85.8842	Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	85.8978	Pow CHI MaxCTD
+	ind: 	87.3862	Pow CHI MaxCTD
+	ind: 	24.2286	- CHI DF
+	ind: 	87.1959	+ CHI MaxCTD
+	ind: 	85.9386	DF
+	ind: 	86.6658	+ CHI MaxCTD
+	ind: 	87.0735	- CHI MaxCTD
+	ind: 	86.7677	- Pow CHI MaxCTD MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	24.5684	- CHI Pow CHI MaxCTD
+	ind: 	87.325	- Pow CHI MaxCTD MaxCTD
+	ind: 	85.9454	DF
+	ind: 	87.0939	CHI
+	ind: 	87.2366	- Pow CHI MaxCTD MaxCTD
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	85.9454	DF
+	ind: 	87.2366	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.6522	DF
+	ind: 	85.7279	+ CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.0056	- + CHI MaxCTD MaxCTD
+	ind: 	88.5279	IDF
+	ind: 	87.325	- Pow CHI MaxCTD MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	85.8026	- Pow CHI MaxCTD MaxCTD
+	ind: 	76.1452	- CHI - CHI MaxCTD
+generation 30:
+	ind: 	87.1687	Pow CHI - + CHI MaxCTD MaxCTD
+	ind: 	87.1415	Pow CHI + CHI MaxCTD
+	ind: 	87.1143	+ CHI MaxCTD
+	ind: 	87.2095	Pow CHI Pow CHI MaxCTD
+	ind: 	87.1823	+ CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	86.9172	Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	24.2762	- CHI Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	86.8832	- CHI MaxCTD
+	ind: 	29.353	- CHI Pow CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	86.8764	- CHI MaxCTD
+	ind: 	87.2434	- Pow CHI MaxCTD MaxCTD
+	ind: 	87.3522	Pow CHI MaxCTD
+	ind: 	86.9648	- CHI MaxCTD
+	ind: 	85.8842	Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9172	Pow CHI MaxCTD
+	ind: 	86.9988	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	24.2218	- CHI Pow CHI MaxCTD
+	ind: 	87.3182	Pow CHI MaxCTD
+	ind: 	29.353	- CHI Pow CHI MaxCTD
+	ind: 	85.9386	DF
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.0735	- CHI MaxCTD
+	ind: 	87.1483	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	86.7677	+ CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	86.591	+ CHI MaxCTD
+	ind: 	24.5684	- CHI Pow CHI MaxCTD
+	ind: 	87.325	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.523	- CHI MaxCTD
+	ind: 	24.5684	- CHI Pow CHI Pow CHI MaxCTD
+	ind: 	24.5684	- CHI Pow CHI MaxCTD
+	ind: 	87.0056	Pow CHI Pow CHI MaxCTD
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	87.2366	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.6658	+ CHI MaxCTD
+	ind: 	87.359	Pow CHI MaxCTD
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	86.5638	- + CHI MaxCTD MaxCTD
+	ind: 	85.789	DF
+	ind: 	87.1959	+ CHI MaxCTD
+	ind: 	87.2842	- Pow CHI MaxCTD MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	85.8026	- Pow CHI MaxCTD MaxCTD
+	ind: 	76.1452	- CHI - CHI MaxCTD
+generation 31:
+	ind: 	85.7279	+ CHI MaxCTD
+	ind: 	76.1452	- CHI - CHI MaxCTD
+	ind: 	86.9988	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	24.2218	- CHI Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	86.591	+ CHI MaxCTD
+	ind: 	86.6454	Pow CHI Pow CHI MaxCTD
+	ind: 	85.9386	DF
+	ind: 	24.2762	- CHI Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	86.8832	- CHI MaxCTD
+	ind: 	29.353	- CHI Pow CHI MaxCTD
+	ind: 	87.291	Pow CHI MaxCTD
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	86.9172	Pow CHI MaxCTD
+	ind: 	87.2434	- Pow CHI MaxCTD MaxCTD
+	ind: 	74.5684	- CHI - CHI MaxCTD
+	ind: 	86.9648	- CHI MaxCTD
+	ind: 	24.4733	- CHI Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	85.7279	+ CHI MaxCTD
+	ind: 	76.1316	- CHI - CHI MaxCTD
+	ind: 	86.8968	- CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.291	Pow CHI MaxCTD
+	ind: 	86.9784	- CHI MaxCTD
+	ind: 	87.1483	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	87.0803	Pow CHI MaxCTD
+	ind: 	86.4959	DF
+	ind: 	86.591	+ CHI MaxCTD
+	ind: 	87.1483	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	86.6658	Pow CHI - CHI MaxCTD
+	ind: 	86.8832	- CHI MaxCTD
+	ind: 	24.5684	- CHI Pow CHI Pow CHI MaxCTD
+	ind: 	24.5684	- CHI Pow CHI MaxCTD
+	ind: 	87.0056	Pow CHI Pow CHI MaxCTD
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	87.3114	Pow CHI - CHI MaxCTD
+	ind: 	86.6658	+ CHI MaxCTD
+	ind: 	87.1415	Pow CHI Pow CHI MaxCTD
+	ind: 	24.2286	- CHI Pow CHI MaxCTD
+	ind: 	86.5638	- + CHI MaxCTD MaxCTD
+	ind: 	85.789	DF
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	30.3249	- CHI Pow CHI MaxCTD
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	85.857	DF
+	ind: 	85.7687	- CHI MaxCTD
+generation 32:
+	ind: 	85.2043	- CHI MaxCTD
+	ind: 	87.0943	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	85.1661	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	84.7461	+ CHI MaxCTD
+	ind: 	87.3043	Pow CHI MaxCTD
+	ind: 	86.591	+ CHI MaxCTD
+	ind: 	86.6454	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9989	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	24.2762	- CHI Pow CHI MaxCTD
+	ind: 	87.1325	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	87.0943	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0943	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	85.5288	Pow CHI MaxCTD
+	ind: 	86.6552	Pow CHI MaxCTD
+	ind: 	86.9648	- CHI MaxCTD
+	ind: 	24.4733	- CHI Pow CHI MaxCTD
+	ind: 	77.9496	- CHI - CHI MaxCTD
+	ind: 	86.6552	Pow CHI MaxCTD
+	ind: 	83.4479	DF
+	ind: 	86.8968	- CHI MaxCTD
+	ind: 	86.2734	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.4452	+ CHI MaxCTD
+	ind: 	86.9104	Pow CHI MaxCTD
+	ind: 	87.1134	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.3879	Pow CHI Pow CHI MaxCTD
+	ind: 	86.4261	+ CHI MaxCTD
+	ind: 	86.3498	- CHI MaxCTD
+	ind: 	86.591	+ CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.6658	Pow CHI - CHI MaxCTD
+	ind: 	86.8832	- CHI MaxCTD
+	ind: 	87.037	Pow CHI Pow CHI MaxCTD
+	ind: 	87.1898	Pow CHI + CHI MaxCTD
+	ind: 	87.0056	Pow CHI Pow CHI MaxCTD
+	ind: 	77.4914	- CHI - CHI MaxCTD
+	ind: 	86.2734	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.037	- CHI MaxCTD
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	85.7961	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0752	Pow CHI Pow CHI MaxCTD
+	ind: 	85.789	DF
+	ind: 	87.1007	Pow CHI Pow CHI MaxCTD
+	ind: 	28.1214	- CHI Pow CHI MaxCTD
+	ind: 	87.0943	Pow CHI - CHI MaxCTD
+	ind: 	87.1325	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	85.8916	Pow CHI MaxCTD
+generation 33:
+	ind: 	86.3879	Pow CHI Pow CHI MaxCTD
+	ind: 	84.7461	+ CHI MaxCTD
+	ind: 	85.1661	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	84.7461	+ CHI MaxCTD
+	ind: 	86.2925	- CHI MaxCTD
+	ind: 	85.2997	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	87.1134	- CHI MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	87.0752	Pow CHI - CHI MaxCTD
+	ind: 	85.987	- - Pow CHI - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	87.0561	Pow CHI - - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0943	Pow CHI Pow CHI MaxCTD
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	86.2734	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.4261	+ CHI MaxCTD
+	ind: 	85.5861	Pow CHI MaxCTD
+	ind: 	24.4733	- CHI Pow CHI MaxCTD
+	ind: 	87.1707	Pow CHI + CHI MaxCTD
+	ind: 	86.6552	Pow CHI MaxCTD
+	ind: 	83.4479	DF
+	ind: 	85.3379	+ CHI MaxCTD
+	ind: 	86.4643	Pow CHI - CHI MaxCTD
+	ind: 	86.3879	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	85.2806	+ CHI MaxCTD
+	ind: 	85.5288	Pow CHI MaxCTD
+	ind: 	85.2425	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	87.0561	Pow CHI - - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.1207	- CHI MaxCTD
+	ind: 	86.591	+ CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.6658	Pow CHI - CHI MaxCTD
+	ind: 	83.0088	DF
+	ind: 	84.8415	- - Pow CHI - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.1898	Pow CHI + CHI MaxCTD
+	ind: 	86.3307	Pow CHI MaxCTD
+	ind: 	77.4914	- CHI - CHI MaxCTD
+	ind: 	86.5598	Pow CHI MaxCTD
+	ind: 	87.037	- CHI MaxCTD
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	85.777	- - + CHI MaxCTD MaxCTD MaxCTD
+	ind: 	85.2043	- CHI MaxCTD
+	ind: 	85.5861	Pow CHI MaxCTD
+	ind: 	85.5288	Pow CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	87.1325	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	86.0252	Pow CHI - CHI MaxCTD
+generation 34:
+	ind: 	87.0561	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	84.8415	Pow CHI - - CHI MaxCTD MaxCTD
+	ind: 	85.1661	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.2925	- CHI MaxCTD
+	ind: 	85.2043	- CHI MaxCTD
+	ind: 	85.2997	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	87.1134	- CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	86.3879	Pow CHI Pow CHI MaxCTD
+	ind: 	85.2043	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.4261	Pow CHI + CHI MaxCTD
+	ind: 	86.2543	Pow CHI - CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	86.2734	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	85.2425	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	85.2425	+ CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.4261	Pow CHI - Pow CHI + CHI MaxCTD MaxCTD
+	ind: 	86.3879	Pow CHI Pow CHI MaxCTD
+	ind: 	83.4479	DF
+	ind: 	85.3379	+ CHI MaxCTD
+	ind: 	86.4643	Pow CHI - CHI MaxCTD
+	ind: 	85.0706	Pow CHI MaxCTD
+	ind: 	85.2806	+ CHI MaxCTD
+	ind: 	86.4261	+ CHI MaxCTD
+	ind: 	86.7507	+ CHI Pow CHI MaxCTD
+	ind: 	85.2425	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.1325	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	86.591	+ CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.6658	Pow CHI - CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.4643	Pow CHI - CHI MaxCTD
+	ind: 	87.1898	Pow CHI + CHI MaxCTD
+	ind: 	86.591	+ CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.5598	Pow CHI MaxCTD
+	ind: 	84.8034	+ CHI MaxCTD
+	ind: 	86.9172	- CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	87.1707	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.3043	Pow CHI MaxCTD
+	ind: 	85.5288	Pow CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+generation 35:
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	84.8415	Pow CHI - - CHI MaxCTD MaxCTD
+	ind: 	85.1661	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.2925	- CHI MaxCTD
+	ind: 	85.2425	+ CHI MaxCTD
+	ind: 	85.5288	Pow CHI MaxCTD
+	ind: 	86.6361	Pow CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	86.9225	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	85.2043	- CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.4643	Pow CHI - CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	77.4723	% CHI MaxCTD
+	ind: 	69.9695	- CHI GINI
+	ind: 	85.2425	+ CHI MaxCTD
+	ind: 	85.2425	+ CHI MaxCTD
+	ind: 	87.1707	Pow CHI + CHI MaxCTD
+	ind: 	85.2425	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	87.037	+ CHI MaxCTD
+	ind: 	85.3379	+ CHI MaxCTD
+	ind: 	86.4643	Pow CHI - CHI MaxCTD
+	ind: 	87.4189	Pow CHI MaxCTD
+	ind: 	85.2806	+ CHI MaxCTD
+	ind: 	86.4261	+ CHI MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	85.2425	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	87.1325	Pow CHI - Pow CHI MaxCTD MaxCTD
+	ind: 	85.5479	Pow CHI MaxCTD
+	ind: 	85.2043	- CHI MaxCTD
+	ind: 	86.6658	Pow CHI - CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.2543	- CHI MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.2734	- CHI MaxCTD
+	ind: 	86.1207	+ CHI Pow CHI MaxCTD
+	ind: 	85.2043	- CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	87.1707	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.3043	Pow CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	86.4643	Pow CHI - CHI MaxCTD
+	ind: 	86.2734	- CHI MaxCTD
+	ind: 	85.2806	+ CHI MaxCTD
+generation 36:
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	87.0752	Pow CHI - CHI MaxCTD
+	ind: 	85.8916	- CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	87.0752	Pow CHI - CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9225	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.4643	Pow CHI - CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.4643	Pow CHI - CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	69.9695	- CHI GINI
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	86.2543	- CHI MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	83.887	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	84.8034	Pow CHI - CHI MaxCTD
+	ind: 	86.4643	Pow CHI - CHI MaxCTD
+	ind: 	86.4643	Pow CHI - CHI MaxCTD
+	ind: 	85.2806	+ CHI MaxCTD
+	ind: 	86.4261	+ CHI MaxCTD
+	ind: 	86.6658	Pow CHI - CHI MaxCTD
+	ind: 	84.8034	Pow CHI - CHI MaxCTD
+	ind: 	85.6434	Pow CHI - CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	85.2997	Pow CHI - CHI MaxCTD
+	ind: 	86.6658	Pow CHI - CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	85.1661	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.1016	+ CHI Pow CHI MaxCTD
+	ind: 	85.5288	Pow CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	85.6434	Pow CHI - CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	85.2806	+ CHI - CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	84.7461	- CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.1516	Pow CHI - CHI MaxCTD
+	ind: 	85.2806	+ CHI MaxCTD
+generation 37:
+	ind: 	85.3188	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	85.2997	Pow CHI - CHI MaxCTD
+	ind: 	85.8916	- CHI MaxCTD
+	ind: 	86.4834	Pow CHI - CHI MaxCTD
+	ind: 	84.5743	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.2925	- CHI MaxCTD
+	ind: 	85.5097	- CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0752	Pow CHI - CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	86.2734	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	78.3696	* CHI MaxCTD
+	ind: 	84.3261	- - - Pow CHI MaxCTD MaxCTD MaxCTD MaxCTD
+	ind: 	86.2543	- CHI MaxCTD
+	ind: 	86.2543	- CHI MaxCTD
+	ind: 	86.6361	+ CHI - CHI MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	84.5743	- CHI MaxCTD
+	ind: 	86.4834	Pow CHI - CHI MaxCTD
+	ind: 	84.5934	- CHI MaxCTD
+	ind: 	86.4261	+ CHI MaxCTD
+	ind: 	86.9034	Pow CHI MaxCTD
+	ind: 	84.8034	Pow CHI - CHI MaxCTD
+	ind: 	85.6434	Pow CHI - CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	85.567	- - - Pow CHI MaxCTD MaxCTD MaxCTD MaxCTD
+	ind: 	86.3116	+ CHI - CHI MaxCTD
+	ind: 	86.6658	Pow CHI - CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.5216	Pow CHI - CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.1016	+ CHI Pow CHI MaxCTD
+	ind: 	87.1134	+ CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	85.6434	Pow CHI - CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	85.7388	+ CHI - CHI MaxCTD
+	ind: 	77.6441	* CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	85.3952	Pow CHI - CHI MaxCTD
+	ind: 	87.0752	Pow CHI - CHI MaxCTD
+generation 38:
+	ind: 	87.0943	Pow CHI - CHI MaxCTD
+	ind: 	86.7316	Pow CHI MaxCTD
+	ind: 	85.2997	Pow CHI - CHI MaxCTD
+	ind: 	86.2925	+ CHI Pow CHI MaxCTD
+	ind: 	85.2997	Pow CHI - CHI MaxCTD
+	ind: 	84.5743	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.2925	- CHI MaxCTD
+	ind: 	78.2932	* CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0752	Pow CHI - CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	86.2734	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	78.3696	* CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.2543	- CHI MaxCTD
+	ind: 	86.2543	- CHI MaxCTD
+	ind: 	85.5097	- CHI MaxCTD
+	ind: 	86.5407	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	85.7388	- CHI MaxCTD
+	ind: 	77.3769	% CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	84.6697	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	85.5288	Pow CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	85.567	- - - Pow CHI MaxCTD MaxCTD MaxCTD MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	86.2352	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	86.9225	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0752	Pow CHI - CHI MaxCTD
+	ind: 	86.5216	Pow CHI - CHI MaxCTD
+	ind: 	86.6361	+ CHI - CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	85.6434	Pow CHI - CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	85.7388	+ CHI - CHI MaxCTD
+	ind: 	87.0179	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	85.8916	- CHI MaxCTD
+	ind: 	85.5288	Pow CHI MaxCTD
+	ind: 	83.9824	- - - CHI MaxCTD MaxCTD MaxCTD
+generation 39:
+	ind: 	86.5788	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	85.2997	Pow CHI - CHI MaxCTD
+	ind: 	86.9225	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	84.5743	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	78.2932	* CHI MaxCTD
+	ind: 	86.6743	Pow CHI MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	77.3769	% CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	85.567	- - - Pow CHI MaxCTD MaxCTD MaxCTD MaxCTD
+	ind: 	87.1707	- CHI MaxCTD
+	ind: 	76.4987	% CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	85.5097	- CHI MaxCTD
+	ind: 	86.5407	- CHI MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	85.567	- - - Pow CHI MaxCTD MaxCTD MaxCTD MaxCTD
+	ind: 	78.2169	* CHI MaxCTD
+	ind: 	77.3769	% CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	78.3696	* CHI MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	77.3769	% CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.2352	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	85.777	+ CHI - CHI MaxCTD
+	ind: 	86.9225	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0752	Pow CHI - CHI MaxCTD
+	ind: 	86.5216	Pow CHI - CHI MaxCTD
+	ind: 	86.6361	+ CHI - CHI MaxCTD
+	ind: 	78.1787	* CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	78.1978	* CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.6361	+ CHI - CHI MaxCTD
+	ind: 	87.0179	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.7698	+ CHI - CHI MaxCTD
+	ind: 	85.5288	Pow CHI MaxCTD
+	ind: 	85.5097	- CHI MaxCTD
+generation 40:
+	ind: 	85.777	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9225	- CHI MaxCTD
+	ind: 	86.9225	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.2852	% CHI - CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	85.6243	+ CHI MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	78.2932	* CHI MaxCTD
+	ind: 	85.7961	- CHI MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	85.7388	- CHI MaxCTD
+	ind: 	87.4189	Pow CHI MaxCTD
+	ind: 	76.4987	% CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	87.4189	Pow CHI MaxCTD
+	ind: 	76.8996	% CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	87.247	+ CHI - CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	78.3696	* CHI MaxCTD
+	ind: 	88.4689	+ CHI % CHI MaxCTD
+	ind: 	88.4689	+ CHI % CHI MaxCTD
+	ind: 	86.5407	- CHI MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	85.4716	- CHI MaxCTD
+	ind: 	85.777	+ CHI - CHI MaxCTD
+	ind: 	87.1898	- Pow CHI MaxCTD MaxCTD
+	ind: 	28.1214	- * CHI MaxCTD MaxCTD
+	ind: 	86.6361	+ CHI - CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.2352	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	86.6361	+ CHI - CHI MaxCTD
+	ind: 	87.0179	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.6743	Pow CHI MaxCTD
+	ind: 	87.0752	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	27.3578	Log CHI MaxCTD
+generation 41:
+	ind: 	85.6243	+ CHI MaxCTD
+	ind: 	86.7698	- - CHI MaxCTD MaxCTD
+	ind: 	86.7698	- - CHI MaxCTD MaxCTD
+	ind: 	87.1134	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.1898	- Pow CHI MaxCTD MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	85.6243	+ CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.1134	- CHI MaxCTD
+	ind: 	85.7961	- CHI MaxCTD
+	ind: 	87.4189	Pow CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	85.7006	- CHI MaxCTD
+	ind: 	87.1898	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.8843	- CHI MaxCTD
+	ind: 	76.4987	% CHI MaxCTD
+	ind: 	87.3807	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	87.3807	- Pow CHI MaxCTD MaxCTD
+	ind: 	87.2089	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	86.2352	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	87.0943	- CHI MaxCTD
+	ind: 	78.3696	* CHI MaxCTD
+	ind: 	88.4689	+ CHI % CHI MaxCTD
+	ind: 	76.2505	* CHI MaxCTD
+	ind: 	86.9225	- - CHI MaxCTD MaxCTD
+	ind: 	87.1898	- Pow CHI MaxCTD MaxCTD
+	ind: 	85.4716	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.1898	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.9225	- - CHI MaxCTD MaxCTD
+	ind: 	86.6361	+ CHI - CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.7698	- - CHI MaxCTD MaxCTD
+	ind: 	87.247	+ CHI - CHI MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	87.247	+ CHI - CHI MaxCTD
+	ind: 	87.0752	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.7698	- - CHI MaxCTD MaxCTD
+	ind: 	87.0752	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	75.2577	* CHI MaxCTD
+generation 42:
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.3955	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.1134	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	85.6243	+ CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	85.7006	- CHI MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	86.8843	- CHI MaxCTD
+	ind: 	87.0776	- CHI MaxCTD
+	ind: 	87.3807	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	86.3307	- CHI MaxCTD
+	ind: 	88.7154	+ CHI % CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.4646	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	86.5524	+ CHI MaxCTD
+	ind: 	85.4398	- CHI MaxCTD
+	ind: 	86.6146	- CHI MaxCTD
+	ind: 	76.2505	* CHI MaxCTD
+	ind: 	86.9225	- - CHI MaxCTD MaxCTD
+	ind: 	87.8447	+ CHI + CHI % CHI MaxCTD
+	ind: 	85.4716	- CHI MaxCTD
+	ind: 	85.965	- CHI MaxCTD
+	ind: 	86.6146	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.4093	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	85.502	- CHI MaxCTD
+	ind: 	87.4646	- CHI MaxCTD
+	ind: 	87.2227	+ CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	85.1279	- CHI MaxCTD
+	ind: 	85.8406	+ CHI MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	86.5524	- CHI MaxCTD
+	ind: 	86.7698	- - CHI MaxCTD MaxCTD
+	ind: 	87.0752	- - Pow CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+generation 43:
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.5524	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.3807	- Pow CHI MaxCTD MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	88.7154	+ CHI % CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	85.4398	- CHI MaxCTD
+	ind: 	86.6146	- CHI MaxCTD
+	ind: 	76.2505	* CHI MaxCTD
+	ind: 	87.4784	+ CHI - CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	85.4716	- CHI MaxCTD
+	ind: 	85.965	- CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	76.5669	- CHI - CHI MaxCTD
+	ind: 	86.5524	- CHI MaxCTD
+	ind: 	87.4646	- CHI MaxCTD
+	ind: 	87.1536	- CHI MaxCTD
+	ind: 	76.5669	MaxCTD
+	ind: 	87.2089	Pow CHI - CHI MaxCTD
+	ind: 	85.8406	+ CHI MaxCTD
+	ind: 	74.4178	* CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.7698	- - CHI MaxCTD MaxCTD
+	ind: 	85.8406	+ CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+generation 44:
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	79.0616	% CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	85.6402	- CHI MaxCTD
+	ind: 	76.5669	- CHI - CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	85.6264	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	76.5669	- CHI - CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	86.9607	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	88.7154	+ CHI % CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	85.965	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	86.9798	- CHI MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+	ind: 	85.965	- CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	89.2406	+ CHI % CHI MaxCTD
+	ind: 	87.4784	+ CHI - CHI MaxCTD
+	ind: 	76.5669	- CHI - CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	87.4646	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.4439	+ CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	85.8406	+ CHI MaxCTD
+	ind: 	87.278	- CHI MaxCTD
+generation 45:
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	85.965	- CHI MaxCTD
+	ind: 	85.6402	- CHI MaxCTD
+	ind: 	76.5669	- CHI - CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.4784	+ CHI - CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	76.4771	- CHI - CHI MaxCTD
+	ind: 	85.965	- CHI MaxCTD
+	ind: 	86.5524	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	86.1793	+ CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	86.6146	- CHI MaxCTD
+	ind: 	86.9118	- - CHI MaxCTD MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+	ind: 	76.4771	- CHI - CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	88.0174	+ CHI - CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	85.0943	* CHI - CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	87.0361	- - CHI MaxCTD MaxCTD
+	ind: 	79.0547	% CHI MaxCTD
+	ind: 	76.5669	- CHI - CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	86.6146	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.9118	- - CHI MaxCTD MaxCTD
+	ind: 	85.8406	+ CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+generation 46:
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	79.0063	% CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	74.404	- CHI - CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	78.6539	% CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	78.6262	% CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.5524	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.0361	- - CHI MaxCTD MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	79.0063	% CHI MaxCTD
+	ind: 	86.1793	+ CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.9118	- - CHI MaxCTD MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+	ind: 	76.4771	- CHI - CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.0361	- - CHI MaxCTD MaxCTD
+	ind: 	85.0943	* CHI - CHI MaxCTD
+	ind: 	87.2987	- CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	87.0361	- - CHI MaxCTD MaxCTD
+	ind: 	79.0547	% CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.6146	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	86.5524	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	86.9118	- - CHI MaxCTD MaxCTD
+	ind: 	85.8406	+ CHI MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+generation 47:
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.0845	- - CHI MaxCTD MaxCTD
+	ind: 	79.0063	% CHI MaxCTD
+	ind: 	86.967	* CHI - CHI MaxCTD
+	ind: 	74.404	- CHI - CHI MaxCTD
+	ind: 	86.5248	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+	ind: 	87.354	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	31.5804	- * CHI MaxCTD MaxCTD
+	ind: 	78.6262	% CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.0361	- - CHI MaxCTD MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	86.5524	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.0361	- - CHI MaxCTD MaxCTD
+	ind: 	76.5669	- CHI - CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2711	- CHI - CHI - CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	86.6146	- CHI MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+	ind: 	85.8476	+ CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.1378	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.2987	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.0361	- - CHI MaxCTD MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	85.0943	* CHI - CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+	ind: 	86.5524	- CHI MaxCTD
+	ind: 	84.8456	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	85.8406	+ CHI MaxCTD
+	ind: 	85.8406	+ CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+generation 48:
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	79.0063	% CHI MaxCTD
+	ind: 	86.967	* CHI - CHI MaxCTD
+	ind: 	86.5248	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.5248	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	85.6264	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	31.5804	- * CHI MaxCTD MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	78.6262	% CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.0361	- - CHI MaxCTD MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	86.5524	- CHI MaxCTD
+	ind: 	78.6262	% CHI MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	86.6561	- CHI * CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2711	- CHI - CHI - CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	74.5076	* CHI MaxCTD
+	ind: 	86.6146	- CHI MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	79.2274	% CHI MaxCTD
+	ind: 	87.0361	- - CHI MaxCTD MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	85.6264	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	85.6264	- CHI MaxCTD
+	ind: 	87.2711	- CHI - CHI - CHI MaxCTD
+	ind: 	76.5669	- CHI - CHI MaxCTD
+	ind: 	87.4853	+ CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+generation 49:
+	ind: 	79.6697	% CHI MaxCTD
+	ind: 	86.1585	+ CHI MaxCTD
+	ind: 	79.0063	% CHI MaxCTD
+	ind: 	85.6264	- CHI MaxCTD
+	ind: 	86.5248	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	86.5248	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	79.0547	% CHI MaxCTD
+	ind: 	87.0845	- - CHI MaxCTD MaxCTD
+	ind: 	86.8219	- CHI MaxCTD
+	ind: 	86.8219	- CHI MaxCTD
+	ind: 	78.6262	% CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.0361	- - CHI MaxCTD MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	78.6262	% CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	86.9118	- - CHI MaxCTD MaxCTD
+	ind: 	74.4109	- CHI - CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2573	CHI
+	ind: 	85.6333	- CHI MaxCTD
+	ind: 	87.3126	- CHI * CHI MaxCTD
+	ind: 	86.5248	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.5248	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.0845	- - CHI MaxCTD MaxCTD
+	ind: 	74.4109	- CHI - CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	85.6748	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2849	- CHI MaxCTD
+	ind: 	87.278	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	87.0845	- - CHI MaxCTD MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	79.5177	- % CHI MaxCTD MaxCTD
+	ind: 	87.278	- CHI MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	87.2711	- CHI - CHI - CHI MaxCTD
+	ind: 	76.5669	- CHI - CHI MaxCTD
+	ind: 	87.4853	+ CHI MaxCTD
+	ind: 	74.4109	- CHI - CHI MaxCTD
+generation 50:
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	87.0431	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.5248	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	79.0547	% CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	85.6748	- CHI MaxCTD
+	ind: 	86.8219	- CHI MaxCTD
+	ind: 	78.6262	% CHI MaxCTD
+	ind: 	85.6748	- CHI MaxCTD
+	ind: 	87.0361	- - CHI MaxCTD MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	78.6262	% CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	85.965	- CHI MaxCTD
+	ind: 	86.5248	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	74.4109	- CHI - CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2365	- CHI MaxCTD
+	ind: 	87.1398	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.5248	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	86.5248	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.3264	- CHI MaxCTD
+	ind: 	87.278	- CHI MaxCTD
+	ind: 	78.6262	% CHI MaxCTD
+	ind: 	85.6748	- CHI MaxCTD
+	ind: 	86.6077	- - - CHI MaxCTD MaxCTD MaxCTD
+	ind: 	87.278	- CHI MaxCTD
+	ind: 	87.0292	- - CHI MaxCTD MaxCTD
+	ind: 	87.278	- CHI MaxCTD
+	ind: 	78.6262	% CHI MaxCTD
+	ind: 	85.6195	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	85.6264	- CHI MaxCTD
+	ind: 	87.3056	- CHI MaxCTD
+	ind: 	87.05	- CHI MaxCTD
+	ind: 	87.2711	- CHI MaxCTD
+	ind: 	76.5669	- CHI - CHI MaxCTD
+	ind: 	79.2482	% CHI MaxCTD
+	ind: 	79.2482	% CHI MaxCTD

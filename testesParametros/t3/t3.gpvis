@@ -1,0 +1,2604 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Log,2) (Pow,2) 
+	terms: MaxTFICF MaxTFIDF MaxCTD MaxOR MaxCC MaxGSS MaxCHI MaxAM MaxIG MaxDom sumDF DF sumTF TF TFIDF TFICF IDF CTD OR CE CC GSS CHI IG DOM GINI P' P AM
+generation 0:
+	ind: 	66.901	* MaxOR AM
+	ind: 	39.5059	Log * MaxGSS CE + AM TF
+	ind: 	27.7767	Pow sumTF TF
+	ind: 	31.6529	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	21.4099	Log GINI MaxCC
+	ind: 	19.1605	- % TF OR % IG MaxTFIDF
+	ind: 	73.9305	% TFIDF MaxGSS
+	ind: 	72.3639	Pow * P sumTF * P MaxIG
+	ind: 	71.6811	* CTD MaxOR
+	ind: 	21.43	- Log TF sumDF * GINI TF
+	ind: 	41.7554	% MaxTFICF CTD
+	ind: 	44.2659	Pow - AM sumDF % CHI MaxOR
+	ind: 	60.7753	* CE TF
+	ind: 	68.9094	+ * TF MaxIG % GINI DOM
+	ind: 	67.2022	* MaxDom MaxTFIDF
+	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	59.2488	* CTD P'
+	ind: 	26.3105	* Log IDF TFICF Pow CE CE
+	ind: 	29.8654	Log GINI CHI
+	ind: 	60.6547	% * DF IDF * MaxDom MaxTFICF
+	ind: 	58.0237	* DF CE
+	ind: 	10.9259	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	47.4995	% TFICF TFIDF
+	ind: 	51.2954	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	58.8271	+ MaxCTD TFICF
+	ind: 	45.471	Pow * TFICF sumDF Pow P' MaxIG
+	ind: 	66.1177	- sumTF MaxCHI
+	ind: 	30.5483	Log * sumDF DF + TFIDF MaxAM
+	ind: 	30.468	Log TF MaxAM
+	ind: 	32.7978	* Log CHI OR + CE GINI
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	55.7743	- % TF MaxDom + TFICF sumTF
+	ind: 	71.2191	Pow MaxCC IDF
+	ind: 	53.9667	* * AM CE - DOM CHI
+	ind: 	53.0227	* sumTF MaxCTD
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	53.8863	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	71.3999	% AM IG
+	ind: 	8.43543	% + sumTF TFICF - MaxTFICF MaxGSS
+	ind: 	74.0309	* DOM MaxDom
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	53.7256	% IG DOM
+	ind: 	56.2764	+ - GSS AM * GSS MaxTFICF
+	ind: 	41.8357	Log DOM AM
+	ind: 	48.0016	* % MaxAM MaxIG * CE TF
+	ind: 	66.8608	+ sumDF CHI
+	ind: 	26.3105	Log Log MaxCHI MaxIG Pow MaxAM MaxTFICF
+	ind: 	68.4475	+ GSS GSS
+	ind: 	71.1187	* % AM MaxCHI Pow P' P
+generation 1:
+	ind: 	66.901	* MaxOR AM
+	ind: 	48.0016	* % MaxAM MaxIG * CE TF
+	ind: 	27.7767	Pow sumTF TF
+	ind: 	52.7817	* * AM CE - DOM CHI
+	ind: 	25.4268	% % AM IG Pow DOM DF
+	ind: 	19.1605	- % TF OR % IG MaxTFIDF
+	ind: 	73.9305	% TFIDF MaxGSS
+	ind: 	72.3639	Pow * P sumTF * P MaxIG
+	ind: 	71.6811	* CTD MaxOR
+	ind: 	60.6748	* CTD P'
+	ind: 	55.9148	* * AM CE - DOM CHI
+	ind: 	71.3999	% AM IG
+	ind: 	50.9138	* sumTF MaxCTD
+	ind: 	27.5959	* Log CHI OR + CE GINI
+	ind: 	67.2022	* MaxDom MaxTFIDF
+	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	59.2488	* CTD P'
+	ind: 	61.7393	% * DF IDF * MaxDom MaxTFICF
+	ind: 	63.7678	* CE TF
+	ind: 	71.9622	% AM IG
+	ind: 	61.418	% * DF IDF * MaxDom MaxTFICF
+	ind: 	66.8608	- DOM CHI
+	ind: 	47.4995	% TFICF TFIDF
+	ind: 	51.2954	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	58.8271	+ MaxCTD TFICF
+	ind: 	72.6853	+ CE GINI
+	ind: 	73.6092	% TFIDF MaxGSS
+	ind: 	59.5501	+ - GSS AM * MaxOR AM
+	ind: 	70.0141	+ % * DF IDF * MaxDom MaxTFICF * MaxOR AM
+	ind: 	32.7978	* Log CHI OR + CE GINI
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	55.7743	- % TF MaxDom + TFICF sumTF
+	ind: 	70.958	% TFIDF MaxGSS
+	ind: 	53.9667	* * AM CE - DOM CHI
+	ind: 	71.661	+ % * MaxDom MaxTFIDF * MaxDom MaxTFICF * MaxOR AM
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	71.42	Pow CHI MaxCTD
+	ind: 	51.9984	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	71.3999	% AM IG
+	ind: 	72.143	Pow CHI MaxCTD
+	ind: 	50.1506	* sumTF MaxCTD
+	ind: 	3.69552	% - sumDF TF Pow DOM DF
+	ind: 	60.7753	* CE TF
+	ind: 	45.9128	* * AM CE * CE TF
+	ind: 	53.0227	* sumTF MaxCTD
+	ind: 	48.0016	* % MaxAM MaxIG * CE TF
+	ind: 	6.12573	% - sumDF TF Pow DOM DF
+	ind: 	26.3105	Log Log MaxCHI MaxIG Pow MaxAM MaxTFICF
+	ind: 	32.7978	* Log CHI OR * CE TF
+	ind: 	71.1187	* % AM MaxCHI Pow P' P
+generation 2:
+	ind: 	66.901	* MaxOR AM
+	ind: 	59.2488	* CTD P'
+	ind: 	27.7767	Pow sumTF TF
+	ind: 	70.4559	* DF IDF
+	ind: 	72.625	+ CE GINI
+	ind: 	70.4157	+ % * DF IDF * MaxDom MaxTFICF * MaxOR AM
+	ind: 	56.0153	Log % * DF IDF * MaxDom MaxTFICF + GSS MaxAM
+	ind: 	67.3428	+ % * DF IDF % TFIDF MaxGSS * MaxOR AM
+	ind: 	59.4899	* CE TF
+	ind: 	60.6748	* CTD P'
+	ind: 	70.1948	+ CE GINI
+	ind: 	71.3999	% AM IG
+	ind: 	71.8417	Pow CHI MaxCTD
+	ind: 	67.2424	- DOM CHI
+	ind: 	28.8411	% - sumDF TF - DOM CHI
+	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	59.2488	* CTD P'
+	ind: 	63.7678	* CE TF
+	ind: 	63.7678	* CE TF
+	ind: 	71.9622	% AM IG
+	ind: 	61.418	% * DF IDF * MaxDom MaxTFICF
+	ind: 	66.8608	- DOM CHI
+	ind: 	47.4995	% TFICF TFIDF
+	ind: 	53.5851	* CTD P'
+	ind: 	70.1747	* AM CE
+	ind: 	51.9582	% TFICF TFIDF
+	ind: 	73.6092	% TFIDF MaxGSS
+	ind: 	59.5501	+ - GSS AM * MaxOR AM
+	ind: 	27.4553	Log TFICF TFICF
+	ind: 	53.6252	% TFICF TFIDF
+	ind: 	67.7445	* DF IDF
+	ind: 	57.2002	* sumTF MaxCTD
+	ind: 	70.958	% TFIDF MaxGSS
+	ind: 	72.1028	Pow CHI MaxCTD
+	ind: 	70.5764	+ % * DF IDF * MaxDom MaxTFICF * MaxOR AM
+	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	48.8853	* sumTF MaxCTD
+	ind: 	53.1633	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	71.3999	% AM IG
+	ind: 	72.143	Pow CHI MaxCTD
+	ind: 	49.6686	Log AM CE
+	ind: 	65.2541	* MaxDom MaxTFICF
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	70.476	* DF IDF
+	ind: 	53.0227	* sumTF MaxCTD
+	ind: 	59.5501	+ - GSS AM * MaxOR AM
+	ind: 	6.12573	% - sumDF TF Pow DOM DF
+	ind: 	62.8239	* CTD P'
+	ind: 	67.4433	- DOM CHI
+	ind: 	52.4603	Log DOM DF
+generation 3:
+	ind: 	28.8411	% - sumDF TF - DOM CHI
+	ind: 	69.6927	* DF IDF
+	ind: 	27.7767	Pow sumTF TF
+	ind: 	69.3312	+ P' TFIDF
+	ind: 	72.625	+ CE GINI
+	ind: 	72.3639	* AM IG
+	ind: 	56.0153	Log % * DF IDF * MaxDom MaxTFICF + GSS MaxAM
+	ind: 	72.1028	Pow CHI MaxCTD
+	ind: 	59.4899	* CE TF
+	ind: 	69.1303	% TFIDF MaxGSS
+	ind: 	70.1948	+ CE GINI
+	ind: 	47.379	% TFICF TFIDF
+	ind: 	53.3039	% TFICF TFIDF
+	ind: 	67.2424	- DOM CHI
+	ind: 	28.8411	% - sumDF TF - DOM CHI
+	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	71.3999	% AM IG
+	ind: 	63.7678	* CE TF
+	ind: 	59.2488	* CTD P'
+	ind: 	71.9622	% AM IG
+	ind: 	59.4497	* CE TF
+	ind: 	66.8608	- DOM CHI
+	ind: 	47.4995	% TFICF TFIDF
+	ind: 	73.6092	% TFIDF MaxGSS
+	ind: 	70.1747	* AM CE
+	ind: 	70.6768	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	73.6092	% TFIDF MaxGSS
+	ind: 	53.1633	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	27.4553	Log TFICF TFICF
+	ind: 	27.5356	Pow sumTF TF
+	ind: 	72.5045	* AM IG
+	ind: 	53.1633	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	70.958	% TFIDF MaxGSS
+	ind: 	53.9466	% TFICF TFIDF
+	ind: 	65.0733	* TFICF TFIDF
+	ind: 	62.8841	* CTD P'
+	ind: 	27.8369	Pow sumTF TF
+	ind: 	66.8608	- DOM CHI
+	ind: 	71.3999	% AM IG
+	ind: 	72.143	Pow CHI MaxCTD
+	ind: 	59.2087	* CTD P'
+	ind: 	65.2541	* MaxDom MaxTFICF
+	ind: 	59.2488	* CTD P'
+	ind: 	63.4666	* CTD P'
+	ind: 	73.6493	% TFIDF MaxGSS
+	ind: 	38.0398	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	71.3999	% AM IG
+	ind: 	48.6845	% TFICF TFIDF
+	ind: 	60.2531	* CTD P'
+	ind: 	49.3673	% TFICF TFIDF
+generation 4:
+	ind: 	28.8411	% - sumDF TF - DOM CHI
+	ind: 	66.5796	- DOM CHI
+	ind: 	71.3999	% AM IG
+	ind: 	72.7857	+ CE GINI
+	ind: 	72.625	+ CE GINI
+	ind: 	69.6927	* DF IDF
+	ind: 	56.0153	Log % * DF IDF * MaxDom MaxTFICF + GSS MaxAM
+	ind: 	73.9305	% TFIDF MaxGSS
+	ind: 	72.625	+ CE GINI
+	ind: 	69.1303	% TFIDF MaxGSS
+	ind: 	70.1948	+ CE GINI
+	ind: 	71.3999	% AM IG
+	ind: 	62.8439	* CTD P'
+	ind: 	71.3999	% AM IG
+	ind: 	61.1769	* CTD P'
+	ind: 	60.2531	* CTD P'
+	ind: 	71.3999	% AM IG
+	ind: 	59.2288	* CTD P'
+	ind: 	71.7413	% TFIDF MaxGSS
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	59.4497	* CE TF
+	ind: 	66.8608	- DOM CHI
+	ind: 	64.4909	* AM CE
+	ind: 	73.7698	* AM IG
+	ind: 	70.1747	* AM CE
+	ind: 	70.6768	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	73.6092	% TFIDF MaxGSS
+	ind: 	67.2424	% * CE TF % TFIDF MaxGSS
+	ind: 	27.4553	Log TFICF TFICF
+	ind: 	71.3396	% TFIDF MaxGSS
+	ind: 	67.2223	- DOM CHI
+	ind: 	53.1633	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	71.8618	* + P' TFIDF * AM IG
+	ind: 	28.8411	% - sumDF TF - DOM CHI
+	ind: 	65.0733	* TFICF TFIDF
+	ind: 	62.8841	* CTD P'
+	ind: 	27.8369	Pow sumTF TF
+	ind: 	66.8608	- DOM CHI
+	ind: 	71.3999	% AM IG
+	ind: 	70.2149	+ CE GINI
+	ind: 	71.7413	% TFIDF MaxGSS
+	ind: 	65.2541	* MaxDom MaxTFICF
+	ind: 	59.2488	* CTD P'
+	ind: 	63.4666	* CTD P'
+	ind: 	72.6853	+ CE GINI
+	ind: 	71.5606	+ P' TFIDF
+	ind: 	71.902	* + P' TFIDF * AM IG
+	ind: 	60.3937	% CE GINI
+	ind: 	73.3481	% TFIDF MaxGSS
+	ind: 	49.3673	% TFICF TFIDF
+generation 5:
+	ind: 	28.8411	% - sumDF TF - DOM CHI
+	ind: 	72.2434	+ % * CE TF * CE TF * MaxOR AM
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	73.6493	% TFIDF MaxGSS
+	ind: 	61.5987	* CE TF
+	ind: 	27.0135	Log P' TFIDF
+	ind: 	56.0153	Log % * DF IDF * MaxDom MaxTFICF + GSS MaxAM
+	ind: 	73.2878	% TFIDF MaxGSS
+	ind: 	72.625	+ CE GINI
+	ind: 	69.1303	% TFIDF MaxGSS
+	ind: 	29.765	% - sumDF TF - DOM CHI
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	62.8439	* CTD P'
+	ind: 	71.3999	% AM IG
+	ind: 	73.087	* + P' TFIDF TFIDF
+	ind: 	54.5692	Log % * DF IDF * MaxDom MaxTFICF + GSS MaxAM
+	ind: 	72.3639	+ CE GINI
+	ind: 	72.5447	* + P' TFIDF * AM IG
+	ind: 	62.2012	* AM CE
+	ind: 	64.5712	* TFICF TFIDF
+	ind: 	59.4497	* CE TF
+	ind: 	66.8608	- DOM CHI
+	ind: 	40.3093	Log TFICF TFICF
+	ind: 	72.1631	% TFIDF MaxGSS
+	ind: 	70.1747	* AM CE
+	ind: 	70.6768	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	70.8174	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	59.2488	* CTD P'
+	ind: 	71.3999	% AM IG
+	ind: 	71.3396	% TFIDF MaxGSS
+	ind: 	67.2223	- DOM CHI
+	ind: 	71.3999	% AM IG
+	ind: 	51.0745	% Log MaxGSS MaxCC MaxGSS
+	ind: 	64.4909	* AM CE
+	ind: 	65.0733	* TFICF TFIDF
+	ind: 	59.2288	* CTD P'
+	ind: 	73.2476	% TFIDF MaxGSS
+	ind: 	71.7413	% TFIDF MaxGSS
+	ind: 	72.1631	% TFIDF MaxGSS
+	ind: 	72.384	+ CE GINI
+	ind: 	51.677	Log P' TFIDF
+	ind: 	65.2541	* MaxDom MaxTFICF
+	ind: 	59.2488	* CTD P'
+	ind: 	61.5585	* CE TF
+	ind: 	71.3999	% AM IG
+	ind: 	61.8397	- DOM CHI
+	ind: 	71.902	* + P' TFIDF * AM IG
+	ind: 	60.3937	% CE GINI
+	ind: 	30.468	Log TFICF TFICF
+	ind: 	49.3673	% TFICF TFIDF
+generation 6:
+	ind: 	64.4909	* AM CE
+	ind: 	28.2386	% - sumDF TF - DOM CHI
+	ind: 	64.5712	* TFICF TFIDF
+	ind: 	70.7371	+ CE GINI
+	ind: 	60.3535	+ % * CE TF * CTD P' * MaxOR AM
+	ind: 	27.0135	Log P' TFIDF
+	ind: 	58.9476	* CE TF
+	ind: 	73.7297	% TFIDF MaxGSS
+	ind: 	72.625	+ CE GINI
+	ind: 	65.0131	+ CE TF
+	ind: 	65.1336	- DOM CHI
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	71.4601	% TFIDF MaxGSS
+	ind: 	28.7809	% - sumDF TF - DOM CHI
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	60.8556	- DOM CHI
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	70.9982	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	62.2012	* AM CE
+	ind: 	64.5712	* TFICF TFIDF
+	ind: 	71.7413	% TFIDF MaxGSS
+	ind: 	71.3195	% % TFIDF MaxGSS IG
+	ind: 	40.3093	Log TFICF TFICF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	70.1747	* AM CE
+	ind: 	46.3346	- CE TF
+	ind: 	70.8174	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	59.2488	* CTD P'
+	ind: 	72.4443	AM
+	ind: 	59.2488	* CTD P'
+	ind: 	71.3195	% % TFIDF MaxGSS IG
+	ind: 	65.5754	* AM CE
+	ind: 	51.0745	% Log MaxGSS MaxCC MaxGSS
+	ind: 	64.4909	* AM CE
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	59.2288	* CTD P'
+	ind: 	64.5712	* TFICF TFIDF
+	ind: 	59.3694	% CE GINI
+	ind: 	72.1631	% TFIDF MaxGSS
+	ind: 	67.7646	- DOM CHI
+	ind: 	71.3195	% % TFIDF MaxGSS IG
+	ind: 	65.2541	* MaxDom MaxTFICF
+	ind: 	70.9982	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	61.5585	* CE TF
+	ind: 	71.3999	% AM IG
+	ind: 	61.8397	- DOM CHI
+	ind: 	71.902	* + P' TFIDF * AM IG
+	ind: 	60.3937	% CE GINI
+	ind: 	30.468	Log TFICF TFICF
+	ind: 	71.7413	% TFIDF MaxGSS
+generation 7:
+	ind: 	64.4909	* AM CE
+	ind: 	58.9476	* CE TF
+	ind: 	70.9982	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	70.7371	+ CE GINI
+	ind: 	62.4623	* CTD P'
+	ind: 	58.9074	* + P' TFIDF * TFICF TFIDF
+	ind: 	58.9476	* CE TF
+	ind: 	61.7192	* TFICF TFIDF
+	ind: 	72.625	+ CE GINI
+	ind: 	28.339	* + P' TFIDF % - sumDF TF - DOM CHI
+	ind: 	62.4222	* CTD P'
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	61.7192	* TFICF TFIDF
+	ind: 	28.7809	% - sumDF TF - DOM CHI
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	70.9982	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	72.8259	% % TFIDF MaxGSS IG
+	ind: 	71.3999	% AM IG
+	ind: 	71.7413	% TFIDF MaxGSS
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	72.3639	* AM IG
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	26.3105	- CE TF
+	ind: 	53.9064	- DOM CHI
+	ind: 	70.8174	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	59.2488	* CTD P'
+	ind: 	72.4443	AM
+	ind: 	58.9074	* + P' TFIDF * TFICF TFIDF
+	ind: 	72.3639	* AM IG
+	ind: 	72.4443	AM
+	ind: 	28.339	* + P' TFIDF % - sumDF TF - DOM CHI
+	ind: 	64.4909	* AM CE
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	71.902	* + P' TFIDF * AM IG
+	ind: 	72.5849	* AM IG
+	ind: 	72.5849	* AM IG
+	ind: 	55.4127	* + P' TFIDF * TFICF TFIDF
+	ind: 	67.7646	- DOM CHI
+	ind: 	61.8397	- DOM CHI
+	ind: 	65.2541	* MaxDom MaxTFICF
+	ind: 	68.7287	% % TFIDF MaxGSS IG
+	ind: 	70.1948	+ CE GINI
+	ind: 	71.3999	% AM IG
+	ind: 	72.4443	AM
+	ind: 	71.902	* + P' TFIDF * AM IG
+	ind: 	13.9787	Log TFICF TFICF
+	ind: 	28.9014	% - sumDF TF - DOM CHI
+	ind: 	71.7413	% TFIDF MaxGSS
+generation 8:
+	ind: 	61.8397	- DOM CHI
+	ind: 	58.9476	* CE TF
+	ind: 	39.7269	- + P' TFIDF % - sumDF TF - DOM CHI
+	ind: 	70.7371	+ CE GINI
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	28.339	* + P' TFIDF % - sumDF TF - DOM CHI
+	ind: 	69.9337	% TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	68.0458	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	72.3639	* AM IG
+	ind: 	70.235	% * CE TF % TFIDF MaxGSS
+	ind: 	73.0669	TFIDF
+	ind: 	70.9379	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	72.3037	Pow * AM IG MaxGSS
+	ind: 	43.7638	- + P' TFIDF % - sumDF TF - DOM CHI
+	ind: 	72.3639	* Pow P' TFIDF * AM IG
+	ind: 	72.3438	+ Pow TFICF TFIDF * MaxOR AM
+	ind: 	56.0554	* MaxDom MaxTFICF
+	ind: 	72.3639	* AM IG
+	ind: 	65.1737	% * CE TF % TFIDF MaxGSS
+	ind: 	41.1328	Pow TFICF TFIDF
+	ind: 	53.9064	- DOM CHI
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	61.8397	- DOM CHI
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	58.9074	* + P' TFIDF * TFICF TFIDF
+	ind: 	72.3639	* AM IG
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	67.1822	- DOM CHI
+	ind: 	64.4909	* AM CE
+	ind: 	61.0364	* + P' TFIDF * TFICF TFIDF
+	ind: 	69.1303	% TFIDF MaxGSS
+	ind: 	72.5849	* AM IG
+	ind: 	58.9074	* + P' TFIDF * TFICF TFIDF
+	ind: 	55.4127	* + P' TFIDF * TFICF TFIDF
+	ind: 	67.7646	- DOM CHI
+	ind: 	61.8397	- DOM CHI
+	ind: 	65.2541	* MaxDom MaxTFICF
+	ind: 	66.1579	* Pow P' TFIDF * AM IG
+	ind: 	72.0024	TFIDF
+	ind: 	71.3999	% AM IG
+	ind: 	72.4443	AM
+	ind: 	71.902	* + P' TFIDF * AM IG
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	28.9014	% - sumDF TF - DOM CHI
+	ind: 	71.7413	% TFIDF MaxGSS
+generation 9:
+	ind: 	73.6292	% TFIDF MaxGSS
+	ind: 	58.9476	* CE TF
+	ind: 	39.7269	- + P' TFIDF % - sumDF TF - DOM CHI
+	ind: 	69.4919	% TFIDF MaxGSS
+	ind: 	26.3105	Log TFICF TFICF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	67.1822	- DOM CHI
+	ind: 	72.1631	TFIDF
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	26.3105	Log AM IG
+	ind: 	70.235	% * CE TF % TFIDF MaxGSS
+	ind: 	28.9014	% - sumDF TF - DOM CHI
+	ind: 	73.6694	+ TFICF TFIDF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	54.7299	* + P' TFIDF * TFICF TFIDF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	47.9213	* CE TF
+	ind: 	73.6694	+ TFICF TFIDF
+	ind: 	66.1177	- DOM CHI
+	ind: 	73.4485	% AM IG
+	ind: 	73.6694	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	41.1328	Pow TFICF TFIDF
+	ind: 	53.9064	- DOM CHI
+	ind: 	67.1822	- DOM CHI
+	ind: 	61.8397	- DOM CHI
+	ind: 	67.5638	- DOM CHI
+	ind: 	71.3999	% AM IG
+	ind: 	40.5503	Pow TFICF TFIDF
+	ind: 	29.2629	* + P' TFIDF % - sumDF TF - DOM CHI
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	72.3037	% TFIDF MaxGSS
+	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
+	ind: 	72.5849	* AM IG
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	66.1177	- DOM CHI
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	72.2434	TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.6092	% TFIDF MaxGSS
+	ind: 	71.3999	% AM IG
+	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
+	ind: 	70.235	% * CE TF % TFIDF MaxGSS
+	ind: 	70.0542	+ Log TFICF TFICF * MaxOR AM
+	ind: 	58.9476	* CE TF
+	ind: 	73.6493	% TFIDF MaxGSS
+generation 10:
+	ind: 	72.1631	TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	47.9213	* CE TF
+	ind: 	73.087	TFIDF
+	ind: 	71.6409	% AM IG
+	ind: 	58.1643	- AM IG
+	ind: 	72.1631	TFIDF
+	ind: 	28.2386	% - sumDF TF - DOM CHI
+	ind: 	69.512	TFIDF
+	ind: 	71.3999	% AM IG
+	ind: 	69.5722	% TFIDF MaxGSS
+	ind: 	37.5979	Pow TFICF TFIDF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	31.7333	Pow TFICF TFIDF
+	ind: 	73.6092	% TFIDF MaxGSS
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	64.5712	* TFICF TFIDF
+	ind: 	73.4485	% AM IG
+	ind: 	58.6865	* TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	72.3037	% TFIDF MaxGSS
+	ind: 	53.9064	- DOM CHI
+	ind: 	67.1822	- DOM CHI
+	ind: 	73.6292	% TFIDF MaxGSS
+	ind: 	67.5638	- DOM CHI
+	ind: 	62.0607	* CE TF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	29.2629	* + P' TFIDF % - sumDF TF - DOM CHI
+	ind: 	55.1516	- DOM CHI
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
+	ind: 	67.5638	- DOM CHI
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	69.1906	TFIDF
+	ind: 	65.3143	* TFICF TFIDF
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	40.5503	Pow TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	67.1822	- DOM CHI
+	ind: 	41.1328	Pow TFICF TFIDF
+	ind: 	70.235	% * CE TF % TFIDF MaxGSS
+	ind: 	67.5638	- DOM CHI
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	37.3971	Pow TFICF TFIDF
+generation 11:
+	ind: 	72.1631	TFIDF
+	ind: 	73.5288	% AM IG
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	65.3143	* TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
+	ind: 	47.9213	* CE TF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	69.512	TFIDF
+	ind: 	67.0817	* TFICF TFIDF
+	ind: 	67.6039	- DOM CHI
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	58.6865	* TFICF TFIDF
+	ind: 	62.7636	* TFICF TFIDF
+	ind: 	73.4485	% TFIDF MaxGSS
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	64.5712	* TFICF TFIDF
+	ind: 	65.1737	% * CE TF % TFIDF MaxGSS
+	ind: 	54.1073	* CE TF
+	ind: 	69.512	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	72.3037	% TFIDF MaxGSS
+	ind: 	53.9064	- DOM CHI
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.6292	% TFIDF MaxGSS
+	ind: 	73.087	% TFIDF MaxGSS
+	ind: 	62.0607	* CE TF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	64.6515	TFICF
+	ind: 	73.7297	TFIDF
+	ind: 	73.7899	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	31.7333	Pow TFICF TFIDF
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	69.1906	TFIDF
+	ind: 	65.3143	* TFICF TFIDF
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	58.6865	* TFICF TFIDF
+	ind: 	61.6991	* - DOM CHI TFIDF
+	ind: 	67.0817	* TFICF TFIDF
+	ind: 	73.6092	% TFIDF MaxGSS
+	ind: 	41.1328	Pow TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	67.5638	- DOM CHI
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	62.1812	* TFICF TFIDF
+generation 12:
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	71.6409	% AM IG
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.7297	TFIDF
+	ind: 	62.0607	* CE TF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
+	ind: 	62.9845	* TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	69.512	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	61.8397	- DOM CHI
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	65.6156	* TFICF TFIDF
+	ind: 	58.6865	* TFICF TFIDF
+	ind: 	62.7636	* TFICF TFIDF
+	ind: 	73.4485	% TFIDF MaxGSS
+	ind: 	73.7497	+ TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	64.5712	* TFICF TFIDF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	54.1073	* CE TF
+	ind: 	73.7297	TFIDF
+	ind: 	65.6357	* TFICF TFIDF
+	ind: 	65.6357	* TFICF TFIDF
+	ind: 	73.5489	+ TFICF TFIDF
+	ind: 	55.0713	- DOM CHI
+	ind: 	73.328	% AM IG
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	62.0607	* CE TF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	72.0024	TFIDF
+	ind: 	69.1906	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	69.1906	TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	73.7297	TFIDF
+	ind: 	73.6292	% TFIDF MaxGSS
+	ind: 	73.5489	+ TFICF TFIDF
+	ind: 	73.6092	% TFIDF MaxGSS
+	ind: 	59.0279	* TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	67.5638	- DOM CHI
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	59.3493	* TFICF TFIDF
+generation 13:
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	72.2233	Pow DOM CHI
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.7297	TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	65.0733	* TFICF TFIDF
+	ind: 	69.512	TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	61.8397	- DOM CHI
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	67.7044	- DOM CHI
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	73.4485	% TFIDF MaxGSS
+	ind: 	69.1906	TFIDF
+	ind: 	61.0765	* CE TF
+	ind: 	64.5712	* TFICF TFIDF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	58.6865	* TFICF TFIDF
+	ind: 	73.7297	TFIDF
+	ind: 	65.6357	* TFICF TFIDF
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
+	ind: 	55.0713	- DOM CHI
+	ind: 	63.6674	- DOM CHI
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	73.6493	% TFIDF MaxGSS
+	ind: 	72.2233	Pow DOM CHI
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	73.9908	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	73.7297	TFIDF
+	ind: 	73.6292	% TFIDF MaxGSS
+	ind: 	72.2233	Pow DOM CHI
+	ind: 	73.6694	% TFIDF MaxGSS
+	ind: 	69.3914	% TFIDF MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	53.103	- TFICF TFIDF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+generation 14:
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	73.6493	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.7297	TFIDF
+	ind: 	63.6674	- DOM CHI
+	ind: 	73.6292	% TFIDF MaxGSS
+	ind: 	73.8301	+ TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	65.0733	* TFICF TFIDF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	73.4485	% TFIDF MaxGSS
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	73.6292	% TFIDF MaxGSS
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	58.6865	* TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	65.0733	* TFICF TFIDF
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	69.1906	TFIDF
+	ind: 	63.6674	- DOM CHI
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.3597	IDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	72.4644	% TFIDF MaxGSS
+	ind: 	73.9908	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	62.1812	* TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	74.0711	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	72.2233	Pow DOM CHI
+	ind: 	72.2635	TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	71.7212	% TFIDF MaxGSS
+generation 15:
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.3882	% TFIDF MaxGSS
+	ind: 	73.6493	% TFIDF MaxGSS
+	ind: 	63.2255	- DOM CHI
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	71.9422	% TFIDF MaxGSS
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.4485	% TFIDF MaxGSS
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	72.3639	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	65.0733	* TFICF TFIDF
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	65.475	* TFICF TFIDF
+	ind: 	72.2635	TFIDF
+	ind: 	71.7614	IDF
+	ind: 	73.4485	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	71.3597	IDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	72.4242	TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	67.1219	* TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	74.0711	% TFIDF MaxGSS
+	ind: 	66.7805	* TFICF TFIDF
+	ind: 	67.1219	* TFICF TFIDF
+	ind: 	72.2635	TFIDF
+	ind: 	65.475	* TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+generation 16:
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.7815	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	62.9845	* TFICF TFIDF
+	ind: 	65.2541	* TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	72.8861	+ TFICF + TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.2878	+ TFICF TFIDF
+	ind: 	72.8861	+ TFICF + TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	65.475	* TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.4485	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	72.4242	TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	67.1219	* TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	74.0711	% TFIDF MaxGSS
+	ind: 	72.1229	+ TFICF TFIDF
+	ind: 	67.1219	* TFICF TFIDF
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	65.475	* TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	73.5891	% TFIDF MaxGSS
+generation 17:
+	ind: 	73.087	% TFIDF MaxGSS
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.81	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	67.1219	* TFICF TFIDF
+	ind: 	62.9845	* TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	71.8819	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.2878	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.6292	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	72.8861	+ TFICF + TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	74.0108	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.2878	+ TFICF TFIDF
+	ind: 	72.8861	+ TFICF + TFICF TFIDF
+	ind: 	65.0733	* TFICF TFIDF
+	ind: 	65.475	* TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.2878	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	67.1219	* TFICF TFIDF
+	ind: 	73.2878	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	62.9845	* TFICF TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	74.0711	% TFIDF MaxGSS
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	65.475	* TFICF TFIDF
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	65.475	* TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	66.9211	* TFICF TFIDF
+generation 18:
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.3882	% TFIDF MaxGSS
+	ind: 	71.8819	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	74.051	% TFIDF MaxGSS
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	74.0108	% TFIDF MaxGSS
+	ind: 	73.6895	+ TFICF TFIDF
+	ind: 	73.2276	+ TFICF TFIDF
+	ind: 	74.051	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	65.475	* TFICF TFIDF
+	ind: 	73.3481	% TFIDF MaxGSS
+	ind: 	71.8217	+ TFICF TFIDF
+	ind: 	72.2434	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	67.1219	* TFICF TFIDF
+	ind: 	73.3882	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.81	+ TFICF TFIDF
+	ind: 	62.9845	* TFICF TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.3481	% TFIDF MaxGSS
+	ind: 	66.9211	* TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	66.9211	* TFICF TFIDF
+generation 19:
+	ind: 	73.087	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.8016	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	72.9865	+ TFICF TFIDF
+	ind: 	73.8903	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	74.1916	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	74.0711	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.8217	+ TFICF TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	71.7614	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	67.1219	* TFICF TFIDF
+	ind: 	73.3882	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	73.4083	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	72.9865	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.6895	+ TFICF TFIDF
+	ind: 	74.3523	Pow TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.4083	% TFIDF MaxGSS
+generation 20:
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	74.051	% TFIDF MaxGSS
+	ind: 	71.6409	+ TFICF TFIDF
+	ind: 	73.8903	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.8301	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	36.0514	Pow TFICF TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.8903	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.8903	% TFIDF MaxGSS
+	ind: 	72.9865	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.3079	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	73.8903	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	74.1916	% TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	74.0711	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.8819	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	71.9622	Pow TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.3523	Pow TFIDF MaxGSS
+	ind: 	39.767	Pow TFICF TFIDF
+	ind: 	67.1219	* TFICF TFIDF
+	ind: 	73.3882	% TFIDF MaxGSS
+	ind: 	71.8016	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	73.4083	% TFIDF MaxGSS
+	ind: 	39.767	Pow TFICF TFIDF
+	ind: 	72.9865	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	65.4951	* TFICF TFIDF
+	ind: 	71.8217	+ TFICF TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	65.475	* TFICF TFIDF
+	ind: 	73.4083	% TFIDF MaxGSS
+generation 21:
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	74.051	% TFIDF MaxGSS
+	ind: 	71.6409	+ TFICF TFIDF
+	ind: 	73.8301	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	65.3746	* TFICF TFIDF
+	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	50.4318	Log TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.3523	Pow TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	72.9865	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.2476	+ TFICF TFIDF
+	ind: 	72.4041	+ TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	74.1916	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	71.9622	Pow TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.3523	Pow TFIDF MaxGSS
+	ind: 	39.767	Pow TFICF TFIDF
+	ind: 	67.1219	* TFICF TFIDF
+	ind: 	73.3882	% TFIDF MaxGSS
+	ind: 	62.5628	* TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	39.767	Pow TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	71.8819	+ TFICF TFIDF
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	71.8217	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.1314	* TFIDF MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+generation 22:
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.81	Pow TFIDF MaxGSS
+	ind: 	72.1832	Pow TFIDF MaxGSS
+	ind: 	73.8301	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.1271	Pow TFIDF MaxGSS
+	ind: 	73.087	% TFIDF MaxGSS
+	ind: 	74.3523	Pow TFIDF MaxGSS
+	ind: 	71.7212	+ TFICF TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	37.618	Pow TFICF TFIDF
+	ind: 	50.4318	Log TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	65.8767	* TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.2476	+ TFICF TFIDF
+	ind: 	72.4041	+ TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1916	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	71.9622	Pow TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.9622	Pow TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	74.3523	Pow TFIDF MaxGSS
+	ind: 	74.051	% TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	62.5628	* TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	74.0108	Pow TFIDF MaxGSS
+	ind: 	73.6694	% TFIDF CC
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	73.81	Pow TFIDF MaxGSS
+	ind: 	73.8301	+ TFICF TFIDF
+	ind: 	74.3523	Pow TFIDF MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+generation 23:
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.81	Pow TFIDF MaxGSS
+	ind: 	73.8301	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	65.3746	* TFICF TFIDF
+	ind: 	73.2075	+ TFICF + TFICF TFIDF
+	ind: 	74.3523	Pow TFIDF MaxGSS
+	ind: 	40.1085	Pow TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	50.4318	Log TFICF TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	65.8767	* TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.8819	+ TFICF TFIDF
+	ind: 	74.0711	% TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	72.2233	Pow TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	73.8301	TFIDF
+	ind: 	40.1085	Pow TFICF TFIDF
+	ind: 	73.8301	TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.9305	% TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.8301	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.0108	Pow TFIDF MaxGSS
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	73.81	+ TFICF TFIDF
+	ind: 	36.0514	Pow TFICF TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	65.0733	* TFICF TFIDF
+generation 24:
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	70.3756	MaxGSS
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	58.0036	- TFIDF MaxGSS
+	ind: 	73.8301	TFIDF
+	ind: 	73.2075	+ TFICF + TFICF TFIDF
+	ind: 	73.9104	+ TFICF TFIDF
+	ind: 	40.1085	Pow TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.3481	+ TFICF TFIDF
+	ind: 	73.7096	% TFIDF MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	50.4318	Log TFICF TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	65.8767	* TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	73.81	Pow TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	40.1085	Pow TFICF TFIDF
+	ind: 	73.8301	TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	43.4625	Pow TFICF TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	72.6652	MaxGSS
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	73.8301	TFIDF
+	ind: 	73.81	+ TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.8301	+ TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	70.3756	MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	72.6652	MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.81	Pow TFIDF MaxGSS
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	62.6833	* TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.81	+ TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1113	* TFIDF MaxGSS
+generation 25:
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	70.3756	MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.8301	TFIDF
+	ind: 	73.2075	+ TFICF + TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	40.1085	Pow TFICF TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	50.4318	Log TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	50.4318	Log TFICF TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	65.8767	* TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.81	Pow TFIDF MaxGSS
+	ind: 	73.81	Pow TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	40.1085	Pow TFICF TFIDF
+	ind: 	43.4625	Pow TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1113	* TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.9823	GSS
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.8301	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	69.4316	GSS
+	ind: 	69.773	GSS
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	72.6652	MaxGSS
+	ind: 	65.9169	* TFICF TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	50.4318	Log TFICF TFIDF
+	ind: 	42.2575	Pow TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	72.143	Pow TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+generation 26:
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.5447	MaxGSS
+	ind: 	73.2075	+ TFICF + TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	72.2434	TFIDF
+	ind: 	73.8301	TFIDF
+	ind: 	36.0514	Pow TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1715	* TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	73.328	TFIDF
+	ind: 	73.81	+ TFICF TFIDF
+	ind: 	74.1314	* TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1113	* TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	74.3121	* TFIDF MaxGSS
+	ind: 	73.8903	% TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	69.4316	GSS
+	ind: 	73.8903	% TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	72.6652	MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	50.4318	Log TFICF TFIDF
+	ind: 	42.2575	Pow TFICF TFIDF
+	ind: 	73.81	+ TFICF TFIDF
+	ind: 	72.143	Pow TFIDF MaxGSS
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+generation 27:
+	ind: 	73.7899	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.1314	* TFIDF MaxGSS
+	ind: 	72.9865	+ TFICF TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.81	Pow TFIDF MaxGSS
+	ind: 	71.9622	GSS
+	ind: 	72.0024	TFIDF
+	ind: 	73.81	+ TFICF TFIDF
+	ind: 	73.8301	TFIDF
+	ind: 	73.8301	TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1715	* TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.0024	TFIDF
+	ind: 	51.436	Log TFICF TFIDF
+	ind: 	73.81	+ TFICF TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	74.3121	* TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	71.661	+ TFICF TFIDF
+	ind: 	69.773	+ TFICF GSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.0309	TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	72.143	Pow TFIDF MaxGSS
+	ind: 	73.8903	% TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.8301	TFIDF
+	ind: 	39.1645	Pow TFICF TFIDF
+	ind: 	45.3906	Pow TFICF TFIDF
+	ind: 	73.81	+ TFICF TFIDF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	72.6652	MaxGSS
+	ind: 	74.1715	* TFIDF MaxGSS
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	74.4326	* TFIDF MaxGSS
+	ind: 	73.5489	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	72.143	Pow TFIDF MaxGSS
+	ind: 	72.6049	MaxGSS
+	ind: 	74.1314	* TFIDF MaxGSS
+	ind: 	72.2434	TFIDF
+generation 28:
+	ind: 	74.0711	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.9865	+ TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	72.9865	+ TFICF TFIDF
+	ind: 	73.81	Pow TFIDF MaxGSS
+	ind: 	71.9622	GSS
+	ind: 	72.1631	TFIDF
+	ind: 	73.8903	TFIDF
+	ind: 	73.8301	TFIDF
+	ind: 	73.8301	TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	71.9823	GSS
+	ind: 	72.846	* TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	72.6652	MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.3121	* TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	72.143	Pow TFIDF MaxGSS
+	ind: 	69.773	+ TFICF GSS
+	ind: 	73.8903	Pow TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.6493	+ TFICF TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.3121	* TFIDF MaxGSS
+	ind: 	73.8903	Pow TFIDF MaxGSS
+	ind: 	71.6409	+ TFICF GSS
+	ind: 	74.292	* TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	73.81	+ TFICF TFIDF
+	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	74.0108	Pow TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	72.0024	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	72.2434	TFIDF
+generation 29:
+	ind: 	74.1113	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.0426	+ TFICF GSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	72.9865	+ TFICF TFIDF
+	ind: 	74.0912	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	72.6049	MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	73.5489	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.9305	+ TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	74.3121	* TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	69.773	+ TFICF GSS
+	ind: 	74.1314	* TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	74.0912	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.3121	* TFIDF MaxGSS
+	ind: 	71.902	% TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	72.8058	MaxGSS
+	ind: 	72.0024	TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.569	% TFIDF MaxGSS
+	ind: 	69.0902	sumTF
+	ind: 	72.1631	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.2434	TFIDF
+generation 30:
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.0426	+ TFICF GSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.2434	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	72.2033	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	73.5489	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1314	* TFIDF MaxGSS
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.7497	+ TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	71.902	% TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	73.5489	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	72.143	Pow TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	74.0912	P
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	71.8819	% TFIDF MaxGSS
+generation 31:
+	ind: 	73.8502	TFIDF
+	ind: 	72.2033	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.2033	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	73.9104	TFIDF
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	72.2033	Pow TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.0711	Pow TFIDF MaxGSS
+	ind: 	72.143	Pow TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	73.5489	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	72.2233	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	54.2278	- TFIDF MaxGSS
+generation 32:
+	ind: 	74.1514	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.5489	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.0711	Pow TFIDF MaxGSS
+	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	72.143	Pow TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.2434	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.1631	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.0024	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.0711	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	54.2278	- TFIDF MaxGSS
+generation 33:
+	ind: 	74.1113	TFIDF
+	ind: 	70.5363	MaxIG
+	ind: 	74.1113	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	73.0066	MaxIG
+	ind: 	72.1631	TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	71.5204	MaxDom
+	ind: 	73.8502	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	70.7371	MaxIG
+	ind: 	72.1631	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.2434	TFIDF
+	ind: 	70.7371	MaxIG
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.0711	Pow TFIDF MaxGSS
+	ind: 	70.7371	MaxIG
+	ind: 	72.1631	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.0066	MaxIG
+	ind: 	70.7371	MaxIG
+	ind: 	73.8502	TFIDF
+	ind: 	74.0912	TFIDF
+generation 34:
+	ind: 	74.1113	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	73.328	AM
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.5204	MaxDom
+	ind: 	72.1631	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.0066	MaxIG
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	71.5204	MaxDom
+	ind: 	74.1113	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	72.7455	MaxIG
+	ind: 	72.0024	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	71.5204	MaxDom
+	ind: 	72.1631	AM
+	ind: 	72.1631	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	71.5204	MaxDom
+	ind: 	73.8502	TFIDF
+	ind: 	72.2434	TFIDF
+	ind: 	70.7371	MaxIG
+	ind: 	74.0912	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	72.866	MaxIG
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	70.7371	MaxIG
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.0066	MaxIG
+	ind: 	74.1514	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.0912	TFIDF
+generation 35:
+	ind: 	71.5204	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	73.0066	MaxIG
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	71.7815	+ TFICF TFIDF
+	ind: 	73.0066	MaxIG
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	71.5204	MaxDom
+	ind: 	74.1113	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	73.8502	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	71.5204	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	73.9104	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	71.5204	MaxDom
+	ind: 	74.0912	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	72.0024	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	73.4686	MaxDom
+	ind: 	74.0912	TFIDF
+generation 36:
+	ind: 	72.0024	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.0912	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.5204	MaxDom
+	ind: 	74.1314	TFIDF
+	ind: 	73.0066	MaxIG
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	74.0912	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.6652	MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.9104	TFIDF
+	ind: 	74.0912	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.0711	Pow TFIDF MaxGSS
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	73.4083	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.9104	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	73.4686	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	72.7455	Pow TFIDF TFIDF
+	ind: 	73.4686	MaxDom
+	ind: 	74.0912	TFIDF
+generation 37:
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	72.7455	Pow TFIDF TFIDF
+	ind: 	73.9104	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.0711	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.051	TFIDF
+	ind: 	74.0912	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	73.4083	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	73.9104	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	73.8502	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	72.7455	Pow TFIDF TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.0912	TFIDF
+generation 38:
+	ind: 	73.8502	TFIDF
+	ind: 	67.0215	sumTF
+	ind: 	73.4686	MaxDom
+	ind: 	72.0024	TFIDF
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	65.6156	CTD
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	72.7455	Pow TFIDF TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	72.2033	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.0912	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.2434	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.7698	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	73.7297	Pow TFIDF MaxGSS
+	ind: 	64.6515	CTD
+	ind: 	73.8502	TFIDF
+	ind: 	73.3882	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	73.9104	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	73.8502	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+generation 39:
+	ind: 	74.0912	TFIDF
+	ind: 	67.0215	sumTF
+	ind: 	74.051	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	72.0024	TFIDF
+	ind: 	73.5891	MaxDom
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	65.7562	CTD
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6493	MaxDom
+	ind: 	73.1271	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	72.2033	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	74.0912	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	73.5891	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	73.5288	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	73.7297	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	73.3681	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	73.4686	MaxDom
+	ind: 	74.1113	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	73.4686	MaxDom
+	ind: 	74.1113	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.9823	Pow TFIDF MaxGSS
+generation 40:
+	ind: 	74.0912	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	TFIDF
+	ind: 	74.051	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6493	MaxDom
+	ind: 	73.1271	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	72.2033	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.107	MaxDom
+	ind: 	73.5288	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	72.1631	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	71.7212	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+generation 41:
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	70.7773	IG
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.051	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6493	MaxDom
+	ind: 	73.1271	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.4887	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	72.0225	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.0468	Pow IG MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.9823	Pow TFIDF MaxGSS
+generation 42:
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	70.7773	IG
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	73.107	IG
+	ind: 	73.6493	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.4887	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	73.1271	IG
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.9908	% TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	73.9104	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.4887	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	72.0225	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.9908	% TFIDF MaxGSS
+	ind: 	73.087	IG
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	70.7773	IG
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	71.9823	Pow TFIDF MaxGSS
+generation 43:
+	ind: 	73.4083	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.6493	MaxDom
+	ind: 	74.1113	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	74.1113	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	73.107	IG
+	ind: 	74.1514	TFIDF
+	ind: 	73.107	IG
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6493	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.4887	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.1314	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1314	TFIDF
+	ind: 	73.1271	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	73.9104	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.4887	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.1314	TFIDF
+	ind: 	73.8502	TFIDF
+	ind: 	72.0225	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+generation 44:
+	ind: 	73.4083	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	73.4686	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6493	MaxDom
+	ind: 	74.1113	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	73.6493	MaxDom
+	ind: 	73.4887	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	73.1271	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	73.9104	TFIDF
+	ind: 	74.4929	MaxDom
+	ind: 	73.4887	MaxDom
+	ind: 	73.9104	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.0711	TFIDF
+	ind: 	73.9707	TFIDF
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.1314	TFIDF
+	ind: 	73.6292	MaxDom
+	ind: 	74.1314	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	71.4802	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.1514	TFIDF
+generation 45:
+	ind: 	74.1113	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	73.4686	MaxDom
+	ind: 	71.6409	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	70.1747	sumTF
+	ind: 	73.9104	Pow TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.4887	MaxDom
+	ind: 	73.4887	MaxDom
+	ind: 	73.9506	P
+	ind: 	73.5891	MaxDom
+	ind: 	73.4083	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	73.4887	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.4887	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	71.6409	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	73.9506	P
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.5288	MaxDom
+	ind: 	74.4929	MaxDom
+	ind: 	73.4887	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.8502	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.7096	MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.569	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.1113	TFIDF
+	ind: 	74.1514	TFIDF
+	ind: 	74.1514	TFIDF
+generation 46:
+	ind: 	74.1113	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.5288	MaxDom
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	73.9104	Pow TFIDF MaxGSS
+	ind: 	72.143	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.3322	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1113	TFIDF
+	ind: 	73.4887	MaxDom
+	ind: 	73.4083	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.4929	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.4887	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	73.5087	MaxAM
+	ind: 	74.4929	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	73.3681	MaxDom
+	ind: 	73.5288	MaxDom
+	ind: 	74.4929	MaxDom
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1514	* TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.3882	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.7096	MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.5087	MaxAM
+	ind: 	73.5891	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1514	TFIDF
+	ind: 	73.5891	MaxDom
+generation 47:
+	ind: 	74.1113	TFIDF
+	ind: 	73.3882	MaxDom
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	74.1514	* TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.5288	MaxDom
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	73.5087	MaxAM
+	ind: 	74.1514	TFIDF
+	ind: 	73.5891	MaxDom
+	ind: 	74.3322	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	73.9104	* TFIDF MaxAM
+	ind: 	74.1113	TFIDF
+	ind: 	73.9104	* TFIDF MaxAM
+	ind: 	73.4083	MaxDom
+	ind: 	73.9104	* TFIDF MaxAM
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxAM
+	ind: 	73.1271	MaxDom
+	ind: 	73.4887	MaxDom
+	ind: 	74.4929	MaxDom
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	73.5087	MaxAM
+	ind: 	74.4929	MaxDom
+	ind: 	74.1113	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.3681	MaxDom
+	ind: 	73.5288	MaxDom
+	ind: 	74.4929	MaxDom
+	ind: 	74.1514	TFIDF
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.4929	MaxDom
+	ind: 	74.3322	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.7096	MaxDom
+	ind: 	73.3681	MaxDom
+	ind: 	74.4929	MaxDom
+	ind: 	74.4929	MaxDom
+	ind: 	73.6493	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	73.5087	MaxAM
+	ind: 	73.5891	MaxDom
+	ind: 	73.3882	MaxAM
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.051	Pow TFIDF MaxGSS
+	ind: 	73.4686	* TFIDF MaxAM
+	ind: 	73.4887	MaxDom
+	ind: 	73.5891	MaxDom
+generation 48:
+	ind: 	71.6409	MaxDom
+	ind: 	73.3882	MaxDom
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxAM
+	ind: 	74.1113	TFIDF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	73.9104	* TFIDF MaxAM
+	ind: 	74.1113	TFIDF
+	ind: 	73.2677	MaxAM
+	ind: 	73.4083	MaxDom
+	ind: 	73.4887	MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.4485	MaxDom
+	ind: 	74.4929	MaxDom
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	73.5087	MaxAM
+	ind: 	73.1271	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	73.3681	MaxDom
+	ind: 	74.3322	Pow TFIDF MaxGSS
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	74.6335	Pow TFIDF MaxGSS
+	ind: 	73.5288	MaxDom
+	ind: 	74.3322	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.7096	MaxDom
+	ind: 	73.3681	MaxDom
+	ind: 	73.5087	MaxAM
+	ind: 	74.4929	MaxDom
+	ind: 	74.4929	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	72.0225	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	74.3322	Pow TFIDF MaxGSS
+	ind: 	74.1314	TFIDF
+generation 49:
+	ind: 	74.8142	Pow TFIDF MaxGSS
+	ind: 	73.3882	MaxDom
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.2677	MaxAM
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	74.8142	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.1271	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	73.5087	MaxAM
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	72.8259	MaxDom
+	ind: 	73.2677	MaxAM
+	ind: 	73.3681	MaxDom
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	73.3882	MaxAM
+	ind: 	74.3523	MaxAM
+	ind: 	73.5087	MaxAM
+	ind: 	73.4686	MaxDom
+	ind: 	74.6335	Pow TFIDF MaxGSS
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.4083	MaxDom
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.6335	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	73.1271	MaxDom
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	74.6335	Pow TFIDF MaxGSS
+	ind: 	73.5288	MaxDom
+	ind: 	65.7562	TFICF
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	73.7096	MaxDom
+	ind: 	74.4929	MaxDom
+	ind: 	74.4929	MaxDom
+	ind: 	73.4083	MaxDom
+	ind: 	73.6292	MaxDom
+	ind: 	73.5891	MaxDom
+	ind: 	72.0225	Pow TFIDF MaxGSS
+	ind: 	72.3438	Pow TFIDF MaxGSS
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	73.1271	MaxDom
+	ind: 	74.1314	TFIDF
+generation 50:
+	ind: 	73.328	TFIDF
+	ind: 	73.3882	MaxDom
+	ind: 	74.0912	Pow TFIDF MaxGSS
+	ind: 	73.2677	MaxAM
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.6292	MaxDom
+	ind: 	72.3438	Pow TFIDF MaxGSS
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.5891	MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	73.5087	MaxAM
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.6335	Pow TFIDF MaxGSS
+	ind: 	73.3882	MaxAM
+	ind: 	72.9665	Pow TFIDF MaxGSS
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	74.3523	MaxAM
+	ind: 	73.5087	MaxAM
+	ind: 	73.4686	MaxDom
+	ind: 	73.6292	Pow MaxDom MaxGSS
+	ind: 	74.2719	Pow TFIDF MaxGSS
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	74.3322	Pow TFIDF MaxGSS
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	72.6853	MaxAM
+	ind: 	74.1514	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	73.1271	MaxDom
+	ind: 	73.5087	MaxAM
+	ind: 	74.2318	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.3882	MaxAM
+	ind: 	65.7562	TFICF
+	ind: 	73.3882	MaxAM
+	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	74.4929	Pow TFIDF MaxGSS
+	ind: 	73.4686	MaxDom
+	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	73.3681	MaxDom
+	ind: 	74.3322	Pow TFIDF MaxGSS
+	ind: 	60.1928	- TFIDF MaxGSS
+	ind: 	74.4929	MaxDom
+	ind: 	74.4929	MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	73.1271	MaxDom
+	ind: 	74.3322	Pow TFIDF MaxGSS
+	ind: 	74.1916	Pow TFIDF MaxGSS
