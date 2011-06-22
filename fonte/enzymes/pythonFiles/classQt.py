@@ -33,9 +33,14 @@ for line in file:
 
 	count[classname] += 1;
 
+soma = 0
+
 for k,v in count.iteritems():
- 	print k,"  ----->  " ,  v
+# 	print k,"  ----->  " ,  v
+ 	print k, v
 	
+
     
+print len(count), " classes" 
 
 	
