@@ -17,7 +17,7 @@
 #include "gp.h"
 
 
-void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluateFromFile, string &evaluationDestiny, int& genToChange);
+void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluateFromFile, string &evaluationDestiny, int& genToChange, bool& evalOnly, bool& optimizeGraphMetrics);
 void configureTermCredibility(Statistics& stats, bool useTermCredibility, bool normalEstimator, bool normalizeTermsPerGreatestClassValue);
 void configureGraphCredibility(Statistics& stats, InOut& io, vector<string>& graphsNames);
 
@@ -36,15 +36,19 @@ int main(int argc, char **argv)
     int seed = 0, numericalCollums = 0;
     int genToChange = 0;
 	bool loadPop = false, dontsave = false,  newSaveFileName = false, useTermCredibility = true, usingValidation = false;
-    bool printPredictionsFile = true, printBrunoroFile = false, normalEstimator = false, evaluationFromFile = false;
+    bool printPredictionsFile = true, printBrunoroFile = false, normalEstimator = false, evaluationFromFile = false, evalOnly = false;
     bool normalizeTermsPerGreatestClassValue = false;
-    
-	getParameters(argc, argv, trainFile, validationFile, usingValidation, testFile, parameterConfigFileName, seed, loadPop, loadFileName, dontsave, saveFileName, newSaveFileName, useTermCredibility, graphsNames, numericalCollums, predictionsFileName, printPredictionsFile, brunoroFileName, printBrunoroFile, normalEstimator, normalizeTermsPerGreatestClassValue, evaluationFileName, evaluationFromFile, evaluationDestiny, genToChange);
+    bool optimizeGraphMetrics = true;
+
+	getParameters(argc, argv, trainFile, validationFile, usingValidation, testFile, parameterConfigFileName, seed, loadPop, loadFileName, dontsave, saveFileName, newSaveFileName, useTermCredibility, graphsNames, numericalCollums, predictionsFileName, printPredictionsFile, brunoroFileName, printBrunoroFile, normalEstimator, normalizeTermsPerGreatestClassValue, evaluationFileName, evaluationFromFile, evaluationDestiny, genToChange, evalOnly, optimizeGraphMetrics);
+
 
 	//Get Files
 	InOut io(baseName, seed);
 	Statistics stats;
 
+    stats.setOptimizeGraphMetrics(optimizeGraphMetrics);
+    
     io.setGPParameterConfigFileName(parameterConfigFileName);
     io.setFinalOutFile(finalOutFileName);
 
@@ -58,7 +62,7 @@ int main(int argc, char **argv)
     io.setNumericalCollums(numericalCollums);
 	io.readTrain(trainFile.c_str());
 	
-    if(evaluationFromFile && usingValidation)
+    if((evaluationFromFile || evalOnly ) && usingValidation)
         io.readTrain(validationFile.c_str());
     
     //Calculate some statistics using the entries
@@ -75,6 +79,14 @@ int main(int argc, char **argv)
         t.evaluateFromFile(evaluationFileName);
         
         return 0;
+    }
+    else if(evalOnly){
+        
+        io.readTest(testFile.c_str());
+    	IClassifier *classifier = new NaiveBayes(&stats); 
+	    classifier->train(io.getTrain());
+        classifier->test(io.getTest());
+	    return 0;
     }
 
     if(usingValidation){
@@ -229,6 +241,9 @@ void parametersHelp()
     cout<<"          -normal: Set to use normal estimator (when using numerical fields)."<<endl;
     cout<<"          -perclass: Normalize using the greatest one per class."<<endl;
     cout<<"          -change d: Change Train set from d to d generations."<<endl;
+    cout<<"          -eval fileIn fileOut: evaluate a set of credibility functions from fileIn putting results into fileOut."<<endl;
+    cout<<"          -evalonly: Only evaluate the baseline."<<endl;
+    cout<<"          -dontoptimize: Dont use graphs optimization (use it when memory is a problem)."<<endl;
 
 }
 
@@ -294,7 +309,7 @@ int isdigit (int c)
 		return 0;
 }
 
-void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluationFromFile, string &evaluationDestiny, int& genToChange)
+void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluationFromFile, string &evaluationDestiny, int& genToChange, bool& evalOnly, bool& optimizeGraphMetrics)
 {
 	TRACE_V("MAIN","getParameters.");
 	
@@ -309,17 +324,17 @@ void getParameters(int argc, char** argv, string& trainFile, string& validationF
 			parametersHelp();
 			exit(0);
 		}
-		else if( has(2, argv[i], "-treino", "--treino") ){
+		else if( has(4, argv[i], "-treino", "--treino", "-train", "--train") ){
 			trainFile = getStringArgument(i,argc,argv);
 			i++;
 			cout<< "Training File: "<< trainFile <<endl;
 		}
-		else if( has(4, argv[i], "-validacao", "--validacao", "-v", "--v") ){
+		else if( has(6, argv[i], "-validacao", "--validacao", "-v", "--v", "-validation", "--validation") ){
 			usingValidation = true;
 			validationFile = getStringArgument(i,argc,argv);
 			i++;
 			cout<< "Validation File: "<<validationFile<<endl;
-		}else if( has(2, argv[i], "-teste", "--teste") ){
+		}else if( has(4, argv[i], "-teste", "--teste", "-test" , "--test") ){
             testFile = getStringArgument(i,argc,argv);
 			i++;
 			cout<<"Test File = " << testFile<<endl;
@@ -402,6 +417,14 @@ void getParameters(int argc, char** argv, string& trainFile, string& validationF
             i++;
             cout<<"Changing train set from "<< genToChange << " to " <<genToChange <<" generations. " <<endl;
         }
+		else if( has(4, argv[i], "-evalonly", "--evalonly", "-evalOnly", "--evalOnly") ){
+            evalOnly = true;
+            cout<<"Only evaluating the baseline."<<endl;
+        }
+		else if( has(4, argv[i], "-dontoptimize", "--dontoptmize", "-naootimiza", "--naootimiza", "--notopt", "-notopt") ){
+            optimizeGraphMetrics = false;
+            cout<<"Not optimizing graph metrics"<<endl;
+        }
         else{
 			fprintf (stderr, "Unknown option `-%s'.\n", argv[i]);
             parametersHelp();
@@ -420,6 +443,10 @@ void getParameters(int argc, char** argv, string& trainFile, string& validationF
 		cerr<<"Please, use graphs or use terms to calculate a credibility function."<<endl;
 		error = true;
 	}
+    if(evalOnly && evaluationFromFile){
+        cerr<<"Please, use only evalOnly or evaluationFromFile Option";
+        error = true;
+    }
 	if(error){
 		parametersHelp();
 		exit(1);

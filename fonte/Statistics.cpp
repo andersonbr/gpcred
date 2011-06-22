@@ -1,6 +1,5 @@
 #include "Statistics.h"
 #include "Tokenizer.h"
-#include "IGraph.h"
 
 #include <fstream>
 
@@ -8,7 +7,7 @@
 
 using namespace std;
 
-Statistics::Statistics(): usingTermCredibility(false), totalDocs(0), graphNumberCounter(0), sumTF(0), normalEstimator(false), usingNomalizePerGreatestClassValue(false)
+Statistics::Statistics(): usingTermCredibility(false), totalDocs(0), graphNumberCounter(0), sumTF(0), normalEstimator(false), usingNomalizePerGreatestClassValue(false), optimizeGraphMetrics(false)
 {
 
 }
@@ -37,7 +36,6 @@ void Statistics::readGraph(string filename){
             string id2 = tokens[1];
             double value = 1.0; 
 
-
             bool id1IsInTrain = false, id2IsInTrain = false;
             if( trainIdClass.count(id1) > 0 ){
                 id1IsInTrain = true; 
@@ -50,14 +48,10 @@ void Statistics::readGraph(string filename){
             if( tokens.size() > 2 ) {
                 value = atof( tokens[2].c_str() );
             }
-
             //TODO: experimental feature
             bool usaInfo = true;
-
 //            if( DFperClass[classv1] < 10 || DFperClass[classv2] < 10) usaInfo = true;
-            
 //          cerr<<"lidos : " << id1 << "(" << classv1 << ")  and " << id2 << " ("<< classv2 << ") -> " << value<<endl;
-
             //We have both ids in the train and both have the same class
             if(usaInfo && id1IsInTrain && id2IsInTrain && classv1 == classv2){
                 classGraph[classv1].addEdge(id1,id2,value);
@@ -72,12 +66,16 @@ void Statistics::readGraph(string filename){
                 classGraph[classv2].addEdge(id1,id2,value);
             }else{ // doc1Test e doc2Test
                 ; //nothing to do, id1 doesnt know id2 neither id2 knows id1.
-
             }
         }
         file.close();
-
-        classGraphs[graphNumberCounter++] = classGraph;
+        
+        map<string, IGraph*> classIGraph;
+        for(map<string, Graph>::iterator it = classGraph.begin(); it != classGraph.end(); it++){
+            classIGraph[it->first] = new IGraph( &(it->second) );
+        }
+        iGraphs[graphNumberCounter] = classIGraph;
+        graphNumberCounter++;
     }
     else {
         cout << "Error while opening graph file named " << filename<< endl;
@@ -86,6 +84,8 @@ void Statistics::readGraph(string filename){
 }
 
 void Statistics::retrieveGraphMetrics(Examples& test) {
+    
+    if(!optimizeGraphMetrics) return;
 
     idClassNeighborhoodSize1.resize(graphNumberCounter);
     idClassNeighborhoodSize2.resize(graphNumberCounter);
@@ -105,13 +105,12 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
     idClassInverseLogSimilarity.resize(graphNumberCounter);
     //	idClassAvgNearstNeighborDegree.resize(graphNumberCounter);
 
+    for(map<int, map<string,IGraph*> >::iterator graphIt = iGraphs.begin(); graphIt != iGraphs.end(); graphIt++){
+        for(map<string,IGraph*>::iterator classGraphIt = graphIt->second.begin(); classGraphIt != graphIt->second.end(); classGraphIt++){ 
 
-    for(map<int, map<string,Graph> >::iterator graphIt = classGraphs.begin(); graphIt != classGraphs.end(); graphIt++){
-        for(map<string,Graph>::iterator	classGraphIt = graphIt->second.begin(); classGraphIt != graphIt->second.end(); classGraphIt++){ 
+            cout<<"graphId = " << graphIt->first << " class= "<<classGraphIt->first<<endl;
 
-            cout<<"class= "<<classGraphIt->first<<endl;
-
-            GraphInterface *igraph = new IGraph(&(classGraphIt->second));
+            GraphInterface *igraph = classGraphIt->second;
 
             igraph->calculateHubScore();
             igraph->calculateAuthority();
@@ -121,7 +120,6 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
                 Example e = *it;
 
                 //				cout<<"Buscando por "<< e.getId() << " class = "<< classGraphIt->first;
-
                 // [GId] [ExampleId] [ClassId]
                 string idClassIdx = getCompIndex(e.getId(), classGraphIt -> first);
                 idClassNeighborhoodSize1[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize1(e.getId());
@@ -166,11 +164,73 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
             delete igraph;
             cout<<"out of class "<<classGraphIt->first<<endl;
         }
-        classGraphs[graphIt->first].clear();
     }
-    
     cout<<"out of retrieve graphs mtrics..."<<endl;
 }
+
+double Statistics::getGraphValue(int metric, int graph, string id, string classId){
+    
+    double returnValue = 0.0;
+    switch(metric){
+    
+        case NEIGHBORHOOD1: 
+            returnValue = (iGraphs[graph][classId])->getNeighborhoodSize1(id);
+            break; 
+		case NEIGHBORHOOD2: 
+            returnValue = (iGraphs[graph][classId])->getNeighborhoodSize2(id);
+            break; 
+		case NEIGHBORHOOD3:
+            returnValue = (iGraphs[graph][classId])->getNeighborhoodSize3(id);
+            break; 
+		case HUBSCORE:
+            returnValue = (iGraphs[graph][classId])->getHubScore(id);
+            break; 
+		case AUTHORITY:
+            returnValue = (iGraphs[graph][classId])->getHubScore(id);
+            break; 
+		case EIGENVECTOR:
+            returnValue = (iGraphs[graph][classId])->getEigenVectorCentrality(id);
+            break; 
+		case CLOSENESS: 
+            returnValue = (iGraphs[graph][classId])->getCloseness(id);
+            break; 
+        case STRENGTH: 
+            returnValue = (iGraphs[graph][classId])->getStrength(id);
+            break; 
+        case CONSTRAINT: 
+            returnValue = (iGraphs[graph][classId])->getConstraint(id);
+            break; 
+		case PAGERANK: 
+            returnValue = (iGraphs[graph][classId])->getPageRank(id);
+            break; 
+        case BETWEENNESS:
+            returnValue = (iGraphs[graph][classId])->getBetweenness(id);
+            break; 
+        case BIBCOUPLING:
+            returnValue = (iGraphs[graph][classId])->getBibCoupling(id);
+            break; 
+        case COCITATION: 
+            returnValue = (iGraphs[graph][classId])->getCoCitation(id);
+            break; 
+        case JACCARDSIMILARITY:
+            returnValue = (iGraphs[graph][classId])->getJaccardSimilarity(id);
+            break; 
+        case DICESIMILARITY: 
+            returnValue = (iGraphs[graph][classId])->getDiceSimilarity(id);
+            break; 
+        case INVERSELOGSIMILARITY: 
+            returnValue = (iGraphs[graph][classId])->getInverseLogSimilarity(id);
+            break; 
+        case AVGNEIGHBORHOODDEGREE: 
+            returnValue = (iGraphs[graph][classId])->getAvgNearstNeighborDegree(id);
+            break; 
+
+    }
+
+    return returnValue;
+
+}
+
 
 
 
@@ -556,9 +616,15 @@ double Statistics::maxNormalization(double val, double maxValue){
     return val/maxValue;
 }
 
+void Statistics::setOptimizeGraphMetrics(bool optimize){
+    optimizeGraphMetrics = optimize;
+}
+
 //TODO: delete it!
 void Statistics::retrieveGraphMetricsDebug(Examples& test) {
 
+    if(!optimizeGraphMetrics) return;
+    
     idClassNeighborhoodSize1.resize(graphNumberCounter);
     idClassNeighborhoodSize2.resize(graphNumberCounter);
     idClassNeighborhoodSize3.resize(graphNumberCounter);
@@ -578,10 +644,10 @@ void Statistics::retrieveGraphMetricsDebug(Examples& test) {
     //	idClassAvgNearstNeighborDegree.resize(graphNumberCounter);
 
     for(ExampleIterator it = test.getBegin(); it != test.getEnd(); it++){
-        for(map<int, map<string,Graph> >::iterator graphIt = classGraphs.begin(); graphIt != classGraphs.end(); graphIt++){
-            for(map<string,Graph>::iterator	classGraphIt = graphIt->second.begin(); classGraphIt != graphIt->second.end(); classGraphIt++){ 
+        for(map<int, map<string,IGraph*> >::iterator graphIt = iGraphs.begin(); graphIt != iGraphs.end(); graphIt++){
+            for(map<string,IGraph*>::iterator	classGraphIt = graphIt->second.begin(); classGraphIt != graphIt->second.end(); classGraphIt++){ 
 
-                GraphInterface *igraph = new IGraph(&(classGraphIt->second));
+                GraphInterface *igraph = classGraphIt->second;
 
                 igraph->calculateHubScore();
                 igraph->calculateAuthority();
@@ -689,26 +755,32 @@ void Statistics::clear(){
     MaxCC.clear(); 
 
     //Graphs:
-    for(map<int, map<string,Graph> >::iterator graphIt = classGraphs.begin(); graphIt != classGraphs.end(); graphIt++){
-        idClassNeighborhoodSize1[graphIt->first].clear();
-        idClassNeighborhoodSize2[graphIt->first].clear();
-        idClassNeighborhoodSize3[graphIt->first].clear();
-        idClassHubScore[graphIt->first].clear();
-        idClassAuthority[graphIt->first].clear();
-        idClassEigenVectorCentrality[graphIt->first].clear();
-        idClassCloseness[graphIt->first].clear();
-        idClassStrength[graphIt->first].clear();
-        idClassConstraint[graphIt->first].clear();
-        idClassPageRank[graphIt->first].clear();
-        idClassBetweenness[graphIt->first].clear();
-        idClassBibCoupling[graphIt->first].clear();
-        idClassCoCitation[graphIt->first].clear();
-        idClassJaccardSimilarity[graphIt->first].clear();
-        idClassDiceSimilarity[graphIt->first].clear();
-        idClassInverseLogSimilarity[graphIt->first].clear();
-        //idClassAvgNearstNeighborDegree[graphIt->first].clear();
-
-        classGraphs[graphIt->first].clear();
+    for(map<int, map<string, IGraph*> >::iterator graphIt = iGraphs.begin(); graphIt != iGraphs.end(); graphIt++){
+        if(optimizeGraphMetrics){
+            idClassNeighborhoodSize1[graphIt->first].clear();
+            idClassNeighborhoodSize2[graphIt->first].clear();
+            idClassNeighborhoodSize3[graphIt->first].clear();
+            idClassHubScore[graphIt->first].clear();
+            idClassAuthority[graphIt->first].clear();
+            idClassEigenVectorCentrality[graphIt->first].clear();
+            idClassCloseness[graphIt->first].clear();
+            idClassStrength[graphIt->first].clear();
+            idClassConstraint[graphIt->first].clear();
+            idClassPageRank[graphIt->first].clear();
+            idClassBetweenness[graphIt->first].clear();
+            idClassBibCoupling[graphIt->first].clear();
+            idClassCoCitation[graphIt->first].clear();
+            idClassJaccardSimilarity[graphIt->first].clear();
+            idClassDiceSimilarity[graphIt->first].clear();
+            idClassInverseLogSimilarity[graphIt->first].clear();
+            //idClassAvgNearstNeighborDegree[graphIt->first].clear();
+        }
+        else{
+            for(map<string, IGraph*>::iterator it = iGraphs[graphIt->first].begin() ; it != iGraphs[graphIt->first].end(); it++){
+                delete it->second;
+            }
+        }
+        iGraphs[graphIt->first].clear();
     }
     idClassNeighborhoodSize1.clear();
     idClassNeighborhoodSize2.clear();

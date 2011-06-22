@@ -49,12 +49,12 @@ inline double getValue(std::map< std::string, int> &h, std::string k) {
 }
 
 inline double getValue(std::vector< std::map< std::string, double> > &h, unsigned int g, std::string k) {
-	if(h.size() < g) return 0.0;
+    if(h.size() <= g) return 0.0;
 	else return getValue(h[g], k);
 }
 
 inline int getValue(std::vector< std::map< std::string, int> > &h, unsigned int g, std::string k) {
-	if(h.size() < g) return 0.0;
+	if(h.size() <= g) return 0.0;
 	else return int(getValue(h[g], k));
 }
 

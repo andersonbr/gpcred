@@ -5,6 +5,8 @@
 #include "Util.h"
 #include "Matematica.h"
 #include "Graph.h"
+#include "Enums.h"
+#include "IGraph.h"
 
 #include<map>
 #include<cmath>
@@ -26,7 +28,7 @@ class Statistics {
         set<string> classes;
 
         //It is GraphId -> Class -> Graph
-        map< int , map<string, Graph> > classGraphs;
+        map< int , map<string, IGraph*> > iGraphs;
         int graphNumberCounter;
 
         double sumTF;
@@ -97,9 +99,12 @@ class Statistics {
 
         bool normalEstimator;
         bool usingNomalizePerGreatestClassValue;
+        bool optimizeGraphMetrics;
 
         double minmaxNormalization(double val, double minValue, double maxValue);
         double maxNormalization(double val, double maxValue);
+
+        double getGraphValue( int metric, int graph, string id, string classid);
 
     public:
 
@@ -138,24 +143,30 @@ class Statistics {
         void retrieveGraphMetricsDebug(Examples&);
         void readExamples(Examples exs);
         void readGraph(string graphFileName);
+        
+        void setOptimizeGraphMetrics(bool optimize);
+        
+//TODO:Transformar funcoes abaixo de acordo com necessidade de otimizacao....
 
-        double getNeighborhoodSize1(string id, string c, int graph)        {return getValue(idClassNeighborhoodSize1, graph, getCompIndex(id,c)); }
-        double getNeighborhoodSize2(string id, string c, int graph)        {return getValue(idClassNeighborhoodSize2, graph, getCompIndex(id,c)); }
-        double getNeighborhoodSize3(string id, string c, int graph)        {return getValue(idClassNeighborhoodSize3, graph, getCompIndex(id,c)); }
-        double getHubScore(string id, string c, int graph)                 {return getValue(idClassHubScore, graph, getCompIndex(id,c)); }
-        double getAuthority(string id, string c, int graph)	               {return getValue(idClassAuthority, graph, getCompIndex(id,c));}
-        double getEigenVectorCentrality(string id, string c, int graph)	   {return getValue(idClassEigenVectorCentrality, graph, getCompIndex(id,c));}
-        double getCloseness(string id, string c, int graph)		           {return getValue(idClassCloseness, graph, getCompIndex(id,c));}
-        double getStrength(string id, string c, int graph)		           {return getValue(idClassStrength, graph, getCompIndex(id,c));}
-        double getConstraint(string id, string c, int graph)		       {return getValue(idClassConstraint, graph, getCompIndex(id,c));}
-        double getPageRank(string id, string c, int graph)		           {return getValue(idClassPageRank, graph, getCompIndex(id,c));}
-        double getBetweenness(string id, string c, int graph)		       {return getValue(idClassBetweenness, graph, getCompIndex(id,c));}
-        int getBibCoupling(string id, string c, int graph)		           {return getValue(idClassBibCoupling, graph, getCompIndex(id,c));}
-        int getCoCitation(string id, string c, int graph)		           {return getValue(idClassCoCitation, graph, getCompIndex(id,c));}
-        double getJaccardSimilarity(string id, string c, int graph)	       {return getValue(idClassJaccardSimilarity, graph, getCompIndex(id,c));}
-        double getDiceSimilarity(string id, string c, int graph)	       {return getValue(idClassDiceSimilarity, graph, getCompIndex(id,c));}
-        double getInverseLogSimilarity(string id, string c, int graph)	   {return getValue(idClassInverseLogSimilarity, graph, getCompIndex(id,c));}
-        double getAvgNearstNeighborDegree(string id, string c, int graph)  {return getValue(idClassAvgNearstNeighborDegree, graph, getCompIndex(id,c));}
+        double getNeighborhoodSize1(string id, string c, int graph)        {return ( optimizeGraphMetrics ?  getValue(idClassNeighborhoodSize1, graph, getCompIndex(id,c)) : getGraphValue( NEIGHBORHOOD1, graph, id, c) ); }
+
+        double getNeighborhoodSize2(string id, string c, int graph)        {return ( optimizeGraphMetrics ?  getValue(idClassNeighborhoodSize2, graph, getCompIndex(id,c)): getGraphValue( NEIGHBORHOOD2, graph, id, c) ) ; }
+
+        double getNeighborhoodSize3(string id, string c, int graph)        {return ( optimizeGraphMetrics ?  getValue(idClassNeighborhoodSize3, graph, getCompIndex(id,c)) : getGraphValue( NEIGHBORHOOD3, graph, id, c) ); }
+        double getHubScore(string id, string c, int graph)                 {return ( optimizeGraphMetrics ?  getValue(idClassHubScore, graph, getCompIndex(id,c)): getGraphValue( HUBSCORE, graph, id, c) ); }
+        double getAuthority(string id, string c, int graph)	               {return ( optimizeGraphMetrics ?  getValue(idClassAuthority, graph, getCompIndex(id,c)): getGraphValue( AUTHORITY, graph, id, c) );}
+        double getEigenVectorCentrality(string id, string c, int graph)	   {return ( optimizeGraphMetrics ?  getValue(idClassEigenVectorCentrality, graph, getCompIndex(id,c)): getGraphValue( EIGENVECTOR, graph, id, c) );}
+        double getCloseness(string id, string c, int graph)		           {return ( optimizeGraphMetrics ?  getValue(idClassCloseness, graph, getCompIndex(id,c)): getGraphValue( CLOSENESS, graph, id, c) );}
+        double getStrength(string id, string c, int graph)		           {return ( optimizeGraphMetrics ?  getValue(idClassStrength, graph, getCompIndex(id,c)): getGraphValue( STRENGTH, graph, id, c) );}
+        double getConstraint(string id, string c, int graph)		       {return ( optimizeGraphMetrics ?  getValue(idClassConstraint, graph, getCompIndex(id,c)): getGraphValue( CONSTRAINT, graph, id, c) );}
+        double getPageRank(string id, string c, int graph)		           {return ( optimizeGraphMetrics ?  getValue(idClassPageRank, graph, getCompIndex(id,c)): getGraphValue( PAGERANK, graph, id, c) );}
+        double getBetweenness(string id, string c, int graph)		       {return ( optimizeGraphMetrics ?  getValue(idClassBetweenness, graph, getCompIndex(id,c)): getGraphValue( BETWEENNESS, graph, id, c) );}
+        int getBibCoupling(string id, string c, int graph)		           {return ( optimizeGraphMetrics ?  getValue(idClassBibCoupling, graph, getCompIndex(id,c)): getGraphValue( BIBCOUPLING, graph, id, c) );}
+        int getCoCitation(string id, string c, int graph)		           {return ( optimizeGraphMetrics ?  getValue(idClassCoCitation, graph, getCompIndex(id,c)): getGraphValue( COCITATION, graph, id, c) );}
+        double getJaccardSimilarity(string id, string c, int graph)	       {return ( optimizeGraphMetrics ?  getValue(idClassJaccardSimilarity, graph, getCompIndex(id,c)): getGraphValue( JACCARDSIMILARITY, graph, id, c) );}
+        double getDiceSimilarity(string id, string c, int graph)	       {return ( optimizeGraphMetrics ?  getValue(idClassDiceSimilarity, graph, getCompIndex(id,c)): getGraphValue( DICESIMILARITY, graph, id, c) );}
+        double getInverseLogSimilarity(string id, string c, int graph)	   {return ( optimizeGraphMetrics ?  getValue(idClassInverseLogSimilarity, graph, getCompIndex(id,c)): getGraphValue( INVERSELOGSIMILARITY, graph, id, c) );}
+        double getAvgNearstNeighborDegree(string id, string c, int graph)  {return ( optimizeGraphMetrics ?  getValue(idClassAvgNearstNeighborDegree, graph, getCompIndex(id,c)): getGraphValue( AVGNEIGHBORHOODDEGREE, graph, id, c) );}
 
         set<string>& getClasses()					                       {return classes;}
         int getNumberOfClasses()                                           {return classes.size();}
