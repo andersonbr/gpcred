@@ -186,7 +186,7 @@ double Statistics::getGraphValue(int metric, int graph, string id, string classI
             returnValue = (iGraphs[graph][classId])->getHubScore(id);
             break; 
 		case AUTHORITY:
-            returnValue = (iGraphs[graph][classId])->getHubScore(id);
+            returnValue = (iGraphs[graph][classId])->getAuthority(id);
             break; 
 		case EIGENVECTOR:
             returnValue = (iGraphs[graph][classId])->getEigenVectorCentrality(id);
