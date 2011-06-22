@@ -52,2553 +52,5053 @@ generation 0:
 	ind: 	26.3105	Log Log MaxCHI MaxIG Pow MaxAM MaxTFICF
 	ind: 	68.4475	+ GSS GSS
 	ind: 	71.1187	* % AM MaxCHI Pow P' P
+	rep: 40  -> 40
+	rep: 19 23  -> 0
+	rep: 19 23  -> 1
+	rep: 14 9  -> 2
+	rep: 14 9  -> 3
+	rep: 2 17  -> 4
+	rep: 2 17  -> 5
+	rep: 19 31  -> 6
+	rep: 19 31  -> 7
+	rep: 49 34  -> 8
+	rep: 49 34  -> 9
+	rep: 31 31  -> 10
+	rep: 31 31  -> 11
+	rep: 48  -> 12
+	rep: 12 42  -> 13
+	rep: 12 42  -> 14
+	rep: 15 27  -> 15
+	rep: 15 27  -> 16
+	rep: 10 28  -> 17
+	rep: 10 28  -> 18
+	rep: 40 19  -> 19
+	rep: 40 19  -> 20
+	rep: 19 20  -> 21
+	rep: 19 20  -> 22
+	rep: 31 17  -> 23
+	rep: 31 17  -> 24
+	rep: 34 30  -> 25
+	rep: 34 30  -> 26
+	rep: 38 22  -> 27
+	rep: 38 22  -> 28
+	rep: 6 42  -> 29
+	rep: 6 42  -> 30
+	rep: 48 5  -> 31
+	rep: 48 5  -> 32
+	rep: 19  -> 33
+	rep: 42  -> 34
+	rep: 28 21  -> 35
+	rep: 28 21  -> 36
+	rep: 37  -> 37
+	rep: 13 10  -> 38
+	rep: 13 10  -> 39
+	rep: 29 9  -> 41
+	rep: 29 9  -> 42
+	rep: 8 34  -> 43
+	rep: 8 34  -> 44
+	rep: 16  -> 45
+	rep: 20 45  -> 46
+	rep: 20 45  -> 47
+	rep: 48 28  -> 48
+	rep: 48 28  -> 49
 generation 1:
-	ind: 	66.901	* MaxOR AM
-	ind: 	48.0016	* % MaxAM MaxIG * CE TF
-	ind: 	27.7767	Pow sumTF TF
-	ind: 	52.7817	* * AM CE - DOM CHI
-	ind: 	25.4268	% % AM IG Pow DOM DF
-	ind: 	19.1605	- % TF OR % IG MaxTFIDF
-	ind: 	73.9305	% TFIDF MaxGSS
-	ind: 	72.3639	Pow * P sumTF * P MaxIG
-	ind: 	71.6811	* CTD MaxOR
-	ind: 	60.6748	* CTD P'
-	ind: 	55.9148	* * AM CE - DOM CHI
-	ind: 	71.3999	% AM IG
-	ind: 	50.9138	* sumTF MaxCTD
-	ind: 	27.5959	* Log CHI OR + CE GINI
-	ind: 	67.2022	* MaxDom MaxTFIDF
-	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
-	ind: 	59.2488	* CTD P'
-	ind: 	61.7393	% * DF IDF * MaxDom MaxTFICF
-	ind: 	63.7678	* CE TF
-	ind: 	71.9622	% AM IG
-	ind: 	61.418	% * DF IDF * MaxDom MaxTFICF
-	ind: 	66.8608	- DOM CHI
-	ind: 	47.4995	% TFICF TFIDF
-	ind: 	51.2954	Log - MaxTFICF MaxTFICF + GSS MaxAM
-	ind: 	58.8271	+ MaxCTD TFICF
-	ind: 	72.6853	+ CE GINI
-	ind: 	73.6092	% TFIDF MaxGSS
-	ind: 	59.5501	+ - GSS AM * MaxOR AM
-	ind: 	70.0141	+ % * DF IDF * MaxDom MaxTFICF * MaxOR AM
-	ind: 	32.7978	* Log CHI OR + CE GINI
-	ind: 	26.3105	Log TFICF TFICF
+	ind: 	61.5385	% * DF IDF * MaxDom MaxTFICF
+	ind: 	42.5587	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	15.3645	- Log TF sumDF * GINI TF
+	ind: 	69.0902	* MaxDom MaxTFIDF
+	ind: 	50.4318	* Log IDF TFICF Pow CE CE
+	ind: 	25.9691	Pow sumTF TF
+	ind: 	62.8239	% * DF IDF * MaxDom MaxTFICF
+	ind: 	51.8578	- % TF MaxDom + TFICF sumTF
+	ind: 	69.6927	* % AM MaxCHI Pow P' P
+	ind: 	50.9339	* sumTF MaxCTD
 	ind: 	55.7743	- % TF MaxDom + TFICF sumTF
-	ind: 	70.958	% TFIDF MaxGSS
-	ind: 	53.9667	* * AM CE - DOM CHI
-	ind: 	71.661	+ % * MaxDom MaxTFIDF * MaxDom MaxTFICF * MaxOR AM
-	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
-	ind: 	71.42	Pow CHI MaxCTD
-	ind: 	51.9984	Log - MaxTFICF MaxTFICF + GSS MaxAM
-	ind: 	71.3999	% AM IG
-	ind: 	72.143	Pow CHI MaxCTD
-	ind: 	50.1506	* sumTF MaxCTD
-	ind: 	3.69552	% - sumDF TF Pow DOM DF
-	ind: 	60.7753	* CE TF
-	ind: 	45.9128	* * AM CE * CE TF
-	ind: 	53.0227	* sumTF MaxCTD
-	ind: 	48.0016	* % MaxAM MaxIG * CE TF
-	ind: 	6.12573	% - sumDF TF Pow DOM DF
-	ind: 	26.3105	Log Log MaxCHI MaxIG Pow MaxAM MaxTFICF
-	ind: 	32.7978	* Log CHI OR * CE TF
-	ind: 	71.1187	* % AM MaxCHI Pow P' P
-generation 2:
-	ind: 	66.901	* MaxOR AM
-	ind: 	59.2488	* CTD P'
-	ind: 	27.7767	Pow sumTF TF
-	ind: 	70.4559	* DF IDF
-	ind: 	72.625	+ CE GINI
-	ind: 	70.4157	+ % * DF IDF * MaxDom MaxTFICF * MaxOR AM
-	ind: 	56.0153	Log % * DF IDF * MaxDom MaxTFICF + GSS MaxAM
-	ind: 	67.3428	+ % * DF IDF % TFIDF MaxGSS * MaxOR AM
-	ind: 	59.4899	* CE TF
-	ind: 	60.6748	* CTD P'
-	ind: 	70.1948	+ CE GINI
-	ind: 	71.3999	% AM IG
-	ind: 	71.8417	Pow CHI MaxCTD
-	ind: 	67.2424	- DOM CHI
-	ind: 	28.8411	% - sumDF TF - DOM CHI
-	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
-	ind: 	59.2488	* CTD P'
-	ind: 	63.7678	* CE TF
-	ind: 	63.7678	* CE TF
-	ind: 	71.9622	% AM IG
-	ind: 	61.418	% * DF IDF * MaxDom MaxTFICF
-	ind: 	66.8608	- DOM CHI
-	ind: 	47.4995	% TFICF TFIDF
-	ind: 	53.5851	* CTD P'
-	ind: 	70.1747	* AM CE
-	ind: 	51.9582	% TFICF TFIDF
-	ind: 	73.6092	% TFIDF MaxGSS
-	ind: 	59.5501	+ - GSS AM * MaxOR AM
-	ind: 	27.4553	Log TFICF TFICF
-	ind: 	53.6252	% TFICF TFIDF
-	ind: 	67.7445	* DF IDF
-	ind: 	57.2002	* sumTF MaxCTD
-	ind: 	70.958	% TFIDF MaxGSS
-	ind: 	72.1028	Pow CHI MaxCTD
-	ind: 	70.5764	+ % * DF IDF * MaxDom MaxTFICF * MaxOR AM
-	ind: 	69.6927	Pow Pow MaxAM MaxIG Log CE TFICF
-	ind: 	48.8853	* sumTF MaxCTD
-	ind: 	53.1633	* + P' TFIDF Log MaxGSS MaxCC
-	ind: 	71.3999	% AM IG
-	ind: 	72.143	Pow CHI MaxCTD
-	ind: 	49.6686	Log AM CE
-	ind: 	65.2541	* MaxDom MaxTFICF
-	ind: 	26.3105	Log TFICF TFICF
-	ind: 	70.476	* DF IDF
-	ind: 	53.0227	* sumTF MaxCTD
-	ind: 	59.5501	+ - GSS AM * MaxOR AM
-	ind: 	6.12573	% - sumDF TF Pow DOM DF
-	ind: 	62.8239	* CTD P'
-	ind: 	67.4433	- DOM CHI
-	ind: 	52.4603	Log DOM DF
-generation 3:
-	ind: 	28.8411	% - sumDF TF - DOM CHI
-	ind: 	69.6927	* DF IDF
-	ind: 	27.7767	Pow sumTF TF
-	ind: 	69.3312	+ P' TFIDF
-	ind: 	72.625	+ CE GINI
-	ind: 	72.3639	* AM IG
-	ind: 	56.0153	Log % * DF IDF * MaxDom MaxTFICF + GSS MaxAM
-	ind: 	72.1028	Pow CHI MaxCTD
-	ind: 	59.4899	* CE TF
-	ind: 	69.1303	% TFIDF MaxGSS
-	ind: 	70.1948	+ CE GINI
+	ind: 	55.7743	- % TF MaxDom + TFICF sumTF
+	ind: 	68.4475	+ GSS GSS
+	ind: 	60.0121	* CE TF
+	ind: 	55.6738	% IG DOM
+	ind: 	53.2035	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	52.4402	Pow * sumDF DF + TFIDF MaxAM
+	ind: 	41.5947	% MaxTFICF CTD
+	ind: 	30.468	Log TF MaxAM
+	ind: 	70.9179	* DOM MaxDom
+	ind: 	65.475	% * DF IDF * MaxDom MaxTFICF
+	ind: 	54.5893	* DF CE
+	ind: 	62.2414	% * DF IDF * MaxDom MaxTFICF
+	ind: 	54.2478	- % TF MaxDom + TFICF sumTF
+	ind: 	30.468	* Log IDF TFICF Pow CE CE
+	ind: 	52.0386	* sumTF MaxCTD
+	ind: 	30.468	Log TFICF TFICF
+	ind: 	71.42	% AM IG
 	ind: 	47.379	% TFICF TFIDF
-	ind: 	53.3039	% TFICF TFIDF
-	ind: 	67.2424	- DOM CHI
-	ind: 	28.8411	% - sumDF TF - DOM CHI
-	ind: 	53.2637	* + P' TFIDF Log MaxGSS MaxCC
-	ind: 	71.3999	% AM IG
-	ind: 	63.7678	* CE TF
-	ind: 	59.2488	* CTD P'
-	ind: 	71.9622	% AM IG
-	ind: 	59.4497	* CE TF
-	ind: 	66.8608	- DOM CHI
-	ind: 	47.4995	% TFICF TFIDF
-	ind: 	73.6092	% TFIDF MaxGSS
-	ind: 	70.1747	* AM CE
-	ind: 	70.6768	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	73.6092	% TFIDF MaxGSS
-	ind: 	53.1633	* + P' TFIDF Log MaxGSS MaxCC
-	ind: 	27.4553	Log TFICF TFICF
-	ind: 	27.5356	Pow sumTF TF
-	ind: 	72.5045	* AM IG
-	ind: 	53.1633	* + P' TFIDF Log MaxGSS MaxCC
-	ind: 	70.958	% TFIDF MaxGSS
-	ind: 	53.9466	% TFICF TFIDF
-	ind: 	65.0733	* TFICF TFIDF
-	ind: 	62.8841	* CTD P'
-	ind: 	27.8369	Pow sumTF TF
-	ind: 	66.8608	- DOM CHI
-	ind: 	71.3999	% AM IG
-	ind: 	72.143	Pow CHI MaxCTD
-	ind: 	59.2087	* CTD P'
-	ind: 	65.2541	* MaxDom MaxTFICF
-	ind: 	59.2488	* CTD P'
-	ind: 	63.4666	* CTD P'
-	ind: 	73.6493	% TFIDF MaxGSS
-	ind: 	38.0398	* + P' TFIDF Log MaxGSS MaxCC
-	ind: 	71.3999	% AM IG
-	ind: 	48.6845	% TFICF TFIDF
-	ind: 	60.2531	* CTD P'
-	ind: 	49.3673	% TFICF TFIDF
-generation 4:
-	ind: 	28.8411	% - sumDF TF - DOM CHI
-	ind: 	66.5796	- DOM CHI
-	ind: 	71.3999	% AM IG
-	ind: 	72.7857	+ CE GINI
-	ind: 	72.625	+ CE GINI
-	ind: 	69.6927	* DF IDF
-	ind: 	56.0153	Log % * DF IDF * MaxDom MaxTFICF + GSS MaxAM
-	ind: 	73.9305	% TFIDF MaxGSS
-	ind: 	72.625	+ CE GINI
-	ind: 	69.1303	% TFIDF MaxGSS
-	ind: 	70.1948	+ CE GINI
-	ind: 	71.3999	% AM IG
-	ind: 	62.8439	* CTD P'
-	ind: 	71.3999	% AM IG
-	ind: 	61.1769	* CTD P'
-	ind: 	60.2531	* CTD P'
-	ind: 	71.3999	% AM IG
-	ind: 	59.2288	* CTD P'
-	ind: 	71.7413	% TFIDF MaxGSS
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	59.4497	* CE TF
-	ind: 	66.8608	- DOM CHI
-	ind: 	64.4909	* AM CE
-	ind: 	73.7698	* AM IG
-	ind: 	70.1747	* AM CE
-	ind: 	70.6768	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	73.6092	% TFIDF MaxGSS
-	ind: 	67.2424	% * CE TF % TFIDF MaxGSS
-	ind: 	27.4553	Log TFICF TFICF
-	ind: 	71.3396	% TFIDF MaxGSS
-	ind: 	67.2223	- DOM CHI
-	ind: 	53.1633	* + P' TFIDF Log MaxGSS MaxCC
-	ind: 	71.8618	* + P' TFIDF * AM IG
-	ind: 	28.8411	% - sumDF TF - DOM CHI
-	ind: 	65.0733	* TFICF TFIDF
-	ind: 	62.8841	* CTD P'
-	ind: 	27.8369	Pow sumTF TF
-	ind: 	66.8608	- DOM CHI
-	ind: 	71.3999	% AM IG
-	ind: 	70.2149	+ CE GINI
-	ind: 	71.7413	% TFIDF MaxGSS
-	ind: 	65.2541	* MaxDom MaxTFICF
-	ind: 	59.2488	* CTD P'
-	ind: 	63.4666	* CTD P'
-	ind: 	72.6853	+ CE GINI
-	ind: 	71.5606	+ P' TFIDF
-	ind: 	71.902	* + P' TFIDF * AM IG
-	ind: 	60.3937	% CE GINI
-	ind: 	73.3481	% TFIDF MaxGSS
-	ind: 	49.3673	% TFICF TFIDF
-generation 5:
-	ind: 	28.8411	% - sumDF TF - DOM CHI
-	ind: 	72.2434	+ % * CE TF * CE TF * MaxOR AM
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	73.6493	% TFIDF MaxGSS
-	ind: 	61.5987	* CE TF
-	ind: 	27.0135	Log P' TFIDF
-	ind: 	56.0153	Log % * DF IDF * MaxDom MaxTFICF + GSS MaxAM
-	ind: 	73.2878	% TFIDF MaxGSS
-	ind: 	72.625	+ CE GINI
-	ind: 	69.1303	% TFIDF MaxGSS
-	ind: 	29.765	% - sumDF TF - DOM CHI
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	62.8439	* CTD P'
-	ind: 	71.3999	% AM IG
-	ind: 	73.087	* + P' TFIDF TFIDF
-	ind: 	54.5692	Log % * DF IDF * MaxDom MaxTFICF + GSS MaxAM
-	ind: 	72.3639	+ CE GINI
-	ind: 	72.5447	* + P' TFIDF * AM IG
-	ind: 	62.2012	* AM CE
-	ind: 	64.5712	* TFICF TFIDF
-	ind: 	59.4497	* CE TF
-	ind: 	66.8608	- DOM CHI
-	ind: 	40.3093	Log TFICF TFICF
-	ind: 	72.1631	% TFIDF MaxGSS
-	ind: 	70.1747	* AM CE
-	ind: 	70.6768	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	70.8174	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	59.2488	* CTD P'
-	ind: 	71.3999	% AM IG
-	ind: 	71.3396	% TFIDF MaxGSS
-	ind: 	67.2223	- DOM CHI
-	ind: 	71.3999	% AM IG
-	ind: 	51.0745	% Log MaxGSS MaxCC MaxGSS
-	ind: 	64.4909	* AM CE
-	ind: 	65.0733	* TFICF TFIDF
-	ind: 	59.2288	* CTD P'
-	ind: 	73.2476	% TFIDF MaxGSS
-	ind: 	71.7413	% TFIDF MaxGSS
-	ind: 	72.1631	% TFIDF MaxGSS
-	ind: 	72.384	+ CE GINI
-	ind: 	51.677	Log P' TFIDF
-	ind: 	65.2541	* MaxDom MaxTFICF
-	ind: 	59.2488	* CTD P'
-	ind: 	61.5585	* CE TF
-	ind: 	71.3999	% AM IG
-	ind: 	61.8397	- DOM CHI
-	ind: 	71.902	* + P' TFIDF * AM IG
-	ind: 	60.3937	% CE GINI
-	ind: 	30.468	Log TFICF TFICF
-	ind: 	49.3673	% TFICF TFIDF
-generation 6:
-	ind: 	64.4909	* AM CE
-	ind: 	28.2386	% - sumDF TF - DOM CHI
-	ind: 	64.5712	* TFICF TFIDF
-	ind: 	70.7371	+ CE GINI
-	ind: 	60.3535	+ % * CE TF * CTD P' * MaxOR AM
-	ind: 	27.0135	Log P' TFIDF
-	ind: 	58.9476	* CE TF
-	ind: 	73.7297	% TFIDF MaxGSS
-	ind: 	72.625	+ CE GINI
-	ind: 	65.0131	+ CE TF
-	ind: 	65.1336	- DOM CHI
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	71.4601	% TFIDF MaxGSS
-	ind: 	28.7809	% - sumDF TF - DOM CHI
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	60.8556	- DOM CHI
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	70.9982	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	62.2012	* AM CE
-	ind: 	64.5712	* TFICF TFIDF
-	ind: 	71.7413	% TFIDF MaxGSS
-	ind: 	71.3195	% % TFIDF MaxGSS IG
-	ind: 	40.3093	Log TFICF TFICF
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	70.1747	* AM CE
-	ind: 	46.3346	- CE TF
-	ind: 	70.8174	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	59.2488	* CTD P'
-	ind: 	72.4443	AM
-	ind: 	59.2488	* CTD P'
-	ind: 	71.3195	% % TFIDF MaxGSS IG
-	ind: 	65.5754	* AM CE
-	ind: 	51.0745	% Log MaxGSS MaxCC MaxGSS
-	ind: 	64.4909	* AM CE
-	ind: 	26.3105	Log TFICF TFICF
-	ind: 	59.2288	* CTD P'
-	ind: 	64.5712	* TFICF TFIDF
-	ind: 	59.3694	% CE GINI
-	ind: 	72.1631	% TFIDF MaxGSS
-	ind: 	67.7646	- DOM CHI
-	ind: 	71.3195	% % TFIDF MaxGSS IG
-	ind: 	65.2541	* MaxDom MaxTFICF
-	ind: 	70.9982	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	61.5585	* CE TF
-	ind: 	71.3999	% AM IG
-	ind: 	61.8397	- DOM CHI
-	ind: 	71.902	* + P' TFIDF * AM IG
-	ind: 	60.3937	% CE GINI
-	ind: 	30.468	Log TFICF TFICF
-	ind: 	71.7413	% TFIDF MaxGSS
-generation 7:
-	ind: 	64.4909	* AM CE
-	ind: 	58.9476	* CE TF
-	ind: 	70.9982	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	70.7371	+ CE GINI
-	ind: 	62.4623	* CTD P'
-	ind: 	58.9074	* + P' TFIDF * TFICF TFIDF
-	ind: 	58.9476	* CE TF
-	ind: 	61.7192	* TFICF TFIDF
-	ind: 	72.625	+ CE GINI
-	ind: 	28.339	* + P' TFIDF % - sumDF TF - DOM CHI
-	ind: 	62.4222	* CTD P'
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	61.7192	* TFICF TFIDF
-	ind: 	28.7809	% - sumDF TF - DOM CHI
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	70.9982	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	72.8259	% % TFIDF MaxGSS IG
-	ind: 	71.3999	% AM IG
-	ind: 	71.7413	% TFIDF MaxGSS
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	72.3639	* AM IG
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	26.3105	- CE TF
-	ind: 	53.9064	- DOM CHI
-	ind: 	70.8174	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	59.2488	* CTD P'
-	ind: 	72.4443	AM
-	ind: 	58.9074	* + P' TFIDF * TFICF TFIDF
-	ind: 	72.3639	* AM IG
-	ind: 	72.4443	AM
-	ind: 	28.339	* + P' TFIDF % - sumDF TF - DOM CHI
-	ind: 	64.4909	* AM CE
-	ind: 	26.3105	Log TFICF TFICF
-	ind: 	71.902	* + P' TFIDF * AM IG
-	ind: 	72.5849	* AM IG
-	ind: 	72.5849	* AM IG
-	ind: 	55.4127	* + P' TFIDF * TFICF TFIDF
-	ind: 	67.7646	- DOM CHI
-	ind: 	61.8397	- DOM CHI
-	ind: 	65.2541	* MaxDom MaxTFICF
-	ind: 	68.7287	% % TFIDF MaxGSS IG
-	ind: 	70.1948	+ CE GINI
-	ind: 	71.3999	% AM IG
-	ind: 	72.4443	AM
-	ind: 	71.902	* + P' TFIDF * AM IG
-	ind: 	13.9787	Log TFICF TFICF
-	ind: 	28.9014	% - sumDF TF - DOM CHI
-	ind: 	71.7413	% TFIDF MaxGSS
-generation 8:
-	ind: 	61.8397	- DOM CHI
-	ind: 	58.9476	* CE TF
-	ind: 	39.7269	- + P' TFIDF % - sumDF TF - DOM CHI
-	ind: 	70.7371	+ CE GINI
-	ind: 	26.3105	Log TFICF TFICF
-	ind: 	28.339	* + P' TFIDF % - sumDF TF - DOM CHI
-	ind: 	69.9337	% TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	68.0458	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	72.3639	* AM IG
-	ind: 	70.235	% * CE TF % TFIDF MaxGSS
-	ind: 	73.0669	TFIDF
-	ind: 	70.9379	+ % * CE TF % TFIDF MaxGSS * MaxOR AM
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	72.3037	Pow * AM IG MaxGSS
-	ind: 	43.7638	- + P' TFIDF % - sumDF TF - DOM CHI
-	ind: 	72.3639	* Pow P' TFIDF * AM IG
-	ind: 	72.3438	+ Pow TFICF TFIDF * MaxOR AM
-	ind: 	56.0554	* MaxDom MaxTFICF
-	ind: 	72.3639	* AM IG
-	ind: 	65.1737	% * CE TF % TFIDF MaxGSS
-	ind: 	41.1328	Pow TFICF TFIDF
-	ind: 	53.9064	- DOM CHI
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	61.8397	- DOM CHI
-	ind: 	26.3105	Log TFICF TFICF
-	ind: 	58.9074	* + P' TFIDF * TFICF TFIDF
-	ind: 	72.3639	* AM IG
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	67.1822	- DOM CHI
-	ind: 	64.4909	* AM CE
-	ind: 	61.0364	* + P' TFIDF * TFICF TFIDF
-	ind: 	69.1303	% TFIDF MaxGSS
-	ind: 	72.5849	* AM IG
-	ind: 	58.9074	* + P' TFIDF * TFICF TFIDF
-	ind: 	55.4127	* + P' TFIDF * TFICF TFIDF
-	ind: 	67.7646	- DOM CHI
-	ind: 	61.8397	- DOM CHI
-	ind: 	65.2541	* MaxDom MaxTFICF
-	ind: 	66.1579	* Pow P' TFIDF * AM IG
-	ind: 	72.0024	TFIDF
-	ind: 	71.3999	% AM IG
-	ind: 	72.4443	AM
-	ind: 	71.902	* + P' TFIDF * AM IG
-	ind: 	72.4644	% TFIDF MaxGSS
-	ind: 	28.9014	% - sumDF TF - DOM CHI
-	ind: 	71.7413	% TFIDF MaxGSS
-generation 9:
-	ind: 	73.6292	% TFIDF MaxGSS
-	ind: 	58.9476	* CE TF
-	ind: 	39.7269	- + P' TFIDF % - sumDF TF - DOM CHI
-	ind: 	69.4919	% TFIDF MaxGSS
-	ind: 	26.3105	Log TFICF TFICF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	67.1822	- DOM CHI
-	ind: 	72.1631	TFIDF
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	26.3105	Log AM IG
-	ind: 	70.235	% * CE TF % TFIDF MaxGSS
-	ind: 	28.9014	% - sumDF TF - DOM CHI
-	ind: 	73.6694	+ TFICF TFIDF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	54.7299	* + P' TFIDF * TFICF TFIDF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	47.9213	* CE TF
-	ind: 	73.6694	+ TFICF TFIDF
-	ind: 	66.1177	- DOM CHI
-	ind: 	73.4485	% AM IG
-	ind: 	73.6694	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	41.1328	Pow TFICF TFIDF
-	ind: 	53.9064	- DOM CHI
-	ind: 	67.1822	- DOM CHI
-	ind: 	61.8397	- DOM CHI
-	ind: 	67.5638	- DOM CHI
-	ind: 	71.3999	% AM IG
-	ind: 	40.5503	Pow TFICF TFIDF
-	ind: 	29.2629	* + P' TFIDF % - sumDF TF - DOM CHI
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	72.4644	% TFIDF MaxGSS
-	ind: 	72.3037	% TFIDF MaxGSS
-	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
-	ind: 	72.5849	* AM IG
-	ind: 	72.4644	% TFIDF MaxGSS
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	66.1177	- DOM CHI
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	72.2434	TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.6092	% TFIDF MaxGSS
-	ind: 	71.3999	% AM IG
-	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
-	ind: 	70.235	% * CE TF % TFIDF MaxGSS
-	ind: 	70.0542	+ Log TFICF TFICF * MaxOR AM
-	ind: 	58.9476	* CE TF
-	ind: 	73.6493	% TFIDF MaxGSS
-generation 10:
-	ind: 	72.1631	TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	47.9213	* CE TF
-	ind: 	73.087	TFIDF
-	ind: 	71.6409	% AM IG
-	ind: 	58.1643	- AM IG
-	ind: 	72.1631	TFIDF
-	ind: 	28.2386	% - sumDF TF - DOM CHI
-	ind: 	69.512	TFIDF
-	ind: 	71.3999	% AM IG
-	ind: 	69.5722	% TFIDF MaxGSS
-	ind: 	37.5979	Pow TFICF TFIDF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	31.7333	Pow TFICF TFIDF
-	ind: 	73.6092	% TFIDF MaxGSS
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	64.5712	* TFICF TFIDF
-	ind: 	73.4485	% AM IG
-	ind: 	58.6865	* TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	72.3037	% TFIDF MaxGSS
-	ind: 	53.9064	- DOM CHI
-	ind: 	67.1822	- DOM CHI
-	ind: 	73.6292	% TFIDF MaxGSS
-	ind: 	67.5638	- DOM CHI
-	ind: 	62.0607	* CE TF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	29.2629	* + P' TFIDF % - sumDF TF - DOM CHI
-	ind: 	55.1516	- DOM CHI
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
-	ind: 	67.5638	- DOM CHI
-	ind: 	72.4644	% TFIDF MaxGSS
-	ind: 	69.1906	TFIDF
-	ind: 	65.3143	* TFICF TFIDF
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	40.5503	Pow TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	67.1822	- DOM CHI
-	ind: 	41.1328	Pow TFICF TFIDF
-	ind: 	70.235	% * CE TF % TFIDF MaxGSS
-	ind: 	67.5638	- DOM CHI
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	37.3971	Pow TFICF TFIDF
-generation 11:
-	ind: 	72.1631	TFIDF
-	ind: 	73.5288	% AM IG
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	65.3143	* TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
-	ind: 	47.9213	* CE TF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	69.512	TFIDF
-	ind: 	67.0817	* TFICF TFIDF
-	ind: 	67.6039	- DOM CHI
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	58.6865	* TFICF TFIDF
-	ind: 	62.7636	* TFICF TFIDF
-	ind: 	73.4485	% TFIDF MaxGSS
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	64.5712	* TFICF TFIDF
-	ind: 	65.1737	% * CE TF % TFIDF MaxGSS
-	ind: 	54.1073	* CE TF
-	ind: 	69.512	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	72.3037	% TFIDF MaxGSS
-	ind: 	53.9064	- DOM CHI
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.6292	% TFIDF MaxGSS
-	ind: 	73.087	% TFIDF MaxGSS
-	ind: 	62.0607	* CE TF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	64.6515	TFICF
-	ind: 	73.7297	TFIDF
-	ind: 	73.7899	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	31.7333	Pow TFICF TFIDF
-	ind: 	72.4644	% TFIDF MaxGSS
-	ind: 	69.1906	TFIDF
-	ind: 	65.3143	* TFICF TFIDF
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	58.6865	* TFICF TFIDF
-	ind: 	61.6991	* - DOM CHI TFIDF
-	ind: 	67.0817	* TFICF TFIDF
-	ind: 	73.6092	% TFIDF MaxGSS
-	ind: 	41.1328	Pow TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	67.5638	- DOM CHI
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	62.1812	* TFICF TFIDF
-generation 12:
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	71.6409	% AM IG
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	73.7297	TFIDF
-	ind: 	62.0607	* CE TF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
-	ind: 	62.9845	* TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	69.512	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	61.8397	- DOM CHI
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	65.6156	* TFICF TFIDF
-	ind: 	58.6865	* TFICF TFIDF
-	ind: 	62.7636	* TFICF TFIDF
-	ind: 	73.4485	% TFIDF MaxGSS
-	ind: 	73.7497	+ TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	64.5712	* TFICF TFIDF
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	54.1073	* CE TF
-	ind: 	73.7297	TFIDF
-	ind: 	65.6357	* TFICF TFIDF
-	ind: 	65.6357	* TFICF TFIDF
-	ind: 	73.5489	+ TFICF TFIDF
-	ind: 	55.0713	- DOM CHI
-	ind: 	73.328	% AM IG
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	62.0607	* CE TF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	72.0024	TFIDF
-	ind: 	69.1906	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	72.4644	% TFIDF MaxGSS
-	ind: 	69.1906	TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	73.7297	TFIDF
-	ind: 	73.6292	% TFIDF MaxGSS
-	ind: 	73.5489	+ TFICF TFIDF
-	ind: 	73.6092	% TFIDF MaxGSS
-	ind: 	59.0279	* TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	67.5638	- DOM CHI
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	59.3493	* TFICF TFIDF
-generation 13:
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	72.2233	Pow DOM CHI
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	73.7297	TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	65.0733	* TFICF TFIDF
-	ind: 	69.512	TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	61.8397	- DOM CHI
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	67.7044	- DOM CHI
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	73.4485	% TFIDF MaxGSS
-	ind: 	69.1906	TFIDF
-	ind: 	61.0765	* CE TF
-	ind: 	64.5712	* TFICF TFIDF
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	58.6865	* TFICF TFIDF
-	ind: 	73.7297	TFIDF
-	ind: 	65.6357	* TFICF TFIDF
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	64.0691	% * CE TF % TFIDF MaxGSS
-	ind: 	55.0713	- DOM CHI
-	ind: 	63.6674	- DOM CHI
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	73.6493	% TFIDF MaxGSS
-	ind: 	72.2233	Pow DOM CHI
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	72.4644	% TFIDF MaxGSS
-	ind: 	73.9908	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	73.7297	TFIDF
-	ind: 	73.6292	% TFIDF MaxGSS
-	ind: 	72.2233	Pow DOM CHI
 	ind: 	73.6694	% TFIDF MaxGSS
-	ind: 	69.3914	% TFIDF MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	53.103	- TFICF TFIDF
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	59.751	% IG DOM
+	ind: 	70.9781	+ GSS GSS
+	ind: 	18.9797	- % TF OR % IG MaxTFIDF
+	ind: 	60.6547	% * DF IDF * MaxDom MaxTFICF
+	ind: 	53.7256	% IG DOM
+	ind: 	29.8654	Log TF MaxAM
+	ind: 	11.2472	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	53.8863	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	69.1303	+ * TF MaxIG % GINI DOM
+	ind: 	42.0767	% MaxTFICF CTD
+	ind: 	74.0309	* DOM MaxDom
+	ind: 	68.9496	Log TF sumDF
+	ind: 	39.3453	- * Log CHI OR + CE GINI * GINI TF
+	ind: 	68.1462	* CTD MaxOR
+	ind: 	56.4973	* sumTF MaxCTD
+	ind: 	59.2488	* CTD P'
+	ind: 	55.6738	* DF CE
+	ind: 	51.1749	* % MaxAM MaxIG * CE TF
+	ind: 	28.0177	Log TF MaxAM
+	ind: 	68.7889	+ GSS GSS
+	rep: 40  -> 40
+	rep: 3 41  -> 0
+	rep: 3 41  -> 1
+	rep: 27 49  -> 2
+	rep: 27 49  -> 3
+	rep: 29  -> 4
+	rep: 31 25  -> 5
+	rep: 31 25  -> 6
+	rep: 29 28  -> 7
+	rep: 29 28  -> 8
+	rep: 41  -> 9
+	rep: 10 35  -> 10
+	rep: 10 35  -> 11
+	rep: 45 36  -> 12
+	rep: 45 36  -> 13
+	rep: 41 17  -> 14
+	rep: 41 17  -> 15
+	rep: 12 36  -> 16
+	rep: 12 36  -> 17
+	rep: 20 46  -> 18
+	rep: 20 46  -> 19
+	rep: 41 2  -> 20
+	rep: 41 2  -> 21
+	rep: 7 47  -> 22
+	rep: 7 47  -> 23
+	rep: 12 12  -> 24
+	rep: 12 12  -> 25
+	rep: 37 17  -> 26
+	rep: 37 17  -> 27
+	rep: 19 36  -> 28
+	rep: 19 36  -> 29
+	rep: 39  -> 30
+	rep: 42 42  -> 31
+	rep: 42 42  -> 32
+	rep: 31  -> 33
+	rep: 14 34  -> 34
+	rep: 14 34  -> 35
+	rep: 17 18  -> 36
+	rep: 17 18  -> 37
+	rep: 28 36  -> 38
+	rep: 28 36  -> 39
+	rep: 15 28  -> 41
+	rep: 15 28  -> 42
+	rep: 3 5  -> 43
+	rep: 3 5  -> 44
+	rep: 27 32  -> 45
+	rep: 27 32  -> 46
+	rep: 3 22  -> 47
+	rep: 3 22  -> 48
+	rep: 45 11  -> 49
+generation 2:
+	ind: 	69.0902	* MaxDom MaxTFIDF
+	ind: 	68.9496	Log TF sumDF
+	ind: 	68.4274	+ GSS GSS
+	ind: 	71.6007	% AM IG
+	ind: 	73.6694	% TFIDF MaxGSS
+	ind: 	70.9781	+ GSS GSS
+	ind: 	49.5682	* sumTF MaxCTD
+	ind: 	71.8217	% TFIDF MaxGSS
+	ind: 	53.3039	% TFICF TFIDF
+	ind: 	68.9496	Log TF sumDF
+	ind: 	39.8474	Log TF MaxAM
+	ind: 	53.0629	- % TF MaxDom + TFICF sumTF
+	ind: 	59.9116	* CTD P'
+	ind: 	10.5443	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	68.8291	Log TF sumDF
+	ind: 	43.0609	% MaxTFICF CTD
+	ind: 	6.42699	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	69.0299	+ GSS GSS
+	ind: 	61.3778	% * DF IDF * MaxDom MaxTFICF
+	ind: 	66.2181	* DF CE
+	ind: 	68.9697	Log TF sumDF
+	ind: 	17.0114	- Log TF sumDF * GINI TF
+	ind: 	52.0386	- % TF MaxDom + TFICF sumTF
+	ind: 	48.6242	* % MaxAM MaxIG * CE TF
+	ind: 	68.4475	+ GSS GSS
+	ind: 	68.4475	+ GSS GSS
+	ind: 	47.2585	% MaxTFICF CTD
+	ind: 	50.2711	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	67.1822	* DOM - sumDF AM
+	ind: 	61.7393	Pow * MaxCTD MaxCC MaxDom
+	ind: 	42.0767	% MaxTFICF CTD
+	ind: 	71.2191	+ CE GINI
+	ind: 	39.3453	- * Log CHI OR - + Log CHI OR + CE GINI * GINI TF * GINI TF
+	ind: 	70.9781	+ GSS GSS
+	ind: 	53.7256	% IG DOM
+	ind: 	55.6738	% IG DOM
+	ind: 	29.1826	% MaxTFICF CTD
+	ind: 	49.7289	Log TF MaxAM
+	ind: 	71.0785	* MaxCTD MaxCC
+	ind: 	49.3673	Pow % TFICF TFIDF - sumDF AM
+	ind: 	74.0309	* DOM MaxDom
+	ind: 	36.2121	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	54.2077	% TFICF TFIDF
+	ind: 	69.0902	* MaxDom MaxTFIDF
+	ind: 	25.9691	Pow sumTF TF
+	ind: 	69.1103	% AM IG
+	ind: 	11.2272	- % TF OR % IG MaxTFIDF
+	ind: 	66.0374	* MaxDom MaxTFIDF
+	ind: 	61.2372	% * DF IDF * MaxDom MaxTFICF
+	ind: 	65.0331	% TF MaxDom
+	rep: 40  -> 40
+	rep: 3 21  -> 0
+	rep: 3 21  -> 1
+	rep: 4 32  -> 2
+	rep: 4 32  -> 3
+	rep: 45 1  -> 4
+	rep: 45 1  -> 5
+	rep: 43 23  -> 6
+	rep: 43 23  -> 7
+	rep: 12 35  -> 8
+	rep: 12 35  -> 9
+	rep: 17 48  -> 10
+	rep: 17 48  -> 11
+	rep: 15 15  -> 12
+	rep: 15 15  -> 13
+	rep: 29 12  -> 14
+	rep: 29 12  -> 15
+	rep: 3 5  -> 16
+	rep: 3 5  -> 17
+	rep: 24 46  -> 18
+	rep: 24 46  -> 19
+	rep: 48 8  -> 20
+	rep: 48 8  -> 21
+	rep: 24 30  -> 22
+	rep: 24 30  -> 23
+	rep: 4 31  -> 24
+	rep: 4 31  -> 25
+	rep: 23 10  -> 26
+	rep: 23 10  -> 27
+	rep: 34  -> 28
+	rep: 12  -> 29
+	rep: 21 13  -> 30
+	rep: 21 13  -> 31
+	rep: 35 8  -> 32
+	rep: 35 8  -> 33
+	rep: 20 6  -> 34
+	rep: 20 6  -> 35
+	rep: 24 22  -> 36
+	rep: 24 22  -> 37
+	rep: 26 15  -> 38
+	rep: 26 15  -> 39
+	rep: 15 21  -> 41
+	rep: 15 21  -> 42
+	rep: 27 23  -> 43
+	rep: 27 23  -> 44
+	rep: 1 44  -> 45
+	rep: 1 44  -> 46
+	rep: 8 27  -> 47
+	rep: 8 27  -> 48
+	rep: 42 22  -> 49
+generation 3:
+	ind: 	71.6208	% AM IG
+	ind: 	19.4015	- Log TF sumDF * GINI TF
+	ind: 	72.0426	* GINI TF
+	ind: 	39.3453	- * Log CHI OR - + Log CHI OR + CE GINI * GINI TF % TFIDF MaxGSS
+	ind: 	66.3386	Log TF sumDF
+	ind: 	71.5606	% AM IG
+	ind: 	69.512	* MaxDom MaxTFIDF
+	ind: 	47.9614	* % MaxAM MaxIG * CE TF
+	ind: 	60.5744	* CTD P'
+	ind: 	53.3842	% IG DOM
+	ind: 	68.3671	* MaxDom MaxTFICF
+	ind: 	68.2266	% * DF IDF + GSS GSS
+	ind: 	43.0609	% MaxTFICF CTD
+	ind: 	43.0609	% MaxTFICF CTD
+	ind: 	61.2372	Pow * MaxCTD MaxCC MaxDom
+	ind: 	59.2087	* CTD P'
+	ind: 	72.0225	% AM IG
+	ind: 	71.0986	+ GSS GSS
+	ind: 	68.7889	+ GSS GSS
+	ind: 	11.2272	- % TF OR % IG MaxTFIDF
+	ind: 	47.5196	% TFICF TFIDF
+	ind: 	63.4666	% * DF IDF * MaxDom MaxTFICF
+	ind: 	27.6762	% MaxTFICF CTD
+	ind: 	70.6969	+ GSS GSS
+	ind: 	73.107	% TFIDF MaxGSS
+	ind: 	70.3555	+ CE GINI
+	ind: 	53.3842	* % MaxAM MaxIG * CE TF
+	ind: 	32.7978	Log TF MaxAM
+	ind: 	53.7256	% IG DOM
+	ind: 	59.9116	* CTD P'
+	ind: 	19.8032	- Log TF sumDF * GINI TF
+	ind: 	7.35087	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	48.7246	% TFICF TFIDF
+	ind: 	61.8598	% IG DOM
+	ind: 	68.7889	Log TF sumDF
+	ind: 	50.0502	* sumTF MaxCTD
+	ind: 	66.198	+ GSS GSS
+	ind: 	55.5533	- % TF MaxDom + TFICF sumTF
+	ind: 	30.6286	% MaxTFICF CTD
+	ind: 	48.2828	% MaxTFICF CTD
+	ind: 	74.0309	* DOM MaxDom
+	ind: 	30.709	% MaxTFICF CTD
+	ind: 	31.4119	- Log TF sumDF * GINI TF
+	ind: 	50.2711	Log % MaxAM MaxIG Pow MaxGSS GINI
+	ind: 	59.4296	* * GINI TFIDF * CE TF
+	ind: 	68.9496	Log TF sumDF
+	ind: 	25.9892	Pow sumTF TF
+	ind: 	72.0627	Pow MaxGSS GINI
+	ind: 	50.2711	Log * GINI TFIDF % TFICF TFIDF
+	ind: 	54.3081	% TFICF TFIDF
+	rep: 40  -> 40
+	rep: 2  -> 0
+	rep: 44 12  -> 1
+	rep: 44 12  -> 2
+	rep: 23  -> 3
+	rep: 6  -> 4
+	rep: 47  -> 5
+	rep: 40 1  -> 6
+	rep: 40 1  -> 7
+	rep: 16  -> 8
+	rep: 45 19  -> 9
+	rep: 45 19  -> 10
+	rep: 25 3  -> 11
+	rep: 25 3  -> 12
+	rep: 48 22  -> 13
+	rep: 48 22  -> 14
+	rep: 49 1  -> 15
+	rep: 49 1  -> 16
+	rep: 32  -> 17
+	rep: 29 22  -> 18
+	rep: 29 22  -> 19
+	rep: 2 11  -> 20
+	rep: 2 11  -> 21
+	rep: 2 23  -> 22
+	rep: 2 23  -> 23
+	rep: 28 31  -> 24
+	rep: 28 31  -> 25
+	rep: 47 29  -> 26
+	rep: 47 29  -> 27
+	rep: 37 7  -> 28
+	rep: 37 7  -> 29
+	rep: 0  -> 30
+	rep: 5 33  -> 31
+	rep: 5 33  -> 32
+	rep: 9 20  -> 33
+	rep: 9 20  -> 34
+	rep: 20 12  -> 35
+	rep: 20 12  -> 36
+	rep: 10 20  -> 37
+	rep: 10 20  -> 38
+	rep: 23 22  -> 39
+	rep: 23 22  -> 41
+	rep: 34  -> 42
+	rep: 39  -> 43
+	rep: 40 45  -> 44
+	rep: 40 45  -> 45
+	rep: 26  -> 46
+	rep: 5 31  -> 47
+	rep: 5 31  -> 48
+	rep: 0 9  -> 49
+generation 4:
+	ind: 	72.0426	* GINI TF
+	ind: 	63.7477	* * GINI TFIDF * CE TF
+	ind: 	30.6688	% MaxTFICF CTD
+	ind: 	70.6969	+ GSS GSS
+	ind: 	69.512	* MaxDom MaxTFIDF
+	ind: 	72.0627	Pow MaxGSS GINI
+	ind: 	73.7096	* DOM MaxDom
+	ind: 	19.0801	- Log TF sumDF * GINI TF
+	ind: 	72.0225	% AM IG
+	ind: 	71.8819	Log TF sumDF
+	ind: 	6.00522	- % TF OR % IG MaxTFIDF
+	ind: 	70.3555	+ Log CHI OR + CE GINI
+	ind: 	32.2555	- * Log CHI OR - + CE GINI * GINI TF % TFIDF MaxGSS
+	ind: 	50.2711	Log * GINI TFIDF % MaxTFICF CTD
+	ind: 	47.5196	% TFICF TFIDF
+	ind: 	35.1878	- Log TF sumDF * GINI TF
+	ind: 	48.8251	% TFICF TFIDF
+	ind: 	48.7246	% TFICF TFIDF
+	ind: 	59.9116	* CTD P'
+	ind: 	27.6762	% MaxTFICF CTD
+	ind: 	69.753	* GINI TF
+	ind: 	70.9379	% * DF IDF + GSS GSS
+	ind: 	72.0827	* GINI TF
+	ind: 	70.5965	+ GSS GSS
+	ind: 	5.74413	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	55.4127	% IG DOM
+	ind: 	69.8534	Pow MaxGSS GINI
+	ind: 	63.808	* CTD P'
+	ind: 	38.5218	- * % MaxAM MaxIG * CE TF + TFICF sumTF
+	ind: 	65.0532	% TF MaxDom
+	ind: 	72.5447	* AM IG
+	ind: 	71.3999	% AM IG
+	ind: 	61.8397	% IG DOM
+	ind: 	53.5851	% IG DOM
+	ind: 	47.379	% TFICF TFIDF
+	ind: 	27.8369	% MaxTFICF CTD
+	ind: 	52.7817	% TFICF TFIDF
+	ind: 	68.1663	* MaxDom MaxTFICF
+	ind: 	48.8251	% TFICF TFIDF
+	ind: 	68.6483	+ GSS GSS
+	ind: 	74.0309	* DOM MaxDom
+	ind: 	40.9118	% MaxTFICF CTD
+	ind: 	68.7889	Log TF sumDF
+	ind: 	48.2828	% MaxTFICF CTD
+	ind: 	72.0827	Log TF sumDF
+	ind: 	72.4041	* DOM MaxDom
+	ind: 	53.3842	* % MaxAM MaxIG * CE TF
+	ind: 	71.5606	% AM IG
+	ind: 	7.35087	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	71.6007	% AM IG
+	rep: 40  -> 40
+	rep: 23 1  -> 0
+	rep: 23 1  -> 1
+	rep: 9 14  -> 2
+	rep: 9 14  -> 3
+	rep: 0 3  -> 4
+	rep: 0 3  -> 5
+	rep: 6 20  -> 6
+	rep: 6 20  -> 7
+	rep: 8 46  -> 8
+	rep: 8 46  -> 9
+	rep: 33 48  -> 10
+	rep: 33 48  -> 11
+	rep: 47  -> 12
+	rep: 37  -> 13
+	rep: 6 44  -> 14
+	rep: 6 44  -> 15
+	rep: 40 24  -> 16
+	rep: 40 24  -> 17
+	rep: 21 1  -> 18
+	rep: 21 1  -> 19
+	rep: 3 4  -> 20
+	rep: 3 4  -> 21
+	rep: 9 15  -> 22
+	rep: 9 15  -> 23
+	rep: 25 19  -> 24
+	rep: 25 19  -> 25
+	rep: 0 11  -> 26
+	rep: 0 11  -> 27
+	rep: 27 10  -> 28
+	rep: 27 10  -> 29
+	rep: 8 19  -> 30
+	rep: 8 19  -> 31
+	rep: 26 12  -> 32
+	rep: 26 12  -> 33
+	rep: 4 10  -> 34
+	rep: 4 10  -> 35
+	rep: 29 16  -> 36
+	rep: 29 16  -> 37
+	rep: 29  -> 38
+	rep: 47 42  -> 39
+	rep: 47 42  -> 41
+	rep: 32 13  -> 42
+	rep: 32 13  -> 43
+	rep: 6 2  -> 44
+	rep: 6 2  -> 45
+	rep: 11 13  -> 46
+	rep: 11 13  -> 47
+	rep: 47 20  -> 48
+	rep: 47 20  -> 49
+generation 5:
+	ind: 	70.4559	+ GSS GSS
+	ind: 	58.9476	* * GINI TFIDF * CE TF
+	ind: 	54.0872	% TFICF TFIDF
+	ind: 	68.809	Log TF sumDF
+	ind: 	72.0827	* GINI TF
+	ind: 	70.5965	+ GSS GSS
+	ind: 	71.5806	* GINI TF
+	ind: 	72.3238	* DOM MaxDom
+	ind: 	71.661	% AM IG
+	ind: 	54.5692	* % MaxAM MaxIG * CE TF
+	ind: 	71.2392	* MaxCTD MaxCC
+	ind: 	21.4903	Pow % IG DOM - sumDF AM
+	ind: 	71.5606	% AM IG
+	ind: 	68.1663	* MaxDom MaxTFICF
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	69.1103	Log TF sumDF
+	ind: 	28.9215	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	72.3238	* DOM MaxDom
+	ind: 	70.9379	% * DF IDF + GSS GSS
+	ind: 	63.8281	* * GINI TFIDF * CE TF
+	ind: 	68.9094	+ GSS GSS
+	ind: 	69.0902	* MaxDom MaxTFIDF
+	ind: 	71.902	Log TF sumDF
+	ind: 	19.4216	- Log TF sumDF * GINI TF
+	ind: 	54.0269	% IG DOM
+	ind: 	30.6286	% MaxTFICF CTD
+	ind: 	72.7254	+ Log CHI OR + CE GINI
+	ind: 	69.7329	* GINI TF
+	ind: 	63.808	* CTD P'
+	ind: 	6.00522	- % TF OR % IG MaxTFIDF
+	ind: 	71.6007	% AM IG
+	ind: 	33.099	% MaxTFICF CTD
+	ind: 	69.5722	Pow MaxGSS GINI
+	ind: 	41.2131	- * Log CHI OR - + CE GINI * GINI TF % TFIDF MaxGSS
+	ind: 	66.9612	* MaxDom MaxTFIDF
+	ind: 	6.00522	- % TF OR % IG MaxTFIDF
+	ind: 	47.379	% TFICF TFIDF
+	ind: 	65.8164	% TF MaxDom
+	ind: 	65.0532	% TF MaxDom
+	ind: 	68.9496	Log TF sumDF
+	ind: 	74.0309	* DOM MaxDom
+	ind: 	71.3999	% AM IG
+	ind: 	61.8598	% IG DOM
+	ind: 	51.0544	Log * GINI TFIDF % MaxTFICF CTD
+	ind: 	73.7096	* DOM MaxDom
+	ind: 	30.709	% MaxTFICF CTD
+	ind: 	72.5246	+ Log CHI OR + CE GINI
+	ind: 	28.7407	Log * GINI TFIDF % MaxTFICF CTD
+	ind: 	71.4802	% AM IG
+	ind: 	7.37096	- GINI TF
+	rep: 14  -> 14
+	rep: 6  -> 0
+	rep: 8 18  -> 1
+	rep: 8 18  -> 2
+	rep: 38 29  -> 3
+	rep: 38 29  -> 4
+	rep: 14 5  -> 5
+	rep: 14 5  -> 6
+	rep: 41 36  -> 7
+	rep: 41 36  -> 8
+	rep: 10 24  -> 9
+	rep: 10 24  -> 10
+	rep: 27  -> 11
+	rep: 27 43  -> 12
+	rep: 27 43  -> 13
+	rep: 3 33  -> 15
+	rep: 3 33  -> 16
+	rep: 25  -> 17
+	rep: 20 28  -> 18
+	rep: 20 28  -> 19
+	rep: 46 1  -> 20
+	rep: 46 1  -> 21
+	rep: 17  -> 22
+	rep: 18 13  -> 23
+	rep: 18 13  -> 24
+	rep: 38 2  -> 25
+	rep: 38 2  -> 26
+	rep: 42 49  -> 27
+	rep: 42 49  -> 28
+	rep: 48 13  -> 29
+	rep: 48 13  -> 30
+	rep: 40 13  -> 31
+	rep: 40 13  -> 32
+	rep: 41 33  -> 33
+	rep: 41 33  -> 34
+	rep: 40  -> 35
+	rep: 4 5  -> 36
+	rep: 4 5  -> 37
+	rep: 15 35  -> 38
+	rep: 15 35  -> 39
+	rep: 4 43  -> 40
+	rep: 4 43  -> 41
+	rep: 3 25  -> 42
+	rep: 3 25  -> 43
+	rep: 12  -> 44
+	rep: 27 19  -> 45
+	rep: 27 19  -> 46
+	rep: 18 23  -> 47
+	rep: 18 23  -> 48
+	rep: 41 19  -> 49
+generation 6:
+	ind: 	71.5806	* GINI TF
+	ind: 	68.7889	+ GSS GSS
+	ind: 	66.7001	% * DF IDF % AM IG
+	ind: 	53.8662	% TF OR
+	ind: 	29.8454	- % TF MaxDom % IG MaxTFIDF
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	68.6885	+ GSS GSS
+	ind: 	71.3999	% AM IG
+	ind: 	50.2109	% TFICF TFIDF
+	ind: 	53.5851	% IG DOM
+	ind: 	71.0986	* MaxCTD MaxCC
+	ind: 	69.7329	* GINI TF
+	ind: 	69.773	* GINI TF
+	ind: 	50.2109	Log * GINI TFIDF % MaxTFICF CTD
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	66.1779	Log TF sumDF
+	ind: 	14.8223	- * % CHI OR - + CE GINI * GINI TF % TFIDF MaxGSS
+	ind: 	30.6286	% MaxTFICF CTD
+	ind: 	60.233	* CTD P'
+	ind: 	71.0384	+ GSS GSS
+	ind: 	72.4644	+ * * GINI TFIDF * CE TF + CE GINI
+	ind: 	26.3105	Log CHI OR
+	ind: 	72.3238	* DOM MaxDom
+	ind: 	72.4242	* MaxDom MaxTFICF
+	ind: 	68.5479	% * DF IDF + GSS GSS
+	ind: 	47.379	% TFICF TFIDF
+	ind: 	68.9697	% TF MaxDom
+	ind: 	8.37518	- GINI TF
+	ind: 	55.4931	% IG DOM
+	ind: 	71.4802	% AM IG
+	ind: 	67.4433	* MaxDom MaxTFICF
+	ind: 	71.902	* MaxDom MaxTFICF
+	ind: 	72.4242	* DOM MaxDom
+	ind: 	73.6092	% AM IG
+	ind: 	34.7258	- * Log CHI OR - + CE GINI * GINI TF % TFIDF MaxGSS
+	ind: 	74.0309	* DOM MaxDom
+	ind: 	71.7413	* GINI TF
+	ind: 	52.7013	- GSS GSS
+	ind: 	68.9496	Log TF sumDF
+	ind: 	7.89315	- % TF OR % IG MaxTFIDF
+	ind: 	72.2033	* GINI TFIDF
+	ind: 	16.9713	Log * GINI TF % MaxTFICF CTD
+	ind: 	71.8016	Log TF sumDF
+	ind: 	30.6286	% MaxTFICF CTD
+	ind: 	71.5606	% AM IG
+	ind: 	69.4517	* GINI TF
+	ind: 	64.1494	* * GINI TFIDF * CE TF
+	ind: 	70.9781	% * DF IDF + GSS GSS
+	ind: 	14.3201	- Log TF sumDF * GINI TF
+	ind: 	73.8301	% AM IG
+	rep: 14  -> 14
+	rep: 22 8  -> 0
+	rep: 22 8  -> 1
+	rep: 10 45  -> 2
+	rep: 10 45  -> 3
+	rep: 33 11  -> 4
+	rep: 33 11  -> 5
+	rep: 45 34  -> 6
+	rep: 45 34  -> 7
+	rep: 0  -> 8
+	rep: 11  -> 9
+	rep: 31 25  -> 10
+	rep: 31 25  -> 11
+	rep: 12 37  -> 12
+	rep: 12 37  -> 13
+	rep: 30 25  -> 15
+	rep: 30 25  -> 16
+	rep: 23 3  -> 17
+	rep: 23 3  -> 18
+	rep: 20 25  -> 19
+	rep: 20 25  -> 20
+	rep: 49 0  -> 21
+	rep: 49 0  -> 22
+	rep: 38 4  -> 23
+	rep: 38 4  -> 24
+	rep: 14 12  -> 25
+	rep: 14 12  -> 26
+	rep: 21 27  -> 27
+	rep: 21 27  -> 28
+	rep: 23 24  -> 29
+	rep: 23 24  -> 30
+	rep: 31 3  -> 31
+	rep: 31 3  -> 32
+	rep: 2 18  -> 33
+	rep: 2 18  -> 34
+	rep: 22 43  -> 35
+	rep: 22 43  -> 36
+	rep: 14 20  -> 37
+	rep: 14 20  -> 38
+	rep: 33 36  -> 39
+	rep: 33 36  -> 40
+	rep: 47 34  -> 41
+	rep: 47 34  -> 42
+	rep: 20 28  -> 43
+	rep: 20 28  -> 44
+	rep: 31 37  -> 45
+	rep: 31 37  -> 46
+	rep: 48 48  -> 47
+	rep: 48 48  -> 48
+	rep: 33 15  -> 49
+generation 7:
+	ind: 	73.5891	* DOM MaxDom
+	ind: 	50.2109	% TFICF TFIDF
+	ind: 	69.4316	* GINI TF
+	ind: 	71.1388	* MaxCTD MaxCC
+	ind: 	72.0225	* GINI TF
+	ind: 	71.5806	% AM IG
+	ind: 	70.2149	+ CE GINI
+	ind: 	34.7258	- * Log CHI OR - * GINI TF * GINI TF % TFIDF MaxGSS
+	ind: 	71.5806	* GINI TF
+	ind: 	69.7329	* GINI TF
+	ind: 	57.5417	% TFICF TFIDF
+	ind: 	67.3228	* MaxDom MaxTFICF
+	ind: 	32.6572	- GSS GSS
+	ind: 	72.0426	* GINI TF
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	67.4433	* MaxDom MaxTFICF
+	ind: 	47.379	% TFICF TFIDF
+	ind: 	72.4242	* MaxDom MaxTFICF
+	ind: 	53.8662	% TF OR
+	ind: 	52.1591	% TFICF TFIDF
+	ind: 	69.8333	+ * * GINI TFIDF * CE TF + CE GINI
+	ind: 	73.8301	% AM IG
+	ind: 	69.773	* GINI TF
+	ind: 	68.4274	% IG MaxTFIDF
+	ind: 	26.3105	- Log TF MaxDom Log TF sumDF
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	72.3438	* GINI TF
+	ind: 	26.3105	Log CHI OR
+	ind: 	8.41534	- GINI TF
+	ind: 	70.9379	% * DF IDF + GSS GSS
+	ind: 	68.1663	* MaxDom MaxTFICF
+	ind: 	72.4844	Pow TF OR
+	ind: 	67.3228	* MaxDom MaxTFICF
+	ind: 	50.5724	% * DF IDF * CTD P'
+	ind: 	71.661	% AM IG
+	ind: 	28.2989	% MaxTFICF CTD
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	72.3238	* DOM MaxDom
+	ind: 	72.5849	+ * * GINI TFIDF * CE TF + CE GINI
+	ind: 	72.0225	* GINI TF
+	ind: 	73.2677	% AM IG
+	ind: 	70.6969	% * DF IDF + Log CHI OR GSS
+	ind: 	25.0854	- * GSS - + CE GINI * GINI TF % TFIDF MaxGSS
+	ind: 	65.3344	+ * * GINI TFIDF * CE TF % IG DOM
+	ind: 	70.476	+ CE GINI
+	ind: 	68.2466	* MaxDom MaxTFICF
+	ind: 	52.2193	- GSS GSS
+	ind: 	20.7672	- Log TF sumDF * GINI TF
+	ind: 	22.2936	- Log TF sumDF * GINI TF
+	ind: 	71.8016	Log TF sumDF
+	rep: 14  -> 14
+	rep: 36 29  -> 0
+	rep: 36 29  -> 1
+	rep: 0 30  -> 2
+	rep: 0 30  -> 3
+	rep: 35 47  -> 4
+	rep: 35 47  -> 5
+	rep: 33 48  -> 6
+	rep: 33 48  -> 7
+	rep: 36 3  -> 8
+	rep: 36 3  -> 9
+	rep: 29 16  -> 10
+	rep: 29 16  -> 11
+	rep: 29 19  -> 12
+	rep: 29 19  -> 13
+	rep: 6  -> 15
+	rep: 49 8  -> 16
+	rep: 49 8  -> 17
+	rep: 12 35  -> 18
+	rep: 12 35  -> 19
+	rep: 43  -> 20
+	rep: 15 35  -> 21
+	rep: 15 35  -> 22
+	rep: 8 12  -> 23
+	rep: 8 12  -> 24
+	rep: 26 4  -> 25
+	rep: 26 4  -> 26
+	rep: 26 32  -> 27
+	rep: 26 32  -> 28
+	rep: 15 33  -> 29
+	rep: 15 33  -> 30
+	rep: 46 47  -> 31
+	rep: 46 47  -> 32
+	rep: 32  -> 33
+	rep: 23 46  -> 34
+	rep: 23 46  -> 35
+	rep: 44 46  -> 36
+	rep: 44 46  -> 37
+	rep: 36 4  -> 38
+	rep: 36 4  -> 39
+	rep: 20 45  -> 40
+	rep: 20 45  -> 41
+	rep: 13  -> 42
+	rep: 17 41  -> 43
+	rep: 17 41  -> 44
+	rep: 14 32  -> 45
+	rep: 14 32  -> 46
+	rep: 36  -> 47
+	rep: 49 23  -> 48
+	rep: 49 23  -> 49
+generation 8:
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	68.2466	% * DF IDF + GSS GSS
+	ind: 	71.5405	* MaxDom MaxTFICF
+	ind: 	72.4242	* DOM MaxDom
+	ind: 	32.5166	% MaxTFICF CTD
+	ind: 	13.3963	- Log TF sumDF * GINI TF
+	ind: 	47.4995	% * DF IDF * CTD P'
+	ind: 	33.7618	- Log TF sumDF * GINI TF
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	71.0785	* MaxCTD MaxCC
+	ind: 	43.0609	% * DF IDF % TFICF TFIDF
+	ind: 	68.4073	+ GSS GSS
+	ind: 	71.0183	% * DF IDF + GSS GSS
+	ind: 	51.9381	% TFICF TFIDF
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	70.2149	+ CE GINI
+	ind: 	72.1631	Log TF sumDF
+	ind: 	69.773	* GINI TF
+	ind: 	30.6286	% MaxTFICF CTD
+	ind: 	29.8654	- GSS GSS
+	ind: 	65.3344	+ * * GINI TFIDF * CE TF % IG DOM
+	ind: 	69.3513	* MaxDom MaxTFICF
+	ind: 	28.2989	% MaxTFICF CTD
+	ind: 	51.0544	- GSS GSS
+	ind: 	69.773	* GINI TF
+	ind: 	72.3438	* GINI TF
+	ind: 	72.0225	* GINI TF
+	ind: 	72.3438	* GINI TF
+	ind: 	67.3228	* MaxDom MaxTFICF
+	ind: 	45.2501	% * DF IDF * CTD P'
+	ind: 	72.4242	* MaxDom MaxTFICF
+	ind: 	52.2997	- GSS GSS
+	ind: 	21.189	- Log TF sumDF * GINI TF
+	ind: 	67.3228	* MaxDom MaxTFICF
+	ind: 	70.8174	% IG MaxTFIDF
+	ind: 	52.5005	- GSS GSS
+	ind: 	32.6572	- GSS GSS
+	ind: 	72.7857	+ CE GINI
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	69.773	* GINI TF
+	ind: 	69.3914	+ * * MaxDom MaxTFICF * CE TF + CE GINI
+	ind: 	70.7371	* GINI TFIDF
+	ind: 	70.6568	* GINI TF
+	ind: 	72.4242	* MaxDom MaxTFICF
+	ind: 	70.6367	% * DF IDF + Log CHI OR GSS
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	67.4433	* MaxDom MaxTFICF
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	68.9496	Log TF sumDF
+	ind: 	70.1747	% IG MaxTFIDF
+	rep: 8  -> 8
+	rep: 39 13  -> 0
+	rep: 39 13  -> 1
+	rep: 25 5  -> 2
+	rep: 25 5  -> 3
+	rep: 39 7  -> 4
+	rep: 39 7  -> 5
+	rep: 1 23  -> 6
+	rep: 1 23  -> 7
+	rep: 38 46  -> 9
+	rep: 38 46  -> 10
+	rep: 45 10  -> 11
+	rep: 45 10  -> 12
+	rep: 40 11  -> 13
+	rep: 40 11  -> 14
+	rep: 12 33  -> 15
+	rep: 12 33  -> 16
+	rep: 0 21  -> 17
+	rep: 0 21  -> 18
+	rep: 0 0  -> 19
+	rep: 0 0  -> 20
+	rep: 24 4  -> 21
+	rep: 24 4  -> 22
+	rep: 25 46  -> 23
+	rep: 25 46  -> 24
+	rep: 37 9  -> 25
+	rep: 37 9  -> 26
+	rep: 12 1  -> 27
+	rep: 12 1  -> 28
+	rep: 27 24  -> 29
+	rep: 27 24  -> 30
+	rep: 27 41  -> 31
+	rep: 27 41  -> 32
+	rep: 12 19  -> 33
+	rep: 12 19  -> 34
+	rep: 26 23  -> 35
+	rep: 26 23  -> 36
+	rep: 14  -> 37
+	rep: 0  -> 38
+	rep: 38 12  -> 39
+	rep: 38 12  -> 40
+	rep: 12 41  -> 41
+	rep: 12 41  -> 42
+	rep: 38 10  -> 43
+	rep: 38 10  -> 44
+	rep: 17 11  -> 45
+	rep: 17 11  -> 46
+	rep: 38 46  -> 47
+	rep: 38 46  -> 48
+	rep: 14  -> 49
+generation 9:
+	ind: 	69.4517	* GINI TF
+	ind: 	52.7817	% TFICF TFIDF
+	ind: 	69.3111	* GINI TF
+	ind: 	39.5059	- Log TF sumDF * GINI TF
+	ind: 	69.3111	* GINI TF
+	ind: 	35.4489	- Log TF sumDF * GINI TF
+	ind: 	70.2551	% * DF IDF + GSS GSS
+	ind: 	32.9183	- GSS GSS
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	67.3428	* MaxDom MaxTFICF
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	49.6887	% * DF IDF % TFICF TFIDF
+	ind: 	69.3914	+ * * MaxDom MaxTFICF * CE TF + CE GINI
+	ind: 	68.4676	+ GSS GSS
+	ind: 	68.4274	% * DF IDF + GSS GSS
+	ind: 	56.0755	* MaxDom MaxTFICF
+	ind: 	72.3037	* MaxDom MaxTFICF
+	ind: 	72.846	* DOM MaxDom
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	30.6286	% MaxTFICF CTD
+	ind: 	70.1346	* GINI TF
+	ind: 	72.0024	* MaxDom MaxTFICF
+	ind: 	69.4919	* GINI TF
+	ind: 	73.5489	* MaxCTD MaxCC
+	ind: 	70.2149	+ CE GINI
+	ind: 	68.4274	% * DF IDF + GSS GSS
+	ind: 	70.9379	% * DF IDF + GSS GSS
+	ind: 	69.773	* GINI TF
+	ind: 	72.3438	* GINI TF
+	ind: 	66.1177	% GINI TF
+	ind: 	72.4443	* GINI TFIDF
+	ind: 	52.5608	- GSS GSS
+	ind: 	65.3344	% % DF IDF + GSS GSS
+	ind: 	69.773	* GINI TF
+	ind: 	51.6369	- GSS GSS
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	72.3238	* DOM MaxDom
+	ind: 	71.3396	% * DF IDF + GSS GSS
+	ind: 	70.958	% * DF IDF + GSS GSS
+	ind: 	72.1631	* GINI TFIDF
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	46.9171	% * DF IDF % TFICF TFIDF
+	ind: 	69.4517	* GINI TF
+	ind: 	68.6684	+ GSS GSS
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	67.3428	* MaxDom MaxTFICF
+	ind: 	74.1314	* DOM MaxDom
+	rep: 8  -> 8
+	rep: 30 44  -> 0
+	rep: 30 44  -> 1
+	rep: 42 0  -> 2
+	rep: 42 0  -> 3
+	rep: 16 21  -> 4
+	rep: 16 21  -> 5
+	rep: 13 27  -> 6
+	rep: 13 27  -> 7
+	rep: 35 4  -> 9
+	rep: 35 4  -> 10
+	rep: 18 23  -> 11
+	rep: 18 23  -> 12
+	rep: 15 16  -> 13
+	rep: 15 16  -> 14
+	rep: 19  -> 15
+	rep: 43 35  -> 16
+	rep: 43 35  -> 17
+	rep: 18 6  -> 18
+	rep: 18 6  -> 19
+	rep: 34  -> 20
+	rep: 0 1  -> 21
+	rep: 0 1  -> 22
+	rep: 25 21  -> 23
+	rep: 25 21  -> 24
+	rep: 4 5  -> 25
+	rep: 4 5  -> 26
+	rep: 19 11  -> 27
+	rep: 19 11  -> 28
+	rep: 47 3  -> 29
+	rep: 47 3  -> 30
+	rep: 25 7  -> 31
+	rep: 25 7  -> 32
+	rep: 20 0  -> 33
+	rep: 20 0  -> 34
+	rep: 45 36  -> 35
+	rep: 45 36  -> 36
+	rep: 47  -> 37
+	rep: 26 46  -> 38
+	rep: 26 46  -> 39
+	rep: 28  -> 40
+	rep: 9 39  -> 41
+	rep: 9 39  -> 42
+	rep: 2 46  -> 43
+	rep: 2 46  -> 44
+	rep: 28  -> 45
+	rep: 19 27  -> 46
+	rep: 19 27  -> 47
+	rep: 49 31  -> 48
+	rep: 49 31  -> 49
+generation 10:
+	ind: 	72.0426	* GINI TF
+	ind: 	49.4678	% * DF IDF % TFICF TFIDF
+	ind: 	70.5965	* GINI TFIDF
+	ind: 	72.0024	* GINI TF
+	ind: 	57.9233	* MaxDom MaxTFICF
+	ind: 	26.7122	% MaxTFICF CTD
+	ind: 	68.2266	+ + GSS GSS + CE GINI
+	ind: 	61.8397	% * DF IDF * * MaxDom MaxTFICF * CE TF
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	69.291	* GINI TF
+	ind: 	69.773	* GINI TF
+	ind: 	69.3513	* MaxDom MaxTFICF
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	68.2466	% * DF IDF + GSS GSS
+	ind: 	57.9434	* MaxDom MaxTFICF
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	69.4517	* GINI TF
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	69.4517	% * DF IDF + GSS GSS
+	ind: 	65.3344	% % DF IDF + GSS GSS
+	ind: 	47.4593	% TFICF TFIDF
+	ind: 	71.5806	* GINI TF
+	ind: 	74.2519	* MaxCTD MaxCC
+	ind: 	47.2183	% MaxTFICF CTD
+	ind: 	14.2398	- Log TF sumDF * GINI TF
+	ind: 	72.0024	* GINI TF
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.1715	* DOM MaxDom
+	ind: 	34.2237	- Log TF sumDF * GINI TF
+	ind: 	73.6493	* MaxCTD MaxCC
+	ind: 	52.5005	- GSS GSS
+	ind: 	72.0024	* GINI TF
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	72.0225	* GINI TF
+	ind: 	49.0862	- GSS GSS
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	70.2149	+ CE GINI
+	ind: 	68.6684	+ GSS GSS
+	ind: 	69.6525	Pow * DF IDF + GSS GSS
+	ind: 	72.4644	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	69.773	* GINI TF
+	ind: 	68.2667	+ GSS GSS
+	ind: 	70.9379	% * DF IDF + GSS GSS
+	ind: 	70.9781	% * DF IDF + GSS GSS
+	ind: 	72.2635	* DOM MaxDom
+	ind: 	72.3238	* DOM MaxDom
+	ind: 	69.9538	% GINI TF
+	rep: 23  -> 23
+	rep: 2 36  -> 0
+	rep: 2 36  -> 1
+	rep: 17  -> 2
+	rep: 48 6  -> 3
+	rep: 48 6  -> 4
+	rep: 27 47  -> 5
+	rep: 27 47  -> 6
+	rep: 26  -> 7
+	rep: 34 46  -> 8
+	rep: 34 46  -> 9
+	rep: 13 5  -> 10
+	rep: 13 5  -> 11
+	rep: 38  -> 12
+	rep: 8 1  -> 13
+	rep: 8 1  -> 14
+	rep: 46  -> 15
+	rep: 12  -> 16
+	rep: 22  -> 17
+	rep: 3 40  -> 18
+	rep: 3 40  -> 19
+	rep: 19 32  -> 20
+	rep: 19 32  -> 21
+	rep: 41 16  -> 22
+	rep: 41 16  -> 24
+	rep: 26  -> 25
+	rep: 12 35  -> 26
+	rep: 12 35  -> 27
+	rep: 27 42  -> 28
+	rep: 27 42  -> 29
+	rep: 2 40  -> 30
+	rep: 2 40  -> 31
+	rep: 43 44  -> 32
+	rep: 43 44  -> 33
+	rep: 21 5  -> 34
+	rep: 21 5  -> 35
+	rep: 3 7  -> 36
+	rep: 3 7  -> 37
+	rep: 15 14  -> 38
+	rep: 15 14  -> 39
+	rep: 21 30  -> 40
+	rep: 21 30  -> 41
+	rep: 38 49  -> 42
+	rep: 38 49  -> 43
+	rep: 46 36  -> 44
+	rep: 46 36  -> 45
+	rep: 33  -> 46
+	rep: 0 4  -> 47
+	rep: 0 4  -> 48
+	rep: 11 24  -> 49
+generation 11:
+	ind: 	70.5965	* GINI TFIDF
+	ind: 	26.3105	- GSS GSS
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	68.6885	+ GSS GSS
+	ind: 	70.8375	+ * DOM MaxDom + CE GINI
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	72.2635	* DOM MaxDom
+	ind: 	72.0024	* GINI TF
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	70.9379	% * DF IDF + GSS GSS
+	ind: 	68.2466	% * DF IDF + GSS GSS
+	ind: 	26.7122	% MaxTFICF CTD
+	ind: 	70.2149	+ CE GINI
+	ind: 	53.8863	% TFICF TFIDF
+	ind: 	68.5479	% * DF IDF * DOM MaxDom
+	ind: 	70.9781	% * DF IDF + GSS GSS
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	71.5806	* GINI TF
+	ind: 	69.4517	* GINI TF
+	ind: 	70.6367	Pow * DF IDF + GSS GSS
+	ind: 	39.4055	% * DF IDF - GSS GSS
+	ind: 	71.0584	+ GSS GSS
+	ind: 	72.2033	* DOM MaxDom
+	ind: 	74.2519	* MaxCTD MaxCC
+	ind: 	69.9337	* GINI TF
+	ind: 	72.0024	* GINI TF
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	72.3438	* GINI TF
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	70.5965	* GINI TFIDF
+	ind: 	69.6525	Pow * DF IDF + GSS GSS
+	ind: 	3.2135	- GINI TF
+	ind: 	68.6684	+ GSS GSS
+	ind: 	27.5356	% MaxTFICF CTD
+	ind: 	47.379	% TFICF TFIDF
+	ind: 	62.382	* CE TF
+	ind: 	62.4423	% * DF IDF * * MaxDom MaxTFICF * GINI TF
+	ind: 	74.2318	* DOM MaxDom
+	ind: 	57.9233	* MaxDom MaxTFICF
+	ind: 	53.8662	% TFICF TFIDF
+	ind: 	13.3963	- Log TF sumDF * GINI TF
+	ind: 	65.6758	% GINI TF
+	ind: 	72.8058	+ CE GINI
+	ind: 	70.9379	% * DF IDF + GSS GSS
+	ind: 	51.0544	- GSS GSS
+	ind: 	69.8936	+ GINI TF
+	ind: 	72.0426	* GINI TF
+	ind: 	67.7244	* MaxDom MaxTFICF
+	ind: 	67.3228	* MaxDom MaxTFICF
+	rep: 28  -> 28
+	rep: 3 11  -> 0
+	rep: 3 11  -> 1
+	rep: 25 45  -> 2
+	rep: 25 45  -> 3
+	rep: 20 34  -> 4
+	rep: 20 34  -> 5
+	rep: 47  -> 6
+	rep: 5 47  -> 7
+	rep: 5 47  -> 8
+	rep: 25 41  -> 9
+	rep: 25 41  -> 10
+	rep: 3 34  -> 11
+	rep: 3 34  -> 12
+	rep: 43  -> 13
+	rep: 30 41  -> 14
+	rep: 30 41  -> 15
+	rep: 22 21  -> 16
+	rep: 22 21  -> 17
+	rep: 26 47  -> 18
+	rep: 26 47  -> 19
+	rep: 24  -> 20
+	rep: 15 18  -> 21
+	rep: 15 18  -> 22
+	rep: 12 14  -> 23
+	rep: 12 14  -> 24
+	rep: 14 1  -> 25
+	rep: 14 1  -> 26
+	rep: 43 25  -> 27
+	rep: 43 25  -> 29
+	rep: 19  -> 30
+	rep: 31 37  -> 31
+	rep: 31 37  -> 32
+	rep: 27 30  -> 33
+	rep: 27 30  -> 34
+	rep: 17 31  -> 35
+	rep: 17 31  -> 36
+	rep: 37  -> 37
+	rep: 3 48  -> 38
+	rep: 3 48  -> 39
+	rep: 44 34  -> 40
+	rep: 44 34  -> 41
+	rep: 7 33  -> 42
+	rep: 7 33  -> 43
+	rep: 29 3  -> 44
+	rep: 29 3  -> 45
+	rep: 6  -> 46
+	rep: 42 36  -> 47
+	rep: 42 36  -> 48
+	rep: 28 34  -> 49
+generation 12:
+	ind: 	68.4073	+ GSS GSS
+	ind: 	28.0779	% MaxTFICF CTD
+	ind: 	71.5806	* GINI TF
+	ind: 	52.5206	- GSS GSS
+	ind: 	26.3105	% * DF IDF - GSS GSS
+	ind: 	26.7122	% MaxTFICF CTD
+	ind: 	72.0426	* GINI TF
+	ind: 	73.9305	* DOM MaxDom
+	ind: 	71.0183	* GINI TF
+	ind: 	71.9422	* GINI TF
+	ind: 	18.7588	- Log TF sumDF * GINI TF
+	ind: 	28.2989	% MaxTFICF CTD
+	ind: 	68.4073	+ GSS GSS
+	ind: 	72.8058	+ CE GINI
+	ind: 	69.773	* GINI TF
+	ind: 	64.0088	- Log TF sumDF * GINI TFIDF
+	ind: 	68.4676	+ GSS GSS
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	69.4517	* GINI TF
+	ind: 	69.9337	* GINI TF
+	ind: 	73.6694	% * GINI TF + GSS GSS
+	ind: 	67.6039	* DF IDF
+	ind: 	67.7445	* DF IDF
+	ind: 	62.2615	% + CE GINI * DOM MaxDom
+	ind: 	52.4603	% * DF IDF - GSS GSS
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	72.3438	* GINI TF
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	72.6652	+ CE GINI
+	ind: 	70.6367	Pow * DF IDF + GSS GSS
+	ind: 	70.5965	Pow * DF IDF + GSS GSS
+	ind: 	62.3418	% * DF IDF * * MaxDom MaxTFICF * GINI TF
+	ind: 	69.4517	* GINI TF
+	ind: 	72.4443	* GINI TFIDF
+	ind: 	69.8333	* DF IDF
+	ind: 	69.1906	Pow * GINI TF + GSS GSS
+	ind: 	62.4423	% * DF IDF * * MaxDom MaxTFICF * GINI TF
+	ind: 	67.9253	* MaxDom MaxTFICF
+	ind: 	68.6483	+ GSS GSS
+	ind: 	70.9379	% * DF IDF + GSS GSS
+	ind: 	27.6562	% MaxTFICF CTD
+	ind: 	69.8132	* GINI TF
+	ind: 	68.6684	+ GSS GSS
+	ind: 	68.0458	Log GSS GSS
+	ind: 	72.3238	* DOM MaxDom
+	ind: 	72.2635	* DOM MaxDom
+	ind: 	65.716	% GINI TF
+	ind: 	62.382	* CE TF
+	ind: 	50.7532	% MaxTFICF CTD
+	rep: 28  -> 28
+	rep: 13 10  -> 0
+	rep: 13 10  -> 1
+	rep: 34 25  -> 2
+	rep: 34 25  -> 3
+	rep: 40  -> 4
+	rep: 21  -> 5
+	rep: 26 43  -> 6
+	rep: 26 43  -> 7
+	rep: 17 3  -> 8
+	rep: 17 3  -> 9
+	rep: 7 10  -> 10
+	rep: 7 10  -> 11
+	rep: 45 11  -> 12
+	rep: 45 11  -> 13
+	rep: 31 11  -> 14
+	rep: 31 11  -> 15
+	rep: 46 12  -> 16
+	rep: 46 12  -> 17
+	rep: 21 45  -> 18
+	rep: 21 45  -> 19
+	rep: 36 3  -> 20
+	rep: 36 3  -> 21
+	rep: 42 10  -> 22
+	rep: 42 10  -> 23
+	rep: 9 40  -> 24
+	rep: 9 40  -> 25
+	rep: 17 12  -> 26
+	rep: 17 12  -> 27
+	rep: 30 23  -> 29
+	rep: 30 23  -> 30
+	rep: 46 43  -> 31
+	rep: 46 43  -> 32
+	rep: 34 39  -> 33
+	rep: 34 39  -> 34
+	rep: 14  -> 35
+	rep: 45 24  -> 36
+	rep: 45 24  -> 37
+	rep: 18  -> 38
+	rep: 31 5  -> 39
+	rep: 31 5  -> 40
+	rep: 44 22  -> 41
+	rep: 44 22  -> 42
+	rep: 29 34  -> 43
+	rep: 29 34  -> 44
+	rep: 35 23  -> 45
+	rep: 35 23  -> 46
+	rep: 17 45  -> 47
+	rep: 17 45  -> 48
+	rep: 39 0  -> 49
+generation 13:
+	ind: 	72.8058	+ CE GINI
+	ind: 	18.7588	- Log TF sumDF * GINI TF
+	ind: 	52.0386	- GSS GSS
+	ind: 	68.2266	% * DF IDF * GINI TFIDF
+	ind: 	70.9379	% * DF IDF + GSS GSS
+	ind: 	73.6694	% * GINI TF + GSS GSS
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	68.4073	+ GSS GSS
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	52.5005	- GSS GSS
+	ind: 	73.9305	* DOM MaxDom
+	ind: 	34.2237	- Log TF sumDF * GINI TF
+	ind: 	72.3238	* DOM MaxDom
+	ind: 	28.2989	% MaxTFICF CTD
+	ind: 	69.6927	Pow * DF IDF + GSS GSS
+	ind: 	61.7594	+ MaxTFICF CTD
+	ind: 	68.5881	+ GSS GSS
+	ind: 	70.7371	+ DOM MaxDom
+	ind: 	71.4601	% * GINI TF + GSS GSS
+	ind: 	74.1715	* DOM MaxDom
+	ind: 	69.1906	Pow * GINI TF + GSS GSS
+	ind: 	52.5206	- GSS GSS
+	ind: 	69.773	* GINI TF
+	ind: 	18.9395	- Log TF sumDF * GINI TF
+	ind: 	71.9422	* GINI TF
+	ind: 	70.9379	% * DF IDF + GSS GSS
+	ind: 	71.0584	+ GSS GSS
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	69.6525	Pow * DF IDF + GSS GSS
+	ind: 	67.9253	* DF IDF
+	ind: 	72.2635	* DOM MaxDom
+	ind: 	68.568	+ GSS GSS
+	ind: 	70.4961	* GINI TFIDF
+	ind: 	71.3798	+ GSS GSS
+	ind: 	69.773	* GINI TF
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	60.715	% + CE GINI * DOM MaxDom
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	69.8735	Pow + DF IDF + GSS GSS
+	ind: 	38.3209	% MaxTFICF CTD
+	ind: 	68.0257	* DF IDF
+	ind: 	27.616	- GSS GSS
+	ind: 	72.0627	* GINI TFIDF
+	ind: 	72.846	+ CE GINI
+	ind: 	69.8333	* DF IDF
+	ind: 	67.7445	* DF IDF
+	ind: 	74.1715	* DOM MaxDom
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	68.3872	+ GSS GSS
+	rep: 28  -> 28
+	rep: 10 41  -> 0
+	rep: 10 41  -> 1
+	rep: 26  -> 2
+	rep: 24 34  -> 3
+	rep: 24 34  -> 4
+	rep: 12 49  -> 5
+	rep: 12 49  -> 6
+	rep: 27  -> 7
+	rep: 36  -> 8
+	rep: 26 3  -> 9
+	rep: 26 3  -> 10
+	rep: 5 45  -> 11
+	rep: 5 45  -> 12
+	rep: 34 16  -> 13
+	rep: 34 16  -> 14
+	rep: 38 27  -> 15
+	rep: 38 27  -> 16
+	rep: 49 23  -> 17
+	rep: 49 23  -> 18
+	rep: 8  -> 19
+	rep: 21  -> 20
+	rep: 44 23  -> 21
+	rep: 44 23  -> 22
+	rep: 5 3  -> 23
+	rep: 5 3  -> 24
+	rep: 28 38  -> 25
+	rep: 28 38  -> 26
+	rep: 33 30  -> 27
+	rep: 33 30  -> 29
+	rep: 45 21  -> 30
+	rep: 45 21  -> 31
+	rep: 25  -> 32
+	rep: 16  -> 33
+	rep: 27 15  -> 34
+	rep: 27 15  -> 35
+	rep: 11 13  -> 36
+	rep: 11 13  -> 37
+	rep: 10 30  -> 38
+	rep: 10 30  -> 39
+	rep: 25 29  -> 40
+	rep: 25 29  -> 41
+	rep: 39 45  -> 42
+	rep: 39 45  -> 43
+	rep: 31 9  -> 44
+	rep: 31 9  -> 45
+	rep: 28 19  -> 46
+	rep: 28 19  -> 47
+	rep: 8  -> 48
+	rep: 26 26  -> 49
 generation 14:
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	73.6493	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.7297	TFIDF
-	ind: 	63.6674	- DOM CHI
-	ind: 	73.6292	% TFIDF MaxGSS
-	ind: 	73.8301	+ TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	65.0733	* TFICF TFIDF
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	73.4485	% TFIDF MaxGSS
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	73.6292	% TFIDF MaxGSS
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	58.6865	* TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	65.0733	* TFICF TFIDF
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	69.1906	TFIDF
-	ind: 	63.6674	- DOM CHI
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.3597	IDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	72.4644	% TFIDF MaxGSS
-	ind: 	73.9908	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	62.1812	* TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	74.0711	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	72.2233	Pow DOM CHI
-	ind: 	72.2635	TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	71.7212	% TFIDF MaxGSS
+	ind: 	70.3756	* DF IDF
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	71.0584	+ GSS GSS
+	ind: 	72.4041	* GINI TF
+	ind: 	68.3872	+ GSS GSS
+	ind: 	68.6885	+ GSS GSS
+	ind: 	72.1631	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	70.8978	+ GSS GSS
+	ind: 	68.1462	% * DF IDF * GINI TFIDF
+	ind: 	73.4083	% * GINI TF + GSS GSS
+	ind: 	70.4559	* DF IDF
+	ind: 	71.3798	+ GSS GSS
+	ind: 	68.5881	+ GSS GSS
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	13.336	- Log TF sumDF * GINI TF
+	ind: 	68.7287	+ GSS GSS
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	52.5206	- GSS GSS
+	ind: 	39.5059	- Log TF sumDF * GINI TF
+	ind: 	70.4961	+ CE GINI
+	ind: 	70.4559	* DF IDF
+	ind: 	68.7889	% % * GINI TF + GSS GSS * GINI TFIDF
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	70.4961	* GINI TFIDF
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	67.9253	* DF IDF
+	ind: 	70.4559	* DF IDF
+	ind: 	49.7489	- GSS GSS
+	ind: 	70.9379	% * DF IDF + GSS GSS
+	ind: 	68.5881	+ GSS GSS
+	ind: 	70.7371	+ DOM MaxDom
+	ind: 	61.7594	+ MaxTFICF CTD
+	ind: 	44.4668	% MaxTFICF CTD
+	ind: 	15.5654	- Log TF sumDF * GINI TF
+	ind: 	73.8903	* DOM MaxDom
+	ind: 	67.9454	* DF IDF
+	ind: 	70.8576	% * DF IDF * GSS GSS
+	ind: 	67.5638	Pow * DF IDF + GSS GSS
+	ind: 	70.2952	Pow + DF IDF + GSS GSS
+	ind: 	68.0056	* DF IDF
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	32.6572	- GSS GSS
+	ind: 	74.1715	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	71.0584	+ GSS GSS
+	rep: 28  -> 28
+	rep: 10 29  -> 0
+	rep: 10 29  -> 1
+	rep: 48  -> 2
+	rep: 48 41  -> 3
+	rep: 48 41  -> 4
+	rep: 23 41  -> 5
+	rep: 23 41  -> 6
+	rep: 47 4  -> 7
+	rep: 47 4  -> 8
+	rep: 28 31  -> 9
+	rep: 28 31  -> 10
+	rep: 8 11  -> 11
+	rep: 8 11  -> 12
+	rep: 34 4  -> 13
+	rep: 34 4  -> 14
+	rep: 48  -> 15
+	rep: 47 45  -> 16
+	rep: 47 45  -> 17
+	rep: 40 4  -> 18
+	rep: 40 4  -> 19
+	rep: 25 6  -> 20
+	rep: 25 6  -> 21
+	rep: 32 29  -> 22
+	rep: 32 29  -> 23
+	rep: 15  -> 24
+	rep: 28 10  -> 25
+	rep: 28 10  -> 26
+	rep: 30 18  -> 27
+	rep: 30 18  -> 29
+	rep: 6 5  -> 30
+	rep: 6 5  -> 31
+	rep: 38 27  -> 32
+	rep: 38 27  -> 33
+	rep: 27 18  -> 34
+	rep: 27 18  -> 35
+	rep: 3  -> 36
+	rep: 1 30  -> 37
+	rep: 1 30  -> 38
+	rep: 33 21  -> 39
+	rep: 33 21  -> 40
+	rep: 48  -> 41
+	rep: 27 4  -> 42
+	rep: 27 4  -> 43
+	rep: 8 29  -> 44
+	rep: 8 29  -> 45
+	rep: 5 39  -> 46
+	rep: 5 39  -> 47
+	rep: 43 45  -> 48
+	rep: 43 45  -> 49
 generation 15:
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.3882	% TFIDF MaxGSS
-	ind: 	73.6493	% TFIDF MaxGSS
-	ind: 	63.2255	- DOM CHI
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	71.9422	% TFIDF MaxGSS
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.4485	% TFIDF MaxGSS
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	72.3639	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	65.0733	* TFICF TFIDF
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	65.475	* TFICF TFIDF
-	ind: 	72.2635	TFIDF
-	ind: 	71.7614	IDF
-	ind: 	73.4485	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	71.3597	IDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	72.4242	TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	67.1219	* TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	74.0711	% TFIDF MaxGSS
-	ind: 	66.7805	* TFICF TFIDF
-	ind: 	67.1219	* TFICF TFIDF
-	ind: 	72.2635	TFIDF
-	ind: 	65.475	* TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
+	ind: 	68.4073	% * DF IDF * GINI TFIDF
+	ind: 	70.3555	* DF IDF
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	66.5194	- DOM MaxDom
+	ind: 	69.6525	Pow * DF IDF + GSS GSS
+	ind: 	67.7445	* DF IDF
+	ind: 	67.5638	Pow * DF IDF + GSS GSS
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	70.4559	+ GSS GSS
+	ind: 	59.8915	- GSS GSS
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	71.4601	% * GINI TF + GSS GSS
+	ind: 	70.3354	% DOM MaxDom
+	ind: 	68.2266	+ GSS GSS
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	46.2744	- GSS GSS
+	ind: 	68.4274	% * DF IDF * GSS GSS
+	ind: 	68.4073	+ GSS GSS
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	73.5288	* DOM MaxDom
+	ind: 	70.3957	* DF IDF
+	ind: 	68.3872	% * DF IDF + GSS GSS
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	69.8534	% * DF IDF * GINI TFIDF
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	71.0785	+ GSS GSS
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	68.0659	* DF IDF
+	ind: 	68.3872	+ GSS GSS
+	ind: 	72.3238	* DOM MaxDom
+	ind: 	71.9823	* GINI TFIDF
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	70.5363	* GINI TFIDF
+	ind: 	68.6684	+ GSS GSS
+	ind: 	72.4041	* GINI TF
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	70.4559	* DF IDF
+	ind: 	69.7128	* GINI TF
+	ind: 	51.3557	- Log TF sumDF + GSS GSS
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	70.5363	* GINI TFIDF
+	ind: 	68.4073	+ GSS GSS
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	67.9253	* DF IDF
+	ind: 	67.9655	* DF IDF
+	ind: 	68.6684	+ GSS GSS
+	ind: 	68.0257	* DF IDF
+	ind: 	53.0428	- GSS GSS
+	rep: 28  -> 28
+	rep: 41 10  -> 0
+	rep: 41 10  -> 1
+	rep: 19 40  -> 2
+	rep: 19 40  -> 3
+	rep: 32  -> 4
+	rep: 21  -> 5
+	rep: 41  -> 6
+	rep: 16  -> 7
+	rep: 2 36  -> 8
+	rep: 2 36  -> 9
+	rep: 24  -> 10
+	rep: 34 4  -> 11
+	rep: 34 4  -> 12
+	rep: 6  -> 13
+	rep: 33 27  -> 14
+	rep: 33 27  -> 15
+	rep: 44 11  -> 16
+	rep: 44 11  -> 17
+	rep: 10 22  -> 18
+	rep: 10 22  -> 19
+	rep: 31 40  -> 20
+	rep: 31 40  -> 21
+	rep: 20  -> 22
+	rep: 43 45  -> 23
+	rep: 43 45  -> 24
+	rep: 26 29  -> 25
+	rep: 26 29  -> 26
+	rep: 19 19  -> 27
+	rep: 19 19  -> 29
+	rep: 41 26  -> 30
+	rep: 41 26  -> 31
+	rep: 16 39  -> 32
+	rep: 16 39  -> 33
+	rep: 24 5  -> 34
+	rep: 24 5  -> 35
+	rep: 28 1  -> 36
+	rep: 28 1  -> 37
+	rep: 11  -> 38
+	rep: 34 29  -> 39
+	rep: 34 29  -> 40
+	rep: 7 38  -> 41
+	rep: 7 38  -> 42
+	rep: 43 5  -> 43
+	rep: 43 5  -> 44
+	rep: 2  -> 45
+	rep: 9 49  -> 46
+	rep: 9 49  -> 47
+	rep: 36  -> 48
+	rep: 28 21  -> 49
 generation 16:
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.7815	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	62.9845	* TFICF TFIDF
-	ind: 	65.2541	* TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	72.8861	+ TFICF + TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.2878	+ TFICF TFIDF
-	ind: 	72.8861	+ TFICF + TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	65.475	* TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.4485	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	72.4242	TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	67.1219	* TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	74.0711	% TFIDF MaxGSS
-	ind: 	72.1229	+ TFICF TFIDF
-	ind: 	67.1219	* TFICF TFIDF
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	65.475	* TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	73.5891	% TFIDF MaxGSS
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	68.809	Log TF sumDF
+	ind: 	51.3758	- + GSS GSS + GSS GSS
+	ind: 	71.9823	* GINI TFIDF
+	ind: 	73.5288	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	70.3153	+ GINI TF
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	70.3756	* GINI TFIDF
+	ind: 	69.7329	Pow * DF IDF + GSS GSS
+	ind: 	67.5638	Pow * DF IDF + GSS GSS
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	68.6684	+ GSS GSS
+	ind: 	73.9506	Pow DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	70.3957	* DF IDF
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	29.8253	- Log TF sumDF + GSS GSS
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	67.7445	* DF IDF
+	ind: 	68.6282	+ GSS GSS
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	71.1388	* DF IDF
+	ind: 	68.4073	+ GSS GSS
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	68.4073	+ GSS GSS
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	70.6367	* GINI TF
+	ind: 	65.1135	- DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	70.476	* DF IDF
+	ind: 	71.8819	* DF IDF
+	ind: 	73.8903	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	70.5363	* GINI TFIDF
+	ind: 	68.0659	* DF IDF
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	71.8819	* DF IDF
+	ind: 	68.4073	+ GSS GSS
+	ind: 	67.7445	* DF IDF
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	59.8915	- GSS GSS
+	ind: 	53.0428	- GSS GSS
+	ind: 	72.4041	* GINI TF
+	ind: 	74.1715	* DOM MaxDom
+	rep: 28  -> 28
+	rep: 6 19  -> 0
+	rep: 6 19  -> 1
+	rep: 5 15  -> 2
+	rep: 5 15  -> 3
+	rep: 20  -> 4
+	rep: 7 48  -> 5
+	rep: 7 48  -> 6
+	rep: 20 23  -> 7
+	rep: 20 23  -> 8
+	rep: 16 19  -> 9
+	rep: 16 19  -> 10
+	rep: 17 15  -> 11
+	rep: 17 15  -> 12
+	rep: 19 24  -> 13
+	rep: 19 24  -> 14
+	rep: 1 12  -> 15
+	rep: 1 12  -> 16
+	rep: 29  -> 17
+	rep: 42 43  -> 18
+	rep: 42 43  -> 19
+	rep: 48 47  -> 20
+	rep: 48 47  -> 21
+	rep: 6 21  -> 22
+	rep: 6 21  -> 23
+	rep: 22 40  -> 24
+	rep: 22 40  -> 25
+	rep: 49 47  -> 26
+	rep: 49 47  -> 27
+	rep: 1 2  -> 29
+	rep: 1 2  -> 30
+	rep: 30 2  -> 31
+	rep: 30 2  -> 32
+	rep: 48 39  -> 33
+	rep: 48 39  -> 34
+	rep: 38 22  -> 35
+	rep: 38 22  -> 36
+	rep: 24 3  -> 37
+	rep: 24 3  -> 38
+	rep: 16 37  -> 39
+	rep: 16 37  -> 40
+	rep: 41 40  -> 41
+	rep: 41 40  -> 42
+	rep: 8 22  -> 43
+	rep: 8 22  -> 44
+	rep: 2 23  -> 45
+	rep: 2 23  -> 46
+	rep: 28 16  -> 47
+	rep: 28 16  -> 48
+	rep: 42 15  -> 49
 generation 17:
-	ind: 	73.087	% TFIDF MaxGSS
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.81	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	67.1219	* TFICF TFIDF
-	ind: 	62.9845	* TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	71.8819	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.2878	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.6292	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	72.8861	+ TFICF + TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	74.0108	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.2878	+ TFICF TFIDF
-	ind: 	72.8861	+ TFICF + TFICF TFIDF
-	ind: 	65.0733	* TFICF TFIDF
-	ind: 	65.475	* TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.2878	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	67.1219	* TFICF TFIDF
-	ind: 	73.2878	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	62.9845	* TFICF TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	74.0711	% TFIDF MaxGSS
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	65.475	* TFICF TFIDF
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	65.475	* TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	66.9211	* TFICF TFIDF
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	70.3957	* DF IDF
+	ind: 	72.2836	* DOM MaxDom
+	ind: 	70.6768	+ GSS GSS
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	72.0024	* GINI TF
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	71.1589	* DF IDF
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.0108	Pow DOM MaxDom
+	ind: 	67.7646	* DF IDF
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	70.4157	+ GSS GSS
+	ind: 	71.0384	+ GSS GSS
+	ind: 	67.9253	* DF IDF
+	ind: 	73.2878	% DOM MaxDom
+	ind: 	69.3513	Pow * DF IDF + GSS GSS
+	ind: 	68.4073	+ GSS GSS
+	ind: 	70.1346	* DF IDF
+	ind: 	71.0384	+ GSS GSS
+	ind: 	72.3639	* GINI TF
+	ind: 	51.4561	- GSS GSS
+	ind: 	74.1715	* DOM MaxDom
+	ind: 	58.3049	- Pow TF sumDF + GSS GSS
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	67.7847	* DF IDF
+	ind: 	52.5407	- GSS GSS
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	71.1187	Log TF sumDF
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	71.1187	Log TF sumDF
+	ind: 	72.3037	* GINI TF
+	ind: 	72.1229	* GINI TFIDF
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	68.6282	+ GSS GSS
+	ind: 	51.3758	- + GSS GSS + GSS GSS
+	ind: 	74.0108	Pow DOM MaxDom
+	ind: 	72.2434	* DOM MaxDom
+	ind: 	72.3238	* DOM MaxDom
+	ind: 	70.476	* DF IDF
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	68.8291	Log TF sumDF
+	ind: 	67.7646	* DF IDF
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	72.6049	+ GSS GSS
+	rep: 28  -> 28
+	rep: 2 8  -> 0
+	rep: 2 8  -> 1
+	rep: 6 21  -> 2
+	rep: 6 21  -> 3
+	rep: 49 33  -> 4
+	rep: 49 33  -> 5
+	rep: 2 46  -> 6
+	rep: 2 46  -> 7
+	rep: 20  -> 8
+	rep: 20 2  -> 9
+	rep: 20 2  -> 10
+	rep: 6 36  -> 11
+	rep: 6 36  -> 12
+	rep: 29 10  -> 13
+	rep: 29 10  -> 14
+	rep: 8 30  -> 15
+	rep: 8 30  -> 16
+	rep: 9 39  -> 17
+	rep: 9 39  -> 18
+	rep: 8  -> 19
+	rep: 19 37  -> 20
+	rep: 19 37  -> 21
+	rep: 11  -> 22
+	rep: 47 41  -> 23
+	rep: 47 41  -> 24
+	rep: 32 13  -> 25
+	rep: 32 13  -> 26
+	rep: 29  -> 27
+	rep: 35  -> 29
+	rep: 0 21  -> 30
+	rep: 0 21  -> 31
+	rep: 4 44  -> 32
+	rep: 4 44  -> 33
+	rep: 0 2  -> 34
+	rep: 0 2  -> 35
+	rep: 0  -> 36
+	rep: 49 44  -> 37
+	rep: 49 44  -> 38
+	rep: 11 38  -> 39
+	rep: 11 38  -> 40
+	rep: 29 37  -> 41
+	rep: 29 37  -> 42
+	rep: 20 25  -> 43
+	rep: 20 25  -> 44
+	rep: 35 13  -> 45
+	rep: 35 13  -> 46
+	rep: 11 12  -> 47
+	rep: 11 12  -> 48
+	rep: 29 14  -> 49
 generation 18:
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.3882	% TFIDF MaxGSS
-	ind: 	71.8819	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	74.051	% TFIDF MaxGSS
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	74.0108	% TFIDF MaxGSS
-	ind: 	73.6895	+ TFICF TFIDF
-	ind: 	73.2276	+ TFICF TFIDF
-	ind: 	74.051	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	65.475	* TFICF TFIDF
-	ind: 	73.3481	% TFIDF MaxGSS
-	ind: 	71.8217	+ TFICF TFIDF
-	ind: 	72.2434	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	67.1219	* TFICF TFIDF
-	ind: 	73.3882	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.81	+ TFICF TFIDF
-	ind: 	62.9845	* TFICF TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.3481	% TFIDF MaxGSS
-	ind: 	66.9211	* TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	66.9211	* TFICF TFIDF
+	ind: 	72.1631	* DOM MaxDom
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	52.2193	- GSS GSS
+	ind: 	73.2878	* GINI TF
+	ind: 	71.3999	+ GSS GSS
+	ind: 	68.0458	* DF IDF
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	72.3639	* GINI TF
+	ind: 	72.0024	* GINI TF
+	ind: 	72.1631	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	69.6927	* DF IDF
+	ind: 	73.81	* DOM MaxDom
+	ind: 	68.8291	Log TF sumDF
+	ind: 	74.0108	Pow DOM MaxDom
+	ind: 	74.0108	Pow DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	68.4073	+ GSS GSS
+	ind: 	71.0183	+ GSS GSS
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	73.9908	* DOM MaxDom
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	72.6652	% TF sumDF
+	ind: 	71.0384	+ GSS GSS
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	50.3314	- GSS GSS
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	73.2476	% DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.7899	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	70.6768	+ GSS GSS
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	51.3758	- + GSS GSS + GSS GSS
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	70.3756	+ GSS GSS
+	ind: 	71.9422	* GINI TF
+	ind: 	70.3756	+ DF IDF
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	70.4559	+ GSS GSS
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	68.6684	+ GSS GSS
+	ind: 	72.1832	* DOM MaxDom
+	rep: 28  -> 28
+	rep: 9 42  -> 0
+	rep: 9 42  -> 1
+	rep: 10 20  -> 2
+	rep: 10 20  -> 3
+	rep: 28  -> 4
+	rep: 44 20  -> 5
+	rep: 44 20  -> 6
+	rep: 38 49  -> 7
+	rep: 38 49  -> 8
+	rep: 39  -> 9
+	rep: 45 10  -> 10
+	rep: 45 10  -> 11
+	rep: 4 16  -> 12
+	rep: 4 16  -> 13
+	rep: 28  -> 14
+	rep: 23 29  -> 15
+	rep: 23 29  -> 16
+	rep: 18 35  -> 17
+	rep: 18 35  -> 18
+	rep: 13 31  -> 19
+	rep: 13 31  -> 20
+	rep: 18 49  -> 21
+	rep: 18 49  -> 22
+	rep: 28 7  -> 23
+	rep: 28 7  -> 24
+	rep: 22 47  -> 25
+	rep: 22 47  -> 26
+	rep: 11 15  -> 27
+	rep: 11 15  -> 29
+	rep: 36 2  -> 30
+	rep: 36 2  -> 31
+	rep: 11 0  -> 32
+	rep: 11 0  -> 33
+	rep: 29  -> 34
+	rep: 47 6  -> 35
+	rep: 47 6  -> 36
+	rep: 18 27  -> 37
+	rep: 18 27  -> 38
+	rep: 22 7  -> 39
+	rep: 22 7  -> 40
+	rep: 43  -> 41
+	rep: 17 35  -> 42
+	rep: 17 35  -> 43
+	rep: 2 46  -> 44
+	rep: 2 46  -> 45
+	rep: 39 37  -> 46
+	rep: 39 37  -> 47
+	rep: 1 6  -> 48
+	rep: 1 6  -> 49
 generation 19:
-	ind: 	73.087	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.8016	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	72.9865	+ TFICF TFIDF
-	ind: 	73.8903	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	74.1916	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	74.0711	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.8217	+ TFICF TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	71.7614	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	67.1219	* TFICF TFIDF
-	ind: 	73.3882	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	73.4083	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	72.9865	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.6895	+ TFICF TFIDF
-	ind: 	74.3523	Pow TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.4083	% TFIDF MaxGSS
+	ind: 	71.5806	* GINI TF
+	ind: 	71.0183	+ GSS GSS
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	68.4676	+ GSS GSS
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	70.9781	+ GSS GSS
+	ind: 	67.7445	+ DF IDF
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.1715	* DOM MaxDom
+	ind: 	69.4316	* DOM MaxDom
+	ind: 	73.2878	* GINI TF
+	ind: 	68.8291	Log TF sumDF
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.7899	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.051	* DOM MaxDom
+	ind: 	27.6762	- GSS GSS
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	73.9305	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	69.0299	- DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	74.1715	* DOM MaxDom
+	ind: 	68.0257	* DF IDF
+	ind: 	73.9908	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	71.9422	* GINI TF
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	71.3798	+ GSS GSS
+	ind: 	73.81	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	71.3798	+ GSS GSS
+	ind: 	68.0257	* DF IDF
+	ind: 	72.2836	* DOM MaxDom
+	rep: 4  -> 4
+	rep: 21 45  -> 0
+	rep: 21 45  -> 1
+	rep: 9 44  -> 2
+	rep: 9 44  -> 3
+	rep: 40 47  -> 5
+	rep: 40 47  -> 6
+	rep: 45  -> 7
+	rep: 29 6  -> 8
+	rep: 29 6  -> 9
+	rep: 17 3  -> 10
+	rep: 17 3  -> 11
+	rep: 12 44  -> 12
+	rep: 12 44  -> 13
+	rep: 34 6  -> 14
+	rep: 34 6  -> 15
+	rep: 21 36  -> 16
+	rep: 21 36  -> 17
+	rep: 46 49  -> 18
+	rep: 46 49  -> 19
+	rep: 4 12  -> 20
+	rep: 4 12  -> 21
+	rep: 37  -> 22
+	rep: 28 36  -> 23
+	rep: 28 36  -> 24
+	rep: 7 41  -> 25
+	rep: 7 41  -> 26
+	rep: 16  -> 27
+	rep: 28  -> 28
+	rep: 4 45  -> 29
+	rep: 4 45  -> 30
+	rep: 23 43  -> 31
+	rep: 23 43  -> 32
+	rep: 27 32  -> 33
+	rep: 27 32  -> 34
+	rep: 2  -> 35
+	rep: 49 22  -> 36
+	rep: 49 22  -> 37
+	rep: 16  -> 38
+	rep: 19 21  -> 39
+	rep: 19 21  -> 40
+	rep: 23 47  -> 41
+	rep: 23 47  -> 42
+	rep: 23 23  -> 43
+	rep: 23 23  -> 44
+	rep: 25 13  -> 45
+	rep: 25 13  -> 46
+	rep: 27  -> 47
+	rep: 10 20  -> 48
+	rep: 10 20  -> 49
 generation 20:
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	74.051	% TFIDF MaxGSS
-	ind: 	71.6409	+ TFICF TFIDF
-	ind: 	73.8903	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.8301	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	36.0514	Pow TFICF TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.8903	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.8903	% TFIDF MaxGSS
-	ind: 	72.9865	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.3079	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	73.8903	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	74.1916	% TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	74.0711	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.8819	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	71.9622	Pow TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.3523	Pow TFIDF MaxGSS
-	ind: 	39.767	Pow TFICF TFIDF
-	ind: 	67.1219	* TFICF TFIDF
-	ind: 	73.3882	% TFIDF MaxGSS
-	ind: 	71.8016	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	73.4083	% TFIDF MaxGSS
-	ind: 	39.767	Pow TFICF TFIDF
-	ind: 	72.9865	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	65.4951	* TFICF TFIDF
-	ind: 	71.8217	+ TFICF TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	65.475	* TFICF TFIDF
-	ind: 	73.4083	% TFIDF MaxGSS
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	71.4802	+ GSS GSS
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	71.3798	+ GSS GSS
+	ind: 	73.81	* DOM MaxDom
+	ind: 	70.9781	+ DF IDF
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	70.4961	+ GSS GSS
+	ind: 	72.6049	+ GSS GSS
+	ind: 	72.3438	* GINI TF
+	ind: 	73.81	* DOM MaxDom
+	ind: 	70.9781	+ DF IDF
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	70.3957	* DF IDF
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	72.2836	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	73.2878	* GINI TF
+	ind: 	73.9908	Pow DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	70.8777	* DF IDF
+	ind: 	71.9422	* GINI TF
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	73.7899	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	73.8903	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	68.4274	+ GSS GSS
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	68.8291	Log TF sumDF
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	47.2786	- GSS GSS
+	rep: 20  -> 20
+	rep: 31 14  -> 0
+	rep: 31 14  -> 1
+	rep: 35 37  -> 2
+	rep: 35 37  -> 3
+	rep: 20 2  -> 4
+	rep: 20 2  -> 5
+	rep: 44 49  -> 6
+	rep: 44 49  -> 7
+	rep: 33  -> 8
+	rep: 12 42  -> 9
+	rep: 12 42  -> 10
+	rep: 36  -> 11
+	rep: 37  -> 12
+	rep: 33 38  -> 13
+	rep: 33 38  -> 14
+	rep: 34 2  -> 15
+	rep: 34 2  -> 16
+	rep: 45 14  -> 17
+	rep: 45 14  -> 18
+	rep: 39 32  -> 19
+	rep: 39 32  -> 21
+	rep: 48 5  -> 22
+	rep: 48 5  -> 23
+	rep: 26 21  -> 24
+	rep: 26 21  -> 25
+	rep: 27 32  -> 26
+	rep: 27 32  -> 27
+	rep: 28 28  -> 28
+	rep: 28 28  -> 29
+	rep: 29  -> 30
+	rep: 33 24  -> 31
+	rep: 33 24  -> 32
+	rep: 29 45  -> 33
+	rep: 29 45  -> 34
+	rep: 20 39  -> 35
+	rep: 20 39  -> 36
+	rep: 33 24  -> 37
+	rep: 33 24  -> 38
+	rep: 7  -> 39
+	rep: 47 45  -> 40
+	rep: 47 45  -> 41
+	rep: 30 6  -> 42
+	rep: 30 6  -> 43
+	rep: 23  -> 44
+	rep: 44 36  -> 45
+	rep: 44 36  -> 46
+	rep: 4 22  -> 47
+	rep: 4 22  -> 48
+	rep: 4 48  -> 49
 generation 21:
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	74.051	% TFIDF MaxGSS
-	ind: 	71.6409	+ TFICF TFIDF
-	ind: 	73.8301	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	65.3746	* TFICF TFIDF
-	ind: 	73.5891	% TFIDF MaxGSS
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	50.4318	Log TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.3523	Pow TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	72.9865	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.2476	+ TFICF TFIDF
-	ind: 	72.4041	+ TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	74.1916	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	71.9622	Pow TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.3523	Pow TFIDF MaxGSS
-	ind: 	39.767	Pow TFICF TFIDF
-	ind: 	67.1219	* TFICF TFIDF
-	ind: 	73.3882	% TFIDF MaxGSS
-	ind: 	62.5628	* TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	39.767	Pow TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	71.8819	+ TFICF TFIDF
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	71.8217	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.1314	* TFIDF MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	73.0267	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	73.9908	* DOM MaxDom
+	ind: 	72.2836	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	47.2786	- GSS GSS
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	71.0986	+ GSS GSS
+	ind: 	70.6768	+ GSS GSS
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.8301	* DOM MaxDom
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.051	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	71.9422	* GINI TF
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	70.3957	* DF IDF
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.8703	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	70.8777	* DF IDF
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	70.6768	+ GSS GSS
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	rep: 20  -> 20
+	rep: 28 7  -> 0
+	rep: 28 7  -> 1
+	rep: 27 2  -> 2
+	rep: 27 2  -> 3
+	rep: 27 45  -> 4
+	rep: 27 45  -> 5
+	rep: 34 22  -> 6
+	rep: 34 22  -> 7
+	rep: 44 24  -> 8
+	rep: 44 24  -> 9
+	rep: 39  -> 10
+	rep: 40 16  -> 11
+	rep: 40 16  -> 12
+	rep: 49 23  -> 13
+	rep: 49 23  -> 14
+	rep: 40 6  -> 15
+	rep: 40 6  -> 16
+	rep: 25  -> 17
+	rep: 29  -> 18
+	rep: 48 16  -> 19
+	rep: 48 16  -> 21
+	rep: 34 11  -> 22
+	rep: 34 11  -> 23
+	rep: 48 1  -> 24
+	rep: 48 1  -> 25
+	rep: 34  -> 26
+	rep: 34 22  -> 27
+	rep: 34 22  -> 28
+	rep: 10  -> 29
+	rep: 20 17  -> 30
+	rep: 20 17  -> 31
+	rep: 27 15  -> 32
+	rep: 27 15  -> 33
+	rep: 30  -> 34
+	rep: 25 6  -> 35
+	rep: 25 6  -> 36
+	rep: 28 24  -> 37
+	rep: 28 24  -> 38
+	rep: 19 2  -> 39
+	rep: 19 2  -> 40
+	rep: 14  -> 41
+	rep: 46 5  -> 42
+	rep: 46 5  -> 43
+	rep: 34  -> 44
+	rep: 40 1  -> 45
+	rep: 40 1  -> 46
+	rep: 13  -> 47
+	rep: 32 42  -> 48
+	rep: 32 42  -> 49
 generation 22:
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.81	Pow TFIDF MaxGSS
-	ind: 	72.1832	Pow TFIDF MaxGSS
-	ind: 	73.8301	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.1271	Pow TFIDF MaxGSS
-	ind: 	73.087	% TFIDF MaxGSS
-	ind: 	74.3523	Pow TFIDF MaxGSS
-	ind: 	71.7212	+ TFICF TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	37.618	Pow TFICF TFIDF
-	ind: 	50.4318	Log TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	65.8767	* TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.2476	+ TFICF TFIDF
-	ind: 	72.4041	+ TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1916	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	71.9622	Pow TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.9622	Pow TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	74.3523	Pow TFIDF MaxGSS
-	ind: 	74.051	% TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	62.5628	* TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	74.0108	Pow TFIDF MaxGSS
-	ind: 	73.6694	% TFIDF CC
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	73.81	Pow TFIDF MaxGSS
-	ind: 	73.8301	+ TFICF TFIDF
-	ind: 	74.3523	Pow TFIDF MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
+	ind: 	59.8915	- GSS GSS
+	ind: 	73.7297	* DOM MaxDom
+	ind: 	74.1715	* DOM MaxDom
+	ind: 	72.1631	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	73.2878	* GINI TF
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	73.4887	MaxDom
+	ind: 	71.2794	* DOM * DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	73.9506	Pow DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	72.7656	Pow DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	72.4844	+ DOM MaxDom
+	ind: 	70.6768	+ GSS GSS
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	72.2836	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.2878	* GINI TF
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	72.1631	* DOM MaxDom
+	ind: 	74.051	* DOM MaxDom
+	ind: 	73.8301	* DOM MaxDom
+	ind: 	72.2836	* DOM MaxDom
+	ind: 	72.3037	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.0267	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	rep: 20  -> 20
+	rep: 13 40  -> 0
+	rep: 13 40  -> 1
+	rep: 34  -> 2
+	rep: 2  -> 3
+	rep: 4  -> 4
+	rep: 43 39  -> 5
+	rep: 43 39  -> 6
+	rep: 47 5  -> 7
+	rep: 47 5  -> 8
+	rep: 31 48  -> 9
+	rep: 31 48  -> 10
+	rep: 49 27  -> 11
+	rep: 49 27  -> 12
+	rep: 6 3  -> 13
+	rep: 6 3  -> 14
+	rep: 33 37  -> 15
+	rep: 33 37  -> 16
+	rep: 45 21  -> 17
+	rep: 45 21  -> 18
+	rep: 2 5  -> 19
+	rep: 2 5  -> 21
+	rep: 5  -> 22
+	rep: 20 12  -> 23
+	rep: 20 12  -> 24
+	rep: 19 2  -> 25
+	rep: 19 2  -> 26
+	rep: 18 31  -> 27
+	rep: 18 31  -> 28
+	rep: 37 16  -> 29
+	rep: 37 16  -> 30
+	rep: 13 47  -> 31
+	rep: 13 47  -> 32
+	rep: 40 0  -> 33
+	rep: 40 0  -> 34
+	rep: 47 48  -> 35
+	rep: 47 48  -> 36
+	rep: 19 8  -> 37
+	rep: 19 8  -> 38
+	rep: 1 28  -> 39
+	rep: 1 28  -> 40
+	rep: 27 6  -> 41
+	rep: 27 6  -> 42
+	rep: 37 43  -> 43
+	rep: 37 43  -> 44
+	rep: 35 29  -> 45
+	rep: 35 29  -> 46
+	rep: 22 15  -> 47
+	rep: 22 15  -> 48
+	rep: 15 16  -> 49
 generation 23:
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.81	Pow TFIDF MaxGSS
-	ind: 	73.8301	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	65.3746	* TFICF TFIDF
-	ind: 	73.2075	+ TFICF + TFICF TFIDF
-	ind: 	74.3523	Pow TFIDF MaxGSS
-	ind: 	40.1085	Pow TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	50.4318	Log TFICF TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	65.8767	* TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.8819	+ TFICF TFIDF
-	ind: 	74.0711	% TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	72.2233	Pow TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	73.8301	TFIDF
-	ind: 	40.1085	Pow TFICF TFIDF
-	ind: 	73.8301	TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.9305	% TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	73.8301	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.0108	Pow TFIDF MaxGSS
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	73.81	+ TFICF TFIDF
-	ind: 	36.0514	Pow TFICF TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	65.0733	* TFICF TFIDF
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	72.1028	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.1715	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	72.3238	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	72.1631	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	71.8217	* GINI TF
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.9506	Pow DOM MaxDom
+	ind: 	70.7773	+ DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	73.569	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	73.2878	* GINI TF
+	ind: 	71.2794	* DOM * DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	70.2952	* DOM MaxDom
+	ind: 	74.051	* DOM MaxDom
+	ind: 	46.2744	- GSS GSS
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.1514	* DOM MaxDom
+	ind: 	70.7371	+ DOM MaxDom
+	ind: 	74.0108	Pow DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	69.773	* GINI TF
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	72.6049	+ GSS GSS
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.4083	MaxDom
+	ind: 	73.4686	MaxDom
+	rep: 20  -> 20
+	rep: 39 48  -> 0
+	rep: 39 48  -> 1
+	rep: 3 46  -> 2
+	rep: 3 46  -> 3
+	rep: 16 44  -> 4
+	rep: 16 44  -> 5
+	rep: 12 24  -> 6
+	rep: 12 24  -> 7
+	rep: 43  -> 8
+	rep: 1  -> 9
+	rep: 31 12  -> 10
+	rep: 31 12  -> 11
+	rep: 10 32  -> 12
+	rep: 10 32  -> 13
+	rep: 11  -> 14
+	rep: 35 46  -> 15
+	rep: 35 46  -> 16
+	rep: 11 48  -> 17
+	rep: 11 48  -> 18
+	rep: 24  -> 19
+	rep: 38 30  -> 21
+	rep: 38 30  -> 22
+	rep: 20 6  -> 23
+	rep: 20 6  -> 24
+	rep: 17 18  -> 25
+	rep: 17 18  -> 26
+	rep: 19 34  -> 27
+	rep: 19 34  -> 28
+	rep: 47 26  -> 29
+	rep: 47 26  -> 30
+	rep: 11 22  -> 31
+	rep: 11 22  -> 32
+	rep: 46 30  -> 33
+	rep: 46 30  -> 34
+	rep: 31 32  -> 35
+	rep: 31 32  -> 36
+	rep: 23  -> 37
+	rep: 15 29  -> 38
+	rep: 15 29  -> 39
+	rep: 3 21  -> 40
+	rep: 3 21  -> 41
+	rep: 14 16  -> 42
+	rep: 14 16  -> 43
+	rep: 13 40  -> 44
+	rep: 13 40  -> 45
+	rep: 4 2  -> 46
+	rep: 4 2  -> 47
+	rep: 12  -> 48
+	rep: 0 23  -> 49
 generation 24:
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	70.3756	MaxGSS
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	58.0036	- TFIDF MaxGSS
-	ind: 	73.8301	TFIDF
-	ind: 	73.2075	+ TFICF + TFICF TFIDF
-	ind: 	73.9104	+ TFICF TFIDF
-	ind: 	40.1085	Pow TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	73.3481	+ TFICF TFIDF
-	ind: 	73.7096	% TFIDF MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	50.4318	Log TFICF TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	65.8767	* TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	73.81	Pow TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	40.1085	Pow TFICF TFIDF
-	ind: 	73.8301	TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	43.4625	Pow TFICF TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	72.6652	MaxGSS
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	73.8301	TFIDF
-	ind: 	73.81	+ TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	73.8301	+ TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	70.3756	MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	72.6652	MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.81	Pow TFIDF MaxGSS
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	62.6833	* TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.81	+ TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1113	* TFIDF MaxGSS
+	ind: 	73.328	MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	70.6969	+ GSS GSS
+	ind: 	71.8217	* GINI TF
+	ind: 	69.773	* GINI TF
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	72.1028	* DOM MaxDom
+	ind: 	73.0267	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	70.2952	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	72.6049	+ GSS GSS
+	ind: 	73.4686	MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	69.6325	* DOM * DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	72.625	+ DOM MaxDom
+	ind: 	27.1139	- GSS GSS
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	49.7289	Log DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	71.2794	* DOM * DOM MaxDom
+	ind: 	71.0384	+ GSS GSS
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	72.4041	* GINI TF
+	ind: 	74.1715	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	71.8618	* GINI TF
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	rep: 20  -> 20
+	rep: 18 42  -> 0
+	rep: 18 42  -> 1
+	rep: 41 48  -> 2
+	rep: 41 48  -> 3
+	rep: 35 4  -> 4
+	rep: 35 4  -> 5
+	rep: 26  -> 6
+	rep: 15  -> 7
+	rep: 14 48  -> 8
+	rep: 14 48  -> 9
+	rep: 37 17  -> 10
+	rep: 37 17  -> 11
+	rep: 33 34  -> 12
+	rep: 33 34  -> 13
+	rep: 32 30  -> 14
+	rep: 32 30  -> 15
+	rep: 47 32  -> 16
+	rep: 47 32  -> 17
+	rep: 35 34  -> 18
+	rep: 35 34  -> 19
+	rep: 32 27  -> 21
+	rep: 32 27  -> 22
+	rep: 45 7  -> 23
+	rep: 45 7  -> 24
+	rep: 19  -> 25
+	rep: 46 10  -> 26
+	rep: 46 10  -> 27
+	rep: 2 16  -> 28
+	rep: 2 16  -> 29
+	rep: 16 4  -> 30
+	rep: 16 4  -> 31
+	rep: 40 3  -> 32
+	rep: 40 3  -> 33
+	rep: 32 11  -> 34
+	rep: 32 11  -> 35
+	rep: 19 13  -> 36
+	rep: 19 13  -> 37
+	rep: 20  -> 38
+	rep: 23  -> 39
+	rep: 47 16  -> 40
+	rep: 47 16  -> 41
+	rep: 41 10  -> 42
+	rep: 41 10  -> 43
+	rep: 21 30  -> 44
+	rep: 21 30  -> 45
+	rep: 29 14  -> 46
+	rep: 29 14  -> 47
+	rep: 35 34  -> 48
+	rep: 35 34  -> 49
 generation 25:
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	70.3756	MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.8301	TFIDF
-	ind: 	73.2075	+ TFICF + TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	40.1085	Pow TFICF TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	50.4318	Log TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	50.4318	Log TFICF TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	65.8767	* TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.81	Pow TFIDF MaxGSS
-	ind: 	73.81	Pow TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	40.1085	Pow TFICF TFIDF
-	ind: 	43.4625	Pow TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1113	* TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.9823	GSS
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.8301	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	69.4316	GSS
-	ind: 	69.773	GSS
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	72.6652	MaxGSS
-	ind: 	65.9169	* TFICF TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	50.4318	Log TFICF TFIDF
-	ind: 	42.2575	Pow TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	72.143	Pow TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
+	ind: 	73.81	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	73.2878	* GINI TF
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.4887	MaxDom
+	ind: 	72.2635	* DOM * DOM MaxDom
+	ind: 	69.3111	+ GSS GSS
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	27.7164	Log DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	71.0384	+ GSS GSS
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	72.2033	* DOM MaxDom
+	ind: 	74.1916	+ DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	52.2193	Log DOM MaxDom
+	ind: 	72.1631	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	71.5204	+ GSS GSS
+	ind: 	73.2878	* GINI TF
+	ind: 	68.5278	+ GSS GSS
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	70.6568	+ GSS GSS
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	70.2952	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.1916	* DOM MaxDom
+	ind: 	71.0384	+ GSS GSS
+	ind: 	74.051	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	26.913	Log DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	71.0584	+ GSS CC
+	ind: 	74.0912	* DOM MaxDom
+	rep: 20  -> 20
+	rep: 47  -> 0
+	rep: 28 5  -> 1
+	rep: 28 5  -> 2
+	rep: 14 16  -> 3
+	rep: 14 16  -> 4
+	rep: 38 41  -> 5
+	rep: 38 41  -> 6
+	rep: 39 41  -> 7
+	rep: 39 41  -> 8
+	rep: 17 16  -> 9
+	rep: 17 16  -> 10
+	rep: 25 21  -> 11
+	rep: 25 21  -> 12
+	rep: 22 36  -> 13
+	rep: 22 36  -> 14
+	rep: 49 0  -> 15
+	rep: 49 0  -> 16
+	rep: 34 9  -> 17
+	rep: 34 9  -> 18
+	rep: 24 4  -> 19
+	rep: 24 4  -> 21
+	rep: 34 48  -> 22
+	rep: 34 48  -> 23
+	rep: 7 36  -> 24
+	rep: 7 36  -> 25
+	rep: 38 26  -> 26
+	rep: 38 26  -> 27
+	rep: 38 3  -> 28
+	rep: 38 3  -> 29
+	rep: 48 31  -> 30
+	rep: 48 31  -> 31
+	rep: 47 8  -> 32
+	rep: 47 8  -> 33
+	rep: 7 37  -> 34
+	rep: 7 37  -> 35
+	rep: 14 41  -> 36
+	rep: 14 41  -> 37
+	rep: 32  -> 38
+	rep: 46  -> 39
+	rep: 31 45  -> 40
+	rep: 31 45  -> 41
+	rep: 17 24  -> 42
+	rep: 17 24  -> 43
+	rep: 17 11  -> 44
+	rep: 17 11  -> 45
+	rep: 9 19  -> 46
+	rep: 9 19  -> 47
+	rep: 20 19  -> 48
+	rep: 20 19  -> 49
 generation 26:
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.5447	MaxGSS
-	ind: 	73.2075	+ TFICF + TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	72.2434	TFIDF
-	ind: 	73.8301	TFIDF
-	ind: 	36.0514	Pow TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1715	* TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	73.328	TFIDF
-	ind: 	73.81	+ TFICF TFIDF
-	ind: 	74.1314	* TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1113	* TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	74.3121	* TFIDF MaxGSS
-	ind: 	73.8903	% TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	69.4316	GSS
-	ind: 	73.8903	% TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	72.6652	MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.328	% TFIDF MaxGSS
-	ind: 	50.4318	Log TFICF TFIDF
-	ind: 	42.2575	Pow TFICF TFIDF
-	ind: 	73.81	+ TFICF TFIDF
-	ind: 	72.143	Pow TFIDF MaxGSS
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.2878	* GINI TF
+	ind: 	74.1113	Pow DOM MaxDom
+	ind: 	73.8903	* DOM MaxDom
+	ind: 	73.3882	GSS
+	ind: 	72.1229	+ GSS * DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	71.0986	+ GSS GSS
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	72.2033	* DOM MaxDom
+	ind: 	74.1916	+ DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	72.2033	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	71.0584	+ GSS CC
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	56.6379	Log DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	71.0384	+ GSS GSS
+	ind: 	68.5479	+ GSS CC
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	70.2952	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	71.1187	+ GSS GSS
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	28.4796	Log DOM MaxDom
+	ind: 	68.4676	+ GSS GSS
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	73.4887	MaxDom
+	ind: 	52.2193	Log DOM MaxDom
+	ind: 	70.4559	+ GSS GSS
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	72.6049	+ GSS GSS
+	rep: 20  -> 20
+	rep: 26  -> 0
+	rep: 0 41  -> 1
+	rep: 0 41  -> 2
+	rep: 45  -> 3
+	rep: 29  -> 4
+	rep: 33  -> 5
+	rep: 20 31  -> 6
+	rep: 20 31  -> 7
+	rep: 35 45  -> 8
+	rep: 35 45  -> 9
+	rep: 1 2  -> 10
+	rep: 1 2  -> 11
+	rep: 0 48  -> 12
+	rep: 0 48  -> 13
+	rep: 37  -> 14
+	rep: 7 34  -> 15
+	rep: 7 34  -> 16
+	rep: 35 11  -> 17
+	rep: 35 11  -> 18
+	rep: 20 12  -> 19
+	rep: 20 12  -> 21
+	rep: 29  -> 22
+	rep: 37 2  -> 23
+	rep: 37 2  -> 24
+	rep: 37 40  -> 25
+	rep: 37 40  -> 26
+	rep: 20 11  -> 27
+	rep: 20 11  -> 28
+	rep: 39  -> 29
+	rep: 11  -> 30
+	rep: 9 37  -> 31
+	rep: 9 37  -> 32
+	rep: 28 3  -> 33
+	rep: 28 3  -> 34
+	rep: 16 46  -> 35
+	rep: 16 46  -> 36
+	rep: 20 15  -> 37
+	rep: 20 15  -> 38
+	rep: 38 4  -> 39
+	rep: 38 4  -> 40
+	rep: 33 18  -> 41
+	rep: 33 18  -> 42
+	rep: 12  -> 43
+	rep: 3 27  -> 44
+	rep: 3 27  -> 45
+	rep: 22 47  -> 46
+	rep: 22 47  -> 47
+	rep: 20 7  -> 48
+	rep: 20 7  -> 49
 generation 27:
-	ind: 	73.7899	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.1314	* TFIDF MaxGSS
-	ind: 	72.9865	+ TFICF TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.81	Pow TFIDF MaxGSS
-	ind: 	71.9622	GSS
-	ind: 	72.0024	TFIDF
-	ind: 	73.81	+ TFICF TFIDF
-	ind: 	73.8301	TFIDF
-	ind: 	73.8301	TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1715	* TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.0024	TFIDF
-	ind: 	51.436	Log TFICF TFIDF
-	ind: 	73.81	+ TFICF TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	74.3121	* TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	71.661	+ TFICF TFIDF
-	ind: 	69.773	+ TFICF GSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.0309	TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	72.143	Pow TFIDF MaxGSS
-	ind: 	73.8903	% TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.8301	TFIDF
-	ind: 	39.1645	Pow TFICF TFIDF
-	ind: 	45.3906	Pow TFICF TFIDF
-	ind: 	73.81	+ TFICF TFIDF
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	72.6652	MaxGSS
-	ind: 	74.1715	* TFIDF MaxGSS
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	74.4326	* TFIDF MaxGSS
-	ind: 	73.5489	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	72.143	Pow TFIDF MaxGSS
-	ind: 	72.6049	MaxGSS
-	ind: 	74.1314	* TFIDF MaxGSS
-	ind: 	72.2434	TFIDF
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	68.568	+ GSS GSS
+	ind: 	73.4887	MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	72.6451	+ GSS CC
+	ind: 	70.7371	+ DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.4284	MaxDom
+	ind: 	73.2878	* GINI TF
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	70.2952	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	73.569	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	72.6652	GINI
+	ind: 	71.8819	* Pow DOM MaxDom TF
+	ind: 	52.5005	Log DOM MaxDom
+	ind: 	71.902	Pow DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	52.5206	Log DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	72.2033	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	73.8903	* DOM MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	72.2033	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	52.5005	Log DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	70.4559	+ GSS GSS
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	rep: 34  -> 34
+	rep: 26 24  -> 0
+	rep: 26 24  -> 1
+	rep: 48 29  -> 2
+	rep: 48 29  -> 3
+	rep: 17 45  -> 4
+	rep: 17 45  -> 5
+	rep: 38 24  -> 6
+	rep: 38 24  -> 7
+	rep: 28 36  -> 8
+	rep: 28 36  -> 9
+	rep: 1 14  -> 10
+	rep: 1 14  -> 11
+	rep: 12 35  -> 12
+	rep: 12 35  -> 13
+	rep: 12 40  -> 14
+	rep: 12 40  -> 15
+	rep: 21 33  -> 16
+	rep: 21 33  -> 17
+	rep: 31 3  -> 18
+	rep: 31 3  -> 19
+	rep: 31 30  -> 20
+	rep: 31 30  -> 21
+	rep: 32 9  -> 22
+	rep: 32 9  -> 23
+	rep: 4  -> 24
+	rep: 41 31  -> 25
+	rep: 41 31  -> 26
+	rep: 18 23  -> 27
+	rep: 18 23  -> 28
+	rep: 12 9  -> 29
+	rep: 12 9  -> 30
+	rep: 14 35  -> 31
+	rep: 14 35  -> 32
+	rep: 34 40  -> 33
+	rep: 34 40  -> 35
+	rep: 44 4  -> 36
+	rep: 44 4  -> 37
+	rep: 33 16  -> 38
+	rep: 33 16  -> 39
+	rep: 44 0  -> 40
+	rep: 44 0  -> 41
+	rep: 21 39  -> 42
+	rep: 21 39  -> 43
+	rep: 44  -> 44
+	rep: 39 36  -> 45
+	rep: 39 36  -> 46
+	rep: 35 23  -> 47
+	rep: 35 23  -> 48
+	rep: 9 16  -> 49
 generation 28:
-	ind: 	74.0711	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.9865	+ TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	72.9865	+ TFICF TFIDF
-	ind: 	73.81	Pow TFIDF MaxGSS
-	ind: 	71.9622	GSS
-	ind: 	72.1631	TFIDF
-	ind: 	73.8903	TFIDF
-	ind: 	73.8301	TFIDF
-	ind: 	73.8301	TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	71.9823	GSS
-	ind: 	72.846	* TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	72.6652	MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.3121	* TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	72.143	Pow TFIDF MaxGSS
-	ind: 	69.773	+ TFICF GSS
-	ind: 	73.8903	Pow TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.6493	+ TFICF TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.3121	* TFIDF MaxGSS
-	ind: 	73.8903	Pow TFIDF MaxGSS
-	ind: 	71.6409	+ TFICF GSS
-	ind: 	74.292	* TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	73.81	+ TFICF TFIDF
-	ind: 	71.7212	% TFIDF MaxGSS
-	ind: 	74.0108	Pow TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	72.0024	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	72.2434	TFIDF
+	ind: 	71.902	Pow DOM MaxDom
+	ind: 	71.8819	* Pow DOM MaxDom TF
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	73.0267	* DOM MaxDom
+	ind: 	52.5206	Log DOM MaxDom
+	ind: 	68.3471	* Pow DOM MaxDom TF
+	ind: 	74.513	* DOM MaxDom
+	ind: 	59.751	Log DOM MaxDom
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	70.3153	% DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	73.4284	MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	72.2836	% DOM MaxDom
+	ind: 	74.1113	* DOM MaxDom
+	ind: 	70.4961	GINI
+	ind: 	73.4887	MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.0108	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	73.9707	Pow DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.3523	Pow * DOM MaxDom MaxDom
+	ind: 	70.3957	DOM
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	51.3758	Log DOM MaxDom
+	ind: 	68.8291	- DOM MaxDom
+	ind: 	51.3758	Log DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	72.5447	GINI
+	ind: 	69.3312	MaxDom
+	rep: 34  -> 34
+	rep: 36 22  -> 0
+	rep: 36 22  -> 1
+	rep: 2 28  -> 2
+	rep: 2 28  -> 3
+	rep: 31 4  -> 4
+	rep: 31 4  -> 5
+	rep: 34 12  -> 6
+	rep: 34 12  -> 7
+	rep: 13 9  -> 8
+	rep: 13 9  -> 9
+	rep: 37 26  -> 10
+	rep: 37 26  -> 11
+	rep: 35 19  -> 12
+	rep: 35 19  -> 13
+	rep: 10 1  -> 14
+	rep: 10 1  -> 15
+	rep: 7 21  -> 16
+	rep: 7 21  -> 17
+	rep: 41 4  -> 18
+	rep: 41 4  -> 19
+	rep: 14 29  -> 20
+	rep: 14 29  -> 21
+	rep: 20  -> 22
+	rep: 36 20  -> 23
+	rep: 36 20  -> 24
+	rep: 42 8  -> 25
+	rep: 42 8  -> 26
+	rep: 16 8  -> 27
+	rep: 16 8  -> 28
+	rep: 32 8  -> 29
+	rep: 32 8  -> 30
+	rep: 37  -> 31
+	rep: 47 13  -> 32
+	rep: 47 13  -> 33
+	rep: 36 7  -> 35
+	rep: 36 7  -> 36
+	rep: 17 45  -> 37
+	rep: 17 45  -> 38
+	rep: 24 48  -> 39
+	rep: 24 48  -> 40
+	rep: 12  -> 41
+	rep: 38 1  -> 42
+	rep: 38 1  -> 43
+	rep: 17 21  -> 44
+	rep: 17 21  -> 45
+	rep: 16 4  -> 46
+	rep: 16 4  -> 47
+	rep: 16 35  -> 48
+	rep: 16 35  -> 49
 generation 29:
-	ind: 	74.1113	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.0426	+ TFICF GSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	72.9865	+ TFICF TFIDF
-	ind: 	74.0912	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	72.6049	MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	73.5489	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.9305	+ TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	74.3121	* TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	69.773	+ TFICF GSS
-	ind: 	74.1314	* TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	74.0912	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.3121	* TFIDF MaxGSS
-	ind: 	71.902	% TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	72.8058	MaxGSS
-	ind: 	72.0024	TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.569	% TFIDF MaxGSS
-	ind: 	69.0902	sumTF
-	ind: 	72.1631	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.2434	TFIDF
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	72.4242	GINI
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.051	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.1113	Pow DOM MaxDom
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	70.3153	% DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	73.3681	MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	70.958	* Pow DOM MaxDom TF
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	71.6007	% DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.2117	* DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	73.4887	MaxDom
+	ind: 	74.8142	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	52.0586	Log DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	59.751	Log DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	52.6813	Log DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.533	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	50.2711	Log DOM MaxDom
+	ind: 	73.9506	Pow DOM MaxDom
+	ind: 	72.0627	* DOM MaxDom
+	ind: 	72.7455	MaxCC
+	ind: 	74.292	* DOM MaxDom
+	ind: 	74.6736	Pow * DOM MaxDom MaxDom
+	ind: 	71.9622	* Pow DOM MaxDom TF
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	70.3153	% DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	73.9707	Pow DOM MaxDom
+	rep: 1  -> 1
+	rep: 33 11  -> 0
+	rep: 33 11  -> 2
+	rep: 36 49  -> 3
+	rep: 36 49  -> 4
+	rep: 34  -> 5
+	rep: 47 21  -> 6
+	rep: 47 21  -> 7
+	rep: 42 32  -> 8
+	rep: 42 32  -> 9
+	rep: 4 3  -> 10
+	rep: 4 3  -> 11
+	rep: 29  -> 12
+	rep: 10 3  -> 13
+	rep: 10 3  -> 14
+	rep: 24 32  -> 15
+	rep: 24 32  -> 16
+	rep: 42  -> 17
+	rep: 29 19  -> 18
+	rep: 29 19  -> 19
+	rep: 10 3  -> 20
+	rep: 10 3  -> 21
+	rep: 34 46  -> 22
+	rep: 34 46  -> 23
+	rep: 19 11  -> 24
+	rep: 19 11  -> 25
+	rep: 23  -> 26
+	rep: 45 45  -> 27
+	rep: 45 45  -> 28
+	rep: 13 39  -> 29
+	rep: 13 39  -> 30
+	rep: 27 47  -> 31
+	rep: 27 47  -> 32
+	rep: 48 15  -> 33
+	rep: 48 15  -> 34
+	rep: 31 2  -> 35
+	rep: 31 2  -> 36
+	rep: 1 41  -> 37
+	rep: 1 41  -> 38
+	rep: 19 12  -> 39
+	rep: 19 12  -> 40
+	rep: 23 2  -> 41
+	rep: 23 2  -> 42
+	rep: 33  -> 43
+	rep: 22  -> 44
+	rep: 23 17  -> 45
+	rep: 23 17  -> 46
+	rep: 21 43  -> 47
+	rep: 21 43  -> 48
+	rep: 19 49  -> 49
 generation 30:
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.0426	+ TFICF GSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.2434	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	72.2033	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	73.5489	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1314	* TFIDF MaxGSS
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.7497	+ TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	71.902	% TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	73.5489	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	72.143	Pow TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	74.0912	P
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	71.8819	% TFIDF MaxGSS
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.328	% DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.9506	Pow DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	73.8502	* DOM MaxDom
+	ind: 	73.4083	MaxDom
+	ind: 	74.3924	Pow * DOM MaxDom MaxDom
+	ind: 	73.9104	* DOM MaxDom
+	ind: 	72.6652	GINI
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	72.866	GINI
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	73.9908	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.6736	Pow * DOM MaxDom MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	72.4242	GINI
+	ind: 	68.2868	- DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	71.2392	% DOM MaxDom
+	ind: 	74.8142	* DOM MaxDom
+	ind: 	72.866	% DOM MaxDom
+	ind: 	68.086	% DOM MaxDom
+	ind: 	73.2075	MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	71.8819	* Pow DOM MaxDom TF
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.9908	* DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.1113	Pow DOM MaxDom
+	ind: 	72.8861	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	71.6007	% DOM MaxDom
+	ind: 	71.9622	* Pow DOM MaxDom TF
+	ind: 	73.4887	MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	rep: 1  -> 1
+	rep: 0 9  -> 0
+	rep: 0 9  -> 2
+	rep: 17  -> 3
+	rep: 14 29  -> 4
+	rep: 14 29  -> 5
+	rep: 41  -> 6
+	rep: 15  -> 7
+	rep: 37 27  -> 8
+	rep: 37 27  -> 9
+	rep: 26 43  -> 10
+	rep: 26 43  -> 11
+	rep: 19 46  -> 12
+	rep: 19 46  -> 13
+	rep: 37 11  -> 14
+	rep: 37 11  -> 15
+	rep: 5 5  -> 16
+	rep: 5 5  -> 17
+	rep: 40 15  -> 18
+	rep: 40 15  -> 19
+	rep: 12  -> 20
+	rep: 31  -> 21
+	rep: 34 35  -> 22
+	rep: 34 35  -> 23
+	rep: 3  -> 24
+	rep: 19 21  -> 25
+	rep: 19 21  -> 26
+	rep: 7 10  -> 27
+	rep: 7 10  -> 28
+	rep: 45 27  -> 29
+	rep: 45 27  -> 30
+	rep: 1 42  -> 31
+	rep: 1 42  -> 32
+	rep: 26 18  -> 33
+	rep: 26 18  -> 34
+	rep: 12  -> 35
+	rep: 16 12  -> 36
+	rep: 16 12  -> 37
+	rep: 41 19  -> 38
+	rep: 41 19  -> 39
+	rep: 40 11  -> 40
+	rep: 40 11  -> 41
+	rep: 43  -> 42
+	rep: 38  -> 43
+	rep: 5  -> 44
+	rep: 1 3  -> 45
+	rep: 1 3  -> 46
+	rep: 23 25  -> 47
+	rep: 23 25  -> 48
+	rep: 26 11  -> 49
 generation 31:
-	ind: 	73.8502	TFIDF
-	ind: 	72.2033	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.2033	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	73.9104	TFIDF
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	72.2033	Pow TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.0711	Pow TFIDF MaxGSS
-	ind: 	72.143	Pow TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.1673	+ TFICF TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	73.5489	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	72.2233	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	54.2278	- TFIDF MaxGSS
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.6736	Pow * DOM MaxDom MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	73.3882	MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	73.9908	* DOM MaxDom
+	ind: 	74.8142	* % DOM MaxDom MaxDom
+	ind: 	73.8301	DOM
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.9305	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	71.6007	% DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.6335	Pow DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.9707	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	72.6652	GINI
+	ind: 	71.5204	MaxDom
+	ind: 	72.8259	GINI
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	72.866	% DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.8142	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	59.8915	Log DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.3523	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.2117	Pow DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.1113	Pow DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.9506	* DOM MaxDom
+	ind: 	71.2392	% DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	rep: 1  -> 1
+	rep: 33 23  -> 0
+	rep: 33 23  -> 2
+	rep: 24 7  -> 3
+	rep: 24 7  -> 4
+	rep: 46 32  -> 5
+	rep: 46 32  -> 6
+	rep: 17 39  -> 7
+	rep: 17 39  -> 8
+	rep: 10 20  -> 9
+	rep: 10 20  -> 10
+	rep: 45 37  -> 11
+	rep: 45 37  -> 12
+	rep: 49  -> 13
+	rep: 1  -> 14
+	rep: 44  -> 15
+	rep: 25 32  -> 16
+	rep: 25 32  -> 17
+	rep: 44 6  -> 18
+	rep: 44 6  -> 19
+	rep: 49  -> 20
+	rep: 38 9  -> 21
+	rep: 38 9  -> 22
+	rep: 29  -> 23
+	rep: 41 37  -> 24
+	rep: 41 37  -> 25
+	rep: 10 9  -> 26
+	rep: 10 9  -> 27
+	rep: 34  -> 28
+	rep: 8 29  -> 29
+	rep: 8 29  -> 30
+	rep: 31 4  -> 31
+	rep: 31 4  -> 32
+	rep: 36 5  -> 33
+	rep: 36 5  -> 34
+	rep: 46 27  -> 35
+	rep: 46 27  -> 36
+	rep: 36 43  -> 37
+	rep: 36 43  -> 38
+	rep: 6 21  -> 39
+	rep: 6 21  -> 40
+	rep: 49 47  -> 41
+	rep: 49 47  -> 42
+	rep: 40  -> 43
+	rep: 2  -> 44
+	rep: 21  -> 45
+	rep: 18  -> 46
+	rep: 38 31  -> 47
+	rep: 38 31  -> 48
+	rep: 36 24  -> 49
 generation 32:
-	ind: 	74.1514	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.5489	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.0711	Pow TFIDF MaxGSS
-	ind: 	73.4284	+ TFICF TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	72.143	Pow TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.2434	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.1631	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.0024	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.0711	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	54.2278	- TFIDF MaxGSS
+	ind: 	74.8142	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.1514	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	59.8915	Log DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	53.4244	Log DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.8142	* % DOM MaxDom MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.6535	MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	rep: 1  -> 1
+	rep: 22  -> 0
+	rep: 0 33  -> 2
+	rep: 0 33  -> 3
+	rep: 46 4  -> 4
+	rep: 46 4  -> 5
+	rep: 47 21  -> 6
+	rep: 47 21  -> 7
+	rep: 22 25  -> 8
+	rep: 22 25  -> 9
+	rep: 1 0  -> 10
+	rep: 1 0  -> 11
+	rep: 9 43  -> 12
+	rep: 9 43  -> 13
+	rep: 9 10  -> 14
+	rep: 9 10  -> 15
+	rep: 7 28  -> 16
+	rep: 7 28  -> 17
+	rep: 23  -> 18
+	rep: 31 12  -> 19
+	rep: 31 12  -> 20
+	rep: 31 12  -> 21
+	rep: 31 12  -> 22
+	rep: 15 13  -> 23
+	rep: 15 13  -> 24
+	rep: 49 34  -> 25
+	rep: 49 34  -> 26
+	rep: 18 28  -> 27
+	rep: 18 28  -> 28
+	rep: 38 47  -> 29
+	rep: 38 47  -> 30
+	rep: 46 34  -> 31
+	rep: 46 34  -> 32
+	rep: 31 4  -> 33
+	rep: 31 4  -> 34
+	rep: 31 14  -> 35
+	rep: 31 14  -> 36
+	rep: 29 40  -> 37
+	rep: 29 40  -> 38
+	rep: 23 21  -> 39
+	rep: 23 21  -> 40
+	rep: 0 20  -> 41
+	rep: 0 20  -> 42
+	rep: 3 17  -> 43
+	rep: 3 17  -> 44
+	rep: 38  -> 45
+	rep: 17 21  -> 46
+	rep: 17 21  -> 47
+	rep: 1 18  -> 48
+	rep: 1 18  -> 49
 generation 33:
-	ind: 	74.1113	TFIDF
-	ind: 	70.5363	MaxIG
-	ind: 	74.1113	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	73.0066	MaxIG
-	ind: 	72.1631	TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	71.5204	MaxDom
-	ind: 	73.8502	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	70.7371	MaxIG
-	ind: 	72.1631	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.2434	TFIDF
-	ind: 	70.7371	MaxIG
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.0711	Pow TFIDF MaxGSS
-	ind: 	70.7371	MaxIG
-	ind: 	72.1631	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.3681	+ TFICF TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.0066	MaxIG
-	ind: 	70.7371	MaxIG
-	ind: 	73.8502	TFIDF
-	ind: 	74.0912	TFIDF
+	ind: 	74.8142	DOM
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.8142	* DOM MaxDom
+	ind: 	74.6535	MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0309	DOM
+	ind: 	59.8915	Log DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.1314	Pow DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	59.751	Log DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	59.4296	Log DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.2719	Pow DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	74.0108	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.8142	* % DOM MaxDom MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.1916	+ DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	rep: 1  -> 1
+	rep: 2  -> 0
+	rep: 2 17  -> 2
+	rep: 2 17  -> 3
+	rep: 28 33  -> 4
+	rep: 28 33  -> 5
+	rep: 33 22  -> 6
+	rep: 33 22  -> 7
+	rep: 49 12  -> 8
+	rep: 49 12  -> 9
+	rep: 3 47  -> 10
+	rep: 3 47  -> 11
+	rep: 37  -> 12
+	rep: 27  -> 13
+	rep: 21 5  -> 14
+	rep: 21 5  -> 15
+	rep: 34 3  -> 16
+	rep: 34 3  -> 17
+	rep: 17 12  -> 18
+	rep: 17 12  -> 19
+	rep: 31 22  -> 20
+	rep: 31 22  -> 21
+	rep: 22  -> 22
+	rep: 10 6  -> 23
+	rep: 10 6  -> 24
+	rep: 43 31  -> 25
+	rep: 43 31  -> 26
+	rep: 27  -> 27
+	rep: 19 48  -> 28
+	rep: 19 48  -> 29
+	rep: 39  -> 30
+	rep: 19 23  -> 31
+	rep: 19 23  -> 32
+	rep: 27 13  -> 33
+	rep: 27 13  -> 34
+	rep: 42 4  -> 35
+	rep: 42 4  -> 36
+	rep: 24  -> 37
+	rep: 32 26  -> 38
+	rep: 32 26  -> 39
+	rep: 43  -> 40
+	rep: 49  -> 41
+	rep: 0  -> 42
+	rep: 17 44  -> 43
+	rep: 17 44  -> 44
+	rep: 28 44  -> 45
+	rep: 28 44  -> 46
+	rep: 23 16  -> 47
+	rep: 23 16  -> 48
+	rep: 15 46  -> 49
 generation 34:
-	ind: 	74.1113	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	73.328	AM
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.5204	MaxDom
-	ind: 	72.1631	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.0066	MaxIG
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	71.5204	MaxDom
-	ind: 	74.1113	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	72.7455	MaxIG
-	ind: 	72.0024	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	71.5204	MaxDom
-	ind: 	72.1631	AM
-	ind: 	72.1631	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	71.5204	MaxDom
-	ind: 	73.8502	TFIDF
-	ind: 	72.2434	TFIDF
-	ind: 	70.7371	MaxIG
-	ind: 	74.0912	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	72.866	MaxIG
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	70.7371	MaxIG
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.0066	MaxIG
-	ind: 	74.1514	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.0912	TFIDF
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.8142	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.9506	Pow DOM MaxDom
+	ind: 	74.0108	Pow DOM MaxDom
+	ind: 	59.4296	Log DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.4686	MaxDom
+	ind: 	74.8142	* % DOM MaxDom MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.6535	MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	59.4296	Log DOM MaxDom
+	ind: 	59.4296	Log DOM MaxDom
+	ind: 	73.9506	Pow DOM MaxDom
+	ind: 	73.7698	+ DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	73.7899	+ Pow DOM MaxDom MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0711	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.1314	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	rep: 0  -> 0
+	rep: 1  -> 1
+	rep: 38 24  -> 2
+	rep: 38 24  -> 3
+	rep: 34 43  -> 4
+	rep: 34 43  -> 5
+	rep: 4 40  -> 6
+	rep: 4 40  -> 7
+	rep: 43  -> 8
+	rep: 31  -> 9
+	rep: 4  -> 10
+	rep: 18 8  -> 11
+	rep: 18 8  -> 12
+	rep: 30 21  -> 13
+	rep: 30 21  -> 14
+	rep: 12  -> 15
+	rep: 30 44  -> 16
+	rep: 30 44  -> 17
+	rep: 41 44  -> 18
+	rep: 41 44  -> 19
+	rep: 39 15  -> 20
+	rep: 39 15  -> 21
+	rep: 8 44  -> 22
+	rep: 8 44  -> 23
+	rep: 16 46  -> 24
+	rep: 16 46  -> 25
+	rep: 27 29  -> 26
+	rep: 27 29  -> 27
+	rep: 32 19  -> 28
+	rep: 32 19  -> 29
+	rep: 43 18  -> 30
+	rep: 43 18  -> 31
+	rep: 43 21  -> 32
+	rep: 43 21  -> 33
+	rep: 47 19  -> 34
+	rep: 47 19  -> 35
+	rep: 15 29  -> 36
+	rep: 15 29  -> 37
+	rep: 31 48  -> 38
+	rep: 31 48  -> 39
+	rep: 8  -> 40
+	rep: 14  -> 41
+	rep: 0 29  -> 42
+	rep: 0 29  -> 43
+	rep: 34 20  -> 44
+	rep: 34 20  -> 45
+	rep: 27 26  -> 46
+	rep: 27 26  -> 47
+	rep: 12 22  -> 48
+	rep: 12 22  -> 49
 generation 35:
-	ind: 	71.5204	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	73.0066	MaxIG
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	71.7815	+ TFICF TFIDF
-	ind: 	73.0066	MaxIG
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	71.5204	MaxDom
-	ind: 	74.1113	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	73.8502	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	71.5204	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	73.9104	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	71.5204	MaxDom
-	ind: 	74.0912	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	72.0024	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	73.4686	MaxDom
-	ind: 	74.0912	TFIDF
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	72.9263	+ DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0552	Pow DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	59.8915	Log DOM MaxDom
+	ind: 	74.8142	* % DOM MaxDom MaxDom
+	ind: 	73.0267	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.7698	+ DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	72.2635	+ Pow DOM MaxDom MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.533	* DOM MaxDom
+	ind: 	59.8915	Log DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	68.7688	- DOM MaxDom
+	ind: 	69.0902	- DOM MaxDom
+	ind: 	74.6535	+ * DOM MaxDom MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.1314	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.7899	+ Pow DOM MaxDom MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	59.8915	* Log DOM MaxDom MaxDom
+	ind: 	73.4485	% DOM MaxDom
+	rep: 6  -> 6
+	rep: 28  -> 0
+	rep: 11 14  -> 1
+	rep: 11 14  -> 2
+	rep: 11  -> 3
+	rep: 22 45  -> 4
+	rep: 22 45  -> 5
+	rep: 37  -> 7
+	rep: 4 44  -> 8
+	rep: 4 44  -> 9
+	rep: 31 48  -> 10
+	rep: 31 48  -> 11
+	rep: 11  -> 12
+	rep: 29  -> 13
+	rep: 4  -> 14
+	rep: 28 2  -> 15
+	rep: 28 2  -> 16
+	rep: 11 25  -> 17
+	rep: 11 25  -> 18
+	rep: 24 21  -> 19
+	rep: 24 21  -> 20
+	rep: 39 34  -> 21
+	rep: 39 34  -> 22
+	rep: 17  -> 23
+	rep: 40  -> 24
+	rep: 26  -> 25
+	rep: 31  -> 26
+	rep: 5 39  -> 27
+	rep: 5 39  -> 28
+	rep: 44 13  -> 29
+	rep: 44 13  -> 30
+	rep: 38  -> 31
+	rep: 9 23  -> 32
+	rep: 9 23  -> 33
+	rep: 17 24  -> 34
+	rep: 17 24  -> 35
+	rep: 18  -> 36
+	rep: 3 13  -> 37
+	rep: 3 13  -> 38
+	rep: 42  -> 39
+	rep: 6  -> 40
+	rep: 34 35  -> 41
+	rep: 34 35  -> 42
+	rep: 39 45  -> 43
+	rep: 39 45  -> 44
+	rep: 29  -> 45
+	rep: 19 29  -> 46
+	rep: 19 29  -> 47
+	rep: 40  -> 48
+	rep: 10 1  -> 49
 generation 36:
-	ind: 	72.0024	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.0912	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.5204	MaxDom
-	ind: 	74.1314	TFIDF
-	ind: 	73.0066	MaxIG
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	74.0912	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.6652	MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.9104	TFIDF
-	ind: 	74.0912	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.0711	Pow TFIDF MaxGSS
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	73.4083	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.9104	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	73.4686	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	72.7455	Pow TFIDF TFIDF
-	ind: 	73.4686	MaxDom
-	ind: 	74.0912	TFIDF
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	59.751	Log DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	75.0552	Pow DOM MaxDom
+	ind: 	74.6535	+ * DOM MaxDom MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	59.8915	* Log DOM MaxDom MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	72.9062	+ DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.2719	Pow DOM MaxDom
+	ind: 	58.4455	Log DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	74.2719	Pow DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.7698	+ DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	73.5288	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.4929	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0552	Pow DOM MaxDom
+	ind: 	66.8206	- DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.2117	Pow DOM MaxDom
+	ind: 	72.7656	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	rep: 6  -> 6
+	rep: 47 4  -> 0
+	rep: 47 4  -> 1
+	rep: 49 5  -> 2
+	rep: 49 5  -> 3
+	rep: 1  -> 4
+	rep: 24  -> 5
+	rep: 2 43  -> 7
+	rep: 2 43  -> 8
+	rep: 17 19  -> 9
+	rep: 17 19  -> 10
+	rep: 13 11  -> 11
+	rep: 13 11  -> 12
+	rep: 30 19  -> 13
+	rep: 30 19  -> 14
+	rep: 42 41  -> 15
+	rep: 42 41  -> 16
+	rep: 0 46  -> 17
+	rep: 0 46  -> 18
+	rep: 13 33  -> 19
+	rep: 13 33  -> 20
+	rep: 40 24  -> 21
+	rep: 40 24  -> 22
+	rep: 42 24  -> 23
+	rep: 42 24  -> 24
+	rep: 15 41  -> 25
+	rep: 15 41  -> 26
+	rep: 38 25  -> 27
+	rep: 38 25  -> 28
+	rep: 14  -> 29
+	rep: 5 41  -> 30
+	rep: 5 41  -> 31
+	rep: 0 9  -> 32
+	rep: 0 9  -> 33
+	rep: 20 43  -> 34
+	rep: 20 43  -> 35
+	rep: 34 41  -> 36
+	rep: 34 41  -> 37
+	rep: 25 23  -> 38
+	rep: 25 23  -> 39
+	rep: 13 48  -> 40
+	rep: 13 48  -> 41
+	rep: 0  -> 42
+	rep: 2 11  -> 43
+	rep: 2 11  -> 44
+	rep: 15 17  -> 45
+	rep: 15 17  -> 46
+	rep: 31 41  -> 47
+	rep: 31 41  -> 48
+	rep: 12 35  -> 49
 generation 37:
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	72.7455	Pow TFIDF TFIDF
-	ind: 	73.9104	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.0711	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.051	TFIDF
-	ind: 	74.0912	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	73.4083	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	73.9104	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	73.8502	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	72.7455	Pow TFIDF TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.0912	TFIDF
+	ind: 	74.0912	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	59.751	Log DOM MaxDom
+	ind: 	74.1916	+ DOM MaxDom
+	ind: 	75.0552	Pow DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.1916	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	59.751	* Log DOM MaxDom MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	68.7688	- DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.1916	+ DOM MaxDom
+	ind: 	75.0552	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.1472	* DOM TFIDF
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	68.7688	- DOM MaxDom
+	ind: 	74.4929	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	67.2625	- DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	68.2868	- DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	46.2744	Log DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	59.8915	* Log DOM MaxDom MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	67.3027	- DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	rep: 6  -> 6
+	rep: 42 27  -> 0
+	rep: 42 27  -> 1
+	rep: 14 0  -> 2
+	rep: 14 0  -> 3
+	rep: 39 27  -> 4
+	rep: 39 27  -> 5
+	rep: 35 38  -> 7
+	rep: 35 38  -> 8
+	rep: 14 25  -> 9
+	rep: 14 25  -> 10
+	rep: 1  -> 11
+	rep: 22  -> 12
+	rep: 21 3  -> 13
+	rep: 21 3  -> 14
+	rep: 40 44  -> 15
+	rep: 40 44  -> 16
+	rep: 44 43  -> 17
+	rep: 44 43  -> 18
+	rep: 7  -> 19
+	rep: 46 39  -> 20
+	rep: 46 39  -> 21
+	rep: 35 27  -> 22
+	rep: 35 27  -> 23
+	rep: 47 25  -> 24
+	rep: 47 25  -> 25
+	rep: 3  -> 26
+	rep: 19 27  -> 27
+	rep: 19 27  -> 28
+	rep: 26 38  -> 29
+	rep: 26 38  -> 30
+	rep: 33 38  -> 31
+	rep: 33 38  -> 32
+	rep: 48 12  -> 33
+	rep: 48 12  -> 34
+	rep: 26 15  -> 35
+	rep: 26 15  -> 36
+	rep: 22 12  -> 37
+	rep: 22 12  -> 38
+	rep: 10 31  -> 39
+	rep: 10 31  -> 40
+	rep: 33 19  -> 41
+	rep: 33 19  -> 42
+	rep: 35 48  -> 43
+	rep: 35 48  -> 44
+	rep: 3 25  -> 45
+	rep: 3 25  -> 46
+	rep: 35 30  -> 47
+	rep: 35 30  -> 48
+	rep: 21 7  -> 49
 generation 38:
-	ind: 	73.8502	TFIDF
-	ind: 	67.0215	sumTF
-	ind: 	73.4686	MaxDom
-	ind: 	72.0024	TFIDF
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	65.6156	CTD
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	72.7455	Pow TFIDF TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	72.2033	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.0912	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.2434	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.7698	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	73.7297	Pow TFIDF MaxGSS
-	ind: 	64.6515	CTD
-	ind: 	73.8502	TFIDF
-	ind: 	73.3882	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	73.4686	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	73.9104	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	73.4686	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	73.8502	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.6335	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	74.4728	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.4929	* DOM MaxDom
+	ind: 	75.0552	Pow DOM MaxDom
+	ind: 	71.8618	Pow DOM MaxDom
+	ind: 	59.8915	Log DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.4284	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0552	Pow DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	56.3969	* Log DOM MaxDom MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.4929	* DOM MaxDom
+	ind: 	59.8915	Log DOM MaxDom
+	ind: 	66.8206	- DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	46.2744	Log DOM MaxDom
+	ind: 	52.5608	* Log DOM MaxDom MaxDom
+	ind: 	68.8291	- DOM MaxDom
+	ind: 	68.7688	- DOM MaxDom
+	ind: 	68.7688	- DOM MaxDom
+	ind: 	59.8915	* DOM * Log DOM MaxDom MaxDom
+	ind: 	74.6937	MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	73.5288	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	58.4455	Log DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	68.7688	- DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	68.7688	- DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.8946	* DOM MaxDom
+	rep: 6  -> 6
+	rep: 23  -> 0
+	rep: 39 19  -> 1
+	rep: 39 19  -> 2
+	rep: 48 24  -> 3
+	rep: 48 24  -> 4
+	rep: 7 42  -> 5
+	rep: 7 42  -> 7
+	rep: 43 11  -> 8
+	rep: 43 11  -> 9
+	rep: 5 7  -> 10
+	rep: 5 7  -> 11
+	rep: 40 32  -> 12
+	rep: 40 32  -> 13
+	rep: 18 40  -> 14
+	rep: 18 40  -> 15
+	rep: 15 10  -> 16
+	rep: 15 10  -> 17
+	rep: 27  -> 18
+	rep: 22 0  -> 19
+	rep: 22 0  -> 20
+	rep: 31  -> 21
+	rep: 16 14  -> 22
+	rep: 16 14  -> 23
+	rep: 19 24  -> 24
+	rep: 19 24  -> 25
+	rep: 21 47  -> 26
+	rep: 21 47  -> 27
+	rep: 1 14  -> 28
+	rep: 1 14  -> 29
+	rep: 27  -> 30
+	rep: 20 15  -> 31
+	rep: 20 15  -> 32
+	rep: 40 24  -> 33
+	rep: 40 24  -> 34
+	rep: 15  -> 35
+	rep: 20  -> 36
+	rep: 7 47  -> 37
+	rep: 7 47  -> 38
+	rep: 49 44  -> 39
+	rep: 49 44  -> 40
+	rep: 24 8  -> 41
+	rep: 24 8  -> 42
+	rep: 0 24  -> 43
+	rep: 0 24  -> 44
+	rep: 45 17  -> 45
+	rep: 45 17  -> 46
+	rep: 9  -> 47
+	rep: 41 25  -> 48
+	rep: 41 25  -> 49
 generation 39:
-	ind: 	74.0912	TFIDF
-	ind: 	67.0215	sumTF
-	ind: 	74.051	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	72.0024	TFIDF
-	ind: 	73.5891	MaxDom
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	65.7562	CTD
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6493	MaxDom
-	ind: 	73.1271	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	72.2033	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	74.0912	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	73.5891	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	73.5288	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	73.7297	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	73.3681	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	73.4686	MaxDom
-	ind: 	74.1113	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	73.4686	MaxDom
-	ind: 	74.1113	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	27.134	Log DOM MaxDom
+	ind: 	75.0552	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	73.8502	* DOM MaxDom
+	ind: 	72.8861	Pow DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	49.7289	Log DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.4284	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.6335	Pow DOM MaxDom
+	ind: 	59.4296	Log DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	71.9422	* sumTF MaxDom
+	ind: 	74.1314	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	68.7688	- DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	73.4284	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	64.8122	- DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	69.0098	- DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	46.2744	Log DOM MaxDom
+	ind: 	73.4887	% DOM MaxDom
+	ind: 	46.2744	Log DOM MaxDom
+	ind: 	52.5005	Log DOM MaxDom
+	ind: 	75.5172	* Pow DOM MaxDom MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	rep: 46  -> 46
+	rep: 18 33  -> 0
+	rep: 18 33  -> 1
+	rep: 0  -> 2
+	rep: 12 3  -> 3
+	rep: 12 3  -> 4
+	rep: 11 45  -> 5
+	rep: 11 45  -> 6
+	rep: 40 30  -> 7
+	rep: 40 30  -> 8
+	rep: 49 49  -> 9
+	rep: 49 49  -> 10
+	rep: 22 47  -> 11
+	rep: 22 47  -> 12
+	rep: 30  -> 13
+	rep: 21 19  -> 14
+	rep: 21 19  -> 15
+	rep: 29 17  -> 16
+	rep: 29 17  -> 17
+	rep: 36 45  -> 18
+	rep: 36 45  -> 19
+	rep: 35 29  -> 20
+	rep: 35 29  -> 21
+	rep: 43 11  -> 22
+	rep: 43 11  -> 23
+	rep: 36 49  -> 24
+	rep: 36 49  -> 25
+	rep: 18 8  -> 26
+	rep: 18 8  -> 27
+	rep: 22 47  -> 28
+	rep: 22 47  -> 29
+	rep: 9 29  -> 30
+	rep: 9 29  -> 31
+	rep: 22 47  -> 32
+	rep: 22 47  -> 33
+	rep: 36 11  -> 34
+	rep: 36 11  -> 35
+	rep: 41 18  -> 36
+	rep: 41 18  -> 37
+	rep: 4 29  -> 38
+	rep: 4 29  -> 39
+	rep: 6 47  -> 40
+	rep: 6 47  -> 41
+	rep: 33 20  -> 42
+	rep: 33 20  -> 43
+	rep: 4 30  -> 44
+	rep: 4 30  -> 45
+	rep: 28 20  -> 47
+	rep: 28 20  -> 48
+	rep: 18 23  -> 49
 generation 40:
-	ind: 	74.0912	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	TFIDF
-	ind: 	74.051	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6493	MaxDom
-	ind: 	73.1271	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	72.2033	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.107	MaxDom
-	ind: 	73.5288	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	72.1631	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	71.7212	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	71.6811	Pow DOM MaxDom
+	ind: 	52.5005	Log DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	71.7413	Pow DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	59.8915	Log DOM MaxDom
+	ind: 	73.9305	Pow DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	73.4887	% DOM MaxDom
+	ind: 	72.8861	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.0711	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.4929	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	72.8861	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.1916	Pow DOM Pow DOM MaxDom
+	ind: 	73.4083	MaxDom
+	ind: 	74.8745	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.1472	* DOM MaxDom
+	ind: 	59.8915	Log DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	75.5172	* Pow DOM MaxDom MaxDom
+	ind: 	59.8915	Log DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	rep: 46  -> 46
+	rep: 15 4  -> 0
+	rep: 15 4  -> 1
+	rep: 26 23  -> 2
+	rep: 26 23  -> 3
+	rep: 12 35  -> 4
+	rep: 12 35  -> 5
+	rep: 48  -> 6
+	rep: 12 29  -> 7
+	rep: 12 29  -> 8
+	rep: 24 15  -> 9
+	rep: 24 15  -> 10
+	rep: 37  -> 11
+	rep: 33 15  -> 12
+	rep: 33 15  -> 13
+	rep: 5 5  -> 14
+	rep: 5 5  -> 15
+	rep: 49 30  -> 16
+	rep: 49 30  -> 17
+	rep: 38 34  -> 18
+	rep: 38 34  -> 19
+	rep: 40  -> 20
+	rep: 28 30  -> 21
+	rep: 28 30  -> 22
+	rep: 31 3  -> 23
+	rep: 31 3  -> 24
+	rep: 11 45  -> 25
+	rep: 11 45  -> 26
+	rep: 11 13  -> 27
+	rep: 11 13  -> 28
+	rep: 28 10  -> 29
+	rep: 28 10  -> 30
+	rep: 14  -> 31
+	rep: 16 5  -> 32
+	rep: 16 5  -> 33
+	rep: 9 5  -> 34
+	rep: 9 5  -> 35
+	rep: 29 18  -> 36
+	rep: 29 18  -> 37
+	rep: 39 23  -> 38
+	rep: 39 23  -> 39
+	rep: 1 47  -> 40
+	rep: 1 47  -> 41
+	rep: 20 21  -> 42
+	rep: 20 21  -> 43
+	rep: 36 34  -> 44
+	rep: 36 34  -> 45
+	rep: 28  -> 47
+	rep: 44 31  -> 48
+	rep: 44 31  -> 49
 generation 41:
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	70.7773	IG
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.051	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6493	MaxDom
-	ind: 	73.1271	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.4887	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	72.0225	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.0468	Pow IG MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	72.8861	Pow DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	74.0309	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	72.8861	Pow DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.569	Pow DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.1916	Pow DOM Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	74.8745	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.6736	* DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	73.569	Pow DOM MaxDom
+	ind: 	72.0627	* DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	72.2033	IG
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	46.2744	Log DOM MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	75.5172	* Pow DOM MaxDom MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	rep: 46  -> 46
+	rep: 2 29  -> 0
+	rep: 2 29  -> 1
+	rep: 16 29  -> 2
+	rep: 16 29  -> 3
+	rep: 19 23  -> 4
+	rep: 19 23  -> 5
+	rep: 44 37  -> 6
+	rep: 44 37  -> 7
+	rep: 30 36  -> 8
+	rep: 30 36  -> 9
+	rep: 21 22  -> 10
+	rep: 21 22  -> 11
+	rep: 35 0  -> 12
+	rep: 35 0  -> 13
+	rep: 10  -> 14
+	rep: 27 25  -> 15
+	rep: 27 25  -> 16
+	rep: 11 40  -> 17
+	rep: 11 40  -> 18
+	rep: 40  -> 19
+	rep: 12  -> 20
+	rep: 18 0  -> 21
+	rep: 18 0  -> 22
+	rep: 45  -> 23
+	rep: 46 38  -> 24
+	rep: 46 38  -> 25
+	rep: 47 5  -> 26
+	rep: 47 5  -> 27
+	rep: 42 43  -> 28
+	rep: 42 43  -> 29
+	rep: 46 26  -> 30
+	rep: 46 26  -> 31
+	rep: 31 35  -> 32
+	rep: 31 35  -> 33
+	rep: 12 9  -> 34
+	rep: 12 9  -> 35
+	rep: 9 49  -> 36
+	rep: 9 49  -> 37
+	rep: 8 29  -> 38
+	rep: 8 29  -> 39
+	rep: 48 49  -> 40
+	rep: 48 49  -> 41
+	rep: 6 43  -> 42
+	rep: 6 43  -> 43
+	rep: 37 0  -> 44
+	rep: 37 0  -> 45
+	rep: 48 40  -> 47
+	rep: 48 40  -> 48
+	rep: 42 19  -> 49
 generation 42:
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	73.4686	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	70.7773	IG
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	73.107	IG
-	ind: 	73.6493	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.4887	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	73.1271	IG
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.9908	% TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	73.9104	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.4887	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	72.0225	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.9908	% TFIDF MaxGSS
-	ind: 	73.087	IG
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	70.7773	IG
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	71.9823	Pow TFIDF MaxGSS
+	ind: 	74.0309	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	73.6292	Pow DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	73.6895	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0108	% DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	72.1028	Pow DOM Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	75.2762	* Pow DOM MaxDom MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	73.9305	Pow DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	74.533	* DOM MaxDom
+	ind: 	75.5774	* Pow DOM MaxDom MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.2677	Pow DOM MaxDom
+	ind: 	73.9305	Pow DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	71.7413	Pow DOM MaxDom
+	ind: 	75.5172	* Pow DOM MaxDom MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	68.7688	- DOM MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	rep: 31  -> 31
+	rep: 15 6  -> 0
+	rep: 15 6  -> 1
+	rep: 2  -> 2
+	rep: 10  -> 3
+	rep: 32 34  -> 4
+	rep: 32 34  -> 5
+	rep: 36 22  -> 6
+	rep: 36 22  -> 7
+	rep: 11 45  -> 8
+	rep: 11 45  -> 9
+	rep: 46 32  -> 10
+	rep: 46 32  -> 11
+	rep: 43  -> 12
+	rep: 31  -> 13
+	rep: 2 27  -> 14
+	rep: 2 27  -> 15
+	rep: 15 40  -> 16
+	rep: 15 40  -> 17
+	rep: 8 19  -> 18
+	rep: 8 19  -> 19
+	rep: 24 40  -> 20
+	rep: 24 40  -> 21
+	rep: 47 45  -> 22
+	rep: 47 45  -> 23
+	rep: 22 48  -> 24
+	rep: 22 48  -> 25
+	rep: 46  -> 26
+	rep: 10 36  -> 27
+	rep: 10 36  -> 28
+	rep: 7  -> 29
+	rep: 34 20  -> 30
+	rep: 34 20  -> 32
+	rep: 24  -> 33
+	rep: 44 13  -> 34
+	rep: 44 13  -> 35
+	rep: 31  -> 36
+	rep: 21 2  -> 37
+	rep: 21 2  -> 38
+	rep: 21 25  -> 39
+	rep: 21 25  -> 40
+	rep: 28 6  -> 41
+	rep: 28 6  -> 42
+	rep: 37 36  -> 43
+	rep: 37 36  -> 44
+	rep: 47 4  -> 45
+	rep: 47 4  -> 46
+	rep: 15 2  -> 47
+	rep: 15 2  -> 48
+	rep: 11 10  -> 49
 generation 43:
-	ind: 	73.4083	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.6493	MaxDom
-	ind: 	74.1113	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	74.1113	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	73.107	IG
-	ind: 	74.1514	TFIDF
-	ind: 	73.107	IG
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6493	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.4887	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.1314	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1314	TFIDF
-	ind: 	73.1271	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	73.9104	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.4887	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.1314	TFIDF
-	ind: 	73.8502	TFIDF
-	ind: 	72.0225	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.7297	* DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	74.533	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	72.9464	Pow DOM Pow DOM MaxDom
+	ind: 	73.1472	* DOM MaxDom
+	ind: 	73.6292	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	74.8745	* Pow DOM MaxDom MaxDom
+	ind: 	74.5933	* DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	75.5774	* Pow DOM MaxDom MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.0108	% DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.2762	* Pow DOM MaxDom MaxDom
+	ind: 	73.9305	Pow DOM MaxDom
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	65.9771	- DOM MaxDom
+	ind: 	74.1916	Pow DOM Pow DOM MaxDom
+	ind: 	75.5172	* Pow DOM MaxDom MaxDom
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	75.5774	* Pow DOM MaxDom MaxDom
+	ind: 	74.1715	* DOM MaxDom
+	ind: 	75.2762	* Pow DOM MaxDom MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	59.8915	Log DOM MaxDom
+	ind: 	75.5774	* Pow DOM MaxDom MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	73.569	Pow DOM MaxDom
+	ind: 	73.9908	Pow DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	73.4686	DOM
+	ind: 	74.513	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	rep: 45  -> 45
+	rep: 48 46  -> 0
+	rep: 48 46  -> 1
+	rep: 1 24  -> 2
+	rep: 1 24  -> 3
+	rep: 38  -> 4
+	rep: 15 23  -> 5
+	rep: 15 23  -> 6
+	rep: 43 12  -> 7
+	rep: 43 12  -> 8
+	rep: 2 3  -> 9
+	rep: 2 3  -> 10
+	rep: 0 46  -> 11
+	rep: 0 46  -> 12
+	rep: 38 44  -> 13
+	rep: 38 44  -> 14
+	rep: 42  -> 15
+	rep: 16  -> 16
+	rep: 45 28  -> 17
+	rep: 45 28  -> 18
+	rep: 20 43  -> 19
+	rep: 20 43  -> 20
+	rep: 49 11  -> 21
+	rep: 49 11  -> 22
+	rep: 39 41  -> 23
+	rep: 39 41  -> 24
+	rep: 47 47  -> 25
+	rep: 47 47  -> 26
+	rep: 31 18  -> 27
+	rep: 31 18  -> 28
+	rep: 31 37  -> 29
+	rep: 31 37  -> 30
+	rep: 37 30  -> 31
+	rep: 37 30  -> 32
+	rep: 7 34  -> 33
+	rep: 7 34  -> 34
+	rep: 36 14  -> 35
+	rep: 36 14  -> 36
+	rep: 49 23  -> 37
+	rep: 49 23  -> 38
+	rep: 49 8  -> 39
+	rep: 49 8  -> 40
+	rep: 20 23  -> 41
+	rep: 20 23  -> 42
+	rep: 2 24  -> 43
+	rep: 2 24  -> 44
+	rep: 48 21  -> 46
+	rep: 48 21  -> 47
+	rep: 11 18  -> 48
+	rep: 11 18  -> 49
 generation 44:
-	ind: 	73.4083	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	73.4686	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6493	MaxDom
-	ind: 	74.1113	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	73.6493	MaxDom
-	ind: 	73.4887	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	71.9823	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	73.1271	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	73.9104	TFIDF
-	ind: 	74.4929	MaxDom
-	ind: 	73.4887	MaxDom
-	ind: 	73.9104	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.0711	TFIDF
-	ind: 	73.9707	TFIDF
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.1314	TFIDF
-	ind: 	73.6292	MaxDom
-	ind: 	74.1314	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	71.4802	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.1514	TFIDF
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	72.1028	* DOM MaxDom
+	ind: 	67.6039	- DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	71.8217	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	72.2836	% DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.4686	DOM
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.9908	Pow DOM MaxDom
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.5975	* Pow DOM MaxDom MaxDom
+	ind: 	74.6937	* Pow DOM MaxDom MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.533	Pow DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.569	Pow DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	73.4887	% DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	75.5975	* Pow DOM MaxDom MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	72.8861	Pow DOM MaxDom
+	ind: 	75.3967	* Pow DOM MaxDom MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	73.9908	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	73.7698	* Pow DOM MaxDom MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	65.9771	- DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.9305	Pow DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	73.3481	% DOM MaxDom
+	rep: 27  -> 27
+	rep: 1 39  -> 0
+	rep: 1 39  -> 1
+	rep: 48  -> 2
+	rep: 31 0  -> 3
+	rep: 31 0  -> 4
+	rep: 27 8  -> 5
+	rep: 27 8  -> 6
+	rep: 45 36  -> 7
+	rep: 45 36  -> 8
+	rep: 47 44  -> 9
+	rep: 47 44  -> 10
+	rep: 27 13  -> 11
+	rep: 27 13  -> 12
+	rep: 35 14  -> 13
+	rep: 35 14  -> 14
+	rep: 46 29  -> 15
+	rep: 46 29  -> 16
+	rep: 26 39  -> 17
+	rep: 26 39  -> 18
+	rep: 18 3  -> 19
+	rep: 18 3  -> 20
+	rep: 48 17  -> 21
+	rep: 48 17  -> 22
+	rep: 5 37  -> 23
+	rep: 5 37  -> 24
+	rep: 10 20  -> 25
+	rep: 10 20  -> 26
+	rep: 24 12  -> 28
+	rep: 24 12  -> 29
+	rep: 11 21  -> 30
+	rep: 11 21  -> 31
+	rep: 14 33  -> 32
+	rep: 14 33  -> 33
+	rep: 45 38  -> 34
+	rep: 45 38  -> 35
+	rep: 29 44  -> 36
+	rep: 29 44  -> 37
+	rep: 27 23  -> 38
+	rep: 27 23  -> 39
+	rep: 22 48  -> 40
+	rep: 22 48  -> 41
+	rep: 42 2  -> 42
+	rep: 42 2  -> 43
+	rep: 0 8  -> 44
+	rep: 0 8  -> 45
+	rep: 16 37  -> 46
+	rep: 16 37  -> 47
+	rep: 1 37  -> 48
+	rep: 1 37  -> 49
 generation 45:
-	ind: 	74.1113	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	73.4686	MaxDom
-	ind: 	71.6409	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	70.1747	sumTF
-	ind: 	73.9104	Pow TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.4887	MaxDom
-	ind: 	73.4887	MaxDom
-	ind: 	73.9506	P
-	ind: 	73.5891	MaxDom
-	ind: 	73.4083	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	73.4887	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.4887	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	71.6409	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	73.9506	P
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.5288	MaxDom
-	ind: 	74.4929	MaxDom
-	ind: 	73.4887	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.8502	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.7096	MaxDom
-	ind: 	73.4686	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.569	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.1113	TFIDF
-	ind: 	74.1514	TFIDF
-	ind: 	74.1514	TFIDF
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.7497	DOM
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	73.1472	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.0108	% DOM MaxDom
+	ind: 	74.8142	* Pow DOM MaxDom MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	71.6811	Pow DOM MaxDom
+	ind: 	68.2266	- DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.1155	* Pow DOM MaxDom MaxDom
+	ind: 	75.5975	* Pow DOM MaxDom MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	68.2266	- DOM MaxDom
+	ind: 	75.3967	* Pow DOM MaxDom MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	71.7413	DOM
+	ind: 	74.9347	Pow DOM MaxDom
+	ind: 	74.5933	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	75.0753	* Pow DOM MaxDom MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	68.2868	- DOM MaxDom
+	ind: 	72.8861	Pow DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	70.3153	% DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	71.6811	Pow DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	73.4686	Pow DOM MaxDom
+	rep: 7  -> 7
+	rep: 18 45  -> 0
+	rep: 18 45  -> 1
+	rep: 6 44  -> 2
+	rep: 6 44  -> 3
+	rep: 42 3  -> 4
+	rep: 42 3  -> 5
+	rep: 12 32  -> 6
+	rep: 12 32  -> 8
+	rep: 6 31  -> 9
+	rep: 6 31  -> 10
+	rep: 39 48  -> 11
+	rep: 39 48  -> 12
+	rep: 17 45  -> 13
+	rep: 17 45  -> 14
+	rep: 6  -> 15
+	rep: 23 42  -> 16
+	rep: 23 42  -> 17
+	rep: 34 1  -> 18
+	rep: 34 1  -> 19
+	rep: 41 26  -> 20
+	rep: 41 26  -> 21
+	rep: 48 31  -> 22
+	rep: 48 31  -> 23
+	rep: 8 8  -> 24
+	rep: 8 8  -> 25
+	rep: 30 32  -> 26
+	rep: 30 32  -> 27
+	rep: 46 14  -> 28
+	rep: 46 14  -> 29
+	rep: 26 37  -> 30
+	rep: 26 37  -> 31
+	rep: 28  -> 32
+	rep: 2 32  -> 33
+	rep: 2 32  -> 34
+	rep: 39  -> 35
+	rep: 15 22  -> 36
+	rep: 15 22  -> 37
+	rep: 12 10  -> 38
+	rep: 12 10  -> 39
+	rep: 48 40  -> 40
+	rep: 48 40  -> 41
+	rep: 48 23  -> 42
+	rep: 48 23  -> 43
+	rep: 21 26  -> 44
+	rep: 21 26  -> 45
+	rep: 27 29  -> 46
+	rep: 27 29  -> 47
+	rep: 0 42  -> 48
+	rep: 0 42  -> 49
 generation 46:
-	ind: 	74.1113	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.5288	MaxDom
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	73.9104	Pow TFIDF MaxGSS
-	ind: 	72.143	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.3322	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1113	TFIDF
-	ind: 	73.4887	MaxDom
-	ind: 	73.4083	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.4929	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.4887	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	73.5087	MaxAM
-	ind: 	74.4929	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	73.3681	MaxDom
-	ind: 	73.5288	MaxDom
-	ind: 	74.4929	MaxDom
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1514	* TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.3882	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.7096	MaxDom
-	ind: 	73.4686	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.5087	MaxAM
-	ind: 	73.5891	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1514	TFIDF
-	ind: 	73.5891	MaxDom
+	ind: 	72.9263	Pow DOM MaxDom
+	ind: 	72.866	% DOM MaxDom
+	ind: 	74.3724	* Pow DOM MaxDom MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	72.8861	Pow DOM MaxDom
+	ind: 	73.0468	* * DOM MaxDom MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.8142	* Pow DOM MaxDom MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	72.0627	* DOM MaxDom
+	ind: 	72.866	% DOM MaxDom
+	ind: 	74.8142	* Pow DOM MaxDom MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	74.1113	DOM
+	ind: 	74.9548	* Pow DOM MaxDom MaxDom
+	ind: 	73.0267	+ DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.5933	DOM
+	ind: 	74.5933	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.0267	+ DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.4887	% DOM MaxDom
+	ind: 	72.1832	* DOM MaxDom
+	ind: 	74.3924	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	75.5975	* Pow DOM MaxDom MaxDom
+	ind: 	67.6039	- DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.1314	* DOM MaxDom
+	ind: 	74.1113	DOM
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.9146	* Pow DOM MaxDom MaxDom
+	ind: 	73.4686	DOM
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	73.4686	Pow DOM MaxDom
+	rep: 7  -> 7
+	rep: 19  -> 0
+	rep: 45 47  -> 1
+	rep: 45 47  -> 2
+	rep: 36 48  -> 3
+	rep: 36 48  -> 4
+	rep: 18 20  -> 5
+	rep: 18 20  -> 6
+	rep: 19 22  -> 8
+	rep: 19 22  -> 9
+	rep: 24 27  -> 10
+	rep: 24 27  -> 11
+	rep: 21 4  -> 12
+	rep: 21 4  -> 13
+	rep: 44 29  -> 14
+	rep: 44 29  -> 15
+	rep: 46  -> 16
+	rep: 25 47  -> 17
+	rep: 25 47  -> 18
+	rep: 19  -> 19
+	rep: 11  -> 20
+	rep: 21 23  -> 21
+	rep: 21 23  -> 22
+	rep: 21 28  -> 23
+	rep: 21 28  -> 24
+	rep: 9 30  -> 25
+	rep: 9 30  -> 26
+	rep: 38 48  -> 27
+	rep: 38 48  -> 28
+	rep: 38 14  -> 29
+	rep: 38 14  -> 30
+	rep: 42 29  -> 31
+	rep: 42 29  -> 32
+	rep: 12 5  -> 33
+	rep: 12 5  -> 34
+	rep: 36 37  -> 35
+	rep: 36 37  -> 36
+	rep: 37 29  -> 37
+	rep: 37 29  -> 38
+	rep: 9  -> 39
+	rep: 32 42  -> 40
+	rep: 32 42  -> 41
+	rep: 11 26  -> 42
+	rep: 11 26  -> 43
+	rep: 9 22  -> 44
+	rep: 9 22  -> 45
+	rep: 40 14  -> 46
+	rep: 40 14  -> 47
+	rep: 43 42  -> 48
+	rep: 43 42  -> 49
 generation 47:
-	ind: 	74.1113	TFIDF
-	ind: 	73.3882	MaxDom
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	74.1514	* TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.5288	MaxDom
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	73.5087	MaxAM
-	ind: 	74.1514	TFIDF
-	ind: 	73.5891	MaxDom
-	ind: 	74.3322	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	73.9104	* TFIDF MaxAM
-	ind: 	74.1113	TFIDF
-	ind: 	73.9104	* TFIDF MaxAM
-	ind: 	73.4083	MaxDom
-	ind: 	73.9104	* TFIDF MaxAM
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxAM
-	ind: 	73.1271	MaxDom
-	ind: 	73.4887	MaxDom
-	ind: 	74.4929	MaxDom
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	73.5087	MaxAM
-	ind: 	74.4929	MaxDom
-	ind: 	74.1113	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.3681	MaxDom
-	ind: 	73.5288	MaxDom
-	ind: 	74.4929	MaxDom
-	ind: 	74.1514	TFIDF
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.4929	MaxDom
-	ind: 	74.3322	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.7096	MaxDom
-	ind: 	73.3681	MaxDom
-	ind: 	74.4929	MaxDom
-	ind: 	74.4929	MaxDom
-	ind: 	73.6493	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	73.5087	MaxAM
-	ind: 	73.5891	MaxDom
-	ind: 	73.3882	MaxAM
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.051	Pow TFIDF MaxGSS
-	ind: 	73.4686	* TFIDF MaxAM
-	ind: 	73.4887	MaxDom
-	ind: 	73.5891	MaxDom
+	ind: 	74.9548	* Pow DOM MaxDom MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	71.8618	DOM
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	74.051	DOM
+	ind: 	72.4844	+ DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.7941	Pow DOM MaxDom
+	ind: 	74.1916	+ DOM MaxDom
+	ind: 	74.0309	Pow DOM MaxDom
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.4887	% DOM MaxDom
+	ind: 	74.9146	* Pow DOM MaxDom MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.4686	DOM
+	ind: 	73.8502	* Pow DOM MaxDom MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.533	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.0066	* Pow DOM MaxDom MaxDom
+	ind: 	73.81	* DOM MaxDom
+	ind: 	75.0753	* Pow DOM MaxDom MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	72.866	% DOM MaxDom
+	ind: 	73.2878	% DOM MaxDom
+	ind: 	74.6736	DOM
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.3924	DOM
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	73.4887	% DOM MaxDom
+	ind: 	74.8142	* Pow DOM MaxDom MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0351	* Pow DOM MaxDom MaxDom
+	ind: 	74.4929	DOM
+	ind: 	73.8301	DOM
+	ind: 	74.0108	% DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.1715	Pow DOM MaxDom
+	rep: 7  -> 7
+	rep: 35 28  -> 0
+	rep: 35 28  -> 1
+	rep: 3 32  -> 2
+	rep: 3 32  -> 3
+	rep: 16 22  -> 4
+	rep: 16 22  -> 5
+	rep: 15 6  -> 6
+	rep: 15 6  -> 8
+	rep: 16 46  -> 9
+	rep: 16 46  -> 10
+	rep: 44 39  -> 11
+	rep: 44 39  -> 12
+	rep: 3 34  -> 13
+	rep: 3 34  -> 14
+	rep: 45 18  -> 15
+	rep: 45 18  -> 16
+	rep: 36 28  -> 17
+	rep: 36 28  -> 18
+	rep: 11 19  -> 19
+	rep: 11 19  -> 20
+	rep: 41 13  -> 21
+	rep: 41 13  -> 22
+	rep: 22 19  -> 23
+	rep: 22 19  -> 24
+	rep: 13 40  -> 25
+	rep: 13 40  -> 26
+	rep: 3 45  -> 27
+	rep: 3 45  -> 28
+	rep: 48 4  -> 29
+	rep: 48 4  -> 30
+	rep: 42  -> 31
+	rep: 14  -> 32
+	rep: 27 8  -> 33
+	rep: 27 8  -> 34
+	rep: 1 31  -> 35
+	rep: 1 31  -> 36
+	rep: 22 18  -> 37
+	rep: 22 18  -> 38
+	rep: 48 37  -> 39
+	rep: 48 37  -> 40
+	rep: 29 49  -> 41
+	rep: 29 49  -> 42
+	rep: 4 38  -> 43
+	rep: 4 38  -> 44
+	rep: 43  -> 45
+	rep: 27 32  -> 46
+	rep: 27 32  -> 47
+	rep: 8 47  -> 48
+	rep: 8 47  -> 49
 generation 48:
-	ind: 	71.6409	MaxDom
-	ind: 	73.3882	MaxDom
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxAM
-	ind: 	74.1113	TFIDF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	73.4686	MaxDom
-	ind: 	73.9104	* TFIDF MaxAM
-	ind: 	74.1113	TFIDF
-	ind: 	73.2677	MaxAM
-	ind: 	73.4083	MaxDom
-	ind: 	73.4887	MaxDom
-	ind: 	73.4686	MaxDom
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.4485	MaxDom
-	ind: 	74.4929	MaxDom
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	73.5087	MaxAM
-	ind: 	73.1271	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	73.3681	MaxDom
-	ind: 	74.3322	Pow TFIDF MaxGSS
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	74.6335	Pow TFIDF MaxGSS
-	ind: 	73.5288	MaxDom
-	ind: 	74.3322	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.7096	MaxDom
-	ind: 	73.3681	MaxDom
-	ind: 	73.5087	MaxAM
-	ind: 	74.4929	MaxDom
-	ind: 	74.4929	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	72.0225	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	74.3322	Pow TFIDF MaxGSS
-	ind: 	74.1314	TFIDF
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.4728	DOM
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	75.5172	* Pow DOM MaxDom MaxDom
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	72.2836	% DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	73.7698	+ DOM MaxDom
+	ind: 	75.0351	* Pow DOM MaxDom MaxDom
+	ind: 	73.7096	DOM
+	ind: 	75.2762	* * Pow DOM MaxDom MaxDom MaxDom
+	ind: 	73.7096	Pow DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.4929	DOM
+	ind: 	73.4686	DOM
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	ind: 	72.7656	Pow DOM MaxDom
+	ind: 	75.0151	* Pow DOM MaxDom MaxDom
+	ind: 	74.4728	DOM
+	ind: 	74.2519	* DOM MaxDom
+	ind: 	73.569	* DOM MaxDom
+	ind: 	74.9548	* Pow DOM MaxDom MaxDom
+	ind: 	74.292	Pow DOM MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.5732	Pow DOM MaxDom
+	ind: 	74.1113	DOM
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.0753	* Pow DOM MaxDom MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.2878	% DOM MaxDom
+	ind: 	74.3322	DOM
+	ind: 	73.5489	* DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	75.0351	* Pow DOM MaxDom MaxDom
+	ind: 	74.8745	Pow DOM MaxDom
+	ind: 	73.2878	% DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	72.7857	% DOM MaxDom
+	ind: 	74.513	* DOM MaxDom
+	rep: 7  -> 7
+	rep: 29 43  -> 0
+	rep: 29 43  -> 1
+	rep: 0 34  -> 2
+	rep: 0 34  -> 3
+	rep: 48 19  -> 4
+	rep: 48 19  -> 5
+	rep: 18 6  -> 6
+	rep: 18 6  -> 8
+	rep: 18 26  -> 9
+	rep: 18 26  -> 10
+	rep: 5 12  -> 11
+	rep: 5 12  -> 12
+	rep: 4 26  -> 13
+	rep: 4 26  -> 14
+	rep: 31 24  -> 15
+	rep: 31 24  -> 16
+	rep: 20 46  -> 17
+	rep: 20 46  -> 18
+	rep: 41 17  -> 19
+	rep: 41 17  -> 20
+	rep: 15 19  -> 21
+	rep: 15 19  -> 22
+	rep: 21 19  -> 23
+	rep: 21 19  -> 24
+	rep: 42  -> 25
+	rep: 7 30  -> 26
+	rep: 7 30  -> 27
+	rep: 27  -> 28
+	rep: 33 26  -> 29
+	rep: 33 26  -> 30
+	rep: 35 21  -> 31
+	rep: 35 21  -> 32
+	rep: 17 6  -> 33
+	rep: 17 6  -> 34
+	rep: 39  -> 35
+	rep: 31 46  -> 36
+	rep: 31 46  -> 37
+	rep: 1 25  -> 38
+	rep: 1 25  -> 39
+	rep: 35  -> 40
+	rep: 30 15  -> 41
+	rep: 30 15  -> 42
+	rep: 20 10  -> 43
+	rep: 20 10  -> 44
+	rep: 17 46  -> 45
+	rep: 17 46  -> 46
+	rep: 32 5  -> 47
+	rep: 32 5  -> 48
+	rep: 11 16  -> 49
 generation 49:
-	ind: 	74.8142	Pow TFIDF MaxGSS
-	ind: 	73.3882	MaxDom
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.2677	MaxAM
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	74.8142	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.1271	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	73.4686	MaxDom
-	ind: 	73.5087	MaxAM
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	72.8259	MaxDom
-	ind: 	73.2677	MaxAM
-	ind: 	73.3681	MaxDom
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	73.3882	MaxAM
-	ind: 	74.3523	MaxAM
-	ind: 	73.5087	MaxAM
-	ind: 	73.4686	MaxDom
-	ind: 	74.6335	Pow TFIDF MaxGSS
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.4083	MaxDom
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.6335	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	73.1271	MaxDom
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	74.6335	Pow TFIDF MaxGSS
-	ind: 	73.5288	MaxDom
-	ind: 	65.7562	TFICF
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	73.7096	MaxDom
-	ind: 	74.4929	MaxDom
-	ind: 	74.4929	MaxDom
-	ind: 	73.4083	MaxDom
-	ind: 	73.6292	MaxDom
-	ind: 	73.5891	MaxDom
-	ind: 	72.0225	Pow TFIDF MaxGSS
-	ind: 	72.3438	Pow TFIDF MaxGSS
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	73.1271	MaxDom
-	ind: 	74.1314	TFIDF
+	ind: 	74.1113	DOM
+	ind: 	73.2878	% DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.0108	* DOM MaxDom
+	ind: 	73.9908	Pow DOM MaxDom
+	ind: 	71.2392	% DOM MaxDom
+	ind: 	74.4929	* DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	72.866	% DOM MaxDom
+	ind: 	73.1271	* DOM MaxDom
+	ind: 	74.3121	* DOM MaxDom
+	ind: 	73.9305	Pow DOM MaxDom
+	ind: 	66.5194	- DOM MaxDom
+	ind: 	73.5891	* * DOM MaxDom MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	72.2434	- Pow DOM MaxDom MaxDom
+	ind: 	74.9548	* Pow DOM MaxDom MaxDom
+	ind: 	74.292	* DOM MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	74.5732	Pow DOM MaxDom
+	ind: 	72.6451	DOM
+	ind: 	73.6292	DOM
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	74.8745	Pow DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	75.0753	* Pow DOM MaxDom MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.4527	DOM
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	73.4887	% DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	74.6736	Pow DOM MaxDom
+	ind: 	74.292	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.513	* DOM MaxDom
+	ind: 	73.81	DOM
+	ind: 	73.1673	* + DOM MaxDom MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	74.533	* DOM MaxDom
+	ind: 	73.9707	* DOM MaxDom
+	ind: 	73.2276	* * Pow DOM MaxDom MaxDom MaxDom
+	rep: 7  -> 7
+	rep: 17 17  -> 0
+	rep: 17 17  -> 1
+	rep: 24 12  -> 2
+	rep: 24 12  -> 3
+	rep: 20 17  -> 4
+	rep: 20 17  -> 5
+	rep: 17 40  -> 6
+	rep: 17 40  -> 8
+	rep: 26 6  -> 9
+	rep: 26 6  -> 10
+	rep: 27  -> 11
+	rep: 34 1  -> 12
+	rep: 34 1  -> 13
+	rep: 40 43  -> 14
+	rep: 40 43  -> 15
+	rep: 21 16  -> 16
+	rep: 21 16  -> 17
+	rep: 30  -> 18
+	rep: 13 8  -> 19
+	rep: 13 8  -> 20
+	rep: 28 45  -> 21
+	rep: 28 45  -> 22
+	rep: 42 33  -> 23
+	rep: 42 33  -> 24
+	rep: 30  -> 25
+	rep: 15 25  -> 26
+	rep: 15 25  -> 27
+	rep: 47  -> 28
+	rep: 31 43  -> 29
+	rep: 31 43  -> 30
+	rep: 23  -> 31
+	rep: 45 47  -> 32
+	rep: 45 47  -> 33
+	rep: 20  -> 34
+	rep: 26 42  -> 35
+	rep: 26 42  -> 36
+	rep: 35  -> 37
+	rep: 46  -> 38
+	rep: 47  -> 39
+	rep: 40 4  -> 40
+	rep: 40 4  -> 41
+	rep: 29 27  -> 42
+	rep: 29 27  -> 43
+	rep: 41 10  -> 44
+	rep: 41 10  -> 45
+	rep: 39 22  -> 46
+	rep: 39 22  -> 47
+	rep: 29 35  -> 48
+	rep: 29 35  -> 49
 generation 50:
-	ind: 	73.328	TFIDF
-	ind: 	73.3882	MaxDom
-	ind: 	74.0912	Pow TFIDF MaxGSS
-	ind: 	73.2677	MaxAM
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.6292	MaxDom
-	ind: 	72.3438	Pow TFIDF MaxGSS
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.5891	MaxDom
-	ind: 	73.4686	MaxDom
-	ind: 	73.5087	MaxAM
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	74.6335	Pow TFIDF MaxGSS
-	ind: 	73.3882	MaxAM
-	ind: 	72.9665	Pow TFIDF MaxGSS
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	74.3523	MaxAM
-	ind: 	73.5087	MaxAM
-	ind: 	73.4686	MaxDom
-	ind: 	73.6292	Pow MaxDom MaxGSS
-	ind: 	74.2719	Pow TFIDF MaxGSS
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	74.3322	Pow TFIDF MaxGSS
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	72.6853	MaxAM
-	ind: 	74.1514	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	73.1271	MaxDom
-	ind: 	73.5087	MaxAM
-	ind: 	74.2318	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.3882	MaxAM
-	ind: 	65.7562	TFICF
-	ind: 	73.3882	MaxAM
-	ind: 	74.3121	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	74.4929	Pow TFIDF MaxGSS
-	ind: 	73.4686	MaxDom
-	ind: 	74.1916	Pow TFIDF MaxGSS
-	ind: 	73.3681	MaxDom
-	ind: 	74.3322	Pow TFIDF MaxGSS
-	ind: 	60.1928	- TFIDF MaxGSS
-	ind: 	74.4929	MaxDom
-	ind: 	74.4929	MaxDom
-	ind: 	73.4686	MaxDom
-	ind: 	73.1271	MaxDom
-	ind: 	74.3322	Pow TFIDF MaxGSS
-	ind: 	74.1916	Pow TFIDF MaxGSS
+	ind: 	74.9548	* Pow DOM MaxDom MaxDom
+	ind: 	74.9548	* Pow DOM MaxDom MaxDom
+	ind: 	74.0711	Pow DOM MaxDom
+	ind: 	67.9052	- DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	74.9548	* Pow DOM MaxDom MaxDom
+	ind: 	72.9263	* * DOM MaxDom MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.9305	* * DOM MaxDom MaxDom
+	ind: 	74.3924	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	73.4887	% DOM MaxDom
+	ind: 	73.2878	% DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.051	* DOM MaxDom
+	ind: 	74.7941	Pow DOM MaxDom
+	ind: 	71.8217	- Pow DOM MaxDom MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	73.0066	* * DOM MaxDom MaxDom
+	ind: 	73.3481	% DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.5732	Pow DOM MaxDom
+	ind: 	74.0912	* DOM MaxDom
+	ind: 	74.2719	* DOM MaxDom
+	ind: 	74.8745	Pow DOM MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.533	* DOM MaxDom
+	ind: 	74.7941	* DOM MaxDom
+	ind: 	73.7497	DOM
+	ind: 	73.6292	DOM
+	ind: 	74.533	* DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	75.7381	* Pow DOM MaxDom MaxDom
+	ind: 	73.9305	* * DOM MaxDom MaxDom
+	ind: 	74.5732	Pow DOM MaxDom
+	ind: 	74.8142	DOM
+	ind: 	74.1715	Pow DOM MaxDom
+	ind: 	68.0257	- DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	73.9908	Pow DOM MaxDom
+	ind: 	75.0753	* Pow DOM MaxDom MaxDom
+	ind: 	75.0151	Pow DOM MaxDom
+	ind: 	74.7339	* DOM MaxDom
+	ind: 	74.1113	DOM
+	ind: 	71.661	Pow DOM MaxDom
+	ind: 	71.8618	DOM
+	ind: 	75.0753	* Pow DOM MaxDom MaxDom
+	ind: 	74.8142	DOM

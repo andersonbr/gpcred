@@ -3,253 +3,253 @@ GP: (* DOM MaxDom)
 ADF0: (% DiceSimilarity Authority)
 ADF1: (% Neighborhood1 Closeness)
 
-Best of generation 1 (Fitness = 26.0695, Structural Complexity = 9)
-GP: (% TFIDF MaxGSS)
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 1 (Fitness = 25.9691, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (% DiceSimilarity Authority)
+ADF1: (% Neighborhood1 Closeness)
 
-Best of generation 2 (Fitness = 12.0859, Structural Complexity = 21)
-GP: (* (+ P' TFIDF) (+ GSS MaxAM))
-ADF0: (* (% BibCoupling CoCitation) (- Strength Closeness))
-ADF1: (- (* DiceSimilarity Neighborhood1) (Log PageRank Betweenness))
+Best of generation 2 (Fitness = 25.9691, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (% DiceSimilarity Authority)
+ADF1: (% Neighborhood1 Closeness)
 
-Best of generation 3 (Fitness = 12.0859, Structural Complexity = 21)
-GP: (* (+ P' TFIDF) (+ GSS MaxAM))
-ADF0: (* (% BibCoupling CoCitation) (- Strength Closeness))
-ADF1: (- (* DiceSimilarity Neighborhood1) (Log PageRank Betweenness))
+Best of generation 3 (Fitness = 25.9691, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (% DiceSimilarity Authority)
+ADF1: (% Neighborhood1 Closeness)
 
-Best of generation 4 (Fitness = 12.0859, Structural Complexity = 21)
-GP: (* (+ P' TFIDF) (+ GSS MaxAM))
-ADF0: (* (% BibCoupling CoCitation) (- Strength Closeness))
-ADF1: (- (* DiceSimilarity Neighborhood1) (Log PageRank Betweenness))
+Best of generation 4 (Fitness = 25.9274, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (% DiceSimilarity Authority)
+ADF1: (% Neighborhood1 Closeness)
 
-Best of generation 5 (Fitness = 11.756, Structural Complexity = 21)
-GP: (* (Pow CHI MaxCTD) (+ GSS MaxAM))
-ADF0: (* (% BibCoupling CoCitation) (- Strength Closeness))
-ADF1: (- (* DiceSimilarity Neighborhood1) (Log PageRank Betweenness))
+Best of generation 5 (Fitness = 25.9274, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (% DiceSimilarity Authority)
+ADF1: (% Neighborhood1 Closeness)
 
-Best of generation 6 (Fitness = 11.756, Structural Complexity = 21)
-GP: (* (Pow CHI MaxCTD) (+ GSS MaxAM))
-ADF0: (* (% BibCoupling CoCitation) (- Strength Closeness))
-ADF1: (- (* DiceSimilarity Neighborhood1) (Log PageRank Betweenness))
+Best of generation 6 (Fitness = 25.9274, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (% DiceSimilarity Authority)
+ADF1: (% Neighborhood1 Closeness)
 
-Best of generation 7 (Fitness = 12.0792, Structural Complexity = 17)
-GP: (* (+ P' TFIDF) (+ GSS MaxAM))
-ADF0: (* (% BibCoupling CoCitation) (- Strength Closeness))
-ADF1: (+ Betweenness Neighborhood3)
+Best of generation 7 (Fitness = 25.8867, Structural Complexity = 13)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: (* Closeness Neighborhood3)
 
-Best of generation 8 (Fitness = 12.0792, Structural Complexity = 17)
-GP: (* (+ P' TFIDF) (+ GSS MaxAM))
-ADF0: (* (% BibCoupling CoCitation) (- Strength Closeness))
-ADF1: (+ Betweenness Neighborhood3)
+Best of generation 8 (Fitness = 25.8867, Structural Complexity = 13)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: (* Closeness Neighborhood3)
 
-Best of generation 9 (Fitness = 11.756, Structural Complexity = 17)
-GP: (* (Pow CHI MaxCTD) (+ GSS MaxAM))
-ADF0: (* (% BibCoupling CoCitation) (- Strength Closeness))
-ADF1: (+ Betweenness Neighborhood3)
+Best of generation 9 (Fitness = 25.7848, Structural Complexity = 13)
+GP: (% AM MaxCHI)
+ADF0: (+ Neighborhood2 DiceSimilarity)
+ADF1: (+ (+ CoCitation CoCitation) (* Closeness Neighborhood3))
 
-Best of generation 10 (Fitness = 12.261, Structural Complexity = 9)
-GP: (+ GSS MaxAM)
-ADF0: (Pow DiceSimilarity JaccardSimilarity)
-ADF1: (Log Betweenness Neighborhood3)
+Best of generation 10 (Fitness = 25.7644, Structural Complexity = 13)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: (+ CoCitation CoCitation)
 
-Best of generation 11 (Fitness = 12.4158, Structural Complexity = 11)
-GP: (Pow CHI MaxCTD)
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) DiceSimilarity)
-ADF1: (Log PageRank Betweenness)
+Best of generation 11 (Fitness = 25.7644, Structural Complexity = 13)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: (+ CoCitation CoCitation)
 
-Best of generation 12 (Fitness = 11.7787, Structural Complexity = 9)
-GP: (Pow CHI MaxCTD)
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 12 (Fitness = 25.7644, Structural Complexity = 13)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: (+ CoCitation CoCitation)
 
-Best of generation 13 (Fitness = 11.8184, Structural Complexity = 17)
-GP: (Pow CHI MaxCTD)
-ADF0: (+ Neighborhood3 DiceSimilarity)
-ADF1: (% (Pow (- EigenVector Constraint) (+ InverseLigSimilarity Closeness)) (- PageRank Betweenness))
+Best of generation 13 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 14 (Fitness = 11.9175, Structural Complexity = 15)
-GP: MaxCHI
-ADF0: (% (% (% (Pow DiceSimilarity JaccardSimilarity) DiceSimilarity) DiceSimilarity) (Pow PageRank Authority))
-ADF1: (+ Authority DiceSimilarity)
+Best of generation 14 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 15 (Fitness = 11.9968, Structural Complexity = 23)
-GP: (Pow (- CHI MaxCTD) MaxCTD)
-ADF0: (% (% (Pow DiceSimilarity JaccardSimilarity) (+ Authority DiceSimilarity)) (* (% BibCoupling CoCitation) (- Strength Closeness)))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 15 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 16 (Fitness = 11.8184, Structural Complexity = 13)
-GP: (Pow CHI MaxCTD)
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (% (+ InverseLigSimilarity Closeness) (- EigenVector Constraint))
+Best of generation 16 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 17 (Fitness = 11.7787, Structural Complexity = 9)
-GP: (Pow CHI MaxCTD)
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 17 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 18 (Fitness = 11.7787, Structural Complexity = 9)
-GP: (Pow CHI MaxCTD)
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 18 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 19 (Fitness = 11.7787, Structural Complexity = 7)
-GP: MaxCHI
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 19 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 20 (Fitness = 11.7787, Structural Complexity = 9)
-GP: (Pow CHI MaxCTD)
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 20 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 21 (Fitness = 11.7787, Structural Complexity = 9)
-GP: (Pow CHI MaxCTD)
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 21 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 22 (Fitness = 11.7985, Structural Complexity = 19)
-GP: (Pow CHI MaxCTD)
-ADF0: (% (% Neighborhood3 DiceSimilarity) (Pow DiceSimilarity (* (% BibCoupling CoCitation) (- Strength Closeness))))
-ADF1: (% InverseLigSimilarity Closeness)
+Best of generation 22 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 23 (Fitness = 11.7985, Structural Complexity = 19)
-GP: (Pow CHI MaxCTD)
-ADF0: (% (% Neighborhood3 DiceSimilarity) (Pow DiceSimilarity (* (% BibCoupling CoCitation) (- Strength Closeness))))
-ADF1: (% InverseLigSimilarity Closeness)
+Best of generation 23 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 24 (Fitness = 11.7985, Structural Complexity = 19)
-GP: (Pow CHI MaxCTD)
-ADF0: (% (% Neighborhood3 DiceSimilarity) (Pow DiceSimilarity (* (% BibCoupling CoCitation) (- Strength Closeness))))
-ADF1: (% InverseLigSimilarity Closeness)
+Best of generation 24 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 25 (Fitness = 11.4721, Structural Complexity = 23)
-GP: IDF
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (% (% (Pow DiceSimilarity JaccardSimilarity) (+ Authority DiceSimilarity)) (Pow (+ Authority DiceSimilarity) (- Strength Closeness))))
-ADF1: (- EigenVector Constraint)
+Best of generation 25 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 26 (Fitness = 11.4721, Structural Complexity = 15)
-GP: IDF
-ADF0: (+ Authority DiceSimilarity)
-ADF1: (% (Pow (- EigenVector Constraint) (+ InverseLigSimilarity Closeness)) (+ InverseLigSimilarity Closeness))
+Best of generation 26 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 27 (Fitness = 11.3361, Structural Complexity = 19)
-GP: IDF
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (% (- Strength Closeness) (Pow (+ Authority DiceSimilarity) (+ PageRank Authority))))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 27 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 28 (Fitness = 11.4721, Structural Complexity = 15)
-GP: IDF
-ADF0: (+ Authority DiceSimilarity)
-ADF1: (% (Pow (- EigenVector Constraint) (+ InverseLigSimilarity Closeness)) (+ InverseLigSimilarity Closeness))
+Best of generation 28 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 29 (Fitness = 11.4721, Structural Complexity = 15)
-GP: IDF
-ADF0: (+ Authority DiceSimilarity)
-ADF1: (% (Pow (- EigenVector Constraint) (+ InverseLigSimilarity Closeness)) (+ InverseLigSimilarity Closeness))
+Best of generation 29 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 30 (Fitness = 12.641, Structural Complexity = 25)
-GP: (Pow CHI MaxCTD)
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (% (% (Pow DiceSimilarity JaccardSimilarity) (+ Authority DiceSimilarity)) (Pow (+ Authority DiceSimilarity) (% BibCoupling CoCitation))))
-ADF1: (% EigenVector Constraint)
+Best of generation 30 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 31 (Fitness = 12.6886, Structural Complexity = 27)
-GP: (Pow CHI (- CHI MaxCTD))
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (% (% (Pow DiceSimilarity JaccardSimilarity) (+ Authority DiceSimilarity)) (Pow (+ Authority DiceSimilarity) (- Strength Closeness))))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 31 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 32 (Fitness = 12.6957, Structural Complexity = 17)
-GP: (Pow CHI MaxCTD)
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (Pow (Pow DiceSimilarity JaccardSimilarity) (- Strength Closeness)))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 32 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 33 (Fitness = 12.7911, Structural Complexity = 27)
-GP: (Pow CHI (- CHI MaxCTD))
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (% (% (Pow DiceSimilarity JaccardSimilarity) (+ Authority DiceSimilarity)) (Pow (+ Authority DiceSimilarity) (- Strength Closeness))))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 33 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 34 (Fitness = 12.6957, Structural Complexity = 21)
-GP: (Pow CHI MaxCTD)
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (Pow (Pow (+ Authority DiceSimilarity) (- Strength Closeness)) (+ Authority DiceSimilarity)))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 34 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 35 (Fitness = 12.5811, Structural Complexity = 9)
-GP: (Pow CHI MaxCTD)
-ADF0: (+ Authority DiceSimilarity)
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 35 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 36 (Fitness = 12.7911, Structural Complexity = 23)
-GP: (Pow CHI (- CHI MaxCTD))
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (% (+ Authority DiceSimilarity) (Pow (+ Authority DiceSimilarity) (Pow DiceSimilarity JaccardSimilarity))))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 36 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 37 (Fitness = 12.7911, Structural Complexity = 23)
-GP: (Pow CHI (- CHI MaxCTD))
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (% (+ Authority DiceSimilarity) (Pow (+ Authority DiceSimilarity) (Pow DiceSimilarity JaccardSimilarity))))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 37 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 38 (Fitness = 12.7911, Structural Complexity = 23)
-GP: (Pow CHI (- CHI MaxCTD))
-ADF0: (% (+ Authority DiceSimilarity) (% (+ Authority DiceSimilarity) (Pow (+ Authority DiceSimilarity) (Pow DiceSimilarity JaccardSimilarity))))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 38 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 39 (Fitness = 12.7911, Structural Complexity = 23)
-GP: (Pow CHI (- CHI MaxCTD))
-ADF0: (% (+ Authority DiceSimilarity) (% (+ Authority DiceSimilarity) (Pow (+ Authority DiceSimilarity) (Pow DiceSimilarity JaccardSimilarity))))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 39 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 40 (Fitness = 11.5311, Structural Complexity = 19)
-GP: (+ CHI (% CHI MaxCTD))
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (Pow (Pow PageRank Authority) (+ Authority DiceSimilarity)))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 40 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 41 (Fitness = 11.5311, Structural Complexity = 19)
-GP: (+ CHI (% CHI MaxCTD))
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (Pow (Pow PageRank Authority) (+ Authority DiceSimilarity)))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 41 (Fitness = 25.0146, Structural Complexity = 11)
+GP: (% AM MaxCHI)
+ADF0: (+ (- DiceSimilarity CoCitation) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 42 (Fitness = 11.2846, Structural Complexity = 23)
-GP: (+ CHI (% CHI MaxCTD))
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (Pow (Pow PageRank Authority) (Pow (Pow PageRank Authority) (+ Authority DiceSimilarity))))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 42 (Fitness = 25.0051, Structural Complexity = 27)
+GP: (Pow (% (Pow AM MaxCHI) (Pow (% (Pow AM MaxCHI) (% AM MaxCHI)) MaxCHI)) MaxCHI)
+ADF0: (+ (+ (+ Neighborhood2 DiceSimilarity) (Log PageRank Authority)) (Log Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 43 (Fitness = 11.2846, Structural Complexity = 23)
-GP: (+ CHI (% CHI MaxCTD))
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (Pow (Pow PageRank Authority) (Pow (Pow PageRank Authority) (+ Authority DiceSimilarity))))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 43 (Fitness = 24.964, Structural Complexity = 27)
+GP: (Pow (% (Pow AM MaxCHI) (Pow (% (Pow AM MaxCHI) (% AM MaxCHI)) MaxCHI)) MaxCHI)
+ADF0: (+ (+ (+ Neighborhood2 DiceSimilarity) (Log PageRank Authority)) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 44 (Fitness = 10.7594, Structural Complexity = 23)
-GP: (+ CHI (% CHI MaxCTD))
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (Pow (* DiceSimilarity JaccardSimilarity) (Pow (Pow PageRank Authority) (+ Authority DiceSimilarity))))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 44 (Fitness = 24.964, Structural Complexity = 27)
+GP: (Pow (% (Pow AM MaxCHI) (Pow (% (Pow AM MaxCHI) (% AM MaxCHI)) MaxCHI)) MaxCHI)
+ADF0: (+ (+ (+ Neighborhood2 DiceSimilarity) (Log PageRank Authority)) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 45 (Fitness = 11.9826, Structural Complexity = 23)
-GP: (+ CHI (- CHI MaxCTD))
-ADF0: (% (Pow DiceSimilarity JaccardSimilarity) (Pow (* DiceSimilarity JaccardSimilarity) (Pow (Pow PageRank Authority) (+ Authority DiceSimilarity))))
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 45 (Fitness = 24.964, Structural Complexity = 13)
+GP: (% AM MaxCHI)
+ADF0: (+ (+ DiceSimilarity (+ Neighborhood2 DiceSimilarity)) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 46 (Fitness = 12.6736, Structural Complexity = 9)
-GP: (- CHI MaxCTD)
-ADF0: (- Strength Closeness)
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 46 (Fitness = 24.964, Structural Complexity = 9)
+GP: (Pow (% AM MaxCHI) MaxCHI)
+ADF0: (+ Neighborhood2 DiceSimilarity)
+ADF1: Strength
 
-Best of generation 47 (Fitness = 12.646, Structural Complexity = 9)
-GP: (- CHI MaxCTD)
-ADF0: (+ Authority DiceSimilarity)
-ADF1: (+ Neighborhood2 Closeness)
+Best of generation 47 (Fitness = 24.9435, Structural Complexity = 13)
+GP: (Pow AM MaxCHI)
+ADF0: (+ (+ DiceSimilarity (+ Neighborhood2 DiceSimilarity)) (+ Neighborhood2 DiceSimilarity))
+ADF1: Strength
 
-Best of generation 48 (Fitness = 12.5147, Structural Complexity = 9)
-GP: (+ CHI MaxCTD)
-ADF0: (+ Strength Closeness)
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 48 (Fitness = 24.8613, Structural Complexity = 13)
+GP: (% AM MaxCHI)
+ADF0: (+ (+ DiceSimilarity (+ Neighborhood2 DiceSimilarity)) (+ Neighborhood2 DiceSimilarity))
+ADF1: Neighborhood1
 
-Best of generation 49 (Fitness = 12.5147, Structural Complexity = 9)
-GP: (+ CHI MaxCTD)
-ADF0: (+ Strength Closeness)
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 49 (Fitness = 24.8613, Structural Complexity = 13)
+GP: (% AM MaxCHI)
+ADF0: (+ (+ DiceSimilarity (+ Neighborhood2 DiceSimilarity)) (+ Neighborhood2 DiceSimilarity))
+ADF1: Neighborhood1
 
-Best of generation 50 (Fitness = 12.6736, Structural Complexity = 9)
-GP: (- CHI MaxCTD)
-ADF0: (- Strength Closeness)
-ADF1: (+ InverseLigSimilarity Closeness)
+Best of generation 50 (Fitness = 24.8408, Structural Complexity = 15)
+GP: (% AM MaxCHI)
+ADF0: (+ (+ DiceSimilarity (+ DiceSimilarity (+ Neighborhood2 DiceSimilarity))) (+ Neighborhood2 DiceSimilarity))
+ADF1: Neighborhood1
 
