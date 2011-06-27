@@ -24,7 +24,6 @@ for line in file:
 #    print r, treinoporc, validacaoporc
 
     if r < treinoporc:
-        print "printed"
         print >> treino, line,
 
     elif r < (validacaoporc + treinoporc):
