@@ -19,4 +19,4 @@ for line in file:
     if porcentage > r:
         print line,
 
-	
+

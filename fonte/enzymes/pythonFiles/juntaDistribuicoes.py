@@ -10,7 +10,6 @@ filename = sys.argv[1]
 
 file = open(filename)
 
-
 memory = {}
 count = {}
 
@@ -61,26 +60,18 @@ for k,v in linha.iteritems():
         continue
 #    print k
     
+#    for a,b in v.iteritems():
+#        for bl in b:
+#            for bll in bl:
+#                print re.sub("CLASS=\d+\.\d+\.\d+.\w+" , a ,bll)
+
+#descomente para obter distribuicao dos individuos nas classes
+#mas comente o que esta acima! 
+
     for a,b in v.iteritems():
-#        print a, len(b)
+        print a,
+        soma = 0
         for bl in b:
-            for bll in bl:
-                print re.sub("CLASS=\d+\.\d+\.\d+.\w+" , a ,bll)
+            soma += len(bl)
+        print soma
 
-#            if "ind" in line:
-#                val = re.search("\d+\.\d+", line)
-#                if val:
-#                    val = float(val.group(0))
-#                    print re.sub("\d+\.\d+",  str(100.0 - val), line),
-#                else:
-#                    print line,
-
-#for k,v in count.iteritems():
-# 	print k,"  ----->  " ,  v
-# 	print k, v
-#	
-
-    
-#print len(count), " classes" 
-
-	

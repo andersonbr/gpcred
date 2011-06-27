@@ -10,7 +10,6 @@ porcentage = sys.argv[2]
 
 file = open(filename)
 
-
 memory = {}
 count = {}
 newcount = {}
@@ -50,5 +49,3 @@ for k,v in newcount.iteritems():
 			sys.stderr.write(l)
 		i += 1
     
-
-	
