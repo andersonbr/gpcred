@@ -182,6 +182,7 @@ int main(int argc, char **argv)
 	classifier->train(io.getTrain());
 	//classifier->train(io.getValidation());
 	classifier->test(io.getTest());
+	classifier->showConfusionMatrix();
     classifier->printFinalOutFile(io.getFinalOutFile(), "TestBaseline");
     cout<<"[OK]"<<endl;
 
