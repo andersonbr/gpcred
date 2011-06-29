@@ -28,7 +28,9 @@ void TreeEvaluator::evaluateFromFile(string fileName){
     out.setf(ios::fixed,ios::floatfield);
     out.precision(5);
     out<<"Baseline"<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<endl;
-    
+    double blmicro = classifier->getMicroF1();
+    double blmacro = classifier->getMacroF1();
+
     delete classifier;
     
     //tests from file....
@@ -126,7 +128,11 @@ void TreeEvaluator::evaluateFromFile(string fileName){
             classifier->train(io->getTrain());
             classifier->test(io->getTest());
 
-            cout<<"Resultado = " << classifier->getMicroF1()<<endl;
+            cout<<"BL = " << blmicro << "\t" << blmacro <<endl;
+            cout<<"Resultado = " << classifier->getMicroF1()<< "\t" << classifier->getMacroF1()<<endl;
+            cout.setf(ios::fixed,ios::floatfield);
+            cout.precision(4);
+            cout<<"Melhorias = " << ((classifier->getMicroF1()/blmicro) -1.0) *100.0 << "\t" << ((classifier->getMacroF1()/blmacro) -1.0) *100.0 <<endl;
 
             ostream &out = io->getEvaluateFile();
             out.setf(ios::fixed,ios::floatfield);
