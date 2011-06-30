@@ -1,0 +1,5104 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Log,2) (Pow,2) 
+	terms: MaxTFICF MaxTFIDF MaxCTD MaxOR MaxCC MaxGSS MaxCHI MaxAM MaxIG MaxDom sumDF DF sumTF TF TFIDF TFICF IDF CTD OR CE CC GSS CHI IG DOM GINI P' P AM
+generation 0:
+	ind: 	68.1864	* MaxOR AM
+	ind: 	39.6465	Log * MaxGSS CE + AM TF
+	ind: 	26.2503	Pow sumTF TF
+	ind: 	31.0303	* % MaxDom MaxCC Log CE MaxOR
+	ind: 	21.5103	Log GINI MaxCC
+	ind: 	25.1255	- % TF OR % IG MaxTFIDF
+	ind: 	75.0753	% TFIDF MaxGSS
+	ind: 	72.1229	Pow * P sumTF * P MaxIG
+	ind: 	71.7815	* CTD MaxOR
+	ind: 	20.3856	- Log TF sumDF * GINI TF
+	ind: 	42.9203	% MaxTFICF CTD
+	ind: 	44.0249	Pow - AM sumDF % CHI MaxOR
+	ind: 	63.5871	* CE TF
+	ind: 	68.0257	+ * TF MaxIG % GINI DOM
+	ind: 	69.0098	* MaxDom MaxTFIDF
+	ind: 	52.7214	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	60.9962	* CTD P'
+	ind: 	26.3507	* Log IDF TFICF Pow CE CE
+	ind: 	29.7248	Log GINI CHI
+	ind: 	61.1368	% * DF IDF * MaxDom MaxTFICF
+	ind: 	60.6347	* DF CE
+	ind: 	12.2314	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	51.6369	% TFICF TFIDF
+	ind: 	50.9138	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	61.6991	+ MaxCTD TFICF
+	ind: 	50.9942	Pow * TFICF sumDF Pow P' MaxIG
+	ind: 	64.6315	- sumTF MaxCHI
+	ind: 	29.3232	Log * sumDF DF + TFIDF MaxAM
+	ind: 	29.9458	Log TF MaxAM
+	ind: 	32.6973	* Log CHI OR + CE GINI
+	ind: 	26.3507	Log TFICF TFICF
+	ind: 	56.7584	- % TF MaxDom + TFICF sumTF
+	ind: 	71.6409	Pow MaxCC IDF
+	ind: 	54.3884	* * AM CE - DOM CHI
+	ind: 	52.1792	* sumTF MaxCTD
+	ind: 	69.2709	Pow Pow MaxAM MaxIG Log CE TFICF
+	ind: 	70.8978	Pow CHI MaxCTD
+	ind: 	53.2235	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	72.5246	% AM IG
+	ind: 	21.6911	% + sumTF TFICF - MaxTFICF MaxGSS
+	ind: 	74.8745	* DOM MaxDom
+	ind: 	3.334	% - sumDF TF Pow DOM DF
+	ind: 	52.621	% IG DOM
+	ind: 	54.0068	+ - GSS AM * GSS MaxTFICF
+	ind: 	41.7755	Log DOM AM
+	ind: 	52.8821	* % MaxAM MaxIG * CE TF
+	ind: 	65.6156	+ sumDF CHI
+	ind: 	26.3507	Log Log MaxCHI MaxIG Pow MaxAM MaxTFICF
+	ind: 	67.5638	+ GSS GSS
+	ind: 	72.4041	* % AM MaxCHI Pow P' P
+	rep: 6  -> 6
+	rep: 19 23  -> 0
+	rep: 19 23  -> 1
+	rep: 14 9  -> 2
+	rep: 14 9  -> 3
+	rep: 17 2  -> 4
+	rep: 17 2  -> 5
+	rep: 49 24  -> 7
+	rep: 49 24  -> 8
+	rep: 46 20  -> 9
+	rep: 46 20  -> 10
+	rep: 31 31  -> 11
+	rep: 31 31  -> 12
+	rep: 48 4  -> 13
+	rep: 48 4  -> 14
+	rep: 15 27  -> 15
+	rep: 15 27  -> 16
+	rep: 10 28  -> 17
+	rep: 10 28  -> 18
+	rep: 40 19  -> 19
+	rep: 40 19  -> 20
+	rep: 19 20  -> 21
+	rep: 19 20  -> 22
+	rep: 31 17  -> 23
+	rep: 31 17  -> 24
+	rep: 34 30  -> 25
+	rep: 34 30  -> 26
+	rep: 38 22  -> 27
+	rep: 38 22  -> 28
+	rep: 6 42  -> 29
+	rep: 6 42  -> 30
+	rep: 48 5  -> 31
+	rep: 48 5  -> 32
+	rep: 19  -> 33
+	rep: 45  -> 34
+	rep: 28 21  -> 35
+	rep: 28 21  -> 36
+	rep: 37  -> 37
+	rep: 13 10  -> 38
+	rep: 13 10  -> 39
+	rep: 29 9  -> 40
+	rep: 29 9  -> 41
+	rep: 8 34  -> 42
+	rep: 8 34  -> 43
+	rep: 16  -> 44
+	rep: 20 45  -> 45
+	rep: 20 45  -> 46
+	rep: 48 28  -> 47
+	rep: 48 28  -> 48
+	rep: 3 41  -> 49
+generation 1:
+	ind: 	62.3017	% * DF IDF * MaxDom MaxTFICF
+	ind: 	42.7395	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	14.0189	- Log TF sumDF * GINI TF
+	ind: 	70.4157	* MaxDom MaxTFIDF
+	ind: 	26.3507	* Log IDF TFICF Pow sumTF TF
+	ind: 	71.7212	Pow CE CE
+	ind: 	75.0753	% TFIDF MaxGSS
+	ind: 	70.0141	* % AM MaxCHI Pow P' P
+	ind: 	61.6791	+ MaxCTD TFICF
+	ind: 	66.6198	+ sumDF CHI
+	ind: 	58.1643	* DF CE
+	ind: 	56.7584	- % TF MaxDom + TFICF sumTF
+	ind: 	56.7584	- % TF MaxDom + TFICF sumTF
+	ind: 	66.2784	+ GSS GSS
+	ind: 	27.857	Log GINI MaxCC
+	ind: 	52.621	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	52.7415	Pow * sumDF DF + TFIDF MaxAM
+	ind: 	42.6592	% MaxTFICF CTD
+	ind: 	29.9659	Log TF MaxAM
+	ind: 	71.8016	* DOM MaxDom
+	ind: 	65.9169	% * DF IDF * MaxDom MaxTFICF
+	ind: 	57.2806	* DF CE
+	ind: 	62.7837	% * DF IDF * MaxDom MaxTFICF
+	ind: 	55.2119	- % TF MaxDom + TFICF sumTF
+	ind: 	29.9659	* Log IDF TFICF Pow CE CE
+	ind: 	51.4561	* sumTF MaxCTD
+	ind: 	29.9659	Log TFICF TFICF
+	ind: 	72.5045	% AM IG
+	ind: 	51.5565	% TFICF TFIDF
+	ind: 	74.7339	% TFIDF MaxGSS
+	ind: 	59.0279	% IG DOM
+	ind: 	69.9739	+ GSS GSS
+	ind: 	25.0251	- % TF OR % IG MaxTFIDF
+	ind: 	61.1368	% * DF IDF * MaxDom MaxTFICF
+	ind: 	52.8821	* % MaxAM MaxIG * CE TF
+	ind: 	29.3633	Log TF MaxAM
+	ind: 	12.5126	Pow * MaxCTD MaxCC - sumDF AM
+	ind: 	53.2235	Log * GINI TFIDF Pow MaxGSS GINI
+	ind: 	68.1462	+ * TF MaxIG % GINI DOM
+	ind: 	42.86	% MaxTFICF CTD
+	ind: 	68.8492	Log TF sumDF
+	ind: 	38.6021	- * Log CHI OR + CE GINI * GINI TF
+	ind: 	68.7287	* CTD MaxOR
+	ind: 	55.1516	* sumTF MaxCTD
+	ind: 	60.9962	* CTD P'
+	ind: 	58.084	* DF CE
+	ind: 	55.6537	* % MaxAM MaxIG * CE TF
+	ind: 	27.857	Log TF MaxAM
+	ind: 	67.8449	+ GSS GSS
+	ind: 	33.2396	* % MaxDom MaxCC Log CE MaxOR
+	rep: 6  -> 6
+	rep: 19 14  -> 0
+	rep: 19 14  -> 1
+	rep: 8 8  -> 2
+	rep: 8 8  -> 3
+	rep: 29 18  -> 4
+	rep: 29 18  -> 5
+	rep: 5 23  -> 7
+	rep: 5 23  -> 8
+	rep: 10 32  -> 9
+	rep: 10 32  -> 10
+	rep: 0  -> 11
+	rep: 45 21  -> 12
+	rep: 45 21  -> 13
+	rep: 31 14  -> 14
+	rep: 31 14  -> 15
+	rep: 20  -> 16
+	rep: 43 35  -> 17
+	rep: 43 35  -> 18
+	rep: 34 24  -> 19
+	rep: 34 24  -> 20
+	rep: 46 28  -> 21
+	rep: 46 28  -> 22
+	rep: 21 15  -> 23
+	rep: 21 15  -> 24
+	rep: 19 36  -> 25
+	rep: 19 36  -> 26
+	rep: 39  -> 27
+	rep: 42 42  -> 28
+	rep: 42 42  -> 29
+	rep: 5  -> 30
+	rep: 13  -> 31
+	rep: 13 1  -> 32
+	rep: 13 1  -> 33
+	rep: 5 18  -> 34
+	rep: 5 18  -> 35
+	rep: 28 36  -> 36
+	rep: 28 36  -> 37
+	rep: 15 28  -> 38
+	rep: 15 28  -> 39
+	rep: 5 3  -> 40
+	rep: 5 3  -> 41
+	rep: 27 32  -> 42
+	rep: 27 32  -> 43
+	rep: 3 22  -> 44
+	rep: 3 22  -> 45
+	rep: 45 11  -> 46
+	rep: 45 11  -> 47
+	rep: 29 30  -> 48
+	rep: 29 30  -> 49
+generation 2:
+	ind: 	29.0018	Log GINI MaxCC
+	ind: 	73.2476	* DOM MaxDom
+	ind: 	61.6791	+ MaxCTD TFICF
+	ind: 	61.6791	+ MaxCTD TFICF
+	ind: 	52.1591	Log TF MaxAM
+	ind: 	73.0468	% TFIDF MaxGSS
+	ind: 	75.0753	% TFIDF MaxGSS
+	ind: 	68.3471	+ TFICF sumTF
+	ind: 	64.1093	- % TF MaxDom Pow CE CE
+	ind: 	64.0892	- DF CE
+	ind: 	22.3338	- % TF OR % IG MaxTFIDF
+	ind: 	62.3017	% * DF IDF * MaxDom MaxTFICF
+	ind: 	58.7267	* DF CE
+	ind: 	56.7986	* DF CE
+	ind: 	69.9739	+ GSS GSS
+	ind: 	27.857	Log GINI MaxCC
+	ind: 	65.9169	% * DF IDF * MaxDom MaxTFICF
+	ind: 	51.7373	* sumTF MaxCTD
+	ind: 	49.8092	Log TF MaxAM
+	ind: 	52.862	* % MaxAM MaxIG * CE TF
+	ind: 	29.9659	* Log IDF TFICF Pow CE CE
+	ind: 	52.862	* % MaxAM MaxIG * CE TF
+	ind: 	53.4445	% TFICF TFIDF
+	ind: 	65.5955	* DF CE
+	ind: 	33.561	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	67.383	* DOM - sumDF AM
+	ind: 	61.9401	Pow * MaxCTD MaxCC MaxDom
+	ind: 	42.86	% MaxTFICF CTD
+	ind: 	68.7287	* CTD MaxOR
+	ind: 	68.7287	* CTD MaxOR
+	ind: 	71.7212	Pow CE CE
+	ind: 	66.2784	+ GSS GSS
+	ind: 	21.5103	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	69.0902	+ GSS GSS
+	ind: 	49.9096	Log TF MaxAM
+	ind: 	69.9136	Pow CE CE
+	ind: 	71.6409	* MaxCTD MaxCC
+	ind: 	53.2637	Pow % TFICF TFIDF - sumDF AM
+	ind: 	35.4891	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	57.4814	% TFICF TFIDF
+	ind: 	71.4601	Pow CE CE
+	ind: 	70.4157	* MaxDom MaxTFIDF
+	ind: 	70.1546	% AM IG
+	ind: 	22.3338	- % TF OR % IG MaxTFIDF
+	ind: 	68.0659	* MaxDom MaxTFIDF
+	ind: 	62.0406	% * DF IDF * MaxDom MaxTFICF
+	ind: 	63.9687	% TF MaxDom
+	ind: 	40.2691	- * DF CE + TFICF sumTF
+	ind: 	72.866	% TFIDF MaxGSS
+	ind: 	52.621	% IG DOM
+	rep: 6  -> 6
+	rep: 4 38  -> 0
+	rep: 4 38  -> 1
+	rep: 26 10  -> 2
+	rep: 26 10  -> 3
+	rep: 9 46  -> 4
+	rep: 9 46  -> 5
+	rep: 16 12  -> 7
+	rep: 16 12  -> 8
+	rep: 30 17  -> 9
+	rep: 30 17  -> 10
+	rep: 25 3  -> 11
+	rep: 25 3  -> 12
+	rep: 44  -> 13
+	rep: 23 21  -> 14
+	rep: 23 21  -> 15
+	rep: 48 28  -> 16
+	rep: 48 28  -> 17
+	rep: 17 10  -> 18
+	rep: 17 10  -> 19
+	rep: 44 12  -> 20
+	rep: 44 12  -> 21
+	rep: 13 24  -> 22
+	rep: 13 24  -> 23
+	rep: 6 4  -> 24
+	rep: 6 4  -> 25
+	rep: 7 15  -> 26
+	rep: 7 15  -> 27
+	rep: 44 22  -> 28
+	rep: 44 22  -> 29
+	rep: 35 8  -> 30
+	rep: 35 8  -> 31
+	rep: 26 49  -> 32
+	rep: 26 49  -> 33
+	rep: 12 22  -> 34
+	rep: 12 22  -> 35
+	rep: 8 9  -> 36
+	rep: 8 9  -> 37
+	rep: 44 24  -> 38
+	rep: 44 24  -> 39
+	rep: 9 2  -> 40
+	rep: 9 2  -> 41
+	rep: 49 27  -> 42
+	rep: 49 27  -> 43
+	rep: 27 32  -> 44
+	rep: 27 32  -> 45
+	rep: 40 35  -> 46
+	rep: 40 35  -> 47
+	rep: 31 17  -> 48
+	rep: 31 17  -> 49
+generation 3:
+	ind: 	52.1591	Log MaxGSS MaxCC
+	ind: 	35.4891	* + P' TFIDF Log TF MaxAM
+	ind: 	61.2372	Pow * MaxCTD MaxCC MaxDom
+	ind: 	26.431	- % TF OR % IG MaxTFIDF
+	ind: 	60.9962	- DF CE
+	ind: 	63.9687	% TF MaxDom
+	ind: 	75.0753	% TFIDF MaxGSS
+	ind: 	62.141	% * DF IDF * MaxDom MaxTFICF
+	ind: 	68.0458	* DF CE
+	ind: 	71.6811	Pow CE CE
+	ind: 	50.3515	* sumTF MaxCTD
+	ind: 	71.0986	* DOM - sumDF AM
+	ind: 	59.4497	+ MaxCTD TFICF
+	ind: 	68.0659	* MaxDom MaxTFIDF
+	ind: 	65.5152	* DF CE
+	ind: 	53.4646	* % MaxAM MaxIG * CE TF
+	ind: 	69.8735	* CTD MaxOR
+	ind: 	73.107	% TFIDF MaxGSS
+	ind: 	56.2964	* sumTF MaxCTD
+	ind: 	18.8391	- % TF OR % IG MaxTFIDF
+	ind: 	70.4961	* MaxDom MaxTFIDF
+	ind: 	61.8598	* DF CE
+	ind: 	62.9243	* DF CE
+	ind: 	32.2555	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	52.0386	Log TF MaxAM
+	ind: 	74.7339	% TFIDF MaxGSS
+	ind: 	66.1779	+ TFICF sumTF
+	ind: 	27.857	Log GINI MaxCC
+	ind: 	51.7775	% TFICF TFIDF
+	ind: 	70.4358	* MaxDom MaxTFIDF
+	ind: 	69.9136	Pow CE CE
+	ind: 	64.1093	- % TF MaxDom Pow CE CE
+	ind: 	61.5786	Pow * MaxCTD MaxCC MaxDom
+	ind: 	52.8219	% IG DOM
+	ind: 	58.6865	* DF CE
+	ind: 	53.4244	% TFICF TFIDF
+	ind: 	62.864	- % TF MaxDom Pow CE CE
+	ind: 	65.1536	- DF CE
+	ind: 	68.5881	+ P' TFIDF
+	ind: 	33.561	* * MaxDom MaxTFIDF Log MaxGSS MaxCC
+	ind: 	61.1769	+ MaxCTD TFICF
+	ind: 	65.5553	- DF CE
+	ind: 	52.8419	% IG DOM
+	ind: 	42.6592	% MaxTFICF CTD
+	ind: 	25.3063	% MaxTFICF CTD
+	ind: 	49.2268	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	71.7212	Pow CE CE
+	ind: 	69.7931	Pow CE CE
+	ind: 	68.5479	+ GSS GSS
+	ind: 	51.4561	* sumTF MaxCTD
+	rep: 6  -> 6
+	rep: 13 7  -> 0
+	rep: 13 7  -> 1
+	rep: 21 49  -> 2
+	rep: 21 49  -> 3
+	rep: 25 9  -> 4
+	rep: 25 9  -> 5
+	rep: 17 16  -> 7
+	rep: 17 16  -> 8
+	rep: 9 27  -> 9
+	rep: 9 27  -> 10
+	rep: 48 22  -> 11
+	rep: 48 22  -> 12
+	rep: 30 45  -> 13
+	rep: 30 45  -> 14
+	rep: 29 22  -> 15
+	rep: 29 22  -> 16
+	rep: 2 3  -> 17
+	rep: 2 3  -> 18
+	rep: 9  -> 19
+	rep: 1 1  -> 20
+	rep: 1 1  -> 21
+	rep: 36 7  -> 22
+	rep: 36 7  -> 23
+	rep: 46  -> 24
+	rep: 8  -> 25
+	rep: 26 7  -> 26
+	rep: 26 7  -> 27
+	rep: 14 36  -> 28
+	rep: 14 36  -> 29
+	rep: 40  -> 30
+	rep: 46 12  -> 31
+	rep: 46 12  -> 32
+	rep: 6 14  -> 33
+	rep: 6 14  -> 34
+	rep: 20 10  -> 35
+	rep: 20 10  -> 36
+	rep: 22 23  -> 37
+	rep: 22 23  -> 38
+	rep: 41  -> 39
+	rep: 22 39  -> 40
+	rep: 22 39  -> 41
+	rep: 17 49  -> 42
+	rep: 17 49  -> 43
+	rep: 5 18  -> 44
+	rep: 5 18  -> 45
+	rep: 13 37  -> 46
+	rep: 13 37  -> 47
+	rep: 5 45  -> 48
+	rep: 5 45  -> 49
+generation 4:
+	ind: 	61.7393	% * DF IDF * MaxDom MaxTFICF
+	ind: 	69.3513	* MaxDom MaxTFIDF
+	ind: 	52.7214	* sumTF MaxCTD
+	ind: 	60.2932	* DF CE
+	ind: 	73.5288	% TFIDF MaxGSS
+	ind: 	72.4644	Pow CE CE
+	ind: 	75.0753	% TFIDF MaxGSS
+	ind: 	74.7741	% TFIDF MaxGSS
+	ind: 	69.8333	* CTD MaxOR
+	ind: 	70.2551	Pow CE CE
+	ind: 	47.1781	Log GINI MaxCC
+	ind: 	61.197	* DF CE
+	ind: 	69.1705	+ GSS GSS
+	ind: 	29.9659	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	71.7011	Pow CE CE
+	ind: 	65.9369	* MaxDom MaxTFIDF
+	ind: 	66.5796	* DF CE
+	ind: 	66.7805	Pow * MaxCTD MaxCC MaxDom
+	ind: 	22.153	- % TF OR % IG MaxTFIDF
+	ind: 	71.6811	Pow CE CE
+	ind: 	35.4891	* + P' TFIDF Log TF MaxAM
+	ind: 	35.4891	* + P' TFIDF Log TF MaxAM
+	ind: 	67.2826	* DF IDF
+	ind: 	61.5585	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	71.7212	Pow CE CE
+	ind: 	68.0458	* DF CE
+	ind: 	66.2583	+ TFICF sumTF
+	ind: 	62.0807	% * DF IDF * MaxDom MaxTFICF
+	ind: 	65.3344	+ DF CE
+	ind: 	66.1378	- % TF MaxDom Pow CE CE
+	ind: 	61.1769	+ MaxCTD TFICF
+	ind: 	71.42	Pow CE CE
+	ind: 	59.7108	+ MaxCTD TFICF
+	ind: 	74.9548	% TFIDF MaxGSS
+	ind: 	63.3862	* DF CE
+	ind: 	69.512	* MaxDom MaxTFIDF
+	ind: 	52.4402	* sumTF MaxCTD
+	ind: 	56.7986	* DF CE
+	ind: 	44.768	* + P' TFIDF Log MaxGSS MaxCC
+	ind: 	65.5553	- DF CE
+	ind: 	62.0004	* DF CE
+	ind: 	58.7869	* * MaxDom MaxTFIDF - MaxGSS MaxCC
+	ind: 	72.9665	% TFIDF MaxGSS
+	ind: 	52.1792	* sumTF MaxCTD
+	ind: 	65.5754	% TF MaxDom
+	ind: 	43.2416	* sumTF MaxCTD
+	ind: 	70.9179	* MaxDom MaxTFIDF
+	ind: 	64.2699	- DF CE
+	ind: 	63.9084	% TF MaxDom
+	ind: 	49.3473	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	rep: 6  -> 6
+	rep: 23 32  -> 0
+	rep: 23 32  -> 1
+	rep: 47 45  -> 2
+	rep: 47 45  -> 3
+	rep: 29 27  -> 4
+	rep: 29 27  -> 5
+	rep: 26 21  -> 7
+	rep: 26 21  -> 8
+	rep: 5 17  -> 9
+	rep: 5 17  -> 10
+	rep: 12  -> 11
+	rep: 9  -> 12
+	rep: 1 23  -> 13
+	rep: 1 23  -> 14
+	rep: 7 45  -> 15
+	rep: 7 45  -> 16
+	rep: 4 1  -> 17
+	rep: 4 1  -> 18
+	rep: 33 11  -> 19
+	rep: 33 11  -> 20
+	rep: 9 15  -> 21
+	rep: 9 15  -> 22
+	rep: 19 25  -> 23
+	rep: 19 25  -> 24
+	rep: 26 10  -> 25
+	rep: 26 10  -> 26
+	rep: 25 23  -> 27
+	rep: 25 23  -> 28
+	rep: 35 17  -> 29
+	rep: 35 17  -> 30
+	rep: 46 39  -> 31
+	rep: 46 39  -> 32
+	rep: 39 36  -> 33
+	rep: 39 36  -> 34
+	rep: 1 43  -> 35
+	rep: 1 43  -> 36
+	rep: 45 13  -> 37
+	rep: 45 13  -> 38
+	rep: 5 2  -> 39
+	rep: 5 2  -> 40
+	rep: 11 13  -> 41
+	rep: 11 13  -> 42
+	rep: 47 20  -> 43
+	rep: 47 20  -> 44
+	rep: 6 21  -> 45
+	rep: 6 21  -> 46
+	rep: 12 11  -> 47
+	rep: 12 11  -> 48
+	rep: 5 34  -> 49
+generation 5:
+	ind: 	62.1611	+ MaxCTD TFICF
+	ind: 	59.9518	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	50.9339	* sumTF MaxCTD
+	ind: 	61.2171	- DF CE
+	ind: 	67.3228	- % TF MaxDom * MaxDom MaxTFICF
+	ind: 	67.3027	% * DF IDF Pow CE CE
+	ind: 	75.0753	% TFIDF MaxGSS
+	ind: 	69.0701	+ P' TFIDF
+	ind: 	35.4891	* + TFICF sumTF Log TF MaxAM
+	ind: 	67.2826	Pow * MaxCTD MaxCC MaxDom
+	ind: 	72.384	Pow CE CE
+	ind: 	69.1705	+ GSS GSS
+	ind: 	70.2551	Pow CE CE
+	ind: 	69.7931	Pow CE CE
+	ind: 	61.659	% - % TF MaxDom * MaxDom MaxTFIDF * MaxDom MaxTFICF
+	ind: 	70.3354	% TFIDF MaxGSS
+	ind: 	55.7542	* sumTF MaxCTD
+	ind: 	73.5087	% TFIDF MaxGSS
+	ind: 	69.5722	* MaxDom MaxTFIDF
+	ind: 	75.0151	% TFIDF MaxGSS
+	ind: 	58.5057	* DF CE
+	ind: 	67.8249	Pow CE CE
+	ind: 	70.4358	* MaxDom MaxTFIDF
+	ind: 	72.846	Pow CE CE
+	ind: 	71.2392	Pow DF CE
+	ind: 	29.9659	Log GINI MaxCC
+	ind: 	68.1261	+ TFICF sumTF
+	ind: 	68.3471	* DF CE
+	ind: 	61.2974	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	68.9697	* MaxDom MaxTFIDF
+	ind: 	66.7403	Pow * MaxCTD MaxCC MaxDom
+	ind: 	66.7805	- DF CE
+	ind: 	68.9496	* MaxDom MaxTFIDF
+	ind: 	49.5883	* sumTF MaxCTD
+	ind: 	66.901	- DF CE
+	ind: 	69.7931	* MaxDom MaxTFIDF
+	ind: 	53.103	* sumTF MaxCTD
+	ind: 	42.86	* sumTF MaxCTD
+	ind: 	29.9458	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	57.3609	* sumTF MaxCTD
+	ind: 	70.9379	Pow CE CE
+	ind: 	59.3292	* DF CE
+	ind: 	37.2364	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	64.0691	- DF CE
+	ind: 	44.1052	* + P' TFIDF Log TF MaxAM
+	ind: 	74.7339	% TFIDF MaxGSS
+	ind: 	51.6971	* + P' TFIDF Log TF MaxAM
+	ind: 	68.2466	+ GSS GSS
+	ind: 	65.2139	* DF CE
+	ind: 	72.6451	Pow CE CE
+	rep: 6  -> 6
+	rep: 34  -> 0
+	rep: 39 38  -> 1
+	rep: 39 38  -> 2
+	rep: 45 8  -> 3
+	rep: 45 8  -> 4
+	rep: 19  -> 5
+	rep: 14 44  -> 7
+	rep: 14 44  -> 8
+	rep: 32 14  -> 9
+	rep: 32 14  -> 10
+	rep: 2 37  -> 11
+	rep: 2 37  -> 12
+	rep: 0 39  -> 13
+	rep: 0 39  -> 14
+	rep: 48 16  -> 15
+	rep: 48 16  -> 16
+	rep: 26 1  -> 17
+	rep: 26 1  -> 18
+	rep: 11 28  -> 19
+	rep: 11 28  -> 20
+	rep: 1 39  -> 21
+	rep: 1 39  -> 22
+	rep: 49 41  -> 23
+	rep: 49 41  -> 24
+	rep: 28 38  -> 25
+	rep: 28 38  -> 26
+	rep: 6 25  -> 27
+	rep: 6 25  -> 28
+	rep: 31 30  -> 29
+	rep: 31 30  -> 30
+	rep: 23 7  -> 31
+	rep: 23 7  -> 32
+	rep: 31 36  -> 33
+	rep: 31 36  -> 34
+	rep: 4 36  -> 35
+	rep: 4 36  -> 36
+	rep: 29  -> 37
+	rep: 35 48  -> 38
+	rep: 35 48  -> 39
+	rep: 35 33  -> 40
+	rep: 35 33  -> 41
+	rep: 24 32  -> 42
+	rep: 24 32  -> 43
+	rep: 19 41  -> 44
+	rep: 19 41  -> 45
+	rep: 7  -> 46
+	rep: 19 27  -> 47
+	rep: 19 27  -> 48
+	rep: 18 41  -> 49
+generation 6:
+	ind: 	66.901	- DF CE
+	ind: 	54.5491	* sumTF MaxCTD
+	ind: 	52.1189	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	52.0586	Log TF MaxAM
+	ind: 	71.0384	* + TFICF sumTF % TFIDF MaxGSS
+	ind: 	75.0151	% TFIDF MaxGSS
+	ind: 	75.0753	% TFIDF MaxGSS
+	ind: 	62.2615	% - % TF MaxDom * MaxDom MaxTFIDF * MaxDom MaxTFICF
+	ind: 	44.045	* + P' TFIDF Log TF MaxAM
+	ind: 	69.8333	* MaxDom MaxTFICF
+	ind: 	68.568	% - % TF MaxDom * MaxDom MaxTFIDF * MaxDom MaxTFIDF
+	ind: 	49.99	* sumTF MaxCTD
+	ind: 	42.86	* sumTF MaxCTD
+	ind: 	64.3704	+ MaxCTD TFICF
+	ind: 	51.3959	* sumTF MaxCTD
+	ind: 	65.2139	* DF CE
+	ind: 	55.7542	* sumTF MaxCTD
+	ind: 	63.7076	+ TFICF sumTF
+	ind: 	62.9645	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	67.5839	+ GSS GSS
+	ind: 	61.6389	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	48.1221	% - % TF MaxDom Pow CE CE * sumTF MaxCTD
+	ind: 	74.3924	* MaxDom MaxTFICF
+	ind: 	66.6198	* DF CE
+	ind: 	69.9337	Pow CE CE
+	ind: 	61.418	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	29.9659	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	74.7339	% TFIDF MaxGSS
+	ind: 	50.0301	Log GINI MaxCC
+	ind: 	63.1251	Pow * MaxCTD MaxCC MaxDom
+	ind: 	68.9295	- DF CE
+	ind: 	51.4762	- CE CE
+	ind: 	69.6726	+ P' TFIDF
+	ind: 	53.4646	- * sumTF MaxCTD CE
+	ind: 	67.142	DF
+	ind: 	64.2097	- % TF MaxDom * MaxDom MaxTFICF
+	ind: 	56.6379	* sumTF MaxCTD
+	ind: 	68.9697	* MaxDom MaxTFIDF
+	ind: 	69.8735	* MaxDom MaxTFIDF
+	ind: 	64.9126	* DF CE
+	ind: 	69.8735	* MaxDom MaxTFIDF
+	ind: 	49.3673	* sumTF MaxCTD
+	ind: 	69.1303	Pow DF CE
+	ind: 	71.3396	* MaxDom MaxTFIDF
+	ind: 	73.7899	% TFIDF MaxGSS
+	ind: 	66.0173	* DF CE
+	ind: 	69.0701	+ P' TFIDF
+	ind: 	66.0374	* DF CE
+	ind: 	74.9146	% TFIDF MaxGSS
+	ind: 	69.2709	* MaxDom MaxTFIDF
+	rep: 6  -> 6
+	rep: 44 44  -> 0
+	rep: 44 44  -> 1
+	rep: 19 34  -> 2
+	rep: 19 34  -> 3
+	rep: 30 18  -> 4
+	rep: 30 18  -> 5
+	rep: 37  -> 7
+	rep: 23  -> 8
+	rep: 49 37  -> 9
+	rep: 49 37  -> 10
+	rep: 30 25  -> 11
+	rep: 30 25  -> 12
+	rep: 47 3  -> 13
+	rep: 47 3  -> 14
+	rep: 48 14  -> 15
+	rep: 48 14  -> 16
+	rep: 49 46  -> 17
+	rep: 49 46  -> 18
+	rep: 18 41  -> 19
+	rep: 18 41  -> 20
+	rep: 40 36  -> 21
+	rep: 40 36  -> 22
+	rep: 19 33  -> 23
+	rep: 19 33  -> 24
+	rep: 0 0  -> 25
+	rep: 0 0  -> 26
+	rep: 40 28  -> 27
+	rep: 40 28  -> 28
+	rep: 43 31  -> 29
+	rep: 43 31  -> 30
+	rep: 18 2  -> 31
+	rep: 18 2  -> 32
+	rep: 43 2  -> 33
+	rep: 43 2  -> 34
+	rep: 44 25  -> 35
+	rep: 44 25  -> 36
+	rep: 19 16  -> 37
+	rep: 19 16  -> 38
+	rep: 34 47  -> 39
+	rep: 34 47  -> 40
+	rep: 10 7  -> 41
+	rep: 10 7  -> 42
+	rep: 49 26  -> 43
+	rep: 49 26  -> 44
+	rep: 40 26  -> 45
+	rep: 40 26  -> 46
+	rep: 42 36  -> 47
+	rep: 42 36  -> 48
+	rep: 21 8  -> 49
+generation 7:
+	ind: 	73.7899	% TFIDF MaxGSS
+	ind: 	73.7899	% TFIDF MaxGSS
+	ind: 	70.5764	+ GSS GSS
+	ind: 	65.8566	DF
+	ind: 	65.7562	- DF CE
+	ind: 	64.993	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	75.0753	% TFIDF MaxGSS
+	ind: 	68.9697	* MaxDom MaxTFIDF
+	ind: 	66.6198	* DF CE
+	ind: 	69.1906	* MaxDom MaxTFIDF
+	ind: 	69.0902	* MaxDom MaxTFIDF
+	ind: 	65.4348	- DF CE
+	ind: 	62.2414	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	65.7963	* DF CE
+	ind: 	58.6664	Log TF MaxAM
+	ind: 	60.0121	* sumTF MaxCTD
+	ind: 	73.2677	% TFIDF MaxGSS
+	ind: 	69.1303	* MaxDom MaxTFIDF
+	ind: 	69.0701	+ P' TFIDF
+	ind: 	6.58767	% - * sumTF MaxCTD Pow CE CE * MaxDom MaxTFICF
+	ind: 	63.9687	% TF MaxDom
+	ind: 	74.0108	* MaxDom MaxTFIDF
+	ind: 	52.3599	* sumTF MaxCTD
+	ind: 	50.4921	* sumTF MaxCTD
+	ind: 	68.6684	- + GSS GSS CE
+	ind: 	66.7805	+ DF CE
+	ind: 	66.901	- DF CE
+	ind: 	73.7698	* MaxDom MaxTFIDF
+	ind: 	29.9458	Log GINI MaxCC
+	ind: 	74.051	* MaxDom MaxTFIDF
+	ind: 	40.3696	- CE CE
+	ind: 	60.5543	% - % TF MaxDom + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	52.1189	Log - MaxTFICF MaxTFICF Pow CE CE
+	ind: 	40.0482	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	74.1314	* MaxDom MaxTFIDF
+	ind: 	73.7899	% TFIDF MaxGSS
+	ind: 	62.0004	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	54.6897	* sumTF MaxCTD
+	ind: 	69.9739	+ GSS GSS
+	ind: 	61.5385	* DF CE
+	ind: 	73.2476	MaxIG
+	ind: 	68.568	% - % TF MaxDom * MaxDom MaxTFIDF * MaxDom MaxTFIDF
+	ind: 	62.2615	% - % TF MaxDom * MaxDom MaxTFIDF * MaxDom MaxTFICF
+	ind: 	68.5278	+ GSS MaxAM
+	ind: 	29.9659	Log - MaxTFICF MaxTFICF * MaxDom MaxTFIDF
+	ind: 	69.7931	* MaxDom MaxTFIDF
+	ind: 	29.9458	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	71.2995	Pow DF CE
+	ind: 	52.3599	* sumTF MaxCTD
+	ind: 	27.5156	Log TF MaxAM
+	rep: 6  -> 6
+	rep: 0 23  -> 0
+	rep: 0 23  -> 1
+	rep: 48 33  -> 2
+	rep: 48 33  -> 3
+	rep: 3 36  -> 4
+	rep: 3 36  -> 5
+	rep: 27 46  -> 7
+	rep: 27 46  -> 8
+	rep: 43 13  -> 9
+	rep: 43 13  -> 10
+	rep: 35 4  -> 11
+	rep: 35 4  -> 12
+	rep: 15 46  -> 13
+	rep: 15 46  -> 14
+	rep: 22 49  -> 15
+	rep: 22 49  -> 16
+	rep: 8 12  -> 17
+	rep: 8 12  -> 18
+	rep: 1  -> 19
+	rep: 2 31  -> 20
+	rep: 2 31  -> 21
+	rep: 17 19  -> 22
+	rep: 17 19  -> 23
+	rep: 4 31  -> 24
+	rep: 4 31  -> 25
+	rep: 1 47  -> 26
+	rep: 1 47  -> 27
+	rep: 24 26  -> 28
+	rep: 24 26  -> 29
+	rep: 31 44  -> 30
+	rep: 31 44  -> 31
+	rep: 8 36  -> 32
+	rep: 8 36  -> 33
+	rep: 45 49  -> 34
+	rep: 45 49  -> 35
+	rep: 7 43  -> 36
+	rep: 7 43  -> 37
+	rep: 31 33  -> 38
+	rep: 31 33  -> 39
+	rep: 9 10  -> 40
+	rep: 9 10  -> 41
+	rep: 6 17  -> 42
+	rep: 6 17  -> 43
+	rep: 6 23  -> 44
+	rep: 6 23  -> 45
+	rep: 7 39  -> 46
+	rep: 7 39  -> 47
+	rep: 1 23  -> 48
+	rep: 1 23  -> 49
+generation 8:
+	ind: 	73.7698	% TFIDF MaxGSS
+	ind: 	51.1147	* sumTF MaxCTD
+	ind: 	49.5883	* sumTF MaxCTD
+	ind: 	49.5481	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	68.1462	DF
+	ind: 	59.8715	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	75.0753	% TFIDF MaxGSS
+	ind: 	69.8735	* MaxDom MaxTFIDF
+	ind: 	50.0301	Log - MaxTFICF MaxTFICF + GSS MaxAM
+	ind: 	70.8978	+ GSS MaxAM
+	ind: 	61.2573	* DF CE
+	ind: 	66.8608	- DF CE
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	66.1579	+ GSS MaxAM
+	ind: 	29.9458	Log - MaxTFICF MaxTFICF * sumTF MaxCTD
+	ind: 	66.8809	TF
+	ind: 	27.5156	Log * sumTF MaxCTD MaxAM
+	ind: 	67.9253	- % TF MaxDom Pow CE CE
+	ind: 	39.2448	% * DF CE * MaxDom MaxTFICF
+	ind: 	73.7899	% TFIDF MaxGSS
+	ind: 	69.9538	+ GSS GSS
+	ind: 	61.9401	% - % TF MaxDom + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	5.16168	% - * sumTF MaxCTD Pow CE CE * MaxDom MaxTFICF
+	ind: 	73.569	* MaxDom MaxTFIDF
+	ind: 	65.7562	- DF CE
+	ind: 	59.0078	% - % TF MaxDom + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	74.9548	% TFIDF MaxGSS
+	ind: 	69.2308	Pow DF CE
+	ind: 	66.9813	- + GSS GSS CE
+	ind: 	67.2223	- DF CE
+	ind: 	49.8695	- MaxTFICF MaxTFICF
+	ind: 	29.9659	Log % - % TF MaxDom + GSS MaxAM * MaxDom MaxTFICF * MaxDom MaxTFIDF
+	ind: 	65.6558	* DF CE
+	ind: 	63.0649	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	69.1303	* MaxDom MaxTFIDF
+	ind: 	32.5367	Log TF MaxAM
+	ind: 	68.4073	+ GSS MaxAM
+	ind: 	69.2709	* MaxDom MaxTFIDF
+	ind: 	31.0705	% Log - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	63.0046	- % TF MaxDom + GSS MaxAM
+	ind: 	68.9697	* MaxDom MaxTFIDF
+	ind: 	69.2509	* MaxDom MaxTFIDF
+	ind: 	74.0912	* MaxDom MaxTFIDF
+	ind: 	72.9865	* TFIDF MaxGSS
+	ind: 	74.6937	% TFIDF MaxGSS
+	ind: 	54.1474	* sumTF MaxCTD
+	ind: 	69.0701	* MaxDom MaxTFIDF
+	ind: 	61.5585	* DF CE
+	ind: 	73.7698	% TFIDF MaxGSS
+	ind: 	51.1147	* sumTF MaxCTD
+	rep: 6  -> 6
+	rep: 46 38  -> 0
+	rep: 46 38  -> 1
+	rep: 28 10  -> 2
+	rep: 28 10  -> 3
+	rep: 40 11  -> 4
+	rep: 40 11  -> 5
+	rep: 21 30  -> 7
+	rep: 21 30  -> 8
+	rep: 44 35  -> 9
+	rep: 44 35  -> 10
+	rep: 0 15  -> 11
+	rep: 0 15  -> 12
+	rep: 6 47  -> 13
+	rep: 6 47  -> 14
+	rep: 44 29  -> 15
+	rep: 44 29  -> 16
+	rep: 6 9  -> 17
+	rep: 6 9  -> 18
+	rep: 36 17  -> 19
+	rep: 36 17  -> 20
+	rep: 10  -> 21
+	rep: 41 27  -> 22
+	rep: 41 27  -> 23
+	rep: 19 12  -> 24
+	rep: 19 12  -> 25
+	rep: 23 41  -> 26
+	rep: 23 41  -> 27
+	rep: 13 31  -> 28
+	rep: 13 31  -> 29
+	rep: 43 32  -> 30
+	rep: 43 32  -> 31
+	rep: 12 41  -> 32
+	rep: 12 41  -> 33
+	rep: 10 38  -> 34
+	rep: 10 38  -> 35
+	rep: 17 11  -> 36
+	rep: 17 11  -> 37
+	rep: 12 46  -> 38
+	rep: 12 46  -> 39
+	rep: 44 37  -> 40
+	rep: 44 37  -> 41
+	rep: 0 22  -> 42
+	rep: 0 22  -> 43
+	rep: 4 29  -> 44
+	rep: 4 29  -> 45
+	rep: 41 33  -> 46
+	rep: 41 33  -> 47
+	rep: 0 41  -> 48
+	rep: 0 41  -> 49
+generation 9:
+	ind: 	64.4306	* MaxDom MaxTFIDF
+	ind: 	46.2141	% Log - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	68.6684	- + GSS GSS CE
+	ind: 	56.8186	* DF CE
+	ind: 	70.9781	* MaxDom MaxTFIDF
+	ind: 	65.4951	- DF CE
+	ind: 	75.0753	% TFIDF MaxGSS
+	ind: 	51.0745	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	66.8809	% TF MaxDom
+	ind: 	74.7741	% TFIDF MaxGSS
+	ind: 	29.4035	Log TF MaxAM
+	ind: 	66.9813	TF
+	ind: 	73.7899	% TFIDF MaxGSS
+	ind: 	74.754	% TFIDF MaxGSS
+	ind: 	64.6315	* DF CE
+	ind: 	74.1916	% TFIDF MaxGSS
+	ind: 	65.7562	- DF CE
+	ind: 	71.5003	+ GSS MaxAM
+	ind: 	74.8745	% TFIDF MaxGSS
+	ind: 	70.1948	+ GSS MaxAM
+	ind: 	64.3904	- % TF MaxDom Pow CE CE
+	ind: 	61.2573	* DF CE
+	ind: 	65.8365	% MaxDom MaxTFIDF
+	ind: 	69.1906	Pow DF CE
+	ind: 	70.7973	+ TFIDF MaxGSS
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	72.5246	* MaxDom MaxTFIDF
+	ind: 	69.4316	* MaxDom MaxTFIDF
+	ind: 	66.4591	+ GSS MaxAM
+	ind: 	35.5292	Log % - % TF MaxDom + GSS MaxAM * MaxDom MaxTFICF * MaxDom MaxTFIDF
+	ind: 	58.7869	* DF CE
+	ind: 	75.0753	* TFIDF MaxGSS
+	ind: 	73.0669	% TFIDF MaxGSS
+	ind: 	69.0902	* MaxDom MaxTFIDF
+	ind: 	63.5469	* DF CE
+	ind: 	32.4764	% Log - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	66.3788	- % TF MaxDom Pow CE CE
+	ind: 	66.7604	- DF CE
+	ind: 	69.3312	* MaxDom MaxTFIDF
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	74.4728	% TFIDF MaxGSS
+	ind: 	71.5204	* MaxDom MaxTFIDF
+	ind: 	5.5232	% - * sumTF MaxCTD Pow CE CE * MaxDom MaxTFICF
+	ind: 	73.0468	% TFIDF MaxGSS
+	ind: 	67.0817	DF
+	ind: 	68.2266	- DF CE
+	ind: 	69.2509	* MaxDom MaxTFIDF
+	ind: 	63.0649	% - % TF MaxDom Pow CE CE * MaxDom MaxTFICF
+	ind: 	73.8703	Pow TFIDF MaxGSS
+	ind: 	69.2509	* MaxDom MaxTFIDF
+	rep: 31  -> 31
+	rep: 2 28  -> 0
+	rep: 2 28  -> 1
+	rep: 49 7  -> 2
+	rep: 49 7  -> 3
+	rep: 4 23  -> 4
+	rep: 4 23  -> 5
+	rep: 46  -> 6
+	rep: 17 2  -> 7
+	rep: 17 2  -> 8
+	rep: 46 29  -> 9
+	rep: 46 29  -> 10
+	rep: 4  -> 11
+	rep: 48 2  -> 12
+	rep: 48 2  -> 13
+	rep: 25 25  -> 14
+	rep: 25 25  -> 15
+	rep: 19 11  -> 16
+	rep: 19 11  -> 17
+	rep: 19 2  -> 18
+	rep: 19 2  -> 19
+	rep: 0 20  -> 20
+	rep: 0 20  -> 21
+	rep: 45 36  -> 22
+	rep: 45 36  -> 23
+	rep: 45 37  -> 24
+	rep: 45 37  -> 25
+	rep: 13 1  -> 26
+	rep: 13 1  -> 27
+	rep: 25 16  -> 28
+	rep: 25 16  -> 29
+	rep: 46 2  -> 30
+	rep: 46 2  -> 32
+	rep: 19 49  -> 33
+	rep: 19 49  -> 34
+	rep: 24 5  -> 35
+	rep: 24 5  -> 36
+	rep: 43 17  -> 37
+	rep: 43 17  -> 38
+	rep: 28 21  -> 39
+	rep: 28 21  -> 40
+	rep: 6 36  -> 41
+	rep: 6 36  -> 42
+	rep: 14 14  -> 43
+	rep: 14 14  -> 44
+	rep: 26 11  -> 45
+	rep: 26 11  -> 46
+	rep: 13 5  -> 47
+	rep: 13 5  -> 48
+	rep: 19  -> 49
+generation 10:
+	ind: 	68.8291	- + GSS GSS CE
+	ind: 	70.4358	+ GSS MaxAM
+	ind: 	73.5288	* MaxDom MaxTFIDF
+	ind: 	34.3442	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	71.1187	* MaxDom MaxTFIDF
+	ind: 	69.2308	Pow DF CE
+	ind: 	69.2509	* MaxDom MaxTFIDF
+	ind: 	70.8777	- + GSS GSS CE
+	ind: 	69.3111	+ GSS MaxAM
+	ind: 	70.0743	* MaxDom MaxTFICF
+	ind: 	35.5292	Log % - % TF MaxDom + GSS MaxAM * MaxDom MaxTFIDF * MaxDom MaxTFIDF
+	ind: 	70.9781	* MaxDom MaxTFIDF
+	ind: 	68.6082	+ GSS GSS
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	67.9052	TF
+	ind: 	43.6232	Log GSS MaxAM
+	ind: 	69.773	+ GSS MaxAM
+	ind: 	68.4274	- + GSS GSS CE
+	ind: 	63.2657	% TF MaxDom
+	ind: 	48.1422	- * MaxDom MaxTFIDF Pow CE CE
+	ind: 	69.3513	- DF CE
+	ind: 	64.5913	- % TF MaxDom Pow CE CE
+	ind: 	68.4676	- DF CE
+	ind: 	66.8407	- DF CE
+	ind: 	74.9749	% TFIDF MaxGSS
+	ind: 	28.1181	% Log - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	65.7562	- DF CE
+	ind: 	71.9823	* MaxDom MaxTFIDF
+	ind: 	75.0753	* TFIDF MaxGSS
+	ind: 	68.5077	- + GSS GSS CE
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	68.4876	+ GSS MaxAM
+	ind: 	70.7973	+ TFIDF MaxGSS
+	ind: 	65.4951	- DF CE
+	ind: 	73.0669	% TFIDF MaxGSS
+	ind: 	70.3555	+ GSS MaxAM
+	ind: 	68.8693	+ GSS MaxAM
+	ind: 	59.3292	* DF CE
+	ind: 	72.6451	Pow CE CE
+	ind: 	65.8164	- % TF MaxDom % TFIDF MaxGSS
+	ind: 	64.6315	* DF CE
+	ind: 	64.6315	* DF CE
+	ind: 	67.5437	TF
+	ind: 	71.4802	* MaxDom MaxTFIDF
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	68.809	- DF CE
+	ind: 	70.1948	+ GSS MaxAM
+	rep: 13  -> 13
+	rep: 1 8  -> 0
+	rep: 1 8  -> 1
+	rep: 46  -> 2
+	rep: 48 12  -> 3
+	rep: 48 12  -> 4
+	rep: 15 36  -> 5
+	rep: 15 36  -> 6
+	rep: 46 19  -> 7
+	rep: 46 19  -> 8
+	rep: 8 16  -> 9
+	rep: 8 16  -> 10
+	rep: 33 9  -> 11
+	rep: 33 9  -> 12
+	rep: 19 40  -> 14
+	rep: 19 40  -> 15
+	rep: 28 49  -> 16
+	rep: 28 49  -> 17
+	rep: 30 43  -> 18
+	rep: 30 43  -> 19
+	rep: 33 33  -> 20
+	rep: 33 33  -> 21
+	rep: 33 3  -> 22
+	rep: 33 3  -> 23
+	rep: 35 19  -> 24
+	rep: 35 19  -> 25
+	rep: 38 49  -> 26
+	rep: 38 49  -> 27
+	rep: 46 36  -> 28
+	rep: 46 36  -> 29
+	rep: 12 19  -> 30
+	rep: 12 19  -> 31
+	rep: 47 43  -> 32
+	rep: 47 43  -> 33
+	rep: 8 21  -> 34
+	rep: 8 21  -> 35
+	rep: 45 25  -> 36
+	rep: 45 25  -> 37
+	rep: 11 49  -> 38
+	rep: 11 49  -> 39
+	rep: 18 34  -> 40
+	rep: 18 34  -> 41
+	rep: 13 47  -> 42
+	rep: 13 47  -> 43
+	rep: 28 20  -> 44
+	rep: 28 20  -> 45
+	rep: 19 3  -> 46
+	rep: 19 3  -> 47
+	rep: 26 39  -> 48
+	rep: 26 39  -> 49
+generation 11:
+	ind: 	70.4358	+ GSS MaxAM
+	ind: 	69.3111	+ GSS MaxAM
+	ind: 	71.4802	* MaxDom MaxTFIDF
+	ind: 	66.8809	- DF CE
+	ind: 	69.9739	+ GSS GSS
+	ind: 	65.7562	- DF CE
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	70.9781	* MaxDom MaxTFIDF
+	ind: 	68.5479	- + GSS GSS CE
+	ind: 	68.5881	TF
+	ind: 	71.2392	+ GSS MaxAM
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	70.0341	* MaxDom MaxTFICF
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	67.7847	- + GSS GSS CE
+	ind: 	61.2573	* DF CE
+	ind: 	68.5479	+ GSS MaxAM
+	ind: 	74.5531	% TFIDF MaxGSS
+	ind: 	73.8301	* MaxDom MaxTFIDF
+	ind: 	63.808	* DF CE
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	70.1948	+ GSS MaxAM
+	ind: 	34.3442	% - - MaxTFICF MaxTFICF * MaxDom MaxTFIDF * MaxDom MaxTFICF
+	ind: 	70.7973	+ TFIDF MaxGSS
+	ind: 	68.4274	- + GSS GSS CE
+	ind: 	70.3555	+ GSS MaxAM
+	ind: 	70.1948	+ GSS MaxAM
+	ind: 	71.4802	* MaxDom MaxTFIDF
+	ind: 	65.4951	- DF CE
+	ind: 	68.6885	- + GSS GSS CE
+	ind: 	68.4073	+ GSS GSS
+	ind: 	74.5531	% TFIDF MaxGSS
+	ind: 	61.5585	* DF CE
+	ind: 	69.8534	+ GSS MaxAM
+	ind: 	42.1169	- * MaxDom MaxTFIDF Pow CE CE
+	ind: 	68.327	TF
+	ind: 	68.7688	- DF CE
+	ind: 	69.2709	+ GSS MaxAM
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	69.773	+ GSS MaxAM
+	ind: 	68.4876	+ GSS MaxAM
+	ind: 	75.2561	- Pow TFIDF MaxGSS CE
+	ind: 	72.6853	% TFIDF MaxGSS
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	63.1653	% TF MaxDom
+	ind: 	67.7847	- + GSS GSS CE
+	ind: 	41.434	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	71.3195	+ GSS MaxAM
+	ind: 	73.1874	% TFIDF MaxGSS
+	rep: 42  -> 42
+	rep: 11 9  -> 0
+	rep: 11 9  -> 1
+	rep: 1 46  -> 2
+	rep: 1 46  -> 3
+	rep: 18 15  -> 4
+	rep: 18 15  -> 5
+	rep: 12 14  -> 6
+	rep: 12 14  -> 7
+	rep: 34 34  -> 8
+	rep: 34 34  -> 9
+	rep: 17 46  -> 10
+	rep: 17 46  -> 11
+	rep: 37 37  -> 12
+	rep: 37 37  -> 13
+	rep: 30 31  -> 14
+	rep: 30 31  -> 15
+	rep: 17 31  -> 16
+	rep: 17 31  -> 17
+	rep: 1 37  -> 18
+	rep: 1 37  -> 19
+	rep: 14  -> 20
+	rep: 44 34  -> 21
+	rep: 44 34  -> 22
+	rep: 37 14  -> 23
+	rep: 37 14  -> 24
+	rep: 20 47  -> 25
+	rep: 20 47  -> 26
+	rep: 20 26  -> 27
+	rep: 20 26  -> 28
+	rep: 42 19  -> 29
+	rep: 42 19  -> 30
+	rep: 28 34  -> 31
+	rep: 28 34  -> 32
+	rep: 28 40  -> 33
+	rep: 28 40  -> 34
+	rep: 30 19  -> 35
+	rep: 30 19  -> 36
+	rep: 12 30  -> 37
+	rep: 12 30  -> 38
+	rep: 39 46  -> 39
+	rep: 39 46  -> 40
+	rep: 17 3  -> 41
+	rep: 17 3  -> 43
+	rep: 36 14  -> 44
+	rep: 36 14  -> 45
+	rep: 11 27  -> 46
+	rep: 11 27  -> 47
+	rep: 46 19  -> 48
+	rep: 46 19  -> 49
+generation 12:
+	ind: 	67.9052	TF
+	ind: 	73.4485	* MaxDom MaxTFIDF
+	ind: 	68.6684	- + GSS GSS CE
+	ind: 	68.5077	+ GSS MaxAM
+	ind: 	65.6959	* DF CE
+	ind: 	71.2593	* MaxDom MaxTFIDF
+	ind: 	67.7044	+ GSS GSS
+	ind: 	52.1189	- * MaxDom MaxTFICF CE
+	ind: 	69.8534	+ GSS MaxAM
+	ind: 	69.8534	+ GSS MaxAM
+	ind: 	69.3914	+ GSS GSS
+	ind: 	72.6652	- % TFIDF MaxGSS CE
+	ind: 	68.7688	- DF CE
+	ind: 	68.7688	- DF CE
+	ind: 	68.6282	- + GSS GSS CE
+	ind: 	68.5077	+ GSS GSS
+	ind: 	69.3914	+ GSS GSS
+	ind: 	73.7899	% TFIDF MaxGSS
+	ind: 	68.9094	+ GSS MaxAM
+	ind: 	69.4718	- DF CE
+	ind: 	67.7847	- + GSS GSS CE
+	ind: 	73.0468	% TFIDF MaxGSS
+	ind: 	69.4718	+ GSS MaxAM
+	ind: 	68.7688	- DF CE
+	ind: 	67.5236	- + GSS GSS CE
+	ind: 	72.1631	* MaxDom MaxTFIDF
+	ind: 	31.4521	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	70.1948	+ GSS MaxAM
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	64.1494	* DF CE
+	ind: 	69.2509	+ GSS MaxAM
+	ind: 	72.2635	* MaxDom MaxTFIDF
+	ind: 	68.9697	* MaxDom MaxTFIDF
+	ind: 	69.773	+ GSS MaxAM
+	ind: 	61.7594	* DF CE
+	ind: 	69.5521	- + GSS GSS CE
+	ind: 	70.0341	* MaxDom MaxTFICF
+	ind: 	68.7086	- + GSS GSS CE
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	67.7847	- + GSS GSS CE
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	75.2561	- Pow TFIDF MaxGSS CE
+	ind: 	66.8407	- DF CE
+	ind: 	69.9538	+ GSS GSS
+	ind: 	65.8365	- TF CE
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	68.7086	% GSS MaxAM
+	ind: 	59.0279	* DF CE
+	ind: 	69.5521	- + GSS GSS CE
+	rep: 42  -> 42
+	rep: 21  -> 0
+	rep: 29 4  -> 1
+	rep: 29 4  -> 2
+	rep: 19 7  -> 3
+	rep: 19 7  -> 4
+	rep: 42 28  -> 5
+	rep: 42 28  -> 6
+	rep: 9 40  -> 7
+	rep: 9 40  -> 8
+	rep: 17 12  -> 9
+	rep: 17 12  -> 10
+	rep: 23 30  -> 11
+	rep: 23 30  -> 12
+	rep: 47 26  -> 13
+	rep: 47 26  -> 14
+	rep: 23 2  -> 15
+	rep: 23 2  -> 16
+	rep: 49 24  -> 17
+	rep: 49 24  -> 18
+	rep: 42 43  -> 19
+	rep: 42 43  -> 20
+	rep: 6 26  -> 21
+	rep: 6 26  -> 22
+	rep: 41 18  -> 23
+	rep: 41 18  -> 24
+	rep: 29 4  -> 25
+	rep: 29 4  -> 26
+	rep: 23 7  -> 27
+	rep: 23 7  -> 28
+	rep: 17 10  -> 29
+	rep: 17 10  -> 30
+	rep: 39 0  -> 31
+	rep: 39 0  -> 32
+	rep: 12 7  -> 33
+	rep: 12 7  -> 34
+	rep: 31 38  -> 35
+	rep: 31 38  -> 36
+	rep: 49 12  -> 37
+	rep: 49 12  -> 38
+	rep: 27  -> 39
+	rep: 36 15  -> 40
+	rep: 36 15  -> 41
+	rep: 29 46  -> 43
+	rep: 29 46  -> 44
+	rep: 1 0  -> 45
+	rep: 1 0  -> 46
+	rep: 27 22  -> 47
+	rep: 27 22  -> 48
+	rep: 32 13  -> 49
+generation 13:
+	ind: 	73.0468	% TFIDF MaxGSS
+	ind: 	65.6758	* DF CE
+	ind: 	74.7741	- Pow TFIDF MaxGSS CE
+	ind: 	69.3914	- DF CE
+	ind: 	52.1189	- * MaxDom MaxTFICF CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	70.6367	+ GSS MaxAM
+	ind: 	71.3597	+ GSS MaxAM
+	ind: 	67.7847	- + GSS GSS CE
+	ind: 	66.7604	- DF CE
+	ind: 	74.7138	% TFIDF MaxGSS
+	ind: 	69.4718	- DF CE
+	ind: 	65.6758	* DF CE
+	ind: 	68.7086	% GSS MaxAM
+	ind: 	31.4521	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	69.4718	- DF CE
+	ind: 	68.2266	- + GSS GSS CE
+	ind: 	70.235	- + GSS GSS CE
+	ind: 	67.5236	- + GSS GSS CE
+	ind: 	69.4517	- DF CE
+	ind: 	74.1314	- Pow TFIDF MaxGSS CE
+	ind: 	70.0341	* MaxDom MaxTFICF
+	ind: 	31.4521	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	68.4073	+ GSS MaxAM
+	ind: 	73.4485	% TFIDF MaxGSS
+	ind: 	74.0912	- Pow TFIDF MaxGSS CE
+	ind: 	65.8968	* DF CE
+	ind: 	62.3218	- * MaxDom MaxTFICF CE
+	ind: 	65.7562	- DF CE
+	ind: 	74.6335	% TFIDF MaxGSS
+	ind: 	67.5839	+ GSS GSS
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	67.9052	TF
+	ind: 	62.3619	- * MaxDom MaxTFICF CE
+	ind: 	65.7562	- DF CE
+	ind: 	69.2509	+ GSS MaxAM
+	ind: 	68.7086	- + GSS GSS CE
+	ind: 	68.1462	- DF CE
+	ind: 	69.9337	- + GSS GSS CE
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	67.6642	- + GSS GSS CE
+	ind: 	70.8978	+ GSS GSS
+	ind: 	75.2561	- Pow TFIDF MaxGSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	73.5489	* MaxDom MaxTFIDF
+	ind: 	68.5881	TF
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	69.4718	+ GSS MaxAM
+	ind: 	67.5437	- DF CE
+	rep: 42  -> 42
+	rep: 24 26  -> 0
+	rep: 24 26  -> 1
+	rep: 10 34  -> 2
+	rep: 10 34  -> 3
+	rep: 44 14  -> 4
+	rep: 44 14  -> 5
+	rep: 46 13  -> 6
+	rep: 46 13  -> 7
+	rep: 36 36  -> 8
+	rep: 36 36  -> 9
+	rep: 42 7  -> 10
+	rep: 42 7  -> 11
+	rep: 5 41  -> 12
+	rep: 5 41  -> 13
+	rep: 5 11  -> 14
+	rep: 5 11  -> 15
+	rep: 18 9  -> 16
+	rep: 18 9  -> 17
+	rep: 31 4  -> 18
+	rep: 31 4  -> 19
+	rep: 42 38  -> 20
+	rep: 42 38  -> 21
+	rep: 46 9  -> 22
+	rep: 46 9  -> 23
+	rep: 46 0  -> 24
+	rep: 46 0  -> 25
+	rep: 48 13  -> 26
+	rep: 48 13  -> 27
+	rep: 45  -> 28
+	rep: 40 49  -> 29
+	rep: 40 49  -> 30
+	rep: 19  -> 31
+	rep: 26 26  -> 32
+	rep: 26 26  -> 33
+	rep: 37 30  -> 34
+	rep: 37 30  -> 35
+	rep: 48 9  -> 36
+	rep: 48 9  -> 37
+	rep: 25 47  -> 38
+	rep: 25 47  -> 39
+	rep: 29 25  -> 40
+	rep: 29 25  -> 41
+	rep: 46 38  -> 43
+	rep: 46 38  -> 44
+	rep: 18 22  -> 45
+	rep: 18 22  -> 46
+	rep: 24 6  -> 47
+	rep: 24 6  -> 48
+	rep: 31 33  -> 49
+generation 14:
+	ind: 	73.7899	% TFIDF MaxGSS
+	ind: 	65.3545	* DF CE
+	ind: 	68.7688	- DF CE
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	49.8293	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	69.6124	* MaxDom MaxTFIDF
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	68.7086	% GSS MaxAM
+	ind: 	68.7086	- + GSS GSS CE
+	ind: 	68.7086	- + GSS GSS CE
+	ind: 	71.2593	* Pow TFIDF MaxGSS CE
+	ind: 	72.0024	Pow GSS MaxAM
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	70.6768	+ GSS GSS
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	69.4919	- DF CE
+	ind: 	70.1346	- + GSS GSS CE
+	ind: 	66.7604	- DF CE
+	ind: 	74.3121	* MaxDom MaxTFICF
+	ind: 	64.3302	- * MaxDom MaxTFIDF CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	70.3957	+ + GSS GSS CE
+	ind: 	71.8819	Pow MaxDom MaxTFIDF
+	ind: 	66.7604	- DF CE
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	67.7244	% GSS MaxAM
+	ind: 	70.1948	+ GSS MaxAM
+	ind: 	68.5881	TF
+	ind: 	65.8164	- - DF CE CE
+	ind: 	69.05	+ GSS GSS
+	ind: 	69.4517	- DF CE
+	ind: 	65.8968	* DF CE
+	ind: 	65.8968	* DF CE
+	ind: 	68.9496	GSS
+	ind: 	65.8767	+ - DF CE GSS
+	ind: 	69.4718	+ GSS MaxAM
+	ind: 	68.6082	- DF CE
+	ind: 	74.8946	- Pow TFIDF MaxGSS CE
+	ind: 	71.9221	* MaxDom MaxTFIDF
+	ind: 	74.5531	% TFIDF MaxGSS
+	ind: 	74.0912	- Pow TFIDF MaxGSS CE
+	ind: 	75.2561	- Pow TFIDF MaxGSS CE
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	69.9337	- + GSS GSS CE
+	ind: 	68.2667	- + GSS GSS CE
+	ind: 	26.3507	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	73.9305	% TFIDF MaxGSS
+	ind: 	70.1948	+ GSS MaxAM
+	ind: 	74.1514	* MaxDom MaxTFIDF
+	rep: 12  -> 12
+	rep: 44 9  -> 0
+	rep: 44 9  -> 1
+	rep: 22  -> 2
+	rep: 34 46  -> 3
+	rep: 34 46  -> 4
+	rep: 17 4  -> 5
+	rep: 17 4  -> 6
+	rep: 40 4  -> 7
+	rep: 40 4  -> 8
+	rep: 20 19  -> 9
+	rep: 20 19  -> 10
+	rep: 12 10  -> 11
+	rep: 12 10  -> 13
+	rep: 24 36  -> 14
+	rep: 24 36  -> 15
+	rep: 4 4  -> 16
+	rep: 4 4  -> 17
+	rep: 45 45  -> 18
+	rep: 45 45  -> 19
+	rep: 42 36  -> 20
+	rep: 42 36  -> 21
+	rep: 37  -> 22
+	rep: 41  -> 23
+	rep: 42 38  -> 24
+	rep: 42 38  -> 25
+	rep: 10 19  -> 26
+	rep: 10 19  -> 27
+	rep: 21 35  -> 28
+	rep: 21 35  -> 29
+	rep: 27 4  -> 30
+	rep: 27 4  -> 31
+	rep: 8 29  -> 32
+	rep: 8 29  -> 33
+	rep: 11 5  -> 34
+	rep: 11 5  -> 35
+	rep: 12 25  -> 36
+	rep: 12 25  -> 37
+	rep: 17 33  -> 38
+	rep: 17 33  -> 39
+	rep: 40 2  -> 40
+	rep: 40 2  -> 41
+	rep: 6  -> 42
+	rep: 10 27  -> 43
+	rep: 10 27  -> 44
+	rep: 21 29  -> 45
+	rep: 21 29  -> 46
+	rep: 0  -> 47
+	rep: 5 19  -> 48
+	rep: 5 19  -> 49
+generation 15:
+	ind: 	29.3633	Log + GSS GSS CE
+	ind: 	70.5563	- + GSS GSS CE
+	ind: 	71.8819	Pow MaxDom MaxTFIDF
+	ind: 	70.8576	GSS
+	ind: 	26.3507	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	66.7604	- DF CE
+	ind: 	49.8293	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	74.5531	% TFIDF MaxGSS
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	73.3681	- Pow TFIDF MaxGSS CE
+	ind: 	70.3354	- * MaxDom MaxTFIDF CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	69.1906	* Pow TFIDF MaxGSS CE
+	ind: 	70.1948	+ GSS MaxAM
+	ind: 	71.6007	* MaxDom MaxTFIDF
+	ind: 	49.8293	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	49.8293	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	68.2667	- + GSS GSS CE
+	ind: 	68.2667	- + GSS GSS CE
+	ind: 	75.3163	- Pow TFIDF MaxGSS CE
+	ind: 	69.1504	+ GSS MaxAM
+	ind: 	68.6082	- DF CE
+	ind: 	74.0912	- Pow TFIDF MaxGSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	75.0351	- Pow TFIDF MaxGSS CE
+	ind: 	69.4919	* Pow TFIDF MaxGSS CE
+	ind: 	65.9972	- * MaxDom MaxTFIDF CE
+	ind: 	69.8735	+ + GSS GSS CE
+	ind: 	66.419	+ - DF CE GSS
+	ind: 	70.3153	+ GSS MaxAM
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	67.8449	- + GSS GSS CE
+	ind: 	66.439	- - DF CE CE
+	ind: 	71.8217	* MaxDom MaxTFIDF
+	ind: 	69.7329	Pow GSS MaxAM
+	ind: 	75.0151	% TFIDF MaxGSS
+	ind: 	73.3681	- Pow TFIDF MaxGSS CE
+	ind: 	69.3914	- DF CE
+	ind: 	61.0364	* DF CE
+	ind: 	68.0257	- DF CE
+	ind: 	74.7138	% TFIDF MaxGSS
+	ind: 	73.3882	* MaxDom MaxTFIDF
+	ind: 	71.6208	* Pow TFIDF MaxGSS CE
+	ind: 	70.1948	+ GSS MaxAM
+	ind: 	70.3957	+ + GSS GSS CE
+	ind: 	65.8164	- - DF CE CE
+	ind: 	73.0267	% TFIDF MaxGSS
+	ind: 	64.531	- * MaxDom MaxTFIDF CE
+	ind: 	69.3714	* MaxDom MaxTFIDF
+	rep: 11  -> 11
+	rep: 24  -> 0
+	rep: 34 4  -> 1
+	rep: 34 4  -> 2
+	rep: 23 27  -> 3
+	rep: 23 27  -> 4
+	rep: 11 44  -> 5
+	rep: 11 44  -> 6
+	rep: 12 10  -> 7
+	rep: 12 10  -> 8
+	rep: 25 22  -> 9
+	rep: 25 22  -> 10
+	rep: 43 45  -> 12
+	rep: 43 45  -> 13
+	rep: 26 29  -> 14
+	rep: 26 29  -> 15
+	rep: 19 17  -> 16
+	rep: 19 17  -> 17
+	rep: 14 26  -> 18
+	rep: 14 26  -> 19
+	rep: 36 8  -> 20
+	rep: 36 8  -> 21
+	rep: 24 4  -> 22
+	rep: 24 4  -> 23
+	rep: 11 11  -> 24
+	rep: 11 11  -> 25
+	rep: 2 4  -> 26
+	rep: 2 4  -> 27
+	rep: 29 39  -> 28
+	rep: 29 39  -> 29
+	rep: 7 38  -> 30
+	rep: 7 38  -> 31
+	rep: 43 19  -> 32
+	rep: 43 19  -> 33
+	rep: 37 34  -> 34
+	rep: 37 34  -> 35
+	rep: 20 22  -> 36
+	rep: 20 22  -> 37
+	rep: 5 48  -> 38
+	rep: 5 48  -> 39
+	rep: 19 6  -> 40
+	rep: 19 6  -> 41
+	rep: 9 16  -> 42
+	rep: 9 16  -> 43
+	rep: 12 20  -> 44
+	rep: 12 20  -> 45
+	rep: 11 5  -> 46
+	rep: 11 5  -> 47
+	rep: 18 16  -> 48
+	rep: 18 16  -> 49
+generation 16:
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	71.6007	* MaxDom MaxTFIDF
+	ind: 	29.4437	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	73.328	- Pow TFIDF MaxGSS CE
+	ind: 	70.6568	- * MaxDom MaxTFIDF CE
+	ind: 	73.9305	* GSS MaxAM
+	ind: 	74.8946	- Pow TFIDF MaxGSS CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	70.3354	- * MaxDom MaxTFIDF CE
+	ind: 	66.7604	- DF CE
+	ind: 	74.9146	- Pow TFIDF MaxGSS CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	72.2836	* + GSS GSS CE
+	ind: 	74.3523	+ Pow TFIDF MaxGSS CE
+	ind: 	67.0817	* Pow TFIDF MaxGSS CE
+	ind: 	67.7044	+ - DF CE GSS
+	ind: 	68.3872	- + GSS GSS CE
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	70.1948	+ GSS MaxAM
+	ind: 	69.4919	* Pow TFIDF MaxGSS CE
+	ind: 	74.8745	% TFIDF MaxGSS
+	ind: 	51.4963	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	49.5682	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	73.9908	- * TFIDF MaxGSS CE
+	ind: 	71.8618	Pow MaxDom MaxTFIDF
+	ind: 	26.3507	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	68.3069	+ * DF CE GSS
+	ind: 	66.8407	- DF CE
+	ind: 	74.5531	% TFIDF MaxGSS
+	ind: 	69.3914	- DF CE
+	ind: 	68.4475	* Pow TFIDF MaxGSS CE
+	ind: 	70.1346	- + GSS GSS CE
+	ind: 	64.3302	- * MaxDom MaxTFIDF CE
+	ind: 	73.8301	Pow TFIDF MaxGSS
+	ind: 	75.2561	- Pow TFIDF MaxGSS CE
+	ind: 	67.9454	- DF CE
+	ind: 	70.5563	* MaxDom MaxTFIDF
+	ind: 	66.3989	- - DF CE CE
+	ind: 	69.291	- + GSS GSS CE
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	70.4961	- + TFIDF MaxGSS CE
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.2962	- Pow TFIDF MaxGSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	66.7604	- DF CE
+	ind: 	68.4876	- + GSS GSS CE
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	rep: 24  -> 24
+	rep: 36 25  -> 0
+	rep: 36 25  -> 1
+	rep: 24 19  -> 2
+	rep: 24 19  -> 3
+	rep: 11 12  -> 4
+	rep: 11 12  -> 5
+	rep: 24  -> 6
+	rep: 49 49  -> 7
+	rep: 49 49  -> 8
+	rep: 48 23  -> 9
+	rep: 48 23  -> 10
+	rep: 42 19  -> 11
+	rep: 42 19  -> 12
+	rep: 6 21  -> 13
+	rep: 6 21  -> 14
+	rep: 22 40  -> 15
+	rep: 22 40  -> 16
+	rep: 3 49  -> 17
+	rep: 3 49  -> 18
+	rep: 5 12  -> 19
+	rep: 5 12  -> 20
+	rep: 42 8  -> 21
+	rep: 42 8  -> 22
+	rep: 11 33  -> 23
+	rep: 11 33  -> 25
+	rep: 24 12  -> 26
+	rep: 24 12  -> 27
+	rep: 16 37  -> 28
+	rep: 16 37  -> 29
+	rep: 16  -> 30
+	rep: 11 16  -> 31
+	rep: 11 16  -> 32
+	rep: 35 8  -> 33
+	rep: 35 8  -> 34
+	rep: 39 2  -> 35
+	rep: 39 2  -> 36
+	rep: 47 34  -> 37
+	rep: 47 34  -> 38
+	rep: 28  -> 39
+	rep: 14 17  -> 40
+	rep: 14 17  -> 41
+	rep: 45 36  -> 42
+	rep: 45 36  -> 43
+	rep: 36 29  -> 44
+	rep: 36 29  -> 45
+	rep: 1 40  -> 46
+	rep: 1 40  -> 47
+	rep: 15 34  -> 48
+	rep: 15 34  -> 49
+generation 17:
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	73.7096	- * TFIDF MaxGSS CE
+	ind: 	72.1631	* Pow TFIDF MaxGSS CE
+	ind: 	74.292	- Pow TFIDF MaxGSS CE
+	ind: 	73.9707	- * + GSS GSS CE CE
+	ind: 	75.1155	Pow TFIDF MaxGSS
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	65.9771	- + GSS GSS CE
+	ind: 	49.7891	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	70.4961	- + TFIDF MaxGSS CE
+	ind: 	70.8576	* Pow TFIDF MaxGSS CE
+	ind: 	74.8946	- Pow TFIDF MaxGSS CE
+	ind: 	51.4963	% - Pow MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	73.7698	- Pow TFIDF MaxGSS CE
+	ind: 	70.5764	- + GSS GSS CE
+	ind: 	73.328	- Pow TFIDF MaxGSS CE
+	ind: 	49.3071	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	71.2191	+ GSS GSS
+	ind: 	73.328	* * GSS MaxAM CE
+	ind: 	69.0902	* MaxDom MaxTFIDF
+	ind: 	72.0627	- - + TFIDF MaxGSS CE CE
+	ind: 	71.2191	- + GSS GSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	72.5246	* + GSS GSS CE
+	ind: 	68.5278	- + GSS GSS CE
+	ind: 	68.4876	- DF CE
+	ind: 	68.3471	+ + GSS GSS CE
+	ind: 	71.2191	- - + GSS GSS CE CE
+	ind: 	73.7297	Pow TFIDF MaxGSS
+	ind: 	73.1673	Pow TFIDF MaxGSS
+	ind: 	71.0183	- * MaxDom MaxTFIDF CE
+	ind: 	65.7361	- - DF CE CE
+	ind: 	31.4521	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	66.7604	- DF CE
+	ind: 	64.3704	- * MaxDom MaxTFIDF CE
+	ind: 	68.3069	+ * DF CE GSS
+	ind: 	67.0817	* Pow TFIDF MaxGSS CE
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	75.2962	- Pow TFIDF MaxGSS CE
+	ind: 	75.2561	- Pow TFIDF MaxGSS CE
+	ind: 	75.0351	- Pow TFIDF MaxGSS CE
+	ind: 	66.8407	- DF CE
+	ind: 	68.7487	- + GSS GSS CE
+	ind: 	71.8217	* MaxDom MaxTFIDF
+	ind: 	69.9739	+ * MaxDom MaxTFIDF GSS
+	ind: 	65.957	- - DF CE CE
+	rep: 6  -> 6
+	rep: 4 48  -> 0
+	rep: 4 48  -> 1
+	rep: 29 10  -> 2
+	rep: 29 10  -> 3
+	rep: 8 8  -> 4
+	rep: 8 8  -> 5
+	rep: 39 9  -> 7
+	rep: 39 9  -> 8
+	rep: 30 8  -> 9
+	rep: 30 8  -> 10
+	rep: 26 12  -> 11
+	rep: 26 12  -> 12
+	rep: 24 38  -> 13
+	rep: 24 38  -> 14
+	rep: 43 27  -> 15
+	rep: 43 27  -> 16
+	rep: 25 1  -> 17
+	rep: 25 1  -> 18
+	rep: 35 10  -> 19
+	rep: 35 10  -> 20
+	rep: 29 37  -> 21
+	rep: 29 37  -> 22
+	rep: 0 2  -> 23
+	rep: 0 2  -> 24
+	rep: 34 12  -> 25
+	rep: 34 12  -> 26
+	rep: 12 49  -> 27
+	rep: 12 49  -> 28
+	rep: 0 12  -> 29
+	rep: 0 12  -> 30
+	rep: 6 32  -> 31
+	rep: 6 32  -> 32
+	rep: 42 12  -> 33
+	rep: 42 12  -> 34
+	rep: 13 3  -> 35
+	rep: 13 3  -> 36
+	rep: 12 11  -> 37
+	rep: 12 11  -> 38
+	rep: 6 29  -> 39
+	rep: 6 29  -> 40
+	rep: 13 4  -> 41
+	rep: 13 4  -> 42
+	rep: 20 10  -> 43
+	rep: 20 10  -> 44
+	rep: 17 34  -> 45
+	rep: 17 34  -> 46
+	rep: 23  -> 47
+	rep: 22 38  -> 48
+	rep: 22 38  -> 49
+generation 18:
+	ind: 	73.4686	- * + GSS GSS CE CE
+	ind: 	71.5806	+ * MaxDom MaxTFIDF GSS
+	ind: 	67.4433	- DF CE
+	ind: 	49.5481	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	65.2742	+ * DF CE GSS
+	ind: 	68.6082	- + GSS GSS CE
+	ind: 	70.8576	* MaxDom MaxTFICF
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM + + GSS GSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	70.8576	* Pow TFIDF MaxGSS CE
+	ind: 	75.1155	- Pow TFIDF MaxGSS CE
+	ind: 	70.3555	- * MaxDom MaxTFIDF CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	71.3999	* + GSS GSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	73.7096	- * TFIDF MaxGSS CE
+	ind: 	68.3671	- - DF CE CE
+	ind: 	49.7891	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	68.4876	- DF CE
+	ind: 	67.5638	% DF CE
+	ind: 	52.5608	- * Pow TFIDF MaxGSS CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	71.1388	- * MaxDom MaxTFIDF CE
+	ind: 	71.6811	* Pow TFIDF MaxGSS CE
+	ind: 	67.0617	* Pow TFIDF MaxGSS CE
+	ind: 	65.9369	- - DF CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	70.8576	* - Pow TFIDF MaxGSS CE CE
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	ind: 	75.1958	Pow TFIDF MaxGSS
+	ind: 	52.6612	- * Pow TFIDF MaxGSS CE CE
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	74.9146	- Pow TFIDF MaxGSS CE
+	ind: 	74.292	- Pow TFIDF MaxGSS CE
+	ind: 	70.8174	* Pow TFIDF MaxGSS CE
+	ind: 	70.5363	- + TFIDF MaxGSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	69.2308	- DF CE
+	ind: 	74.8946	- Pow TFIDF MaxGSS CE
+	ind: 	72.7054	- * + GSS GSS CE CE
+	ind: 	73.3882	* * GSS MaxAM CE
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	74.1916	- Pow TFIDF MaxGSS CE
+	ind: 	70.3555	- * MaxDom MaxTFIDF CE
+	ind: 	71.2191	- + GSS GSS CE
+	ind: 	44.3864	- - - * MaxDom MaxTFIDF CE CE CE
+	ind: 	69.9739	+ TFIDF MaxGSS
+	rep: 6  -> 6
+	rep: 37 23  -> 0
+	rep: 37 23  -> 1
+	rep: 20  -> 2
+	rep: 13 13  -> 3
+	rep: 13 13  -> 4
+	rep: 11 46  -> 5
+	rep: 11 46  -> 7
+	rep: 13  -> 8
+	rep: 29 23  -> 9
+	rep: 29 23  -> 10
+	rep: 7 5  -> 11
+	rep: 7 5  -> 12
+	rep: 35 41  -> 13
+	rep: 35 41  -> 14
+	rep: 31 13  -> 15
+	rep: 31 13  -> 16
+	rep: 46 49  -> 17
+	rep: 46 49  -> 18
+	rep: 7 44  -> 19
+	rep: 7 44  -> 20
+	rep: 47 22  -> 21
+	rep: 47 22  -> 22
+	rep: 15 11  -> 23
+	rep: 15 11  -> 24
+	rep: 2  -> 25
+	rep: 19 23  -> 26
+	rep: 19 23  -> 27
+	rep: 12 8  -> 28
+	rep: 12 8  -> 29
+	rep: 6 24  -> 30
+	rep: 6 24  -> 31
+	rep: 30 10  -> 32
+	rep: 30 10  -> 33
+	rep: 41 16  -> 34
+	rep: 41 16  -> 35
+	rep: 15 43  -> 36
+	rep: 15 43  -> 37
+	rep: 39 36  -> 38
+	rep: 39 36  -> 39
+	rep: 39  -> 40
+	rep: 34 45  -> 41
+	rep: 34 45  -> 42
+	rep: 24 1  -> 43
+	rep: 24 1  -> 44
+	rep: 24 45  -> 45
+	rep: 24 45  -> 46
+	rep: 35 44  -> 47
+	rep: 35 44  -> 48
+	rep: 37 33  -> 49
+generation 19:
+	ind: 	49.8293	- * Pow TFIDF MaxGSS CE CE
+	ind: 	72.1631	* Pow TFIDF MaxGSS CE
+	ind: 	49.7891	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	75.1155	- Pow TFIDF MaxGSS CE
+	ind: 	75.1155	- Pow TFIDF MaxGSS CE
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	70.3555	- * MaxDom MaxTFIDF CE
+	ind: 	75.1155	- Pow TFIDF MaxGSS CE
+	ind: 	52.5608	- * Pow TFIDF MaxGSS CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	69.0299	+ * DF CE GSS
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	74.9146	- Pow TFIDF MaxGSS CE
+	ind: 	74.8946	- Pow TFIDF MaxGSS CE
+	ind: 	73.4083	- Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	70.3555	- * MaxDom MaxTFIDF CE
+	ind: 	69.9739	+ TFIDF MaxGSS
+	ind: 	65.1737	+ + GSS MaxAM GSS
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	71.0785	- + GSS GSS CE
+	ind: 	68.809	% DF CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	67.4433	- DF CE
+	ind: 	49.8695	- * Pow TFIDF MaxGSS CE CE
+	ind: 	70.476	- - DF CE CE
+	ind: 	69.8735	* + GSS GSS CE
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	ind: 	74.3523	- TFIDF CE
+	ind: 	75.2962	Pow Pow TFIDF MaxGSS MaxGSS
+	ind: 	70.8576	* - Pow TFIDF MaxGSS CE CE
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF Pow GSS MaxAM + + GSS GSS CE
+	ind: 	71.0986	* + GSS GSS CE
+	ind: 	75.2762	- Pow TFIDF MaxGSS CE
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	ind: 	73.3882	* * GSS MaxAM CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	73.7698	- Pow TFIDF MaxGSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	73.107	Pow TFIDF MaxGSS
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	71.9622	+ * MaxDom MaxTFIDF GSS
+	ind: 	75.1557	Pow TFIDF MaxGSS
+	ind: 	75.1557	Pow TFIDF MaxGSS
+	ind: 	72.7054	- + TFIDF MaxGSS CE
+	ind: 	73.3481	- Pow TFIDF MaxGSS CE
+	ind: 	46.9171	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	70.8174	* Pow TFIDF MaxGSS CE
+	rep: 6  -> 6
+	rep: 41 49  -> 0
+	rep: 41 49  -> 1
+	rep: 37 47  -> 2
+	rep: 37 47  -> 3
+	rep: 44 3  -> 4
+	rep: 44 3  -> 5
+	rep: 44 12  -> 7
+	rep: 44 12  -> 8
+	rep: 20 20  -> 9
+	rep: 20 20  -> 10
+	rep: 39 1  -> 11
+	rep: 39 1  -> 12
+	rep: 26 48  -> 13
+	rep: 26 48  -> 14
+	rep: 35 35  -> 15
+	rep: 35 35  -> 16
+	rep: 21 26  -> 17
+	rep: 21 26  -> 18
+	rep: 23 6  -> 19
+	rep: 23 6  -> 20
+	rep: 34 34  -> 21
+	rep: 34 34  -> 22
+	rep: 29 47  -> 23
+	rep: 29 47  -> 24
+	rep: 24  -> 25
+	rep: 11 20  -> 26
+	rep: 11 20  -> 27
+	rep: 27 2  -> 28
+	rep: 27 2  -> 29
+	rep: 40 36  -> 30
+	rep: 40 36  -> 31
+	rep: 23 44  -> 32
+	rep: 23 44  -> 33
+	rep: 47 47  -> 34
+	rep: 47 47  -> 35
+	rep: 6 39  -> 36
+	rep: 6 39  -> 37
+	rep: 47  -> 38
+	rep: 44  -> 39
+	rep: 46 43  -> 40
+	rep: 46 43  -> 41
+	rep: 42 3  -> 42
+	rep: 42 3  -> 43
+	rep: 35 21  -> 44
+	rep: 35 21  -> 45
+	rep: 14 37  -> 46
+	rep: 14 37  -> 47
+	rep: 35 37  -> 48
+	rep: 35 37  -> 49
+generation 20:
+	ind: 	73.107	Pow TFIDF MaxGSS
+	ind: 	71.661	* Pow TFIDF MaxGSS CE
+	ind: 	68.5278	* * GSS MaxAM CE
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	ind: 	75.3766	- Pow TFIDF MaxGSS CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	50.1105	- MaxTFICF MaxTFICF
+	ind: 	49.2268	% - Pow TFIDF MaxGSS + GSS MaxAM * MaxDom MaxTFICF
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	71.3597	* Pow TFIDF MaxGSS CE
+	ind: 	69.532	+ GSS GSS
+	ind: 	46.9171	% - - MaxTFICF MaxTFICF + GSS MaxAM - * Pow TFIDF MaxGSS CE CE
+	ind: 	72.3238	- % Pow TFIDF MaxGSS CE CE
+	ind: 	75.0151	Pow TFIDF MaxGSS
+	ind: 	51.5967	- - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	69.532	+ GSS GSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	69.3914	+ GSS GSS
+	ind: 	65.9369	* * + GSS GSS CE CE
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	ind: 	52.5206	- - TFIDF MaxGSS CE
+	ind: 	75.2762	- Pow TFIDF MaxGSS CE
+	ind: 	67.9454	+ * DF CE GSS
+	ind: 	45.3906	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	52.5608	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	68.327	- - DF CE CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.1557	Pow TFIDF MaxGSS
+	ind: 	73.3681	- Pow TFIDF MaxGSS CE
+	ind: 	73.3681	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	71.6811	- - Pow TFIDF MaxGSS CE CE
+	ind: 	73.3481	- Pow TFIDF MaxGSS CE
+	ind: 	75.1557	Pow TFIDF MaxGSS
+	ind: 	72.7054	- + TFIDF MaxGSS CE
+	ind: 	71.9622	+ * MaxDom MaxTFIDF GSS
+	ind: 	51.4963	Log Pow TFIDF MaxGSS CE
+	ind: 	74.1715	- Pow TFIDF MaxGSS CE
+	ind: 	75.3163	- Pow TFIDF MaxGSS CE
+	ind: 	70.4961	- + GSS GSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	72.8259	* * GSS MaxAM CE
+	ind: 	75.2762	- Pow TFIDF MaxGSS CE
+	ind: 	73.3882	* * GSS MaxAM CE
+	rep: 6  -> 6
+	rep: 20 2  -> 0
+	rep: 20 2  -> 1
+	rep: 3 22  -> 2
+	rep: 3 22  -> 3
+	rep: 15 22  -> 4
+	rep: 15 22  -> 5
+	rep: 25 28  -> 7
+	rep: 25 28  -> 8
+	rep: 31 9  -> 9
+	rep: 31 9  -> 10
+	rep: 36 45  -> 11
+	rep: 36 45  -> 12
+	rep: 33 0  -> 13
+	rep: 33 0  -> 14
+	rep: 37 9  -> 15
+	rep: 37 9  -> 16
+	rep: 31 49  -> 17
+	rep: 31 49  -> 18
+	rep: 4 49  -> 19
+	rep: 4 49  -> 20
+	rep: 32 0  -> 21
+	rep: 32 0  -> 22
+	rep: 46 20  -> 23
+	rep: 46 20  -> 24
+	rep: 3 34  -> 25
+	rep: 3 34  -> 26
+	rep: 49 37  -> 27
+	rep: 49 37  -> 28
+	rep: 46 12  -> 29
+	rep: 46 12  -> 30
+	rep: 5 29  -> 31
+	rep: 5 29  -> 32
+	rep: 24  -> 33
+	rep: 34 14  -> 34
+	rep: 34 14  -> 35
+	rep: 39 20  -> 36
+	rep: 39 20  -> 37
+	rep: 47 24  -> 38
+	rep: 47 24  -> 39
+	rep: 4 26  -> 40
+	rep: 4 26  -> 41
+	rep: 17 27  -> 42
+	rep: 17 27  -> 43
+	rep: 44 49  -> 44
+	rep: 44 49  -> 45
+	rep: 23 24  -> 46
+	rep: 23 24  -> 47
+	rep: 38 29  -> 48
+	rep: 38 29  -> 49
+generation 21:
+	ind: 	73.5087	- - Pow TFIDF MaxGSS CE CE
+	ind: 	72.9464	* * GSS MaxAM CE
+	ind: 	70.2551	- + GSS GSS CE
+	ind: 	64.4507	* * Pow TFIDF MaxGSS CE CE
+	ind: 	71.8618	- % Pow TFIDF MaxGSS CE CE
+	ind: 	67.7044	* * + GSS GSS CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.2762	- Pow TFIDF MaxGSS CE
+	ind: 	52.5608	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	47.8811	- - - MaxTFICF MaxTFICF * DF CE CE
+	ind: 	74.9146	% Pow TFIDF MaxGSS + GSS GSS
+	ind: 	75.0151	Pow TFIDF MaxGSS
+	ind: 	71.2191	- + GSS GSS CE
+	ind: 	74.995	Pow TFIDF MaxGSS
+	ind: 	73.087	Pow TFIDF MaxGSS
+	ind: 	71.8618	- - Pow TFIDF MaxGSS CE CE
+	ind: 	45.3906	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	ind: 	73.3882	* * GSS MaxAM CE
+	ind: 	67.2826	% * GSS MaxAM CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	73.107	Pow TFIDF MaxGSS
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	ind: 	73.3681	- Pow TFIDF MaxGSS CE
+	ind: 	71.6811	* Pow TFIDF MaxGSS CE
+	ind: 	68.809	- - * GSS MaxAM CE CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	71.3798	* Pow TFIDF MaxGSS CE
+	ind: 	73.2075	Pow TFIDF MaxGSS
+	ind: 	68.3069	- - DF CE CE
+	ind: 	52.5206	- - TFIDF MaxGSS CE
+	ind: 	74.8946	- Pow TFIDF MaxGSS CE
+	ind: 	49.2268	% - - MaxTFICF MaxTFICF + GSS MaxAM - * Pow TFIDF MaxGSS CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	73.1673	- - Pow TFIDF MaxGSS CE CE
+	ind: 	72.9665	* * GSS MaxAM CE
+	ind: 	52.3599	- - TFIDF MaxGSS CE
+	ind: 	71.3597	- + * DF CE GSS CE
+	ind: 	73.1673	Pow TFIDF MaxGSS
+	ind: 	50.7532	- - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	47.8811	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	50.8938	- * * GSS MaxAM CE CE
+	ind: 	75.1557	Pow TFIDF MaxGSS
+	ind: 	56.678	- - TFIDF MaxGSS CE
+	ind: 	73.4083	- Pow TFIDF MaxGSS CE
+	ind: 	73.3481	- Pow TFIDF MaxGSS CE
+	ind: 	68.327	- - DF CE CE
+	rep: 6  -> 6
+	rep: 22 4  -> 0
+	rep: 22 4  -> 1
+	rep: 15 16  -> 2
+	rep: 15 16  -> 3
+	rep: 6 48  -> 4
+	rep: 6 48  -> 5
+	rep: 7 28  -> 7
+	rep: 7 28  -> 8
+	rep: 11 41  -> 9
+	rep: 11 41  -> 10
+	rep: 7 8  -> 11
+	rep: 7 8  -> 12
+	rep: 39  -> 13
+	rep: 4 28  -> 14
+	rep: 4 28  -> 15
+	rep: 7 3  -> 16
+	rep: 7 3  -> 17
+	rep: 47  -> 18
+	rep: 11 35  -> 19
+	rep: 11 35  -> 20
+	rep: 6 40  -> 21
+	rep: 6 40  -> 22
+	rep: 38 32  -> 23
+	rep: 38 32  -> 24
+	rep: 37 37  -> 25
+	rep: 37 37  -> 26
+	rep: 48 15  -> 27
+	rep: 48 15  -> 28
+	rep: 11 44  -> 29
+	rep: 11 44  -> 30
+	rep: 41 16  -> 31
+	rep: 41 16  -> 32
+	rep: 34 15  -> 33
+	rep: 34 15  -> 34
+	rep: 4 42  -> 35
+	rep: 4 42  -> 36
+	rep: 24 26  -> 37
+	rep: 24 26  -> 38
+	rep: 43 9  -> 39
+	rep: 43 9  -> 40
+	rep: 25 2  -> 41
+	rep: 25 2  -> 42
+	rep: 39 9  -> 43
+	rep: 39 9  -> 44
+	rep: 26 32  -> 45
+	rep: 26 32  -> 46
+	rep: 0 8  -> 47
+	rep: 0 8  -> 48
+	rep: 30 39  -> 49
+generation 22:
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	71.2995	- % Pow TFIDF MaxGSS CE CE
+	ind: 	37.2163	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	68.2667	% - Pow TFIDF MaxGSS * DF CE + GSS GSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	74.9146	- Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	71.199	- - * GSS MaxAM CE CE
+	ind: 	73.7698	- Pow TFIDF MaxGSS CE
+	ind: 	74.0108	Pow TFIDF MaxGSS
+	ind: 	73.1673	Pow TFIDF MaxGSS
+	ind: 	75.2762	- Pow TFIDF MaxGSS CE
+	ind: 	52.5608	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	52.3599	- - TFIDF MaxGSS CE
+	ind: 	72.0225	- % Pow TFIDF MaxGSS CE CE
+	ind: 	68.9697	- - * GSS MaxAM CE CE
+	ind: 	75.2762	- Pow TFIDF MaxGSS CE
+	ind: 	64.4507	* * Pow TFIDF MaxGSS CE CE
+	ind: 	73.4083	- Pow TFIDF MaxGSS CE
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	50.8134	% - - MaxTFICF MaxTFICF + GSS MaxAM - * Pow TFIDF MaxGSS CE CE
+	ind: 	72.0827	- + * DF CE GSS CE
+	ind: 	75.3766	- Pow TFIDF MaxGSS CE
+	ind: 	72.9665	* * GSS MaxAM CE
+	ind: 	68.3069	- - DF CE CE
+	ind: 	73.1673	- - Pow TFIDF MaxGSS CE CE
+	ind: 	74.7741	+ - Pow TFIDF MaxGSS CE CE
+	ind: 	71.199	- - Pow TFIDF MaxGSS CE CE
+	ind: 	74.0711	- Pow TFIDF MaxGSS CE
+	ind: 	73.6493	* GSS MaxAM
+	ind: 	50.3113	- * Pow TFIDF MaxGSS CE CE
+	ind: 	55.8948	- TFIDF MaxGSS
+	ind: 	47.5999	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	74.9146	- Pow TFIDF MaxGSS CE
+	ind: 	71.179	- - Pow TFIDF MaxGSS CE CE
+	ind: 	66.4993	- % Pow MaxTFIDF MaxGSS CE CE
+	ind: 	50.7532	- - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	49.4276	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	45.3906	- - - MaxTFICF MaxTFICF * DF CE CE
+	ind: 	70.2551	- + GSS GSS CE
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	ind: 	58.7467	* DF CE
+	ind: 	47.8811	- - - MaxTFICF MaxTFICF - - TFIDF MaxGSS CE CE
+	ind: 	73.3681	- Pow TFIDF MaxGSS CE
+	ind: 	68.4475	- - DF CE CE
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	51.4963	% - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	59.3091	- TFIDF MaxGSS
+	rep: 4  -> 4
+	rep: 11 39  -> 0
+	rep: 11 39  -> 1
+	rep: 40 2  -> 2
+	rep: 40 2  -> 3
+	rep: 22  -> 5
+	rep: 16 17  -> 6
+	rep: 16 17  -> 7
+	rep: 20 30  -> 8
+	rep: 20 30  -> 9
+	rep: 28 25  -> 10
+	rep: 28 25  -> 11
+	rep: 28 2  -> 12
+	rep: 28 2  -> 13
+	rep: 47  -> 14
+	rep: 45 36  -> 15
+	rep: 45 36  -> 16
+	rep: 34 2  -> 17
+	rep: 34 2  -> 18
+	rep: 47 18  -> 19
+	rep: 47 18  -> 20
+	rep: 1 30  -> 21
+	rep: 1 30  -> 22
+	rep: 48 39  -> 23
+	rep: 48 39  -> 24
+	rep: 5 25  -> 25
+	rep: 5 25  -> 26
+	rep: 4 21  -> 27
+	rep: 4 21  -> 28
+	rep: 46 32  -> 29
+	rep: 46 32  -> 30
+	rep: 21 12  -> 31
+	rep: 21 12  -> 32
+	rep: 47 49  -> 33
+	rep: 47 49  -> 34
+	rep: 18 34  -> 35
+	rep: 18 34  -> 36
+	rep: 47 37  -> 37
+	rep: 47 37  -> 38
+	rep: 9 27  -> 39
+	rep: 9 27  -> 40
+	rep: 31 13  -> 41
+	rep: 31 13  -> 42
+	rep: 10 3  -> 43
+	rep: 10 3  -> 44
+	rep: 36 36  -> 45
+	rep: 36 36  -> 46
+	rep: 8 27  -> 47
+	rep: 8 27  -> 48
+	rep: 25 2  -> 49
+generation 23:
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	52.6612	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	49.2268	- - - MaxTFICF MaxTFICF * DF CE CE
+	ind: 	35.3284	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	50.1105	- Log TFIDF MaxGSS CE
+	ind: 	75.2561	Pow TFIDF MaxGSS
+	ind: 	62.6632	* * - Pow TFIDF MaxGSS CE CE CE
+	ind: 	71.6208	* Pow TFIDF MaxGSS CE
+	ind: 	50.3113	- % - - MaxTFICF MaxTFICF + GSS MaxAM - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	74.0108	Pow TFIDF MaxGSS
+	ind: 	71.1388	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	74.0711	- Pow TFIDF MaxGSS CE
+	ind: 	37.2163	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	26.3507	- * Pow TFIDF MaxGSS CE CE
+	ind: 	73.328	- - Pow TFIDF MaxGSS CE CE
+	ind: 	71.8618	- - Pow TFIDF MaxGSS CE CE
+	ind: 	29.9659	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	71.2593	- - Pow TFIDF MaxGSS CE CE
+	ind: 	70.6768	- % Pow TFIDF MaxGSS CE CE
+	ind: 	47.6602	- * Pow TFIDF MaxGSS CE CE
+	ind: 	51.4963	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	49.4276	Log - - MaxTFICF MaxTFICF + GSS MaxAM + GSS GSS
+	ind: 	74.292	- Pow TFIDF MaxGSS CE
+	ind: 	73.5087	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	72.0827	- + * DF CE GSS CE
+	ind: 	68.9496	% - DF CE CE
+	ind: 	42.1169	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	52.5206	- - MaxTFICF MaxTFICF CE
+	ind: 	72.9263	% - + * DF CE GSS Pow GSS MaxAM + GSS GSS
+	ind: 	73.1673	- - Pow TFIDF MaxGSS CE CE
+	ind: 	60.4941	- TFIDF MaxGSS
+	ind: 	73.3481	- Pow TFIDF MaxGSS CE
+	ind: 	71.2392	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	69.8735	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	74.0108	Pow TFIDF MaxGSS
+	ind: 	71.199	- - Pow TFIDF MaxGSS CE CE
+	ind: 	55.8948	- TFIDF MaxGSS
+	ind: 	54.8905	- - TFIDF MaxGSS CE
+	ind: 	73.1673	Pow TFIDF MaxGSS
+	ind: 	68.2667	% - Pow TFIDF MaxGSS * DF CE + GSS GSS
+	ind: 	50.7532	- - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	50.7532	- - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	73.7698	- Pow TFIDF MaxGSS CE
+	ind: 	71.1589	- - Pow TFIDF MaxGSS CE CE
+	ind: 	73.0066	- - Pow TFIDF MaxGSS CE CE
+	rep: 4  -> 4
+	rep: 7 1  -> 0
+	rep: 7 1  -> 1
+	rep: 33 48  -> 2
+	rep: 33 48  -> 3
+	rep: 37 32  -> 5
+	rep: 37 32  -> 6
+	rep: 37 20  -> 7
+	rep: 37 20  -> 8
+	rep: 1 2  -> 9
+	rep: 1 2  -> 10
+	rep: 28  -> 11
+	rep: 39 23  -> 12
+	rep: 39 23  -> 13
+	rep: 30 18  -> 14
+	rep: 30 18  -> 15
+	rep: 14 22  -> 16
+	rep: 14 22  -> 17
+	rep: 40 15  -> 18
+	rep: 40 15  -> 19
+	rep: 28 48  -> 20
+	rep: 28 48  -> 21
+	rep: 34  -> 22
+	rep: 12 31  -> 23
+	rep: 12 31  -> 24
+	rep: 14 15  -> 25
+	rep: 14 15  -> 26
+	rep: 11  -> 27
+	rep: 35 46  -> 28
+	rep: 35 46  -> 29
+	rep: 48 11  -> 30
+	rep: 48 11  -> 31
+	rep: 27 8  -> 32
+	rep: 27 8  -> 33
+	rep: 14  -> 34
+	rep: 38 30  -> 35
+	rep: 38 30  -> 36
+	rep: 6 20  -> 37
+	rep: 6 20  -> 38
+	rep: 14 35  -> 39
+	rep: 14 35  -> 40
+	rep: 3 18  -> 41
+	rep: 3 18  -> 42
+	rep: 19 34  -> 43
+	rep: 19 34  -> 44
+	rep: 47 26  -> 45
+	rep: 47 26  -> 46
+	rep: 8 7  -> 47
+	rep: 8 7  -> 48
+	rep: 33 28  -> 49
+generation 24:
+	ind: 	62.6632	* * - Pow TFIDF MaxGSS CE CE CE
+	ind: 	52.5808	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	73.1673	- - Pow TFIDF MaxGSS CE CE
+	ind: 	71.1589	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	71.902	+ * DF CE GSS
+	ind: 	52.5608	% - Pow TFIDF MaxGSS Pow GSS MaxAM + GSS GSS
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	29.8855	- Log TFIDF MaxGSS CE
+	ind: 	52.3599	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	51.677	- - - MaxTFICF MaxTFICF * DF CE CE
+	ind: 	72.0827	- + * DF CE GSS CE
+	ind: 	37.2163	- - MaxTFICF MaxTFICF * DF CE
+	ind: 	75.4168	% Pow TFIDF MaxGSS + GSS GSS
+	ind: 	42.1169	% - - - MaxTFICF MaxTFICF CE CE + GSS GSS
+	ind: 	27.134	- - MaxTFICF MaxTFICF * DF CE
+	ind: 	73.1472	- - Pow TFIDF MaxGSS CE CE
+	ind: 	52.5206	- * Pow TFIDF MaxGSS CE CE
+	ind: 	72.0225	- - Pow TFIDF MaxGSS CE CE
+	ind: 	29.2428	- * Pow TFIDF MaxGSS CE CE
+	ind: 	71.2794	- + * DF CE GSS CE
+	ind: 	71.1589	- - Pow TFIDF MaxGSS CE CE
+	ind: 	60.4941	- TFIDF MaxGSS
+	ind: 	37.2163	- - MaxTFICF MaxTFICF CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	73.0066	- - Pow TFIDF MaxGSS CE CE
+	ind: 	43.3019	- * Pow TFIDF MaxGSS CE CE
+	ind: 	71.1388	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	74.9146	- Pow TFIDF MaxGSS CE
+	ind: 	50.7331	- - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	71.1589	- - Pow TFIDF MaxGSS CE CE
+	ind: 	71.1388	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	70.5363	* Pow TFIDF MaxGSS CE
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	70.1145	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	26.3507	% - - MaxTFICF MaxTFICF * DF CE + GSS GSS
+	ind: 	73.81	Pow TFIDF MaxGSS
+	ind: 	73.0066	- - Pow TFIDF MaxGSS CE CE
+	ind: 	73.0066	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	ind: 	35.3284	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	29.9659	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	60.4941	- TFIDF MaxGSS
+	ind: 	74.8946	- Pow TFIDF MaxGSS CE
+	ind: 	73.0066	- - Pow TFIDF MaxGSS CE CE
+	ind: 	50.8134	Log Pow TFIDF MaxGSS CE
+	ind: 	65.6357	* * - Pow TFIDF MaxGSS CE CE CE
+	ind: 	73.1673	- - Pow TFIDF MaxGSS CE CE
+	rep: 4  -> 4
+	rep: 2 42  -> 0
+	rep: 2 42  -> 1
+	rep: 37  -> 2
+	rep: 49 22  -> 3
+	rep: 49 22  -> 5
+	rep: 46 41  -> 6
+	rep: 46 41  -> 7
+	rep: 13  -> 8
+	rep: 29 15  -> 9
+	rep: 29 15  -> 10
+	rep: 22 47  -> 11
+	rep: 22 47  -> 12
+	rep: 27 26  -> 13
+	rep: 27 26  -> 14
+	rep: 4 38  -> 15
+	rep: 4 38  -> 16
+	rep: 47 23  -> 17
+	rep: 47 23  -> 18
+	rep: 37 31  -> 19
+	rep: 37 31  -> 20
+	rep: 24 7  -> 21
+	rep: 24 7  -> 22
+	rep: 29 15  -> 23
+	rep: 29 15  -> 24
+	rep: 4 40  -> 25
+	rep: 4 40  -> 26
+	rep: 6 26  -> 27
+	rep: 6 26  -> 28
+	rep: 35 42  -> 29
+	rep: 35 42  -> 30
+	rep: 37 17  -> 31
+	rep: 37 17  -> 32
+	rep: 34 33  -> 33
+	rep: 34 33  -> 34
+	rep: 32 30  -> 35
+	rep: 32 30  -> 36
+	rep: 7 20  -> 37
+	rep: 7 20  -> 38
+	rep: 34 35  -> 39
+	rep: 34 35  -> 40
+	rep: 32 27  -> 41
+	rep: 32 27  -> 42
+	rep: 7 45  -> 43
+	rep: 7 45  -> 44
+	rep: 32 25  -> 45
+	rep: 32 25  -> 46
+	rep: 46 10  -> 47
+	rep: 46 10  -> 48
+	rep: 2 26  -> 49
+generation 25:
+	ind: 	73.0066	- - Pow TFIDF MaxGSS CE CE
+	ind: 	35.3284	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	73.81	Pow TFIDF MaxGSS
+	ind: 	59.3091	- TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	51.5164	- - - - MaxTFICF MaxTFICF CE CE CE
+	ind: 	73.7698	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	% Pow TFIDF MaxGSS + GSS GSS
+	ind: 	50.7331	- - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	27.134	- - MaxTFICF MaxTFICF * DF CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	50.8134	Log - TFIDF MaxGSS CE
+	ind: 	50.1105	- - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	72.5447	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	72.7254	- - Pow TFIDF MaxGSS CE CE
+	ind: 	50.8134	- MaxTFICF MaxTFICF
+	ind: 	37.2163	- Log Pow TFIDF MaxGSS CE CE
+	ind: 	75.0552	Pow TFIDF MaxGSS
+	ind: 	70.3555	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	72.4443	% Pow TFIDF MaxGSS CE
+	ind: 	49.8695	- - MaxTFICF MaxTFICF CE
+	ind: 	27.134	- - * Pow TFIDF MaxGSS CE CE * DF CE
+	ind: 	74.9146	- Pow TFIDF MaxGSS CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	70.1346	% * Pow TFIDF MaxGSS CE + GSS GSS
+	ind: 	26.3507	- - Pow TFIDF MaxGSS Pow GSS MaxAM CE
+	ind: 	67.9855	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	51.0745	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	75.0552	Pow TFIDF MaxGSS
+	ind: 	52.2997	- * Pow TFIDF MaxGSS CE CE
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	72.143	* Pow TFIDF MaxGSS CE
+	ind: 	51.5164	- Log TFIDF MaxGSS CE
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.1557	- Pow TFIDF MaxGSS CE
+	ind: 	72.0827	- + * DF CE GSS CE
+	ind: 	73.2276	- - Pow TFIDF MaxGSS CE CE
+	ind: 	70.5965	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	71.1388	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	72.8861	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	73.0066	- - Pow TFIDF MaxGSS CE CE
+	ind: 	71.9823	- - Pow TFIDF MaxGSS CE CE
+	ind: 	51.4963	- - - MaxTFICF MaxTFICF * DF CE CE
+	ind: 	73.1673	- - Pow TFIDF MaxGSS CE CE
+	rep: 4  -> 4
+	rep: 19 18  -> 0
+	rep: 19 18  -> 1
+	rep: 21 31  -> 2
+	rep: 21 31  -> 3
+	rep: 8 44  -> 5
+	rep: 8 44  -> 6
+	rep: 40 3  -> 7
+	rep: 40 3  -> 8
+	rep: 11 32  -> 9
+	rep: 11 32  -> 10
+	rep: 20 13  -> 11
+	rep: 20 13  -> 12
+	rep: 26 32  -> 13
+	rep: 26 32  -> 14
+	rep: 46 13  -> 15
+	rep: 46 13  -> 16
+	rep: 11 29  -> 17
+	rep: 11 29  -> 18
+	rep: 31  -> 19
+	rep: 43 27  -> 20
+	rep: 43 27  -> 21
+	rep: 7 39  -> 22
+	rep: 7 39  -> 23
+	rep: 49 42  -> 24
+	rep: 49 42  -> 25
+	rep: 34 38  -> 26
+	rep: 34 38  -> 27
+	rep: 44 30  -> 28
+	rep: 44 30  -> 29
+	rep: 36 23  -> 30
+	rep: 36 23  -> 31
+	rep: 42 3  -> 32
+	rep: 42 3  -> 33
+	rep: 49 29  -> 34
+	rep: 49 29  -> 35
+	rep: 2 35  -> 36
+	rep: 2 35  -> 37
+	rep: 39 30  -> 38
+	rep: 39 30  -> 39
+	rep: 49 48  -> 40
+	rep: 49 48  -> 41
+	rep: 0 10  -> 42
+	rep: 0 10  -> 43
+	rep: 20 9  -> 44
+	rep: 20 9  -> 45
+	rep: 39 35  -> 46
+	rep: 39 35  -> 47
+	rep: 26 17  -> 48
+	rep: 26 17  -> 49
+generation 26:
+	ind: 	75.0552	Pow TFIDF MaxGSS
+	ind: 	39.9076	- Log Pow TFIDF MaxGSS CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.0552	Pow TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	69.8534	- - % Pow TFIDF MaxGSS + GSS GSS CE CE
+	ind: 	70.0141	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	59.9719	- TFIDF MaxGSS
+	ind: 	72.1631	* Pow TFIDF MaxGSS CE
+	ind: 	75.2762	- Pow TFIDF MaxGSS CE
+	ind: 	71.1388	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	49.6485	- - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	52.3197	- * Pow TFIDF MaxGSS CE CE
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	45.3906	- - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.0151	Pow TFIDF MaxGSS
+	ind: 	69.6726	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	75.0552	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	70.1346	% * Pow TFIDF MaxGSS CE + GSS GSS
+	ind: 	35.3284	- Log - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	73.1874	- - Pow TFIDF MaxGSS CE CE
+	ind: 	70.3756	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	51.4963	Log Pow TFIDF MaxGSS CE
+	ind: 	72.0827	- + * DF CE GSS CE
+	ind: 	72.7254	- - Pow TFIDF MaxGSS CE CE
+	ind: 	47.6602	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	50.8134	- - MaxTFICF MaxTFICF CE
+	ind: 	73.0669	- - Pow TFIDF MaxGSS CE CE
+	ind: 	71.5606	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	57.9233	- TFIDF MaxGSS
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	70.0141	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	73.7899	Pow TFIDF MaxGSS
+	ind: 	51.8377	- Log TFIDF MaxGSS CE
+	ind: 	73.0066	- - Pow TFIDF MaxGSS CE CE
+	ind: 	47.5999	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	72.9263	- - Pow TFIDF MaxGSS CE CE
+	ind: 	52.5206	- - - MaxTFICF MaxTFICF * DF CE CE
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	29.9659	- - MaxTFICF MaxTFICF + DF CE
+	ind: 	70.5162	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	50.7331	- - * Pow TFIDF MaxGSS CE CE CE
+	ind: 	72.0225	- - Pow TFIDF MaxGSS CE CE
+	ind: 	52.5608	- Log TFIDF MaxGSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	52.5206	- MaxTFICF MaxTFICF
+	rep: 4  -> 4
+	rep: 10 6  -> 0
+	rep: 10 6  -> 1
+	rep: 24 33  -> 2
+	rep: 24 33  -> 3
+	rep: 48 34  -> 5
+	rep: 48 34  -> 6
+	rep: 4 3  -> 7
+	rep: 4 3  -> 8
+	rep: 38 26  -> 9
+	rep: 38 26  -> 10
+	rep: 17 40  -> 11
+	rep: 17 40  -> 12
+	rep: 44  -> 13
+	rep: 14 37  -> 14
+	rep: 14 37  -> 15
+	rep: 42 28  -> 16
+	rep: 42 28  -> 17
+	rep: 31 28  -> 18
+	rep: 31 28  -> 19
+	rep: 42 37  -> 20
+	rep: 42 37  -> 21
+	rep: 5 47  -> 22
+	rep: 5 47  -> 23
+	rep: 11 41  -> 24
+	rep: 11 41  -> 25
+	rep: 11 7  -> 26
+	rep: 11 7  -> 27
+	rep: 17 24  -> 28
+	rep: 17 24  -> 29
+	rep: 17 11  -> 30
+	rep: 17 11  -> 31
+	rep: 19 9  -> 32
+	rep: 19 9  -> 33
+	rep: 20 19  -> 34
+	rep: 20 19  -> 35
+	rep: 2 9  -> 36
+	rep: 2 9  -> 37
+	rep: 9 49  -> 38
+	rep: 9 49  -> 39
+	rep: 10 0  -> 40
+	rep: 10 0  -> 41
+	rep: 28 29  -> 42
+	rep: 28 29  -> 43
+	rep: 2 1  -> 44
+	rep: 2 1  -> 45
+	rep: 29 1  -> 46
+	rep: 29 1  -> 47
+	rep: 21 29  -> 48
+	rep: 21 29  -> 49
+generation 27:
+	ind: 	74.9146	- Pow TFIDF MaxGSS CE
+	ind: 	70.476	- - % Pow TFIDF MaxGSS + GSS GSS CE CE
+	ind: 	72.4041	- - Pow TFIDF MaxGSS CE CE
+	ind: 	59.3292	- TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	75.0954	- Pow TFIDF MaxGSS CE
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.1155	- Pow TFIDF MaxGSS CE
+	ind: 	75.2962	Pow TFIDF MaxGSS
+	ind: 	72.7054	- - Pow TFIDF MaxGSS CE CE
+	ind: 	52.5206	Log Pow TFIDF MaxGSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	74.9146	- Pow TFIDF MaxGSS CE
+	ind: 	70.5162	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	52.5608	- * Pow TFIDF MaxGSS CE CE
+	ind: 	71.44	+ Log TFIDF MaxGSS CE
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	72.6853	- - Pow TFIDF MaxGSS CE CE
+	ind: 	73.5288	- - Pow TFIDF MaxGSS CE CE
+	ind: 	71.199	- - Pow TFIDF MaxGSS CE CE
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	29.9659	- Log TFIDF MaxGSS CE
+	ind: 	51.4963	Log TFIDF MaxGSS
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	71.0384	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	52.5206	- - - MaxTFICF MaxTFICF * DF CE CE
+	ind: 	70.1145	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	70.5965	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	73.2276	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.1356	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	70.3756	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	51.8377	Log TFIDF MaxGSS
+	ind: 	72.1631	* Pow TFIDF MaxGSS CE
+	ind: 	75.0552	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	72.1631	* Pow TFIDF MaxGSS CE
+	ind: 	72.1631	* Pow TFIDF MaxGSS CE
+	ind: 	52.5206	- MaxTFICF MaxTFICF
+	ind: 	74.5531	- TFIDF CE
+	ind: 	74.995	Pow Pow TFIDF MaxGSS MaxGSS
+	ind: 	72.7254	- - Pow TFIDF MaxGSS CE CE
+	ind: 	47.6602	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	52.5206	Log + TFIDF MaxGSS CE
+	ind: 	71.9823	- - Pow TFIDF MaxGSS CE CE
+	ind: 	47.6602	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	39.9076	- Log Pow TFIDF MaxGSS CE CE
+	ind: 	52.5608	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	70.5162	- - + GSS GSS CE CE
+	rep: 4  -> 4
+	rep: 5 3  -> 0
+	rep: 5 3  -> 1
+	rep: 11 34  -> 2
+	rep: 11 34  -> 3
+	rep: 35 11  -> 5
+	rep: 35 11  -> 6
+	rep: 33 1  -> 7
+	rep: 33 1  -> 8
+	rep: 41  -> 9
+	rep: 29 10  -> 10
+	rep: 29 10  -> 11
+	rep: 22 46  -> 12
+	rep: 22 46  -> 13
+	rep: 7 22  -> 14
+	rep: 7 22  -> 15
+	rep: 11 14  -> 16
+	rep: 11 14  -> 17
+	rep: 4 3  -> 18
+	rep: 4 3  -> 19
+	rep: 35 11  -> 20
+	rep: 35 11  -> 21
+	rep: 4 31  -> 22
+	rep: 4 31  -> 23
+	rep: 38 45  -> 24
+	rep: 38 45  -> 25
+	rep: 9 13  -> 26
+	rep: 9 13  -> 27
+	rep: 2  -> 28
+	rep: 16 48  -> 29
+	rep: 16 48  -> 30
+	rep: 25  -> 31
+	rep: 18 33  -> 32
+	rep: 18 33  -> 33
+	rep: 34 12  -> 34
+	rep: 34 12  -> 35
+	rep: 34  -> 36
+	rep: 42 24  -> 37
+	rep: 42 24  -> 38
+	rep: 23 41  -> 39
+	rep: 23 41  -> 40
+	rep: 7 39  -> 41
+	rep: 7 39  -> 42
+	rep: 6 43  -> 43
+	rep: 6 43  -> 44
+	rep: 0 6  -> 45
+	rep: 0 6  -> 46
+	rep: 17 13  -> 47
+	rep: 17 13  -> 48
+	rep: 23  -> 49
+generation 28:
+	ind: 	59.3292	- TFIDF MaxGSS
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	73.8703	Pow TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	70.1346	* % Pow TFIDF MaxGSS + GSS GSS CE
+	ind: 	73.1673	- - Pow TFIDF MaxGSS CE CE
+	ind: 	74.995	Pow Pow TFIDF MaxGSS MaxGSS
+	ind: 	75.1356	Pow TFIDF MaxGSS
+	ind: 	52.5206	Log Pow TFIDF MaxGSS CE
+	ind: 	45.953	Log TFIDF MaxGSS
+	ind: 	52.5206	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	74.9548	- Pow TFIDF MaxGSS CE
+	ind: 	51.6168	Log TFIDF MaxGSS
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	52.5608	- * Pow TFIDF MaxGSS CE CE
+	ind: 	59.9518	- TFIDF MaxGSS
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	74.1113	- Pow TFIDF MaxGSS CE
+	ind: 	70.4157	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	74.3523	Pow TFIDF MaxGSS
+	ind: 	71.2593	* Pow TFIDF MaxGSS CE
+	ind: 	73.0066	- - Pow TFIDF MaxGSS CE CE
+	ind: 	71.2392	- - Pow TFIDF MaxGSS CE CE
+	ind: 	70.6768	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	72.4041	- - Pow TFIDF MaxGSS CE CE
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	52.5608	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	52.5206	- - - MaxTFICF MaxTFICF * DF CE CE
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	72.0827	* Pow TFIDF MaxGSS CE
+	ind: 	51.4963	Log TFIDF MaxGSS
+	ind: 	73.7698	- Pow TFIDF MaxGSS CE
+	ind: 	75.0552	Pow TFIDF MaxGSS
+	ind: 	72.0426	- - Pow TFIDF MaxGSS CE CE
+	ind: 	71.179	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	75.2762	Pow Pow TFIDF MaxGSS MaxGSS
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	51.5164	- MaxTFICF MaxTFICF
+	ind: 	73.1673	- - Pow TFIDF MaxGSS CE CE
+	ind: 	50.8134	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	74.9146	- Pow TFIDF MaxGSS CE
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	71.1589	- - Pow TFIDF MaxGSS CE CE
+	ind: 	71.1187	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	rep: 4  -> 4
+	rep: 24 38  -> 0
+	rep: 24 38  -> 1
+	rep: 4 23  -> 2
+	rep: 4 23  -> 3
+	rep: 35 12  -> 5
+	rep: 35 12  -> 6
+	rep: 16 28  -> 7
+	rep: 16 28  -> 8
+	rep: 4 19  -> 9
+	rep: 4 19  -> 10
+	rep: 21 37  -> 11
+	rep: 21 37  -> 12
+	rep: 30 31  -> 13
+	rep: 30 31  -> 14
+	rep: 25 31  -> 15
+	rep: 25 31  -> 16
+	rep: 36 42  -> 17
+	rep: 36 42  -> 18
+	rep: 23 18  -> 19
+	rep: 23 18  -> 20
+	rep: 9 12  -> 21
+	rep: 9 12  -> 22
+	rep: 30 42  -> 23
+	rep: 30 42  -> 24
+	rep: 18 17  -> 25
+	rep: 18 17  -> 26
+	rep: 40  -> 27
+	rep: 6  -> 28
+	rep: 38 15  -> 29
+	rep: 38 15  -> 30
+	rep: 19 33  -> 31
+	rep: 19 33  -> 32
+	rep: 0 44  -> 33
+	rep: 0 44  -> 34
+	rep: 39 21  -> 35
+	rep: 39 21  -> 36
+	rep: 10 29  -> 37
+	rep: 10 29  -> 38
+	rep: 6 7  -> 39
+	rep: 6 7  -> 40
+	rep: 37 34  -> 41
+	rep: 37 34  -> 42
+	rep: 28 26  -> 43
+	rep: 28 26  -> 44
+	rep: 36 22  -> 45
+	rep: 36 22  -> 46
+	rep: 47 13  -> 47
+	rep: 47 13  -> 48
+	rep: 1 32  -> 49
+generation 29:
+	ind: 	72.0426	* Pow TFIDF MaxGSS CE
+	ind: 	70.8375	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	39.0239	Log TFIDF MaxGSS
+	ind: 	74.995	- Pow TFIDF MaxGSS CE
+	ind: 	74.3523	- Pow TFIDF MaxGSS CE
+	ind: 	73.1874	- - Pow TFIDF MaxGSS CE CE
+	ind: 	74.8946	- Pow TFIDF MaxGSS CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	74.1113	- Pow TFIDF MaxGSS CE
+	ind: 	72.0426	- - Pow TFIDF MaxGSS CE CE
+	ind: 	52.5608	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	52.5206	- - - MaxTFICF MaxTFICF * DF CE CE
+	ind: 	51.6168	- - - - MaxTFICF MaxTFICF * DF CE CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	73.2677	Pow TFIDF MaxGSS
+	ind: 	57.0998	% MaxTFICF MaxTFICF
+	ind: 	75.1557	Pow TFIDF MaxGSS
+	ind: 	58.6262	- TFIDF MaxGSS
+	ind: 	51.8377	Pow Log TFIDF MaxGSS MaxGSS
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	52.5608	- MaxTFICF MaxTFICF
+	ind: 	51.5164	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	72.143	* Pow TFIDF MaxGSS CE
+	ind: 	57.9233	- - TFIDF MaxGSS CE
+	ind: 	75.2762	Pow Pow TFIDF MaxGSS MaxGSS
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	71.2593	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	50.1305	Log TFIDF MaxGSS
+	ind: 	75.2962	- Pow TFIDF MaxGSS CE
+	ind: 	71.3798	* Pow TFIDF MaxGSS CE
+	ind: 	47.5397	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	58.7869	- TFIDF MaxGSS
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	73.2075	+ Pow TFIDF MaxGSS CE
+	ind: 	75.1557	Pow TFIDF MaxGSS
+	ind: 	73.3681	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	70.1346	* % Pow TFIDF MaxGSS + GSS GSS CE
+	ind: 	72.7254	- - Pow TFIDF MaxGSS CE CE
+	ind: 	50.1105	Log TFIDF MaxGSS
+	ind: 	72.0225	- - Pow TFIDF MaxGSS CE CE
+	ind: 	72.1229	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	69.773	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	73.0066	- - Pow TFIDF MaxGSS CE CE
+	ind: 	50.8737	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	75.0151	Pow TFIDF MaxGSS
+	rep: 4  -> 4
+	rep: 19 42  -> 0
+	rep: 19 42  -> 1
+	rep: 4 31  -> 2
+	rep: 4 31  -> 3
+	rep: 36  -> 5
+	rep: 35 15  -> 6
+	rep: 35 15  -> 7
+	rep: 37 26  -> 8
+	rep: 37 26  -> 9
+	rep: 19 35  -> 10
+	rep: 19 35  -> 11
+	rep: 45 47  -> 12
+	rep: 45 47  -> 13
+	rep: 18 48  -> 14
+	rep: 18 48  -> 15
+	rep: 10  -> 16
+	rep: 37 5  -> 17
+	rep: 37 5  -> 18
+	rep: 16 46  -> 19
+	rep: 16 46  -> 20
+	rep: 45 12  -> 21
+	rep: 45 12  -> 22
+	rep: 16 36  -> 23
+	rep: 16 36  -> 24
+	rep: 49 41  -> 25
+	rep: 49 41  -> 26
+	rep: 35 9  -> 27
+	rep: 35 9  -> 28
+	rep: 2 25  -> 29
+	rep: 2 25  -> 30
+	rep: 1 13  -> 31
+	rep: 1 13  -> 32
+	rep: 10 8  -> 33
+	rep: 10 8  -> 34
+	rep: 44 30  -> 35
+	rep: 44 30  -> 36
+	rep: 35 32  -> 37
+	rep: 35 32  -> 38
+	rep: 16 36  -> 39
+	rep: 16 36  -> 40
+	rep: 45 20  -> 41
+	rep: 45 20  -> 42
+	rep: 4 41  -> 43
+	rep: 4 41  -> 44
+	rep: 8 47  -> 45
+	rep: 8 47  -> 46
+	rep: 4 13  -> 47
+	rep: 4 13  -> 48
+	rep: 35 7  -> 49
+generation 30:
+	ind: 	75.1557	Pow TFIDF MaxGSS
+	ind: 	50.1105	Log TFIDF MaxGSS
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	73.2075	- Pow TFIDF MaxGSS CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	73.2075	+ Pow TFIDF MaxGSS CE
+	ind: 	75.1155	- Pow TFIDF MaxGSS CE
+	ind: 	51.5164	- - - - MaxTFICF MaxTFICF * DF CE CE CE
+	ind: 	75.1356	Pow TFIDF MaxGSS
+	ind: 	56.0153	- - TFIDF MaxGSS CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.3766	- Pow TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	73.0066	- - Pow TFIDF MaxGSS CE CE
+	ind: 	59.4899	% MaxTFICF MaxTFICF
+	ind: 	29.3232	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	75.0151	Pow TFIDF MaxGSS
+	ind: 	29.9659	Log TFIDF MaxGSS
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	70.8978	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	74.8946	- Pow TFIDF MaxGSS CE
+	ind: 	74.2719	- Pow TFIDF MaxGSS CE
+	ind: 	75.1155	- Pow TFIDF MaxGSS CE
+	ind: 	74.3724	+ Pow TFIDF MaxGSS CE
+	ind: 	74.6535	Pow TFIDF MaxGSS
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	74.0711	- Pow TFIDF MaxGSS CE
+	ind: 	75.1757	- Pow TFIDF MaxGSS CE
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	72.143	* Pow TFIDF MaxGSS CE
+	ind: 	71.2593	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	47.8811	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	75.2561	- Pow TFIDF MaxGSS CE
+	ind: 	73.4686	- - Pow TFIDF MaxGSS CE CE
+	ind: 	39.4256	- Log TFIDF MaxGSS CE
+	ind: 	75.0552	- Pow TFIDF MaxGSS CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	71.199	* - Pow TFIDF MaxGSS CE CE
+	ind: 	75.4168	- + Pow TFIDF MaxGSS CE CE
+	ind: 	73.8703	Pow TFIDF MaxGSS
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	59.9518	- TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	74.6937	- + Pow TFIDF MaxGSS CE CE
+	ind: 	72.1229	- - Pow TFIDF MaxGSS CE CE
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	52.5608	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	74.1314	- Pow TFIDF MaxGSS CE
+	rep: 4  -> 4
+	rep: 0 7  -> 0
+	rep: 0 7  -> 1
+	rep: 29 17  -> 2
+	rep: 29 17  -> 3
+	rep: 12  -> 5
+	rep: 11  -> 6
+	rep: 4 48  -> 7
+	rep: 4 48  -> 8
+	rep: 3 35  -> 9
+	rep: 3 35  -> 10
+	rep: 43 14  -> 11
+	rep: 43 14  -> 12
+	rep: 16 48  -> 13
+	rep: 16 48  -> 14
+	rep: 42 14  -> 15
+	rep: 42 14  -> 16
+	rep: 4 3  -> 17
+	rep: 4 3  -> 18
+	rep: 48 1  -> 19
+	rep: 48 1  -> 20
+	rep: 29 10  -> 21
+	rep: 29 10  -> 22
+	rep: 16 7  -> 23
+	rep: 16 7  -> 24
+	rep: 26 38  -> 25
+	rep: 26 38  -> 26
+	rep: 29 48  -> 27
+	rep: 29 48  -> 28
+	rep: 8 44  -> 29
+	rep: 8 44  -> 30
+	rep: 46 42  -> 31
+	rep: 46 42  -> 32
+	rep: 23 24  -> 33
+	rep: 23 24  -> 34
+	rep: 28 49  -> 35
+	rep: 28 49  -> 36
+	rep: 47 48  -> 37
+	rep: 47 48  -> 38
+	rep: 45 14  -> 39
+	rep: 45 14  -> 40
+	rep: 5 9  -> 41
+	rep: 5 9  -> 42
+	rep: 47 48  -> 43
+	rep: 47 48  -> 44
+	rep: 17 31  -> 45
+	rep: 17 31  -> 46
+	rep: 26 14  -> 47
+	rep: 26 14  -> 48
+	rep: 19 15  -> 49
+generation 31:
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	50.1105	- - - - MaxTFICF MaxTFICF * DF CE CE CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.3766	- Pow TFIDF MaxGSS CE
+	ind: 	51.4963	Log TFIDF MaxGSS
+	ind: 	52.5608	% * - Pow TFIDF MaxGSS CE CE - MaxTFICF MaxTFICF
+	ind: 	51.0343	- - Log TFIDF MaxGSS CE CE
+	ind: 	74.1314	Pow TFIDF MaxGSS
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	58.7467	% MaxTFICF MaxTFICF
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	52.5608	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	58.6463	% MaxTFICF MaxTFICF
+	ind: 	58.9074	- TFIDF MaxGSS
+	ind: 	73.5087	- - Pow TFIDF MaxGSS CE CE
+	ind: 	73.0669	Pow TFIDF MaxGSS
+	ind: 	52.5608	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	50.1105	Log TFIDF MaxGSS
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	52.5608	- - - - MaxTFICF MaxTFICF * DF CE CE CE
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	67.0617	* - * TFIDF MaxGSS CE CE
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	52.4402	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	74.8142	Pow TFIDF MaxGSS
+	ind: 	75.1557	- + Pow TFIDF MaxGSS CE CE
+	ind: 	54.6897	- - - TFIDF MaxGSS CE CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	74.1514	+ Pow TFIDF MaxGSS CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	74.7138	- Pow TFIDF MaxGSS CE
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	52.5608	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	73.1874	- - Pow TFIDF MaxGSS CE CE
+	ind: 	59.4698	% MaxTFICF MaxTFICF
+	ind: 	74.3924	+ Pow TFIDF MaxGSS CE
+	ind: 	52.5407	- - TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	51.7775	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	73.1673	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	57.9434	- % MaxTFICF MaxTFICF CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	73.3481	- - Pow TFIDF MaxGSS CE CE
+	rep: 4  -> 4
+	rep: 43  -> 0
+	rep: 36 8  -> 1
+	rep: 36 8  -> 2
+	rep: 34 2  -> 3
+	rep: 34 2  -> 5
+	rep: 25 14  -> 6
+	rep: 25 14  -> 7
+	rep: 2 9  -> 8
+	rep: 2 9  -> 9
+	rep: 3 0  -> 10
+	rep: 3 0  -> 11
+	rep: 12 31  -> 12
+	rep: 12 31  -> 13
+	rep: 28 7  -> 14
+	rep: 28 7  -> 15
+	rep: 29  -> 16
+	rep: 14 1  -> 17
+	rep: 14 1  -> 18
+	rep: 21 0  -> 19
+	rep: 21 0  -> 20
+	rep: 11 6  -> 21
+	rep: 11 6  -> 22
+	rep: 29 15  -> 23
+	rep: 29 15  -> 24
+	rep: 43 26  -> 25
+	rep: 43 26  -> 26
+	rep: 37 48  -> 27
+	rep: 37 48  -> 28
+	rep: 11 48  -> 29
+	rep: 11 48  -> 30
+	rep: 3 21  -> 31
+	rep: 3 21  -> 32
+	rep: 5 15  -> 33
+	rep: 5 15  -> 34
+	rep: 35 16  -> 35
+	rep: 35 16  -> 36
+	rep: 21 31  -> 37
+	rep: 21 31  -> 38
+	rep: 43 44  -> 39
+	rep: 43 44  -> 40
+	rep: 19 19  -> 41
+	rep: 19 19  -> 42
+	rep: 15 14  -> 43
+	rep: 15 14  -> 44
+	rep: 4 16  -> 45
+	rep: 4 16  -> 46
+	rep: 22 45  -> 47
+	rep: 22 45  -> 48
+	rep: 13 42  -> 49
+generation 32:
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	51.8377	% * - Pow TFIDF MaxGSS CE CE - MaxTFICF MaxTFICF
+	ind: 	74.1314	- Pow TFIDF MaxGSS CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	71.199	- - Pow TFIDF MaxGSS CE CE
+	ind: 	52.5608	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	72.9865	Pow TFIDF MaxGSS
+	ind: 	50.7331	- - Log TFIDF MaxGSS CE CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	73.6092	Pow TFIDF MaxGSS
+	ind: 	59.4899	% MaxTFICF MaxTFICF
+	ind: 	53.9466	- - - TFIDF MaxGSS CE CE
+	ind: 	52.4402	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	74.8142	Pow TFIDF MaxGSS
+	ind: 	52.5608	- - - - MaxTFICF MaxTFICF * DF CE CE CE
+	ind: 	50.1105	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.3766	- Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.236	Pow TFIDF MaxGSS
+	ind: 	56.678	% MaxTFICF MaxTFICF
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	68.2266	* - * TFIDF MaxGSS CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.5373	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	73.7698	- Pow TFIDF MaxGSS CE
+	ind: 	58.6463	% MaxTFICF MaxTFICF
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.1757	- Pow TFIDF MaxGSS CE
+	ind: 	57.2203	- TFIDF MaxGSS
+	ind: 	52.0185	- - - TFIDF MaxGSS CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	52.5206	- - MaxTFICF MaxTFICF CE
+	ind: 	74.0711	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	52.4402	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	52.6411	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	51.4963	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	59.5099	% MaxTFICF MaxTFICF
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	58.9074	- TFIDF MaxGSS
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	73.1673	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.2159	- Pow TFIDF MaxGSS CE
+	rep: 4  -> 4
+	rep: 45  -> 0
+	rep: 43 18  -> 1
+	rep: 43 18  -> 2
+	rep: 36  -> 3
+	rep: 26 39  -> 5
+	rep: 26 39  -> 6
+	rep: 22 12  -> 7
+	rep: 22 12  -> 8
+	rep: 15 41  -> 9
+	rep: 15 41  -> 10
+	rep: 48 8  -> 11
+	rep: 48 8  -> 12
+	rep: 3  -> 13
+	rep: 35 39  -> 14
+	rep: 35 39  -> 15
+	rep: 5 30  -> 16
+	rep: 5 30  -> 17
+	rep: 21 14  -> 18
+	rep: 21 14  -> 19
+	rep: 6 18  -> 20
+	rep: 6 18  -> 21
+	rep: 49 13  -> 22
+	rep: 49 13  -> 23
+	rep: 4 30  -> 24
+	rep: 4 30  -> 25
+	rep: 34 24  -> 26
+	rep: 34 24  -> 27
+	rep: 32 46  -> 28
+	rep: 32 46  -> 29
+	rep: 17 39  -> 30
+	rep: 17 39  -> 31
+	rep: 47 33  -> 32
+	rep: 47 33  -> 33
+	rep: 34 20  -> 34
+	rep: 34 20  -> 35
+	rep: 45 37  -> 36
+	rep: 45 37  -> 37
+	rep: 21 18  -> 38
+	rep: 21 18  -> 39
+	rep: 28 41  -> 40
+	rep: 28 41  -> 41
+	rep: 23 8  -> 42
+	rep: 23 8  -> 43
+	rep: 25 32  -> 44
+	rep: 25 32  -> 45
+	rep: 34 8  -> 46
+	rep: 34 8  -> 47
+	rep: 22 14  -> 48
+	rep: 22 14  -> 49
+generation 33:
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	51.4963	% * % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	ind: 	74.3523	Pow TFIDF MaxGSS
+	ind: 	57.2203	- TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	68.2266	* - * TFIDF MaxGSS CE CE
+	ind: 	52.5206	- - MaxTFICF MaxTFICF CE
+	ind: 	59.5099	% MaxTFICF MaxTFICF
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	75.0151	% TFIDF MaxGSS
+	ind: 	51.3758	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	73.0468	Pow TFIDF MaxGSS
+	ind: 	74.1314	- Pow TFIDF MaxGSS CE
+	ind: 	45.7522	- - - MaxTFICF MaxTFICF CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	73.0267	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	50.4117	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	72.0426	- - Pow TFIDF MaxGSS CE CE
+	ind: 	51.7172	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	75.4368	- Pow TFIDF MaxGSS CE
+	ind: 	53.103	- - - TFIDF MaxGSS CE CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	58.6463	% MaxTFICF MaxTFICF
+	ind: 	74.5933	- Pow TFIDF MaxGSS CE
+	ind: 	57.6421	- TFIDF MaxGSS
+	ind: 	52.5206	- - - - MaxTFICF MaxTFICF * DF CE CE CE
+	ind: 	52.5608	- - MaxTFICF MaxTFICF CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	58.6463	% MaxTFICF MaxTFICF
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	53.9466	- - - TFIDF MaxGSS CE CE
+	ind: 	75.3766	- Pow TFIDF MaxGSS CE
+	ind: 	50.1105	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	75.4569	- Pow TFIDF MaxGSS CE
+	ind: 	51.3758	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	75.236	Pow TFIDF MaxGSS
+	ind: 	72.9865	Pow TFIDF MaxGSS
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	73.7698	- Pow TFIDF MaxGSS CE
+	ind: 	59.9518	- TFIDF MaxGSS
+	ind: 	72.9865	Pow TFIDF MaxGSS
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	52.4402	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	rep: 0  -> 0
+	rep: 45 7  -> 1
+	rep: 45 7  -> 2
+	rep: 38  -> 3
+	rep: 29 49  -> 4
+	rep: 29 49  -> 5
+	rep: 4 41  -> 6
+	rep: 4 41  -> 7
+	rep: 24 2  -> 8
+	rep: 24 2  -> 9
+	rep: 21 1  -> 10
+	rep: 21 1  -> 11
+	rep: 15  -> 12
+	rep: 8 29  -> 13
+	rep: 8 29  -> 14
+	rep: 29 29  -> 15
+	rep: 29 29  -> 16
+	rep: 24 37  -> 17
+	rep: 24 37  -> 18
+	rep: 44  -> 19
+	rep: 4 27  -> 20
+	rep: 4 27  -> 21
+	rep: 27 19  -> 22
+	rep: 27 19  -> 23
+	rep: 13 43  -> 24
+	rep: 13 43  -> 25
+	rep: 45 10  -> 26
+	rep: 45 10  -> 27
+	rep: 42 21  -> 28
+	rep: 42 21  -> 29
+	rep: 29 6  -> 30
+	rep: 29 6  -> 31
+	rep: 38 30  -> 32
+	rep: 38 30  -> 33
+	rep: 38 39  -> 34
+	rep: 38 39  -> 35
+	rep: 15 47  -> 36
+	rep: 15 47  -> 37
+	rep: 0 33  -> 38
+	rep: 0 33  -> 39
+	rep: 47 27  -> 40
+	rep: 47 27  -> 41
+	rep: 38 44  -> 42
+	rep: 38 44  -> 43
+	rep: 47 21  -> 44
+	rep: 47 21  -> 45
+	rep: 26 25  -> 46
+	rep: 26 25  -> 47
+	rep: 3 41  -> 48
+	rep: 3 41  -> 49
+generation 34:
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	74.5933	- Pow TFIDF MaxGSS CE
+	ind: 	58.0036	% MaxTFICF MaxTFICF
+	ind: 	75.3766	- Pow TFIDF MaxGSS CE
+	ind: 	58.9074	- TFIDF MaxGSS
+	ind: 	48.6443	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	51.3758	% * - Pow TFIDF MaxGSS CE CE - MaxTFICF MaxTFICF
+	ind: 	75.3766	- Pow TFIDF MaxGSS CE
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	51.6971	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	51.5164	% * % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	74.1514	+ Pow TFIDF MaxGSS CE
+	ind: 	59.6505	- TFIDF MaxGSS
+	ind: 	57.6421	- TFIDF MaxGSS
+	ind: 	40.47	Log TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	31.5525	% - - TFIDF MaxGSS CE CE
+	ind: 	75.236	- Pow TFIDF MaxGSS CE
+	ind: 	59.1886	- % MaxTFICF MaxTFICF CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	50.1105	Log MaxTFICF MaxTFICF
+	ind: 	51.4159	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	73.0066	- Pow TFIDF MaxGSS CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	35.3284	- MaxTFICF MaxTFICF
+	ind: 	65.4348	% * Pow TFIDF MaxGSS CE - Pow TFIDF MaxGSS CE
+	ind: 	75.1155	Pow TFIDF MaxGSS
+	ind: 	51.6971	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	40.47	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	75.1155	TFIDF
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	50.1105	- - - - MaxTFICF MaxTFICF * DF CE CE CE
+	ind: 	50.1105	Log Pow TFIDF MaxGSS CE
+	ind: 	50.1105	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	72.9865	Pow TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	58.6463	% MaxTFICF MaxTFICF
+	ind: 	59.0078	% MaxTFICF MaxTFICF
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	74.7138	- Pow TFIDF MaxGSS CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	51.0745	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	72.9263	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	58.7668	- TFIDF MaxGSS
+	ind: 	51.5365	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	rep: 0  -> 0
+	rep: 8 49  -> 1
+	rep: 8 49  -> 2
+	rep: 41 11  -> 3
+	rep: 41 11  -> 4
+	rep: 12 7  -> 5
+	rep: 12 7  -> 6
+	rep: 19 22  -> 7
+	rep: 19 22  -> 8
+	rep: 6  -> 9
+	rep: 42 29  -> 10
+	rep: 42 29  -> 11
+	rep: 14 4  -> 12
+	rep: 14 4  -> 13
+	rep: 30 16  -> 14
+	rep: 30 16  -> 15
+	rep: 16 26  -> 16
+	rep: 16 26  -> 17
+	rep: 25 24  -> 18
+	rep: 25 24  -> 19
+	rep: 39 29  -> 20
+	rep: 39 29  -> 21
+	rep: 19 28  -> 22
+	rep: 19 28  -> 23
+	rep: 28 18  -> 24
+	rep: 28 18  -> 25
+	rep: 17 20  -> 26
+	rep: 17 20  -> 27
+	rep: 36 30  -> 28
+	rep: 36 30  -> 29
+	rep: 41 10  -> 30
+	rep: 41 10  -> 31
+	rep: 21 1  -> 32
+	rep: 21 1  -> 33
+	rep: 9 26  -> 34
+	rep: 9 26  -> 35
+	rep: 41 30  -> 36
+	rep: 41 30  -> 37
+	rep: 45 18  -> 38
+	rep: 45 18  -> 39
+	rep: 29 22  -> 40
+	rep: 29 22  -> 41
+	rep: 0 5  -> 42
+	rep: 0 5  -> 43
+	rep: 1 11  -> 44
+	rep: 1 11  -> 45
+	rep: 24 10  -> 46
+	rep: 24 10  -> 47
+	rep: 33 18  -> 48
+	rep: 33 18  -> 49
+generation 35:
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	31.7935	- - MaxTFICF MaxTFICF CE
+	ind: 	72.7857	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	74.8745	% TFIDF MaxGSS
+	ind: 	51.4963	% * % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	ind: 	75.4368	Pow TFIDF MaxGSS
+	ind: 	51.6971	% * - Pow TFIDF MaxGSS CE CE - MaxTFICF MaxTFICF
+	ind: 	74.7138	- Pow TFIDF MaxGSS CE
+	ind: 	52.5206	Log MaxTFICF MaxTFICF
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	52.5206	- - MaxTFICF MaxTFICF CE
+	ind: 	74.0711	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	60.5342	- TFIDF MaxGSS
+	ind: 	57.6421	- TFIDF MaxGSS
+	ind: 	40.47	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	40.47	Log TFIDF MaxGSS
+	ind: 	37.2163	Log TFIDF MaxGSS
+	ind: 	39.0038	- MaxTFICF MaxTFICF
+	ind: 	73.9104	Pow TFIDF MaxGSS
+	ind: 	72.7656	- Pow TFIDF MaxGSS CE
+	ind: 	58.6463	% MaxTFICF MaxTFICF
+	ind: 	51.6971	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	48.8251	- Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	74.2117	CE
+	ind: 	56.3969	- - TFIDF MaxGSS CE
+	ind: 	72.1028	% Pow TFIDF MaxGSS CE
+	ind: 	59.1886	- % MaxTFICF MaxTFICF CE
+	ind: 	74.0108	- * TFIDF MaxGSS CE
+	ind: 	75.0151	Pow TFIDF MaxGSS
+	ind: 	51.8377	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	51.4963	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	75.2962	Pow TFIDF MaxGSS
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.1757	- Pow TFIDF MaxGSS CE
+	ind: 	73.9104	Pow TFIDF MaxGSS
+	ind: 	45.6116	- MaxTFICF MaxTFICF
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	51.8377	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	51.0745	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	31.5525	% - - TFIDF MaxGSS CE CE
+	ind: 	51.6971	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	50.1105	Log MaxTFICF MaxTFICF
+	ind: 	74.995	- Pow TFIDF MaxGSS CE
+	ind: 	52.4402	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	45.6517	- * % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF CE CE
+	ind: 	51.5164	% Pow TFIDF MaxGSS - MaxTFICF MaxTFICF
+	ind: 	73.2075	- Pow TFIDF MaxGSS CE
+	ind: 	46.6158	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	56.2362	- - TFIDF MaxGSS CE
+	ind: 	51.4963	% - - - - MaxTFICF MaxTFICF * DF CE CE CE CE
+	rep: 0  -> 0
+	rep: 38 47  -> 1
+	rep: 38 47  -> 2
+	rep: 3  -> 3
+	rep: 5 22  -> 4
+	rep: 5 22  -> 5
+	rep: 27 12  -> 6
+	rep: 27 12  -> 7
+	rep: 5 28  -> 8
+	rep: 5 28  -> 9
+	rep: 33 37  -> 10
+	rep: 33 37  -> 11
+	rep: 12 22  -> 12
+	rep: 12 22  -> 13
+	rep: 7 4  -> 14
+	rep: 7 4  -> 15
+	rep: 37 41  -> 16
+	rep: 37 41  -> 17
+	rep: 12 21  -> 18
+	rep: 12 21  -> 19
+	rep: 4 16  -> 20
+	rep: 4 16  -> 21
+	rep: 21 49  -> 22
+	rep: 21 49  -> 23
+	rep: 5 24  -> 24
+	rep: 5 24  -> 25
+	rep: 29 47  -> 26
+	rep: 29 47  -> 27
+	rep: 2 22  -> 28
+	rep: 2 22  -> 29
+	rep: 33 36  -> 30
+	rep: 33 36  -> 31
+	rep: 5 10  -> 32
+	rep: 5 10  -> 33
+	rep: 27 6  -> 34
+	rep: 27 6  -> 35
+	rep: 31 14  -> 36
+	rep: 31 14  -> 37
+	rep: 26 35  -> 38
+	rep: 26 35  -> 39
+	rep: 5 46  -> 40
+	rep: 5 46  -> 41
+	rep: 28 24  -> 42
+	rep: 28 24  -> 43
+	rep: 31 4  -> 44
+	rep: 31 4  -> 45
+	rep: 3 35  -> 46
+	rep: 3 35  -> 47
+	rep: 9 32  -> 48
+	rep: 9 32  -> 49
+generation 36:
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	51.0946	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	51.6971	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	74.8745	% TFIDF MaxGSS
+	ind: 	76.4009	Pow TFIDF MaxGSS
+	ind: 	48.8251	- Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	74.0108	- * TFIDF MaxGSS CE
+	ind: 	60.5342	- TFIDF MaxGSS
+	ind: 	75.0151	Pow TFIDF MaxGSS
+	ind: 	75.4368	Pow TFIDF MaxGSS
+	ind: 	74.5732	- Pow TFIDF MaxGSS CE
+	ind: 	51.4963	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	60.2731	- TFIDF MaxGSS
+	ind: 	48.2225	- Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	75.2962	- Pow TFIDF MaxGSS CE
+	ind: 	45.3906	% * % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	ind: 	51.8377	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	50.1105	Log MaxTFICF MaxTFICF
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	51.6971	% * - TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	51.5164	% * % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	ind: 	52.6009	Log TFIDF MaxGSS
+	ind: 	51.6971	% * * DF CE CE - MaxTFICF MaxTFICF
+	ind: 	51.4963	% - - - - MaxTFICF MaxTFICF Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.1356	TFIDF
+	ind: 	57.0195	- - Pow TFIDF MaxGSS MaxGSS CE
+	ind: 	51.8377	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	46.6158	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	72.5246	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	48.7648	- Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	75.1757	- Pow TFIDF MaxGSS CE
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	75.4368	Pow TFIDF MaxGSS
+	ind: 	52.5206	- - MaxTFICF MaxTFICF CE
+	ind: 	51.4963	% * - Pow TFIDF MaxGSS CE CE - MaxTFICF MaxTFICF
+	ind: 	74.0309	- * TFIDF MaxGSS CE
+	ind: 	75.0552	Pow TFIDF MaxGSS
+	ind: 	46.9371	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	59.1886	- % MaxTFICF MaxTFICF CE
+	ind: 	45.6116	- MaxTFICF MaxTFICF
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	72.9865	Pow TFIDF MaxGSS
+	ind: 	74.0108	Pow TFIDF MaxGSS
+	ind: 	58.2848	- - TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	51.6971	% * % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	ind: 	73.7899	% TFIDF MaxGSS
+	ind: 	46.6158	- MaxTFICF MaxTFICF
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	rep: 4  -> 4
+	rep: 6 43  -> 0
+	rep: 6 43  -> 1
+	rep: 0 38  -> 2
+	rep: 0 38  -> 3
+	rep: 1 37  -> 5
+	rep: 1 37  -> 6
+	rep: 12 11  -> 7
+	rep: 12 11  -> 8
+	rep: 41 15  -> 9
+	rep: 41 15  -> 10
+	rep: 1 5  -> 11
+	rep: 1 5  -> 12
+	rep: 46 26  -> 13
+	rep: 46 26  -> 14
+	rep: 4 40  -> 15
+	rep: 4 40  -> 16
+	rep: 7 43  -> 17
+	rep: 7 43  -> 18
+	rep: 46  -> 19
+	rep: 49 3  -> 20
+	rep: 49 3  -> 21
+	rep: 24  -> 22
+	rep: 28 38  -> 23
+	rep: 28 38  -> 24
+	rep: 9 11  -> 25
+	rep: 9 11  -> 26
+	rep: 48 28  -> 27
+	rep: 48 28  -> 28
+	rep: 14 12  -> 29
+	rep: 14 12  -> 30
+	rep: 25 16  -> 31
+	rep: 25 16  -> 32
+	rep: 28 16  -> 33
+	rep: 28 16  -> 34
+	rep: 8 38  -> 35
+	rep: 8 38  -> 36
+	rep: 8 2  -> 37
+	rep: 8 2  -> 38
+	rep: 46 16  -> 39
+	rep: 46 16  -> 40
+	rep: 0 41  -> 41
+	rep: 0 41  -> 42
+	rep: 7 25  -> 43
+	rep: 7 25  -> 44
+	rep: 40 29  -> 45
+	rep: 40 29  -> 46
+	rep: 20 34  -> 47
+	rep: 20 34  -> 48
+	rep: 49 43  -> 49
+generation 37:
+	ind: 	56.9994	- - TFIDF MaxGSS CE
+	ind: 	73.9707	- * TFIDF MaxGSS CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	48.2225	- * MaxTFICF MaxTFICF CE
+	ind: 	76.4009	Pow TFIDF MaxGSS
+	ind: 	51.0946	% - - MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	ind: 	69.9538	* * Pow TFIDF MaxGSS CE MaxGSS
+	ind: 	60.5342	- TFIDF MaxGSS
+	ind: 	50.7532	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	72.9665	Pow TFIDF MaxGSS
+	ind: 	52.5206	% * % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	ind: 	72.9665	Pow TFIDF MaxGSS
+	ind: 	75.0552	- Pow TFIDF MaxGSS % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	74.8745	% TFIDF MaxGSS
+	ind: 	44.6676	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	60.5342	- TFIDF MaxGSS
+	ind: 	58.2848	- - TFIDF MaxGSS CE
+	ind: 	73.7899	% TFIDF MaxGSS
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.1356	TFIDF
+	ind: 	71.6409	% * Pow TFIDF MaxGSS CE - % MaxTFICF MaxTFICF CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	72.4443	Pow TFIDF - MaxTFICF MaxTFICF
+	ind: 	51.4963	- - MaxGSS CE MaxGSS
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	72.5246	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.0351	- Pow TFIDF MaxGSS CE
+	ind: 	60.5342	- TFIDF MaxGSS
+	ind: 	40.6909	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	56.437	- - Pow TFIDF MaxGSS MaxGSS CE
+	ind: 	71.1187	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	51.1749	- - - MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	58.5459	- % MaxTFICF MaxTFICF CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	74.7741	Pow TFIDF MaxGSS
+	ind: 	52.5206	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	74.5531	% TFIDF MaxGSS
+	ind: 	47.7606	- - * MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	73.2075	- Pow TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	60.5342	- TFIDF MaxGSS
+	ind: 	55.1115	- - Pow TFIDF MaxGSS MaxGSS CE
+	ind: 	75.3967	- Pow TFIDF MaxGSS CE
+	ind: 	52.4001	- Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	51.5164	% * % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	ind: 	51.4963	% * - Pow TFIDF MaxGSS CE CE - MaxTFICF MaxTFICF
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	rep: 15  -> 15
+	rep: 22  -> 0
+	rep: 38 3  -> 1
+	rep: 38 3  -> 2
+	rep: 21 9  -> 3
+	rep: 21 9  -> 4
+	rep: 35 48  -> 5
+	rep: 35 48  -> 6
+	rep: 18 48  -> 7
+	rep: 18 48  -> 8
+	rep: 33 35  -> 9
+	rep: 33 35  -> 10
+	rep: 13 13  -> 11
+	rep: 13 13  -> 12
+	rep: 24 40  -> 13
+	rep: 24 40  -> 14
+	rep: 2  -> 16
+	rep: 41 3  -> 17
+	rep: 41 3  -> 18
+	rep: 35 0  -> 19
+	rep: 35 0  -> 20
+	rep: 19 35  -> 21
+	rep: 19 35  -> 22
+	rep: 26 3  -> 23
+	rep: 26 3  -> 24
+	rep: 25 48  -> 25
+	rep: 25 48  -> 26
+	rep: 19 41  -> 27
+	rep: 19 41  -> 28
+	rep: 17 48  -> 29
+	rep: 17 48  -> 30
+	rep: 12  -> 31
+	rep: 36 17  -> 32
+	rep: 36 17  -> 33
+	rep: 45 11  -> 34
+	rep: 45 11  -> 35
+	rep: 36 21  -> 36
+	rep: 36 21  -> 37
+	rep: 24 39  -> 38
+	rep: 24 39  -> 39
+	rep: 33 43  -> 40
+	rep: 33 43  -> 41
+	rep: 4 17  -> 42
+	rep: 4 17  -> 43
+	rep: 4 29  -> 44
+	rep: 4 29  -> 45
+	rep: 41 32  -> 46
+	rep: 41 32  -> 47
+	rep: 30 10  -> 48
+	rep: 30 10  -> 49
+generation 38:
+	ind: 	75.1356	TFIDF
+	ind: 	52.5206	% * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	48.2225	- * MaxTFICF MaxTFICF CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	72.9665	Pow TFIDF MaxGSS
+	ind: 	73.087	- - Pow TFIDF MaxGSS CE CE
+	ind: 	51.4963	% * % MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	ind: 	52.8419	- MaxTFICF MaxTFICF
+	ind: 	50.4318	% * - Pow TFIDF MaxGSS CE CE - - TFIDF MaxGSS CE
+	ind: 	53.7457	- % MaxTFICF MaxTFICF CE
+	ind: 	73.1472	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	74.8745	% TFIDF MaxGSS
+	ind: 	74.8745	% TFIDF MaxGSS
+	ind: 	51.4963	- - * MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	74.4728	Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	48.5037	- * MaxTFICF MaxTFICF CE
+	ind: 	59.9317	- % MaxTFICF MaxTFICF CE
+	ind: 	55.5533	- - TFIDF MaxGSS CE
+	ind: 	75.0954	% TFIDF MaxGSS
+	ind: 	37.2163	- - MaxTFICF MaxTFICF CE
+	ind: 	48.2225	- * MaxTFICF MaxTFICF CE
+	ind: 	51.4963	- - MaxGSS CE MaxGSS
+	ind: 	72.4041	Pow TFIDF - MaxTFICF MaxTFICF
+	ind: 	51.4963	% * - Pow TFIDF MaxGSS CE CE - MaxTFICF MaxTFICF
+	ind: 	74.1314	- Pow TFIDF MaxGSS CE
+	ind: 	72.8861	% TFIDF MaxGSS
+	ind: 	60.2932	- TFIDF MaxGSS
+	ind: 	51.4963	% * - Pow TFIDF MaxGSS CE CE - MaxTFICF MaxTFICF
+	ind: 	75.0552	- Pow TFIDF MaxGSS % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	60.5342	- TFIDF MaxGSS
+	ind: 	75.3967	- Pow TFIDF MaxGSS CE
+	ind: 	72.9665	Pow TFIDF MaxGSS
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	71.1187	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	60.5342	- TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	60.6146	- TFIDF MaxGSS
+	ind: 	76.4611	- Pow TFIDF MaxGSS CE
+	ind: 	74.8142	Pow TFIDF MaxGSS
+	ind: 	58.0438	- - TFIDF MaxGSS CE
+	ind: 	56.437	- - Pow TFIDF MaxGSS MaxGSS CE
+	ind: 	60.5342	- TFIDF MaxGSS
+	ind: 	52.5206	% * % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	rep: 15  -> 15
+	rep: 38 13  -> 0
+	rep: 38 13  -> 1
+	rep: 39 33  -> 2
+	rep: 39 33  -> 3
+	rep: 17 2  -> 4
+	rep: 17 2  -> 5
+	rep: 40 13  -> 6
+	rep: 40 13  -> 7
+	rep: 4 30  -> 8
+	rep: 4 30  -> 9
+	rep: 40 20  -> 10
+	rep: 40 20  -> 11
+	rep: 41 13  -> 12
+	rep: 41 13  -> 13
+	rep: 12 5  -> 14
+	rep: 12 5  -> 16
+	rep: 35 47  -> 17
+	rep: 35 47  -> 18
+	rep: 32 41  -> 19
+	rep: 32 41  -> 20
+	rep: 27 10  -> 21
+	rep: 27 10  -> 22
+	rep: 5 22  -> 23
+	rep: 5 22  -> 24
+	rep: 37 37  -> 25
+	rep: 37 37  -> 26
+	rep: 17 0  -> 27
+	rep: 17 0  -> 28
+	rep: 44 0  -> 29
+	rep: 44 0  -> 30
+	rep: 10 10  -> 31
+	rep: 10 10  -> 32
+	rep: 48 49  -> 33
+	rep: 48 49  -> 34
+	rep: 0 13  -> 35
+	rep: 0 13  -> 36
+	rep: 40  -> 37
+	rep: 10 1  -> 38
+	rep: 10 1  -> 39
+	rep: 38 4  -> 40
+	rep: 38 4  -> 41
+	rep: 39 5  -> 42
+	rep: 39 5  -> 43
+	rep: 1 23  -> 44
+	rep: 1 23  -> 45
+	rep: 43 2  -> 46
+	rep: 43 2  -> 47
+	rep: 28  -> 48
+	rep: 17 2  -> 49
+generation 39:
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	51.4963	- - * MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	60.1125	- TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	48.2225	- * MaxTFICF MaxTFICF CE
+	ind: 	69.2509	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	51.4963	- - * MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	51.0745	% * - Pow TFIDF MaxGSS CE CE - MaxTFICF MaxTFICF
+	ind: 	41.5746	% * Pow TFIDF MaxGSS CE - - TFIDF MaxGSS CE
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	49.0862	- * MaxTFICF MaxTFICF CE
+	ind: 	51.4963	- - TFIDF MaxGSS MaxGSS
+	ind: 	73.3079	% TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	72.9665	Pow TFIDF MaxGSS
+	ind: 	56.437	- - Pow TFIDF MaxGSS MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.1557	* TFIDF MaxGSS
+	ind: 	42.1169	Log TFIDF MaxGSS
+	ind: 	64.2699	% * Pow TFIDF MaxGSS CE - Pow TFIDF MaxGSS CE
+	ind: 	71.6409	- - Pow TFIDF MaxGSS CE CE
+	ind: 	47.6602	- - MaxTFICF MaxTFICF CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.1757	TFIDF
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	75.1155	TFIDF
+	ind: 	73.1472	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	73.1472	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	60.8154	- TFIDF MaxGSS
+	ind: 	52.5608	% * % * Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF CE - MaxTFICF MaxTFICF
+	ind: 	75.1757	TFIDF
+	ind: 	45.7522	- - * MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	71.1187	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	72.1028	% * Pow TFIDF MaxGSS CE * Pow TFIDF MaxGSS CE
+	ind: 	52.5206	% Pow TFIDF MaxGSS - MaxTFICF MaxTFICF
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	74.6736	Pow TFIDF MaxGSS
+	ind: 	73.4284	Pow TFIDF MaxGSS
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	33.1794	% * Pow TFIDF MaxGSS CE - * MaxTFICF MaxTFICF CE
+	ind: 	51.4963	- MaxTFICF MaxTFICF
+	ind: 	60.0321	- TFIDF MaxGSS
+	ind: 	49.0661	- * MaxTFICF MaxTFICF CE
+	ind: 	72.5246	% TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	rep: 29  -> 29
+	rep: 29 14  -> 0
+	rep: 29 14  -> 1
+	rep: 12 44  -> 2
+	rep: 12 44  -> 3
+	rep: 30 16  -> 4
+	rep: 30 16  -> 5
+	rep: 41 42  -> 6
+	rep: 41 42  -> 7
+	rep: 0 46  -> 8
+	rep: 0 46  -> 9
+	rep: 28 32  -> 10
+	rep: 28 32  -> 11
+	rep: 11 7  -> 12
+	rep: 11 7  -> 13
+	rep: 29 27  -> 14
+	rep: 29 27  -> 15
+	rep: 25  -> 16
+	rep: 25 31  -> 17
+	rep: 25 31  -> 18
+	rep: 8 31  -> 19
+	rep: 8 31  -> 20
+	rep: 15 43  -> 21
+	rep: 15 43  -> 22
+	rep: 29 48  -> 23
+	rep: 29 48  -> 24
+	rep: 25 18  -> 25
+	rep: 25 18  -> 26
+	rep: 19 0  -> 27
+	rep: 19 0  -> 28
+	rep: 11 45  -> 30
+	rep: 11 45  -> 31
+	rep: 16 46  -> 32
+	rep: 16 46  -> 33
+	rep: 19 16  -> 34
+	rep: 19 16  -> 35
+	rep: 18 39  -> 36
+	rep: 18 39  -> 37
+	rep: 19 5  -> 38
+	rep: 19 5  -> 39
+	rep: 33 46  -> 40
+	rep: 33 46  -> 41
+	rep: 0 30  -> 42
+	rep: 0 30  -> 43
+	rep: 19 24  -> 44
+	rep: 19 24  -> 45
+	rep: 37 45  -> 46
+	rep: 37 45  -> 47
+	rep: 35 14  -> 48
+	rep: 35 14  -> 49
+generation 40:
+	ind: 	75.8184	- % TFIDF MaxGSS CE
+	ind: 	73.3481	Pow TFIDF MaxGSS
+	ind: 	30.3475	- % * Pow TFIDF MaxGSS CE - * MaxTFICF MaxTFICF CE CE
+	ind: 	70.4157	* MaxTFICF MaxTFICF
+	ind: 	75.1155	TFIDF
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	74.6736	Pow TFIDF MaxGSS
+	ind: 	73.4284	Pow TFIDF MaxGSS
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	60.0321	- TFIDF MaxGSS
+	ind: 	74.6335	TFIDF
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	45.953	- - * MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	74.3523	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	73.8903	% - Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.0151	Pow TFIDF MaxGSS
+	ind: 	72.1832	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	74.6736	- Pow TFIDF MaxGSS CE
+	ind: 	72.846	% TFIDF MaxGSS
+	ind: 	75.0552	Pow TFIDF MaxGSS
+	ind: 	75.3766	- Pow Pow TFIDF MaxGSS MaxGSS CE
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	45.953	- MaxTFICF MaxTFICF
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	57.863	- - TFIDF MaxGSS CE
+	ind: 	75.5373	- Pow TFIDF MaxGSS CE
+	ind: 	75.1557	* TFIDF MaxGSS
+	ind: 	71.3396	- - Pow TFIDF MaxGSS CE CE
+	ind: 	51.8377	% Pow TFIDF MaxGSS - MaxTFICF MaxTFICF
+	ind: 	58.2647	- - Pow TFIDF MaxGSS MaxGSS CE
+	ind: 	48.2225	- * MaxTFICF MaxTFICF CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	60.0121	- TFIDF MaxGSS
+	ind: 	60.8154	- TFIDF MaxGSS
+	ind: 	75.0954	TFIDF
+	ind: 	75.0151	% TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	45.953	- - MaxTFICF MaxTFICF CE
+	ind: 	39.7469	% - MaxTFICF MaxTFICF Pow TFIDF MaxGSS
+	ind: 	72.143	* Pow TFIDF MaxGSS CE
+	ind: 	74.7941	TFIDF
+	ind: 	74.4728	% TFIDF MaxGSS
+	rep: 29  -> 29
+	rep: 4  -> 0
+	rep: 11  -> 1
+	rep: 42  -> 2
+	rep: 18 36  -> 3
+	rep: 18 36  -> 4
+	rep: 0 28  -> 5
+	rep: 0 28  -> 6
+	rep: 39 10  -> 7
+	rep: 39 10  -> 8
+	rep: 47 35  -> 9
+	rep: 47 35  -> 10
+	rep: 27 41  -> 11
+	rep: 27 41  -> 12
+	rep: 18 13  -> 13
+	rep: 18 13  -> 14
+	rep: 39  -> 15
+	rep: 49 41  -> 16
+	rep: 49 41  -> 17
+	rep: 39 48  -> 18
+	rep: 39 48  -> 19
+	rep: 42 2  -> 20
+	rep: 42 2  -> 21
+	rep: 19 48  -> 22
+	rep: 19 48  -> 23
+	rep: 39 11  -> 24
+	rep: 39 11  -> 25
+	rep: 19 14  -> 26
+	rep: 19 14  -> 27
+	rep: 33 33  -> 28
+	rep: 33 33  -> 30
+	rep: 17 47  -> 31
+	rep: 17 47  -> 32
+	rep: 31  -> 33
+	rep: 27 19  -> 34
+	rep: 27 19  -> 35
+	rep: 15 14  -> 36
+	rep: 15 14  -> 37
+	rep: 5 41  -> 38
+	rep: 5 41  -> 39
+	rep: 43 13  -> 40
+	rep: 43 13  -> 41
+	rep: 26 19  -> 42
+	rep: 26 19  -> 43
+	rep: 15 43  -> 44
+	rep: 15 43  -> 45
+	rep: 12 22  -> 46
+	rep: 12 22  -> 47
+	rep: 11 3  -> 48
+	rep: 11 3  -> 49
+generation 41:
+	ind: 	75.1155	TFIDF
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	74.754	TFIDF
+	ind: 	48.6242	% - Pow TFIDF MaxGSS CE - MaxTFICF MaxTFICF
+	ind: 	71.9221	% Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	75.8184	- % TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.0954	TFIDF
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	69.994	* Pow TFIDF MaxGSS CE
+	ind: 	73.5087	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.1757	% TFIDF MaxGSS
+	ind: 	60.8154	- TFIDF MaxGSS
+	ind: 	74.3924	% - Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	37.2163	- - * MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	60.1928	- TFIDF MaxGSS
+	ind: 	75.3967	Pow TFIDF MaxGSS
+	ind: 	74.754	TFIDF
+	ind: 	74.754	TFIDF
+	ind: 	33.2396	- % * Pow TFIDF MaxGSS CE - * MaxTFICF MaxTFICF CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	74.2318	TFIDF
+	ind: 	75.1557	* TFIDF MaxGSS
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	73.2276	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.8586	Pow TFIDF MaxGSS
+	ind: 	75.5373	- Pow TFIDF MaxGSS CE
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	75.5373	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	72.143	* Pow TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	74.6937	% TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	73.569	- - Pow TFIDF MaxGSS CE CE
+	ind: 	73.5288	- - Pow TFIDF MaxGSS CE CE
+	ind: 	60.5945	- TFIDF MaxGSS
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	47.6602	- - * MaxTFICF MaxTFICF CE MaxGSS
+	ind: 	74.9548	- Pow Pow TFIDF MaxGSS MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.0151	% TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	73.2276	Pow TFIDF Pow TFIDF MaxGSS
+	ind: 	71.2794	- - MaxGSS CE CE
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	70.4157	* MaxTFICF MaxTFICF
+	rep: 29  -> 29
+	rep: 35 47  -> 0
+	rep: 35 47  -> 1
+	rep: 18 20  -> 2
+	rep: 18 20  -> 3
+	rep: 36 31  -> 4
+	rep: 36 31  -> 5
+	rep: 19  -> 6
+	rep: 35  -> 7
+	rep: 6 4  -> 8
+	rep: 6 4  -> 9
+	rep: 1 39  -> 10
+	rep: 1 39  -> 11
+	rep: 49  -> 12
+	rep: 27 48  -> 13
+	rep: 27 48  -> 14
+	rep: 27  -> 15
+	rep: 5 10  -> 16
+	rep: 5 10  -> 17
+	rep: 5 0  -> 18
+	rep: 5 0  -> 19
+	rep: 28  -> 20
+	rep: 5 10  -> 21
+	rep: 5 10  -> 22
+	rep: 19 4  -> 23
+	rep: 19 4  -> 24
+	rep: 43 46  -> 25
+	rep: 43 46  -> 26
+	rep: 37 26  -> 27
+	rep: 37 26  -> 28
+	rep: 1 48  -> 30
+	rep: 1 48  -> 31
+	rep: 19 9  -> 32
+	rep: 19 9  -> 33
+	rep: 24 42  -> 34
+	rep: 24 42  -> 35
+	rep: 15 10  -> 36
+	rep: 15 10  -> 37
+	rep: 27  -> 38
+	rep: 22 0  -> 39
+	rep: 22 0  -> 40
+	rep: 40 9  -> 41
+	rep: 40 9  -> 42
+	rep: 24 19  -> 43
+	rep: 24 19  -> 44
+	rep: 45 11  -> 45
+	rep: 45 11  -> 46
+	rep: 47 21  -> 47
+	rep: 47 21  -> 48
+	rep: 4 14  -> 49
+generation 42:
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	71.2794	- - MaxGSS CE CE
+	ind: 	74.7138	Pow TFIDF MaxGSS
+	ind: 	75.1757	TFIDF
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	74.754	TFIDF
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	72.384	% Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	60.5945	- TFIDF MaxGSS
+	ind: 	70.4157	* MaxTFICF MaxTFICF
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.6979	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.8586	Pow TFIDF MaxGSS
+	ind: 	72.5447	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	75.0753	- % TFIDF MaxGSS CE
+	ind: 	76.1398	TFIDF
+	ind: 	75.5373	- Pow TFIDF MaxGSS CE
+	ind: 	76.3607	Pow TFIDF MaxGSS
+	ind: 	71.8417	- - - % TFIDF MaxGSS CE CE CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	70.6166	% Pow TFIDF MaxGSS TFIDF
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	73.2677	Pow TFIDF Pow TFIDF MaxGSS
+	ind: 	73.3882	- - Pow TFIDF MaxGSS CE CE
+	ind: 	73.6694	- - Pow TFIDF MaxGSS CE CE
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	71.5806	* Pow TFIDF MaxGSS CE
+	ind: 	72.9062	TFIDF
+	ind: 	74.7941	* TFIDF MaxGSS
+	ind: 	75.3766	- Pow Pow TFIDF MaxGSS MaxGSS CE
+	ind: 	73.5087	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.8586	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	69.9337	sumDF
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	69.994	* Pow TFIDF MaxGSS CE
+	ind: 	74.7941	* TFIDF MaxGSS
+	ind: 	73.4485	IG
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.1757	% TFIDF MaxGSS
+	ind: 	71.2794	- - MaxGSS CE CE
+	ind: 	33.2396	- % * Pow TFIDF MaxGSS CE - * MaxTFICF MaxTFICF CE CE
+	ind: 	71.9221	% Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	rep: 29  -> 29
+	rep: 45 46  -> 0
+	rep: 45 46  -> 1
+	rep: 21 31  -> 2
+	rep: 21 31  -> 3
+	rep: 15 20  -> 4
+	rep: 15 20  -> 5
+	rep: 0  -> 6
+	rep: 9 22  -> 7
+	rep: 9 22  -> 8
+	rep: 4  -> 9
+	rep: 20 39  -> 10
+	rep: 20 39  -> 11
+	rep: 31 49  -> 12
+	rep: 31 49  -> 13
+	rep: 7 2  -> 14
+	rep: 7 2  -> 15
+	rep: 23  -> 16
+	rep: 4 0  -> 17
+	rep: 4 0  -> 18
+	rep: 7 37  -> 19
+	rep: 7 37  -> 20
+	rep: 46 6  -> 21
+	rep: 46 6  -> 22
+	rep: 17 28  -> 23
+	rep: 17 28  -> 24
+	rep: 12 11  -> 25
+	rep: 12 11  -> 26
+	rep: 37 10  -> 27
+	rep: 37 10  -> 28
+	rep: 19 14  -> 30
+	rep: 19 14  -> 31
+	rep: 10 12  -> 32
+	rep: 10 12  -> 33
+	rep: 30 16  -> 34
+	rep: 30 16  -> 35
+	rep: 13 10  -> 36
+	rep: 13 10  -> 37
+	rep: 22  -> 38
+	rep: 38 17  -> 39
+	rep: 38 17  -> 40
+	rep: 20 40  -> 41
+	rep: 20 40  -> 42
+	rep: 17 49  -> 43
+	rep: 17 49  -> 44
+	rep: 14  -> 45
+	rep: 18 44  -> 46
+	rep: 18 44  -> 47
+	rep: 5 31  -> 48
+	rep: 5 31  -> 49
+generation 43:
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	76.2201	% TFIDF MaxGSS
+	ind: 	76.3607	Pow TFIDF MaxGSS
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.8586	Pow TFIDF MaxGSS
+	ind: 	75.5373	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	72.384	% Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	71.902	- - - % TFIDF MaxGSS CE CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	73.5288	- + TFIDF MaxGSS CE
+	ind: 	75.2962	Pow TFIDF MaxGSS
+	ind: 	75.4368	Pow TFIDF MaxGSS
+	ind: 	73.9707	% % * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.0151	Pow TFIDF MaxGSS
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	74.7941	TFIDF
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	75.0552	- % TFIDF MaxGSS CE
+	ind: 	70.4157	* MaxTFICF MaxTFICF
+	ind: 	60.5945	- TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	76.0394	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.6778	TFIDF
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	70.4358	* MaxTFICF MaxTFICF
+	ind: 	76.0594	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	71.5806	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	71.8417	- - - % TFIDF MaxGSS CE CE CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.7381	% TFIDF MaxGSS
+	ind: 	69.6726	- sumDF CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.0151	% TFIDF MaxGSS
+	ind: 	72.384	% Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	75.6979	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	72.1631	- IG CE
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	rep: 29  -> 29
+	rep: 34 34  -> 0
+	rep: 34 34  -> 1
+	rep: 48 18  -> 2
+	rep: 48 18  -> 3
+	rep: 9 37  -> 4
+	rep: 9 37  -> 5
+	rep: 29 9  -> 6
+	rep: 29 9  -> 7
+	rep: 48  -> 8
+	rep: 21  -> 9
+	rep: 5 43  -> 10
+	rep: 5 43  -> 11
+	rep: 23 5  -> 12
+	rep: 23 5  -> 13
+	rep: 34 49  -> 14
+	rep: 34 49  -> 15
+	rep: 18 7  -> 16
+	rep: 18 7  -> 17
+	rep: 29 19  -> 18
+	rep: 29 19  -> 19
+	rep: 31 22  -> 20
+	rep: 31 22  -> 21
+	rep: 2 40  -> 22
+	rep: 2 40  -> 23
+	rep: 38  -> 24
+	rep: 5 47  -> 25
+	rep: 5 47  -> 26
+	rep: 9 33  -> 27
+	rep: 9 33  -> 28
+	rep: 48 12  -> 30
+	rep: 48 12  -> 31
+	rep: 4 47  -> 32
+	rep: 4 47  -> 33
+	rep: 15 28  -> 34
+	rep: 15 28  -> 35
+	rep: 2 20  -> 36
+	rep: 2 20  -> 37
+	rep: 44 8  -> 38
+	rep: 44 8  -> 39
+	rep: 19 49  -> 40
+	rep: 19 49  -> 41
+	rep: 32 25  -> 42
+	rep: 32 25  -> 43
+	rep: 31 10  -> 44
+	rep: 31 10  -> 45
+	rep: 40 23  -> 46
+	rep: 40 23  -> 47
+	rep: 22 13  -> 48
+	rep: 22 13  -> 49
+generation 44:
+	ind: 	76.0594	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	76.0594	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.1557	Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	76.4611	- Pow TFIDF MaxGSS CE
+	ind: 	75.4368	Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	75.5172	- Pow TFIDF MaxGSS CE
+	ind: 	74.9146	- Pow TFIDF MaxGSS CE
+	ind: 	75.6176	% % * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	72.0225	* Pow TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	72.5246	% Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	76.3607	Pow TFIDF MaxGSS
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.6578	TFIDF
+	ind: 	74.8544	TFIDF
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.718	% TFIDF MaxGSS
+	ind: 	71.8417	- - - % TFIDF MaxGSS CE CE CE
+	ind: 	75.5172	- Pow TFIDF MaxGSS CE
+	ind: 	75.1757	% TFIDF MaxGSS
+	ind: 	70.4157	* MaxTFICF MaxTFICF
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.4368	Pow TFIDF MaxGSS
+	ind: 	75.718	% TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	73.3681	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	73.3681	% % TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	71.3195	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.3565	Pow TFIDF MaxGSS
+	ind: 	73.3882	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	70.4157	* MaxTFICF MaxTFICF
+	ind: 	75.6778	TFIDF
+	ind: 	73.5288	- + TFIDF MaxGSS CE
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	75.9389	- Pow TFIDF MaxGSS CE
+	ind: 	71.5204	* Pow TFIDF MaxGSS CE
+	ind: 	69.9538	% % TFIDF Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	rep: 29  -> 29
+	rep: 19 34  -> 0
+	rep: 19 34  -> 1
+	rep: 45 27  -> 2
+	rep: 45 27  -> 3
+	rep: 37 15  -> 4
+	rep: 37 15  -> 5
+	rep: 1 41  -> 6
+	rep: 1 41  -> 7
+	rep: 44 2  -> 8
+	rep: 44 2  -> 9
+	rep: 12 40  -> 10
+	rep: 12 40  -> 11
+	rep: 19 4  -> 12
+	rep: 19 4  -> 13
+	rep: 9 48  -> 14
+	rep: 9 48  -> 15
+	rep: 12 24  -> 16
+	rep: 12 24  -> 17
+	rep: 30 28  -> 18
+	rep: 30 28  -> 19
+	rep: 16 45  -> 20
+	rep: 16 45  -> 21
+	rep: 20 35  -> 22
+	rep: 20 35  -> 23
+	rep: 31 39  -> 24
+	rep: 31 39  -> 25
+	rep: 29 33  -> 26
+	rep: 29 33  -> 27
+	rep: 29 5  -> 28
+	rep: 29 5  -> 30
+	rep: 3  -> 31
+	rep: 30 35  -> 32
+	rep: 30 35  -> 33
+	rep: 9 5  -> 34
+	rep: 9 5  -> 35
+	rep: 30 28  -> 36
+	rep: 30 28  -> 37
+	rep: 23 38  -> 38
+	rep: 23 38  -> 39
+	rep: 8 17  -> 40
+	rep: 8 17  -> 41
+	rep: 21 15  -> 42
+	rep: 21 15  -> 43
+	rep: 34 36  -> 44
+	rep: 34 36  -> 45
+	rep: 44 21  -> 46
+	rep: 44 21  -> 47
+	rep: 1  -> 48
+	rep: 29 5  -> 49
+generation 45:
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	72.9263	- + TFIDF MaxGSS CE
+	ind: 	70.4157	* MaxTFICF MaxTFICF
+	ind: 	73.7297	* Pow TFIDF MaxGSS CE
+	ind: 	75.4368	Pow TFIDF MaxGSS
+	ind: 	76.0594	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	73.3882	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	74.9548	TFIDF
+	ind: 	75.959	Pow TFIDF MaxGSS
+	ind: 	75.5172	- Pow TFIDF MaxGSS CE
+	ind: 	75.3565	Pow TFIDF MaxGSS
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	71.5204	* % TFIDF MaxGSS CE
+	ind: 	75.5172	- Pow TFIDF MaxGSS CE
+	ind: 	71.8417	- - - % TFIDF MaxGSS CE CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	73.5288	- + TFIDF MaxGSS CE
+	ind: 	75.959	Pow TFIDF MaxGSS
+	ind: 	73.0669	% * TFIDF CE Pow TFIDF MaxGSS
+	ind: 	75.4368	Pow TFIDF MaxGSS
+	ind: 	71.3195	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	76.3607	Pow TFIDF MaxGSS
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	65.8566	% * Pow TFIDF MaxGSS CE - Pow TFIDF MaxGSS CE
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	73.7096	Pow TFIDF MaxGSS
+	ind: 	73.3681	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.1557	% TFIDF MaxGSS
+	ind: 	72.3037	% % TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	73.9104	% Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	75.1557	TFIDF
+	ind: 	71.5204	* Pow TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	74.7941	TFIDF
+	ind: 	75.718	TFIDF
+	ind: 	76.0594	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	76.4611	- Pow TFIDF MaxGSS CE
+	rep: 29  -> 29
+	rep: 16  -> 0
+	rep: 29 34  -> 1
+	rep: 29 34  -> 2
+	rep: 31 14  -> 3
+	rep: 31 14  -> 4
+	rep: 27 6  -> 5
+	rep: 27 6  -> 6
+	rep: 19 49  -> 7
+	rep: 19 49  -> 8
+	rep: 20  -> 9
+	rep: 12 37  -> 10
+	rep: 12 37  -> 11
+	rep: 27 25  -> 12
+	rep: 27 25  -> 13
+	rep: 28 12  -> 14
+	rep: 28 12  -> 15
+	rep: 25 30  -> 16
+	rep: 25 30  -> 17
+	rep: 38 41  -> 18
+	rep: 38 41  -> 19
+	rep: 35 21  -> 20
+	rep: 35 21  -> 21
+	rep: 47 26  -> 22
+	rep: 47 26  -> 23
+	rep: 1 21  -> 24
+	rep: 1 21  -> 25
+	rep: 10 10  -> 26
+	rep: 10 10  -> 27
+	rep: 26 46  -> 28
+	rep: 26 46  -> 30
+	rep: 36 34  -> 31
+	rep: 36 34  -> 32
+	rep: 1 25  -> 33
+	rep: 1 25  -> 34
+	rep: 48 18  -> 35
+	rep: 48 18  -> 36
+	rep: 9 12  -> 37
+	rep: 9 12  -> 38
+	rep: 5 11  -> 39
+	rep: 5 11  -> 40
+	rep: 27 43  -> 41
+	rep: 27 43  -> 42
+	rep: 48 25  -> 43
+	rep: 48 25  -> 44
+	rep: 6 3  -> 45
+	rep: 6 3  -> 46
+	rep: 48 43  -> 47
+	rep: 48 43  -> 48
+	rep: 27 45  -> 49
+generation 46:
+	ind: 	75.1155	- Pow TFIDF MaxGSS CE
+	ind: 	75.8184	- % TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	73.8502	Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	76.0594	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	74.8544	Pow TFIDF MaxGSS
+	ind: 	76.4611	- Pow TFIDF MaxGSS CE
+	ind: 	72.9865	Pow TFIDF MaxGSS
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.2962	Pow TFIDF MaxGSS
+	ind: 	72.4443	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	70.5162	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	76.2201	% TFIDF MaxGSS
+	ind: 	72.384	% Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	70.2149	% - + TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	72.0225	* Pow TFIDF MaxGSS CE
+	ind: 	75.2561	- Pow TFIDF MaxGSS CE
+	ind: 	75.1557	TFIDF
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	73.5288	- + TFIDF MaxGSS CE
+	ind: 	75.5172	- Pow TFIDF MaxGSS CE
+	ind: 	75.5172	- Pow TFIDF MaxGSS CE
+	ind: 	75.1557	TFIDF
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	73.2677	- Pow TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	76.2	% TFIDF MaxGSS
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	71.5606	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	71.9422	% Pow TFIDF MaxGSS Pow TFIDF MaxGSS
+	ind: 	72.1631	* Pow TFIDF MaxGSS CE
+	ind: 	75.9389	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.4368	Pow TFIDF MaxGSS
+	ind: 	75.3565	Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	71.5204	* Pow TFIDF MaxGSS CE
+	ind: 	73.9908	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	72.4443	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	74.0108	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	73.2075	* MaxTFICF MaxTFICF
+	ind: 	73.7497	* Pow TFIDF MaxGSS CE
+	ind: 	74.0912	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	rep: 29  -> 29
+	rep: 4 11  -> 0
+	rep: 4 11  -> 1
+	rep: 1 31  -> 2
+	rep: 1 31  -> 3
+	rep: 49 42  -> 4
+	rep: 49 42  -> 5
+	rep: 10  -> 6
+	rep: 32 34  -> 7
+	rep: 32 34  -> 8
+	rep: 4 27  -> 9
+	rep: 4 27  -> 10
+	rep: 15  -> 11
+	rep: 18 45  -> 12
+	rep: 18 45  -> 13
+	rep: 25 9  -> 14
+	rep: 25 9  -> 15
+	rep: 24 14  -> 16
+	rep: 24 14  -> 17
+	rep: 29 18  -> 18
+	rep: 29 18  -> 19
+	rep: 18 27  -> 20
+	rep: 18 27  -> 21
+	rep: 15 38  -> 22
+	rep: 15 38  -> 23
+	rep: 29 18  -> 24
+	rep: 29 18  -> 25
+	rep: 40 45  -> 26
+	rep: 40 45  -> 27
+	rep: 4 4  -> 28
+	rep: 4 4  -> 30
+	rep: 8 10  -> 31
+	rep: 8 10  -> 32
+	rep: 37 16  -> 33
+	rep: 37 16  -> 34
+	rep: 10 34  -> 35
+	rep: 10 34  -> 36
+	rep: 6 47  -> 37
+	rep: 6 47  -> 38
+	rep: 9 16  -> 39
+	rep: 9 16  -> 40
+	rep: 38 22  -> 41
+	rep: 38 22  -> 42
+	rep: 12  -> 43
+	rep: 29 0  -> 44
+	rep: 29 0  -> 45
+	rep: 3 46  -> 46
+	rep: 3 46  -> 47
+	rep: 6 2  -> 48
+	rep: 6 2  -> 49
+generation 47:
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	75.1155	% TFIDF MaxGSS
+	ind: 	75.4368	Pow TFIDF MaxGSS
+	ind: 	71.5806	* Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	75.0151	% TFIDF MaxGSS
+	ind: 	71.5606	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.5172	- Pow TFIDF MaxGSS CE
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	74.292	+ TFIDF MaxGSS
+	ind: 	73.4083	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	70.9982	- + TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	76.2201	% TFIDF MaxGSS
+	ind: 	76.3607	Pow TFIDF MaxGSS
+	ind: 	74.9548	- % TFIDF MaxGSS CE
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	76.2201	% TFIDF MaxGSS
+	ind: 	75.3565	Pow TFIDF MaxGSS
+	ind: 	56.9994	% * - TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	73.7698	- - Pow TFIDF MaxGSS CE CE
+	ind: 	71.3195	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	71.5606	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	76.0594	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	71.3999	* Pow TFIDF MaxGSS CE
+	ind: 	72.9865	Pow TFIDF MaxGSS
+	ind: 	70.5162	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	74.9548	Pow TFIDF MaxGSS
+	ind: 	75.2962	Pow TFIDF MaxGSS
+	ind: 	76.4611	- Pow TFIDF MaxGSS CE
+	ind: 	75.1356	- Pow TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	63.2055	* MaxTFICF MaxTFICF
+	ind: 	76.0394	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.3967	Pow TFIDF MaxGSS
+	rep: 2  -> 2
+	rep: 15 15  -> 0
+	rep: 15 15  -> 1
+	rep: 32  -> 3
+	rep: 5 34  -> 4
+	rep: 5 34  -> 5
+	rep: 10 45  -> 6
+	rep: 10 45  -> 7
+	rep: 2 15  -> 8
+	rep: 2 15  -> 9
+	rep: 4 49  -> 10
+	rep: 4 49  -> 11
+	rep: 25 36  -> 12
+	rep: 25 36  -> 13
+	rep: 24 9  -> 14
+	rep: 24 9  -> 15
+	rep: 10 26  -> 16
+	rep: 10 26  -> 17
+	rep: 39 27  -> 18
+	rep: 39 27  -> 19
+	rep: 19 49  -> 20
+	rep: 19 49  -> 21
+	rep: 2 3  -> 22
+	rep: 2 3  -> 23
+	rep: 24 8  -> 24
+	rep: 24 8  -> 25
+	rep: 24 21  -> 26
+	rep: 24 21  -> 27
+	rep: 8 40  -> 28
+	rep: 8 40  -> 29
+	rep: 17 49  -> 30
+	rep: 17 49  -> 31
+	rep: 11  -> 32
+	rep: 46 8  -> 33
+	rep: 46 8  -> 34
+	rep: 10 14  -> 35
+	rep: 10 14  -> 36
+	rep: 30  -> 37
+	rep: 47 47  -> 38
+	rep: 47 47  -> 39
+	rep: 18 31  -> 40
+	rep: 18 31  -> 41
+	rep: 18 18  -> 42
+	rep: 18 18  -> 43
+	rep: 44 25  -> 44
+	rep: 44 25  -> 45
+	rep: 2 37  -> 46
+	rep: 2 37  -> 47
+	rep: 7 34  -> 48
+	rep: 7 34  -> 49
+generation 48:
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	71.5806	* Pow TFIDF MaxGSS CE
+	ind: 	71.3195	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.1155	- Pow TFIDF MaxGSS CE
+	ind: 	75.5774	- Pow TFIDF MaxGSS CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.4368	Pow TFIDF MaxGSS
+	ind: 	75.3967	Pow TFIDF MaxGSS
+	ind: 	75.1356	% TFIDF MaxGSS
+	ind: 	72.4443	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	74.8544	Pow TFIDF MaxGSS
+	ind: 	75.5172	- Pow TFIDF MaxGSS CE
+	ind: 	75.3967	Pow TFIDF MaxGSS
+	ind: 	72.9464	Pow TFIDF MaxGSS
+	ind: 	56.9994	% * - TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	76.3607	Pow TFIDF MaxGSS
+	ind: 	75.1757	% TFIDF MaxGSS
+	ind: 	17.9353	- Pow TFIDF MaxGSS % TFIDF MaxGSS
+	ind: 	74.0108	CE
+	ind: 	76.4611	- Pow TFIDF MaxGSS CE
+	ind: 	71.6007	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.5373	- Pow TFIDF MaxGSS CE
+	ind: 	75.0552	- % TFIDF MaxGSS CE
+	ind: 	70.5965	- - - - Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	70.476	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	75.3967	Pow TFIDF MaxGSS
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	70.3756	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	73.3681	- + TFIDF MaxGSS CE
+	ind: 	73.2276	- Pow TFIDF MaxGSS CE
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	63.2055	* MaxTFICF MaxTFICF
+	ind: 	63.2055	* MaxTFICF MaxTFICF
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	76.2201	% TFIDF MaxGSS
+	ind: 	76.4611	- Pow TFIDF MaxGSS CE
+	ind: 	75.9189	% * Pow TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	75.0753	% TFIDF MaxGSS
+	ind: 	71.5606	- - - Pow TFIDF MaxGSS CE CE CE
+	rep: 2  -> 2
+	rep: 0 48  -> 0
+	rep: 0 48  -> 1
+	rep: 32 41  -> 3
+	rep: 32 41  -> 4
+	rep: 0  -> 5
+	rep: 41 16  -> 6
+	rep: 41 16  -> 7
+	rep: 20 23  -> 8
+	rep: 20 23  -> 9
+	rep: 16  -> 10
+	rep: 32  -> 11
+	rep: 2 29  -> 12
+	rep: 2 29  -> 13
+	rep: 42 35  -> 14
+	rep: 42 35  -> 15
+	rep: 46 34  -> 16
+	rep: 46 34  -> 17
+	rep: 9 49  -> 18
+	rep: 9 49  -> 19
+	rep: 12  -> 20
+	rep: 0 31  -> 21
+	rep: 0 31  -> 22
+	rep: 8 27  -> 23
+	rep: 8 27  -> 24
+	rep: 45 36  -> 25
+	rep: 45 36  -> 26
+	rep: 49 19  -> 27
+	rep: 49 19  -> 28
+	rep: 13 4  -> 29
+	rep: 13 4  -> 30
+	rep: 5 39  -> 31
+	rep: 5 39  -> 32
+	rep: 9 7  -> 33
+	rep: 9 7  -> 34
+	rep: 13 22  -> 35
+	rep: 13 22  -> 36
+	rep: 1 23  -> 37
+	rep: 1 23  -> 38
+	rep: 11  -> 39
+	rep: 32 15  -> 40
+	rep: 32 15  -> 41
+	rep: 37 5  -> 42
+	rep: 37 5  -> 43
+	rep: 20 34  -> 44
+	rep: 20 34  -> 45
+	rep: 24 49  -> 46
+	rep: 24 49  -> 47
+	rep: 20  -> 48
+	rep: 33 0  -> 49
+generation 49:
+	ind: 	74.8745	% TFIDF MaxGSS
+	ind: 	75.2962	Pow TFIDF MaxGSS
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	75.5172	- Pow TFIDF MaxGSS CE
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	73.7899	CE
+	ind: 	75.5172	- Pow TFIDF MaxGSS CE
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	70.8978	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	73.4686	- + TFIDF MaxGSS CE
+	ind: 	75.5774	- Pow TFIDF MaxGSS CE
+	ind: 	70.3354	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	71.5606	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.1356	% TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.3967	Pow TFIDF MaxGSS
+	ind: 	75.0753	- % TFIDF MaxGSS CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	76.2201	% TFIDF MaxGSS
+	ind: 	73.2276	- Pow TFIDF MaxGSS CE
+	ind: 	71.5606	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	56.9994	% * - TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	59.7309	- - - * Pow TFIDF MaxGSS CE CE CE CE
+	ind: 	75.0351	Pow TFIDF MaxGSS
+	ind: 	72.4443	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	65.8968	* MaxTFICF MaxTFICF
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	75.5774	- Pow TFIDF MaxGSS CE
+	ind: 	35.3685	- - Pow TFIDF MaxGSS % TFIDF MaxGSS CE
+	ind: 	74.3523	- - Pow TFIDF MaxGSS CE CE
+	ind: 	74.1113	CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	75.3967	Pow TFIDF MaxGSS
+	ind: 	74.6736	- Pow TFIDF MaxGSS CE
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	74.3121	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.5373	- Pow TFIDF MaxGSS CE
+	ind: 	75.3364	Pow TFIDF MaxGSS
+	ind: 	70.3354	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	71.6007	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	76.3607	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	rep: 2  -> 2
+	rep: 36  -> 0
+	rep: 44 47  -> 1
+	rep: 44 47  -> 3
+	rep: 38 45  -> 4
+	rep: 38 45  -> 5
+	rep: 7  -> 6
+	rep: 4 30  -> 7
+	rep: 4 30  -> 8
+	rep: 48 22  -> 9
+	rep: 48 22  -> 10
+	rep: 2 42  -> 11
+	rep: 2 42  -> 12
+	rep: 39 0  -> 13
+	rep: 39 0  -> 14
+	rep: 11  -> 15
+	rep: 16 37  -> 16
+	rep: 16 37  -> 17
+	rep: 16 16  -> 18
+	rep: 16 16  -> 19
+	rep: 28 35  -> 20
+	rep: 28 35  -> 21
+	rep: 18 45  -> 22
+	rep: 18 45  -> 23
+	rep: 6 44  -> 24
+	rep: 6 44  -> 25
+	rep: 48 28  -> 26
+	rep: 48 28  -> 27
+	rep: 12 32  -> 28
+	rep: 12 32  -> 29
+	rep: 6 31  -> 30
+	rep: 6 31  -> 31
+	rep: 46 36  -> 32
+	rep: 46 36  -> 33
+	rep: 10 23  -> 34
+	rep: 10 23  -> 35
+	rep: 23 36  -> 36
+	rep: 23 36  -> 37
+	rep: 27 17  -> 38
+	rep: 27 17  -> 39
+	rep: 5 1  -> 40
+	rep: 5 1  -> 41
+	rep: 24 49  -> 42
+	rep: 24 49  -> 43
+	rep: 6  -> 44
+	rep: 48  -> 45
+	rep: 15 31  -> 46
+	rep: 15 31  -> 47
+	rep: 33 19  -> 48
+	rep: 33 19  -> 49
+generation 50:
+	ind: 	74.3523	- - Pow TFIDF MaxGSS CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	71.3195	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	76.4812	Pow TFIDF MaxGSS
+	ind: 	70.3756	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.5172	- Pow TFIDF MaxGSS CE
+	ind: 	73.9104	MaxGSS
+	ind: 	73.8703	Pow TFIDF + Pow TFIDF MaxGSS CE
+	ind: 	76.3607	Pow TFIDF MaxGSS
+	ind: 	75.3967	Pow TFIDF MaxGSS
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	74.3121	- - Pow TFIDF MaxGSS CE CE
+	ind: 	72.9464	Pow TFIDF MaxGSS
+	ind: 	75.0151	% TFIDF MaxGSS
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	75.4971	- Pow TFIDF MaxGSS CE
+	ind: 	74.0108	CE
+	ind: 	75.5774	- Pow TFIDF MaxGSS CE
+	ind: 	75.5774	- Pow TFIDF MaxGSS CE
+	ind: 	56.9994	% * - TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	35.3685	- - Pow TFIDF MaxGSS % TFIDF MaxGSS CE
+	ind: 	74.8544	Pow TFIDF MaxGSS
+	ind: 	72.4443	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.5573	- Pow TFIDF MaxGSS CE
+	ind: 	76.3607	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	56.6981	% * - TFIDF MaxGSS CE Pow TFIDF MaxGSS
+	ind: 	47.9414	- * MaxTFICF MaxTFICF CE
+	ind: 	73.8301	Pow TFIDF MaxGSS
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	72.4443	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	74.3121	- - Pow TFIDF MaxGSS CE CE
+	ind: 	76.5214	- Pow TFIDF MaxGSS CE
+	ind: 	74.9548	- % TFIDF MaxGSS CE
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	75.8184	- % TFIDF MaxGSS CE
+	ind: 	73.569	- - Pow TFIDF MaxGSS CE CE
+	ind: 	70.8777	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	72.4443	- - - Pow TFIDF MaxGSS CE CE CE
+	ind: 	75.2962	Pow TFIDF MaxGSS
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	75.477	- Pow TFIDF MaxGSS CE
+	ind: 	75.1557	* TFIDF MaxGSS
+	ind: 	76.421	- Pow TFIDF MaxGSS CE
+	ind: 	76.3607	Pow TFIDF MaxGSS
+	ind: 	75.4569	- Pow TFIDF MaxGSS CE
+	ind: 	74.1314	- - - + TFIDF MaxGSS CE CE CE
+	ind: 	75.4168	Pow TFIDF MaxGSS
+	ind: 	70.8174	- - - Pow TFIDF MaxGSS CE CE CE
