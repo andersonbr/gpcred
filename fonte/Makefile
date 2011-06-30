@@ -11,7 +11,7 @@ PARAMETERS= -treino pequenosTestes/treino1 -validacao pequenosTestes/validacao -
 
 TARGET	= gp-cred
 
-OBJS = TreeEvaluator.o NormalEstimator.o Graph.o IGraph.o Statistics.o MyGP.o IGP.o gpcpp.o Main.o NaiveBayes.o InOut.o Examples.o Tokenizer.o 
+OBJS = TreeEvaluator.o NormalEstimator.o Graph.o IGraph.o Statistics.o MyGP.o IGP.o gpcpp.o NaiveBayes.o KNN.o InOut.o Examples.o Tokenizer.o Main.o 
 
 #Use igraph library installed by apt-get 
 CPPFLAGS = -O2 $(OVERALLCPPFLAGS) -I$(GPINCLUDE)  -Wno-deprecated -g -L/usr/lib -ligraph -I/usr/include/igraph/ -I/usr/local/include/igraph -std=c++0x -Wall

@@ -2,6 +2,7 @@
 #include "Matematica.h"
 
 #include "NaiveBayes.h"
+#include "KNN.h"
 #include <cstdlib>
 
 int MyGP::gennum = 0;
@@ -55,7 +56,12 @@ void MyGP::evaluate(bool printFinalOutfile, std::string msg){
     } 
 
     //TODO: devo treinar antes de setar o mapa de credibilidades?
-    NaiveBayes *classifier = new NaiveBayes(stats);
+    ICredibilityClassifier *classifier;
+    if(stats->getUsingKNN())
+        classifier = new KNN(stats);
+    else
+        classifier = new NaiveBayes(stats);
+    
     classifier->useContentCredibility(true);
     classifier->setContentCredibilityMap(credibilities);
     classifier->setGraphCredibilityMaps(credibilityGraph);

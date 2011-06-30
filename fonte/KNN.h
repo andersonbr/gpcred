@@ -1,5 +1,5 @@
-#ifndef __NAIVEBAYES__H__
-#define __NAIVEBAYES__H__
+#ifndef __KNN__H__
+#define __KNN__H__
 
 #include "Util.h"
 #include "ICredibilityClassifier.h"
@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class NaiveBayes : public ICredibilityClassifier
+class KNN : public ICredibilityClassifier
 {
 	
 	private:
@@ -26,11 +26,9 @@ class NaiveBayes : public ICredibilityClassifier
         map< int, map< string, double > > means;
         map< int, map< string, double > > deviations;
     
-        map< int, map< string, NormalEstimator> > nEstimator;
-
         //confusion matrix
         map<string, map< string, int> > confusionMatrix;
-        
+       
         //prediction table: prediction [exampleId] -> guess
         class guess{
             public:
@@ -45,37 +43,25 @@ class NaiveBayes : public ICredibilityClassifier
         void savePrediction(string exampleId, string correctClass, string predictedClass);
         bool printPrediction;
 
-
 		double getContentCredibility(string term, string docClass);
 		double getGraphCredibility(int,string,string);
 
 		//Statistical object
 		Statistics* stats;
 
-		//Intern use inside NB apriori
-		double computeApriori(string classId);
-
-		//Conditional Part
-		double computeConditionalDenominator(string classId);
-		double computeConditionalNumerator(string termId, string classId);
-
-		//Normalizator
-		double Normalizer;
-
-		//Statistics
+        double Normalizer;
+		
+        //Statistics
 		void calculateF1(map<string, unsigned long long> hits, map<string, unsigned long long> misses, map<string, unsigned long long> docsPerClass, map<string, unsigned long long> mappedDocs);
 		double microF1;
 		double macroF1;
         
-        //To numerical values    
-        double gaussianDistribution(double value, double mean, double deviation);
-
         void computeConfusionMatrix(string actual, string predicted);
         void showConfusionMatrix();
 
 	public:
-		NaiveBayes(Statistics* st);
-		virtual ~NaiveBayes();
+		KNN(Statistics* st);
+		virtual ~KNN();
 		
 		void train(Examples& exs);		
 		void test(Examples& exs);
@@ -87,8 +73,6 @@ class NaiveBayes : public ICredibilityClassifier
 		void dontUseContentCredibility();
 		void setCredibilityConfigurations(bool usingTermCredibility, std::vector<std::string> graphsNames);
 		void useContentCredibility(bool);
-	
-        void useNormalEstimator(bool);
 
         void setPrintPrediction(bool);
         void showPredictions();

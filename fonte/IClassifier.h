@@ -19,6 +19,7 @@ class IClassifier
         virtual void showPredictions() = 0;
         
         virtual void printFinalOutFile(ostream& out, string msg) =0;
+        
 };
 
 

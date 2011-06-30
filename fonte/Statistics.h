@@ -106,6 +106,9 @@ class Statistics {
 
         double getGraphValue( int metric, int graph, string id, string classid);
 
+        //ok, it shouldnt be here...sorry software engs.
+        bool usingKNN;
+
     public:
 
         Statistics();
@@ -113,6 +116,9 @@ class Statistics {
 
         //clean up everything!
         void clear();
+
+        void setUsingKNN(bool usingKNN);
+        bool getUsingKNN();
 
         void setNormalEstimator(bool nEstimator){
             normalEstimator = nEstimator;
