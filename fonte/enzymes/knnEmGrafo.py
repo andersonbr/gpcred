@@ -68,13 +68,13 @@ def carregaRelacao(mapa, lista):
                     continue
 
                 if not classOther in votes:
-                    votes[classOther] = 1
+                    votes[classOther] = float(weight)
                 else:
-                    votes[classOther] += 1
-        
+                    votes[classOther] += float(weight)
+	
         max = 0
-        escolhida = -1
-        for (c,v) in votes.iteritems():
+	escolhida = -1
+	for (c,v) in votes.iteritems():
             if v > max:
                 max = v
                 escolhida = c
