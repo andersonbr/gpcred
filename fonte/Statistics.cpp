@@ -7,13 +7,21 @@
 
 using namespace std;
 
-Statistics::Statistics(): usingTermCredibility(false), totalDocs(0), graphNumberCounter(0), sumTF(0), normalEstimator(false), usingNomalizePerGreatestClassValue(false), optimizeGraphMetrics(false)
+Statistics::Statistics(): usingTermCredibility(false), totalDocs(0), graphNumberCounter(0), sumTF(0), normalEstimator(false), usingNomalizePerGreatestClassValue(false), optimizeGraphMetrics(false), usingKNN(false)
 {
 
 }
 
 Statistics::~Statistics(){
     clear();
+}
+
+void Statistics::setUsingKNN(bool usingKNN){
+    this->usingKNN = usingKNN;
+}
+
+bool Statistics::getUsingKNN(){
+    return usingKNN;
 }
 
 void Statistics::readGraph(string filename){

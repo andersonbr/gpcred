@@ -7,6 +7,7 @@
 
 #include "IClassifier.h"
 #include "NaiveBayes.h"
+#include "KNN.h"
 #include "Util.h"
 #include "InOut.h"
 #include "Statistics.h"
@@ -17,7 +18,7 @@
 #include "gp.h"
 
 
-void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluateFromFile, string &evaluationDestiny, int& genToChange, bool& evalOnly, bool& optimizeGraphMetrics);
+void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluateFromFile, string &evaluationDestiny, int& genToChange, bool& evalOnly, bool& optimizeGraphMetrics, bool& useKNN);
 void configureTermCredibility(Statistics& stats, bool useTermCredibility, bool normalEstimator, bool normalizeTermsPerGreatestClassValue);
 void configureGraphCredibility(Statistics& stats, InOut& io, vector<string>& graphsNames);
 
@@ -39,9 +40,9 @@ int main(int argc, char **argv)
     bool printPredictionsFile = true, printBrunoroFile = false, normalEstimator = false, evaluationFromFile = false, evalOnly = false;
     bool normalizeTermsPerGreatestClassValue = false;
     bool optimizeGraphMetrics = true;
+    bool useKNN = false;
 
-	getParameters(argc, argv, trainFile, validationFile, usingValidation, testFile, parameterConfigFileName, seed, loadPop, loadFileName, dontsave, saveFileName, newSaveFileName, useTermCredibility, graphsNames, numericalCollums, predictionsFileName, printPredictionsFile, brunoroFileName, printBrunoroFile, normalEstimator, normalizeTermsPerGreatestClassValue, evaluationFileName, evaluationFromFile, evaluationDestiny, genToChange, evalOnly, optimizeGraphMetrics);
-
+	getParameters(argc, argv, trainFile, validationFile, usingValidation, testFile, parameterConfigFileName, seed, loadPop, loadFileName, dontsave, saveFileName, newSaveFileName, useTermCredibility, graphsNames, numericalCollums, predictionsFileName, printPredictionsFile, brunoroFileName, printBrunoroFile, normalEstimator, normalizeTermsPerGreatestClassValue, evaluationFileName, evaluationFromFile, evaluationDestiny, genToChange, evalOnly, optimizeGraphMetrics, useKNN);
 
 	//Get Files
 	InOut io(baseName, seed);
@@ -83,7 +84,12 @@ int main(int argc, char **argv)
     else if(evalOnly){
         
         io.readTest(testFile.c_str());
-    	IClassifier *classifier = new NaiveBayes(&stats); 
+
+    	ICredibilityClassifier *classifier; 
+        if(useKNN)
+    	    classifier = new KNN(&stats); 
+    	else
+            classifier = new NaiveBayes(&stats); 
 	    classifier->train(io.getTrain());
         classifier->test(io.getTest());
 	    return 0;
@@ -97,9 +103,13 @@ int main(int argc, char **argv)
     }
     configureGraphCredibility(stats, io, graphsNames); // it is necessary to know the testset before call this
     
-
 	//Set classifier parameters
-	IClassifier *classifier = new NaiveBayes(&stats); 
+    ICredibilityClassifier *classifier;
+    if(useKNN)
+	    classifier = new KNN(&stats); 
+    else
+	    classifier = new NaiveBayes(&stats); 
+        
 	classifier->train(io.getTrain());
     classifier->test(io.getTest());
 	classifier->setCredibilityConfigurations(useTermCredibility, graphsNames);
@@ -178,7 +188,11 @@ int main(int argc, char **argv)
     configureGraphCredibility(stats, io, graphsNames);
     
     cout<<endl<<"Running final baseline:"<<endl;
-	classifier = new NaiveBayes(&stats); 
+	if(useKNN)
+        classifier = new KNN(&stats); 
+	else
+        classifier = new NaiveBayes(&stats); 
+
 	classifier->train(io.getTrain());
 	//classifier->train(io.getValidation());
 	classifier->test(io.getTest());
@@ -310,7 +324,7 @@ int isdigit (int c)
 		return 0;
 }
 
-void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluationFromFile, string &evaluationDestiny, int& genToChange, bool& evalOnly, bool& optimizeGraphMetrics)
+void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluationFromFile, string &evaluationDestiny, int& genToChange, bool& evalOnly, bool& optimizeGraphMetrics, bool& useKNN)
 {
 	TRACE_V("MAIN","getParameters.");
 	
@@ -425,6 +439,10 @@ void getParameters(int argc, char** argv, string& trainFile, string& validationF
 		else if( has(4, argv[i], "-dontoptimize", "--dontoptmize", "-naootimiza", "--naootimiza", "--notopt", "-notopt") ){
             optimizeGraphMetrics = false;
             cout<<"Not optimizing graph metrics"<<endl;
+        }
+    	else if( has(2, argv[i], "-knn", "--knn") ){
+            useKNN = false;
+            cout<<"Using KNN"<<endl;
         }
         else{
 			fprintf (stderr, "Unknown option `-%s'.\n", argv[i]);

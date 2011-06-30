@@ -3,6 +3,7 @@
 #include "Tokenizer.h"
 #include "Matematica.h"
 #include "NaiveBayes.h"
+#include "KNN.h"
 
 #include<cstdarg> 
 #include<map>
@@ -18,7 +19,12 @@ void TreeEvaluator::evaluateFromFile(string fileName){
     //baseline test
     ifstream file(fileName.c_str(), ifstream::in);
 
-    NaiveBayes *classifier = new NaiveBayes(stats);
+    ICredibilityClassifier *classifier;
+    if(stats->getUsingKNN())
+        classifier = new KNN(stats);
+    else
+        classifier = new NaiveBayes(stats);
+
     classifier->useContentCredibility(true);
 
     classifier->train(io->getTrain());
@@ -116,7 +122,10 @@ void TreeEvaluator::evaluateFromFile(string fileName){
                 }
             }
             
-            NaiveBayes *classifier = new NaiveBayes(stats);
+            if(stats->getUsingKNN())
+                classifier = new KNN(stats);
+            else
+                classifier = new NaiveBayes(stats);
             classifier->useContentCredibility(true);
             
             if(stats->getUsingTermCredibility())
@@ -138,7 +147,8 @@ void TreeEvaluator::evaluateFromFile(string fileName){
             out.setf(ios::fixed,ios::floatfield);
             out.precision(5);
             out<<line<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<endl;
-
+    
+            delete classifier;
         }
     }
     else{

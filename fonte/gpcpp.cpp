@@ -240,7 +240,7 @@ void gpcpp::createNodeSet(){
 		ns[i]->putNode(*new GPNode (COCITATION, (char*) "CoCitation"));
 		ns[i]->putNode(*new GPNode (JACCARDSIMILARITY, (char*) "JaccardSimilarity"));
 		ns[i]->putNode(*new GPNode (DICESIMILARITY, (char*) "DiceSimilarity"));
-		ns[i]->putNode(*new GPNode (INVERSELOGSIMILARITY, (char*) "InverseLigSimilarity")); //16 terms
+		ns[i]->putNode(*new GPNode (INVERSELOGSIMILARITY, (char*) "InverseLogSimilarity")); //16 terms
 //NAO USAR!  ns[i]->putNode(*new GPNode (AVGNEIGHBORHOODDEGREE, (char*) "AvgNeighborHoodDegree"));
 	
     }

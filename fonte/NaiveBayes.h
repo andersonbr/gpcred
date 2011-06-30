@@ -1,18 +1,15 @@
-
 #ifndef __NAIVEBAYES__H__
 #define __NAIVEBAYES__H__
 
 #include "Util.h"
-#include "IClassifier.h"
+#include "ICredibilityClassifier.h"
 #include "Statistics.h"
 #include "NormalEstimator.h"
 
-#include <map>
-#include <set> 
-
 using namespace std;
 
-class NaiveBayes : public IClassifier {
+class NaiveBayes : public ICredibilityClassifier
+{
 	
 	private:
 		//Denominador da equacao, usando esse mapa para economizar processamento
