@@ -108,6 +108,7 @@ class Statistics {
 
         //ok, it shouldnt be here...sorry software engs.
         bool usingKNN;
+        int KNNK;
 
     public:
 
@@ -117,9 +118,10 @@ class Statistics {
         //clean up everything!
         void clear();
 
-        void setUsingKNN(bool usingKNN);
+        void setUsingKNN(bool usingKNN, int K);
         bool getUsingKNN();
-
+        
+        int getK();
         void setNormalEstimator(bool nEstimator){
             normalEstimator = nEstimator;
         }
@@ -143,6 +145,12 @@ class Statistics {
         
         int getNumberOfGraphs(){
             return graphNumberCounter;
+        }
+
+        string getTrainClass(string exampleId){
+            if(trainIdClass.find(exampleId) != trainIdClass.end())
+                return trainIdClass[exampleId];
+            else return "__NOT__FOUND__";
         }
 
         void retrieveGraphMetrics(Examples&);

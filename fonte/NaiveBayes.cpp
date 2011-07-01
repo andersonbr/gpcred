@@ -16,13 +16,13 @@ NaiveBayes::~NaiveBayes(){
 
 double NaiveBayes::getContentCredibility(string term, string docClass){
 
-	if(!usingContentCredibility) return 1.0;
-	if(contentCredibility.size() == 0) return 1.0;
+	if(!usingContentCredibility) return 1.0; //stats->getIDF(term);
+	if(contentCredibility.size() == 0) return 1.0; //stats->getIDF(term);
 	string idx = getCompIndex(term,docClass);
 
 	if(contentCredibility.find(idx) != contentCredibility.end()) return contentCredibility[idx] * Normalizer;
 
-	return 1.0;
+	return 1.0;// stats->getIDF(term);
 }
 
 void NaiveBayes::setContentCredibilityMap(map<string, double>& contentCred){
@@ -184,7 +184,6 @@ void NaiveBayes::test(Examples& exs){
 
     TRACE_V(TAG,"test");
 
-    map<string,unsigned long> totalDocsPerClass;
     map<string,double> condDenominator;
     map<string,double> aPriori;
 

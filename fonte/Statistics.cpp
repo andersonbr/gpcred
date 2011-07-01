@@ -16,12 +16,17 @@ Statistics::~Statistics(){
     clear();
 }
 
-void Statistics::setUsingKNN(bool usingKNN){
+void Statistics::setUsingKNN(bool usingKNN, int K){
     this->usingKNN = usingKNN;
+    KNNK = K;
 }
 
 bool Statistics::getUsingKNN(){
     return usingKNN;
+}
+
+int Statistics::getK(){
+    return KNNK;
 }
 
 void Statistics::readGraph(string filename){
