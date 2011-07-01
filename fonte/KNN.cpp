@@ -1,4 +1,3 @@
-
 #include "KNN.h"
 #include "Matematica.h"
 
@@ -70,7 +69,7 @@ void KNN::train(Examples& exs){
 			int tf = atoi(tokens[i+1].c_str());
 			string termId = tokens[i];
             
-            double tfidf = tf * stats->getIDF(termId); //getContentCredibility(termId, exampleClass);
+            double tfidf = tf *stats->getIDF(termId);
 
             docSize += (tfidf * tfidf);
 
@@ -130,8 +129,8 @@ void KNN::test(Examples& exs){
 			int tf = atoi(catTokens[i+1].c_str());
 
             for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++) {
-                double tfidf = tf * stats->getIDF(termId) ; //getContentCredibility(termId, *classIt);
-                examplesTestSize[*classIt] += ((tfidf * tfidf) * getContentCredibility(termId, *classIt));
+                double tfidf = tf * getContentCredibility(termId, *classIt);
+                examplesTestSize[*classIt] += (tfidf * tfidf);
             }
 		}
 
@@ -147,7 +146,7 @@ void KNN::test(Examples& exs){
                 double trainDocSize = docTrainSizes[termIt->docId];
                 double trainTermWeight = termIt->weight;
                 
-                double testTermWeight = tf * stats->getIDF(termId) * getContentCredibility(termId, trainClass);
+                double testTermWeight = tf * getContentCredibility(termId, trainClass);
               
                 similarity[termIt->docId] += ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) );
             }
