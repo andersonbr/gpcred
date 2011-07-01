@@ -1,255 +1,505 @@
-Best of generation 0 (Fitness = 25.5221, Structural Complexity = 9)
-GP: (% TFIDF MaxGSS)
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 0 (Fitness = 25.4618, Structural Complexity = 9)
+GP: (Pow TFIDF MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: (- Strength BibCoupling)
 
-Best of generation 1 (Fitness = 25.5221, Structural Complexity = 9)
-GP: (% TFIDF MaxGSS)
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 1 (Fitness = 25.4618, Structural Complexity = 9)
+GP: (Pow TFIDF MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: (- Strength BibCoupling)
 
-Best of generation 2 (Fitness = 25.5221, Structural Complexity = 9)
-GP: (% TFIDF MaxGSS)
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 2 (Fitness = 25.4618, Structural Complexity = 9)
+GP: (Pow TFIDF MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: (- Strength BibCoupling)
 
-Best of generation 3 (Fitness = 25.5221, Structural Complexity = 9)
-GP: (% TFIDF MaxGSS)
-ADF0: (% Neighborhood3 DiceSimilarity)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 3 (Fitness = 25.4618, Structural Complexity = 9)
+GP: (Pow TFIDF MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: (- Strength BibCoupling)
 
-Best of generation 4 (Fitness = 25.3414, Structural Complexity = 21)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% (+ (+ CoCitation CoCitation) (% Neighborhood1 Closeness)) (Log Neighborhood2 Neighborhood2))
+Best of generation 4 (Fitness = 25.4618, Structural Complexity = 9)
+GP: (Pow TFIDF MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: (- Strength BibCoupling)
 
-Best of generation 5 (Fitness = 25.3414, Structural Complexity = 21)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% (+ (+ CoCitation CoCitation) (% Neighborhood1 Closeness)) (Log Neighborhood2 Neighborhood2))
+Best of generation 5 (Fitness = 25.4618, Structural Complexity = 9)
+GP: (Pow TFIDF MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: (- Strength BibCoupling)
 
-Best of generation 6 (Fitness = 25.3414, Structural Complexity = 21)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% (+ (+ CoCitation CoCitation) (% Neighborhood1 Closeness)) (Log Neighborhood2 Neighborhood2))
+Best of generation 6 (Fitness = 25.4217, Structural Complexity = 13)
+GP: (* DOM MaxDom)
+ADF0: (* Neighborhood2 CoCitation)
+ADF1: (+ (% Neighborhood1 CoCitation) (- Neighborhood1 Betweenness))
 
-Best of generation 7 (Fitness = 25.3414, Structural Complexity = 21)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% (+ (+ CoCitation CoCitation) (% Neighborhood1 Closeness)) (Log Neighborhood2 Neighborhood2))
+Best of generation 7 (Fitness = 25.4016, Structural Complexity = 13)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* (* Neighborhood2 Neighborhood3) (Pow Closeness Betweenness))
 
-Best of generation 8 (Fitness = 25.3414, Structural Complexity = 21)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% (+ (+ CoCitation CoCitation) (% Neighborhood1 Closeness)) (Log Neighborhood2 Neighborhood2))
+Best of generation 8 (Fitness = 25.4016, Structural Complexity = 13)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* (* Neighborhood2 Neighborhood3) (Pow Closeness Betweenness))
 
-Best of generation 9 (Fitness = 25.3414, Structural Complexity = 21)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% (+ (% Neighborhood1 Closeness) (Pow CoCitation Constraint)) (Log Neighborhood2 Neighborhood2))
+Best of generation 9 (Fitness = 25.241, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (- InverseLigSimilarity BibCoupling)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 10 (Fitness = 25.3414, Structural Complexity = 21)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% (+ (% Neighborhood1 Closeness) (Pow CoCitation Constraint)) (Log Neighborhood2 Neighborhood2))
+Best of generation 10 (Fitness = 25.1807, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (* PageRank Strength)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 11 (Fitness = 25.3414, Structural Complexity = 21)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% (+ (% Neighborhood1 Closeness) (Pow CoCitation Constraint)) (Log Neighborhood2 Neighborhood2))
+Best of generation 11 (Fitness = 25.1807, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (* PageRank Strength)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 12 (Fitness = 25.3414, Structural Complexity = 21)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% (+ (% Neighborhood1 Closeness) (Pow CoCitation Constraint)) (Log Neighborhood2 Neighborhood2))
+Best of generation 12 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 13 (Fitness = 25.3414, Structural Complexity = 13)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% Neighborhood1 Closeness)
+Best of generation 13 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 14 (Fitness = 25.3414, Structural Complexity = 13)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% Neighborhood1 Closeness)
+Best of generation 14 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 15 (Fitness = 25.3414, Structural Complexity = 13)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% Neighborhood1 Closeness)
+Best of generation 15 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 16 (Fitness = 25.3414, Structural Complexity = 13)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% Neighborhood1 Closeness)
+Best of generation 16 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 17 (Fitness = 25.3414, Structural Complexity = 13)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% Neighborhood1 Closeness)
+Best of generation 17 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 18 (Fitness = 25.3414, Structural Complexity = 13)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% Neighborhood1 Closeness)
+Best of generation 18 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 19 (Fitness = 25.3414, Structural Complexity = 13)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% Neighborhood1 Closeness)
+Best of generation 19 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 20 (Fitness = 25.3414, Structural Complexity = 13)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% Neighborhood1 Closeness)
+Best of generation 20 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 21 (Fitness = 25.3414, Structural Complexity = 13)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% Neighborhood1 Closeness)
+Best of generation 21 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 22 (Fitness = 25.3414, Structural Complexity = 13)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% Neighborhood1 Closeness)
+Best of generation 22 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 23 (Fitness = 25.3414, Structural Complexity = 13)
-GP: (* (% MaxAM MaxIG) (% TFIDF MaxGSS))
-ADF0: (* BibCoupling CoCitation)
-ADF1: (% Neighborhood1 Closeness)
+Best of generation 23 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 24 (Fitness = 25.241, Structural Complexity = 9)
-GP: (* TFIDF MaxGSS)
-ADF0: (+ Constraint Neighborhood1)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 24 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 25 (Fitness = 25.241, Structural Complexity = 9)
-GP: (* TFIDF MaxGSS)
-ADF0: (+ Constraint Neighborhood1)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 25 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 26 (Fitness = 25.241, Structural Complexity = 9)
-GP: (* TFIDF MaxGSS)
-ADF0: (+ Constraint Neighborhood1)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 26 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 27 (Fitness = 25.241, Structural Complexity = 9)
-GP: (* TFIDF MaxGSS)
-ADF0: (+ Constraint Neighborhood1)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 27 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 28 (Fitness = 25.241, Structural Complexity = 9)
-GP: (* TFIDF MaxGSS)
-ADF0: (+ Constraint Neighborhood1)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 28 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 29 (Fitness = 25.241, Structural Complexity = 9)
-GP: (* TFIDF MaxGSS)
-ADF0: (+ Constraint Neighborhood1)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 29 (Fitness = 25.1606, Structural Complexity = 9)
+GP: (* DOM MaxDom)
+ADF0: (Pow Neighborhood3 JaccardSimilarity)
+ADF1: (* Neighborhood2 Neighborhood3)
 
-Best of generation 30 (Fitness = 25.241, Structural Complexity = 9)
-GP: (* TFIDF MaxGSS)
-ADF0: (+ Constraint Neighborhood1)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 30 (Fitness = 24.5181, Structural Complexity = 7)
+GP: (Pow TFIDF MaxGSS)
+ADF0: (+ Authority Strength)
+ADF1: Neighborhood3
 
-Best of generation 31 (Fitness = 25.241, Structural Complexity = 9)
-GP: (* TFIDF MaxGSS)
-ADF0: (+ Constraint Neighborhood1)
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 31 (Fitness = 24.5181, Structural Complexity = 7)
+GP: (Pow TFIDF MaxGSS)
+ADF0: (+ Authority Strength)
+ADF1: Neighborhood3
 
-Best of generation 32 (Fitness = 25.1004, Structural Complexity = 7)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 32 (Fitness = 24.2169, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Strength
 
-Best of generation 33 (Fitness = 25.1004, Structural Complexity = 7)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 33 (Fitness = 24.2169, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Strength
 
-Best of generation 34 (Fitness = 25.1004, Structural Complexity = 7)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 34 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
 
-Best of generation 35 (Fitness = 25.1004, Structural Complexity = 7)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
-ADF1: (Log Neighborhood2 Neighborhood2)
+Best of generation 35 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
 
-Best of generation 36 (Fitness = 25.0803, Structural Complexity = 7)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
-ADF1: (+ Neighborhood2 Neighborhood2)
+Best of generation 36 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
 
-Best of generation 37 (Fitness = 25.0803, Structural Complexity = 7)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
-ADF1: (+ Neighborhood2 Neighborhood2)
+Best of generation 37 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
 
-Best of generation 38 (Fitness = 25.0803, Structural Complexity = 7)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
-ADF1: (+ Neighborhood2 Neighborhood2)
+Best of generation 38 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
 
-Best of generation 39 (Fitness = 25.0402, Structural Complexity = 11)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
-ADF1: (+ (- JaccardSimilarity Betweenness) (* Neighborhood1 CoCitation))
+Best of generation 39 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
 
-Best of generation 40 (Fitness = 23.9558, Structural Complexity = 5)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
+Best of generation 40 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 41 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 42 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 43 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 44 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 45 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 46 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 47 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 48 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 49 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 50 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 51 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 52 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 53 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 54 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 55 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 56 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 57 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 58 (Fitness = 24.1767, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood3
+
+Best of generation 59 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
 ADF1: Neighborhood2
 
-Best of generation 41 (Fitness = 23.9558, Structural Complexity = 5)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
+Best of generation 60 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
 ADF1: Neighborhood2
 
-Best of generation 42 (Fitness = 23.9558, Structural Complexity = 5)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
+Best of generation 61 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
 ADF1: Neighborhood2
 
-Best of generation 43 (Fitness = 23.9558, Structural Complexity = 5)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
+Best of generation 62 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
 ADF1: Neighborhood2
 
-Best of generation 44 (Fitness = 23.9558, Structural Complexity = 5)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
+Best of generation 63 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
 ADF1: Neighborhood2
 
-Best of generation 45 (Fitness = 23.9558, Structural Complexity = 5)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
+Best of generation 64 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
 ADF1: Neighborhood2
 
-Best of generation 46 (Fitness = 23.9558, Structural Complexity = 5)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
+Best of generation 65 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
 ADF1: Neighborhood2
 
-Best of generation 47 (Fitness = 23.9558, Structural Complexity = 5)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
+Best of generation 66 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
 ADF1: Neighborhood2
 
-Best of generation 48 (Fitness = 23.9558, Structural Complexity = 5)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
+Best of generation 67 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
 ADF1: Neighborhood2
 
-Best of generation 49 (Fitness = 23.9558, Structural Complexity = 5)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
+Best of generation 68 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
 ADF1: Neighborhood2
 
-Best of generation 50 (Fitness = 23.9558, Structural Complexity = 5)
-GP: (* TFIDF MaxGSS)
-ADF0: Strength
+Best of generation 69 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood2
+
+Best of generation 70 (Fitness = 24.0562, Structural Complexity = 7)
+GP: (* DOM MaxGSS)
+ADF0: (* JaccardSimilarity Strength)
+ADF1: Neighborhood2
+
+Best of generation 71 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 72 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 73 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 74 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 75 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 76 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 77 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 78 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 79 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 80 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 81 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 82 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 83 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 84 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 85 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 86 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 87 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 88 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 89 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 90 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 91 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 92 (Fitness = 24.0361, Structural Complexity = 11)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* (* JaccardSimilarity Strength) JaccardSimilarity) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 93 (Fitness = 24.0361, Structural Complexity = 9)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* JaccardSimilarity Strength) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 94 (Fitness = 24.0361, Structural Complexity = 9)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* JaccardSimilarity Strength) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 95 (Fitness = 24.0361, Structural Complexity = 9)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* JaccardSimilarity Strength) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 96 (Fitness = 24.0361, Structural Complexity = 9)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* JaccardSimilarity Strength) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 97 (Fitness = 24.0361, Structural Complexity = 9)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* JaccardSimilarity Strength) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 98 (Fitness = 24.0361, Structural Complexity = 9)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* JaccardSimilarity Strength) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 99 (Fitness = 24.0361, Structural Complexity = 9)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* JaccardSimilarity Strength) JaccardSimilarity)
+ADF1: Neighborhood2
+
+Best of generation 100 (Fitness = 24.0361, Structural Complexity = 9)
+GP: (* DOM MaxGSS)
+ADF0: (+ (* JaccardSimilarity Strength) JaccardSimilarity)
 ADF1: Neighborhood2
 
