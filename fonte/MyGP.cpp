@@ -58,7 +58,7 @@ void MyGP::evaluate(bool printFinalOutfile, std::string msg){
     //TODO: devo treinar antes de setar o mapa de credibilidades?
     ICredibilityClassifier *classifier;
     if(stats->getUsingKNN())
-        classifier = new KNN(stats);
+        classifier = new KNN(stats, stats->getK());
     else
         classifier = new NaiveBayes(stats);
     

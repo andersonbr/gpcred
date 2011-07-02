@@ -5,15 +5,33 @@
 #include "ICredibilityClassifier.h"
 #include "Statistics.h"
 #include "NormalEstimator.h"
+#include "Matematica.h"
 
 using namespace std;
 
+//a good reference:
+//http://www.usenix.org/events/sec02/full_papers/liao/liao_html/node4.html
+
+class docWeighted{
+    public:
+        string docId;
+        double weight;
+        docWeighted(string id, double w): docId(id), weight(w) {}
+};
+
+struct docWeightedCmp {
+    bool operator() (const docWeighted& lhs, const docWeighted& rhs) const
+    {return greaterThan(lhs.weight,rhs.weight);}
+};
+
+
 class KNN : public ICredibilityClassifier
 {
-	
 	private:
 		//Denominador da equacao, usando esse mapa para economizar processamento
-		map<string, double> sumTF;
+		map<string, set<docWeighted, docWeightedCmp> > termDocWset ;
+        map<string, double> docTrainSizes;
+
 		map<string, double> contentCredibility;
 		bool usingContentCredibility;
 		
@@ -59,8 +77,11 @@ class KNN : public ICredibilityClassifier
         void computeConfusionMatrix(string actual, string predicted);
         void showConfusionMatrix();
 
+        int K;
+        string getPredictedClass(set<docWeighted, docWeightedCmp>& trainExamples);
+
 	public:
-		KNN(Statistics* st);
+		KNN(Statistics* st, int K);
 		virtual ~KNN();
 		
 		void train(Examples& exs);		

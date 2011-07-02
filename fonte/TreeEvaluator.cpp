@@ -21,7 +21,7 @@ void TreeEvaluator::evaluateFromFile(string fileName){
 
     ICredibilityClassifier *classifier;
     if(stats->getUsingKNN())
-        classifier = new KNN(stats);
+        classifier = new KNN(stats, stats->getK());
     else
         classifier = new NaiveBayes(stats);
 
@@ -123,7 +123,7 @@ void TreeEvaluator::evaluateFromFile(string fileName){
             }
             
             if(stats->getUsingKNN())
-                classifier = new KNN(stats);
+                classifier = new KNN(stats, stats->getK());
             else
                 classifier = new NaiveBayes(stats);
             classifier->useContentCredibility(true);
