@@ -1,0 +1,4245 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Pow,2) (Log,2) 
+	terms: InverseLigSimilarity(d,c) DiceSimilarity(d,c) JaccardSimilarity(d,c) CoCitation(d,c) BibCoupling (d,c) Betweenness(d,c) PageRank(d,c) Constraint(d,c) Strength(d,c) Closeness(d,c) EigenVector(d,c) Authority(d,c) HubScore(d,c) Neighborhood3(d,c) Neighborhood2(d,c) Neighborhood1(d,c)
+generation 0:
+	ind: 	59.7447	* Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	89.7234	+ + BibCoupling (d,c) DiceSimilarity(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- Neighborhood3(d,c) Strength(d,c)
+	ind: 	89.7882	* + EigenVector(d,c) DiceSimilarity(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	38.6643	% Neighborhood1(d,c) Strength(d,c)
+	ind: 	89.6402	+ * CoCitation(d,c) CoCitation(d,c) Log Constraint(d,c) Betweenness(d,c)
+	ind: 	55.9893	Log Neighborhood3(d,c) Strength(d,c)
+	ind: 	55.0735	- - Betweenness(d,c) DiceSimilarity(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	42.5863	* Betweenness(d,c) Closeness(d,c)
+	ind: 	59.1065	+ + EigenVector(d,c) Betweenness(d,c) + PageRank(d,c) Betweenness(d,c)
+	ind: 	37.3878	Pow Closeness(d,c) Closeness(d,c)
+	ind: 	40.1628	% % DiceSimilarity(d,c) Neighborhood3(d,c) * EigenVector(d,c) CoCitation(d,c)
+	ind: 	75.0069	Pow Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Pow % Constraint(d,c) Neighborhood1(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) Neighborhood3(d,c)
+	ind: 	55.906	Pow + CoCitation(d,c) Neighborhood1(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	65.2021	+ JaccardSimilarity(d,c) DiceSimilarity(d,c)
+	ind: 	44.501	Log - Neighborhood2(d,c) JaccardSimilarity(d,c) Pow Neighborhood2(d,c) Betweenness(d,c)
+	ind: 	44.0385	% Betweenness(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	% Pow Neighborhood3(d,c) Constraint(d,c) Log DiceSimilarity(d,c) Strength(d,c)
+	ind: 	89.1869	+ Neighborhood2(d,c) Strength(d,c)
+	ind: 	37.5266	Log Pow JaccardSimilarity(d,c) Betweenness(d,c) + Constraint(d,c) PageRank(d,c)
+	ind: 	37.6191	* PageRank(d,c) DiceSimilarity(d,c)
+	ind: 	79.6134	+ * Constraint(d,c) CoCitation(d,c) - DiceSimilarity(d,c) Closeness(d,c)
+	ind: 	37.6191	* DiceSimilarity(d,c) PageRank(d,c)
+	ind: 	61.1692	% - InverseLigSimilarity(d,c) Constraint(d,c) - InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	30.284	Pow Closeness(d,c) EigenVector(d,c)
+	ind: 	36.8514	- Pow EigenVector(d,c) Authority(d,c) + PageRank(d,c) Neighborhood1(d,c)
+	ind: 	47.2019	% Betweenness(d,c) Neighborhood1(d,c)
+	ind: 	48.7189	Log * JaccardSimilarity(d,c) Neighborhood2(d,c) Pow Neighborhood1(d,c) InverseLigSimilarity(d,c)
+	ind: 	85.45	% BibCoupling (d,c) JaccardSimilarity(d,c)
+	ind: 	37.4526	% + JaccardSimilarity(d,c) DiceSimilarity(d,c) - HubScore(d,c) InverseLigSimilarity(d,c)
+	ind: 	18.2222	Pow Closeness(d,c) Neighborhood3(d,c)
+	ind: 	37.5266	% - Authority(d,c) Neighborhood2(d,c) % HubScore(d,c) DiceSimilarity(d,c)
+	ind: 	84.377	* Neighborhood2(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	+ - DiceSimilarity(d,c) Neighborhood3(d,c) - Strength(d,c) Strength(d,c)
+	ind: 	85.45	* BibCoupling (d,c) JaccardSimilarity(d,c)
+	ind: 	37.5266	Log - Neighborhood1(d,c) Closeness(d,c) Log Neighborhood3(d,c) Neighborhood1(d,c)
+	ind: 	37.7023	% Authority(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	* Pow Betweenness(d,c) Constraint(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	58.4312	Log Neighborhood2(d,c) CoCitation(d,c)
+	ind: 	89.8529	- * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	85.413	* DiceSimilarity(d,c) CoCitation(d,c)
+	ind: 	37.5266	Log Log Closeness(d,c) EigenVector(d,c) % Neighborhood1(d,c) Strength(d,c)
+	ind: 	58.1445	+ Betweenness(d,c) HubScore(d,c)
+	ind: 	50.3746	% Pow Strength(d,c) Strength(d,c) % HubScore(d,c) Neighborhood3(d,c)
+	ind: 	79.6226	+ Neighborhood1(d,c) Closeness(d,c)
+	ind: 	79.6319	- * DiceSimilarity(d,c) Neighborhood1(d,c) Log PageRank(d,c) Betweenness(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	37.5266	- % EigenVector(d,c) Neighborhood2(d,c) % Neighborhood3(d,c) Neighborhood3(d,c)
+	rep: 41  -> 41
+	rep: 22 10  -> 0
+	rep: 22 10  -> 1
+	rep: 7 26  -> 2
+	rep: 7 26  -> 3
+	rep: 28 35  -> 4
+	rep: 28 35  -> 5
+	rep: 4 32  -> 6
+	rep: 4 32  -> 7
+	rep: 12 0  -> 8
+	rep: 12 0  -> 9
+	rep: 30 7  -> 10
+	rep: 30 7  -> 11
+	rep: 1 49  -> 12
+	rep: 1 49  -> 13
+	rep: 3 1  -> 14
+	rep: 3 1  -> 15
+	rep: 25 44  -> 16
+	rep: 25 44  -> 17
+	rep: 13 10  -> 18
+	rep: 13 10  -> 19
+	rep: 23 37  -> 20
+	rep: 23 37  -> 21
+	rep: 30 49  -> 22
+	rep: 30 49  -> 23
+	rep: 0 8  -> 24
+	rep: 0 8  -> 25
+	rep: 1 0  -> 26
+	rep: 1 0  -> 27
+	rep: 23 8  -> 28
+	rep: 23 8  -> 29
+	rep: 23 39  -> 30
+	rep: 23 39  -> 31
+	rep: 20 15  -> 32
+	rep: 20 15  -> 33
+	rep: 40  -> 34
+	rep: 12 18  -> 35
+	rep: 12 18  -> 36
+	rep: 47 48  -> 37
+	rep: 47 48  -> 38
+	rep: 25 10  -> 39
+	rep: 25 10  -> 40
+	rep: 34 19  -> 42
+	rep: 34 19  -> 43
+	rep: 42 0  -> 44
+	rep: 42 0  -> 45
+	rep: 36 29  -> 46
+	rep: 36 29  -> 47
+	rep: 29 11  -> 48
+	rep: 29 11  -> 49
+generation 1:
+	ind: 	37.3878	Pow Closeness(d,c) Closeness(d,c)
+	ind: 	37.6191	* PageRank(d,c) DiceSimilarity(d,c)
+	ind: 	30.284	- Pow Closeness(d,c) EigenVector(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	55.0735	- Betweenness(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- DiceSimilarity(d,c) Neighborhood3(d,c)
+	ind: 	47.2019	+ % Betweenness(d,c) Neighborhood1(d,c) - Strength(d,c) Strength(d,c)
+	ind: 	79.6226	+ Closeness(d,c) Neighborhood3(d,c)
+	ind: 	38.6643	% Neighborhood1(d,c) Strength(d,c)
+	ind: 	59.7447	* Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	75.0069	Pow Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	55.0735	- - Betweenness(d,c) DiceSimilarity(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	85.45	% BibCoupling (d,c) JaccardSimilarity(d,c)
+	ind: 	89.8067	+ % Neighborhood3(d,c) Neighborhood3(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- % EigenVector(d,c) Neighborhood2(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	89.7234	+ + BibCoupling (d,c) DiceSimilarity(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.7882	* + EigenVector(d,c) DiceSimilarity(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	61.7519	% - InverseLigSimilarity(d,c) Constraint(d,c) + Betweenness(d,c) HubScore(d,c)
+	ind: 	86.1807	- InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	37.4156	Pow % Constraint(d,c) Neighborhood1(d,c) Pow Closeness(d,c) Closeness(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	81.8611	+ * Constraint(d,c) CoCitation(d,c) - Neighborhood1(d,c) Closeness(d,c)
+	ind: 	37.5266	Log - DiceSimilarity(d,c) Closeness(d,c) Log Neighborhood3(d,c) Neighborhood1(d,c)
+	ind: 	54.4353	% BibCoupling (d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	- JaccardSimilarity(d,c) Log Neighborhood3(d,c) Neighborhood3(d,c)
+	ind: 	42.5863	* Betweenness(d,c) Closeness(d,c)
+	ind: 	59.7447	* Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	85.8385	+ + BibCoupling (d,c) DiceSimilarity(d,c) * Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	79.1416	+ * Constraint(d,c) CoCitation(d,c) * Betweenness(d,c) Closeness(d,c)
+	ind: 	60.8269	- DiceSimilarity(d,c) Closeness(d,c)
+	ind: 	66.6451	+ * Constraint(d,c) CoCitation(d,c) Pow Betweenness(d,c) Constraint(d,c)
+	ind: 	35.6859	* - DiceSimilarity(d,c) Closeness(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	86.153	+ CoCitation(d,c) Neighborhood1(d,c)
+	ind: 	56.1465	Pow + Neighborhood2(d,c) Strength(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	58.4312	Log Neighborhood2(d,c) CoCitation(d,c)
+	ind: 	44.0385	% Betweenness(d,c) Neighborhood2(d,c)
+	ind: 	75.0069	Pow Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	79.6319	- * DiceSimilarity(d,c) Neighborhood1(d,c) * EigenVector(d,c) HubScore(d,c)
+	ind: 	37.5266	Log PageRank(d,c) Betweenness(d,c)
+	ind: 	37.3878	Pow Closeness(d,c) Closeness(d,c)
+	ind: 	61.1692	% - InverseLigSimilarity(d,c) Constraint(d,c) - InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	89.8529	- * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	38.9418	Pow Neighborhood3(d,c) Constraint(d,c)
+	ind: 	37.5266	% * Neighborhood2(d,c) Neighborhood2(d,c) Log DiceSimilarity(d,c) Strength(d,c)
+	ind: 	59.7447	* Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	85.413	* DiceSimilarity(d,c) CoCitation(d,c)
+	ind: 	72.269	Pow Neighborhood1(d,c) InverseLigSimilarity(d,c)
+	ind: 	58.8382	Log * JaccardSimilarity(d,c) Neighborhood2(d,c) * BibCoupling (d,c) JaccardSimilarity(d,c)
+	ind: 	37.5266	Log EigenVector(d,c) CoCitation(d,c)
+	ind: 	48.0622	% % DiceSimilarity(d,c) Neighborhood3(d,c) Log * JaccardSimilarity(d,c) Neighborhood2(d,c) Pow Neighborhood1(d,c) InverseLigSimilarity(d,c)
+	rep: 41  -> 41
+	rep: 11 9  -> 0
+	rep: 11 9  -> 1
+	rep: 32 39  -> 2
+	rep: 32 39  -> 3
+	rep: 44 43  -> 4
+	rep: 44 43  -> 5
+	rep: 20 3  -> 6
+	rep: 20 3  -> 7
+	rep: 28 31  -> 8
+	rep: 28 31  -> 9
+	rep: 27 13  -> 10
+	rep: 27 13  -> 11
+	rep: 27 7  -> 12
+	rep: 27 7  -> 13
+	rep: 45 40  -> 14
+	rep: 45 40  -> 15
+	rep: 41 19  -> 16
+	rep: 41 19  -> 17
+	rep: 10 2  -> 18
+	rep: 10 2  -> 19
+	rep: 12 37  -> 20
+	rep: 12 37  -> 21
+	rep: 27 25  -> 22
+	rep: 27 25  -> 23
+	rep: 40 47  -> 24
+	rep: 40 47  -> 25
+	rep: 14 14  -> 26
+	rep: 14 14  -> 27
+	rep: 14 35  -> 28
+	rep: 14 35  -> 29
+	rep: 37 40  -> 30
+	rep: 37 40  -> 31
+	rep: 19 39  -> 32
+	rep: 19 39  -> 33
+	rep: 23 48  -> 34
+	rep: 23 48  -> 35
+	rep: 26  -> 36
+	rep: 26 2  -> 37
+	rep: 26 2  -> 38
+	rep: 49 23  -> 39
+	rep: 49 23  -> 40
+	rep: 20 24  -> 42
+	rep: 20 24  -> 43
+	rep: 9  -> 44
+	rep: 31 31  -> 45
+	rep: 31 31  -> 46
+	rep: 4 48  -> 47
+	rep: 4 48  -> 48
+	rep: 27 15  -> 49
+generation 2:
+	ind: 	87.4942	% BibCoupling (d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	60.8824	JaccardSimilarity(d,c)
+	ind: 	37.3878	Pow Closeness(d,c) Closeness(d,c)
+	ind: 	86.153	+ CoCitation(d,c) Neighborhood1(d,c)
+	ind: 	84.377	* Neighborhood2(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	% * Neighborhood3(d,c) Betweenness(d,c) Log DiceSimilarity(d,c) Strength(d,c)
+	ind: 	79.8909	+ * Constraint(d,c) CoCitation(d,c) - Betweenness(d,c) DiceSimilarity(d,c)
+	ind: 	79.6319	- Neighborhood1(d,c) Closeness(d,c)
+	ind: 	60.8269	- DiceSimilarity(d,c) Closeness(d,c)
+	ind: 	33.6879	* + * Constraint(d,c) CoCitation(d,c) * Betweenness(d,c) Closeness(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	80.1961	- - Strength(d,c) HubScore(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	38.6643	% Neighborhood1(d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	86.1807	- InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	60.6604	% * DiceSimilarity(d,c) CoCitation(d,c) - InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8529	- * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	30.284	Pow Closeness(d,c) EigenVector(d,c)
+	ind: 	55.0735	- - - Betweenness(d,c) DiceSimilarity(d,c) Log Authority(d,c) CoCitation(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	61.3172	+ % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c)
+	ind: 	37.5266	- * DiceSimilarity(d,c) Neighborhood1(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	59.7447	* Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.6653	% Log * JaccardSimilarity(d,c) Neighborhood2(d,c) * BibCoupling (d,c) JaccardSimilarity(d,c) - InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	86.1807	- InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	85.8015	+ + BibCoupling (d,c) DiceSimilarity(d,c) Log Strength(d,c) HubScore(d,c)
+	ind: 	89.7234	+ + BibCoupling (d,c) DiceSimilarity(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	+ % Betweenness(d,c) Neighborhood2(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	86.1807	- InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	42.7158	% - * DiceSimilarity(d,c) Neighborhood1(d,c) * EigenVector(d,c) HubScore(d,c) - InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	37.3878	Pow Closeness(d,c) Closeness(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log EigenVector(d,c) CoCitation(d,c)
+	ind: 	37.5266	- JaccardSimilarity(d,c) Log Neighborhood3(d,c) Neighborhood3(d,c)
+	ind: 	85.8385	+ + BibCoupling (d,c) DiceSimilarity(d,c) * Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	59.7447	+ Log Authority(d,c) CoCitation(d,c) * Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	18.2222	- Pow Closeness(d,c) EigenVector(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	% % DiceSimilarity(d,c) Neighborhood3(d,c) Log * JaccardSimilarity(d,c) Neighborhood2(d,c) - JaccardSimilarity(d,c) Log Neighborhood3(d,c) Neighborhood3(d,c)
+	ind: 	72.269	Pow Neighborhood1(d,c) InverseLigSimilarity(d,c)
+	ind: 	89.8529	- * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	38.1093	Closeness(d,c)
+	ind: 	60.3089	* Betweenness(d,c) + * Constraint(d,c) CoCitation(d,c) - Neighborhood1(d,c) Closeness(d,c)
+	ind: 	75.0069	Pow Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	35.6859	* - DiceSimilarity(d,c) Closeness(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6859	* - DiceSimilarity(d,c) Closeness(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log EigenVector(d,c) CoCitation(d,c)
+	ind: 	37.5266	- DiceSimilarity(d,c) Neighborhood3(d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	rep: 17  -> 17
+	rep: 33 9  -> 0
+	rep: 33 9  -> 1
+	rep: 23 4  -> 2
+	rep: 23 4  -> 3
+	rep: 28 20  -> 4
+	rep: 28 20  -> 5
+	rep: 28 9  -> 6
+	rep: 28 9  -> 7
+	rep: 30 34  -> 8
+	rep: 30 34  -> 9
+	rep: 22 38  -> 10
+	rep: 22 38  -> 11
+	rep: 29  -> 12
+	rep: 22 10  -> 13
+	rep: 22 10  -> 14
+	rep: 27 11  -> 15
+	rep: 27 11  -> 16
+	rep: 28 21  -> 18
+	rep: 28 21  -> 19
+	rep: 41 19  -> 20
+	rep: 41 19  -> 21
+	rep: 27 27  -> 22
+	rep: 27 27  -> 23
+	rep: 41 0  -> 24
+	rep: 41 0  -> 25
+	rep: 37  -> 26
+	rep: 12  -> 27
+	rep: 29 33  -> 28
+	rep: 29 33  -> 29
+	rep: 23 38  -> 30
+	rep: 23 38  -> 31
+	rep: 41 29  -> 32
+	rep: 41 29  -> 33
+	rep: 29 38  -> 34
+	rep: 29 38  -> 35
+	rep: 12 10  -> 36
+	rep: 12 10  -> 37
+	rep: 29 18  -> 38
+	rep: 29 18  -> 39
+	rep: 23 5  -> 40
+	rep: 23 5  -> 41
+	rep: 10 32  -> 42
+	rep: 10 32  -> 43
+	rep: 37 24  -> 44
+	rep: 37 24  -> 45
+	rep: 14  -> 46
+	rep: 41  -> 47
+	rep: 30 19  -> 48
+	rep: 30 19  -> 49
+generation 3:
+	ind: 	42.5863	* Betweenness(d,c) Closeness(d,c)
+	ind: 	33.6972	* + * Constraint(d,c) CoCitation(d,c) - EigenVector(d,c) DiceSimilarity(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	84.377	* Neighborhood2(d,c) Neighborhood2(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	62.3624	+ % Betweenness(d,c) Neighborhood2(d,c) + % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	79.1694	+ % Betweenness(d,c) Neighborhood2(d,c) + * Constraint(d,c) CoCitation(d,c) * Betweenness(d,c) Closeness(d,c)
+	ind: 	32.1524	* - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log EigenVector(d,c) CoCitation(d,c)
+	ind: 	86.1807	- InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	37.8133	- Closeness(d,c) EigenVector(d,c)
+	ind: 	46.6099	- * Neighborhood3(d,c) Betweenness(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	59.7447	* Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	90.3617	+ - - Strength(d,c) HubScore(d,c) + BibCoupling (d,c) DiceSimilarity(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	89.8529	- * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	89.7882	+ * DiceSimilarity(d,c) Neighborhood1(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5173	- % Betweenness(d,c) Neighborhood2(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log Authority(d,c) CoCitation(d,c)
+	ind: 	39.1546	- - - Betweenness(d,c) DiceSimilarity(d,c) - * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	90.2969	+ - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	86.8375	+ + BibCoupling (d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	62.1959	- BibCoupling (d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	91.8046	% * BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	59.7447	+ Log Authority(d,c) CoCitation(d,c) * Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	38.6643	% Neighborhood1(d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	18.2222	- Pow Closeness(d,c) EigenVector(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	62.1034	- - BibCoupling (d,c) DiceSimilarity(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	18.2222	- Pow Closeness(d,c) EigenVector(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	38.6643	% Neighborhood1(d,c) Strength(d,c)
+	ind: 	30.284	Pow Closeness(d,c) EigenVector(d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) Strength(d,c)
+	ind: 	46.9614	% * Neighborhood3(d,c) Betweenness(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.3878	Pow Closeness(d,c) Closeness(d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	86.2177	+ - InverseLigSimilarity(d,c) Constraint(d,c) * Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	37.5266	% Log * JaccardSimilarity(d,c) Neighborhood2(d,c) * BibCoupling (d,c) JaccardSimilarity(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	86.1807	- InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	89.8529	- * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	37.5266	Log Authority(d,c) CoCitation(d,c)
+	ind: 	39.2471	- - - Betweenness(d,c) DiceSimilarity(d,c) - InverseLigSimilarity(d,c) Constraint(d,c) Log Authority(d,c) CoCitation(d,c)
+	rep: 25  -> 25
+	rep: 18 28  -> 0
+	rep: 18 28  -> 1
+	rep: 25 8  -> 2
+	rep: 25 8  -> 3
+	rep: 36 7  -> 4
+	rep: 36 7  -> 5
+	rep: 24 43  -> 6
+	rep: 24 43  -> 7
+	rep: 33 41  -> 8
+	rep: 33 41  -> 9
+	rep: 21  -> 10
+	rep: 9 36  -> 11
+	rep: 9 36  -> 12
+	rep: 39  -> 13
+	rep: 42 30  -> 14
+	rep: 42 30  -> 15
+	rep: 18 8  -> 16
+	rep: 18 8  -> 17
+	rep: 22 31  -> 18
+	rep: 22 31  -> 19
+	rep: 31 1  -> 20
+	rep: 31 1  -> 21
+	rep: 17 31  -> 22
+	rep: 17 31  -> 23
+	rep: 8  -> 24
+	rep: 33  -> 26
+	rep: 12 13  -> 27
+	rep: 12 13  -> 28
+	rep: 32 26  -> 29
+	rep: 32 26  -> 30
+	rep: 9 35  -> 31
+	rep: 9 35  -> 32
+	rep: 11 45  -> 33
+	rep: 11 45  -> 34
+	rep: 33 17  -> 35
+	rep: 33 17  -> 36
+	rep: 4 38  -> 37
+	rep: 4 38  -> 38
+	rep: 5 26  -> 39
+	rep: 5 26  -> 40
+	rep: 9 46  -> 41
+	rep: 9 46  -> 42
+	rep: 16 12  -> 43
+	rep: 16 12  -> 44
+	rep: 17 48  -> 45
+	rep: 17 48  -> 46
+	rep: 15 44  -> 47
+	rep: 15 44  -> 48
+	rep: 23  -> 49
+generation 4:
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.7882	+ * DiceSimilarity(d,c) Neighborhood1(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	47.8309	% EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	67.6441	Log * BibCoupling (d,c) Strength(d,c) CoCitation(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* % EigenVector(d,c) Neighborhood2(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	- BibCoupling (d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	61.5299	* Betweenness(d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.7856	% * Neighborhood3(d,c) Betweenness(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	39.1546	- - - Betweenness(d,c) DiceSimilarity(d,c) - * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	79.5486	Neighborhood2(d,c)
+	ind: 	37.5358	% EigenVector(d,c) - InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	30.284	Pow Closeness(d,c) EigenVector(d,c)
+	ind: 	18.2222	- Pow Closeness(d,c) Closeness(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	79.6319	+ * DiceSimilarity(d,c) Neighborhood1(d,c) Log EigenVector(d,c) CoCitation(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.5055	+ - Strength(d,c) HubScore(d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	33.7249	* + * Constraint(d,c) CoCitation(d,c) Pow Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	61.4929	Pow * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	37.5266	Log EigenVector(d,c) CoCitation(d,c)
+	ind: 	91.8046	% * BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- * Neighborhood3(d,c) Betweenness(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	85.3483	+ Log Authority(d,c) CoCitation(d,c) - BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5821	Log InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	37.5266	Log Authority(d,c) CoCitation(d,c)
+	ind: 	37.5543	% Log * JaccardSimilarity(d,c) Neighborhood2(d,c) * BibCoupling (d,c) JaccardSimilarity(d,c) - * Neighborhood3(d,c) Betweenness(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	89.8529	- * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	41.578	+ Pow Closeness(d,c) EigenVector(d,c) + % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c)
+	ind: 	44.0385	% Betweenness(d,c) Neighborhood2(d,c)
+	ind: 	59.7447	+ Log Authority(d,c) CoCitation(d,c) * Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	86.1807	- InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	86.1807	- InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- Log Authority(d,c) CoCitation(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	81.6483	+ + - InverseLigSimilarity(d,c) Constraint(d,c) * Neighborhood3(d,c) Betweenness(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	80.1961	- - Strength(d,c) HubScore(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	86.8375	+ + BibCoupling (d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	rep: 25  -> 25
+	rep: 23 27  -> 0
+	rep: 23 27  -> 1
+	rep: 28 48  -> 2
+	rep: 28 48  -> 3
+	rep: 17 10  -> 4
+	rep: 17 10  -> 5
+	rep: 37  -> 6
+	rep: 47 20  -> 7
+	rep: 47 20  -> 8
+	rep: 17 24  -> 9
+	rep: 17 24  -> 10
+	rep: 0 21  -> 11
+	rep: 0 21  -> 12
+	rep: 23 10  -> 13
+	rep: 23 10  -> 14
+	rep: 13 37  -> 15
+	rep: 13 37  -> 16
+	rep: 10  -> 17
+	rep: 35 8  -> 18
+	rep: 35 8  -> 19
+	rep: 49  -> 20
+	rep: 40 2  -> 21
+	rep: 40 2  -> 22
+	rep: 31 22  -> 23
+	rep: 31 22  -> 24
+	rep: 44 24  -> 26
+	rep: 44 24  -> 27
+	rep: 30 27  -> 28
+	rep: 30 27  -> 29
+	rep: 44 23  -> 30
+	rep: 44 23  -> 31
+	rep: 8 27  -> 32
+	rep: 8 27  -> 33
+	rep: 19 18  -> 34
+	rep: 19 18  -> 35
+	rep: 25 27  -> 36
+	rep: 25 27  -> 37
+	rep: 13 0  -> 38
+	rep: 13 0  -> 39
+	rep: 49 49  -> 40
+	rep: 49 49  -> 41
+	rep: 44 10  -> 42
+	rep: 44 10  -> 43
+	rep: 16 39  -> 44
+	rep: 16 39  -> 45
+	rep: 26 33  -> 46
+	rep: 26 33  -> 47
+	rep: 6 45  -> 48
+	rep: 6 45  -> 49
+generation 5:
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	61.4929	Pow * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	80.1961	- - Strength(d,c) HubScore(d,c) - BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	61.5299	* Betweenness(d,c) Strength(d,c)
+	ind: 	37.4988	- - - Betweenness(d,c) DiceSimilarity(d,c) - * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	41.578	+ Pow Closeness(d,c) EigenVector(d,c) + % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	81.6483	+ + - InverseLigSimilarity(d,c) Constraint(d,c) * Neighborhood3(d,c) Betweenness(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log EigenVector(d,c) CoCitation(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	68.976	+ * Constraint(d,c) CoCitation(d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* - EigenVector(d,c) DiceSimilarity(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8529	- * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	37.5081	- - - Betweenness(d,c) DiceSimilarity(d,c) Pow * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	30.284	Pow Closeness(d,c) EigenVector(d,c)
+	ind: 	85.7737	+ - BibCoupling (d,c) DiceSimilarity(d,c) + % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c)
+	ind: 	39.1546	- - - Betweenness(d,c) DiceSimilarity(d,c) - * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	91.4346	- * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	61.5299	* Betweenness(d,c) Strength(d,c)
+	ind: 	86.8375	+ + BibCoupling (d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	47.8309	% EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	91.8046	% * BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log EigenVector(d,c) CoCitation(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	85.3483	+ % EigenVector(d,c) Neighborhood2(d,c) - BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log Authority(d,c) CoCitation(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	61.3172	Pow + BibCoupling (d,c) DiceSimilarity(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.5055	+ - Strength(d,c) HubScore(d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	54.7128	% * BibCoupling (d,c) Strength(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	87.2815	+ + + BibCoupling (d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log Authority(d,c) CoCitation(d,c)
+	ind: 	39.0898	- - - Betweenness(d,c) DiceSimilarity(d,c) - * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	59.7447	+ + Log Authority(d,c) CoCitation(d,c) * Neighborhood3(d,c) Betweenness(d,c) Log EigenVector(d,c) CoCitation(d,c)
+	ind: 	79.6319	* DiceSimilarity(d,c) Neighborhood1(d,c)
+	ind: 	37.5266	Log Authority(d,c) CoCitation(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	61.5299	* Betweenness(d,c) Strength(d,c)
+	ind: 	37.5266	- Log Authority(d,c) CoCitation(d,c) - BibCoupling (d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	rep: 25  -> 25
+	rep: 36 6  -> 0
+	rep: 36 6  -> 1
+	rep: 30 45  -> 2
+	rep: 30 45  -> 3
+	rep: 41 29  -> 4
+	rep: 41 29  -> 5
+	rep: 2 11  -> 6
+	rep: 2 11  -> 7
+	rep: 24 23  -> 8
+	rep: 24 23  -> 9
+	rep: 37 0  -> 10
+	rep: 37 0  -> 11
+	rep: 47 20  -> 12
+	rep: 47 20  -> 13
+	rep: 11  -> 14
+	rep: 33 21  -> 15
+	rep: 33 21  -> 16
+	rep: 23 37  -> 17
+	rep: 23 37  -> 18
+	rep: 12 46  -> 19
+	rep: 12 46  -> 20
+	rep: 20 12  -> 21
+	rep: 20 12  -> 22
+	rep: 1  -> 23
+	rep: 47 6  -> 24
+	rep: 47 6  -> 26
+	rep: 30 22  -> 27
+	rep: 30 22  -> 28
+	rep: 6 5  -> 29
+	rep: 6 5  -> 30
+	rep: 18 20  -> 31
+	rep: 18 20  -> 32
+	rep: 37 17  -> 33
+	rep: 37 17  -> 34
+	rep: 8 8  -> 35
+	rep: 8 8  -> 36
+	rep: 44 29  -> 37
+	rep: 44 29  -> 38
+	rep: 47 8  -> 39
+	rep: 47 8  -> 40
+	rep: 27 29  -> 41
+	rep: 27 29  -> 42
+	rep: 21 5  -> 43
+	rep: 21 5  -> 44
+	rep: 38 12  -> 45
+	rep: 38 12  -> 46
+	rep: 46 38  -> 47
+	rep: 46 38  -> 48
+	rep: 40 24  -> 49
+generation 6:
+	ind: 	51.3274	% + Pow Closeness(d,c) EigenVector(d,c) + % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	79.6319	* DiceSimilarity(d,c) Neighborhood1(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Log Authority(d,c) CoCitation(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	79.1509	* Constraint(d,c) CoCitation(d,c)
+	ind: 	78.9381	+ + BibCoupling (d,c) DiceSimilarity(d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	91.9526	+ + BibCoupling (d,c) DiceSimilarity(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	68.976	+ * Constraint(d,c) CoCitation(d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	47.8309	% EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	25.992	Pow % Neighborhood3(d,c) BibCoupling (d,c) HubScore(d,c)
+	ind: 	89.8067	Strength(d,c)
+	ind: 	37.5266	* Log Authority(d,c) CoCitation(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	* - EigenVector(d,c) DiceSimilarity(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	86.8375	+ + BibCoupling (d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	61.4929	Pow * BibCoupling (d,c) Strength(d,c) * Betweenness(d,c) Strength(d,c)
+	ind: 	61.3172	+ % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c)
+	ind: 	91.8046	% * BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	90.6207	+ Pow Closeness(d,c) EigenVector(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	55.0735	- Betweenness(d,c) DiceSimilarity(d,c)
+	ind: 	20.8954	- - + Pow Closeness(d,c) EigenVector(d,c) + % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c) Log * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	51.8916	% + BibCoupling (d,c) DiceSimilarity(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.9526	+ * BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	39.1638	% Betweenness(d,c) Strength(d,c)
+	ind: 	37.4988	- - - Betweenness(d,c) DiceSimilarity(d,c) - * BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	82.7398	+ + - InverseLigSimilarity(d,c) Constraint(d,c) + - InverseLigSimilarity(d,c) Constraint(d,c) * Neighborhood3(d,c) Betweenness(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	64.4529	+ * Neighborhood3(d,c) Betweenness(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	59.7447	+ + Log Authority(d,c) CoCitation(d,c) * Neighborhood3(d,c) Betweenness(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	37.5266	- EigenVector(d,c) CoCitation(d,c)
+	ind: 	59.7447	* Neighborhood3(d,c) Betweenness(d,c)
+	ind: 	89.0852	+ + - InverseLigSimilarity(d,c) Constraint(d,c) * BibCoupling (d,c) Strength(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log Authority(d,c) CoCitation(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	55.0735	- - - Betweenness(d,c) DiceSimilarity(d,c) - % EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	37.5266	* - EigenVector(d,c) DiceSimilarity(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log Authority(d,c) CoCitation(d,c)
+	ind: 	87.2537	+ + + BibCoupling (d,c) DiceSimilarity(d,c) - BibCoupling (d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	rep: 13  -> 13
+	rep: 15 20  -> 0
+	rep: 15 20  -> 1
+	rep: 11 33  -> 2
+	rep: 11 33  -> 3
+	rep: 9 15  -> 4
+	rep: 9 15  -> 5
+	rep: 25 19  -> 6
+	rep: 25 19  -> 7
+	rep: 42 11  -> 8
+	rep: 42 11  -> 9
+	rep: 11 48  -> 10
+	rep: 11 48  -> 11
+	rep: 0 30  -> 12
+	rep: 0 30  -> 14
+	rep: 1 20  -> 15
+	rep: 1 20  -> 16
+	rep: 20 41  -> 17
+	rep: 20 41  -> 18
+	rep: 0 10  -> 19
+	rep: 0 10  -> 20
+	rep: 43 1  -> 21
+	rep: 43 1  -> 22
+	rep: 8 21  -> 23
+	rep: 8 21  -> 24
+	rep: 3 24  -> 25
+	rep: 3 24  -> 26
+	rep: 49  -> 27
+	rep: 43 38  -> 28
+	rep: 43 38  -> 29
+	rep: 6 21  -> 30
+	rep: 6 21  -> 31
+	rep: 22 31  -> 32
+	rep: 22 31  -> 33
+	rep: 1 42  -> 34
+	rep: 1 42  -> 35
+	rep: 40 49  -> 36
+	rep: 40 49  -> 37
+	rep: 24 10  -> 38
+	rep: 24 10  -> 39
+	rep: 27 19  -> 40
+	rep: 27 19  -> 41
+	rep: 32 14  -> 42
+	rep: 32 14  -> 43
+	rep: 25  -> 44
+	rep: 28 20  -> 45
+	rep: 28 20  -> 46
+	rep: 1 16  -> 47
+	rep: 1 16  -> 48
+	rep: 1 26  -> 49
+generation 7:
+	ind: 	37.5266	% EigenVector(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	39.1638	% Betweenness(d,c) Strength(d,c)
+	ind: 	57.9225	Log Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	47.8309	% EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	85.3483	- BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	% * BibCoupling (d,c) Strength(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- Log Authority(d,c) CoCitation(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log Authority(d,c) CoCitation(d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	49.6994	% + Pow Closeness(d,c) EigenVector(d,c) Pow Closeness(d,c) EigenVector(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	91.9526	+ + BibCoupling (d,c) DiceSimilarity(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	48.5894	- - + + % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c) + % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c) Log * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Log Authority(d,c) CoCitation(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	51.3274	% + Pow Closeness(d,c) EigenVector(d,c) + % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.6258	* Pow Strength(d,c) HubScore(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	91.9711	+ % Neighborhood3(d,c) Neighborhood3(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	87.2537	+ + + BibCoupling (d,c) DiceSimilarity(d,c) - BibCoupling (d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) CoCitation(d,c)
+	ind: 	43.8905	- BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* - EigenVector(d,c) DiceSimilarity(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	79.1509	* Constraint(d,c) CoCitation(d,c)
+	ind: 	89.7234	+ + BibCoupling (d,c) DiceSimilarity(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	60.8824	% + BibCoupling (d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	82.9618	+ + - InverseLigSimilarity(d,c) Constraint(d,c) + + BibCoupling (d,c) DiceSimilarity(d,c) - BibCoupling (d,c) DiceSimilarity(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	85.7922	+ % BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	60.8824	+ % Neighborhood3(d,c) Neighborhood3(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* Log Authority(d,c) CoCitation(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	68.976	+ * Constraint(d,c) CoCitation(d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	89.4089	% * BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	91.8046	% * BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	51.9286	% BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	90.6207	+ Pow Closeness(d,c) EigenVector(d,c) * BibCoupling (d,c) Strength(d,c)
+	rep: 26  -> 26
+	rep: 13 29  -> 0
+	rep: 13 29  -> 1
+	rep: 38 2  -> 2
+	rep: 38 2  -> 3
+	rep: 39 40  -> 4
+	rep: 39 40  -> 5
+	rep: 49 41  -> 6
+	rep: 49 41  -> 7
+	rep: 48 36  -> 8
+	rep: 48 36  -> 9
+	rep: 13 29  -> 10
+	rep: 13 29  -> 11
+	rep: 29 15  -> 12
+	rep: 29 15  -> 13
+	rep: 32 7  -> 14
+	rep: 32 7  -> 15
+	rep: 36 31  -> 16
+	rep: 36 31  -> 17
+	rep: 43 23  -> 18
+	rep: 43 23  -> 19
+	rep: 25 10  -> 20
+	rep: 25 10  -> 21
+	rep: 21  -> 22
+	rep: 27 19  -> 23
+	rep: 27 19  -> 24
+	rep: 35 39  -> 25
+	rep: 35 39  -> 27
+	rep: 32 19  -> 28
+	rep: 32 19  -> 29
+	rep: 43 41  -> 30
+	rep: 43 41  -> 31
+	rep: 13 12  -> 32
+	rep: 13 12  -> 33
+	rep: 45 0  -> 34
+	rep: 45 0  -> 35
+	rep: 46 1  -> 36
+	rep: 46 1  -> 37
+	rep: 49 14  -> 38
+	rep: 49 14  -> 39
+	rep: 34 6  -> 40
+	rep: 34 6  -> 41
+	rep: 11  -> 42
+	rep: 31 25  -> 43
+	rep: 31 25  -> 44
+	rep: 37 12  -> 45
+	rep: 37 12  -> 46
+	rep: 1 0  -> 47
+	rep: 1 0  -> 48
+	rep: 3 23  -> 49
+generation 8:
+	ind: 	85.7737	+ + BibCoupling (d,c) DiceSimilarity(d,c) - BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	39.1638	% Betweenness(d,c) Strength(d,c)
+	ind: 	60.8824	+ % Neighborhood3(d,c) Neighborhood3(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	30.284	+ Pow Closeness(d,c) EigenVector(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	86.1807	- InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	89.0019	+ + * BibCoupling (d,c) Strength(d,c) + + BibCoupling (d,c) DiceSimilarity(d,c) - BibCoupling (d,c) DiceSimilarity(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	43.8905	- BibCoupling (d,c) Strength(d,c)
+	ind: 	69.864	+ + BibCoupling (d,c) DiceSimilarity(d,c) Pow BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	85.8015	+ + BibCoupling (d,c) DiceSimilarity(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	89.8159	- - Strength(d,c) HubScore(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	80.8343	+ CoCitation(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	83.0173	* Constraint(d,c) + - InverseLigSimilarity(d,c) Constraint(d,c) + + BibCoupling (d,c) DiceSimilarity(d,c) - BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	% - EigenVector(d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5358	- Authority(d,c) CoCitation(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	86.8005	+ + + BibCoupling (d,c) DiceSimilarity(d,c) - BibCoupling (d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	91.9711	+ % Neighborhood3(d,c) Neighborhood3(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	85.8015	+ + BibCoupling (d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* Log Authority(d,c) CoCitation(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.4089	% * BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	90.2044	+ + Pow Closeness(d,c) EigenVector(d,c) Pow Closeness(d,c) EigenVector(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	53.7231	% + BibCoupling (d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	% EigenVector(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	51.9286	% BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6566	+ * EigenVector(d,c) HubScore(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	35.1031	- - + + % Neighborhood3(d,c) Neighborhood3(d,c) * EigenVector(d,c) HubScore(d,c) + % Neighborhood3(d,c) Neighborhood3(d,c) Pow Closeness(d,c) EigenVector(d,c) Log * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c) Log Authority(d,c) CoCitation(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.4089	% * BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	79.1509	* Constraint(d,c) CoCitation(d,c)
+	ind: 	30.284	Pow Closeness(d,c) EigenVector(d,c)
+	ind: 	53.5658	% + Pow Closeness(d,c) EigenVector(d,c) + % BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	47.8309	% EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log Neighborhood3(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	rep: 7  -> 7
+	rep: 36 25  -> 0
+	rep: 36 25  -> 1
+	rep: 0 49  -> 2
+	rep: 0 49  -> 3
+	rep: 38 4  -> 4
+	rep: 38 4  -> 5
+	rep: 36 40  -> 6
+	rep: 36 40  -> 8
+	rep: 19 33  -> 9
+	rep: 19 33  -> 10
+	rep: 0 0  -> 11
+	rep: 0 0  -> 12
+	rep: 16 12  -> 13
+	rep: 16 12  -> 14
+	rep: 26 20  -> 15
+	rep: 26 20  -> 16
+	rep: 2 18  -> 17
+	rep: 2 18  -> 18
+	rep: 44 30  -> 19
+	rep: 44 30  -> 20
+	rep: 31 45  -> 21
+	rep: 31 45  -> 22
+	rep: 19 16  -> 23
+	rep: 19 16  -> 24
+	rep: 15 47  -> 25
+	rep: 15 47  -> 26
+	rep: 1 46  -> 27
+	rep: 1 46  -> 28
+	rep: 23 28  -> 29
+	rep: 23 28  -> 30
+	rep: 29 31  -> 31
+	rep: 29 31  -> 32
+	rep: 46 35  -> 33
+	rep: 46 35  -> 34
+	rep: 15 33  -> 35
+	rep: 15 33  -> 36
+	rep: 7 44  -> 37
+	rep: 7 44  -> 38
+	rep: 8 21  -> 39
+	rep: 8 21  -> 40
+	rep: 42 35  -> 41
+	rep: 42 35  -> 42
+	rep: 42 20  -> 43
+	rep: 42 20  -> 44
+	rep: 31 25  -> 45
+	rep: 31 25  -> 46
+	rep: 26 27  -> 47
+	rep: 26 27  -> 48
+	rep: 13 43  -> 49
+generation 9:
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	85.8015	+ + BibCoupling (d,c) DiceSimilarity(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	41.3745	Log Neighborhood3(d,c) - BibCoupling (d,c) Strength(d,c)
+	ind: 	40.0425	+ * EigenVector(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	54.7128	% * BibCoupling (d,c) Strength(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	85.4223	+ * BibCoupling (d,c) DiceSimilarity(d,c) - BibCoupling (d,c) Strength(d,c)
+	ind: 	85.7737	+ + BibCoupling (d,c) DiceSimilarity(d,c) - BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	80.8343	+ CoCitation(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	60.8824	+ % Neighborhood3(d,c) Neighborhood3(d,c) - Authority(d,c) CoCitation(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	% - EigenVector(d,c) DiceSimilarity(d,c) % Betweenness(d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* Log Authority(d,c) CoCitation(d,c) * Constraint(d,c) CoCitation(d,c)
+	ind: 	91.6936	% * BibCoupling (d,c) Strength(d,c) Pow Closeness(d,c) EigenVector(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	55.1938	% Strength(d,c) HubScore(d,c)
+	ind: 	91.7769	+ CoCitation(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- - EigenVector(d,c) DiceSimilarity(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.7922	+ % BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	54.4815	% + Pow Closeness(d,c) EigenVector(d,c) * BibCoupling (d,c) Strength(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	86.8375	+ + + BibCoupling (d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	85.3483	+ - BibCoupling (d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	89.4089	% * BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	% - EigenVector(d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	37.5081	% EigenVector(d,c) + Pow Closeness(d,c) EigenVector(d,c) + % BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	53.7231	- % + BibCoupling (d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	79.1509	* Constraint(d,c) CoCitation(d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	86.1807	- InverseLigSimilarity(d,c) Constraint(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	47.8309	% EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5358	- Authority(d,c) CoCitation(d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	89.4089	% * BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	91.9711	+ % Neighborhood3(d,c) Neighborhood3(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	rep: 7  -> 7
+	rep: 48 47  -> 0
+	rep: 48 47  -> 1
+	rep: 38 33  -> 2
+	rep: 38 33  -> 3
+	rep: 4 43  -> 4
+	rep: 4 43  -> 5
+	rep: 22 49  -> 6
+	rep: 22 49  -> 8
+	rep: 2 27  -> 9
+	rep: 2 27  -> 10
+	rep: 31 2  -> 11
+	rep: 31 2  -> 12
+	rep: 2 33  -> 13
+	rep: 2 33  -> 14
+	rep: 47 46  -> 15
+	rep: 47 46  -> 16
+	rep: 32  -> 17
+	rep: 46 23  -> 18
+	rep: 46 23  -> 19
+	rep: 46 44  -> 20
+	rep: 46 44  -> 21
+	rep: 36 4  -> 22
+	rep: 36 4  -> 23
+	rep: 32 42  -> 24
+	rep: 32 42  -> 25
+	rep: 17 41  -> 26
+	rep: 17 41  -> 27
+	rep: 32 14  -> 28
+	rep: 32 14  -> 29
+	rep: 19 9  -> 30
+	rep: 19 9  -> 31
+	rep: 39 13  -> 32
+	rep: 39 13  -> 33
+	rep: 5 25  -> 34
+	rep: 5 25  -> 35
+	rep: 28 6  -> 36
+	rep: 28 6  -> 37
+	rep: 39 45  -> 38
+	rep: 39 45  -> 39
+	rep: 11 14  -> 40
+	rep: 11 14  -> 41
+	rep: 47 12  -> 42
+	rep: 47 12  -> 43
+	rep: 10 1  -> 44
+	rep: 10 1  -> 45
+	rep: 21 30  -> 46
+	rep: 21 30  -> 47
+	rep: 35 44  -> 48
+	rep: 35 44  -> 49
+generation 10:
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	91.9711	+ % Neighborhood3(d,c) Neighborhood3(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	% - EigenVector(d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	41.5318	+ * EigenVector(d,c) HubScore(d,c) - Authority(d,c) CoCitation(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	60.8824	JaccardSimilarity(d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	52.8721	* + BibCoupling (d,c) DiceSimilarity(d,c) HubScore(d,c)
+	ind: 	51.9286	% BibCoupling (d,c) Strength(d,c)
+	ind: 	86.8375	+ + + BibCoupling (d,c) DiceSimilarity(d,c) - EigenVector(d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	60.8824	% + + BibCoupling (d,c) DiceSimilarity(d,c) - EigenVector(d,c) DiceSimilarity(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	59.8095	Log BibCoupling (d,c) Strength(d,c)
+	ind: 	85.8015	+ + BibCoupling (d,c) DiceSimilarity(d,c) % - EigenVector(d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	89.4089	% * BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	55.1938	% Strength(d,c) HubScore(d,c)
+	ind: 	89.4089	% * BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	91.8046	% * BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7697	+ % EigenVector(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	47.8309	% EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8437	+ CoCitation(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	86.0697	+ Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- - EigenVector(d,c) DiceSimilarity(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	54.4908	% + - DiceSimilarity(d,c) BibCoupling (d,c) * BibCoupling (d,c) Strength(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	37.8133	- Closeness(d,c) EigenVector(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	82.1663	+ * BibCoupling (d,c) DiceSimilarity(d,c) + CoCitation(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	43.8905	- BibCoupling (d,c) Strength(d,c)
+	ind: 	78.3924	Pow BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	+ * BibCoupling (d,c) Strength(d,c) - BibCoupling (d,c) Strength(d,c)
+	ind: 	91.8046	% * BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	54.7128	% * BibCoupling (d,c) Strength(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	78.4756	+ - BibCoupling (d,c) DiceSimilarity(d,c) Pow Closeness(d,c) EigenVector(d,c)
+	ind: 	53.7231	- % + BibCoupling (d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	34.7609	- Neighborhood3(d,c) BibCoupling (d,c)
+	rep: 3  -> 3
+	rep: 7 9  -> 0
+	rep: 7 9  -> 1
+	rep: 15 46  -> 2
+	rep: 15 46  -> 4
+	rep: 28 26  -> 5
+	rep: 28 26  -> 6
+	rep: 6 9  -> 7
+	rep: 6 9  -> 8
+	rep: 19 24  -> 9
+	rep: 19 24  -> 10
+	rep: 26 32  -> 11
+	rep: 26 32  -> 12
+	rep: 44  -> 13
+	rep: 30 35  -> 14
+	rep: 30 35  -> 15
+	rep: 23 26  -> 16
+	rep: 23 26  -> 17
+	rep: 15 42  -> 18
+	rep: 15 42  -> 19
+	rep: 12 39  -> 20
+	rep: 12 39  -> 21
+	rep: 12 41  -> 22
+	rep: 12 41  -> 23
+	rep: 1 33  -> 24
+	rep: 1 33  -> 25
+	rep: 46 38  -> 26
+	rep: 46 38  -> 27
+	rep: 44 37  -> 28
+	rep: 44 37  -> 29
+	rep: 27 9  -> 30
+	rep: 27 9  -> 31
+	rep: 7 24  -> 32
+	rep: 7 24  -> 33
+	rep: 24 26  -> 34
+	rep: 24 26  -> 35
+	rep: 23 25  -> 36
+	rep: 23 25  -> 37
+	rep: 7 41  -> 38
+	rep: 7 41  -> 39
+	rep: 6 35  -> 40
+	rep: 6 35  -> 41
+	rep: 23 4  -> 42
+	rep: 23 4  -> 43
+	rep: 31 48  -> 44
+	rep: 31 48  -> 45
+	rep: 20 17  -> 46
+	rep: 20 17  -> 47
+	rep: 34 5  -> 48
+	rep: 34 5  -> 49
+generation 11:
+	ind: 	89.4552	* * BibCoupling (d,c) Strength(d,c) % BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	54.7128	% * BibCoupling (d,c) Strength(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	51.9286	% BibCoupling (d,c) Strength(d,c)
+	ind: 	60.8824	JaccardSimilarity(d,c)
+	ind: 	49.9676	Pow * BibCoupling (d,c) Strength(d,c) % EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	43.0117	* EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.8046	% * BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- % BibCoupling (d,c) DiceSimilarity(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	55.1938	+ % EigenVector(d,c) HubScore(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	78.3924	Pow BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	47.1557	Pow EigenVector(d,c) HubScore(d,c)
+	ind: 	59.8095	Log BibCoupling (d,c) Strength(d,c)
+	ind: 	43.8905	- BibCoupling (d,c) Strength(d,c)
+	ind: 	43.8905	- BibCoupling (d,c) Strength(d,c)
+	ind: 	43.0117	+ - Neighborhood3(d,c) Neighborhood3(d,c) EigenVector(d,c)
+	ind: 	55.3788	* * BibCoupling (d,c) Strength(d,c) HubScore(d,c)
+	ind: 	48.3859	% * EigenVector(d,c) HubScore(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.8133	- Closeness(d,c) EigenVector(d,c)
+	ind: 	67.3573	% % BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	51.9286	% BibCoupling (d,c) Strength(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	47.8309	% EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	47.8309	% EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	85.5055	+ Pow Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	45.2317	% EigenVector(d,c) HubScore(d,c)
+	ind: 	43.5112	* - BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	35.6581	- JaccardSimilarity(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	45.7497	+ % EigenVector(d,c) HubScore(d,c) * EigenVector(d,c) HubScore(d,c)
+	ind: 	89.8067	+ - Strength(d,c) HubScore(d,c) - Authority(d,c) CoCitation(d,c)
+	ind: 	53.7231	% + BibCoupling (d,c) DiceSimilarity(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	89.8159	- - Strength(d,c) HubScore(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	% Log Strength(d,c) HubScore(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	86.0697	+ Neighborhood3(d,c) BibCoupling (d,c)
+	rep: 3  -> 3
+	rep: 10 38  -> 0
+	rep: 10 38  -> 1
+	rep: 31 34  -> 2
+	rep: 31 34  -> 4
+	rep: 4 5  -> 5
+	rep: 4 5  -> 6
+	rep: 19 16  -> 7
+	rep: 19 16  -> 8
+	rep: 23 40  -> 9
+	rep: 23 40  -> 10
+	rep: 22 16  -> 11
+	rep: 22 16  -> 12
+	rep: 19 5  -> 13
+	rep: 19 5  -> 14
+	rep: 44 20  -> 15
+	rep: 44 20  -> 16
+	rep: 45 21  -> 17
+	rep: 45 21  -> 18
+	rep: 39 10  -> 19
+	rep: 39 10  -> 20
+	rep: 2 42  -> 21
+	rep: 2 42  -> 22
+	rep: 19 49  -> 23
+	rep: 19 49  -> 24
+	rep: 24 5  -> 25
+	rep: 24 5  -> 26
+	rep: 4 24  -> 27
+	rep: 4 24  -> 28
+	rep: 3 24  -> 29
+	rep: 3 24  -> 30
+	rep: 35 35  -> 31
+	rep: 35 35  -> 32
+	rep: 26  -> 33
+	rep: 46 34  -> 34
+	rep: 46 34  -> 35
+	rep: 16 14  -> 36
+	rep: 16 14  -> 37
+	rep: 47 48  -> 38
+	rep: 47 48  -> 39
+	rep: 43 10  -> 40
+	rep: 43 10  -> 41
+	rep: 12 48  -> 42
+	rep: 12 48  -> 43
+	rep: 36 15  -> 44
+	rep: 36 15  -> 45
+	rep: 46 41  -> 46
+	rep: 46 41  -> 47
+	rep: 36 29  -> 48
+	rep: 36 29  -> 49
+generation 12:
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	43.502	* - BibCoupling (d,c) Strength(d,c) + BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.8015	+ BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	% * BibCoupling (d,c) Strength(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	43.8905	- BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	43.8905	- BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	70.2895	% + BibCoupling (d,c) DiceSimilarity(d,c) Pow EigenVector(d,c) HubScore(d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	58.4682	- Log BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	69.1703	Pow + BibCoupling (d,c) DiceSimilarity(d,c) Strength(d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	91.6566	+ % EigenVector(d,c) HubScore(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	86.0697	+ Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	86.819	* Neighborhood3(d,c) Neighborhood3(d,c)
+	ind: 	53.6306	% + - Neighborhood3(d,c) Neighborhood3(d,c) EigenVector(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* - Neighborhood3(d,c) Neighborhood3(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6566	+ * BibCoupling (d,c) Strength(d,c) EigenVector(d,c)
+	ind: 	47.8309	% EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	47.8309	% EigenVector(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	48.3859	% * EigenVector(d,c) HubScore(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	% - EigenVector(d,c) DiceSimilarity(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5358	+ Log BibCoupling (d,c) DiceSimilarity(d,c) - Authority(d,c) CoCitation(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	+ - % BibCoupling (d,c) DiceSimilarity(d,c) * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log Log Strength(d,c) HubScore(d,c) - JaccardSimilarity(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	58.2925	+ Pow Strength(d,c) HubScore(d,c) % % BibCoupling (d,c) Strength(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	rep: 3  -> 3
+	rep: 39 32  -> 0
+	rep: 39 32  -> 1
+	rep: 46  -> 2
+	rep: 25 11  -> 4
+	rep: 25 11  -> 5
+	rep: 39 2  -> 6
+	rep: 39 2  -> 7
+	rep: 44 43  -> 8
+	rep: 44 43  -> 9
+	rep: 30 43  -> 10
+	rep: 30 43  -> 11
+	rep: 33 45  -> 12
+	rep: 33 45  -> 13
+	rep: 45 7  -> 14
+	rep: 45 7  -> 15
+	rep: 39 35  -> 16
+	rep: 39 35  -> 17
+	rep: 49 38  -> 18
+	rep: 49 38  -> 19
+	rep: 46 36  -> 20
+	rep: 46 36  -> 21
+	rep: 19 38  -> 22
+	rep: 19 38  -> 23
+	rep: 47 43  -> 24
+	rep: 47 43  -> 25
+	rep: 8 21  -> 26
+	rep: 8 21  -> 27
+	rep: 45 25  -> 28
+	rep: 45 25  -> 29
+	rep: 49 34  -> 30
+	rep: 49 34  -> 31
+	rep: 34 38  -> 32
+	rep: 34 38  -> 33
+	rep: 47 5  -> 34
+	rep: 47 5  -> 35
+	rep: 41 40  -> 36
+	rep: 41 40  -> 37
+	rep: 45 46  -> 38
+	rep: 45 46  -> 39
+	rep: 41 45  -> 40
+	rep: 41 45  -> 41
+	rep: 39 13  -> 42
+	rep: 39 13  -> 43
+	rep: 24 43  -> 44
+	rep: 24 43  -> 45
+	rep: 24  -> 46
+	rep: 15 18  -> 47
+	rep: 15 18  -> 48
+	rep: 14 12  -> 49
+generation 13:
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	% EigenVector(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Log Log Strength(d,c) HubScore(d,c) - JaccardSimilarity(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	+ - EigenVector(d,c) DiceSimilarity(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- % BibCoupling (d,c) DiceSimilarity(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.6566	+ * BibCoupling (d,c) Strength(d,c) EigenVector(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	48.3859	% * EigenVector(d,c) HubScore(d,c) % EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log Log Strength(d,c) HubScore(d,c) - JaccardSimilarity(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	69.1703	Pow + BibCoupling (d,c) DiceSimilarity(d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	42.725	% Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	48.1084	+ Pow Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	90.5097	% - Strength(d,c) HubScore(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	% - EigenVector(d,c) DiceSimilarity(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	57.9225	Log Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	89.3904	% * BibCoupling (d,c) Strength(d,c) BibCoupling (d,c)
+	ind: 	37.5266	% Neighborhood3(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5358	+ Log BibCoupling (d,c) DiceSimilarity(d,c) - Authority(d,c) CoCitation(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- JaccardSimilarity(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Log Log Strength(d,c) HubScore(d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	51.0499	% * Strength(d,c) HubScore(d,c) Pow EigenVector(d,c) HubScore(d,c)
+	ind: 	85.45	% BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	43.8905	- BibCoupling (d,c) Strength(d,c)
+	rep: 3  -> 3
+	rep: 3 41  -> 0
+	rep: 3 41  -> 1
+	rep: 48 26  -> 2
+	rep: 48 26  -> 4
+	rep: 31 37  -> 5
+	rep: 31 37  -> 6
+	rep: 31 28  -> 7
+	rep: 31 28  -> 8
+	rep: 13 26  -> 9
+	rep: 13 26  -> 10
+	rep: 29 28  -> 11
+	rep: 29 28  -> 12
+	rep: 29 4  -> 13
+	rep: 29 4  -> 14
+	rep: 5 6  -> 15
+	rep: 5 6  -> 16
+	rep: 22 18  -> 17
+	rep: 22 18  -> 18
+	rep: 47 20  -> 19
+	rep: 47 20  -> 20
+	rep: 26 20  -> 21
+	rep: 26 20  -> 22
+	rep: 12 22  -> 23
+	rep: 12 22  -> 24
+	rep: 10 28  -> 25
+	rep: 10 28  -> 26
+	rep: 45 19  -> 27
+	rep: 45 19  -> 28
+	rep: 20 6  -> 29
+	rep: 20 6  -> 30
+	rep: 6 35  -> 31
+	rep: 6 35  -> 32
+	rep: 3 17  -> 33
+	rep: 3 17  -> 34
+	rep: 8 10  -> 35
+	rep: 8 10  -> 36
+	rep: 47 10  -> 37
+	rep: 47 10  -> 38
+	rep: 0 32  -> 39
+	rep: 0 32  -> 40
+	rep: 42 22  -> 41
+	rep: 42 22  -> 42
+	rep: 6  -> 43
+	rep: 29 4  -> 44
+	rep: 29 4  -> 45
+	rep: 7 19  -> 46
+	rep: 7 19  -> 47
+	rep: 26 28  -> 48
+	rep: 26 28  -> 49
+generation 14:
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	45.7404	+ EigenVector(d,c) HubScore(d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.45	% BibCoupling (d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	90.5097	% - Strength(d,c) HubScore(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	90.5097	% - Strength(d,c) HubScore(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	45.9069	% * EigenVector(d,c) HubScore(d,c) * EigenVector(d,c) HubScore(d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	51.0499	% * Strength(d,c) HubScore(d,c) Pow EigenVector(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	% Neighborhood3(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- - EigenVector(d,c) DiceSimilarity(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	71.8342	% - Strength(d,c) HubScore(d,c) Pow EigenVector(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	% - EigenVector(d,c) DiceSimilarity(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	48.1084	+ Pow Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	rep: 0  -> 0
+	rep: 9 40  -> 1
+	rep: 9 40  -> 2
+	rep: 12 17  -> 3
+	rep: 12 17  -> 4
+	rep: 30 23  -> 5
+	rep: 30 23  -> 6
+	rep: 47 26  -> 7
+	rep: 47 26  -> 8
+	rep: 2 11  -> 9
+	rep: 2 11  -> 10
+	rep: 14 10  -> 11
+	rep: 14 10  -> 12
+	rep: 18 39  -> 13
+	rep: 18 39  -> 14
+	rep: 49 26  -> 15
+	rep: 49 26  -> 16
+	rep: 46 40  -> 17
+	rep: 46 40  -> 18
+	rep: 26 23  -> 19
+	rep: 26 23  -> 20
+	rep: 35 23  -> 21
+	rep: 35 23  -> 22
+	rep: 45 17  -> 23
+	rep: 45 17  -> 24
+	rep: 0 39  -> 25
+	rep: 0 39  -> 26
+	rep: 22 29  -> 27
+	rep: 22 29  -> 28
+	rep: 18 39  -> 29
+	rep: 18 39  -> 30
+	rep: 7 41  -> 31
+	rep: 7 41  -> 32
+	rep: 12 7  -> 33
+	rep: 12 7  -> 34
+	rep: 5 45  -> 35
+	rep: 5 45  -> 36
+	rep: 15 37  -> 37
+	rep: 15 37  -> 38
+	rep: 3 10  -> 39
+	rep: 3 10  -> 40
+	rep: 46 24  -> 41
+	rep: 46 24  -> 42
+	rep: 24 26  -> 43
+	rep: 24 26  -> 44
+	rep: 34  -> 45
+	rep: 12 16  -> 46
+	rep: 12 16  -> 47
+	rep: 20 43  -> 48
+	rep: 20 43  -> 49
+generation 15:
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	48.6079	% % * EigenVector(d,c) HubScore(d,c) * EigenVector(d,c) HubScore(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	45.7404	+ EigenVector(d,c) HubScore(d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	41.5133	* EigenVector(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	90.5097	% - Strength(d,c) HubScore(d,c) % Neighborhood3(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	48.1084	+ Pow Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	43.0117	EigenVector(d,c)
+	ind: 	37.5266	- * EigenVector(d,c) HubScore(d,c) DiceSimilarity(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	+ - Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	47.9882	* % EigenVector(d,c) Neighborhood2(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	% - EigenVector(d,c) DiceSimilarity(d,c) Pow EigenVector(d,c) HubScore(d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	rep: 26  -> 26
+	rep: 36 41  -> 0
+	rep: 36 41  -> 1
+	rep: 42 7  -> 2
+	rep: 42 7  -> 3
+	rep: 45 21  -> 4
+	rep: 45 21  -> 5
+	rep: 33 25  -> 6
+	rep: 33 25  -> 7
+	rep: 26 11  -> 8
+	rep: 26 11  -> 9
+	rep: 11 13  -> 10
+	rep: 11 13  -> 11
+	rep: 10 30  -> 12
+	rep: 10 30  -> 13
+	rep: 13 29  -> 14
+	rep: 13 29  -> 15
+	rep: 23 15  -> 16
+	rep: 23 15  -> 17
+	rep: 0 46  -> 18
+	rep: 0 46  -> 19
+	rep: 9 31  -> 20
+	rep: 9 31  -> 21
+	rep: 22  -> 22
+	rep: 8 3  -> 23
+	rep: 8 3  -> 24
+	rep: 45 10  -> 25
+	rep: 45 10  -> 27
+	rep: 0 48  -> 28
+	rep: 0 48  -> 29
+	rep: 47 25  -> 30
+	rep: 47 25  -> 31
+	rep: 25 29  -> 32
+	rep: 25 29  -> 33
+	rep: 35 17  -> 34
+	rep: 35 17  -> 35
+	rep: 33  -> 36
+	rep: 26 37  -> 37
+	rep: 26 37  -> 38
+	rep: 42 47  -> 39
+	rep: 42 47  -> 40
+	rep: 15 19  -> 41
+	rep: 15 19  -> 42
+	rep: 34  -> 43
+	rep: 45 47  -> 44
+	rep: 45 47  -> 45
+	rep: 5 14  -> 46
+	rep: 5 14  -> 47
+	rep: 36 31  -> 48
+	rep: 36 31  -> 49
+generation 16:
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	+ - Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	79.5486	+ EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.6468	% EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	45.7404	+ EigenVector(d,c) HubScore(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* * BibCoupling (d,c) Strength(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	51.9286	% BibCoupling (d,c) Strength(d,c)
+	ind: 	85.4593	+ CoCitation(d,c) HubScore(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* * BibCoupling (d,c) Strength(d,c) % - EigenVector(d,c) DiceSimilarity(d,c) Pow EigenVector(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	18.1759	Pow - DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	37.5266	Pow Strength(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	44.2327	HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	51.8823	* + BibCoupling (d,c) Strength(d,c) + - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.6428	+ - DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	rep: 9  -> 9
+	rep: 37 23  -> 0
+	rep: 37 23  -> 1
+	rep: 22 34  -> 2
+	rep: 22 34  -> 3
+	rep: 21 18  -> 4
+	rep: 21 18  -> 5
+	rep: 26 10  -> 6
+	rep: 26 10  -> 7
+	rep: 36 28  -> 8
+	rep: 36 28  -> 10
+	rep: 48 15  -> 11
+	rep: 48 15  -> 12
+	rep: 44  -> 13
+	rep: 9 16  -> 14
+	rep: 9 16  -> 15
+	rep: 17 20  -> 16
+	rep: 17 20  -> 17
+	rep: 23 10  -> 18
+	rep: 23 10  -> 19
+	rep: 29 15  -> 20
+	rep: 29 15  -> 21
+	rep: 44 25  -> 22
+	rep: 44 25  -> 23
+	rep: 1 38  -> 24
+	rep: 1 38  -> 25
+	rep: 39 33  -> 26
+	rep: 39 33  -> 27
+	rep: 27 32  -> 28
+	rep: 27 32  -> 29
+	rep: 33  -> 30
+	rep: 21  -> 31
+	rep: 9 5  -> 32
+	rep: 9 5  -> 33
+	rep: 35 42  -> 34
+	rep: 35 42  -> 35
+	rep: 8 43  -> 36
+	rep: 8 43  -> 37
+	rep: 0  -> 38
+	rep: 5 19  -> 39
+	rep: 5 19  -> 40
+	rep: 3 6  -> 41
+	rep: 3 6  -> 42
+	rep: 49  -> 43
+	rep: 27 33  -> 44
+	rep: 27 33  -> 45
+	rep: 37 28  -> 46
+	rep: 37 28  -> 47
+	rep: 17 16  -> 48
+	rep: 17 16  -> 49
+generation 17:
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	51.8823	* + BibCoupling (d,c) Strength(d,c) + - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	45.8144	Pow Strength(d,c) % EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	37.5266	* * BibCoupling (d,c) Strength(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* - EigenVector(d,c) DiceSimilarity(d,c) % - EigenVector(d,c) DiceSimilarity(d,c) Pow EigenVector(d,c) HubScore(d,c)
+	ind: 	37.4803	* - DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.4593	+ CoCitation(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	53.9913	+ * Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	18.1759	Pow - DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	44.2327	HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	79.5486	+ EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	76.5517	* + BibCoupling (d,c) Strength(d,c) + Pow EigenVector(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	37.5266	* * BibCoupling (d,c) Strength(d,c) % - EigenVector(d,c) DiceSimilarity(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	rep: 7  -> 7
+	rep: 0 5  -> 0
+	rep: 0 5  -> 1
+	rep: 9 8  -> 2
+	rep: 9 8  -> 3
+	rep: 12 20  -> 4
+	rep: 12 20  -> 5
+	rep: 35 11  -> 6
+	rep: 35 11  -> 8
+	rep: 7 4  -> 9
+	rep: 7 4  -> 10
+	rep: 13 44  -> 11
+	rep: 13 44  -> 12
+	rep: 1 16  -> 13
+	rep: 1 16  -> 14
+	rep: 24 4  -> 15
+	rep: 24 4  -> 16
+	rep: 11 11  -> 17
+	rep: 11 11  -> 18
+	rep: 32 6  -> 19
+	rep: 32 6  -> 20
+	rep: 23 11  -> 21
+	rep: 23 11  -> 22
+	rep: 26  -> 23
+	rep: 9 39  -> 24
+	rep: 9 39  -> 25
+	rep: 8 5  -> 26
+	rep: 8 5  -> 27
+	rep: 13 11  -> 28
+	rep: 13 11  -> 29
+	rep: 37 34  -> 30
+	rep: 37 34  -> 31
+	rep: 2 30  -> 32
+	rep: 2 30  -> 33
+	rep: 42 34  -> 34
+	rep: 42 34  -> 35
+	rep: 31 17  -> 36
+	rep: 31 17  -> 37
+	rep: 40 0  -> 38
+	rep: 40 0  -> 39
+	rep: 5 6  -> 40
+	rep: 5 6  -> 41
+	rep: 27 14  -> 42
+	rep: 27 14  -> 43
+	rep: 8 4  -> 44
+	rep: 8 4  -> 45
+	rep: 5 19  -> 46
+	rep: 5 19  -> 47
+	rep: 11 12  -> 48
+	rep: 11 12  -> 49
+generation 18:
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* % DiceSimilarity(d,c) BibCoupling (d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	93.0349	* + BibCoupling (d,c) Strength(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	41.5133	* HubScore(d,c) EigenVector(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	51.8823	* + BibCoupling (d,c) Strength(d,c) + - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	48.0714	* * Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5358	* * % DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c) EigenVector(d,c)
+	ind: 	32.1524	* - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	51.6788	* - Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	24.9098	Pow EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	92.9794	* * BibCoupling (d,c) Strength(d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	37.4803	* - DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	79.5486	+ EigenVector(d,c) Neighborhood2(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	43.4835	+ % DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* * BibCoupling (d,c) Strength(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.6566	+ * BibCoupling (d,c) Strength(d,c) EigenVector(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* * BibCoupling (d,c) Strength(d,c) - EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.4803	* - DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	rep: 7  -> 7
+	rep: 24  -> 0
+	rep: 49 49  -> 1
+	rep: 49 49  -> 2
+	rep: 9 23  -> 3
+	rep: 9 23  -> 4
+	rep: 0 23  -> 5
+	rep: 0 23  -> 6
+	rep: 10 44  -> 8
+	rep: 10 44  -> 9
+	rep: 49 47  -> 10
+	rep: 49 47  -> 11
+	rep: 43  -> 12
+	rep: 35 5  -> 13
+	rep: 35 5  -> 14
+	rep: 39 48  -> 15
+	rep: 39 48  -> 16
+	rep: 33 11  -> 17
+	rep: 33 11  -> 18
+	rep: 10 16  -> 19
+	rep: 10 16  -> 20
+	rep: 30 40  -> 21
+	rep: 30 40  -> 22
+	rep: 22 8  -> 23
+	rep: 22 8  -> 24
+	rep: 27 46  -> 25
+	rep: 27 46  -> 26
+	rep: 16 28  -> 27
+	rep: 16 28  -> 28
+	rep: 10  -> 29
+	rep: 37 15  -> 30
+	rep: 37 15  -> 31
+	rep: 28 28  -> 32
+	rep: 28 28  -> 33
+	rep: 12 44  -> 34
+	rep: 12 44  -> 35
+	rep: 29 36  -> 36
+	rep: 29 36  -> 37
+	rep: 23 5  -> 38
+	rep: 23 5  -> 39
+	rep: 39  -> 40
+	rep: 17 26  -> 41
+	rep: 17 26  -> 42
+	rep: 10 29  -> 43
+	rep: 10 29  -> 44
+	rep: 8 46  -> 45
+	rep: 8 46  -> 46
+	rep: 39 9  -> 47
+	rep: 39 9  -> 48
+	rep: 8 30  -> 49
+generation 19:
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	46.3879	+ Constraint(d,c) EigenVector(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	92.0544	* * BibCoupling (d,c) Strength(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	54.2411	* * BibCoupling (d,c) Strength(d,c) EigenVector(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	+ Strength(d,c) HubScore(d,c)
+	ind: 	54.6573	* * + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	37.5266	* * BibCoupling (d,c) Strength(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	43.6407	+ * HubScore(d,c) EigenVector(d,c) EigenVector(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) * BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.4803	* - DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c)
+	ind: 	48.0714	* * Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5358	* * - DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c) EigenVector(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	43.4835	+ % DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	24.9098	Pow EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7234	* + BibCoupling (d,c) Strength(d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.5133	* HubScore(d,c) EigenVector(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	rep: 0  -> 0
+	rep: 18 5  -> 1
+	rep: 18 5  -> 2
+	rep: 24 31  -> 3
+	rep: 24 31  -> 4
+	rep: 32 13  -> 5
+	rep: 32 13  -> 6
+	rep: 1 25  -> 7
+	rep: 1 25  -> 8
+	rep: 14 3  -> 9
+	rep: 14 3  -> 10
+	rep: 21  -> 11
+	rep: 47  -> 12
+	rep: 2 1  -> 13
+	rep: 2 1  -> 14
+	rep: 0 14  -> 15
+	rep: 0 14  -> 16
+	rep: 29 19  -> 17
+	rep: 29 19  -> 18
+	rep: 29 39  -> 19
+	rep: 29 39  -> 20
+	rep: 20  -> 21
+	rep: 43 31  -> 22
+	rep: 43 31  -> 23
+	rep: 23 21  -> 24
+	rep: 23 21  -> 25
+	rep: 26  -> 26
+	rep: 6 34  -> 27
+	rep: 6 34  -> 28
+	rep: 4 13  -> 29
+	rep: 4 13  -> 30
+	rep: 28 3  -> 31
+	rep: 28 3  -> 32
+	rep: 44 47  -> 33
+	rep: 44 47  -> 34
+	rep: 46 38  -> 35
+	rep: 46 38  -> 36
+	rep: 9 38  -> 37
+	rep: 9 38  -> 38
+	rep: 29  -> 39
+	rep: 10 45  -> 40
+	rep: 10 45  -> 41
+	rep: 11 46  -> 42
+	rep: 11 46  -> 43
+	rep: 16 28  -> 44
+	rep: 16 28  -> 45
+	rep: 10 33  -> 46
+	rep: 10 33  -> 47
+	rep: 35 41  -> 48
+	rep: 35 41  -> 49
+generation 20:
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.4803	* - DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c)
+	ind: 	37.4803	* - DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c)
+	ind: 	59.8095	Log BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	46.3879	+ Constraint(d,c) EigenVector(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* * BibCoupling (d,c) Strength(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	62.0294	+ + EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	+ Strength(d,c) HubScore(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.2465	* Constraint(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	54.6573	* * + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.7234	* + BibCoupling (d,c) Strength(d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	91.6566	+ * BibCoupling (d,c) Strength(d,c) EigenVector(d,c)
+	ind: 	37.5543	* * HubScore(d,c) EigenVector(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	43.0117	* EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	46.3879	+ Constraint(d,c) EigenVector(d,c)
+	ind: 	48.0714	* * Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	43.0117	+ - EigenVector(d,c) DiceSimilarity(d,c) EigenVector(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.5133	* HubScore(d,c) EigenVector(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	49.3664	* * BibCoupling (d,c) Strength(d,c) * HubScore(d,c) EigenVector(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	47.0632	* * * Strength(d,c) HubScore(d,c) EigenVector(d,c) EigenVector(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	24.9098	Pow EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	rep: 15  -> 15
+	rep: 13 31  -> 0
+	rep: 13 31  -> 1
+	rep: 49 46  -> 2
+	rep: 49 46  -> 3
+	rep: 28 7  -> 4
+	rep: 28 7  -> 5
+	rep: 34 16  -> 6
+	rep: 34 16  -> 7
+	rep: 7 48  -> 8
+	rep: 7 48  -> 9
+	rep: 15 11  -> 10
+	rep: 15 11  -> 11
+	rep: 19 49  -> 12
+	rep: 19 49  -> 13
+	rep: 4 12  -> 14
+	rep: 4 12  -> 16
+	rep: 38 1  -> 17
+	rep: 38 1  -> 18
+	rep: 8 35  -> 19
+	rep: 8 35  -> 20
+	rep: 10 30  -> 21
+	rep: 10 30  -> 22
+	rep: 7 22  -> 23
+	rep: 7 22  -> 24
+	rep: 43  -> 25
+	rep: 17 35  -> 26
+	rep: 17 35  -> 27
+	rep: 2 46  -> 28
+	rep: 2 46  -> 29
+	rep: 39 37  -> 30
+	rep: 39 37  -> 31
+	rep: 2 1  -> 32
+	rep: 2 1  -> 33
+	rep: 43 47  -> 34
+	rep: 43 47  -> 35
+	rep: 0 14  -> 36
+	rep: 0 14  -> 37
+	rep: 47 40  -> 38
+	rep: 47 40  -> 39
+	rep: 45 13  -> 40
+	rep: 45 13  -> 41
+	rep: 42 49  -> 42
+	rep: 42 49  -> 43
+	rep: 3 35  -> 44
+	rep: 3 35  -> 45
+	rep: 23 8  -> 46
+	rep: 23 8  -> 47
+	rep: 45 1  -> 48
+	rep: 45 1  -> 49
+generation 21:
+	ind: 	46.3879	+ Constraint(d,c) EigenVector(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	59.8095	Log BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	24.9098	Pow EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	59.8095	Log BibCoupling (d,c) Strength(d,c)
+	ind: 	32.1524	* - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.2014	* * BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	51.2256	* Constraint(d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	+ - Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	85.7737	* + BibCoupling (d,c) Strength(d,c) Constraint(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	59.8095	Log BibCoupling (d,c) Strength(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	32.1524	* + BibCoupling (d,c) Strength(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	32.1524	* - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	91.3699	* * BibCoupling (d,c) Strength(d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	41.5133	* HubScore(d,c) EigenVector(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	91.3699	* + BibCoupling (d,c) Strength(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) Pow Strength(d,c) HubScore(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	rep: 15  -> 15
+	rep: 49 31  -> 0
+	rep: 49 31  -> 1
+	rep: 39 20  -> 2
+	rep: 39 20  -> 3
+	rep: 21 36  -> 4
+	rep: 21 36  -> 5
+	rep: 7 18  -> 6
+	rep: 7 18  -> 7
+	rep: 16  -> 8
+	rep: 19 28  -> 9
+	rep: 19 28  -> 10
+	rep: 11 4  -> 11
+	rep: 11 4  -> 12
+	rep: 23 43  -> 13
+	rep: 23 43  -> 14
+	rep: 27 32  -> 16
+	rep: 27 32  -> 17
+	rep: 29 22  -> 18
+	rep: 29 22  -> 19
+	rep: 16  -> 20
+	rep: 21 19  -> 21
+	rep: 21 19  -> 22
+	rep: 25 23  -> 23
+	rep: 25 23  -> 24
+	rep: 23 23  -> 25
+	rep: 23 23  -> 26
+	rep: 13 25  -> 27
+	rep: 13 25  -> 28
+	rep: 27 13  -> 29
+	rep: 27 13  -> 30
+	rep: 48 22  -> 31
+	rep: 48 22  -> 32
+	rep: 37 35  -> 33
+	rep: 37 35  -> 34
+	rep: 20 2  -> 35
+	rep: 20 2  -> 36
+	rep: 3 22  -> 37
+	rep: 3 22  -> 38
+	rep: 49 44  -> 39
+	rep: 49 44  -> 40
+	rep: 25 33  -> 41
+	rep: 25 33  -> 42
+	rep: 19 8  -> 43
+	rep: 19 8  -> 44
+	rep: 40 38  -> 45
+	rep: 40 38  -> 46
+	rep: 39 38  -> 47
+	rep: 39 38  -> 48
+	rep: 34 2  -> 49
+generation 22:
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	32.1524	* - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	+ - Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	88.8632	* Log BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	41.5133	* HubScore(d,c) EigenVector(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	89.8067	+ Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	+ - Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* - DiceSimilarity(d,c) BibCoupling (d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	24.9098	Pow EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	43.0117	+ EigenVector(d,c) Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	60.8824	DiceSimilarity(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	rep: 15  -> 15
+	rep: 28 10  -> 0
+	rep: 28 10  -> 1
+	rep: 32 39  -> 2
+	rep: 32 39  -> 3
+	rep: 46 35  -> 4
+	rep: 46 35  -> 5
+	rep: 34 32  -> 6
+	rep: 34 32  -> 7
+	rep: 18 37  -> 8
+	rep: 18 37  -> 9
+	rep: 12 46  -> 10
+	rep: 12 46  -> 11
+	rep: 29  -> 12
+	rep: 8 32  -> 13
+	rep: 8 32  -> 14
+	rep: 6 30  -> 16
+	rep: 6 30  -> 17
+	rep: 24 33  -> 18
+	rep: 24 33  -> 19
+	rep: 7  -> 20
+	rep: 47 45  -> 21
+	rep: 47 45  -> 22
+	rep: 6 30  -> 23
+	rep: 6 30  -> 24
+	rep: 20 27  -> 25
+	rep: 20 27  -> 26
+	rep: 23 39  -> 27
+	rep: 23 39  -> 28
+	rep: 15 16  -> 29
+	rep: 15 16  -> 30
+	rep: 16  -> 31
+	rep: 28 5  -> 32
+	rep: 28 5  -> 33
+	rep: 0 22  -> 34
+	rep: 0 22  -> 35
+	rep: 1 45  -> 36
+	rep: 1 45  -> 37
+	rep: 34 22  -> 38
+	rep: 34 22  -> 39
+	rep: 24 44  -> 40
+	rep: 24 44  -> 41
+	rep: 3  -> 42
+	rep: 40 16  -> 43
+	rep: 40 16  -> 44
+	rep: 24 14  -> 45
+	rep: 24 14  -> 46
+	rep: 16 2  -> 47
+	rep: 16 2  -> 48
+	rep: 39 43  -> 49
+generation 23:
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	37.5266	* - DiceSimilarity(d,c) BibCoupling (d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	55.1938	% Strength(d,c) HubScore(d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	89.8067	+ - Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	43.0117	+ EigenVector(d,c) Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	55.1938	% Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ - Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.2465	* Constraint(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	61.5114	+ EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) Constraint(d,c)
+	ind: 	24.9098	Pow EigenVector(d,c) DiceSimilarity(d,c)
+	rep: 15  -> 15
+	rep: 11 41  -> 0
+	rep: 11 41  -> 1
+	rep: 21 4  -> 2
+	rep: 21 4  -> 3
+	rep: 16 45  -> 4
+	rep: 16 45  -> 5
+	rep: 34 0  -> 6
+	rep: 34 0  -> 7
+	rep: 42 4  -> 8
+	rep: 42 4  -> 9
+	rep: 20 39  -> 10
+	rep: 20 39  -> 11
+	rep: 29 12  -> 12
+	rep: 29 12  -> 13
+	rep: 43 9  -> 14
+	rep: 43 9  -> 16
+	rep: 21 49  -> 17
+	rep: 21 49  -> 18
+	rep: 28 43  -> 19
+	rep: 28 43  -> 20
+	rep: 19 2  -> 21
+	rep: 19 2  -> 22
+	rep: 13  -> 23
+	rep: 46 5  -> 24
+	rep: 46 5  -> 25
+	rep: 26 22  -> 26
+	rep: 26 22  -> 27
+	rep: 1 46  -> 28
+	rep: 1 46  -> 29
+	rep: 44 13  -> 30
+	rep: 44 13  -> 31
+	rep: 13 40  -> 32
+	rep: 13 40  -> 33
+	rep: 16 10  -> 34
+	rep: 16 10  -> 35
+	rep: 47 47  -> 36
+	rep: 47 47  -> 37
+	rep: 35 2  -> 38
+	rep: 35 2  -> 39
+	rep: 27 49  -> 40
+	rep: 27 49  -> 41
+	rep: 3 6  -> 42
+	rep: 3 6  -> 43
+	rep: 21 2  -> 44
+	rep: 21 2  -> 45
+	rep: 44  -> 46
+	rep: 29 38  -> 47
+	rep: 29 38  -> 48
+	rep: 12 8  -> 49
+generation 24:
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* - DiceSimilarity(d,c) BibCoupling (d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6489	* - DiceSimilarity(d,c) BibCoupling (d,c) + EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	90.2969	+ - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	55.1938	% Strength(d,c) HubScore(d,c)
+	ind: 	51.8176	* Constraint(d,c) * Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	24.9098	Pow EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	43.0117	+ Log DiceSimilarity(d,c) BibCoupling (d,c) EigenVector(d,c)
+	ind: 	89.8067	+ EigenVector(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	44.2327	HubScore(d,c)
+	ind: 	24.9098	Pow EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	60.8824	JaccardSimilarity(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.2465	* Constraint(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	rep: 15  -> 15
+	rep: 37 16  -> 0
+	rep: 37 16  -> 1
+	rep: 27 24  -> 2
+	rep: 27 24  -> 3
+	rep: 37 47  -> 4
+	rep: 37 47  -> 5
+	rep: 37 16  -> 6
+	rep: 37 16  -> 7
+	rep: 35 5  -> 8
+	rep: 35 5  -> 9
+	rep: 31 19  -> 10
+	rep: 31 19  -> 11
+	rep: 8  -> 12
+	rep: 43 7  -> 13
+	rep: 43 7  -> 14
+	rep: 29 26  -> 16
+	rep: 29 26  -> 17
+	rep: 22 44  -> 18
+	rep: 22 44  -> 19
+	rep: 5 44  -> 20
+	rep: 5 44  -> 21
+	rep: 36 22  -> 22
+	rep: 36 22  -> 23
+	rep: 15 16  -> 24
+	rep: 15 16  -> 25
+	rep: 39 20  -> 26
+	rep: 39 20  -> 27
+	rep: 16 44  -> 28
+	rep: 16 44  -> 29
+	rep: 37  -> 30
+	rep: 1  -> 31
+	rep: 31 12  -> 32
+	rep: 31 12  -> 33
+	rep: 10 32  -> 34
+	rep: 10 32  -> 35
+	rep: 10  -> 36
+	rep: 35 13  -> 37
+	rep: 35 13  -> 38
+	rep: 41 45  -> 39
+	rep: 41 45  -> 40
+	rep: 28 6  -> 41
+	rep: 28 6  -> 42
+	rep: 15 15  -> 43
+	rep: 15 15  -> 44
+	rep: 33 9  -> 45
+	rep: 33 9  -> 46
+	rep: 45 44  -> 47
+	rep: 45 44  -> 48
+	rep: 46 7  -> 49
+generation 25:
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.4778	+ EigenVector(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ - Strength(d,c) HubScore(d,c) EigenVector(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.2465	* - Strength(d,c) HubScore(d,c) Constraint(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	43.0117	% EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	44.2327	HubScore(d,c)
+	ind: 	85.8015	+ DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	79.5486	Neighborhood2(d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	51.8176	* Constraint(d,c) * Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	37.4803	* - DiceSimilarity(d,c) BibCoupling (d,c) Pow EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	rep: 43  -> 43
+	rep: 42 42  -> 0
+	rep: 42 42  -> 1
+	rep: 30 46  -> 2
+	rep: 30 46  -> 3
+	rep: 9 23  -> 4
+	rep: 9 23  -> 5
+	rep: 27 14  -> 6
+	rep: 27 14  -> 7
+	rep: 14 16  -> 8
+	rep: 14 16  -> 9
+	rep: 31 22  -> 10
+	rep: 31 22  -> 11
+	rep: 12 39  -> 12
+	rep: 12 39  -> 13
+	rep: 0  -> 14
+	rep: 3 47  -> 15
+	rep: 3 47  -> 16
+	rep: 15 23  -> 17
+	rep: 15 23  -> 18
+	rep: 33 36  -> 19
+	rep: 33 36  -> 20
+	rep: 40 34  -> 21
+	rep: 40 34  -> 22
+	rep: 1 7  -> 23
+	rep: 1 7  -> 24
+	rep: 32 41  -> 25
+	rep: 32 41  -> 26
+	rep: 43 37  -> 27
+	rep: 43 37  -> 28
+	rep: 25  -> 29
+	rep: 24 35  -> 30
+	rep: 24 35  -> 31
+	rep: 21 40  -> 32
+	rep: 21 40  -> 33
+	rep: 39 47  -> 34
+	rep: 39 47  -> 35
+	rep: 7 45  -> 36
+	rep: 7 45  -> 37
+	rep: 19 49  -> 38
+	rep: 19 49  -> 39
+	rep: 43 36  -> 40
+	rep: 43 36  -> 41
+	rep: 11 19  -> 42
+	rep: 11 19  -> 44
+	rep: 31 21  -> 45
+	rep: 31 21  -> 46
+	rep: 8 44  -> 47
+	rep: 8 44  -> 48
+	rep: 30 20  -> 49
+generation 26:
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	79.5486	Neighborhood2(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	44.2327	HubScore(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* * DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	57.6635	* - Strength(d,c) HubScore(d,c) * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.2465	* Constraint(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	67.6996	* Neighborhood2(d,c) Constraint(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	73.1847	* Strength(d,c) Closeness(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.4803	* - DiceSimilarity(d,c) BibCoupling (d,c) Pow EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	55.8783	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	rep: 43  -> 43
+	rep: 11 32  -> 0
+	rep: 11 32  -> 1
+	rep: 13 19  -> 2
+	rep: 13 19  -> 3
+	rep: 23 24  -> 4
+	rep: 23 24  -> 5
+	rep: 11 29  -> 6
+	rep: 11 29  -> 7
+	rep: 31  -> 8
+	rep: 43 27  -> 9
+	rep: 43 27  -> 10
+	rep: 38 21  -> 11
+	rep: 38 21  -> 12
+	rep: 39 2  -> 13
+	rep: 39 2  -> 14
+	rep: 18 29  -> 15
+	rep: 18 29  -> 16
+	rep: 29 2  -> 17
+	rep: 29 2  -> 18
+	rep: 33 25  -> 19
+	rep: 33 25  -> 20
+	rep: 29 49  -> 21
+	rep: 29 49  -> 22
+	rep: 2 35  -> 23
+	rep: 2 35  -> 24
+	rep: 34 49  -> 25
+	rep: 34 49  -> 26
+	rep: 48 35  -> 27
+	rep: 48 35  -> 28
+	rep: 46 5  -> 29
+	rep: 46 5  -> 30
+	rep: 39 35  -> 31
+	rep: 39 35  -> 32
+	rep: 18 0  -> 33
+	rep: 18 0  -> 34
+	rep: 9 34  -> 35
+	rep: 9 34  -> 36
+	rep: 8 25  -> 37
+	rep: 8 25  -> 38
+	rep: 10  -> 39
+	rep: 46 39  -> 40
+	rep: 46 39  -> 41
+	rep: 17 40  -> 42
+	rep: 17 40  -> 44
+	rep: 28 14  -> 45
+	rep: 28 14  -> 46
+	rep: 12 25  -> 47
+	rep: 12 25  -> 48
+	rep: 8 32  -> 49
+generation 27:
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	57.6635	* - Strength(d,c) HubScore(d,c) * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- EigenVector(d,c) DiceSimilarity(d,c)
+	ind: 	79.5486	Neighborhood2(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	79.5486	Neighborhood2(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	73.1847	* Strength(d,c) Closeness(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	79.5486	Neighborhood2(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ Strength(d,c) Closeness(d,c)
+	ind: 	89.8067	Strength(d,c)
+	ind: 	91.6381	+ * BibCoupling (d,c) Strength(d,c) Closeness(d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	60.8824	DiceSimilarity(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	41.9203	Constraint(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	36.4259	Pow Constraint(d,c) Constraint(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	rep: 10  -> 10
+	rep: 22 14  -> 0
+	rep: 22 14  -> 1
+	rep: 32  -> 2
+	rep: 46 5  -> 3
+	rep: 46 5  -> 4
+	rep: 7 30  -> 5
+	rep: 7 30  -> 6
+	rep: 8 40  -> 7
+	rep: 8 40  -> 8
+	rep: 13 11  -> 9
+	rep: 13 11  -> 11
+	rep: 20 19  -> 12
+	rep: 20 19  -> 13
+	rep: 26 47  -> 14
+	rep: 26 47  -> 15
+	rep: 42 16  -> 16
+	rep: 42 16  -> 17
+	rep: 49  -> 18
+	rep: 29  -> 19
+	rep: 49 33  -> 20
+	rep: 49 33  -> 21
+	rep: 1 2  -> 22
+	rep: 1 2  -> 23
+	rep: 42 38  -> 24
+	rep: 42 38  -> 25
+	rep: 10 9  -> 26
+	rep: 10 9  -> 27
+	rep: 18 3  -> 28
+	rep: 18 3  -> 29
+	rep: 10 48  -> 30
+	rep: 10 48  -> 31
+	rep: 35 11  -> 32
+	rep: 35 11  -> 33
+	rep: 33 45  -> 34
+	rep: 33 45  -> 35
+	rep: 10 29  -> 36
+	rep: 10 29  -> 37
+	rep: 10  -> 38
+	rep: 40 27  -> 39
+	rep: 40 27  -> 40
+	rep: 40 37  -> 41
+	rep: 40 37  -> 42
+	rep: 20 11  -> 43
+	rep: 20 11  -> 44
+	rep: 41 39  -> 45
+	rep: 41 39  -> 46
+	rep: 9 37  -> 47
+	rep: 9 37  -> 48
+	rep: 28 48  -> 49
+generation 28:
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	60.8824	DiceSimilarity(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	+ * BibCoupling (d,c) Strength(d,c) Closeness(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	79.5486	Neighborhood2(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	73.1847	* Strength(d,c) Closeness(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	Strength(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	56.0078	* * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* - Strength(d,c) HubScore(d,c) * Log DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	36.4259	Pow Constraint(d,c) Constraint(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	73.1847	* Strength(d,c) Closeness(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	70.7243	* - Strength(d,c) HubScore(d,c) % DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	56.0078	* * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	rep: 27  -> 27
+	rep: 27  -> 0
+	rep: 46 32  -> 1
+	rep: 46 32  -> 2
+	rep: 23  -> 3
+	rep: 25 37  -> 4
+	rep: 25 37  -> 5
+	rep: 36 16  -> 6
+	rep: 36 16  -> 7
+	rep: 23 4  -> 8
+	rep: 23 4  -> 9
+	rep: 18 33  -> 10
+	rep: 18 33  -> 11
+	rep: 34 12  -> 12
+	rep: 34 12  -> 13
+	rep: 34 0  -> 14
+	rep: 34 0  -> 15
+	rep: 22 32  -> 16
+	rep: 22 32  -> 17
+	rep: 26 8  -> 18
+	rep: 26 8  -> 19
+	rep: 29 48  -> 20
+	rep: 29 48  -> 21
+	rep: 44 41  -> 22
+	rep: 44 41  -> 23
+	rep: 20 32  -> 24
+	rep: 20 32  -> 25
+	rep: 10 10  -> 26
+	rep: 10 10  -> 28
+	rep: 23  -> 29
+	rep: 38 24  -> 30
+	rep: 38 24  -> 31
+	rep: 4 15  -> 32
+	rep: 4 15  -> 33
+	rep: 35 12  -> 34
+	rep: 35 12  -> 35
+	rep: 40 12  -> 36
+	rep: 40 12  -> 37
+	rep: 21 33  -> 38
+	rep: 21 33  -> 39
+	rep: 31 3  -> 40
+	rep: 31 3  -> 41
+	rep: 31 30  -> 42
+	rep: 31 30  -> 43
+	rep: 38 28  -> 44
+	rep: 38 28  -> 45
+	rep: 45 2  -> 46
+	rep: 45 2  -> 47
+	rep: 23 18  -> 48
+	rep: 23 18  -> 49
+generation 29:
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5543	Log Constraint(d,c) Constraint(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	36.4259	Pow Constraint(d,c) Constraint(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	56.0078	* * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	57.571	* * Strength(d,c) HubScore(d,c) % Strength(d,c) HubScore(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	73.1847	* Strength(d,c) Closeness(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	95.5138	* * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* - Strength(d,c) HubScore(d,c) * Log DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.2014	* - Strength(d,c) HubScore(d,c) * * DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	38.1093	Closeness(d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	rep: 0  -> 0
+	rep: 9 12  -> 1
+	rep: 9 12  -> 2
+	rep: 7 47  -> 3
+	rep: 7 47  -> 4
+	rep: 8 43  -> 5
+	rep: 8 43  -> 6
+	rep: 6  -> 7
+	rep: 15 38  -> 8
+	rep: 15 38  -> 9
+	rep: 33 19  -> 10
+	rep: 33 19  -> 11
+	rep: 20 11  -> 12
+	rep: 20 11  -> 13
+	rep: 44 38  -> 14
+	rep: 44 38  -> 15
+	rep: 7 6  -> 16
+	rep: 7 6  -> 17
+	rep: 35 34  -> 18
+	rep: 35 34  -> 19
+	rep: 9 16  -> 20
+	rep: 9 16  -> 21
+	rep: 37 37  -> 22
+	rep: 37 37  -> 23
+	rep: 19 34  -> 24
+	rep: 19 34  -> 25
+	rep: 20 18  -> 26
+	rep: 20 18  -> 27
+	rep: 31 4  -> 28
+	rep: 31 4  -> 29
+	rep: 12 34  -> 30
+	rep: 12 34  -> 31
+	rep: 9 13  -> 32
+	rep: 9 13  -> 33
+	rep: 26 37  -> 34
+	rep: 26 37  -> 35
+	rep: 19 35  -> 36
+	rep: 19 35  -> 37
+	rep: 10 1  -> 38
+	rep: 10 1  -> 39
+	rep: 48 18  -> 40
+	rep: 48 18  -> 41
+	rep: 25 48  -> 42
+	rep: 25 48  -> 43
+	rep: 19 12  -> 44
+	rep: 19 12  -> 45
+	rep: 29 14  -> 46
+	rep: 29 14  -> 47
+	rep: 20 11  -> 48
+	rep: 20 11  -> 49
+generation 30:
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	90.8797	* - Strength(d,c) HubScore(d,c) * % DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	36.4259	Pow Constraint(d,c) Constraint(d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ Strength(d,c) HubScore(d,c)
+	ind: 	29.7845	* - Strength(d,c) HubScore(d,c) * - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.8859	* BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5821	* * Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5543	Log Constraint(d,c) Constraint(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	93.2014	* * DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	56.0078	* * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.8015	+ DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	56.0078	* * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	rep: 0  -> 0
+	rep: 29  -> 1
+	rep: 16 14  -> 2
+	rep: 16 14  -> 3
+	rep: 33 8  -> 4
+	rep: 33 8  -> 5
+	rep: 35 9  -> 6
+	rep: 35 9  -> 7
+	rep: 39 8  -> 8
+	rep: 39 8  -> 9
+	rep: 13 1  -> 10
+	rep: 13 1  -> 11
+	rep: 8 8  -> 12
+	rep: 8 8  -> 13
+	rep: 44 30  -> 14
+	rep: 44 30  -> 15
+	rep: 7 36  -> 16
+	rep: 7 36  -> 17
+	rep: 34 31  -> 18
+	rep: 34 31  -> 19
+	rep: 47 44  -> 20
+	rep: 47 44  -> 21
+	rep: 4 41  -> 22
+	rep: 4 41  -> 23
+	rep: 2 8  -> 24
+	rep: 2 8  -> 25
+	rep: 13 4  -> 26
+	rep: 13 4  -> 27
+	rep: 35 7  -> 28
+	rep: 35 7  -> 29
+	rep: 21 7  -> 30
+	rep: 21 7  -> 31
+	rep: 35 16  -> 32
+	rep: 35 16  -> 33
+	rep: 12  -> 34
+	rep: 11  -> 35
+	rep: 4 48  -> 36
+	rep: 4 48  -> 37
+	rep: 22 44  -> 38
+	rep: 22 44  -> 39
+	rep: 32 48  -> 40
+	rep: 32 48  -> 41
+	rep: 17 48  -> 42
+	rep: 17 48  -> 43
+	rep: 48 8  -> 44
+	rep: 48 8  -> 45
+	rep: 21 15  -> 46
+	rep: 21 15  -> 47
+	rep: 27  -> 48
+	rep: 34  -> 49
+generation 31:
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.7486	* Constraint(d,c) Constraint(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* * DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	+ Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5543	Log Constraint(d,c) Constraint(d,c)
+	ind: 	37.5266	* BibCoupling (d,c) * Log DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	60.8824	DiceSimilarity(d,c)
+	ind: 	37.5266	- Log DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.2014	* * DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	rep: 0  -> 0
+	rep: 10  -> 1
+	rep: 32 49  -> 2
+	rep: 32 49  -> 3
+	rep: 16  -> 4
+	rep: 26 34  -> 5
+	rep: 26 34  -> 6
+	rep: 16 45  -> 7
+	rep: 16 45  -> 8
+	rep: 9 24  -> 9
+	rep: 9 24  -> 10
+	rep: 3 10  -> 11
+	rep: 3 10  -> 12
+	rep: 46 42  -> 13
+	rep: 46 42  -> 14
+	rep: 30 48  -> 15
+	rep: 30 48  -> 16
+	rep: 1 25  -> 17
+	rep: 1 25  -> 18
+	rep: 23  -> 19
+	rep: 45 45  -> 20
+	rep: 45 45  -> 21
+	rep: 39 13  -> 22
+	rep: 39 13  -> 23
+	rep: 27  -> 24
+	rep: 25 38  -> 25
+	rep: 25 38  -> 26
+	rep: 19 29  -> 27
+	rep: 19 29  -> 28
+	rep: 3 15  -> 29
+	rep: 3 15  -> 30
+	rep: 47 2  -> 31
+	rep: 47 2  -> 32
+	rep: 34 4  -> 33
+	rep: 34 4  -> 34
+	rep: 34  -> 35
+	rep: 39 40  -> 36
+	rep: 39 40  -> 37
+	rep: 25 14  -> 38
+	rep: 25 14  -> 39
+	rep: 49 23  -> 40
+	rep: 49 23  -> 41
+	rep: 2 9  -> 42
+	rep: 2 9  -> 43
+	rep: 0 3  -> 44
+	rep: 0 3  -> 45
+	rep: 26 11  -> 46
+	rep: 26 11  -> 47
+	rep: 32 35  -> 48
+	rep: 32 35  -> 49
+generation 32:
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.8859	* - Strength(d,c) HubScore(d,c) * * DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	18.1759	- Pow DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	29.7845	* - DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* BibCoupling (d,c) * Log DiceSimilarity(d,c) BibCoupling (d,c) - * DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	18.1759	- Pow Log DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	32.1524	* - DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	93.2014	* * DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	rep: 0  -> 0
+	rep: 44 23  -> 1
+	rep: 44 23  -> 2
+	rep: 27 40  -> 3
+	rep: 27 40  -> 4
+	rep: 41  -> 5
+	rep: 15  -> 6
+	rep: 27 37  -> 7
+	rep: 27 37  -> 8
+	rep: 26 43  -> 9
+	rep: 26 43  -> 10
+	rep: 19 46  -> 11
+	rep: 19 46  -> 12
+	rep: 30 6  -> 13
+	rep: 30 6  -> 14
+	rep: 5 5  -> 15
+	rep: 5 5  -> 16
+	rep: 15 5  -> 17
+	rep: 15 5  -> 18
+	rep: 35 35  -> 19
+	rep: 35 35  -> 20
+	rep: 31 21  -> 21
+	rep: 31 21  -> 22
+	rep: 44 43  -> 23
+	rep: 44 43  -> 24
+	rep: 19 19  -> 25
+	rep: 19 19  -> 26
+	rep: 15 14  -> 27
+	rep: 15 14  -> 28
+	rep: 16 42  -> 29
+	rep: 16 42  -> 30
+	rep: 45 22  -> 31
+	rep: 45 22  -> 32
+	rep: 1 42  -> 33
+	rep: 1 42  -> 34
+	rep: 5 42  -> 35
+	rep: 5 42  -> 36
+	rep: 16 3  -> 37
+	rep: 16 3  -> 38
+	rep: 0 12  -> 39
+	rep: 0 12  -> 40
+	rep: 16 26  -> 41
+	rep: 16 26  -> 42
+	rep: 47 11  -> 43
+	rep: 47 11  -> 44
+	rep: 40 10  -> 45
+	rep: 40 10  -> 46
+	rep: 48 4  -> 47
+	rep: 48 4  -> 48
+	rep: 8 42  -> 49
+generation 33:
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* - Strength(d,c) HubScore(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	56.0078	* - Strength(d,c) HubScore(d,c) * Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.2014	* * DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* - Strength(d,c) HubScore(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	44.2327	HubScore(d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* BibCoupling (d,c) Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	18.1759	- Pow Log DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	32.1524	* - DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	28.4433	* - DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	44.2327	- Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	44.2327	HubScore(d,c)
+	ind: 	43.8905	- * DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* BibCoupling (d,c) * Log DiceSimilarity(d,c) BibCoupling (d,c) * BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	29.7845	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	29.7845	* - DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	* Pow DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	rep: 0  -> 0
+	rep: 18  -> 1
+	rep: 4 42  -> 2
+	rep: 4 42  -> 3
+	rep: 32  -> 4
+	rep: 48 23  -> 5
+	rep: 48 23  -> 6
+	rep: 13 5  -> 7
+	rep: 13 5  -> 8
+	rep: 1 41  -> 9
+	rep: 1 41  -> 10
+	rep: 30 4  -> 11
+	rep: 30 4  -> 12
+	rep: 24 34  -> 13
+	rep: 24 34  -> 14
+	rep: 32 46  -> 15
+	rep: 32 46  -> 16
+	rep: 39 17  -> 17
+	rep: 39 17  -> 18
+	rep: 4 33  -> 19
+	rep: 4 33  -> 20
+	rep: 20 34  -> 21
+	rep: 20 34  -> 22
+	rep: 37 45  -> 23
+	rep: 37 45  -> 24
+	rep: 18 21  -> 25
+	rep: 18 21  -> 26
+	rep: 41 28  -> 27
+	rep: 41 28  -> 28
+	rep: 7 33  -> 29
+	rep: 7 33  -> 30
+	rep: 40 2  -> 31
+	rep: 40 2  -> 32
+	rep: 12 49  -> 33
+	rep: 12 49  -> 34
+	rep: 14 22  -> 35
+	rep: 14 22  -> 36
+	rep: 49 45  -> 37
+	rep: 49 45  -> 38
+	rep: 38  -> 39
+	rep: 29 49  -> 40
+	rep: 29 49  -> 41
+	rep: 27 33  -> 42
+	rep: 27 33  -> 43
+	rep: 47 43  -> 44
+	rep: 47 43  -> 45
+	rep: 17 21  -> 46
+	rep: 17 21  -> 47
+	rep: 13 34  -> 48
+	rep: 13 34  -> 49
+generation 34:
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	48.0252	Pow Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	29.7845	* - DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	93.2014	* * DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.4552	* BibCoupling (d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	90.2969	+ - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* BibCoupling (d,c) Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	70.826	- Pow - Strength(d,c) HubScore(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	% BibCoupling (d,c) * Log DiceSimilarity(d,c) BibCoupling (d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* - DiceSimilarity(d,c) BibCoupling (d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	95.5138	* * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.8015	+ DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- - DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* Pow DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	32.1524	* - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	18.1759	Pow Log DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	37.5266	- * BibCoupling (d,c) Log DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	rep: 0  -> 0
+	rep: 47 38  -> 1
+	rep: 47 38  -> 2
+	rep: 31 28  -> 3
+	rep: 31 28  -> 4
+	rep: 29 33  -> 5
+	rep: 29 33  -> 6
+	rep: 43 38  -> 7
+	rep: 43 38  -> 8
+	rep: 44 15  -> 9
+	rep: 44 15  -> 10
+	rep: 10 10  -> 11
+	rep: 10 10  -> 12
+	rep: 10 2  -> 13
+	rep: 10 2  -> 14
+	rep: 7 13  -> 15
+	rep: 7 13  -> 16
+	rep: 26 19  -> 17
+	rep: 26 19  -> 18
+	rep: 26 25  -> 19
+	rep: 26 25  -> 20
+	rep: 49 11  -> 21
+	rep: 49 11  -> 22
+	rep: 34 47  -> 23
+	rep: 34 47  -> 24
+	rep: 19 23  -> 25
+	rep: 19 23  -> 26
+	rep: 42 23  -> 27
+	rep: 42 23  -> 28
+	rep: 38 19  -> 29
+	rep: 38 19  -> 30
+	rep: 31 38  -> 31
+	rep: 31 38  -> 32
+	rep: 8 40  -> 33
+	rep: 8 40  -> 34
+	rep: 31 24  -> 35
+	rep: 31 24  -> 36
+	rep: 8 17  -> 37
+	rep: 8 17  -> 38
+	rep: 16 26  -> 39
+	rep: 16 26  -> 40
+	rep: 36 44  -> 41
+	rep: 36 44  -> 42
+	rep: 7 19  -> 43
+	rep: 7 19  -> 44
+	rep: 9 22  -> 45
+	rep: 9 22  -> 46
+	rep: 12 35  -> 47
+	rep: 12 35  -> 48
+	rep: 36  -> 49
+generation 35:
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- - DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	37.5266	* BibCoupling (d,c) Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	31.0055	% BibCoupling (d,c) * * * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	* - DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	56.0078	* Pow DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) * Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	90.5467	+ + - Strength(d,c) HubScore(d,c) Strength(d,c) Strength(d,c)
+	ind: 	90.2969	+ - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	29.7845	* - Strength(d,c) HubScore(d,c) * - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- - DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	70.826	Pow - Strength(d,c) HubScore(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- + Log DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Pow Strength(d,c) Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	- * BibCoupling (d,c) - Strength(d,c) HubScore(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	- - DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	28.4433	* * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* * DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	95.5138	* * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* BibCoupling (d,c) Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.7584	* * DiceSimilarity(d,c) BibCoupling (d,c) + - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	70.826	- Pow - Strength(d,c) HubScore(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	93.6546	* Pow DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	94.2651	* + DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* BibCoupling (d,c) Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) Strength(d,c)
+	rep: 0  -> 0
+	rep: 12 31  -> 1
+	rep: 12 31  -> 2
+	rep: 1 17  -> 3
+	rep: 1 17  -> 4
+	rep: 27 6  -> 5
+	rep: 27 6  -> 6
+	rep: 21  -> 7
+	rep: 35 47  -> 8
+	rep: 35 47  -> 9
+	rep: 22 37  -> 10
+	rep: 22 37  -> 11
+	rep: 32 25  -> 12
+	rep: 32 25  -> 13
+	rep: 0 29  -> 14
+	rep: 0 29  -> 15
+	rep: 11 19  -> 16
+	rep: 11 19  -> 17
+	rep: 38 11  -> 18
+	rep: 38 11  -> 19
+	rep: 36 28  -> 20
+	rep: 36 28  -> 21
+	rep: 48 37  -> 22
+	rep: 48 37  -> 23
+	rep: 23 26  -> 24
+	rep: 23 26  -> 25
+	rep: 42 13  -> 26
+	rep: 42 13  -> 27
+	rep: 20 39  -> 28
+	rep: 20 39  -> 29
+	rep: 41 30  -> 30
+	rep: 41 30  -> 31
+	rep: 21  -> 32
+	rep: 23 4  -> 33
+	rep: 23 4  -> 34
+	rep: 32  -> 35
+	rep: 40  -> 36
+	rep: 33 5  -> 37
+	rep: 33 5  -> 38
+	rep: 5 1  -> 39
+	rep: 5 1  -> 40
+	rep: 24 45  -> 41
+	rep: 24 45  -> 42
+	rep: 38 16  -> 43
+	rep: 38 16  -> 44
+	rep: 24 45  -> 45
+	rep: 24 45  -> 46
+	rep: 48 4  -> 47
+	rep: 48 4  -> 48
+	rep: 16 27  -> 49
+generation 36:
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	90.5467	+ + - Strength(d,c) HubScore(d,c) Strength(d,c) Strength(d,c)
+	ind: 	28.4433	* * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- - - DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.2014	* BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ Strength(d,c) HubScore(d,c)
+	ind: 	28.4433	* - DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.45	+ Log DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	80.1776	- - Strength(d,c) HubScore(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.7584	* * DiceSimilarity(d,c) BibCoupling (d,c) + - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - - DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* BibCoupling (d,c) Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Pow Strength(d,c) Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	94.9496	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.7234	+ + DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	70.826	- Pow - Strength(d,c) HubScore(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	32.1524	* - DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	56.1465	Pow Strength(d,c) * * % Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	% BibCoupling (d,c) * Log DiceSimilarity(d,c) BibCoupling (d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	* - DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* - DiceSimilarity(d,c) BibCoupling (d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	* - DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- - DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	92.0636	* BibCoupling (d,c) - * BibCoupling (d,c) - Strength(d,c) HubScore(d,c) BibCoupling (d,c)
+	ind: 	91.7584	* * DiceSimilarity(d,c) BibCoupling (d,c) + - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	92.0636	* BibCoupling (d,c) - * BibCoupling (d,c) - Strength(d,c) HubScore(d,c) BibCoupling (d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	31.0887	% BibCoupling (d,c) * * * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	rep: 0  -> 0
+	rep: 1 47  -> 1
+	rep: 1 47  -> 2
+	rep: 19 38  -> 3
+	rep: 19 38  -> 4
+	rep: 33 37  -> 5
+	rep: 33 37  -> 6
+	rep: 47 25  -> 7
+	rep: 47 25  -> 8
+	rep: 47 3  -> 9
+	rep: 47 3  -> 10
+	rep: 41 37  -> 11
+	rep: 41 37  -> 12
+	rep: 15 48  -> 13
+	rep: 15 48  -> 14
+	rep: 42 34  -> 15
+	rep: 42 34  -> 16
+	rep: 30 14  -> 17
+	rep: 30 14  -> 18
+	rep: 7 35  -> 19
+	rep: 7 35  -> 20
+	rep: 29 24  -> 21
+	rep: 29 24  -> 22
+	rep: 36 48  -> 23
+	rep: 36 48  -> 24
+	rep: 18 6  -> 25
+	rep: 18 6  -> 26
+	rep: 4 48  -> 27
+	rep: 4 48  -> 28
+	rep: 29 27  -> 29
+	rep: 29 27  -> 30
+	rep: 31 4  -> 31
+	rep: 31 4  -> 32
+	rep: 15 4  -> 33
+	rep: 15 4  -> 34
+	rep: 21  -> 35
+	rep: 44 5  -> 36
+	rep: 44 5  -> 37
+	rep: 29 24  -> 38
+	rep: 29 24  -> 39
+	rep: 31 4  -> 40
+	rep: 31 4  -> 41
+	rep: 35 3  -> 42
+	rep: 35 3  -> 43
+	rep: 32 9  -> 44
+	rep: 32 9  -> 45
+	rep: 43 6  -> 46
+	rep: 43 6  -> 47
+	rep: 0  -> 48
+	rep: 26 19  -> 49
+generation 37:
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	90.4912	+ + + BibCoupling (d,c) Strength(d,c) Strength(d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* * DiceSimilarity(d,c) BibCoupling (d,c) + - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* - Strength(d,c) HubScore(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	27.361	Pow Strength(d,c) * * - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.4063	* % Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	55.6378	Pow Strength(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	+ - - - DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	85.45	BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6951	% BibCoupling (d,c) * * * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* BibCoupling (d,c) - * BibCoupling (d,c) * Log DiceSimilarity(d,c) BibCoupling (d,c) + BibCoupling (d,c) Strength(d,c) BibCoupling (d,c)
+	ind: 	51.9286	% BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	29.7845	* - DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) * - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	31.0887	% BibCoupling (d,c) * * * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	31.0887	% BibCoupling (d,c) * * * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7234	+ + DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6489	- - DiceSimilarity(d,c) BibCoupling (d,c) HubScore(d,c)
+	ind: 	89.8067	Strength(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- - DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	80.1776	- - Strength(d,c) HubScore(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.3699	* * DiceSimilarity(d,c) BibCoupling (d,c) + * DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	rep: 0  -> 0
+	rep: 44 28  -> 1
+	rep: 44 28  -> 2
+	rep: 35 1  -> 3
+	rep: 35 1  -> 4
+	rep: 41 15  -> 5
+	rep: 41 15  -> 6
+	rep: 2 36  -> 7
+	rep: 2 36  -> 8
+	rep: 3 5  -> 9
+	rep: 3 5  -> 10
+	rep: 32 14  -> 11
+	rep: 32 14  -> 12
+	rep: 39 8  -> 13
+	rep: 39 8  -> 14
+	rep: 48  -> 15
+	rep: 2  -> 16
+	rep: 4  -> 17
+	rep: 8 18  -> 18
+	rep: 8 18  -> 19
+	rep: 34 38  -> 20
+	rep: 34 38  -> 21
+	rep: 1 22  -> 22
+	rep: 1 22  -> 23
+	rep: 25 21  -> 24
+	rep: 25 21  -> 25
+	rep: 12 14  -> 26
+	rep: 12 14  -> 27
+	rep: 25 16  -> 28
+	rep: 25 16  -> 29
+	rep: 9  -> 30
+	rep: 2 11  -> 31
+	rep: 2 11  -> 32
+	rep: 49 31  -> 33
+	rep: 49 31  -> 34
+	rep: 24 15  -> 35
+	rep: 24 15  -> 36
+	rep: 41 16  -> 37
+	rep: 41 16  -> 38
+	rep: 0 41  -> 39
+	rep: 0 41  -> 40
+	rep: 7 25  -> 41
+	rep: 7 25  -> 42
+	rep: 19 12  -> 43
+	rep: 19 12  -> 44
+	rep: 0 35  -> 45
+	rep: 0 35  -> 46
+	rep: 48 28  -> 47
+	rep: 48 28  -> 48
+	rep: 14 33  -> 49
+generation 38:
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	93.6454	* - Strength(d,c) HubScore(d,c) + + BibCoupling (d,c) Strength(d,c) Strength(d,c)
+	ind: 	90.2969	+ - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	92.8036	* BibCoupling (d,c) - * BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) + BibCoupling (d,c) Strength(d,c) BibCoupling (d,c)
+	ind: 	37.9798	% DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* * DiceSimilarity(d,c) BibCoupling (d,c) Pow Strength(d,c) * * - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	+ - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6951	% BibCoupling (d,c) * * * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	55.6378	Pow Strength(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* - Strength(d,c) HubScore(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	29.7845	* - DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) * - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	55.6378	Pow Strength(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	Strength(d,c)
+	ind: 	90.2969	+ - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	90.2229	+ + BibCoupling (d,c) Strength(d,c) Strength(d,c)
+	ind: 	37.5266	Pow DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.4156	* * * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	% BibCoupling (d,c) * Log DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	51.9286	% BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.8015	+ DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	+ - Log - DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	92.8036	* BibCoupling (d,c) - * BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) + BibCoupling (d,c) Strength(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	51.9286	% BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	95.5138	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	32.1524	* - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	95.9116	* * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	29.7845	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	% BibCoupling (d,c) * * * * Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	rep: 46  -> 46
+	rep: 9 38  -> 0
+	rep: 9 38  -> 1
+	rep: 10 21  -> 2
+	rep: 10 21  -> 3
+	rep: 17 8  -> 4
+	rep: 17 8  -> 5
+	rep: 48 18  -> 6
+	rep: 48 18  -> 7
+	rep: 40 31  -> 8
+	rep: 40 31  -> 9
+	rep: 32 1  -> 10
+	rep: 32 1  -> 11
+	rep: 26 47  -> 12
+	rep: 26 47  -> 13
+	rep: 17  -> 14
+	rep: 37 45  -> 15
+	rep: 37 45  -> 16
+	rep: 46 8  -> 17
+	rep: 46 8  -> 18
+	rep: 17 10  -> 19
+	rep: 17 10  -> 20
+	rep: 32 32  -> 21
+	rep: 32 32  -> 22
+	rep: 34 49  -> 23
+	rep: 34 49  -> 24
+	rep: 23 44  -> 25
+	rep: 23 44  -> 26
+	rep: 16 19  -> 27
+	rep: 16 19  -> 28
+	rep: 45 19  -> 29
+	rep: 45 19  -> 30
+	rep: 42 31  -> 31
+	rep: 42 31  -> 32
+	rep: 45 11  -> 33
+	rep: 45 11  -> 34
+	rep: 36 21  -> 35
+	rep: 36 21  -> 36
+	rep: 2 45  -> 37
+	rep: 2 45  -> 38
+	rep: 27 31  -> 39
+	rep: 27 31  -> 40
+	rep: 45 25  -> 41
+	rep: 45 25  -> 42
+	rep: 23  -> 43
+	rep: 41 33  -> 44
+	rep: 41 33  -> 45
+	rep: 13 31  -> 47
+	rep: 13 31  -> 48
+	rep: 36 42  -> 49
+generation 39:
+	ind: 	85.45	* * DiceSimilarity(d,c) BibCoupling (d,c) Pow Strength(d,c) * * - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5358	% BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	90.2969	+ Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* - Strength(d,c) HubScore(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	93.6546	* + Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	29.7845	* - DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) * - DiceSimilarity(d,c) BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	29.7845	* * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	57.6635	* * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	91.6381	* - Strength(d,c) HubScore(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	95.9116	* * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.7737	+ - DiceSimilarity(d,c) BibCoupling (d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6951	% BibCoupling (d,c) * * * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) + Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.6217	+ * - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	55.6378	Pow Strength(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	92.0636	* BibCoupling (d,c) - * BibCoupling (d,c) Strength(d,c) BibCoupling (d,c)
+	ind: 	93.5714	* - Strength(d,c) HubScore(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	93.6546	* - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	% BibCoupling (d,c) * Log DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	90.2229	+ + BibCoupling (d,c) Strength(d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	95.9116	* * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	55.6378	Pow Strength(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* BibCoupling (d,c) - * DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	rep: 17  -> 17
+	rep: 9 3  -> 0
+	rep: 9 3  -> 1
+	rep: 33 39  -> 2
+	rep: 33 39  -> 3
+	rep: 2 34  -> 4
+	rep: 2 34  -> 5
+	rep: 30  -> 6
+	rep: 37 15  -> 7
+	rep: 37 15  -> 8
+	rep: 4 30  -> 9
+	rep: 4 30  -> 10
+	rep: 40 38  -> 11
+	rep: 40 38  -> 12
+	rep: 13 27  -> 13
+	rep: 13 27  -> 14
+	rep: 48 49  -> 15
+	rep: 48 49  -> 16
+	rep: 38 27  -> 18
+	rep: 38 27  -> 19
+	rep: 14 27  -> 20
+	rep: 14 27  -> 21
+	rep: 8 49  -> 22
+	rep: 8 49  -> 23
+	rep: 15 25  -> 24
+	rep: 15 25  -> 25
+	rep: 35 27  -> 26
+	rep: 35 27  -> 27
+	rep: 46  -> 28
+	rep: 9 30  -> 29
+	rep: 9 30  -> 30
+	rep: 4  -> 31
+	rep: 6 48  -> 32
+	rep: 6 48  -> 33
+	rep: 8 12  -> 34
+	rep: 8 12  -> 35
+	rep: 26 29  -> 36
+	rep: 26 29  -> 37
+	rep: 48 49  -> 38
+	rep: 48 49  -> 39
+	rep: 26 41  -> 40
+	rep: 26 41  -> 41
+	rep: 48 27  -> 42
+	rep: 48 27  -> 43
+	rep: 49 31  -> 44
+	rep: 49 31  -> 45
+	rep: 16 39  -> 46
+	rep: 16 39  -> 47
+	rep: 42 24  -> 48
+	rep: 42 24  -> 49
+generation 40:
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	51.9286	% BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	90.2969	+ Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	60.8824	Log - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	93.5714	* + BibCoupling (d,c) Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	53.5473	Pow Strength(d,c) * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	70.826	Pow Strength(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - + BibCoupling (d,c) Strength(d,c) BibCoupling (d,c)
+	ind: 	95.9116	* * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	83.6278	Pow Strength(d,c) * - Strength(d,c) HubScore(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* BibCoupling (d,c) - * DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	37.5266	Log DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	90.2969	+ + - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c) Strength(d,c)
+	ind: 	91.3699	* BibCoupling (d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	83.5538	Pow Strength(d,c) - * BibCoupling (d,c) Strength(d,c) BibCoupling (d,c)
+	ind: 	59.347	* * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	57.2565	* + Strength(d,c) HubScore(d,c) Pow Strength(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	29.7845	* - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	Pow Strength(d,c) * BibCoupling (d,c) - * DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	55.6378	Pow Strength(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	55.6378	Pow Strength(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	37.5266	* BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	61.6039	Log * DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	51.9286	% BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	35.6951	% BibCoupling (d,c) * * * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) + Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	rep: 17  -> 17
+	rep: 11 3  -> 0
+	rep: 11 3  -> 1
+	rep: 1 19  -> 2
+	rep: 1 19  -> 3
+	rep: 42 43  -> 4
+	rep: 42 43  -> 5
+	rep: 12 44  -> 6
+	rep: 12 44  -> 7
+	rep: 4 19  -> 8
+	rep: 4 19  -> 9
+	rep: 2 0  -> 10
+	rep: 2 0  -> 11
+	rep: 46 0  -> 12
+	rep: 46 0  -> 13
+	rep: 15 28  -> 14
+	rep: 15 28  -> 15
+	rep: 11 41  -> 16
+	rep: 11 41  -> 18
+	rep: 27 29  -> 19
+	rep: 27 29  -> 20
+	rep: 25 29  -> 21
+	rep: 25 29  -> 22
+	rep: 5 0  -> 23
+	rep: 5 0  -> 24
+	rep: 15 43  -> 25
+	rep: 15 43  -> 26
+	rep: 29 48  -> 27
+	rep: 29 48  -> 28
+	rep: 25 18  -> 29
+	rep: 25 18  -> 30
+	rep: 9 0  -> 31
+	rep: 9 0  -> 32
+	rep: 30 45  -> 33
+	rep: 30 45  -> 34
+	rep: 13 48  -> 35
+	rep: 13 48  -> 36
+	rep: 39  -> 37
+	rep: 28 43  -> 38
+	rep: 28 43  -> 39
+	rep: 18 43  -> 40
+	rep: 18 43  -> 41
+	rep: 30 47  -> 42
+	rep: 30 47  -> 43
+	rep: 17  -> 44
+	rep: 45 35  -> 45
+	rep: 45 35  -> 46
+	rep: 15 35  -> 47
+	rep: 15 35  -> 48
+	rep: 13 37  -> 49
+generation 41:
+	ind: 	89.8067	+ Strength(d,c) HubScore(d,c)
+	ind: 	51.9286	% BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.6813	Pow Strength(d,c) Pow Strength(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	91.6381	* BibCoupling (d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	- Strength(d,c) + Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	49.1721	* * Pow Strength(d,c) * DiceSimilarity(d,c) BibCoupling (d,c) * - Strength(d,c) HubScore(d,c) * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	95.9116	* * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	83.5538	Pow Strength(d,c) - * BibCoupling (d,c) Strength(d,c) BibCoupling (d,c)
+	ind: 	54.426	+ Pow Strength(d,c) - Strength(d,c) HubScore(d,c) Strength(d,c)
+	ind: 	89.8067	+ - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.8067	- Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	87.2815	Pow Strength(d,c) Pow Strength(d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	53.4086	* Strength(d,c) HubScore(d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	90.2229	+ + BibCoupling (d,c) Strength(d,c) Strength(d,c)
+	ind: 	89.8067	+ - Strength(d,c) HubScore(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	85.45	* DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	63.1486	Log - Strength(d,c) HubScore(d,c) BibCoupling (d,c)
+	ind: 	56.0078	* * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	91.6381	* BibCoupling (d,c) Strength(d,c)
+	ind: 	58.94	* * + BibCoupling (d,c) Strength(d,c) * - Strength(d,c) HubScore(d,c) * * Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	54.426	Pow Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	55.6378	Pow Strength(d,c) + BibCoupling (d,c) Strength(d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	ind: 	44.2327	HubScore(d,c)
+	ind: 	55.2678	% BibCoupling (d,c) - Strength(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	95.9116	* * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) * - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c) - Strength(d,c) HubScore(d,c)
+	ind: 	35.6581	- DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) Log * DiceSimilarity(d,c) BibCoupling (d,c) BibCoupling (d,c)
+	ind: 	34.4094	Pow Strength(d,c) - DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	37.5266	* Log DiceSimilarity(d,c) BibCoupling (d,c) * DiceSimilarity(d,c) BibCoupling (d,c)
+	ind: 	89.7327	+ BibCoupling (d,c) Strength(d,c)
+	rep: 17  -> 17
+	rep: 24  -> 0
+	rep: 29 33  -> 1
+	rep: 29 33  -> 2
+	rep: 12 45  -> 3
+	rep: 12 45  -> 4
+	rep: 0 28  -> 5
+	rep: 0 28  -> 6
+	rep: 28  -> 7
+	rep: 41 23  -> 8
+	rep: 41 23  -> 9
+	rep: 46 12  -> 10
+	rep: 46 12  -> 11
+	rep: 5 42  -> 12
+	rep: 5 42  -> 13
+	rep: 13 45  -> 14
+	rep: 13 45  -> 15
+	rep: 18 26  -> 16
+	rep: 18 26  -> 18
+	rep: 41 49  -> 19
+	rep: 41 49  -> 20
+	rep: 30 1  -> 21
+	rep: 30 1  -> 22
+	rep: 2 42  -> 23
+	rep: 2 42  -> 24
+	rep: 44 37  -> 25
+	rep: 44 37  -> 26
+	rep: 3 9  -> 27
+	rep: 3 9  -> 28
+	rep: 36 38  -> 29
+	rep: 36 38  -> 30
+	rep: 17 4  -> 31
+	rep: 17 4  -> 32
+	rep: 5 5  -> 33
+	rep: 5 5  -> 34
+	rep: 42 10  -> 35
+	rep: 42 10  -> 36
+	rep: 29 41  -> 37
+	rep: 29 41  -> 38
+	rep: 14 33  -> 39
+	rep: 14 33  -> 40
+	rep: 36 47  -> 41
+	rep: 36 47  -> 42
+	rep: 27 9  -> 43
+	rep: 27 9  -> 44
+	rep: 44 24  -> 45
+	rep: 44 24  -> 46
+	rep: 41 21  -> 47
+	rep: 41 21  -> 48
+	rep: 2 10  -> 49
