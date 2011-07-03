@@ -241,6 +241,7 @@ void NaiveBayes::test(Examples& exs){
                 double numerator = computeConditionalNumerator(termId, *classIt);
                 double fraction = numerator / condDenominator[*classIt];
                 probCond += (tf * log(fraction)); 
+                //probCond += ( log( tf * fraction)); 
             }
 
             vector<double> graphsCreds(graphsCredibility.size());

@@ -401,7 +401,7 @@ void Statistics::retrieveContentMetrics() {
 
                log2 A = log(A) / log(2)
                P(t\c) log2 P(t\c) / (P(t)*P(c)) =  (double)(PdeTtalqueC * log(PdeTtalqueC) / log(2)) / (double)(Pc*Pt)
-               */
+            */
 
             double Parcela1 = (PdeTtalqueC * (my_log(my_div(PdeTtalqueC,(Pc*Pt))) / log(2.0))) ;
             double Parcela2 = (PdeNaoTtalqueC * (my_log( my_div(PdeNaoTtalqueC,(Pc* (1.0 - Pt)))) / log(2.0)));
@@ -561,10 +561,11 @@ void Statistics::retrieveContentMetrics() {
                 TFICF[idx]   = maxTFICF;
                 TFIDF[idx]   = maxTFIDF;
                 AM[idx]      = maxAM;
+
             }
             else{
                 IG[idx]      = maxNormalization(IG[idx] , maxIG); 
-                DOM[idx]     = minmaxNormalization(DOM[idx], minDOM, maxDOM); 
+ //               DOM[idx]     = minmaxNormalization(DOM[idx], minDOM, maxDOM); 
                 OR[idx]      = maxNormalization(OR[idx] , maxOR); 
                 CTD[idx]     = minmaxNormalization(CTD[idx], minCTD, maxCTD); 
                 GSS[idx]     = maxNormalization(GSS[idx], maxGSS); 
@@ -572,7 +573,8 @@ void Statistics::retrieveContentMetrics() {
                 CC[idx]      = maxNormalization(CC[idx], maxCC); 
                 TFICF[idx]   = minmaxNormalization(TFICF[idx], minTFICF, maxTFICF); 
                 TFIDF[idx]   = minmaxNormalization(TFIDF[idx], minTFIDF, maxTFIDF); 
-                AM[idx]      = minmaxNormalization(AM[idx], minAM, maxAM); 
+ //               AM[idx]      = minmaxNormalization(AM[idx], minAM, maxAM); 
+
             }
         }
 
@@ -599,9 +601,10 @@ void Statistics::retrieveContentMetrics() {
             MaxTFICF[*it] = MaxTFICFForAll;
             MaxTFIDF[*it] = MaxTFIDFForAll;
             MaxAM[*it] = MaxAMForAll;
+
         }
         else{
-            CE[*it] = minmaxNormalization(CE[*it], MinCE, MaxCE);
+/*            CE[*it] = minmaxNormalization(CE[*it], MinCE, MaxCE);
             MaxIG[*it] = minmaxNormalization(MaxIG[*it], MinIGForAll, MaxIGForAll);
             MaxDom[*it] = minmaxNormalization(MaxDom[*it], MinDomForAll, MaxDomForAll);
             MaxOR[*it] = minmaxNormalization(MaxOR[*it], MinORForAll, MaxORForAll);
@@ -612,6 +615,7 @@ void Statistics::retrieveContentMetrics() {
             MaxTFICF[*it] = minmaxNormalization(MaxTFICF[*it], MinTFICFForAll, MaxTFICFForAll);
             MaxTFIDF[*it] = minmaxNormalization(MaxTFIDF[*it], MinTFIDFForAll, MaxTFIDFForAll);
             MaxAM[*it] = minmaxNormalization(MaxAM[*it], MinAMForAll, MaxAMForAll);
+*/
         }
     }
 }

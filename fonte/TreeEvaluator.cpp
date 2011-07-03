@@ -33,7 +33,7 @@ void TreeEvaluator::evaluateFromFile(string fileName){
     ostream &out = io->getEvaluateFile();
     out.setf(ios::fixed,ios::floatfield);
     out.precision(5);
-    out<<"Baseline"<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<endl;
+    out<<"Baseline"<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<"\t-\t-"<<endl;
     double blmicro = classifier->getMicroF1();
     double blmacro = classifier->getMacroF1();
 
@@ -126,8 +126,8 @@ void TreeEvaluator::evaluateFromFile(string fileName){
                 classifier = new KNN(stats, stats->getK());
             else
                 classifier = new NaiveBayes(stats);
-            classifier->useContentCredibility(true);
             
+            classifier->useContentCredibility(true);
             if(stats->getUsingTermCredibility())
                 classifier->setContentCredibilityMap(credibilityMap);
 
@@ -146,7 +146,8 @@ void TreeEvaluator::evaluateFromFile(string fileName){
             ostream &out = io->getEvaluateFile();
             out.setf(ios::fixed,ios::floatfield);
             out.precision(5);
-            out<<line<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<endl;
+            out<<line<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<"\t";
+            out<<((classifier->getMicroF1()/blmicro) -1.0) *100.0 << "\t" << ((classifier->getMacroF1()/blmacro) -1.0) *100.0 <<endl;
     
             delete classifier;
         }
@@ -359,6 +360,10 @@ double TreeEvaluator::getOperandValue(string operand, string id, string classNam
         return stats->getAvgNearstNeighborDegree(id, className, graphId);
     }
 
+    else if(operand == "1"){
+        return 1.0;
+    }
+    
     else{
         cerr<<"Error!! Invalid operand: " << operand << endl;
         exit(1);
