@@ -1,0 +1,5104 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Log,2) (Pow,2) 
+	terms: MaxTFICF MaxTFIDF MaxCTD MaxOR MaxCC MaxGSS MaxCHI MaxAM MaxIG MaxDom sumDF DF sumTF TF TFIDF TFICF IDF CTD OR CE CC GSS CHI IG DOM GINI P' P AM
+generation 0:
+	ind: 	75.8094	* MaxOR AM
+	ind: 	5.25351	+ + MaxAM MaxCC - IG GSS
+	ind: 	92.6084	- DF CC
+	ind: 	89.1265	* + DOM AM + TFICF TFIDF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	86.3164	+ * MaxAM MaxTFICF Pow GSS CHI
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	12.4007	- - TF IDF Pow IG TFICF
+	ind: 	89.6762	* P TFIDF
+	ind: 	92.5473	+ + GSS CE + MaxCHI sumDF
+	ind: 	48.0147	Log CC MaxCC
+	ind: 	5.25351	% % MaxGSS DOM * DF IDF
+	ind: 	48.0147	Log GINI MaxCC
+	ind: 	5.25351	Log % MaxTFICF TFICF - MaxIG sumTF
+	ind: 	92.7306	- P CC
+	ind: 	89.8595	Log + MaxTFICF IG % MaxAM CE
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	93.2193	Pow - MaxCTD DOM Log MaxAM MaxAM
+	ind: 	5.25351	% TFIDF MaxGSS
+	ind: 	68.7233	% Log MaxCTD sumDF Pow CE OR
+	ind: 	5.25351	+ P MaxGSS
+	ind: 	86.3164	Pow Log MaxOR P + MaxCC CHI
+	ind: 	59.5602	* CE MaxCTD
+	ind: 	76.9701	+ * TFIDF CE - DF TF
+	ind: 	74.7709	* CTD MaxOR
+	ind: 	48.0147	% - MaxCHI DF - MaxGSS P
+	ind: 	72.2053	Log TFICF TFICF
+	ind: 	48.0147	- Log AM GINI + AM TF
+	ind: 	88.821	% IDF MaxCTD
+	ind: 	93.2193	Pow * IG MaxTFIDF Log MaxIG MaxAM
+	ind: 	48.0757	% MaxTFICF CTD
+	ind: 	82.8955	% + MaxIG MaxIG - TFIDF sumDF
+	ind: 	93.0971	Log IG TFIDF
+	ind: 	48.0147	% - DF CHI % IDF AM
+	ind: 	93.2193	* P MaxCHI
+	ind: 	62.0648	+ - P' DF - MaxCTD sumDF
+	ind: 	80.7575	* CE TF
+	ind: 	18.2651	Pow - MaxOR CTD Pow MaxTFICF MaxAM
+	ind: 	5.25351	% CC MaxAM
+	ind: 	48.0147	* Log MaxGSS GINI - DOM P
+	ind: 	80.391	Pow sumDF CHI
+	ind: 	48.0147	- * TF P * MaxCHI TF
+	ind: 	83.1399	* MaxDom MaxTFIDF
+	ind: 	93.3415	Pow Pow MaxAM GSS % MaxIG CHI
+	ind: 	83.3842	+ MaxTFIDF MaxTFICF
+	ind: 	48.0147	% Log sumTF MaxGSS % MaxTFICF P'
+	ind: 	92.6695	+ IG MaxCHI
+	ind: 	48.0147	- * MaxOR TF Pow GINI DOM
+	ind: 	58.3384	* CTD P'
+	ind: 	48.0147	- % MaxGSS TFICF % TFIDF MaxCTD
+	rep: 43  -> 43
+	rep: 22 10  -> 0
+	rep: 22 10  -> 1
+	rep: 26 7  -> 2
+	rep: 26 7  -> 3
+	rep: 30 13  -> 4
+	rep: 30 13  -> 5
+	rep: 0 4  -> 6
+	rep: 0 4  -> 7
+	rep: 37  -> 8
+	rep: 15 6  -> 9
+	rep: 15 6  -> 10
+	rep: 35 7  -> 11
+	rep: 35 7  -> 12
+	rep: 24 47  -> 13
+	rep: 24 47  -> 14
+	rep: 19 18  -> 15
+	rep: 19 18  -> 16
+	rep: 26 30  -> 17
+	rep: 26 30  -> 18
+	rep: 46 24  -> 19
+	rep: 46 24  -> 20
+	rep: 3 38  -> 21
+	rep: 3 38  -> 22
+	rep: 30 20  -> 23
+	rep: 30 20  -> 24
+	rep: 3 4  -> 25
+	rep: 3 4  -> 26
+	rep: 2 15  -> 27
+	rep: 2 15  -> 28
+	rep: 16 44  -> 29
+	rep: 16 44  -> 30
+	rep: 27 10  -> 31
+	rep: 27 10  -> 32
+	rep: 29 44  -> 33
+	rep: 29 44  -> 34
+	rep: 36 48  -> 35
+	rep: 36 48  -> 36
+	rep: 25 10  -> 37
+	rep: 25 10  -> 38
+	rep: 34 19  -> 39
+	rep: 34 19  -> 40
+	rep: 42 0  -> 41
+	rep: 42 0  -> 42
+	rep: 29 36  -> 44
+	rep: 29 36  -> 45
+	rep: 29 48  -> 46
+	rep: 29 48  -> 47
+	rep: 9 11  -> 48
+	rep: 9 11  -> 49
+generation 1:
+	ind: 	48.0147	Log CC MaxCC
+	ind: 	59.5602	* CE MaxCTD
+	ind: 	12.4007	- - TF IDF Pow IG TFICF
+	ind: 	72.2053	Log TFICF TFICF
+	ind: 	5.25351	Log % MaxTFICF TFICF - MaxIG sumTF
+	ind: 	48.0757	% MaxTFICF CTD
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	75.8094	* MaxOR AM
+	ind: 	18.2651	Pow - MaxOR CTD Pow MaxTFICF MaxAM
+	ind: 	88.088	Log Pow sumTF TF % MaxAM CE
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	85.6445	- TF IDF
+	ind: 	1.58827	- + - P' DF - MaxCTD sumDF Pow IG TFICF
+	ind: 	84.0562	* MaxOR TF
+	ind: 	48.9921	- * CTD MaxOR Pow GINI DOM
+	ind: 	5.25351	% % TFIDF MaxGSS Pow CE OR
+	ind: 	66.1576	* MaxCTD sumDF
+	ind: 	48.0757	% MaxTFICF CTD
+	ind: 	72.2053	Log TFICF TFICF
+	ind: 	74.7709	* CTD MaxOR
+	ind: 	92.6695	+ IG MaxCHI
+	ind: 	5.25351	* % CC MaxAM + TFICF TFIDF
+	ind: 	92.8528	+ DOM AM
+	ind: 	5.25351	% MaxTFICF + P MaxGSS
+	ind: 	75.7483	CE
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	89.1265	* + DOM AM + TFICF TFIDF
+	ind: 	91.631	- MaxAM CE
+	ind: 	91.4478	Log + MaxTFICF IG - DF CC
+	ind: 	83.3842	+ MaxTFIDF MaxTFICF
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	48.0147	- Log CC MaxCC + AM TF
+	ind: 	48.0147	Log AM GINI
+	ind: 	83.3842	+ MaxTFIDF MaxTFICF
+	ind: 	93.2193	Pow * IG MaxTFIDF Log MaxIG MaxAM
+	ind: 	58.3384	* CTD P'
+	ind: 	80.7575	* CE TF
+	ind: 	48.0147	Log CC MaxCC
+	ind: 	48.0147	% - MaxCHI DF - MaxGSS P
+	ind: 	68.2957	Log MaxCTD sumDF
+	ind: 	93.2193	% * P MaxCHI Pow CE OR
+	ind: 	75.8094	* MaxOR AM
+	ind: 	83.1399	* MaxDom MaxTFIDF
+	ind: 	93.3415	Pow Pow MaxAM GSS % MaxIG CHI
+	ind: 	93.2193	Pow * CE TF Log MaxIG MaxAM
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	1.4661	Pow * IG MaxTFIDF * CTD P'
+	ind: 	48.0147	Log MaxIG MaxAM
+	ind: 	85.6445	- DF IDF
+	ind: 	5.25351	% % MaxGSS DOM + + GSS CE + MaxCHI sumDF
+	rep: 43  -> 43
+	rep: 32 12  -> 0
+	rep: 32 12  -> 1
+	rep: 11 19  -> 2
+	rep: 11 19  -> 3
+	rep: 11 10  -> 4
+	rep: 11 10  -> 5
+	rep: 31 2  -> 6
+	rep: 31 2  -> 7
+	rep: 27 13  -> 8
+	rep: 27 13  -> 9
+	rep: 27 4  -> 10
+	rep: 27 4  -> 11
+	rep: 40 35  -> 12
+	rep: 40 35  -> 13
+	rep: 13 23  -> 14
+	rep: 13 23  -> 15
+	rep: 43 14  -> 16
+	rep: 43 14  -> 17
+	rep: 0 46  -> 18
+	rep: 0 46  -> 19
+	rep: 43 29  -> 20
+	rep: 43 29  -> 21
+	rep: 30 44  -> 22
+	rep: 30 44  -> 23
+	rep: 40 34  -> 24
+	rep: 40 34  -> 25
+	rep: 28 29  -> 26
+	rep: 28 29  -> 27
+	rep: 10 25  -> 28
+	rep: 10 25  -> 29
+	rep: 34 13  -> 30
+	rep: 34 13  -> 31
+	rep: 33 10  -> 32
+	rep: 33 10  -> 33
+	rep: 34 38  -> 34
+	rep: 34 38  -> 35
+	rep: 35 35  -> 36
+	rep: 35 35  -> 37
+	rep: 45  -> 38
+	rep: 28 9  -> 39
+	rep: 28 9  -> 40
+	rep: 9 6  -> 41
+	rep: 9 6  -> 42
+	rep: 22 21  -> 44
+	rep: 22 21  -> 45
+	rep: 27 15  -> 46
+	rep: 27 15  -> 47
+	rep: 28 10  -> 48
+	rep: 28 10  -> 49
+generation 2:
+	ind: 	68.2957	+ - P' DF Log MaxCTD sumDF
+	ind: 	48.0147	- Log AM GINI Pow IG TFICF
+	ind: 	74.7709	* CTD MaxOR
+	ind: 	85.6445	- TF IDF
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	85.6445	- TF IDF
+	ind: 	85.6445	- TF IDF
+	ind: 	48.0147	- - Log CC MaxCC + AM TF Pow IG TFICF
+	ind: 	84.0562	* MaxOR TF
+	ind: 	91.631	- MaxAM CE
+	ind: 	5.25351	Log % MaxTFICF TFICF - MaxIG sumTF
+	ind: 	91.631	- MaxAM CE
+	ind: 	58.6439	% * CTD P' Pow CE OR
+	ind: 	93.2193	* P MaxCHI
+	ind: 	5.25351	% MaxTFICF + P MaxGSS
+	ind: 	48.0147	Log MaxOR TF
+	ind: 	93.1582	Pow Pow GINI DOM % MaxIG CHI
+	ind: 	44.8992	- * CTD MaxOR Pow MaxAM GSS
+	ind: 	1.4661	Pow * IG MaxTFIDF * CTD P'
+	ind: 	48.0147	Log CC MaxCC
+	ind: 	8.97984	Pow Pow MaxAM GSS + MaxTFIDF MaxTFICF
+	ind: 	80.0244	Pow MaxIG CHI
+	ind: 	80.7575	* CE TF
+	ind: 	93.2193	Pow + MaxOR MaxIG Log MaxIG MaxAM
+	ind: 	92.1808	% * P MaxCHI * IG MaxTFIDF
+	ind: 	93.2193	Pow Pow CE OR Log MaxIG MaxAM
+	ind: 	91.3256	Log + MaxTFIDF MaxTFICF - DF CC
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	93.2193	Pow * MaxOR TF Log MaxIG MaxAM
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	83.3842	+ MaxTFIDF MaxTFICF
+	ind: 	48.0147	- MaxGSS P
+	ind: 	92.7917	% - MaxCHI DF Pow * IG MaxTFIDF Log MaxIG MaxAM
+	ind: 	58.3384	* CTD P'
+	ind: 	58.3384	* CTD P'
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	90.4704	Log Pow sumTF TF + MaxTFICF IG
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	88.088	Log Pow sumTF TF % MaxAM CE
+	ind: 	93.3415	Pow Pow MaxAM GSS % MaxIG CHI
+	ind: 	5.25351	* % CC MaxAM + TFICF TFIDF
+	ind: 	92.8528	+ DOM AM
+	ind: 	5.25351	% TFIDF MaxGSS
+	ind: 	91.631	Pow - MaxAM CE Pow CE OR
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	91.4478	Log + MaxTFICF IG - DF CC
+	rep: 39  -> 39
+	rep: 40 40  -> 0
+	rep: 40 40  -> 1
+	rep: 19 20  -> 2
+	rep: 19 20  -> 3
+	rep: 11 28  -> 4
+	rep: 11 28  -> 5
+	rep: 16 49  -> 6
+	rep: 16 49  -> 7
+	rep: 42 6  -> 8
+	rep: 42 6  -> 9
+	rep: 33 48  -> 10
+	rep: 33 48  -> 11
+	rep: 11 27  -> 12
+	rep: 11 27  -> 13
+	rep: 38 7  -> 14
+	rep: 38 7  -> 15
+	rep: 13 10  -> 16
+	rep: 13 10  -> 17
+	rep: 12 34  -> 18
+	rep: 12 34  -> 19
+	rep: 24 3  -> 20
+	rep: 24 3  -> 21
+	rep: 11 42  -> 22
+	rep: 11 42  -> 23
+	rep: 45 20  -> 24
+	rep: 45 20  -> 25
+	rep: 48 28  -> 26
+	rep: 48 28  -> 27
+	rep: 3 41  -> 28
+	rep: 3 41  -> 29
+	rep: 38 29  -> 30
+	rep: 38 29  -> 31
+	rep: 29  -> 32
+	rep: 25 31  -> 33
+	rep: 25 31  -> 34
+	rep: 25  -> 35
+	rep: 23 42  -> 36
+	rep: 23 42  -> 37
+	rep: 32 10  -> 38
+	rep: 32 10  -> 40
+	rep: 35 47  -> 41
+	rep: 35 47  -> 42
+	rep: 13 19  -> 43
+	rep: 13 19  -> 44
+	rep: 6 28  -> 45
+	rep: 6 28  -> 46
+	rep: 25 8  -> 47
+	rep: 25 8  -> 48
+	rep: 36 7  -> 49
+generation 3:
+	ind: 	90.4704	Log Pow sumTF TF + MaxTFICF IG
+	ind: 	90.4704	Log Pow sumTF TF + MaxTFICF IG
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	48.0147	Pow Log CC MaxCC + MaxTFIDF MaxTFICF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	91.631	- MaxAM CE
+	ind: 	93.3415	Pow - DF CC % MaxIG CHI
+	ind: 	5.00916	Log + MaxTFICF IG Pow GINI DOM
+	ind: 	88.1491	Log - TF IDF % MaxAM CE
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	83.3842	+ MaxTFIDF MaxTFICF
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	48.0147	Log CC MaxCC
+	ind: 	5.74221	- - * IG MaxTFIDF + AM TF Pow IG TFICF
+	ind: 	93.036	- MaxIG sumTF
+	ind: 	6.65852	Log % MaxTFICF TFICF * P MaxCHI
+	ind: 	48.0147	Log MaxGSS P
+	ind: 	58.6439	% * CTD P' Pow CE OR
+	ind: 	85.6445	- TF IDF
+	ind: 	92.1808	% * P MaxCHI * IG MaxTFIDF
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	48.0147	Log - MaxAM CE % MaxAM CE
+	ind: 	8.97984	Pow Pow MaxAM GSS + MaxTFIDF MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	85.6445	- TF IDF
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	93.2193	Pow Pow CE OR Log MaxIG MaxAM
+	ind: 	93.2193	Pow Pow CE OR Log MaxIG MaxAM
+	ind: 	5.25351	Pow + MaxOR MaxIG Pow sumTF TF
+	ind: 	48.0147	Log Log MaxIG MaxAM % MaxAM CE
+	ind: 	5.25351	Log % MaxTFICF TFICF - MaxIG sumTF
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	58.033	Log MaxTFICF IG
+	ind: 	91.631	- MaxAM CE
+	ind: 	92.6695	Pow % - MaxCHI DF Pow * IG MaxTFIDF Log MaxIG MaxAM Pow CE OR
+	ind: 	48.0147	Log CC MaxCC
+	ind: 	93.2193	* P MaxCHI
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	85.6445	- TF IDF
+	ind: 	93.2193	Pow MaxOR Log MaxIG MaxAM
+	ind: 	91.631	* Pow CE OR TF
+	ind: 	3.48198	Pow IG TFICF
+	rep: 39  -> 39
+	rep: 43 24  -> 0
+	rep: 43 24  -> 1
+	rep: 41 12  -> 2
+	rep: 41 12  -> 3
+	rep: 6 31  -> 4
+	rep: 6 31  -> 5
+	rep: 22 22  -> 6
+	rep: 22 22  -> 7
+	rep: 16 31  -> 8
+	rep: 16 31  -> 9
+	rep: 25  -> 10
+	rep: 5  -> 11
+	rep: 2  -> 12
+	rep: 13 1  -> 13
+	rep: 13 1  -> 14
+	rep: 5 18  -> 15
+	rep: 5 18  -> 16
+	rep: 28 36  -> 17
+	rep: 28 36  -> 18
+	rep: 28 15  -> 19
+	rep: 28 15  -> 20
+	rep: 0 4  -> 21
+	rep: 0 4  -> 22
+	rep: 2 44  -> 23
+	rep: 2 44  -> 24
+	rep: 22 49  -> 25
+	rep: 22 49  -> 26
+	rep: 2 36  -> 27
+	rep: 2 36  -> 28
+	rep: 29 30  -> 29
+	rep: 29 30  -> 30
+	rep: 32 4  -> 31
+	rep: 32 4  -> 32
+	rep: 1 45  -> 33
+	rep: 1 45  -> 34
+	rep: 43 49  -> 35
+	rep: 43 49  -> 36
+	rep: 16 12  -> 37
+	rep: 16 12  -> 38
+	rep: 48 17  -> 40
+	rep: 48 17  -> 41
+	rep: 15 15  -> 42
+	rep: 15 15  -> 43
+	rep: 29 12  -> 44
+	rep: 29 12  -> 45
+	rep: 48 33  -> 46
+	rep: 48 33  -> 47
+	rep: 10 17  -> 48
+	rep: 10 17  -> 49
+generation 4:
+	ind: 	8.97984	Pow Pow MaxAM GSS + MaxTFIDF MaxTFICF
+	ind: 	48.0147	Log CC MaxCC
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	91.631	- MaxAM CE
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	93.3415	Pow - DF CC % MaxIG CHI
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	93.036	- MaxIG sumTF
+	ind: 	92.8528	+ DOM AM
+	ind: 	91.631	- MaxAM CE
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	90.4704	Log Pow sumTF TF + MaxTFICF IG
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	48.0147	Log MaxGSS P
+	ind: 	91.631	- MaxAM CE
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	48.0147	Pow % MaxOR MaxTFICF Pow sumTF TF
+	ind: 	5.62004	- Log * IG MaxTFIDF + AM TF Pow IG TFICF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	48.0147	Log % MaxOR MaxTFICF + MaxTFICF IG
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	45.6323	Pow P MaxCHI
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	3.48198	Pow IG TFICF
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	5.25351	Pow Pow MaxAM GSS Pow sumTF TF
+	ind: 	50.0916	Pow MaxTFICF IG
+	ind: 	85.6445	- TF IDF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	90.4704	Log Pow sumTF TF + MaxTFICF IG
+	ind: 	3.48198	Pow IG TFICF
+	ind: 	48.0147	Log CC MaxCC
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	93.036	- MaxIG sumTF
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.0586	* * P MaxCHI TF
+	ind: 	48.0147	Log % MaxTFICF TFICF Pow CE OR
+	ind: 	8.43005	- + AM TF Pow IG TFICF
+	ind: 	8.43005	- - * IG MaxTFIDF - * IG MaxTFIDF + AM TF Pow IG TFICF
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.9139	+ - TF IDF IG
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	91.631	* Pow CE OR TF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	5.13134	Log % MaxTFICF TFICF + MaxTFICF IG
+	rep: 39  -> 39
+	rep: 48 8  -> 0
+	rep: 48 8  -> 1
+	rep: 24 30  -> 2
+	rep: 24 30  -> 3
+	rep: 4 31  -> 4
+	rep: 4 31  -> 5
+	rep: 10 26  -> 6
+	rep: 10 26  -> 7
+	rep: 22 44  -> 8
+	rep: 22 44  -> 9
+	rep: 3 6  -> 10
+	rep: 3 6  -> 11
+	rep: 12 6  -> 12
+	rep: 12 6  -> 13
+	rep: 24 27  -> 14
+	rep: 24 27  -> 15
+	rep: 24 44  -> 16
+	rep: 24 44  -> 17
+	rep: 20 1  -> 18
+	rep: 20 1  -> 19
+	rep: 30 15  -> 20
+	rep: 30 15  -> 21
+	rep: 40 35  -> 22
+	rep: 40 35  -> 23
+	rep: 17 31  -> 24
+	rep: 17 31  -> 25
+	rep: 13 0  -> 26
+	rep: 13 0  -> 27
+	rep: 15 1  -> 28
+	rep: 15 1  -> 29
+	rep: 10 44  -> 30
+	rep: 10 44  -> 31
+	rep: 24 47  -> 32
+	rep: 24 47  -> 33
+	rep: 27 20  -> 34
+	rep: 27 20  -> 35
+	rep: 48 22  -> 36
+	rep: 48 22  -> 37
+	rep: 45 30  -> 38
+	rep: 45 30  -> 40
+	rep: 12 8  -> 41
+	rep: 12 8  -> 42
+	rep: 11 2  -> 43
+	rep: 11 2  -> 44
+	rep: 2 23  -> 45
+	rep: 2 23  -> 46
+	rep: 31 28  -> 47
+	rep: 31 28  -> 48
+	rep: 47 29  -> 49
+generation 5:
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	85.6445	- TF IDF
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	48.0147	Log DOM AM
+	ind: 	28.5889	MaxTFICF
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	91.631	- MaxAM CE
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	28.5889	MaxTFICF
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	48.0147	Log CC MaxCC
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	48.0147	Log MaxGSS P
+	ind: 	85.6445	- TF IDF
+	ind: 	3.48198	Pow IG TFICF
+	ind: 	92.0586	* * P MaxCHI TF
+	ind: 	48.0147	Log MaxOR MaxTFICF
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	5.25351	Pow Log Pow sumTF TF + MaxTFICF IG + MaxTFIDF MaxTFICF
+	ind: 	48.0147	Log CC MaxCC
+	ind: 	48.0147	Log MaxGSS P
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	93.0971	Pow CE OR
+	ind: 	92.6695	* Pow MaxAM GSS TF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	92.9139	+ - TF IDF IG
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	85.6445	- TF IDF
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	91.631	- MaxAM CE
+	ind: 	45.6323	Pow P MaxCHI
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	5.25351	Pow Pow MaxAM GSS Pow sumTF TF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	49.8473	* Pow MaxTFICF IG TF
+	rep: 39  -> 39
+	rep: 31 5  -> 0
+	rep: 31 5  -> 1
+	rep: 4 8  -> 2
+	rep: 4 8  -> 3
+	rep: 46 45  -> 4
+	rep: 46 45  -> 5
+	rep: 46 12  -> 6
+	rep: 46 12  -> 7
+	rep: 14 6  -> 8
+	rep: 14 6  -> 9
+	rep: 10 20  -> 10
+	rep: 10 20  -> 11
+	rep: 3 23  -> 12
+	rep: 3 23  -> 13
+	rep: 41 36  -> 14
+	rep: 41 36  -> 15
+	rep: 17 49  -> 16
+	rep: 17 49  -> 17
+	rep: 38 31  -> 18
+	rep: 38 31  -> 19
+	rep: 13 37  -> 20
+	rep: 13 37  -> 21
+	rep: 5 45  -> 22
+	rep: 5 45  -> 23
+	rep: 32 23  -> 24
+	rep: 32 23  -> 25
+	rep: 2 8  -> 26
+	rep: 2 8  -> 27
+	rep: 7  -> 28
+	rep: 31 48  -> 29
+	rep: 31 48  -> 30
+	rep: 37 34  -> 31
+	rep: 37 34  -> 32
+	rep: 38  -> 33
+	rep: 9  -> 34
+	rep: 1 23  -> 35
+	rep: 1 23  -> 36
+	rep: 7 45  -> 37
+	rep: 7 45  -> 38
+	rep: 1 4  -> 40
+	rep: 1 4  -> 41
+	rep: 33 11  -> 42
+	rep: 33 11  -> 43
+	rep: 15 16  -> 44
+	rep: 15 16  -> 45
+	rep: 15 35  -> 46
+	rep: 15 35  -> 47
+	rep: 10 27  -> 48
+	rep: 10 27  -> 49
+generation 6:
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	92.8528	+ DOM AM
+	ind: 	28.5889	MaxTFICF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	39.6457	+ MaxTFICF Pow P MaxCHI
+	ind: 	93.036	IG
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	48.0147	Log MaxGSS P
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	92.0586	* * P MaxCHI TF
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	6.41417	- IG MaxTFIDF
+	ind: 	50.0916	Pow MaxTFICF IG
+	ind: 	92.6695	* Pow MaxAM GSS TF
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.9139	+ - TF IDF IG
+	ind: 	93.2193	* P MaxCHI
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	45.6323	Pow P MaxCHI
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	45.6323	Pow P MaxCHI
+	ind: 	91.631	* Pow CE OR TF
+	ind: 	28.5889	MaxTFICF
+	ind: 	85.6445	- TF IDF
+	ind: 	48.0147	Log DOM AM
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	92.9139	+ - TF IDF IG
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	92.0586	* * P MaxCHI TF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	45.6323	Pow P MaxCHI
+	ind: 	48.0147	Log DOM AM
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	91.631	- MaxAM CE
+	ind: 	5.25351	* % MaxAM GSS TF
+	ind: 	28.5889	MaxTFICF
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	48.0147	- sumTF TF
+	ind: 	5.25351	Pow Log Pow sumTF TF + MaxTFICF IG + MaxTFIDF MaxTFICF
+	rep: 39  -> 39
+	rep: 25 23  -> 0
+	rep: 25 23  -> 1
+	rep: 41 29  -> 2
+	rep: 41 29  -> 3
+	rep: 46 7  -> 4
+	rep: 46 7  -> 5
+	rep: 29 2  -> 6
+	rep: 29 2  -> 7
+	rep: 8 15  -> 8
+	rep: 8 15  -> 9
+	rep: 45 30  -> 10
+	rep: 45 30  -> 11
+	rep: 20 10  -> 12
+	rep: 20 10  -> 13
+	rep: 20 47  -> 14
+	rep: 20 47  -> 15
+	rep: 21 6  -> 16
+	rep: 21 6  -> 17
+	rep: 12 11  -> 18
+	rep: 12 11  -> 19
+	rep: 5 34  -> 20
+	rep: 5 34  -> 21
+	rep: 42 34  -> 22
+	rep: 42 34  -> 23
+	rep: 25 24  -> 24
+	rep: 25 24  -> 25
+	rep: 9  -> 26
+	rep: 32 14  -> 27
+	rep: 32 14  -> 28
+	rep: 39 22  -> 29
+	rep: 39 22  -> 30
+	rep: 39 0  -> 31
+	rep: 39 0  -> 32
+	rep: 16 48  -> 33
+	rep: 16 48  -> 34
+	rep: 1 26  -> 35
+	rep: 1 26  -> 36
+	rep: 3 2  -> 37
+	rep: 3 2  -> 38
+	rep: 42 49  -> 40
+	rep: 42 49  -> 41
+	rep: 13 48  -> 42
+	rep: 13 48  -> 43
+	rep: 46 7  -> 44
+	rep: 46 7  -> 45
+	rep: 30 2  -> 46
+	rep: 30 2  -> 47
+	rep: 32  -> 48
+	rep: 8 49  -> 49
+generation 7:
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	91.631	* Pow CE OR TF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	28.5889	MaxTFICF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	6.41417	- IG MaxTFIDF
+	ind: 	92.975	% sumTF TF
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	48.0147	Log MaxGSS P
+	ind: 	93.2193	* P MaxCHI
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	93.2193	* P MaxCHI
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	67.5626	* Pow sumTF TF TF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	93.036	IG
+	ind: 	91.3256	+ sumTF TF
+	ind: 	91.631	- MaxAM CE
+	ind: 	40.4398	* Pow P MaxCHI TF
+	ind: 	93.0971	Pow CE OR
+	ind: 	48.0147	- MaxOR MaxIG
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	92.4863	Log * P MaxCHI - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.2419	Log * IG MaxTFIDF - DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	48.0147	- sumTF TF
+	ind: 	50.0916	Pow MaxTFICF IG
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	28.5889	MaxTFICF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	48.0147	Pow Log - MaxAM CE + MaxTFICF IG + MaxTFIDF MaxTFICF
+	ind: 	93.2193	Log sumTF TF
+	ind: 	93.5858	Pow MaxAM GSS
+	ind: 	54.6732	* MaxTFICF IG
+	ind: 	48.0147	Log MaxOR MaxIG
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	80.0244	+ MaxTFICF IG
+	rep: 39  -> 39
+	rep: 36 4  -> 0
+	rep: 36 4  -> 1
+	rep: 29  -> 2
+	rep: 48 35  -> 3
+	rep: 48 35  -> 4
+	rep: 39 19  -> 5
+	rep: 39 19  -> 6
+	rep: 19 32  -> 7
+	rep: 19 32  -> 8
+	rep: 5 29  -> 9
+	rep: 5 29  -> 10
+	rep: 19  -> 11
+	rep: 40  -> 12
+	rep: 0 45  -> 13
+	rep: 0 45  -> 14
+	rep: 11 33  -> 15
+	rep: 11 33  -> 16
+	rep: 34 45  -> 17
+	rep: 34 45  -> 18
+	rep: 30 18  -> 19
+	rep: 30 18  -> 20
+	rep: 3 37  -> 21
+	rep: 3 37  -> 22
+	rep: 6 14  -> 23
+	rep: 6 14  -> 24
+	rep: 3 47  -> 25
+	rep: 3 47  -> 26
+	rep: 48 14  -> 27
+	rep: 48 14  -> 28
+	rep: 49 46  -> 29
+	rep: 49 46  -> 30
+	rep: 47 36  -> 31
+	rep: 47 36  -> 32
+	rep: 19 33  -> 33
+	rep: 19 33  -> 34
+	rep: 0 0  -> 35
+	rep: 0 0  -> 36
+	rep: 23 6  -> 37
+	rep: 23 6  -> 38
+	rep: 31 20  -> 40
+	rep: 31 20  -> 41
+	rep: 18 2  -> 42
+	rep: 18 2  -> 43
+	rep: 13  -> 44
+	rep: 14 14  -> 45
+	rep: 14 14  -> 46
+	rep: 16 33  -> 47
+	rep: 16 33  -> 48
+	rep: 42 15  -> 49
+generation 8:
+	ind: 	80.0244	+ MaxTFICF IG
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.4863	Log * P MaxCHI - DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	93.2193	* P MaxCHI
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	93.2193	* P MaxCHI
+	ind: 	48.0147	Log - P MaxCHI - DF CC
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	93.2193	* P MaxCHI
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	48.0147	Log MaxOR MaxIG
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	48.0147	- sumTF TF
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	50.0916	Pow MaxTFICF IG
+	ind: 	67.5626	* Pow sumTF TF TF
+	ind: 	90.1649	% MaxAM CE
+	ind: 	28.5889	MaxTFICF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	28.5889	MaxTFICF
+	ind: 	93.1582	* + DOM AM MaxCHI
+	ind: 	93.036	P
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	28.5889	MaxTFICF
+	ind: 	54.6732	* MaxTFICF IG
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.8528	+ DOM AM
+	ind: 	48.0147	- sumTF TF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	28.5889	MaxTFICF
+	ind: 	91.631	- MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	90.1038	Log Pow sumTF TF - DF CC
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	67.5626	* Pow sumTF TF TF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	48.0147	- sumTF TF
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	93.2193	* P MaxCHI
+	rep: 6  -> 6
+	rep: 17 16  -> 0
+	rep: 17 16  -> 1
+	rep: 9 4  -> 2
+	rep: 9 4  -> 3
+	rep: 6 49  -> 4
+	rep: 6 49  -> 5
+	rep: 48 37  -> 7
+	rep: 48 37  -> 8
+	rep: 39  -> 9
+	rep: 39 42  -> 10
+	rep: 39 42  -> 11
+	rep: 16  -> 12
+	rep: 8 21  -> 13
+	rep: 8 21  -> 14
+	rep: 49 19  -> 15
+	rep: 49 19  -> 16
+	rep: 11  -> 17
+	rep: 36 3  -> 18
+	rep: 36 3  -> 19
+	rep: 15 4  -> 20
+	rep: 15 4  -> 21
+	rep: 5  -> 22
+	rep: 4 29  -> 23
+	rep: 4 29  -> 24
+	rep: 6 25  -> 25
+	rep: 6 25  -> 26
+	rep: 49 31  -> 27
+	rep: 49 31  -> 28
+	rep: 2 27  -> 29
+	rep: 2 27  -> 30
+	rep: 48 42  -> 31
+	rep: 48 42  -> 32
+	rep: 17 19  -> 33
+	rep: 17 19  -> 34
+	rep: 31 46  -> 35
+	rep: 31 46  -> 36
+	rep: 1  -> 37
+	rep: 41 23  -> 38
+	rep: 41 23  -> 39
+	rep: 44 46  -> 40
+	rep: 44 46  -> 41
+	rep: 36 4  -> 42
+	rep: 36 4  -> 43
+	rep: 20 45  -> 44
+	rep: 20 45  -> 45
+	rep: 16 29  -> 46
+	rep: 16 29  -> 47
+	rep: 8 32  -> 48
+	rep: 8 32  -> 49
+generation 9:
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	48.0147	Log Log P MaxCHI - DF CC
+	ind: 	92.8528	+ P MaxCHI
+	ind: 	93.2193	* P MaxCHI
+	ind: 	90.0428	+ % MaxAM CE - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log % MaxAM CE % MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	28.5889	MaxTFICF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	67.5626	* Pow sumTF TF TF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	93.2193	* P MaxCHI
+	ind: 	28.5889	MaxTFICF
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	48.0147	- sumTF TF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	28.5889	MaxTFICF
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	90.4704	Log % MaxAM CE * + DOM AM MaxCHI
+	ind: 	92.6084	- DF CC
+	ind: 	91.5699	TF
+	ind: 	93.1582	+ * P MaxCHI AM
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	92.4863	Log * P MaxCHI - DF CC
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	67.5626	* Pow sumTF TF TF
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	92.8528	+ DOM AM
+	ind: 	48.0147	- DOM AM
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	93.2193	* P MaxCHI
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	87.416	* IG MaxTFIDF
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	90.1649	% MaxAM CE
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	92.8528	+ DOM AM
+	ind: 	48.0147	- P MaxCHI
+	rep: 6  -> 6
+	rep: 36 12  -> 0
+	rep: 36 12  -> 1
+	rep: 11 13  -> 2
+	rep: 11 13  -> 3
+	rep: 38 40  -> 4
+	rep: 38 40  -> 5
+	rep: 34 49  -> 7
+	rep: 34 49  -> 8
+	rep: 11 8  -> 9
+	rep: 11 8  -> 10
+	rep: 14 11  -> 11
+	rep: 14 11  -> 12
+	rep: 11 40  -> 13
+	rep: 11 40  -> 14
+	rep: 1 10  -> 15
+	rep: 1 10  -> 16
+	rep: 37 18  -> 17
+	rep: 37 18  -> 18
+	rep: 0 0  -> 19
+	rep: 0 0  -> 20
+	rep: 4 24  -> 21
+	rep: 4 24  -> 22
+	rep: 25 46  -> 23
+	rep: 25 46  -> 24
+	rep: 9 40  -> 25
+	rep: 9 40  -> 26
+	rep: 17 36  -> 27
+	rep: 17 36  -> 28
+	rep: 4 18  -> 29
+	rep: 4 18  -> 30
+	rep: 36 30  -> 31
+	rep: 36 30  -> 32
+	rep: 26 23  -> 33
+	rep: 26 23  -> 34
+	rep: 47 0  -> 35
+	rep: 47 0  -> 36
+	rep: 2 13  -> 37
+	rep: 2 13  -> 38
+	rep: 10 38  -> 39
+	rep: 10 38  -> 40
+	rep: 17 11  -> 41
+	rep: 17 11  -> 42
+	rep: 46 38  -> 43
+	rep: 46 38  -> 44
+	rep: 9 12  -> 45
+	rep: 9 12  -> 46
+	rep: 9  -> 47
+	rep: 4 21  -> 48
+	rep: 4 21  -> 49
+generation 10:
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	92.8528	+ DOM AM
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	- P MaxCHI
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	61.3928	Pow sumTF TF
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.2193	* P MaxCHI
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log % MaxAM CE % MaxOR MaxTFICF
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	28.5889	MaxTFICF
+	ind: 	48.0147	- DOM AM
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	93.2193	* P MaxCHI
+	ind: 	28.5889	MaxTFICF
+	ind: 	48.4423	Log + MaxAM CE * + DOM AM MaxCHI
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	48.0147	Log % MaxAM CE % DF CC
+	ind: 	48.0147	- DOM AM
+	ind: 	92.0586	* IDF MaxCHI
+	ind: 	28.5889	MaxTFICF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	1.58827	Pow DF CC
+	ind: 	62.4924	Log * P MaxCHI + DOM AM
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	48.0147	Log Log P MaxCHI MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	48.0147	Log % MaxAM CE % MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	93.2193	* P MaxCHI
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	28.5889	MaxTFICF
+	ind: 	77.0922	Log % MaxAM CE - MaxAM GSS
+	ind: 	1.58827	Pow DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	- sumTF TF
+	ind: 	93.2193	* P MaxCHI
+	rep: 6  -> 6
+	rep: 41 33  -> 0
+	rep: 41 33  -> 1
+	rep: 21  -> 2
+	rep: 41 7  -> 3
+	rep: 41 7  -> 4
+	rep: 6 35  -> 5
+	rep: 6 35  -> 7
+	rep: 23 4  -> 8
+	rep: 23 4  -> 9
+	rep: 47 33  -> 10
+	rep: 47 33  -> 11
+	rep: 0 4  -> 12
+	rep: 0 4  -> 13
+	rep: 32 48  -> 14
+	rep: 32 48  -> 15
+	rep: 40 46  -> 16
+	rep: 40 46  -> 17
+	rep: 4 5  -> 18
+	rep: 4 5  -> 19
+	rep: 16 19  -> 20
+	rep: 16 19  -> 21
+	rep: 40 23  -> 22
+	rep: 40 23  -> 23
+	rep: 11 40  -> 24
+	rep: 11 40  -> 25
+	rep: 45 5  -> 26
+	rep: 45 5  -> 27
+	rep: 0 29  -> 28
+	rep: 0 29  -> 29
+	rep: 1 13  -> 30
+	rep: 1 13  -> 31
+	rep: 16 25  -> 32
+	rep: 16 25  -> 33
+	rep: 16 37  -> 34
+	rep: 16 37  -> 35
+	rep: 41 33  -> 36
+	rep: 41 33  -> 37
+	rep: 20 31  -> 38
+	rep: 20 31  -> 39
+	rep: 41 32  -> 40
+	rep: 41 32  -> 41
+	rep: 3 24  -> 42
+	rep: 3 24  -> 43
+	rep: 18 27  -> 44
+	rep: 18 27  -> 45
+	rep: 40 13  -> 46
+	rep: 40 13  -> 47
+	rep: 11 3  -> 48
+	rep: 11 3  -> 49
+generation 11:
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	45.6323	Pow P MaxCHI
+	ind: 	48.0147	- P MaxCHI
+	ind: 	92.6084	- DF CC
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	28.5889	MaxTFICF
+	ind: 	88.8821	Log % MaxAM CE MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	11.5455	Log * P MaxCHI - sumTF TF
+	ind: 	92.8528	+ DOM AM
+	ind: 	48.0147	Log Pow DF CC % MaxOR MaxTFICF
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	48.0147	Log MaxTFICF % MaxOR MaxTFICF
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log % MaxAM CE % MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log % MaxAM CE * MaxAM GSS
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	92.8528	+ DOM AM
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	86.8051	Log + MaxOR MaxIG MaxTFICF
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.4863	Log * P MaxCHI - DF CC
+	ind: 	48.4423	Log + MaxAM CE * + DOM AM MaxCHI
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	- DOM AM
+	ind: 	48.0147	- DOM AM
+	ind: 	48.0147	Log * MaxAM CE * MaxAM GSS
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	rep: 6  -> 6
+	rep: 48 47  -> 0
+	rep: 48 47  -> 1
+	rep: 43 10  -> 2
+	rep: 43 10  -> 3
+	rep: 39  -> 4
+	rep: 48 12  -> 5
+	rep: 48 12  -> 7
+	rep: 15 36  -> 8
+	rep: 15 36  -> 9
+	rep: 31 41  -> 10
+	rep: 31 41  -> 11
+	rep: 4 8  -> 12
+	rep: 4 8  -> 13
+	rep: 15  -> 14
+	rep: 27 42  -> 15
+	rep: 27 42  -> 16
+	rep: 34 36  -> 17
+	rep: 34 36  -> 18
+	rep: 0  -> 19
+	rep: 7 10  -> 20
+	rep: 7 10  -> 21
+	rep: 26 45  -> 22
+	rep: 26 45  -> 23
+	rep: 7 45  -> 24
+	rep: 7 45  -> 25
+	rep: 34 44  -> 26
+	rep: 34 44  -> 27
+	rep: 33 46  -> 28
+	rep: 33 46  -> 29
+	rep: 7 43  -> 30
+	rep: 7 43  -> 31
+	rep: 33 14  -> 32
+	rep: 33 14  -> 33
+	rep: 33 38  -> 34
+	rep: 33 38  -> 35
+	rep: 22 8  -> 36
+	rep: 22 8  -> 37
+	rep: 11 24  -> 38
+	rep: 11 24  -> 39
+	rep: 5 8  -> 40
+	rep: 5 8  -> 41
+	rep: 25 45  -> 42
+	rep: 25 45  -> 43
+	rep: 49 34  -> 44
+	rep: 49 34  -> 45
+	rep: 34 18  -> 46
+	rep: 34 18  -> 47
+	rep: 13 47  -> 48
+	rep: 13 47  -> 49
+generation 12:
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	87.1717	Log - DF CC MaxTFICF
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.4863	Log * P MaxCHI - DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	92.6084	- DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.7917	Pow DOM AM
+	ind: 	48.5034	Log + MaxAM CE * - MaxAM GSS MaxCHI
+	ind: 	28.5889	MaxTFICF
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	28.5889	MaxTFICF
+	ind: 	58.0941	Log Log % MaxAM CE MaxTFICF - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	- DOM AM
+	ind: 	48.0147	Log % MaxAM CE * MaxAM GSS
+	ind: 	48.0147	Log - DOM AM - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	- DOM AM
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	5.25351	% MaxAM GSS
+	ind: 	48.0147	Log * MaxAM CE + MaxOR MaxIG
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	11.5455	Log * P MaxCHI - sumTF TF
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	1.58827	Pow DF CC
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	48.0147	Log MaxTFICF * MaxAM GSS
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log - DF CC % MaxOR MaxTFICF
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	48.0147	- DOM AM
+	ind: 	5.25351	% DF CC
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	91.5699	- MaxAM % MaxOR MaxTFICF
+	ind: 	5.25351	GSS
+	rep: 6  -> 6
+	rep: 41 25  -> 0
+	rep: 41 25  -> 1
+	rep: 3 34  -> 2
+	rep: 3 34  -> 3
+	rep: 33 43  -> 4
+	rep: 33 43  -> 5
+	rep: 9 25  -> 7
+	rep: 9 25  -> 8
+	rep: 24 43  -> 9
+	rep: 24 43  -> 10
+	rep: 45  -> 11
+	rep: 15 18  -> 12
+	rep: 15 18  -> 13
+	rep: 14 12  -> 14
+	rep: 14 12  -> 15
+	rep: 3 32  -> 16
+	rep: 3 32  -> 17
+	rep: 13 18  -> 18
+	rep: 13 18  -> 19
+	rep: 31 37  -> 20
+	rep: 31 37  -> 21
+	rep: 31 28  -> 22
+	rep: 31 28  -> 23
+	rep: 13 26  -> 24
+	rep: 13 26  -> 25
+	rep: 29 28  -> 26
+	rep: 29 28  -> 27
+	rep: 41 19  -> 28
+	rep: 41 19  -> 29
+	rep: 20 36  -> 30
+	rep: 20 36  -> 31
+	rep: 33 49  -> 32
+	rep: 33 49  -> 33
+	rep: 4 41  -> 34
+	rep: 4 41  -> 35
+	rep: 42 19  -> 36
+	rep: 42 19  -> 37
+	rep: 13 39  -> 38
+	rep: 13 39  -> 39
+	rep: 30 19  -> 40
+	rep: 30 19  -> 41
+	rep: 9 21  -> 42
+	rep: 9 21  -> 43
+	rep: 3 17  -> 44
+	rep: 3 17  -> 45
+	rep: 14 25  -> 46
+	rep: 14 25  -> 47
+	rep: 31 11  -> 48
+	rep: 31 11  -> 49
+generation 13:
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	1.58827	Pow DF CC
+	ind: 	87.1717	Log - DF CC MaxTFICF
+	ind: 	5.25351	% DF CC
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.8528	+ DOM AM
+	ind: 	48.0147	Log - DOM AM % DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	93.2193	% DOM AM
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	92.8528	+ DOM AM
+	ind: 	83.8729	Log * P MaxCHI MaxTFICF
+	ind: 	6.292	Log - DF CC - sumTF TF
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	92.6084	- DF CC
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	5.25351	% MaxAM GSS
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	- DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	% MaxAM GSS
+	ind: 	48.0147	Log * MaxAM CE + MaxOR MaxIG
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	48.0147	Log Log % MaxAM CE MaxTFICF * MaxAM GSS
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	5.25351	GSS
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	28.5889	MaxTFICF
+	ind: 	48.0147	- DOM AM
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	92.8528	+ DOM AM
+	ind: 	70.2505	Log MaxTFICF MaxTFICF
+	ind: 	1.58827	Pow DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.8528	+ DOM AM
+	ind: 	88.6378	Log + DOM AM - DF CC
+	ind: 	91.5699	+ MaxAM CE
+	rep: 6  -> 6
+	rep: 46 12  -> 0
+	rep: 46 12  -> 1
+	rep: 21 45  -> 2
+	rep: 21 45  -> 3
+	rep: 3 36  -> 4
+	rep: 3 36  -> 5
+	rep: 28 26  -> 7
+	rep: 28 26  -> 8
+	rep: 31  -> 9
+	rep: 19 22  -> 10
+	rep: 19 22  -> 11
+	rep: 41 16  -> 12
+	rep: 41 16  -> 13
+	rep: 0 3  -> 14
+	rep: 0 3  -> 15
+	rep: 8 3  -> 16
+	rep: 8 3  -> 17
+	rep: 23  -> 18
+	rep: 38 40  -> 19
+	rep: 38 40  -> 20
+	rep: 35 25  -> 21
+	rep: 35 25  -> 22
+	rep: 33 10  -> 23
+	rep: 33 10  -> 24
+	rep: 49 26  -> 25
+	rep: 49 26  -> 26
+	rep: 46 40  -> 27
+	rep: 46 40  -> 28
+	rep: 15 16  -> 29
+	rep: 15 16  -> 30
+	rep: 43 34  -> 31
+	rep: 43 34  -> 32
+	rep: 31 2  -> 33
+	rep: 31 2  -> 34
+	rep: 48 44  -> 35
+	rep: 48 44  -> 36
+	rep: 47 34  -> 37
+	rep: 47 34  -> 38
+	rep: 49 12  -> 39
+	rep: 49 12  -> 40
+	rep: 27  -> 41
+	rep: 15 36  -> 42
+	rep: 15 36  -> 43
+	rep: 27 14  -> 44
+	rep: 27 14  -> 45
+	rep: 34 16  -> 46
+	rep: 34 16  -> 47
+	rep: 10 22  -> 48
+	rep: 10 22  -> 49
+generation 14:
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	91.5699	+ MaxAM CE
+	ind: 	1.58827	Pow DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	70.2505	Log MaxTFICF MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	5.25351	% MaxAM GSS
+	ind: 	28.5889	MaxTFICF
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	5.25351	% MaxAM GSS
+	ind: 	92.6084	- DF CC
+	ind: 	83.8729	Log * P MaxCHI MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	88.8821	Log % MaxAM CE MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	55.7117	Log + DOM AM MaxTFICF
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	48.0147	Log DF CC
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	5.25351	% MaxAM GSS
+	ind: 	91.5699	+ MaxAM CE
+	ind: 	28.5889	MaxTFICF
+	ind: 	90.1649	% MaxAM CE
+	ind: 	83.8729	Log * P MaxCHI MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	92.7917	Pow DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	48.0147	Log Log MaxTFICF MaxTFICF - DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	92.8528	+ DOM AM
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	91.5699	+ MaxAM CE
+	ind: 	48.0147	Log * MaxAM CE + MaxOR MaxIG
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	5.25351	* MaxAM GSS
+	ind: 	48.0147	Log * MaxAM CE + MaxOR MaxIG
+	ind: 	83.8729	Log * P MaxCHI MaxTFICF
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	5.25351	% MaxAM GSS
+	ind: 	48.0147	Log DF CC
+	rep: 3  -> 3
+	rep: 13 19  -> 0
+	rep: 13 19  -> 1
+	rep: 19 10  -> 2
+	rep: 19 10  -> 4
+	rep: 43 20  -> 5
+	rep: 43 20  -> 6
+	rep: 36 41  -> 7
+	rep: 36 41  -> 8
+	rep: 30 34  -> 9
+	rep: 30 34  -> 10
+	rep: 45 2  -> 11
+	rep: 45 2  -> 12
+	rep: 33 1  -> 13
+	rep: 33 1  -> 14
+	rep: 22 9  -> 15
+	rep: 22 9  -> 16
+	rep: 42 25  -> 17
+	rep: 42 25  -> 18
+	rep: 13 9  -> 19
+	rep: 13 9  -> 20
+	rep: 16 41  -> 21
+	rep: 16 41  -> 22
+	rep: 46 0  -> 23
+	rep: 46 0  -> 24
+	rep: 31 9  -> 25
+	rep: 31 9  -> 26
+	rep: 33  -> 27
+	rep: 40 49  -> 28
+	rep: 40 49  -> 29
+	rep: 45 10  -> 30
+	rep: 45 10  -> 31
+	rep: 43 34  -> 32
+	rep: 43 34  -> 33
+	rep: 12 41  -> 34
+	rep: 12 41  -> 35
+	rep: 37 34  -> 36
+	rep: 37 34  -> 37
+	rep: 11  -> 38
+	rep: 38 27  -> 39
+	rep: 38 27  -> 40
+	rep: 17  -> 41
+	rep: 12 48  -> 42
+	rep: 12 48  -> 43
+	rep: 11 8  -> 44
+	rep: 11 8  -> 45
+	rep: 9 44  -> 46
+	rep: 9 44  -> 47
+	rep: 34  -> 48
+	rep: 47 45  -> 49
+generation 15:
+	ind: 	28.5889	MaxTFICF
+	ind: 	5.25351	% DF CC
+	ind: 	5.25351	% MaxAM GSS
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	75.0764	* MaxAM CE
+	ind: 	85.1558	Log + DOM AM + MaxOR MaxIG
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	48.0147	Log * MaxAM CE Pow DF CC
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	91.5699	+ MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- - DF CC GSS
+	ind: 	68.7844	+ MaxTFICF MaxAM
+	ind: 	5.37569	+ MaxAM GSS
+	ind: 	28.5889	MaxTFICF
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Pow MaxOR MaxIG
+	ind: 	48.0147	Log * MaxAM CE - DF CC
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	83.8729	Log * P MaxCHI MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	58.033	Log MaxTFICF - MaxAM GSS
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	% MaxAM GSS
+	ind: 	48.0147	Log * MaxAM CE + MaxOR MaxIG
+	ind: 	91.8143	+ DOM Log MaxTFICF - DF CC
+	ind: 	93.1582	AM
+	ind: 	48.0147	Log * MaxAM CE + MaxOR MaxIG
+	ind: 	87.3549	Log + P MaxCHI MaxTFICF
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	92.7306	- MaxAM GSS
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	55.7117	Log + DOM AM MaxTFICF
+	ind: 	48.0147	Log % MaxAM GSS MaxTFICF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	% MaxAM GSS
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	75.0764	* MaxAM CE
+	rep: 3  -> 3
+	rep: 7 19  -> 0
+	rep: 7 19  -> 1
+	rep: 21 21  -> 2
+	rep: 21 21  -> 4
+	rep: 6 25  -> 5
+	rep: 6 25  -> 6
+	rep: 41 34  -> 7
+	rep: 41 34  -> 8
+	rep: 20 18  -> 9
+	rep: 20 18  -> 10
+	rep: 25 19  -> 11
+	rep: 25 19  -> 12
+	rep: 24 47  -> 13
+	rep: 24 47  -> 14
+	rep: 6 5  -> 15
+	rep: 6 5  -> 16
+	rep: 27 38  -> 17
+	rep: 27 38  -> 18
+	rep: 27 18  -> 19
+	rep: 27 18  -> 20
+	rep: 10 19  -> 21
+	rep: 10 19  -> 22
+	rep: 3 38  -> 23
+	rep: 3 38  -> 24
+	rep: 15 29  -> 25
+	rep: 15 29  -> 26
+	rep: 38 1  -> 27
+	rep: 38 1  -> 28
+	rep: 33 39  -> 29
+	rep: 33 39  -> 30
+	rep: 45  -> 31
+	rep: 28 1  -> 32
+	rep: 28 1  -> 33
+	rep: 7 34  -> 34
+	rep: 7 34  -> 35
+	rep: 48  -> 36
+	rep: 15 19  -> 37
+	rep: 15 19  -> 38
+	rep: 49  -> 39
+	rep: 32 4  -> 40
+	rep: 32 4  -> 41
+	rep: 27 23  -> 42
+	rep: 27 23  -> 43
+	rep: 11 44  -> 44
+	rep: 11 44  -> 45
+	rep: 16 17  -> 46
+	rep: 16 17  -> 47
+	rep: 5 0  -> 48
+	rep: 5 0  -> 49
+generation 16:
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	48.0147	Pow MaxOR MaxIG
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Pow MaxOR MaxIG
+	ind: 	92.6084	- DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	86.8051	Log + MaxOR MaxIG MaxTFICF
+	ind: 	48.0147	Log * MaxAM CE + DOM AM
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	84.606	+ MaxTFICF - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	73.6714	Log Log MaxTFICF - DF CC MaxTFICF
+	ind: 	93.2193	* P MaxCHI
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	93.2193	% DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.7306	- + MaxAM CE GSS
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	CC
+	ind: 	86.3775	OR
+	ind: 	1.58827	Pow DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	48.0147	Log * MaxAM CE * MaxAM CE
+	ind: 	48.0147	Log MaxTFICF + DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	64.8137	Log MaxTFICF - - DF CC GSS
+	ind: 	75.0764	* MaxAM CE
+	ind: 	77.8864	+ DOM MaxTFICF
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	48.0147	Log P MaxCHI
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log * MaxAM CE MaxTFICF
+	ind: 	1.58827	Pow DF CC
+	ind: 	5.37569	+ MaxAM GSS
+	ind: 	68.7844	+ MaxTFICF MaxAM
+	ind: 	93.036	IG
+	ind: 	51.4356	% MaxOR MaxTFICF
+	rep: 3  -> 3
+	rep: 16 33  -> 0
+	rep: 16 33  -> 1
+	rep: 6  -> 2
+	rep: 25  -> 4
+	rep: 23  -> 5
+	rep: 25 13  -> 6
+	rep: 25 13  -> 7
+	rep: 23 28  -> 8
+	rep: 23 28  -> 9
+	rep: 36 8  -> 10
+	rep: 36 8  -> 11
+	rep: 28 23  -> 12
+	rep: 28 23  -> 13
+	rep: 11 11  -> 14
+	rep: 11 11  -> 15
+	rep: 7 9  -> 16
+	rep: 7 9  -> 17
+	rep: 34 48  -> 18
+	rep: 34 48  -> 19
+	rep: 6  -> 20
+	rep: 6 32  -> 21
+	rep: 6 32  -> 22
+	rep: 10  -> 23
+	rep: 49 9  -> 24
+	rep: 49 9  -> 25
+	rep: 10 40  -> 26
+	rep: 10 40  -> 27
+	rep: 48 5  -> 28
+	rep: 48 5  -> 29
+	rep: 3 15  -> 30
+	rep: 3 15  -> 31
+	rep: 37  -> 32
+	rep: 12 7  -> 33
+	rep: 12 7  -> 34
+	rep: 7 31  -> 35
+	rep: 7 31  -> 36
+	rep: 14 28  -> 37
+	rep: 14 28  -> 38
+	rep: 17 15  -> 39
+	rep: 17 15  -> 40
+	rep: 24 19  -> 41
+	rep: 24 19  -> 42
+	rep: 28 13  -> 43
+	rep: 28 13  -> 44
+	rep: 14 29  -> 45
+	rep: 14 29  -> 46
+	rep: 47 31  -> 47
+	rep: 47 31  -> 48
+	rep: 6 21  -> 49
+generation 17:
+	ind: 	5.25351	+ DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.8528	+ DOM AM
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.7306	- + MaxAM CE GSS
+	ind: 	92.6084	- DF CC
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	63.0422	Log - + MaxAM CE GSS MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log MaxTFICF * MaxAM CE
+	ind: 	48.0147	Log Log DF CC + DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	84.606	+ MaxTFICF - DF CC
+	ind: 	84.606	+ MaxTFICF - DF CC
+	ind: 	70.2505	Log MaxTFICF MaxTFICF
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	93.036	IG
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	92.8528	+ DOM AM
+	ind: 	1.58827	Pow DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	77.8864	+ DOM MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.036	IG
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	86.8051	Log + MaxOR MaxIG MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Pow DF CC MaxTFICF
+	ind: 	48.0147	- MaxOR MaxIG
+	ind: 	92.6084	- DF CC
+	ind: 	93.2193	* P MaxCHI
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	88.8821	Log % MaxAM CE MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	73.6714	Log Log MaxTFICF - DF CC MaxTFICF
+	ind: 	5.25351	CC
+	ind: 	93.2193	* P MaxCHI
+	ind: 	1.58827	Pow DF CC
+	ind: 	68.7844	+ MaxTFICF MaxAM
+	ind: 	92.6084	- DF CC
+	rep: 3  -> 3
+	rep: 40 24  -> 0
+	rep: 40 24  -> 1
+	rep: 15 24  -> 2
+	rep: 15 24  -> 4
+	rep: 3 23  -> 5
+	rep: 3 23  -> 6
+	rep: 42 16  -> 7
+	rep: 42 16  -> 8
+	rep: 22 33  -> 9
+	rep: 22 33  -> 10
+	rep: 3 13  -> 11
+	rep: 3 13  -> 12
+	rep: 34 25  -> 13
+	rep: 34 25  -> 14
+	rep: 40 41  -> 15
+	rep: 40 41  -> 16
+	rep: 22 8  -> 17
+	rep: 22 8  -> 18
+	rep: 2 23  -> 19
+	rep: 2 23  -> 20
+	rep: 28 16  -> 21
+	rep: 28 16  -> 22
+	rep: 25 30  -> 23
+	rep: 25 30  -> 24
+	rep: 2 8  -> 25
+	rep: 2 8  -> 26
+	rep: 6 21  -> 27
+	rep: 6 21  -> 28
+	rep: 2  -> 29
+	rep: 2 6  -> 30
+	rep: 2 6  -> 31
+	rep: 2 6  -> 32
+	rep: 2 6  -> 33
+	rep: 4 26  -> 34
+	rep: 4 26  -> 35
+	rep: 29 10  -> 36
+	rep: 29 10  -> 37
+	rep: 48 35  -> 38
+	rep: 48 35  -> 39
+	rep: 4 26  -> 40
+	rep: 4 26  -> 41
+	rep: 18 5  -> 42
+	rep: 18 5  -> 43
+	rep: 38 5  -> 44
+	rep: 38 5  -> 45
+	rep: 13 32  -> 46
+	rep: 13 32  -> 47
+	rep: 1 25  -> 48
+	rep: 1 25  -> 49
+generation 18:
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	84.606	+ MaxTFICF - DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	70.2505	Log MaxTFICF MaxTFICF
+	ind: 	5.25351	% DF CC
+	ind: 	86.8051	Log + MaxOR MaxIG MaxTFICF
+	ind: 	92.8528	+ DOM AM
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	88.8821	Log % MaxAM CE MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	70.2505	Log MaxTFICF MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	27.9169	+ MaxTFICF Pow DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	40.3787	Log MaxTFICF + DOM AM
+	ind: 	48.0147	Log MaxTFICF * DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	77.8864	+ DOM MaxTFICF
+	ind: 	92.7306	- + MaxAM CE GSS
+	ind: 	48.0147	Log MaxTFICF * MaxAM CE
+	ind: 	93.036	IG
+	ind: 	1.58827	Pow DF CC
+	ind: 	78.1307	Log + MaxTFICF MaxAM MaxTFICF
+	ind: 	77.8864	+ DOM MaxTFICF
+	ind: 	92.7306	- + MaxAM CE GSS
+	ind: 	92.6084	- DF CC
+	ind: 	93.036	IG
+	ind: 	5.25351	+ DF CC
+	ind: 	93.2193	* P MaxCHI
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	37.4465	* MaxOR MaxTFICF
+	ind: 	48.0147	- DOM AM
+	rep: 3  -> 3
+	rep: 10 8  -> 0
+	rep: 10 8  -> 1
+	rep: 21  -> 2
+	rep: 18  -> 4
+	rep: 2 0  -> 5
+	rep: 2 0  -> 6
+	rep: 31 44  -> 7
+	rep: 31 44  -> 8
+	rep: 11 38  -> 9
+	rep: 11 38  -> 10
+	rep: 37 27  -> 11
+	rep: 37 27  -> 12
+	rep: 43 31  -> 13
+	rep: 43 31  -> 14
+	rep: 22 4  -> 15
+	rep: 22 4  -> 16
+	rep: 42  -> 17
+	rep: 9 4  -> 18
+	rep: 9 4  -> 19
+	rep: 11 30  -> 20
+	rep: 11 30  -> 21
+	rep: 42 28  -> 22
+	rep: 42 28  -> 23
+	rep: 30 23  -> 24
+	rep: 30 23  -> 25
+	rep: 9 38  -> 26
+	rep: 9 38  -> 27
+	rep: 29  -> 28
+	rep: 45 10  -> 29
+	rep: 45 10  -> 30
+	rep: 11 46  -> 31
+	rep: 11 46  -> 32
+	rep: 16 28  -> 33
+	rep: 16 28  -> 34
+	rep: 9 2  -> 35
+	rep: 9 2  -> 36
+	rep: 37 31  -> 37
+	rep: 37 31  -> 38
+	rep: 37 22  -> 39
+	rep: 37 22  -> 40
+	rep: 28 32  -> 41
+	rep: 28 32  -> 42
+	rep: 22 13  -> 43
+	rep: 22 13  -> 44
+	rep: 11 15  -> 45
+	rep: 11 15  -> 46
+	rep: 19 49  -> 47
+	rep: 19 49  -> 48
+	rep: 12 4  -> 49
+generation 19:
+	ind: 	5.25351	% DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	70.2505	Log MaxTFICF MaxTFICF
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	93.2193	% DOM AM
+	ind: 	28.5889	MaxTFICF
+	ind: 	28.5889	MaxTFICF
+	ind: 	5.25351	+ DF CC
+	ind: 	40.3787	Log MaxTFICF + DOM AM
+	ind: 	1.58827	Pow DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	27.9169	+ MaxTFICF Pow DF CC
+	ind: 	93.036	IG
+	ind: 	40.3787	Log MaxTFICF + DOM AM
+	ind: 	93.036	IG
+	ind: 	92.6084	- DF CC
+	ind: 	27.9169	+ MaxTFICF Pow DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	87.1717	Log + MaxTFICF - DF CC MaxTFICF
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	51.4356	% MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Pow DF CC MaxTFICF
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.8528	+ DOM AM
+	ind: 	93.2193	* P MaxCHI
+	ind: 	48.0147	Log % MaxAM CE * DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	86.8051	Log + MaxOR MaxIG MaxTFICF
+	ind: 	40.3787	Log MaxTFICF + DOM AM
+	ind: 	93.036	IG
+	ind: 	92.6084	- DF CC
+	ind: 	93.036	IG
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log MaxTFICF % DF CC
+	ind: 	51.741	+ MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	93.2193	Log % MaxAM CE % MaxAM CE
+	ind: 	87.1717	Log - DF CC MaxTFICF
+	ind: 	48.0147	- DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	rep: 3  -> 3
+	rep: 1  -> 0
+	rep: 33 16  -> 1
+	rep: 33 16  -> 2
+	rep: 29 9  -> 4
+	rep: 29 9  -> 5
+	rep: 10 30  -> 6
+	rep: 10 30  -> 7
+	rep: 31 16  -> 8
+	rep: 31 16  -> 9
+	rep: 35 35  -> 10
+	rep: 35 35  -> 11
+	rep: 39 37  -> 12
+	rep: 39 37  -> 13
+	rep: 3 31  -> 14
+	rep: 3 31  -> 15
+	rep: 25 7  -> 16
+	rep: 25 7  -> 17
+	rep: 29 47  -> 18
+	rep: 29 47  -> 19
+	rep: 14 0  -> 20
+	rep: 14 0  -> 21
+	rep: 40 47  -> 22
+	rep: 40 47  -> 23
+	rep: 30  -> 24
+	rep: 42 41  -> 25
+	rep: 42 41  -> 26
+	rep: 5 35  -> 27
+	rep: 5 35  -> 28
+	rep: 18 6  -> 29
+	rep: 18 6  -> 30
+	rep: 48 43  -> 31
+	rep: 48 43  -> 32
+	rep: 35 35  -> 33
+	rep: 35 35  -> 34
+	rep: 33 44  -> 35
+	rep: 33 44  -> 36
+	rep: 34  -> 37
+	rep: 28 47  -> 38
+	rep: 28 47  -> 39
+	rep: 19 28  -> 40
+	rep: 19 28  -> 41
+	rep: 4 11  -> 42
+	rep: 4 11  -> 43
+	rep: 29 23  -> 44
+	rep: 29 23  -> 45
+	rep: 27 14  -> 46
+	rep: 27 14  -> 47
+	rep: 1 47  -> 48
+	rep: 1 47  -> 49
+generation 20:
+	ind: 	92.8528	+ DOM AM
+	ind: 	27.9169	+ MaxTFICF Pow DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.975	+ Pow DF CC AM
+	ind: 	93.1582	DOM
+	ind: 	48.0147	Log Pow MaxAM CE * P MaxCHI
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log + MaxTFICF Pow DF CC % DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	28.5889	MaxTFICF
+	ind: 	28.5889	MaxTFICF
+	ind: 	40.3787	Log MaxTFICF + DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log * DF CC - DF CC
+	ind: 	93.2193	Log % MaxAM CE % MaxAM CE
+	ind: 	5.25351	+ DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	92.8528	+ DOM AM
+	ind: 	5.25351	% DF CC
+	ind: 	93.036	IG
+	ind: 	48.0147	- DOM AM
+	ind: 	93.036	IG
+	ind: 	93.2193	* P MaxCHI
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log MaxTFICF % DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	28.5889	MaxTFICF
+	ind: 	28.5889	MaxTFICF
+	ind: 	87.1717	Log + MaxTFICF - DF CC MaxTFICF
+	ind: 	18.2651	Pow MaxOR MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	- DOM AM
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.8528	+ DOM AM
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	1.58827	Pow DF CC
+	ind: 	70.9835	+ MaxTFICF % DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	93.036	IG
+	ind: 	93.2193	+ MaxOR MaxIG
+	ind: 	48.0147	- DOM AM
+	ind: 	92.8528	+ DOM AM
+	rep: 3  -> 3
+	rep: 49 35  -> 0
+	rep: 49 35  -> 1
+	rep: 37 34  -> 2
+	rep: 37 34  -> 4
+	rep: 11 42  -> 5
+	rep: 11 42  -> 6
+	rep: 37 16  -> 7
+	rep: 37 16  -> 8
+	rep: 3 47  -> 9
+	rep: 3 47  -> 10
+	rep: 0 37  -> 11
+	rep: 0 37  -> 12
+	rep: 2 28  -> 13
+	rep: 2 28  -> 14
+	rep: 38 16  -> 15
+	rep: 38 16  -> 16
+	rep: 49 44  -> 17
+	rep: 49 44  -> 18
+	rep: 33 25  -> 19
+	rep: 33 25  -> 20
+	rep: 5 27  -> 21
+	rep: 5 27  -> 22
+	rep: 5 43  -> 23
+	rep: 5 43  -> 24
+	rep: 45 14  -> 25
+	rep: 45 14  -> 26
+	rep: 3 32  -> 27
+	rep: 3 32  -> 28
+	rep: 32  -> 29
+	rep: 33 42  -> 30
+	rep: 33 42  -> 31
+	rep: 15 34  -> 32
+	rep: 15 34  -> 33
+	rep: 5  -> 34
+	rep: 5 19  -> 35
+	rep: 5 19  -> 36
+	rep: 3 12  -> 37
+	rep: 3 12  -> 38
+	rep: 47 28  -> 39
+	rep: 47 28  -> 40
+	rep: 17 27  -> 41
+	rep: 17 27  -> 42
+	rep: 0 42  -> 43
+	rep: 0 42  -> 44
+	rep: 24 2  -> 45
+	rep: 24 2  -> 46
+	rep: 23 26  -> 47
+	rep: 23 26  -> 48
+	rep: 17 29  -> 49
+generation 21:
+	ind: 	92.6084	- DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	28.5889	MaxTFICF
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	5.25351	+ DF CC
+	ind: 	92.7306	- GSS CC
+	ind: 	93.5247	Log % MaxAM CE + MaxOR MaxIG
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	- DOM AM
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	48.0147	- DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	5.25351	* DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	28.5889	MaxTFICF
+	ind: 	93.1582	DOM
+	ind: 	70.9835	+ MaxTFICF % DOM AM
+	ind: 	93.1582	DOM
+	ind: 	48.0147	Log Pow DF CC - DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	70.4948	Log MaxTFICF % MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.2419	* DOM AM
+	ind: 	86.3775	OR
+	ind: 	92.8528	+ DOM AM
+	ind: 	47.4038	Log MaxTFICF Log % MaxAM CE - DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	48.0147	Pow MaxOR MaxIG
+	ind: 	91.5699	TF
+	ind: 	92.6084	- DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	93.2193	* P MaxCHI
+	ind: 	48.0147	Log MaxTFICF % DF CC
+	ind: 	93.036	IG
+	ind: 	28.5889	MaxTFICF
+	rep: 3  -> 3
+	rep: 42  -> 0
+	rep: 0 6  -> 1
+	rep: 0 6  -> 2
+	rep: 35 12  -> 4
+	rep: 35 12  -> 5
+	rep: 28 4  -> 6
+	rep: 28 4  -> 7
+	rep: 3 7  -> 8
+	rep: 3 7  -> 9
+	rep: 25 39  -> 10
+	rep: 25 39  -> 11
+	rep: 27  -> 12
+	rep: 11 6  -> 13
+	rep: 11 6  -> 14
+	rep: 42 7  -> 15
+	rep: 42 7  -> 16
+	rep: 11 41  -> 17
+	rep: 11 41  -> 18
+	rep: 42  -> 19
+	rep: 41 34  -> 20
+	rep: 41 34  -> 21
+	rep: 46 38  -> 22
+	rep: 46 38  -> 23
+	rep: 17 35  -> 24
+	rep: 17 35  -> 25
+	rep: 6 30  -> 26
+	rep: 6 30  -> 27
+	rep: 47 6  -> 28
+	rep: 47 6  -> 29
+	rep: 2 19  -> 30
+	rep: 2 19  -> 31
+	rep: 45 5  -> 32
+	rep: 45 5  -> 33
+	rep: 22 7  -> 34
+	rep: 22 7  -> 35
+	rep: 3 10  -> 36
+	rep: 3 10  -> 37
+	rep: 48 16  -> 38
+	rep: 48 16  -> 39
+	rep: 28 2  -> 40
+	rep: 28 2  -> 41
+	rep: 22 12  -> 42
+	rep: 22 12  -> 43
+	rep: 35 2  -> 44
+	rep: 35 2  -> 45
+	rep: 0 45  -> 46
+	rep: 0 45  -> 47
+	rep: 46 7  -> 48
+	rep: 46 7  -> 49
+generation 22:
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	- DOM AM
+	ind: 	92.2419	* DOM AM
+	ind: 	48.0147	Log Pow MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log + DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	91.5699	TF
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	91.5699	TF
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log MaxTFICF Log Pow MaxAM CE * P MaxCHI
+	ind: 	92.7306	- * DOM AM CC
+	ind: 	93.2193	MaxIG
+	ind: 	1.58827	Pow DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	28.5889	MaxTFICF
+	ind: 	48.0147	Log MaxTFICF % DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	1.58827	Pow DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	79.4136	MaxOR
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	- DOM AM
+	ind: 	93.036	IG
+	ind: 	64.8137	Log MaxTFICF - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	- DOM AM
+	ind: 	93.1582	DOM
+	ind: 	24.496	* DOM MaxTFICF
+	ind: 	93.1582	AM
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	93.2193	* P MaxCHI
+	rep: 3  -> 3
+	rep: 36  -> 0
+	rep: 25 40  -> 1
+	rep: 25 40  -> 2
+	rep: 41 32  -> 4
+	rep: 41 32  -> 5
+	rep: 5 42  -> 6
+	rep: 5 42  -> 7
+	rep: 7 33  -> 8
+	rep: 7 33  -> 9
+	rep: 2 19  -> 10
+	rep: 2 19  -> 11
+	rep: 18 31  -> 12
+	rep: 18 31  -> 13
+	rep: 37 16  -> 14
+	rep: 37 16  -> 15
+	rep: 47 13  -> 16
+	rep: 47 13  -> 17
+	rep: 3  -> 18
+	rep: 24  -> 19
+	rep: 19 11  -> 20
+	rep: 19 11  -> 21
+	rep: 39 15  -> 22
+	rep: 39 15  -> 23
+	rep: 6 27  -> 24
+	rep: 6 27  -> 25
+	rep: 37 32  -> 26
+	rep: 37 32  -> 27
+	rep: 20 15  -> 28
+	rep: 20 15  -> 29
+	rep: 8 48  -> 30
+	rep: 8 48  -> 31
+	rep: 24 22  -> 32
+	rep: 24 22  -> 33
+	rep: 3 48  -> 34
+	rep: 3 48  -> 35
+	rep: 16 44  -> 36
+	rep: 16 44  -> 37
+	rep: 24 12  -> 38
+	rep: 24 12  -> 39
+	rep: 43  -> 40
+	rep: 1  -> 41
+	rep: 12 31  -> 42
+	rep: 12 31  -> 43
+	rep: 3  -> 44
+	rep: 9 23  -> 45
+	rep: 9 23  -> 46
+	rep: 16 26  -> 47
+	rep: 16 26  -> 48
+	rep: 45 41  -> 49
+generation 23:
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	59.1326	Log MaxTFICF MaxIG
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	- DOM AM
+	ind: 	92.7917	Pow DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.7306	- * DOM AM CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	93.036	IG
+	ind: 	28.5889	MaxTFICF
+	ind: 	48.0147	Log Pow MaxAM CE - DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	5.25351	+ DF CC
+	ind: 	48.0147	Log + DF CC % DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.7306	- * DOM AM CC
+	ind: 	5.25351	+ DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	24.496	* DOM MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	92.2419	- - DF CC CC
+	ind: 	92.2419	* DOM AM
+	ind: 	93.1582	DOM
+	ind: 	28.5889	MaxTFICF
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	48.0147	Log MaxTFICF Log % MaxAM CE % P MaxCHI
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	90.1649	% MaxAM CE
+	rep: 0  -> 0
+	rep: 38 46  -> 1
+	rep: 38 46  -> 2
+	rep: 15 15  -> 3
+	rep: 15 15  -> 4
+	rep: 18 17  -> 5
+	rep: 18 17  -> 6
+	rep: 38 47  -> 7
+	rep: 38 47  -> 8
+	rep: 47 26  -> 9
+	rep: 47 26  -> 10
+	rep: 8 47  -> 11
+	rep: 8 47  -> 12
+	rep: 11 28  -> 13
+	rep: 11 28  -> 14
+	rep: 46 30  -> 15
+	rep: 46 30  -> 16
+	rep: 49 22  -> 17
+	rep: 49 22  -> 18
+	rep: 7 46  -> 19
+	rep: 7 46  -> 20
+	rep: 45 13  -> 21
+	rep: 45 13  -> 22
+	rep: 43 22  -> 23
+	rep: 43 22  -> 24
+	rep: 3 45  -> 25
+	rep: 3 45  -> 26
+	rep: 8 4  -> 27
+	rep: 8 4  -> 28
+	rep: 23 47  -> 29
+	rep: 23 47  -> 30
+	rep: 12  -> 31
+	rep: 0 23  -> 32
+	rep: 0 23  -> 33
+	rep: 29 1  -> 34
+	rep: 29 1  -> 35
+	rep: 14 4  -> 36
+	rep: 14 4  -> 37
+	rep: 6 26  -> 38
+	rep: 6 26  -> 39
+	rep: 35  -> 40
+	rep: 45 16  -> 41
+	rep: 45 16  -> 42
+	rep: 48 24  -> 43
+	rep: 48 24  -> 44
+	rep: 7 48  -> 45
+	rep: 7 48  -> 46
+	rep: 19 6  -> 47
+	rep: 19 6  -> 48
+	rep: 32 47  -> 49
+generation 24:
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log MaxTFICF Log % MaxAM CE % P MaxCHI
+	ind: 	92.2419	- - DF CC CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.2419	- - DF CC CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log MaxTFICF + DF CC
+	ind: 	48.0147	Log % MaxAM CE % P MaxCHI
+	ind: 	5.25351	+ DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log MaxTFICF Log Pow DOM AM % P MaxCHI
+	ind: 	92.6084	- DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	5.25351	+ DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log % MaxAM CE Pow MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	93.036	IG
+	ind: 	28.5889	MaxTFICF
+	ind: 	93.4026	Log % MaxAM CE IG
+	ind: 	1.58827	Pow DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	1.58827	Pow DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	- DOM AM
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	28.5889	MaxTFICF
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	48.0147	- DOM AM
+	ind: 	92.7306	- * DOM AM CC
+	ind: 	5.25351	* DF CC
+	rep: 0  -> 0
+	rep: 19 9  -> 1
+	rep: 19 9  -> 2
+	rep: 19  -> 3
+	rep: 46 10  -> 4
+	rep: 46 10  -> 5
+	rep: 26 2  -> 6
+	rep: 26 2  -> 7
+	rep: 39 17  -> 8
+	rep: 39 17  -> 9
+	rep: 0 28  -> 10
+	rep: 0 28  -> 11
+	rep: 5 11  -> 12
+	rep: 5 11  -> 13
+	rep: 22 44  -> 14
+	rep: 22 44  -> 15
+	rep: 8 39  -> 16
+	rep: 8 39  -> 17
+	rep: 37  -> 18
+	rep: 24 23  -> 19
+	rep: 24 23  -> 20
+	rep: 29 11  -> 21
+	rep: 29 11  -> 22
+	rep: 12  -> 23
+	rep: 43 27  -> 24
+	rep: 43 27  -> 25
+	rep: 24 1  -> 26
+	rep: 24 1  -> 27
+	rep: 43 34  -> 28
+	rep: 43 34  -> 29
+	rep: 2 29  -> 30
+	rep: 2 29  -> 31
+	rep: 23 36  -> 32
+	rep: 23 36  -> 33
+	rep: 42 3  -> 34
+	rep: 42 3  -> 35
+	rep: 49 29  -> 36
+	rep: 49 29  -> 37
+	rep: 35 33  -> 38
+	rep: 35 33  -> 39
+	rep: 34 49  -> 40
+	rep: 34 49  -> 41
+	rep: 48 35  -> 42
+	rep: 48 35  -> 43
+	rep: 22 46  -> 44
+	rep: 22 46  -> 45
+	rep: 6 28  -> 46
+	rep: 6 28  -> 47
+	rep: 0 18  -> 48
+	rep: 0 18  -> 49
+generation 25:
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	92.7306	- Pow DF CC CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	48.0147	- DOM AM
+	ind: 	92.2419	- - DF CC CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	91.5699	DF
+	ind: 	45.6323	Pow P MaxCHI
+	ind: 	47.4038	Log MaxTFICF Log % MaxAM CE - DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	5.25351	* DF CC
+	ind: 	92.2419	- - DF CC CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	84.3005	- MaxTFICF CC
+	ind: 	92.2419	* DOM AM
+	ind: 	92.7917	Pow DOM AM
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	rep: 0  -> 0
+	rep: 9 34  -> 1
+	rep: 9 34  -> 2
+	rep: 4 24  -> 3
+	rep: 4 24  -> 4
+	rep: 48 34  -> 5
+	rep: 48 34  -> 6
+	rep: 7 36  -> 7
+	rep: 7 36  -> 8
+	rep: 26 39  -> 9
+	rep: 26 39  -> 10
+	rep: 5  -> 11
+	rep: 8 19  -> 12
+	rep: 8 19  -> 13
+	rep: 10 11  -> 14
+	rep: 10 11  -> 15
+	rep: 37 36  -> 16
+	rep: 37 36  -> 17
+	rep: 0 5  -> 18
+	rep: 0 5  -> 19
+	rep: 21 40  -> 20
+	rep: 21 40  -> 21
+	rep: 17 26  -> 22
+	rep: 17 26  -> 23
+	rep: 4 21  -> 24
+	rep: 4 21  -> 25
+	rep: 44 19  -> 26
+	rep: 44 19  -> 27
+	rep: 20 19  -> 28
+	rep: 20 19  -> 29
+	rep: 47 26  -> 30
+	rep: 47 26  -> 31
+	rep: 42 16  -> 32
+	rep: 42 16  -> 33
+	rep: 0 10  -> 34
+	rep: 0 10  -> 35
+	rep: 31 27  -> 36
+	rep: 31 27  -> 37
+	rep: 2 1  -> 38
+	rep: 2 1  -> 39
+	rep: 35 45  -> 40
+	rep: 35 45  -> 41
+	rep: 2 1  -> 42
+	rep: 2 1  -> 43
+	rep: 48 0  -> 44
+	rep: 48 0  -> 45
+	rep: 37  -> 46
+	rep: 7 34  -> 47
+	rep: 7 34  -> 48
+	rep: 35 11  -> 49
+generation 26:
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.8528	+ DOM AM
+	ind: 	1.58827	Pow DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log * DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	45.6323	Pow P MaxCHI
+	ind: 	48.0147	Log DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	48.0147	Log % MaxAM CE Pow DOM AM
+	ind: 	1.58827	Pow DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	45.6323	Pow P MaxCHI
+	ind: 	92.2419	- - DF CC CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	5.25351	+ DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	45.6323	Pow P MaxCHI
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	- DOM AM
+	ind: 	84.3005	- MaxTFICF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	90.0428	- % MaxAM CE CC
+	ind: 	48.0147	Log MaxTFICF Log - DF CC - DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	1.58827	Pow DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	91.1423	Log % MaxAM CE Log % MaxAM CE - DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	rep: 35  -> 35
+	rep: 25 1  -> 0
+	rep: 25 1  -> 1
+	rep: 27 47  -> 2
+	rep: 27 47  -> 3
+	rep: 14  -> 4
+	rep: 2 37  -> 5
+	rep: 2 37  -> 6
+	rep: 10  -> 7
+	rep: 40 27  -> 8
+	rep: 40 27  -> 9
+	rep: 40 37  -> 10
+	rep: 40 37  -> 11
+	rep: 11 20  -> 12
+	rep: 11 20  -> 13
+	rep: 41 39  -> 14
+	rep: 41 39  -> 15
+	rep: 37 9  -> 16
+	rep: 37 9  -> 17
+	rep: 45 38  -> 18
+	rep: 45 38  -> 19
+	rep: 20 17  -> 20
+	rep: 20 17  -> 21
+	rep: 12 48  -> 22
+	rep: 12 48  -> 23
+	rep: 20 1  -> 24
+	rep: 20 1  -> 25
+	rep: 4 38  -> 26
+	rep: 4 38  -> 27
+	rep: 33 18  -> 28
+	rep: 33 18  -> 29
+	rep: 12 34  -> 30
+	rep: 12 34  -> 31
+	rep: 0  -> 32
+	rep: 13 47  -> 33
+	rep: 13 47  -> 34
+	rep: 7 20  -> 36
+	rep: 7 20  -> 37
+	rep: 26 24  -> 38
+	rep: 26 24  -> 39
+	rep: 29 48  -> 40
+	rep: 29 48  -> 41
+	rep: 47 21  -> 42
+	rep: 47 21  -> 43
+	rep: 39 21  -> 44
+	rep: 39 21  -> 45
+	rep: 33 47  -> 46
+	rep: 33 47  -> 47
+	rep: 40 36  -> 48
+	rep: 40 36  -> 49
+generation 27:
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	40.3787	Log MaxTFICF + DOM AM
+	ind: 	45.6323	Pow P MaxCHI
+	ind: 	92.7917	Pow DOM AM
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	48.0147	Log MaxTFICF Log - DF CC - DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log DOM AM
+	ind: 	75.0764	* MaxAM CE
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	70.2505	Log MaxTFICF MaxTFICF
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	48.0147	Log % MaxAM CE Log Pow DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log - MaxTFICF CC Pow DOM AM
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	84.3005	- MaxTFICF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.7306	- Pow MaxAM CE CC
+	rep: 35  -> 35
+	rep: 31 36  -> 0
+	rep: 31 36  -> 1
+	rep: 35 12  -> 2
+	rep: 35 12  -> 3
+	rep: 40 12  -> 4
+	rep: 40 12  -> 5
+	rep: 33 21  -> 6
+	rep: 33 21  -> 7
+	rep: 3 31  -> 8
+	rep: 3 31  -> 9
+	rep: 30 31  -> 10
+	rep: 30 31  -> 11
+	rep: 31 25  -> 12
+	rep: 31 25  -> 13
+	rep: 2 42  -> 14
+	rep: 2 42  -> 15
+	rep: 35 16  -> 16
+	rep: 35 16  -> 17
+	rep: 40 22  -> 18
+	rep: 40 22  -> 19
+	rep: 17 8  -> 20
+	rep: 17 8  -> 21
+	rep: 35 18  -> 22
+	rep: 35 18  -> 23
+	rep: 43 37  -> 24
+	rep: 43 37  -> 25
+	rep: 17 18  -> 26
+	rep: 17 18  -> 27
+	rep: 48  -> 28
+	rep: 19 10  -> 29
+	rep: 19 10  -> 30
+	rep: 3 16  -> 31
+	rep: 3 16  -> 32
+	rep: 39 21  -> 33
+	rep: 39 21  -> 34
+	rep: 6 46  -> 36
+	rep: 6 46  -> 37
+	rep: 45 46  -> 38
+	rep: 45 46  -> 39
+	rep: 34 37  -> 40
+	rep: 34 37  -> 41
+	rep: 28 26  -> 42
+	rep: 28 26  -> 43
+	rep: 37 37  -> 44
+	rep: 37 37  -> 45
+	rep: 19 34  -> 46
+	rep: 19 34  -> 47
+	rep: 18 20  -> 48
+	rep: 18 20  -> 49
+generation 28:
+	ind: 	1.58827	Pow DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log * DF CC - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	48.0147	Log DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	70.2505	Log MaxTFICF MaxTFICF
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log - DF CC Pow DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	48.0147	Log % MaxAM CE Log Pow DF CC Log % MaxAM CE - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log Log - DF CC - DF CC Log Pow DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log MaxTFICF Log - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	70.2505	Log MaxTFICF MaxTFICF
+	ind: 	92.7917	Pow DOM AM
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	40.3787	Log MaxTFICF + DOM AM
+	ind: 	5.25351	* DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	5.25351	% DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	* % MaxAM CE Log DF CC
+	ind: 	48.0147	Log Pow DF CC - DF CC
+	rep: 17  -> 17
+	rep: 31 4  -> 0
+	rep: 31 4  -> 1
+	rep: 12 34  -> 2
+	rep: 12 34  -> 3
+	rep: 9 13  -> 4
+	rep: 9 13  -> 5
+	rep: 26 37  -> 6
+	rep: 26 37  -> 7
+	rep: 19 2  -> 8
+	rep: 19 2  -> 9
+	rep: 1 44  -> 10
+	rep: 1 44  -> 11
+	rep: 18 48  -> 12
+	rep: 18 48  -> 13
+	rep: 43 43  -> 14
+	rep: 43 43  -> 15
+	rep: 19 12  -> 16
+	rep: 19 12  -> 18
+	rep: 42 0  -> 19
+	rep: 42 0  -> 20
+	rep: 11 20  -> 21
+	rep: 11 20  -> 22
+	rep: 16 20  -> 23
+	rep: 16 20  -> 24
+	rep: 35 14  -> 25
+	rep: 35 14  -> 26
+	rep: 18 20  -> 27
+	rep: 18 20  -> 28
+	rep: 19 12  -> 29
+	rep: 19 12  -> 30
+	rep: 13 1  -> 31
+	rep: 13 1  -> 32
+	rep: 8 27  -> 33
+	rep: 8 27  -> 34
+	rep: 30 47  -> 35
+	rep: 30 47  -> 36
+	rep: 36 7  -> 37
+	rep: 36 7  -> 38
+	rep: 21 34  -> 39
+	rep: 21 34  -> 40
+	rep: 47 44  -> 41
+	rep: 47 44  -> 42
+	rep: 41 4  -> 43
+	rep: 41 4  -> 44
+	rep: 8 2  -> 45
+	rep: 8 2  -> 46
+	rep: 5 12  -> 47
+	rep: 5 12  -> 48
+	rep: 8 49  -> 49
+generation 29:
+	ind: 	5.25351	* DF CC
+	ind: 	70.2505	Log MaxTFICF MaxTFICF
+	ind: 	5.25351	+ DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	40.3787	Log MaxTFICF + DOM AM
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log * DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	* - DF CC Log DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	48.0147	Log - DF CC Pow DOM AM
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	92.7917	Pow DOM AM
+	ind: 	48.0147	Log - DF CC Log MaxTFICF MaxTFICF
+	ind: 	5.25351	+ DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log - DF CC Log DF CC Log Pow DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log Log DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Pow DF CC - DF CC
+	rep: 17  -> 17
+	rep: 12 15  -> 0
+	rep: 12 15  -> 1
+	rep: 21 37  -> 2
+	rep: 21 37  -> 3
+	rep: 34 38  -> 4
+	rep: 34 38  -> 5
+	rep: 28 29  -> 6
+	rep: 28 29  -> 7
+	rep: 46 49  -> 8
+	rep: 46 49  -> 9
+	rep: 22 0  -> 10
+	rep: 22 0  -> 11
+	rep: 32 48  -> 12
+	rep: 32 48  -> 13
+	rep: 17 48  -> 14
+	rep: 17 48  -> 15
+	rep: 14 42  -> 16
+	rep: 14 42  -> 18
+	rep: 49 16  -> 19
+	rep: 49 16  -> 20
+	rep: 37  -> 21
+	rep: 14 3  -> 22
+	rep: 14 3  -> 23
+	rep: 27 25  -> 24
+	rep: 27 25  -> 25
+	rep: 26 36  -> 26
+	rep: 26 36  -> 27
+	rep: 16 45  -> 28
+	rep: 16 45  -> 29
+	rep: 14 2  -> 30
+	rep: 14 2  -> 31
+	rep: 10 3  -> 32
+	rep: 10 3  -> 33
+	rep: 46 34  -> 34
+	rep: 46 34  -> 35
+	rep: 5 49  -> 36
+	rep: 5 49  -> 37
+	rep: 1 16  -> 38
+	rep: 1 16  -> 39
+	rep: 33 9  -> 40
+	rep: 33 9  -> 41
+	rep: 27 21  -> 42
+	rep: 27 21  -> 43
+	rep: 15 19  -> 44
+	rep: 15 19  -> 45
+	rep: 15 37  -> 46
+	rep: 15 37  -> 47
+	rep: 17 14  -> 48
+	rep: 17 14  -> 49
+generation 30:
+	ind: 	90.1649	% MaxAM CE
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log - DF CC Pow DOM AM
+	ind: 	48.0147	Log Log - DF CC Log DF CC Log * DF CC - DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	48.0147	Log - DF CC * DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log * DF CC Pow DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	48.0147	Log Pow DF CC * DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	+ DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log Log Log - DF CC Log DF CC Log Pow DF CC - DF CC - DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Pow DF CC Pow DOM AM
+	ind: 	5.25351	* DF CC
+	ind: 	70.2505	Log MaxTFICF MaxTFICF
+	ind: 	5.25351	* DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log - DOM AM Pow DOM AM
+	ind: 	1.58827	Pow DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	91.631	- MaxAM CE
+	rep: 14  -> 14
+	rep: 41 1  -> 0
+	rep: 41 1  -> 1
+	rep: 19 29  -> 2
+	rep: 19 29  -> 3
+	rep: 4 34  -> 4
+	rep: 4 34  -> 5
+	rep: 45 5  -> 6
+	rep: 45 5  -> 7
+	rep: 14 25  -> 8
+	rep: 14 25  -> 9
+	rep: 49 23  -> 10
+	rep: 49 23  -> 11
+	rep: 7 7  -> 12
+	rep: 7 7  -> 13
+	rep: 1 38  -> 15
+	rep: 1 38  -> 16
+	rep: 16 32  -> 17
+	rep: 16 32  -> 18
+	rep: 23 44  -> 19
+	rep: 23 44  -> 20
+	rep: 41  -> 21
+	rep: 17 34  -> 22
+	rep: 17 34  -> 23
+	rep: 36 32  -> 24
+	rep: 36 32  -> 25
+	rep: 7 22  -> 26
+	rep: 7 22  -> 27
+	rep: 19 46  -> 28
+	rep: 19 46  -> 29
+	rep: 6 30  -> 30
+	rep: 6 30  -> 31
+	rep: 17 3  -> 32
+	rep: 17 3  -> 33
+	rep: 40 24  -> 34
+	rep: 40 24  -> 35
+	rep: 31 21  -> 36
+	rep: 31 21  -> 37
+	rep: 39 38  -> 38
+	rep: 39 38  -> 39
+	rep: 14 15  -> 40
+	rep: 14 15  -> 41
+	rep: 42 16  -> 42
+	rep: 42 16  -> 43
+	rep: 45 22  -> 44
+	rep: 45 22  -> 45
+	rep: 20 23  -> 46
+	rep: 20 23  -> 47
+	rep: 16 3  -> 48
+	rep: 16 3  -> 49
+generation 31:
+	ind: 	48.0147	Log - DF CC Pow MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log * DF CC * DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	48.0147	Log Log - DF CC Pow DF CC Log * DF CC - DF CC
+	ind: 	48.0147	Log Log Log - DF CC Log DF CC Log Log DF CC - DF CC - DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC Pow DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	91.631	- MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	91.631	- MaxAM CE
+	ind: 	1.58827	Pow DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC Log Log Log - DF CC Log DF CC Log Pow DF CC - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	91.5699	DF
+	ind: 	5.25351	* - DF CC CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log CC * DF CC
+	ind: 	1.58827	* DF Pow DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	48.0147	Log - DF CC * DF CC
+	ind: 	48.0147	Log Log - DF CC Pow DOM AM - DF CC
+	ind: 	90.0428	+ % MaxAM CE - DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log * DF CC MaxTFICF
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log MaxAM CE
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log % MaxAM CE Pow DOM AM
+	rep: 14  -> 14
+	rep: 12 35  -> 0
+	rep: 12 35  -> 1
+	rep: 12 22  -> 2
+	rep: 12 22  -> 3
+	rep: 8 44  -> 4
+	rep: 8 44  -> 5
+	rep: 14 5  -> 6
+	rep: 14 5  -> 7
+	rep: 48 4  -> 8
+	rep: 48 4  -> 9
+	rep: 8  -> 10
+	rep: 39 35  -> 11
+	rep: 39 35  -> 12
+	rep: 1  -> 13
+	rep: 14 31  -> 15
+	rep: 14 31  -> 16
+	rep: 2 45  -> 17
+	rep: 2 45  -> 18
+	rep: 38 3  -> 19
+	rep: 38 3  -> 20
+	rep: 12 26  -> 21
+	rep: 12 26  -> 22
+	rep: 14 23  -> 23
+	rep: 14 23  -> 24
+	rep: 32 25  -> 25
+	rep: 32 25  -> 26
+	rep: 16 1  -> 27
+	rep: 16 1  -> 28
+	rep: 14 41  -> 29
+	rep: 14 41  -> 30
+	rep: 18 6  -> 31
+	rep: 18 6  -> 32
+	rep: 47 33  -> 33
+	rep: 47 33  -> 34
+	rep: 40 45  -> 35
+	rep: 40 45  -> 36
+	rep: 8 5  -> 37
+	rep: 8 5  -> 38
+	rep: 2 0  -> 39
+	rep: 2 0  -> 40
+	rep: 16 45  -> 41
+	rep: 16 45  -> 42
+	rep: 32 25  -> 43
+	rep: 32 25  -> 44
+	rep: 44 35  -> 45
+	rep: 44 35  -> 46
+	rep: 12 9  -> 47
+	rep: 12 9  -> 48
+	rep: 41 49  -> 49
+generation 32:
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log - DF CC Log DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC Log Log - DF CC Log Pow DF CC - DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC Pow DOM AM
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC - DF CC
+	ind: 	48.0147	Log Log Log - DF CC - DF CC Log Log DF CC - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log - DF CC Pow DF CC Log * DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC Pow DOM AM
+	ind: 	5.25351	* DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	92.6084	- DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log - DF CC Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log * DF CC * DF CC
+	ind: 	48.0147	Log Pow DF CC MaxTFICF
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	- * DF CC CC
+	ind: 	91.5699	DF
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log - DF CC * - DF CC CC - DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	92.6084	- DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	91.631	- MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	48.0147	Log MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log - DF CC Log DF CC
+	ind: 	48.0147	Log Log Log Log % MaxAM CE - DF CC Pow DOM AM Log Log DF CC - DF CC - DF CC
+	ind: 	48.0147	Log * DF CC Pow MaxAM CE
+	ind: 	48.0147	Log - DF CC * DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	48.0147	Log * - DF CC CC - DF CC
+	ind: 	48.0147	Log - DF CC Pow DOM AM
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	rep: 14  -> 14
+	rep: 7 3  -> 0
+	rep: 7 3  -> 1
+	rep: 35  -> 2
+	rep: 29 49  -> 3
+	rep: 29 49  -> 4
+	rep: 29 8  -> 5
+	rep: 29 8  -> 6
+	rep: 24 32  -> 7
+	rep: 24 32  -> 8
+	rep: 1 24  -> 9
+	rep: 1 24  -> 10
+	rep: 13 34  -> 11
+	rep: 13 34  -> 12
+	rep: 47 3  -> 13
+	rep: 47 3  -> 15
+	rep: 29 28  -> 16
+	rep: 29 28  -> 17
+	rep: 6 9  -> 18
+	rep: 6 9  -> 19
+	rep: 26 24  -> 20
+	rep: 26 24  -> 21
+	rep: 36 39  -> 22
+	rep: 36 39  -> 23
+	rep: 29 46  -> 24
+	rep: 29 46  -> 25
+	rep: 14 43  -> 26
+	rep: 14 43  -> 27
+	rep: 21 6  -> 28
+	rep: 21 6  -> 29
+	rep: 9 12  -> 30
+	rep: 9 12  -> 31
+	rep: 29 6  -> 32
+	rep: 29 6  -> 33
+	rep: 26 43  -> 34
+	rep: 26 43  -> 35
+	rep: 38 6  -> 36
+	rep: 38 6  -> 37
+	rep: 18 39  -> 38
+	rep: 18 39  -> 39
+	rep: 23 42  -> 40
+	rep: 23 42  -> 41
+	rep: 36 15  -> 42
+	rep: 36 15  -> 43
+	rep: 21 12  -> 44
+	rep: 21 12  -> 45
+	rep: 14 18  -> 46
+	rep: 14 18  -> 47
+	rep: 44 38  -> 48
+	rep: 44 38  -> 49
+generation 33:
+	ind: 	48.0147	Log Log Log - DF CC - DF CC Log Log DF CC - DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC Log Log - DF CC Log Pow DF CC - DF CC - DF CC
+	ind: 	48.0147	Log MaxAM CE
+	ind: 	92.6695	Log Log % MaxAM CE Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log - DF CC - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	91.631	- MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	48.0147	Log Pow DF CC - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC Log Log - DF CC - DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log - DF CC Pow DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC Log * DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	5.25351	* DF CC
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC + DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log * - DF CC CC - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - * DF CC CC - DF CC
+	ind: 	48.0147	Log MaxTFICF Log * DF CC - DF CC
+	ind: 	48.0147	Log - DF CC Pow DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	5.25351	* - DF CC CC
+	ind: 	48.0147	Log Pow DOM AM - DF CC
+	ind: 	48.0147	Log Log Log Log % MaxAM CE - DF CC Log DF CC Log Log DF CC - DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Pow DOM AM - DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	48.0147	Log * DF CC Log * DF CC * DF CC
+	ind: 	48.0147	Log - MaxAM CE - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	28.5889	MaxTFICF
+	ind: 	48.0147	- * DF CC CC
+	ind: 	48.0147	Log * DF CC * DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log Log Log % MaxAM CE - DF CC Pow DOM AM Log Log DF CC Log - DF CC Pow DOM AM - DF CC
+	rep: 14  -> 14
+	rep: 47 8  -> 0
+	rep: 47 8  -> 1
+	rep: 14 12  -> 2
+	rep: 14 12  -> 3
+	rep: 47 41  -> 4
+	rep: 47 41  -> 5
+	rep: 43 23  -> 6
+	rep: 43 23  -> 7
+	rep: 9 10  -> 8
+	rep: 9 10  -> 9
+	rep: 7 28  -> 10
+	rep: 7 28  -> 11
+	rep: 23  -> 12
+	rep: 12 31  -> 13
+	rep: 12 31  -> 15
+	rep: 31 1  -> 16
+	rep: 31 1  -> 17
+	rep: 47 12  -> 18
+	rep: 47 12  -> 19
+	rep: 14 3  -> 20
+	rep: 14 3  -> 21
+	rep: 40 22  -> 22
+	rep: 40 22  -> 23
+	rep: 19 34  -> 24
+	rep: 19 34  -> 25
+	rep: 20 49  -> 26
+	rep: 20 49  -> 27
+	rep: 23 7  -> 28
+	rep: 23 7  -> 29
+	rep: 28 18  -> 30
+	rep: 28 18  -> 31
+	rep: 17 20  -> 32
+	rep: 17 20  -> 33
+	rep: 42 22  -> 34
+	rep: 42 22  -> 35
+	rep: 46 34  -> 36
+	rep: 46 34  -> 37
+	rep: 4 31  -> 38
+	rep: 4 31  -> 39
+	rep: 9 26  -> 40
+	rep: 9 26  -> 41
+	rep: 20 1  -> 42
+	rep: 20 1  -> 43
+	rep: 4 20  -> 44
+	rep: 4 20  -> 45
+	rep: 29 22  -> 46
+	rep: 29 22  -> 47
+	rep: 0 5  -> 48
+	rep: 0 5  -> 49
+generation 34:
+	ind: 	92.6084	- DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log Log - DF CC - DF CC Log DF CC
+	ind: 	90.0428	+ - DF CC % MaxAM CE
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log MaxAM CE
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	91.631	- MaxAM CE
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log - DF CC Pow DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC % Log Pow DF CC Log Pow DF CC - DF CC - DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log % MaxAM CE - DF CC Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log - MaxAM CE * DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC * - DF CC CC
+	ind: 	48.0147	Log * DF CC - DF CC
+	ind: 	92.7917	Pow DOM AM
+	ind: 	48.0147	Log Log Log Log % MaxAM CE - DF CC - DF CC Log Log DF CC Log - DF CC Pow DOM AM - DF CC
+	ind: 	48.0147	Log - MaxAM CE % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log - DF CC Pow DF CC
+	ind: 	48.0147	Log Log DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log * DF CC * - DF CC CC
+	ind: 	5.25351	* DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	48.0147	Log - DF CC Pow DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log * - DF CC CC - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log Log - DF CC - DF CC Log Log - DF CC Log Pow DF CC - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - * DF CC CC * DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log Log - DF CC - DF CC Log - DF CC * DF CC - DF CC
+	ind: 	48.0147	Log Log - DF CC % DF CC - DF CC
+	rep: 1  -> 1
+	rep: 39 21  -> 0
+	rep: 39 21  -> 2
+	rep: 0  -> 3
+	rep: 33 37  -> 4
+	rep: 33 37  -> 5
+	rep: 23 21  -> 6
+	rep: 23 21  -> 7
+	rep: 1 18  -> 8
+	rep: 1 18  -> 9
+	rep: 2 27  -> 10
+	rep: 2 27  -> 11
+	rep: 32 17  -> 12
+	rep: 32 17  -> 13
+	rep: 18 28  -> 14
+	rep: 18 28  -> 15
+	rep: 48 6  -> 16
+	rep: 48 6  -> 17
+	rep: 13 11  -> 18
+	rep: 13 11  -> 19
+	rep: 45 46  -> 20
+	rep: 45 46  -> 21
+	rep: 32 3  -> 22
+	rep: 32 3  -> 23
+	rep: 39 27  -> 24
+	rep: 39 27  -> 25
+	rep: 12 21  -> 26
+	rep: 12 21  -> 27
+	rep: 4 16  -> 28
+	rep: 4 16  -> 29
+	rep: 32 39  -> 30
+	rep: 32 39  -> 31
+	rep: 16 26  -> 32
+	rep: 16 26  -> 33
+	rep: 19 33  -> 34
+	rep: 19 33  -> 35
+	rep: 10 48  -> 36
+	rep: 10 48  -> 37
+	rep: 37 34  -> 38
+	rep: 37 34  -> 39
+	rep: 8 11  -> 40
+	rep: 8 11  -> 41
+	rep: 4 3  -> 42
+	rep: 4 3  -> 43
+	rep: 24  -> 44
+	rep: 6 30  -> 45
+	rep: 6 30  -> 46
+	rep: 7 46  -> 47
+	rep: 7 46  -> 48
+	rep: 16 42  -> 49
+generation 35:
+	ind: 	48.0147	Log - DF CC Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log % MaxAM CE - DF CC Pow DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log % MaxAM CE - DF CC Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log Log + MaxAM CE - DF CC - DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	48.0147	Log Log - DF CC Log - DF CC Pow DOM AM Log DF CC
+	ind: 	48.0147	Log Log Log Log % MaxAM CE - DF CC - DF CC Log Log DF CC - DF CC - DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC % Log Pow DF CC Log Pow DF CC - DF CC - DF CC
+	ind: 	90.0428	+ - DF CC % MaxAM CE
+	ind: 	48.0147	Log - MaxAM CE - DF CC
+	ind: 	48.0147	Log Log Log - DF CC - DF CC Log - DF CC Log MaxAM CE - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	91.631	- MaxAM CE
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - * DF CC CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	90.0428	+ - DF CC % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log Log Log % MaxAM CE - DF CC - DF CC Log Log DF CC Log - DF CC Pow DOM AM Log - DF CC Pow DF CC
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	ind: 	48.0147	Log Log % MaxAM CE Log % MaxAM CE - DF CC Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log Log - DF CC - DF CC - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log - DF CC Pow DF CC
+	ind: 	48.0147	Log Pow DOM AM - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log Log Log - DF CC - DF CC Log - DF CC Log DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	91.631	- MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.4863	+ - DF CC Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC * - DF CC CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log MaxAM CE Pow DF CC
+	ind: 	48.0147	Log - DF CC * DF CC
+	ind: 	48.0147	Log Log * MaxAM CE - - DF CC CC * DF CC
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	rep: 1  -> 1
+	rep: 19 23  -> 0
+	rep: 19 23  -> 2
+	rep: 24 28  -> 3
+	rep: 24 28  -> 4
+	rep: 23 11  -> 5
+	rep: 23 11  -> 6
+	rep: 35  -> 7
+	rep: 24 21  -> 8
+	rep: 24 21  -> 9
+	rep: 43 23  -> 10
+	rep: 43 23  -> 11
+	rep: 1 32  -> 12
+	rep: 1 32  -> 13
+	rep: 28 17  -> 14
+	rep: 28 17  -> 15
+	rep: 28 44  -> 16
+	rep: 28 44  -> 17
+	rep: 1 35  -> 18
+	rep: 1 35  -> 19
+	rep: 14 36  -> 20
+	rep: 14 36  -> 21
+	rep: 1 43  -> 22
+	rep: 1 43  -> 23
+	rep: 26 18  -> 24
+	rep: 26 18  -> 25
+	rep: 12 4  -> 26
+	rep: 12 4  -> 27
+	rep: 45 14  -> 28
+	rep: 45 14  -> 29
+	rep: 16 15  -> 30
+	rep: 16 15  -> 31
+	rep: 49  -> 32
+	rep: 1 32  -> 33
+	rep: 1 32  -> 34
+	rep: 45 0  -> 35
+	rep: 45 0  -> 36
+	rep: 9 11  -> 37
+	rep: 9 11  -> 38
+	rep: 42 44  -> 39
+	rep: 42 44  -> 40
+	rep: 15  -> 41
+	rep: 45 2  -> 42
+	rep: 45 2  -> 43
+	rep: 25 16  -> 44
+	rep: 25 16  -> 45
+	rep: 42 44  -> 46
+	rep: 42 44  -> 47
+	rep: 8 38  -> 48
+	rep: 8 38  -> 49
+generation 36:
+	ind: 	90.0428	+ % MaxAM CE - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log - DF CC - DF CC - DF CC
+	ind: 	90.0428	+ - DF CC % MaxAM CE
+	ind: 	48.0147	Log Log Log Log % MaxAM CE - DF CC - DF CC Log Log DF CC - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	- * DF CC CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	90.0428	+ + - DF CC Log % MaxAM CE - DF CC % MaxAM CE
+	ind: 	48.0147	Log Log Pow DOM AM - DF CC - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log Log * DF CC - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log * Pow DF CC CC - DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC - DF CC
+	ind: 	92.303	Log Pow % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	+ - DF CC * DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	+ - DF CC Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log - MaxAM CE % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	90.0428	+ - DF CC % MaxAM CE
+	ind: 	48.0147	Log - MaxAM CE - DF CC
+	ind: 	48.0147	Log Log Log - DF CC - DF CC Log - DF CC Log MaxAM CE - DF CC
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Pow DOM AM Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log - DF CC Log - DF CC - DF CC
+	ind: 	92.6084	+ Log Log DF CC - DF CC - DF CC
+	ind: 	48.0147	Log Log Log Log % MaxAM CE - DF CC - DF CC - DF CC - DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log % MaxAM CE - DF CC * - DF CC CC
+	ind: 	48.0147	Log - MaxAM CE - DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	92.6695	Log Log % MaxAM CE Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log Log Log Log % MaxAM CE - DF CC - DF CC Log Log DF CC Log - DF CC Pow DOM AM Log - DF CC Log - DF CC Log MaxAM CE
+	ind: 	48.0147	Log Log Log - DF CC - DF CC Pow DF CC - DF CC
+	ind: 	93.2193	Log % MaxAM CE - % MaxAM CE Log DF CC
+	ind: 	48.0147	Log % DF CC * - DF CC CC
+	ind: 	48.0147	Log Log % MaxAM CE * DF CC - DF CC
+	ind: 	48.0147	Log DF CC
+	rep: 1  -> 1
+	rep: 33 29  -> 0
+	rep: 33 29  -> 2
+	rep: 30 47  -> 3
+	rep: 30 47  -> 4
+	rep: 2  -> 5
+	rep: 13 24  -> 6
+	rep: 13 24  -> 7
+	rep: 28 4  -> 8
+	rep: 28 4  -> 9
+	rep: 33 21  -> 10
+	rep: 33 21  -> 11
+	rep: 35 0  -> 12
+	rep: 35 0  -> 13
+	rep: 48 42  -> 14
+	rep: 48 42  -> 15
+	rep: 33 14  -> 16
+	rep: 33 14  -> 17
+	rep: 9 21  -> 18
+	rep: 9 21  -> 19
+	rep: 17  -> 20
+	rep: 36 8  -> 21
+	rep: 36 8  -> 22
+	rep: 15  -> 23
+	rep: 1 3  -> 24
+	rep: 1 3  -> 25
+	rep: 43 31  -> 26
+	rep: 43 31  -> 27
+	rep: 15 38  -> 28
+	rep: 15 38  -> 29
+	rep: 33 40  -> 30
+	rep: 33 40  -> 31
+	rep: 2  -> 32
+	rep: 3 41  -> 33
+	rep: 3 41  -> 34
+	rep: 29 0  -> 35
+	rep: 29 0  -> 36
+	rep: 17 26  -> 37
+	rep: 17 26  -> 38
+	rep: 3  -> 39
+	rep: 32 32  -> 40
+	rep: 32 32  -> 41
+	rep: 22 0  -> 42
+	rep: 22 0  -> 43
+	rep: 15 32  -> 44
+	rep: 15 32  -> 45
+	rep: 32 11  -> 46
+	rep: 32 11  -> 47
+	rep: 5 34  -> 48
+	rep: 5 34  -> 49
+generation 37:
+	ind: 	90.0428	+ - DF CC % MaxAM CE
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log - MaxAM CE - DF CC
+	ind: 	48.0147	Log % DF CC * - DF CC CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	48.0147	Log % MaxAM CE - MaxAM CE
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log Log - DF CC - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	90.0428	+ % MaxAM CE - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Pow DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	- DF - DF CC
+	ind: 	48.0147	Log Log * DF CC CC - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC - DF CC
+	ind: 	48.0147	Log - DF CC * DF CC
+	ind: 	92.7306	- Log - DF CC - DF CC CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log - DF CC - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	91.9976	Log Log - DF CC Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log Log Log % MaxAM CE - DF CC Log - DF CC Log MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log Log Log % MaxAM CE - DF CC - DF CC - DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log % MaxAM CE - DF CC * - DF CC CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.0428	+ + - DF CC % MaxAM CE - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC * DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	ind: 	93.5858	Log + % MaxAM CE - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	89.6762	+ + % MaxAM CE Log % MaxAM CE - DF CC % MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log Pow DOM AM Log Log + - DF CC % MaxAM CE - DF CC - DF CC
+	rep: 1  -> 1
+	rep: 12  -> 0
+	rep: 36 17  -> 2
+	rep: 36 17  -> 3
+	rep: 23  -> 4
+	rep: 12 44  -> 5
+	rep: 12 44  -> 6
+	rep: 36 21  -> 7
+	rep: 36 21  -> 8
+	rep: 23 0  -> 9
+	rep: 23 0  -> 10
+	rep: 31 19  -> 11
+	rep: 31 19  -> 12
+	rep: 4 3  -> 13
+	rep: 4 3  -> 14
+	rep: 4 29  -> 15
+	rep: 4 29  -> 16
+	rep: 25 37  -> 17
+	rep: 25 37  -> 18
+	rep: 13 14  -> 19
+	rep: 13 14  -> 20
+	rep: 32 36  -> 21
+	rep: 32 36  -> 22
+	rep: 38 5  -> 23
+	rep: 38 5  -> 24
+	rep: 8 34  -> 25
+	rep: 8 34  -> 26
+	rep: 40 13  -> 27
+	rep: 40 13  -> 28
+	rep: 4 30  -> 29
+	rep: 4 30  -> 30
+	rep: 40 20  -> 31
+	rep: 40 20  -> 32
+	rep: 37 8  -> 33
+	rep: 37 8  -> 34
+	rep: 11 3  -> 35
+	rep: 11 3  -> 36
+	rep: 37 20  -> 37
+	rep: 37 20  -> 38
+	rep: 28 10  -> 39
+	rep: 28 10  -> 40
+	rep: 42 16  -> 41
+	rep: 42 16  -> 42
+	rep: 12 20  -> 43
+	rep: 12 20  -> 44
+	rep: 46 43  -> 45
+	rep: 46 43  -> 46
+	rep: 23 26  -> 47
+	rep: 23 26  -> 48
+	rep: 36 24  -> 49
+generation 38:
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.6084	+ Log * DF CC CC - DF CC
+	ind: 	93.5858	Log + - DF CC % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	90.0428	+ + Log - DF CC * DF CC % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	90.0428	+ - DF CC % MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log % DF CC - MaxAM CE
+	ind: 	48.0147	Log * - DF CC CC - DF CC
+	ind: 	48.0147	Log Log Log % MaxAM CE - DF CC - DF CC - DF CC
+	ind: 	48.0147	Log Log % DF CC * - DF CC CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC * DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	+ % MaxAM CE Log % MaxAM CE Pow DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	90.0428	+ + - DF CC % MaxAM CE - DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log MaxAM CE Log DF CC
+	ind: 	1.52718	Pow - DF CC % MaxAM CE
+	ind: 	90.0428	+ % MaxAM CE - DF CC
+	ind: 	48.0147	Log % DF CC * % MaxAM CE CC
+	ind: 	48.0147	Log Log % MaxAM CE Log - DF CC - DF CC * - DF CC CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC % MaxAM CE
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC Log DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	91.631	- MaxAM CE
+	ind: 	48.0147	Log Pow DF CC - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log Log % MaxAM CE % DF CC * DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	- DF - DF CC
+	ind: 	93.5858	Log + % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log % MaxAM CE Log % MaxAM CE Log DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	91.9976	Log Log - DF CC Log % MaxAM CE - DF CC - DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	rep: 1  -> 1
+	rep: 35 34  -> 0
+	rep: 35 34  -> 2
+	rep: 45 39  -> 3
+	rep: 45 39  -> 4
+	rep: 49  -> 5
+	rep: 19 29  -> 6
+	rep: 19 29  -> 7
+	rep: 0 13  -> 8
+	rep: 0 13  -> 9
+	rep: 47 49  -> 10
+	rep: 47 49  -> 11
+	rep: 40 40  -> 12
+	rep: 40 40  -> 13
+	rep: 20 18  -> 14
+	rep: 20 18  -> 15
+	rep: 39 16  -> 16
+	rep: 39 16  -> 17
+	rep: 47 22  -> 18
+	rep: 47 22  -> 19
+	rep: 11 22  -> 20
+	rep: 11 22  -> 21
+	rep: 16 26  -> 22
+	rep: 16 26  -> 23
+	rep: 47 17  -> 24
+	rep: 47 17  -> 25
+	rep: 4  -> 26
+	rep: 24 11  -> 27
+	rep: 24 11  -> 28
+	rep: 4 19  -> 29
+	rep: 4 19  -> 30
+	rep: 45 29  -> 31
+	rep: 45 29  -> 32
+	rep: 46 23  -> 33
+	rep: 46 23  -> 34
+	rep: 15 14  -> 35
+	rep: 15 14  -> 36
+	rep: 7 30  -> 37
+	rep: 7 30  -> 38
+	rep: 0  -> 39
+	rep: 31 25  -> 40
+	rep: 31 25  -> 41
+	rep: 29 38  -> 42
+	rep: 29 38  -> 43
+	rep: 31 25  -> 44
+	rep: 31 25  -> 45
+	rep: 7 10  -> 46
+	rep: 7 10  -> 47
+	rep: 35 15  -> 48
+	rep: 35 15  -> 49
+generation 39:
+	ind: 	5.25351	* DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	91.631	- MaxAM CE
+	ind: 	93.2193	Log % MaxAM CE % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	48.0147	+ Log % DF CC * % MaxAM CE CC Log % MaxAM CE Pow DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log % DF CC - MaxAM CE
+	ind: 	90.0428	+ % MaxAM CE - DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	48.0147	Log % DF CC * - DF CC CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	91.8143	+ + - DF CC - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	89.6762	+ + - DF CC % MaxAM CE % MaxAM CE
+	ind: 	48.0147	Log Log Log Log MaxAM CE Log DF CC * - DF CC CC - DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC * DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	5.25351	% DF CC
+	ind: 	48.0147	Log % MaxAM CE Pow DF CC
+	ind: 	92.6084	+ - MaxAM CE - DF CC
+	ind: 	5.25351	% - DF CC * % MaxAM CE CC
+	ind: 	48.0147	Log % DF CC % MaxAM CE
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log * - DF CC CC - DF CC
+	ind: 	48.0147	Log Log Log % MaxAM CE - DF CC - DF CC - DF CC
+	ind: 	92.6084	+ + Log - DF CC * DF CC Log % MaxAM CE Log - DF CC - DF CC - DF CC
+	ind: 	5.25351	% % MaxAM CE * - DF CC CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log - DF CC CC
+	ind: 	48.0147	- DF - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE % DF CC * DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log % DF CC * % MaxAM CE CC - DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	89.6762	+ + Log - DF CC * DF CC % MaxAM CE + - DF CC % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log - MaxAM CE - DF CC
+	rep: 1  -> 1
+	rep: 39 17  -> 0
+	rep: 39 17  -> 2
+	rep: 48 13  -> 3
+	rep: 48 13  -> 4
+	rep: 39  -> 5
+	rep: 43 28  -> 6
+	rep: 43 28  -> 7
+	rep: 39 16  -> 8
+	rep: 39 16  -> 9
+	rep: 41 24  -> 10
+	rep: 41 24  -> 11
+	rep: 18 29  -> 12
+	rep: 18 29  -> 13
+	rep: 17 18  -> 14
+	rep: 17 18  -> 15
+	rep: 30 19  -> 16
+	rep: 30 19  -> 17
+	rep: 27 31  -> 18
+	rep: 27 31  -> 19
+	rep: 39  -> 20
+	rep: 11 11  -> 21
+	rep: 11 11  -> 22
+	rep: 11  -> 23
+	rep: 9  -> 24
+	rep: 37 36  -> 25
+	rep: 37 36  -> 26
+	rep: 30 27  -> 27
+	rep: 30 27  -> 28
+	rep: 14 38  -> 29
+	rep: 14 38  -> 30
+	rep: 17  -> 31
+	rep: 1 9  -> 32
+	rep: 1 9  -> 33
+	rep: 39 28  -> 34
+	rep: 39 28  -> 35
+	rep: 5 42  -> 36
+	rep: 5 42  -> 37
+	rep: 14 6  -> 38
+	rep: 14 6  -> 39
+	rep: 34 16  -> 40
+	rep: 34 16  -> 41
+	rep: 22 16  -> 42
+	rep: 22 16  -> 43
+	rep: 36 15  -> 44
+	rep: 36 15  -> 45
+	rep: 1 30  -> 46
+	rep: 1 30  -> 47
+	rep: 43  -> 48
+	rep: 5 36  -> 49
+generation 40:
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log % DF CC * % MaxAM CE CC * DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	48.0147	Log % DF CC * % MaxAM CE CC
+	ind: 	91.5699	- DF Log DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC * DF CC
+	ind: 	1.58827	Pow DF CC
+	ind: 	93.2193	Log % MaxAM CE % MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	91.8143	+ + - DF CC + - MaxAM CE - DF CC - DF CC
+	ind: 	5.25351	% - DF CC * % MaxAM CE CC
+	ind: 	91.5699	+ MaxAM CE
+	ind: 	80.0244	Pow % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	+ + MaxAM CE - DF CC
+	ind: 	92.6084	+ + - - DF CC - DF CC Log % MaxAM CE Log - DF CC - DF CC - DF CC
+	ind: 	48.0147	Log Log Log % MaxAM CE - DF CC * DF CC - DF CC
+	ind: 	91.5699	+ - MaxAM CE * MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log * - DF CC CC - DF CC
+	ind: 	93.2193	% % MaxAM CE % MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	90.0428	+ % MaxAM CE - DF CC
+	ind: 	48.0147	Log % DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log % MaxAM CE % DF CC
+	ind: 	48.0147	Log + - DF CC - DF CC * DF CC
+	ind: 	93.2193	Log % MaxAM CE % MaxAM CE
+	ind: 	48.0147	+ Log % DF CC * - DF CC CC Log % MaxAM CE Pow DF CC
+	ind: 	5.25351	* - DF CC CC
+	ind: 	48.0147	Log % DF CC - DF CC
+	ind: 	48.0147	Log Log Log Log MaxAM CE % DF CC * - DF CC CC - DF CC
+	ind: 	48.0147	Log Log DF CC * - DF CC CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log Log Log % MaxAM CE - DF CC - DF CC - DF CC
+	ind: 	77.0312	Log Log + - MaxAM CE - DF CC - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log Log % MaxAM CE Log % DF CC * % MaxAM CE CC - DF CC
+	ind: 	92.6084	- DF CC
+	rep: 1  -> 1
+	rep: 26 36  -> 0
+	rep: 26 36  -> 2
+	rep: 39 11  -> 3
+	rep: 39 11  -> 4
+	rep: 14 26  -> 5
+	rep: 14 26  -> 6
+	rep: 5 17  -> 7
+	rep: 5 17  -> 8
+	rep: 17 47  -> 9
+	rep: 17 47  -> 10
+	rep: 31  -> 11
+	rep: 19 27  -> 12
+	rep: 19 27  -> 13
+	rep: 14 15  -> 14
+	rep: 14 15  -> 15
+	rep: 38 26  -> 16
+	rep: 38 26  -> 17
+	rep: 14 33  -> 18
+	rep: 14 33  -> 19
+	rep: 17 15  -> 20
+	rep: 17 15  -> 21
+	rep: 19 26  -> 22
+	rep: 19 26  -> 23
+	rep: 15 43  -> 24
+	rep: 15 43  -> 25
+	rep: 42 40  -> 26
+	rep: 42 40  -> 27
+	rep: 16 35  -> 28
+	rep: 16 35  -> 29
+	rep: 10 2  -> 30
+	rep: 10 2  -> 31
+	rep: 47 35  -> 32
+	rep: 47 35  -> 33
+	rep: 20 18  -> 34
+	rep: 20 18  -> 35
+	rep: 25 36  -> 36
+	rep: 25 36  -> 37
+	rep: 31 19  -> 38
+	rep: 31 19  -> 39
+	rep: 35  -> 40
+	rep: 4 6  -> 41
+	rep: 4 6  -> 42
+	rep: 31  -> 43
+	rep: 30 41  -> 44
+	rep: 30 41  -> 45
+	rep: 46 7  -> 46
+	rep: 46 7  -> 47
+	rep: 38 39  -> 48
+	rep: 38 39  -> 49
+generation 41:
+	ind: 	48.0147	Log Log Log % MaxAM CE - DF CC % DF CC - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log % MaxAM CE * DF CC
+	ind: 	90.1649	+ Log Pow DF CC * - DF CC CC % MaxAM CE
+	ind: 	48.0147	Log Log Log - MaxAM CE Pow DF CC - DF CC * DF CC
+	ind: 	48.0147	Log - MaxAM CE * DF CC
+	ind: 	48.0147	Log Log Log % MaxAM CE - DF CC - DF CC Pow DF CC
+	ind: 	48.0147	Log - MaxAM CE - DF CC
+	ind: 	90.0428	+ + - DF CC + % MaxAM CE - DF CC - DF CC
+	ind: 	90.0428	+ % MaxAM CE - DF CC
+	ind: 	92.1197	+ - DF CC + - MaxAM CE - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	91.5699	+ - MaxAM CE * MaxAM CE
+	ind: 	91.5699	+ MaxAM CE
+	ind: 	93.2193	Log % MaxAM CE % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log % MaxAM CE * DF CC
+	ind: 	48.0147	Log Log Log % MaxAM CE - DF CC % MaxAM CE - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	90.0428	+ % MaxAM CE - DF CC
+	ind: 	90.0428	+ + - DF CC + - MaxAM CE - DF CC % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	15.6384	Log Log Log % MaxAM CE - DF CC + MaxAM CE - DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log % MaxAM CE * - DF CC CC
+	ind: 	48.0147	Log * - DF CC CC - DF CC
+	ind: 	48.0147	Log Log Log MaxAM CE % DF CC * - DF CC CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	- DF % MaxAM CE
+	ind: 	48.0147	Log DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	84.5449	Pow - DF CC - DF CC
+	ind: 	5.25351	% % MaxAM CE * % MaxAM CE CC
+	ind: 	92.6084	+ % DF CC - DF CC
+	ind: 	48.0147	Log % MaxAM CE + - - DF CC - DF CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.5644	Log + MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log % DF CC - DF CC
+	ind: 	48.0147	Log Log % MaxAM CE Log % MaxAM CE * % MaxAM CE CC * DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.4863	% % - DF CC CE % MaxAM CE
+	ind: 	48.0147	Log % DF CC MaxAM
+	ind: 	48.0147	Log Log + Pow DF CC - DF CC - DF CC - DF CC
+	ind: 	91.631	- MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	+ Log % DF CC * - DF CC CC Log Log % MaxAM CE % MaxAM CE Pow DF CC
+	rep: 1  -> 1
+	rep: 0 5  -> 0
+	rep: 0 5  -> 2
+	rep: 33 3  -> 3
+	rep: 33 3  -> 4
+	rep: 40 42  -> 5
+	rep: 40 42  -> 6
+	rep: 20  -> 7
+	rep: 44 28  -> 8
+	rep: 44 28  -> 9
+	rep: 18 47  -> 10
+	rep: 18 47  -> 11
+	rep: 37 26  -> 12
+	rep: 37 26  -> 13
+	rep: 41  -> 14
+	rep: 14 32  -> 15
+	rep: 14 32  -> 16
+	rep: 15 37  -> 17
+	rep: 15 37  -> 18
+	rep: 24 42  -> 19
+	rep: 24 42  -> 20
+	rep: 15 40  -> 21
+	rep: 15 40  -> 22
+	rep: 20 31  -> 23
+	rep: 20 31  -> 24
+	rep: 12 39  -> 25
+	rep: 12 39  -> 26
+	rep: 4 31  -> 27
+	rep: 4 31  -> 28
+	rep: 18 44  -> 29
+	rep: 18 44  -> 30
+	rep: 36 23  -> 31
+	rep: 36 23  -> 32
+	rep: 48 23  -> 33
+	rep: 48 23  -> 34
+	rep: 28 7  -> 35
+	rep: 28 7  -> 36
+	rep: 15 41  -> 37
+	rep: 15 41  -> 38
+	rep: 1 14  -> 39
+	rep: 1 14  -> 40
+	rep: 31  -> 41
+	rep: 43 5  -> 42
+	rep: 43 5  -> 43
+	rep: 15 20  -> 44
+	rep: 15 20  -> 45
+	rep: 40 24  -> 46
+	rep: 40 24  -> 47
+	rep: 15 35  -> 48
+	rep: 15 35  -> 49
+generation 42:
+	ind: 	48.0147	Log Log Log - MaxAM CE * DF CC % DF CC - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	90.1649	+ Log Pow DF CC * % MaxAM CE CC % MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log Log % MaxAM CE Log % MaxAM CE * % MaxAM CE CC * DF CC
+	ind: 	84.4838	+ Pow - DF CC + - MaxAM CE - DF CC % MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.4863	% % - DF CC CE % MaxAM CE
+	ind: 	91.631	- MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log % MaxAM CE + * - DF CC CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log - - DF CC - DF CC - DF CC
+	ind: 	48.0147	Log % DF CC - DF CC
+	ind: 	93.2193	Log % MaxAM CE % MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log - DF CC + - - DF CC - DF CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log % MaxAM CE * % MaxAM CE CC
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC * DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	% DF CC
+	ind: 	90.0428	+ + Log DF CC + - MaxAM CE - DF CC % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	90.1649	+ % MaxAM CE * MaxAM CE
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	48.0147	Log Log DF CC * DF CC
+	ind: 	48.0147	Log Log - MaxAM CE Pow DF CC - DF CC
+	ind: 	93.6469	Log % MaxAM CE % % - DF CC CE % MaxAM CE
+	ind: 	5.25351	+ DF CC
+	ind: 	15.8827	Log Log % MaxAM CE - DF CC + MaxAM CE
+	ind: 	93.2193	Log + % DF CC - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	15.6384	Log Log Log % MaxAM CE - DF CC + MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log - MaxAM CE % MaxAM CE
+	ind: 	5.25351	% DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	91.1423	Log % MaxAM CE Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log % MaxAM CE * DF CC
+	ind: 	48.0147	Log - MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	91.8143	+ + - DF CC + - MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	% % MaxAM CE * - DF CC CC
+	rep: 1  -> 1
+	rep: 47 7  -> 0
+	rep: 47 7  -> 2
+	rep: 31 49  -> 3
+	rep: 31 49  -> 4
+	rep: 0 22  -> 5
+	rep: 0 22  -> 6
+	rep: 33  -> 7
+	rep: 4 0  -> 8
+	rep: 4 0  -> 9
+	rep: 8 46  -> 10
+	rep: 8 46  -> 11
+	rep: 2 9  -> 12
+	rep: 2 9  -> 13
+	rep: 17 28  -> 14
+	rep: 17 28  -> 15
+	rep: 29 42  -> 16
+	rep: 29 42  -> 17
+	rep: 33 12  -> 18
+	rep: 33 12  -> 19
+	rep: 2 14  -> 20
+	rep: 2 14  -> 21
+	rep: 10 5  -> 22
+	rep: 10 5  -> 23
+	rep: 9 20  -> 24
+	rep: 9 20  -> 25
+	rep: 4 21  -> 26
+	rep: 4 21  -> 27
+	rep: 39  -> 28
+	rep: 41  -> 29
+	rep: 36 34  -> 30
+	rep: 36 34  -> 31
+	rep: 3 25  -> 32
+	rep: 3 25  -> 33
+	rep: 11 17  -> 34
+	rep: 11 17  -> 35
+	rep: 38 17  -> 36
+	rep: 38 17  -> 37
+	rep: 35 13  -> 38
+	rep: 35 13  -> 39
+	rep: 43 31  -> 40
+	rep: 43 31  -> 41
+	rep: 40 40  -> 42
+	rep: 40 40  -> 43
+	rep: 39 36  -> 44
+	rep: 39 36  -> 45
+	rep: 46 41  -> 46
+	rep: 46 41  -> 47
+	rep: 18 43  -> 48
+	rep: 18 43  -> 49
+generation 43:
+	ind: 	84.4838	Pow - DF CC + - MaxAM CE - DF CC
+	ind: 	93.708	Log Log % MaxAM CE - DF CC - DF CC
+	ind: 	90.1649	+ Pow MaxAM CE % MaxAM CE
+	ind: 	48.0147	Log Log - DF CC - DF CC + MaxAM CE
+	ind: 	5.25351	% % MaxAM CE * % MaxAM CE CC
+	ind: 	48.0147	Log Log Log - MaxAM CE * DF CC % DF CC - DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	+ Log Pow DF CC - MaxAM CE % MaxAM CE
+	ind: 	48.0147	Log Log Log * % MaxAM CE CC * DF CC % DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	93.7691	% % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	48.0147	Log - MaxAM CE Pow DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log % MaxAM CE % % * DF CC CE % MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log % MaxAM CE + % - DF CC CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log % DF CC - DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	91.631	- MaxAM CE
+	ind: 	77.642	% Pow - DF CC CE % MaxAM CE
+	ind: 	48.0147	Log Log % MaxAM CE Log DF CC * DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	+ Log Pow DF CC * % MaxAM CE CC % MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	92.6695	Log Log % MaxAM CE - DF CC % MaxAM CE
+	ind: 	48.0147	Log Log - MaxAM CE + MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.6084	+ - DF CC * MaxAM CE
+	ind: 	75.0764	* MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log - - DF CC - DF CC - DF CC
+	ind: 	48.0147	Log - MaxAM CE Log % MaxAM CE - DF CC
+	ind: 	20.281	Log - DF CC + MaxAM CE
+	ind: 	48.0147	Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log % MaxAM CE Log % MaxAM CE % MaxAM CE
+	ind: 	48.0147	Log Log - MaxAM CE % MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log - DF CC + - - DF CC - DF CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log - MaxAM CE - DF CC
+	rep: 13  -> 13
+	rep: 47 47  -> 0
+	rep: 47 47  -> 1
+	rep: 9 39  -> 2
+	rep: 9 39  -> 3
+	rep: 7 9  -> 4
+	rep: 7 9  -> 5
+	rep: 48 9  -> 6
+	rep: 48 9  -> 7
+	rep: 34 44  -> 8
+	rep: 34 44  -> 9
+	rep: 18 7  -> 10
+	rep: 18 7  -> 11
+	rep: 29 19  -> 12
+	rep: 29 19  -> 14
+	rep: 33 29  -> 15
+	rep: 33 29  -> 16
+	rep: 47 6  -> 17
+	rep: 47 6  -> 18
+	rep: 13  -> 19
+	rep: 0 31  -> 20
+	rep: 0 31  -> 21
+	rep: 36 11  -> 22
+	rep: 36 11  -> 23
+	rep: 2 48  -> 24
+	rep: 2 48  -> 25
+	rep: 45  -> 26
+	rep: 15 46  -> 27
+	rep: 15 46  -> 28
+	rep: 10  -> 29
+	rep: 2 20  -> 30
+	rep: 2 20  -> 31
+	rep: 2 3  -> 32
+	rep: 2 3  -> 33
+	rep: 19  -> 34
+	rep: 2 6  -> 35
+	rep: 2 6  -> 36
+	rep: 23 26  -> 37
+	rep: 23 26  -> 38
+	rep: 10 31  -> 39
+	rep: 10 31  -> 40
+	rep: 33  -> 41
+	rep: 35 12  -> 42
+	rep: 35 12  -> 43
+	rep: 12 29  -> 44
+	rep: 12 29  -> 45
+	rep: 15 24  -> 46
+	rep: 15 24  -> 47
+	rep: 35 46  -> 48
+	rep: 35 46  -> 49
+generation 44:
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log Log + * - DF CC CC * DF CC % DF CC - DF CC
+	ind: 	93.6469	Log - % MaxAM CE - DF CC - DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	48.0147	Log Log Log * % MaxAM CE CC * DF CC % MaxAM CE - DF CC
+	ind: 	48.0147	Log % DF CC + - - DF CC - DF CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log Log Log * % MaxAM CE CC * DF CC - DF CC - DF CC
+	ind: 	48.0147	Log Log - MaxAM CE % MaxAM CE - DF CC
+	ind: 	75.0764	* MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	93.7691	% % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	48.0147	Log Log DF CC + % - DF CC CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	75.0764	+ Log DF CC * MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	93.7691	% % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	87.416	Pow - DF CC + - MaxAM CE + MaxAM CE
+	ind: 	48.0147	Log Log - MaxAM CE - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	92.2419	Log - DF CC % MaxAM CE
+	ind: 	93.2193	+ Pow MaxAM CE Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	92.2419	Log - DF CC + - - DF CC - DF CC % MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log % MaxAM CE Log DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log % DF CC - DF CC
+	ind: 	90.1649	+ Pow MaxAM CE % MaxAM CE
+	ind: 	90.1649	+ Log Log % DF CC - DF CC + MaxAM CE % MaxAM CE
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	48.0147	Log % MaxAM CE + % - DF CC CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	90.1649	+ % DF CC % MaxAM CE
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	91.631	- MaxAM CE
+	ind: 	48.0147	Log - MaxAM CE + MaxAM CE
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	92.6084	+ - DF CC * MaxAM CE
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	77.5809	% Pow Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	48.0147	Log Log DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	rep: 13  -> 13
+	rep: 32 39  -> 0
+	rep: 32 39  -> 1
+	rep: 41 1  -> 2
+	rep: 41 1  -> 3
+	rep: 18  -> 4
+	rep: 31 21  -> 5
+	rep: 31 21  -> 6
+	rep: 11 34  -> 7
+	rep: 11 34  -> 8
+	rep: 42 6  -> 9
+	rep: 42 6  -> 10
+	rep: 36 4  -> 11
+	rep: 36 4  -> 12
+	rep: 9 48  -> 14
+	rep: 9 48  -> 15
+	rep: 11 48  -> 16
+	rep: 11 48  -> 17
+	rep: 13  -> 18
+	rep: 27 14  -> 19
+	rep: 27 14  -> 20
+	rep: 3 31  -> 21
+	rep: 3 31  -> 22
+	rep: 38  -> 23
+	rep: 19 45  -> 24
+	rep: 19 45  -> 25
+	rep: 28 8  -> 26
+	rep: 28 8  -> 27
+	rep: 2 18  -> 28
+	rep: 2 18  -> 29
+	rep: 29 5  -> 30
+	rep: 29 5  -> 31
+	rep: 18 1  -> 32
+	rep: 18 1  -> 33
+	rep: 32 47  -> 34
+	rep: 32 47  -> 35
+	rep: 19 5  -> 36
+	rep: 19 5  -> 37
+	rep: 41 39  -> 38
+	rep: 41 39  -> 39
+	rep: 8 17  -> 40
+	rep: 8 17  -> 41
+	rep: 47 1  -> 42
+	rep: 47 1  -> 43
+	rep: 20 21  -> 44
+	rep: 20 21  -> 45
+	rep: 45 34  -> 46
+	rep: 45 34  -> 47
+	rep: 21 44  -> 48
+	rep: 21 44  -> 49
+generation 45:
+	ind: 	90.1649	+ Log Log Log - MaxAM CE + MaxAM CE - DF CC + MaxAM CE % MaxAM CE
+	ind: 	5.25351	% DF CC
+	ind: 	92.6084	+ - DF CC Log DF CC
+	ind: 	81.1851	* sumTF CE
+	ind: 	48.0147	Log DF CC
+	ind: 	90.1649	+ Log - MaxAM CE - DF CC % MaxAM CE
+	ind: 	48.0147	Log Pow MaxAM CE - DF CC
+	ind: 	5.25351	% - DF CC CC
+	ind: 	93.2193	Log % MaxAM CE + % MaxAM CE Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log - DF CC - - DF CC - DF CC
+	ind: 	48.0147	Log % DF CC + - DF CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	93.7691	% % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log - MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Pow DF CC % MaxAM CE
+	ind: 	93.7691	% % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	5.25351	% - DF CC CC
+	ind: 	48.0147	Log Log DF CC + Log % MaxAM CE Log DF CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	93.6469	Log + Pow MaxAM CE % MaxAM CE - DF CC
+	ind: 	90.1038	- % MaxAM CE - DF CC
+	ind: 	91.631	- MaxAM CE
+	ind: 	93.7691	% % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log - MaxAM CE % MaxAM CE
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	48.0147	Log Log + * Log DF CC CC * DF CC % DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log Log * % MaxAM CE CC * DF CC % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	77.5809	% Pow Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	90.1649	+ Log Log % DF CC - DF CC + MaxAM CE % MaxAM CE
+	ind: 	93.7691	% % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	48.0147	Log Log Log * % MaxAM CE CC * DF CC % MaxAM CE - DF CC
+	ind: 	92.6084	+ - DF CC + MaxAM CE
+	ind: 	48.0147	Log - MaxAM CE * MaxAM CE
+	ind: 	5.25351	% DF CC
+	ind: 	48.0147	Log Log - MaxAM CE % MaxAM CE - DF CC
+	ind: 	48.0147	% Pow Log DF CC CE % MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	84.4838	Pow - DF CC + - MaxAM CE - DF CC
+	ind: 	48.0147	Log Log - MaxAM CE + MaxAM CE - DF CC
+	ind: 	48.0147	Log % MaxAM CE + % - DF CC CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log Log - MaxAM CE - DF CC + DF CC
+	rep: 13  -> 13
+	rep: 9 28  -> 0
+	rep: 9 28  -> 1
+	rep: 2 23  -> 2
+	rep: 2 23  -> 3
+	rep: 16  -> 4
+	rep: 34 37  -> 5
+	rep: 34 37  -> 6
+	rep: 29 23  -> 7
+	rep: 29 23  -> 8
+	rep: 44 32  -> 9
+	rep: 44 32  -> 10
+	rep: 27 6  -> 11
+	rep: 27 6  -> 12
+	rep: 8 22  -> 14
+	rep: 8 22  -> 15
+	rep: 43 2  -> 16
+	rep: 43 2  -> 17
+	rep: 12 37  -> 18
+	rep: 12 37  -> 19
+	rep: 20 46  -> 20
+	rep: 20 46  -> 21
+	rep: 25 28  -> 22
+	rep: 25 28  -> 23
+	rep: 15 4  -> 24
+	rep: 15 4  -> 25
+	rep: 26 26  -> 26
+	rep: 26 26  -> 27
+	rep: 48 40  -> 28
+	rep: 48 40  -> 29
+	rep: 47 41  -> 30
+	rep: 47 41  -> 31
+	rep: 45 45  -> 32
+	rep: 45 45  -> 33
+	rep: 29 38  -> 34
+	rep: 29 38  -> 35
+	rep: 36 8  -> 36
+	rep: 36 8  -> 37
+	rep: 10 10  -> 38
+	rep: 10 10  -> 39
+	rep: 46 26  -> 40
+	rep: 46 26  -> 41
+	rep: 36 14  -> 42
+	rep: 36 14  -> 43
+	rep: 13 49  -> 44
+	rep: 13 49  -> 45
+	rep: 25 1  -> 46
+	rep: 25 1  -> 47
+	rep: 39 32  -> 48
+	rep: 39 32  -> 49
+generation 46:
+	ind: 	93.2193	Log - DF CC - - DF CC Log DF CC
+	ind: 	48.0147	Log Log + * - DF CC CC * DF CC % DF CC - DF CC
+	ind: 	92.6084	+ - DF CC - MaxAM CE
+	ind: 	48.0147	Log DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	77.642	% Pow % MaxAM CE CE % MaxAM CE
+	ind: 	48.0147	Log Log Log * % MaxAM CE CC * DF CC Log % MaxAM CE - DF CC - DF CC
+	ind: 	91.631	- MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Pow Log DF CC + - MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	48.0147	Log Pow MaxAM CE - DF CC
+	ind: 	93.7691	% % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	93.1582	Log % MaxAM CE + % MaxAM CE Log % MaxAM CE Log % MaxAM CE - DF CC
+	ind: 	90.4093	* - DF CC - DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	89.3097	Log - DF CC Log % MaxAM CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	- Log Log * Pow MaxAM CE CC * DF CC % MaxAM CE - DF CC
+	ind: 	48.0147	Log Log DF CC + Log % MaxAM CE Log DF CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log % MaxAM CE + % - DF CC CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log + * Log DF CC CC * DF CC % DF CC
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log - MaxAM CE - DF CC
+	ind: 	48.0147	Log - MaxAM CE % MaxAM CE
+	ind: 	48.0147	Log - MaxAM CE % MaxAM CE
+	ind: 	5.25351	% DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log Log - MaxAM CE % MaxAM CE - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log Log - MaxAM CE Log Log - MaxAM CE + MaxAM CE - DF CC - DF CC
+	ind: 	91.5699	+ MaxAM CE
+	ind: 	92.2419	- + - DF CC + MaxAM CE CC
+	ind: 	91.5699	DF
+	ind: 	93.7691	% % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	93.2193	Log % MaxAM CE + % MaxAM CE Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log % DF CC + - DF CC + % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log % DF CC + - DF CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	93.2193	Log % MaxAM CE + % MaxAM CE Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log - MaxAM CE % % DF CC CC
+	ind: 	48.0147	Log DF CC
+	ind: 	93.7691	% % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	48.0147	% % Log Log - MaxAM CE - DF CC + DF CC CE % MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	48.0147	Log - MaxAM CE * MaxAM CE
+	rep: 13  -> 13
+	rep: 9 42  -> 0
+	rep: 9 42  -> 1
+	rep: 47 29  -> 2
+	rep: 47 29  -> 3
+	rep: 36 42  -> 4
+	rep: 36 42  -> 5
+	rep: 8 9  -> 6
+	rep: 8 9  -> 7
+	rep: 0 12  -> 8
+	rep: 0 12  -> 9
+	rep: 0 6  -> 10
+	rep: 0 6  -> 11
+	rep: 22 22  -> 12
+	rep: 22 22  -> 14
+	rep: 43 5  -> 15
+	rep: 43 5  -> 16
+	rep: 48 28  -> 17
+	rep: 48 28  -> 18
+	rep: 42 19  -> 19
+	rep: 42 19  -> 20
+	rep: 15 6  -> 21
+	rep: 15 6  -> 22
+	rep: 13 45  -> 23
+	rep: 13 45  -> 24
+	rep: 5 16  -> 25
+	rep: 5 16  -> 26
+	rep: 37  -> 27
+	rep: 27 48  -> 28
+	rep: 27 48  -> 29
+	rep: 47 48  -> 30
+	rep: 47 48  -> 31
+	rep: 2 15  -> 32
+	rep: 2 15  -> 33
+	rep: 14 24  -> 34
+	rep: 14 24  -> 35
+	rep: 43 30  -> 36
+	rep: 43 30  -> 37
+	rep: 43 38  -> 38
+	rep: 43 38  -> 39
+	rep: 18 27  -> 40
+	rep: 18 27  -> 41
+	rep: 15 38  -> 42
+	rep: 15 38  -> 43
+	rep: 19 42  -> 44
+	rep: 19 42  -> 45
+	rep: 36 0  -> 46
+	rep: 36 0  -> 47
+	rep: 37 18  -> 48
+	rep: 37 18  -> 49
+generation 47:
+	ind: 	48.0147	Pow Log DF CC + - MaxAM CE DF
+	ind: 	48.0147	Log - DF CC CC
+	ind: 	48.0147	Log DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	% % Log % MaxAM CE - DF CC CE Log DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	91.631	- MaxAM CE
+	ind: 	48.0147	Pow Log DF CC + - DF CC - DF CC
+	ind: 	48.0147	Log - DF CC Log Pow MaxAM CE - DF CC
+	ind: 	92.6084	- - DF CC Log DF CC
+	ind: 	48.0147	Log - DF CC Log - % MaxAM CE CC * DF CC
+	ind: 	91.9976	Log Log - - DF CC Log DF CC Log % MaxAM CE - DF CC - DF CC
+	ind: 	48.0147	Log + % DF CC * DF CC % DF CC
+	ind: 	93.7691	% % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	48.0147	Log + * Log DF CC CC * DF CC * Log DF CC CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	89.6762	% Pow % MaxAM CE CE % % Log % MaxAM CE - DF CC CE % MaxAM CE
+	ind: 	5.25351	% DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	48.0147	- Log Log * Log DF CC CC * DF CC % MaxAM CE - DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log Log Log * % MaxAM CE CC * - DF CC - DF CC Log % MaxAM CE - DF CC - DF CC
+	ind: 	93.8913	% % Log % MaxAM CE % MaxAM CE CE % MaxAM CE
+	ind: 	93.2193	Log - DF CC - DF CC
+	ind: 	48.0147	% Pow % MaxAM CE CE Log DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log % MaxAM CE + - MaxAM CE Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log + DF CC % MaxAM CE
+	ind: 	91.631	- MaxAM CE
+	ind: 	5.25351	+ DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	90.4704	* - DF CC + - DF CC - MaxAM CE
+	ind: 	93.2193	Log % MaxAM CE + % MaxAM CE Log % MaxAM CE Log DF CC
+	ind: 	80.0244	Pow % MaxAM CE - DF CC
+	ind: 	75.7483	% - MaxAM CE % MaxAM CE
+	ind: 	91.2645	Log Log % Log % MaxAM CE - DF CC CE % MaxAM CE - DF CC
+	ind: 	84.9725	% - DF CC % MaxAM CE
+	ind: 	48.0147	Log % DF CC + % Log % MaxAM CE - DF CC CE + % MaxAM CE Log - DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log - MaxAM CE % MaxAM CE
+	ind: 	89.0654	* % MaxAM CE - DF CC
+	ind: 	48.0147	Log % DF CC + - DF CC + - DF CC Log - DF CC - DF CC
+	ind: 	48.0147	- Log DF CC - DF CC
+	ind: 	48.0147	Log Log * Pow MaxAM CE CC * DF CC % MaxAM CE
+	ind: 	93.8913	% % Log - DF CC - - DF CC Log DF CC CE % MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	93.2193	Log % MaxAM CE % MaxAM CE
+	ind: 	90.1649	+ % MaxAM CE Log % MaxAM CE Log - DF CC - DF CC
+	rep: 23  -> 23
+	rep: 47 45  -> 0
+	rep: 47 45  -> 1
+	rep: 4 4  -> 2
+	rep: 4 4  -> 3
+	rep: 8 10  -> 4
+	rep: 8 10  -> 5
+	rep: 28 31  -> 6
+	rep: 28 31  -> 7
+	rep: 35 20  -> 8
+	rep: 35 20  -> 9
+	rep: 46 34  -> 10
+	rep: 46 34  -> 11
+	rep: 9 10  -> 12
+	rep: 9 10  -> 13
+	rep: 3  -> 14
+	rep: 32 42  -> 15
+	rep: 32 42  -> 16
+	rep: 12 0  -> 17
+	rep: 12 0  -> 18
+	rep: 26 8  -> 19
+	rep: 26 8  -> 20
+	rep: 23 10  -> 21
+	rep: 23 10  -> 22
+	rep: 28 41  -> 24
+	rep: 28 41  -> 25
+	rep: 36 31  -> 26
+	rep: 36 31  -> 27
+	rep: 47 12  -> 28
+	rep: 47 12  -> 29
+	rep: 3 43  -> 30
+	rep: 3 43  -> 31
+	rep: 32 30  -> 32
+	rep: 32 30  -> 33
+	rep: 7 0  -> 34
+	rep: 7 0  -> 35
+	rep: 49 41  -> 36
+	rep: 49 41  -> 37
+	rep: 19 43  -> 38
+	rep: 19 43  -> 39
+	rep: 48 7  -> 40
+	rep: 48 7  -> 41
+	rep: 38 44  -> 42
+	rep: 38 44  -> 43
+	rep: 8 21  -> 44
+	rep: 8 21  -> 45
+	rep: 32 11  -> 46
+	rep: 32 11  -> 47
+	rep: 7 4  -> 48
+	rep: 7 4  -> 49
+generation 48:
+	ind: 	48.0147	Log % MaxAM CE Log Log * Pow MaxAM CE CC * DF CC % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	% Log % MaxAM CE % DF CC CE
+	ind: 	48.0147	% % % Log % MaxAM CE - DF CC CE Log DF CC Log DF CC
+	ind: 	92.2419	Log - DF CC - % MaxAM CE CC
+	ind: 	48.0147	Log - DF CC Log Log * MaxAM CE - DF CC * DF CC
+	ind: 	5.25351	CC
+	ind: 	48.0147	% DF Log + DF CC % MaxAM CE
+	ind: 	48.0147	Log * Log DF CC CC * DF CC
+	ind: 	48.0147	- Log Pow % MaxAM CE - DF CC % MaxAM CE - DF CC
+	ind: 	93.2193	% % MaxAM CE % MaxAM CE
+	ind: 	93.2193	Log % Log - DF CC - - DF CC Log DF CC CE + % MaxAM CE Log % MaxAM CE Log DF CC
+	ind: 	48.0147	- - DF CC - DF CC
+	ind: 	48.0147	Log Log DF CC Log - % MaxAM CE CC * DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	89.0654	* % MaxAM CE - DF CC
+	ind: 	48.0147	Log + Pow Log DF CC + - MaxAM CE DF * DF CC % DF CC
+	ind: 	5.25351	% DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	89.3097	Log - DF CC Log % MaxAM CE - DF CC
+	ind: 	91.8143	% % Log % MaxAM CE % MaxAM CE CE - DF CC
+	ind: 	48.0147	Log % MaxAM CE Log - % MaxAM CE CC * DF CC
+	ind: 	93.8913	% % Log % MaxAM CE % MaxAM CE CE % MaxAM CE
+	ind: 	48.0147	Log + DF CC - MaxAM CE
+	ind: 	93.2193	Log % MaxAM CE % MaxAM CE
+	ind: 	5.25351	% - MaxAM CE % DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	5.25351	* DF CC
+	ind: 	48.0147	Log + % DF CC Log % MaxAM CE - DF CC % DF CC
+	ind: 	48.0147	Log % DF CC + - DF CC + - DF CC Log - DF CC - DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	5.25351	+ DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Pow Log DF CC + - MaxAM CE DF
+	ind: 	48.0147	Pow Log DF CC + - DF CC - DF CC
+	ind: 	91.631	+ - MaxAM CE Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	93.2193	Log % MaxAM CE % MaxAM CE
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log % DF CC + Pow MaxAM CE + - DF CC Log - DF CC - DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	48.0147	Pow Log DF CC Log % MaxAM CE % MaxAM CE
+	ind: 	84.9725	% - DF CC % MaxAM CE
+	ind: 	48.0147	- Log DF CC - DF CC
+	ind: 	48.0147	Log - DF CC * DF CC
+	ind: 	48.0147	Log Pow MaxAM CE - DF CC
+	ind: 	91.5699	+ MaxAM CE
+	ind: 	48.0147	Log Log - - DF CC Log DF CC Log - DF CC - DF CC - DF CC
+	ind: 	48.0147	Pow Log DF CC % MaxAM CE
+	ind: 	48.0147	% % Log + - DF CC - DF CC - DF CC CE Log DF CC
+	rep: 23  -> 23
+	rep: 23 6  -> 0
+	rep: 23 6  -> 1
+	rep: 11  -> 2
+	rep: 16 8  -> 3
+	rep: 16 8  -> 4
+	rep: 38 36  -> 5
+	rep: 38 36  -> 6
+	rep: 14 35  -> 7
+	rep: 14 35  -> 8
+	rep: 46 22  -> 9
+	rep: 46 22  -> 10
+	rep: 49 28  -> 11
+	rep: 49 28  -> 12
+	rep: 20 43  -> 13
+	rep: 20 43  -> 14
+	rep: 24 49  -> 15
+	rep: 24 49  -> 16
+	rep: 38 9  -> 17
+	rep: 38 9  -> 18
+	rep: 22 17  -> 19
+	rep: 22 17  -> 20
+	rep: 21 28  -> 21
+	rep: 21 28  -> 22
+	rep: 47 47  -> 24
+	rep: 47 47  -> 25
+	rep: 3 17  -> 26
+	rep: 3 17  -> 27
+	rep: 37 3  -> 28
+	rep: 37 3  -> 29
+	rep: 37 30  -> 30
+	rep: 37 30  -> 31
+	rep: 29  -> 32
+	rep: 29 9  -> 33
+	rep: 29 9  -> 34
+	rep: 45 28  -> 35
+	rep: 45 28  -> 36
+	rep: 41 32  -> 37
+	rep: 41 32  -> 38
+	rep: 30 7  -> 39
+	rep: 30 7  -> 40
+	rep: 36  -> 41
+	rep: 16 41  -> 42
+	rep: 16 41  -> 43
+	rep: 25 48  -> 44
+	rep: 25 48  -> 45
+	rep: 47 24  -> 46
+	rep: 47 24  -> 47
+	rep: 2 29  -> 48
+	rep: 2 29  -> 49
+generation 49:
+	ind: 	5.25351	CC
+	ind: 	93.8913	% % Log % MaxAM CE % MaxAM CE CE % MaxAM CE
+	ind: 	93.2193	Log % Log - DF CC - - DF CC Log DF CC CE + % MaxAM CE Log % MaxAM CE Log DF CC
+	ind: 	48.0147	* Log * Log DF CC CC * DF CC - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	91.631	- MaxAM CE
+	ind: 	92.6084	+ - DF CC Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	84.3005	Pow - DF CC + - DF CC - DF CC
+	ind: 	48.0147	Log % MaxAM CE Log - % MaxAM CE CC * DF CC
+	ind: 	91.5699	+ MaxAM CE
+	ind: 	48.0147	% * DF CC Log DF CC
+	ind: 	89.7984	% Log + - DF CC - DF CC - DF CC CE
+	ind: 	48.0147	Log - DF CC Log % MaxAM CE Log DF CC
+	ind: 	48.0147	- - DF CC - DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	% % Log + - DF CC - DF CC - DF CC CE Log + DF CC - MaxAM CE
+	ind: 	80.0244	Pow % MaxAM CE - DF CC
+	ind: 	48.0147	- Log - DF CC % MaxAM CE - DF CC
+	ind: 	48.0147	Log % MaxAM CE Pow Log DF CC + - MaxAM CE DF
+	ind: 	48.0147	Log + Log - % MaxAM CE CC * DF CC * DF CC + DF CC
+	ind: 	48.0147	% % Log * DF CC % MaxAM CE CE - DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	93.8913	% % Log % MaxAM CE % MaxAM CE CE % MaxAM CE
+	ind: 	48.0147	Log Log - - DF CC - DF CC Log - DF CC - DF CC Log DF CC
+	ind: 	48.0147	Log Log - Log DF CC Log DF CC Log - DF CC - DF CC - DF CC
+	ind: 	48.0147	Log + Pow Log DF CC + - MaxAM CE DF * DF CC % DF CC
+	ind: 	48.0147	% % % Log % MaxAM CE - DF CC CE Log DF CC Log DF CC
+	ind: 	91.1423	Log % MaxAM CE Log % MaxAM CE - DF CC
+	ind: 	48.0147	% % % * MaxAM CE CE Log DF CC Log DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	48.0147	Log % DF CC + Log % MaxAM CE % MaxAM CE + - DF CC Log - DF CC - DF CC
+	ind: 	48.0147	Log + % DF CC Log % MaxAM CE - DF CC % DF CC
+	ind: 	91.6921	Log + % DF CC Log % MaxAM CE - DF CC Log Pow % MaxAM CE - DF CC % MaxAM CE
+	ind: 	48.0147	- % DF CC - DF CC
+	ind: 	48.0147	Log * DF CC - DF CC
+	ind: 	93.2193	Pow MaxAM CE
+	ind: 	93.2193	Pow Log DF CC Log % MaxAM CE + DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log % DF CC + - DF CC % MaxAM CE
+	ind: 	48.0147	% DF Log + DF CC + - DF CC Log - DF CC - DF CC
+	ind: 	91.631	+ - MaxAM CE Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	* Log DF CC - DF CC
+	ind: 	90.1649	Pow % MaxAM CE Log % MaxAM CE % MaxAM CE
+	ind: 	48.0147	Pow Log DF CC % MaxAM CE
+	ind: 	93.2193	Log % MaxAM CE % MaxAM CE
+	ind: 	48.0147	Log Log - - DF CC + DF CC Log - DF CC - DF CC - DF CC
+	ind: 	48.0147	Log Log DF CC - MaxAM CE
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	48.0147	Log + % DF CC % Log % MaxAM CE % DF CC CE % DF CC
+	rep: 1  -> 1
+	rep: 23 41  -> 0
+	rep: 23 41  -> 2
+	rep: 45 19  -> 3
+	rep: 45 19  -> 4
+	rep: 11 21  -> 5
+	rep: 11 21  -> 6
+	rep: 1 19  -> 7
+	rep: 1 19  -> 8
+	rep: 1 17  -> 9
+	rep: 1 17  -> 10
+	rep: 1 46  -> 11
+	rep: 1 46  -> 12
+	rep: 1 43  -> 13
+	rep: 1 43  -> 14
+	rep: 5 19  -> 15
+	rep: 5 19  -> 16
+	rep: 25 25  -> 17
+	rep: 25 25  -> 18
+	rep: 1  -> 19
+	rep: 27 13  -> 20
+	rep: 27 13  -> 21
+	rep: 38 38  -> 22
+	rep: 38 38  -> 23
+	rep: 45 9  -> 24
+	rep: 45 9  -> 25
+	rep: 20 35  -> 26
+	rep: 20 35  -> 27
+	rep: 43 8  -> 28
+	rep: 43 8  -> 29
+	rep: 8 40  -> 30
+	rep: 8 40  -> 31
+	rep: 48 47  -> 32
+	rep: 48 47  -> 33
+	rep: 18 29  -> 34
+	rep: 18 29  -> 35
+	rep: 37 34  -> 36
+	rep: 37 34  -> 37
+	rep: 12 18  -> 38
+	rep: 12 18  -> 39
+	rep: 41 17  -> 40
+	rep: 41 17  -> 41
+	rep: 3 32  -> 42
+	rep: 3 32  -> 43
+	rep: 43 26  -> 44
+	rep: 43 26  -> 45
+	rep: 12  -> 46
+	rep: 10 46  -> 47
+	rep: 10 46  -> 48
+	rep: 46  -> 49
+generation 50:
+	ind: 	48.0147	% % Log % MaxAM CE % MaxAM CE CE Log % MaxAM CE Log - DF CC - DF CC
+	ind: 	93.8913	% % Log % MaxAM CE % MaxAM CE CE % MaxAM CE
+	ind: 	93.0971	+ - MaxAM CE Pow MaxAM CE
+	ind: 	48.0147	Log Log % MaxAM CE Pow Log DF CC % - MaxAM CE DF % MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	% % % Log * DF CC % MaxAM CE CE - DF CC Log DF CC
+	ind: 	5.25351	* DF CC
+	ind: 	92.303	% % Log % MaxAM CE + - MaxAM CE DF CE % MaxAM CE
+	ind: 	48.0147	Log % MaxAM CE Pow Log DF CC % MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	27.7947	Pow % % Log % MaxAM CE % MaxAM CE CE % MaxAM CE - DF CC
+	ind: 	48.0147	% % Log % MaxAM CE + DF CC CE % MaxAM CE
+	ind: 	48.0147	Log Log - - DF CC % MaxAM CE Log - DF CC - DF CC - DF CC
+	ind: 	93.8913	% % Log % MaxAM CE % MaxAM CE CE % MaxAM CE
+	ind: 	90.1649	Pow % MaxAM CE Log % MaxAM CE % MaxAM CE
+	ind: 	48.0147	Log % MaxAM CE Pow Log DF CC + - MaxAM CE DF
+	ind: 	91.631	- MaxAM CE
+	ind: 	48.0147	Log Log - Log DF CC Log DF CC Log - DF CC - DF CC Log DF CC
+	ind: 	48.0147	Log Log - Log DF CC - DF CC Log - DF CC - DF CC - DF CC
+	ind: 	93.8913	% % Log % MaxAM CE % MaxAM CE CE % MaxAM CE
+	ind: 	48.0147	% % % Log % MaxAM CE - DF CC CE Log DF CC Log DF CC
+	ind: 	48.0147	Log - DF CC Log % MaxAM CE Log DF CC
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	90.1649	% MaxAM CE
+	ind: 	48.0147	Log % MaxAM CE Log - Log + MaxAM CE % MaxAM CE CC * DF CC
+	ind: 	48.0147	Log + Log - * DF CC CC * DF CC * DF CC + DF CC
+	ind: 	93.6469	Log % MaxAM CE - DF CC
+	ind: 	92.1197	+ - DF CC - DF CC
+	ind: 	1.52718	Pow - DF CC Pow % MaxAM CE Log % MaxAM CE % MaxAM CE
+	ind: 	48.0147	Log + DF CC + - DF CC Log - DF CC - DF CC
+	ind: 	48.0147	% DF Pow - DF CC + - DF CC - DF CC
+	ind: 	48.0147	Log DF CC
+	ind: 	48.0147	Log Log % MaxAM CE - DF CC - MaxAM CE
+	ind: 	92.2419	- Log - DF CC % MaxAM CE % % % * MaxAM CE CE Log DF CC Log DF CC
+	ind: 	92.6084	- DF CC
+	ind: 	91.2645	- Log DF CC % DF CC
+	ind: 	48.0147	- Log % MaxAM CE + DF CC - DF CC
+	ind: 	48.0147	- Log - DF CC % MaxAM CE - DF CC
+	ind: 	89.7984	% Log + - DF CC - DF CC - DF CC CE
+	ind: 	93.2193	+ - MaxAM CE Log % MaxAM CE - DF CC
+	ind: 	90.1649	Pow % MaxAM CE Log - DF CC - DF CC
+	ind: 	48.0147	* Log * % DF CC CC * DF CC - DF CC
+	ind: 	48.0147	Log + Log DF CC Log % MaxAM CE - DF CC % DF CC
+	ind: 	48.0147	Log + Pow Log DF CC + - MaxAM CE DF * DF CC % DF CC
+	ind: 	90.1649	Pow % MaxAM CE Log % MaxAM CE % MaxAM CE
+	ind: 	89.7984	% Log + - DF CC - DF CC - DF CC CE
+	ind: 	92.0586	- - DF CC + DF CC
+	ind: 	48.0147	Log Log + MaxAM CE Log - DF CC - DF CC - DF CC
+	ind: 	48.0147	Log Log - - DF CC + DF CC Log - DF CC - DF CC - DF CC
