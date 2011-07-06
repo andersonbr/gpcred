@@ -27,6 +27,17 @@ string Tokenizer::cleanClassToken(string& token){
 	return token.replace(0,6,"");
 }
 
+void Tokenizer::setCategoricalTokens(vector<string>& tokens, vector<string>& catTokens, int categoricalCollums){
+
+    if(tokens.size() < 3 || categoricalCollums == 0) return;
+    
+    int catColl = categoricalCollums;
+    for(unsigned int i = 3; i < tokens.size() && catColl-- ; i++){
+       catTokens.push_back( tokens[i].c_str() );
+    }
+    tokens.erase(tokens.begin() + 3, tokens.begin() + 3 + categoricalCollums);
+}
+
 void Tokenizer::setNumericalTokens(vector<string>& tokens, vector<double>& numTokens, int numericalCollums){
 
     if(tokens.size() < 3 || numericalCollums == 0) return;

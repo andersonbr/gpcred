@@ -1,0 +1,152 @@
+\chapter{A Credibilidade na Classificação Automática} 
+\label{cap::03_metodo}
+
+Como mostrado na Seção~\ref{cap::02_related}, o termo credibilidade já foi utilizado com diferentes significados na literatura. Nessa seção, definimos o conceito de credibilidade no contexto de classificação automática. Assumimos que a credibilidade de uma entidade reflete o quanto de qualidade ela agregada em uma tarefa a ser executada. Sendo assim, para a tarefa de classificação, a credibilidade de uma entidade é diretamente proporcional ao tanto que aquela entidade ajuda na discriminação de uma classe. Isso significa que um documento $D_{1}$ tem um valor de credibilidade maior que outro documento $D_{2}$, caso ele forneça maiores indícios para descobrirmos a qual classe pertence um terceiro documento $D_{3}$ pertence. Logo, definimos a credibilidade de uma entidade como um número real que incorpora diversos fatores quantitativamente em um único valor dentro de uma faixa predefinida, chamada de escala de credibilidade. Temos também que quanto maior é esse valor, mais importante essa entidade é para ajudar na tarefa de classificação. No contexto de classificação de textos, alguns fatores que podemos considerar são os termos, os autores, as citações, os meios de vinculação ou mesmo o ano de lançamento de um documento. O valor da credibilidade apresenta um comportamento assintótico crescente e monotônico, ou seja, ao calcularmos a credibilidade de uma entidade levando em conta todos os possíveis fatores produziremos um valor mais significativo de credibilidade do que quando calculamos levando em conta apenas um subconjunto desses fatores.
+
+Já existem algumas métricas que podem ser usadas como ``funções de credibilidade'', como a distância média utilizada no algoritmo dos $K$ vizinhos mais próximos, \textit{KNN}. Nela quanto maior é a distância, menor é a credibilidade da informação provida. Podemos ainda definir algumas métricas que levam em consideração o valor discriminativo dos atributos de uma entidade, por exemplo as métricas \textit{TD-IDF} e \textit{dominância}. Ambas serão explicadas com maiores detalhes a seguir, na Seção~\ref{cap::03_cred_baseada_conteudo}, entretanto, por enquanto, podemos dizer que a primeira provê um medida global de significância para um atributo, enquanto, a segunda provê um valor local. Uma boa ideia seria unir os benefícios providos por ambas, porém como realizar essa junção é um desafio. Uma abordagem simples é realizar uma soma de pesos provenientes de cada uma das métricas, porém essa pode ser uma abordagem muito simplista que não considera nenhuma correlação entre as métricas.
+
+%versao com NB + KNN
+Finalmente, uma vez definido um valor para a credibilidade, temos que utilizá-lo. Isso quer dizer que, no contexto de classificação automática, os algoritmos devem ser alterados de forma a levar em consideração o valor da credibilidade dos exemplos utilizados. Nesse trabalho, incorporamos a credibilidade em dois algoritmo clássicos, o \textit{Naïve Bayes} e o \textit{KNN}. O principal motivo para utilizarmos o \textit{Naïve Bayes} é que esse apresenta um bom desempenho, especificamente para classificação de documentos~\cite{salles10}, que é o principal tipo de classificação que tratamos nesse trabalho. Embora o algoritmo SVM possa superar o \textit{Naïve Bayes} em alguns cenários de classificação de documentos, o custo computacional de utilizar o SVM em um problema de classificação multi-rótulo é um problema a ser levado em conta. Baseado no compromisso entre o custo computacional e os resultados obtidos, decidimos por utilizarmos o algoritmo \textit{Naïve Bayes}, detalhado na Seção ~\ref{subsec::cred_nb}. Por motivo de completeza, pelo fato de apresentar apenas um parâmetro de configuração e por advogarmos que o \textit{KNN} já utiliza uma credibilidade básica em sua própria estrutura, realizamos experimentos também com esse algoritmo, que é detalhado na Seção~\ref{subsec::cred_knn}.
+
+%Versao onde so temos o NB:
+% Finalmente, uma vez definido um valor para a credibilidade de uma entidade, temos que utilizá-lo. Isso quer dizer que, no contexto de classificação automática, os algoritmos devem ser alterados de forma a levar em consideração o valor da credibilidade dos exemplos utilizados. Nesse trabalho, focamos no algoritmo \textit{Naïve Bayes} (mudar depois?!), pois esse apresenta um bom desempenho, especificamente para classifição de documentos~\cite{salles10}, que é o principal tipo de classificação que tratamos nesse trabalho. Embora o algoritmo SVM possa superar o \textit{Naïve Bayes} em alguns cenários de classificação de documentos, o custo computational de utilizar o SVM em um problema de classificação multi-rótulo é um problema a ser levado em conta. Baseado no compromisso entre o custo computacional e os resultados obtidos, decidimos por utilizarmos o algoritmo \textit{Naïve Bayes}, detalhado na Seção ~\ref{sec::cred_classificadores}.
+
+\section{Classificador \textit{Naïve Bayes}.}
+\label{subsec::cred_nb}
+
+%Nessa seção, incorporamos a credibilidade no classificador bayesiano. Primeiramente, definimos o funcionamento do algoritmo \textit{Naïve Bayes} original na Seção~\ref{subsubsec::nb_original} e posteriormente, discutimos como incorporamos o conceito de credibilidade no mesmo, na Seção~\ref{subsubsec::nb_cred}.
+
+%\subsubsection{\textit{Naïve Bayes} original.}
+%\label{subsubsec::nb_original}
+
+Nessa seção, procuro explicar o funcionamento da versão original do algoritmo \textit{Naïve Bayes}. É importante termos em mente a versão original do mesmo para que possamos compará-lo com a versão na qual a credibilidade está inclusa, ver Seção~\ref{subsubsec::nb_cred}. Referências mais detalhadas podem ser encontradas em \cite{DHS01} e \cite{Manning08}.
+
+De uma maneira sucinta, porém prática, podemos utilizar os seguintes passos para definir o classificador \textit{Naïve Bayes}:
+
+\begin{enumerate}
+    \item Cada um dos exemplos do conjunto de treinamento pode ser visto como um vetor (ou uma tupla) $D$-dimensional, $X$ = ($x_1$, $x_2$, $x_3$, ..., $x_d$), onde $x_i$ é o valor referente ao atributo $A_i$ existente no exemplo $X$. É importante ressaltar que para um exemplo $X$, podemos ter vários valores distintos para $A_i$. Tipicamente, em um problema de classificação com atributos numéricos, o atributo $x_i$ pode assumir qualquer valor real. Já em um problema de classificação categórico, $x_i$ pode assumir uma faixa controlada de valores discretos. Em classificação de texto, por exemplo, $x_i$ pode ser qualquer valor inteiro natural, representando o número de vezes que temos um termo $A_i$ em $X$. Vale a pena lembrar também que podemos ter a coexistência de atributos numéricos e categóricos em uma mesma base de dados.
+    
+
+    \item Suponha que existem \textit{M} classes, $c_1$, $c_2$, ..., $c_\textit{M}$, formando o conjunto de possíveis classes $\mathbb{C}$. Dada um determinada tupla $X$, o classificador Bayesiano irá predizer que $X$ pertence à classe que tiver a maior probabilidade a \textit{posteriori} P($c_i$ | $X$), referente ao exemplo $X$. Ou seja, o classificador \textit{Naïve Bayes} dirá que a tupla $X$ pertence a $c_i$, se e somente se:
+        
+\begin{equation}\label{eqn::max_pcgivenx}
+   P(c_{i}|X) > P(c_{j}|X) \;\;\;\;\;\forall j, 1 \le j \le m, j \not= i
+\end{equation}
+
+Onde, $P(A|B)$, como suposto, é um valor real entre 0.0 e 1.0 que define a probabilidade do evento A ser verdadeiro, dado que o evento B ocorreu. No caso, podemos interpretar a expressão P($c_i$| $X$) como a probabilidade da classe correta ser a $c_i$ dado um exemplo $D$-dimensional $X$ = ($x_1$, $x_2$, ..., $x_d$).
+
+    \item Necessitamos, portanto, uma forma de calcular a probabilidade a \textit{posteriori} $P(c_i| X)$, que pode ser definida pelo teorema de Bayes como:
+ 
+\begin{equation}\label{eqn::bayes}
+   P(c_{i}|X) = \frac{P(X|c_i) \times P(c_i) }{P(X)}
+\end{equation}
+
+    \item Da Equação~\ref{eqn::bayes} temos que P($c_i$) pode ser calculada simplesmente computando a proporção de exemplos da classe $c_i$ que temos em nosso conjunto de treinamento. Além disso, como $P(X)$ é uma constante independente da classe, logo não precisamos de calcular esse fator.
+       
+    \item Calcular $P(X|c_i)$ é uma tarefa extremamente cara computacionalmente. Porém podemos utilizar a premissa ``ingênua'' \footnote{O nome do algoritmo Naïve Bayes provém dessa premissa simplificadora.} de que os valores dos atributos de um exemplo $X$ são condicionalmente independentes um dos outros, dada uma certa classe. Logo,
+
+\begin{equation}\label{eqn::classindependence}
+   P(X|c_{i}) = \prod^{n}_{k=1}{P(x_k|c_i) }
+\end{equation}
+
+\item O valor de cada termo $P(x_k|c_i)$ da Equação~\ref{eqn::classindependence} é normalmente calculado de forma diferente caso o atributo $A_i$ seja categórico ou numérico. A seguir mostramos as formas mais comuns vistas na literatura:
+    \begin{itemize}
+
+        \item Caso $A_k$ seja categórico, então $P(x_k|c_i)$ é o número de exemplos no treinamento que pertencem a classe $c_i$, nos quais o valor de $A_k$ é $x_k$, dividido pelo número de exemplos da classe $c_i$ no treino. Especificamente para o problema de classificação de documentos, podemos utilizar a mesma definição expressa na seguinte fórmula:
+
+    \begin{equation}\label{eqn::nbcattexto}
+        P(x_k|c_i) = \frac{ N_{x_{k}c_{i}} }{ \sum_{l \in \mathbb{D}} { } N_{k_{l}c_{i}} } 
+    \end{equation}
+
+        Onde $N_{x_{k}c_{i}}$ é o número de vezes que temos o termo $x_k$ nos exemplos (aqui, documentos) da classe $c_i$. 
+
+        \item Caso $A_k$ seja um atributo numérico, tipicamente um valor real, então assumimos que o valor $x_k$ é dado por uma distribuição Gaussiana de média $\mu$ e desvio padrão $\sigma$ e podemos usar a seguinte fórmula para calcular $P(x_k|c_i)$ como:
+    \begin{eqnarray}\label{eqn::nbnumerico}
+        P(x_k|c_i) & = & g(x_k, \mu_{c_i}, \sigma_{c_i})  \\
+        g(x_k, \mu_{c_i}, \sigma_{c_i}) & = & \frac {1} { \sqrt{2\pi\sigma} } e^{ -\frac{(x_k-\mu_{c_i})^2}{2\sigma_{c_i}^2}  } 
+    \end{eqnarray}
+        
+        Onde $\mu_{c_i}$ e $\sigma_{c_i}$ são a média e o desvio padrão dos valores de $A_k$ nas tuplas de treinamento da classe $c_i$. 
+
+    \end{itemize}
+
+    \item Finalmente, podemos juntar as Equações \ref{eqn::max_pcgivenx} e \ref{eqn::classindependence}, definindo:
+
+    \begin{equation}\label{eqn::nbfinal}
+    \textit{Classe Atribuída} = \arg\max_{c_i \in M}P(X|c_i) = \frac{N_{c_i}}{N} \cdot {\prod^{n}_{k=1}{P(x_k|c_i) }}.
+    \end{equation}
+
+    Onde $N$ é o número de exemplos no conjunto de treinamento, $N_{c_i}$ é o número de exemplos da classe $c_i$ em $N$.
+
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%------------------------------------------------------------------------------------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%------------------------------------------------------------------------------------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%------------------------------------------------------------------------------------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Incorporando a credibilidade no \textit{Naïve Bayes}.}
+\label{subsubsec::nb_cred}
+
+Nessa seção, explicamos como incorporar o conceito de credibilidade no classificador Bayesiano. Primeiramente, modelamos a credibilidade de um exemplo inspirado unicamente em seu conteúdo, assim como mostrado na Seção \ref{subsubsec::nbcredconteudo}. Por sua vez, na Seção \ref{subsubsec::nbcredgrafos}, mostramos como tratar a credibilidade em um nível mais alto, tentando tirar proveito das relações existentes entre as instâncias de treinamento e a instância de teste, a princípio, sem nos preocuparmos com seus conteúdos.
+
+\subsection{\textit{Naïve Bayes} com credibilidade baseada no conteúdo.}
+\label{subsubsec::nbcredconteudo}
+
+A credibilidade de uma instância $X$, baseada no seu próprio conteúdo, procura determinar para cada atributo $A_k = x_k$ em $X$, o quanto $x_k$ contribui para conseguirmos predizer a qual classe $X$ pertence. De maneira geral, calculamos a credibilidade de $x_k$, referente ao atributo $A_k$ em relação a classe $c_i$, como uma função $Cr_{cont}(x_k, c_i)$ e podemos facilmente acoplá-la a Equação~\ref{eqn::classindependence}, resultando em:
+
+\begin{equation}\label{eqn::classindependence_conteudo}
+   P(X|c_{i}) = \prod^{D}_{k=1}{(P(x_k|c_i) \cdot Cr_{cont}(x_k,c_i))} 
+\end{equation}
+
+Dessa forma, avaliamos para cada atributo $A_k$ o quanto ganhamos sabendo que $A_k$ tem o valor de $x_k$, dada cada uma das classes $c_i$. Existem várias métricas conhecidas na literatura que são podem ser utilizadas para medirmos a influência de um termo na determinação da classe de uma instância de teste, como o \textit{Ganho de informação} (IG - do inglês \textit{Information Gain}) e a \textit{Medida de Ambiguidade} (AM - do inglês \textit{Ambiguity Measure}), por exemplo. Ambas, como veremos, poderiam vir a ser boas funções de credibilidade. 
+
+
+    Com um pouco mais de detalhe, a \textit{Medida da Ambiguidade} definida em \cite{Mengle08} procura verificar a importância do valor de atributo baseado no número de vezes que aquele valor aparece conjuntamente com uma determinada classe. Matematicamente, temos:
+\begin{equation}\label{eqn::classindependence_conteudo}
+   Cr_{cont} = AM(t_k, c_i) = \frac{ N_{t_{k}c_{i}}}{\sum_{c_j \in \mathbb{C}} N_{t_{k}c_{j}}}.
+\end{equation}
+   Onde $N_{t_{k}c_{j}}$ é o número de instâncias no treino onde $A_k$ é $t_k$ e a instância pertence a classe $c_j$. Especificamente, no problema de classificação de textos, $N_{t_{k}c_{j}}$ é a frequência do termo $t_k$ nos documentos de classe $c_j$.
+
+    Por sua vez, o \textit{Ganho de Informação} (ver \cite{forman03}) mede o quanto de informação adquirimos para predizermos uma classe, sabendo o valor de um certo atributo. Estatisticamente, teríamos:
+\begin{equation}\label{eqn::classindependence_conteudo}
+   Cr_{cont} = IG(t_k, c_i) = \sum_{c \in \{c_i, \overline{c_i}\}}\sum_{t \in \{t_k, \overline{t_k}\}}P(t|c)\log_2\frac{P(t|c)}{P(t)P(c)}.
+\end{equation}
+
+    Porém não sabemos qual das duas métricas funcionaria melhor como uma função de credibilidade, pois isso é uma tarefa dependente da aplicação. Além disso, poderíamos combinar essas métricas para conseguirmos uma função que venha a obter ainda melhores resultados. Na verdade, existem muitas outras métricas que podemos utilizar como função de credibilidade baseada no conteúdo. Listamos e explicamos cada uma das métricas que foram utilizadas nesse trabalho na Seção~\ref{subsec::04_metricas_conteudo}. É importantíssimo destacar que devido ao grande número de métricas, testar uma a uma e as suas possíveis combinações é uma tarefa combinatória muito cara computacionalmente, e, portanto inviável. Por esse motivo, empregamos a \textit{Programação Genética} (PG), um mecanismo capaz de combinar essas métricas de forma elegante, formando funções de credibilidade mais robustas. (melhorar depois?!?!) Dedicamos o Capítulo~\ref{cap::04_pg_cred} exclusivamente para abordamos em detalhes como usamos PG na geração de funções.
+
+\subsection{\textit{Naïve Bayes} com credibilidade baseada em relacionamentos.}
+\label{subsubsec::nbcredgrafos}
+
+A credibilidade de um exemplo também pode ser medida pelo mensurada 
+%
+%\subsection{\textit{Naïve Bayes} com credibilidade para classificação automática de textos.}
+%\label{subsubsec::nbcredtexto}
+
+%Credibilidade relacionada a grafos e relacionada a termos de documentos são diferentes, uma genérica e outra especifica.
+%TEXTO:::
+
+%Especificamente para a tarefa de classificação de documentos, podemos estimar $P(X|c_i)$ baseando na frequência que os termos ocorrem nos documentos, logo:
+%\begin{equation}\label{eqn:nbtext}
+%   P(X|c_{i}) =  \prod_{t \in X}{\frac{f_{tc_i}}{\underset{t' \in \mathbb{V}}{\sum}{f_{t'c_i}}}}
+%\end{equation}
+%    Onde $\mathbb{V}$ é todo o vocabulário presente no conjunto de treinamento, e $f_{tc_i}$ é a frequência com que o termo $t$ aparece em exemplos da classe $c_i$ existentes no treino.
+
+%Finalmente, podemos juntar as Equações \ref{eqn::max_pcgivenx}, \ref{eqn::classindependence} e \ref{eqn::nbtext}, definindo:
+
+%    \begin{equation}\label{eqn:nbfinal}
+%    \textit{Classe Atribuída} = \arg\max_{c_i \in M}P(X|c_i) = \frac{N_{c_i}}{N} \cdot \prod_{t \in X}{\frac{f_{tc_i}}{\underset{t' \in \mathbb{V}}{\sum}{f_{t'c_i}}}}.
+%    \end{equation}
+
+% \begin{equation}\label{eqn:nbCred}
+%P(d'|c) = \eta \cdot \frac{N_{c}}{N} \cdot \prod_{t \in d'}{\frac{f_{tc} \cdot Cr_{\textsc{Term}}(t,c)}{\underset{t' \in \mathbb{V}}{\sum}{(f_{t'c} \cdot Cr_{\textsc{Term}}(t',c))}}} \cdot Cr_{\textsc{Cit}}(d',c) \cdot Cr_{\textsc{Auth}}(d',c),
+%\end{equation}
+
+\section{Classificador \textit{KNN}.}
+\label{subsec::cred_knn}
+
+
+\section{Incorporando a credibilidade no \textit{KNN}.}
+\label{subsubsec::knn_cred}
+
+

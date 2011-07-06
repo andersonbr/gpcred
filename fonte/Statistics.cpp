@@ -239,12 +239,8 @@ double Statistics::getGraphValue(int metric, int graph, string id, string classI
             break; 
 
     }
-
     return returnValue;
-
 }
-
-
 
 
 // Trainment based on examples: update term frequencies for priori and cond.
@@ -256,7 +252,7 @@ void Statistics::readExamples(Examples exs) {
 
         Example exp = *it;
 
-        vector<string> tokens = exp.getCategoricalTokens();
+        vector<string> textTokens = exp.getTextTokens();
 
         string id = exp.getId();
         string docClass = exp.getClass();
@@ -270,9 +266,9 @@ void Statistics::readExamples(Examples exs) {
         sumDFperClass[docClass]++;
 
         // retrieve each term frequency and update occurrencies
-        for (unsigned int i = 3; i < tokens.size()-1; i+=2) {
-            int tf = atoi(tokens[i+1].c_str());
-            string termId = tokens[i];
+        for (unsigned int i = 3; i < textTokens.size()-1; i+=2) {
+            int tf = atoi(textTokens[i+1].c_str());
+            string termId = textTokens[i];
             string idxTermClass = getCompIndex(termId, docClass);
 
             vocabulary.insert(termId);
@@ -284,7 +280,17 @@ void Statistics::readExamples(Examples exs) {
             sumTF += tf;
             CFperTerm[termId].insert(docClass);
         }
+    }
+}
 
+
+void Statistics::calculateIDF() {  
+
+    if(IDF.size() != 0) return;
+
+    for(set<string>::iterator it = vocabulary.begin(); it != vocabulary.end(); it++) {
+        double idf = log10(((double) (totalDocs + 1.0)) / ((double) (getValue(DFperTerm, *it) + 1.0 )));
+        IDF[*it] = idf;
     }
 }
 
@@ -379,9 +385,10 @@ void Statistics::retrieveContentMetrics() {
             if ( greaterThan(amVal, maxAM)) maxAM = amVal;
 
             //probabilidades de uso geral:
-            double Ptec = (getValue(TFperClass, idx) + 1.0) / (sumTF+1.0);  //suavizada 
+            double Ptec = (getValue(TFperClass, idx) + 1.0) / (sumTF + 1.0);  //suavizada 
             double Pc = (getValue(sumTFperClass, *classIt) + 1.0) / (sumTF + 1.0 );//suavizada
-
+            //double Pc = (getValue(sumDFperClass, *classIt) + 1.0) / (totalDocs + 1.0 );//suavizada
+            
             double PdeTtalqueC  = my_div(Ptec,Pc) ;
             //de modo resumido double PdeTtalqueC =  TFperClass[idx] / sumTFperClass[*classIt];
             double PdeCtalqueT = my_div(Ptec,Pt) ;

@@ -134,6 +134,7 @@ class Statistics {
             return normalEstimator;
         }
 
+        void calculateIDF();
         void retrieveContentMetrics();
         void setUsingTermCredibility(){
             usingTermCredibility = true;

@@ -3,7 +3,7 @@
 
 #define TAG "KNN"
 
-KNN::KNN(Statistics* st, int K): usingContentCredibility(false), stats(st), Normalizer(10.0), microF1(0), macroF1(0), K(K) 
+KNN::KNN(Statistics* st, int K): usingContentCredibility(false), usingGraphCredibility(false), stats(st), Normalizer(10.0), microF1(0), macroF1(0), K(K) 
 {
     usingNormalEstimator = stats->getNormalEstimator();
 }
@@ -22,18 +22,18 @@ double KNN::getContentCredibility(string term, string docClass){
 }
 
 double KNN::getGraphCredibility(int g, string id, string classId){
-	//TODO: using graph credibility 
-	//if(!usingGraphCredibility) return 1.0;
+	
+    if(!usingGraphCredibility) return 1.0;
 	if(graphsCredibility.size() == 0) return 1.0;
 	string idx = getCompIndex(id,classId);
 
 	if( graphsCredibility[g].count(idx) > 0) return graphsCredibility[g][idx] * Normalizer;
-
 	return 1.0;
 }
 
 void KNN::setGraphCredibilityMaps(vector< map<string, double> >& gCred){
 	graphsCredibility = gCred;
+    usingGraphCredibility = true;
 }
 
 void KNN::setContentCredibilityMap(map<string, double>& contentCred){
@@ -57,19 +57,22 @@ void KNN::train(Examples& exs){
 
 	TRACE_V(TAG,"train");
     
+    //Maybe we didnt calculate this before...
+    stats->calculateIDF();
+    
 	for(ExampleIterator e = exs.getBegin(); e != exs.getEnd(); e++){
    
-        vector<string> tokens = (e)->getCategoricalTokens();
+        vector<string> textTokens = (e)->getTextTokens();
 		string exampleClass = (e)->getClass();
         string eId = (e)->getId();
         double docSize = 0.0;
 
 //      cout<<" Tokens categoricos  =  " << tokens.size() << endl;
-		for(unsigned int i = 3; i < tokens.size()-1; i+=2){
-			int tf = atoi(tokens[i+1].c_str());
-			string termId = tokens[i];
+		for(unsigned int i = 3; i < textTokens.size()-1; i+=2){
+			int tf = atoi(textTokens[i+1].c_str());
+			string termId = textTokens[i];
             
-            double tfidf = tf *stats->getIDF(termId);
+            double tfidf = tf * stats->getIDF(termId);
 
             docSize += (tfidf * tfidf);
 
@@ -79,6 +82,7 @@ void KNN::train(Examples& exs){
         
         docTrainSizes[eId] = docSize;
     }
+
 }
 
 string KNN::getPredictedClass(set<docWeighted, docWeightedCmp>& trainExamples){
@@ -116,17 +120,16 @@ void KNN::test(Examples& exs){
     for(ExampleIterator it = exs.getBegin(); it != exs.getEnd(); it++){
         Example ex = *it;
 
-        vector<string> catTokens = ex.getCategoricalTokens();	
+        vector<string> textTokens = ex.getTextTokens();	
     
         string eId = ex.getId();
         string classId = ex.getClass();
         
         //credibility to each class
         map<string, double> examplesTestSize;
-
-		for(unsigned int i = 3; i < catTokens.size()-1; i+=2){
-			string termId = catTokens[i];
-			int tf = atoi(catTokens[i+1].c_str());
+		for(unsigned int i = 3; i < textTokens.size(); i+=2){
+			string termId = textTokens[i];
+			int tf = atoi(textTokens[i+1].c_str());
 
             for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++) {
                 double tfidf = tf * getContentCredibility(termId, *classIt);
@@ -136,18 +139,17 @@ void KNN::test(Examples& exs){
 
         map<string, double> similarity;
 
-		for(unsigned int i = 3; i < catTokens.size()-1; i+=2){
-			string termId = catTokens[i];
-            int tf = atoi(catTokens[i+1].c_str());
+		for(unsigned int i = 3; i < textTokens.size();i+=2){
+			string termId = textTokens[i];
+            int tf = atoi(textTokens[i+1].c_str());
 
             for(set<docWeighted, docWeightedCmp>::iterator termIt = termDocWset[termId].begin(); termIt != termDocWset[termId].end(); termIt++){
                 string trainClass = stats-> getTrainClass(termIt->docId);
 
                 double trainDocSize = docTrainSizes[termIt->docId];
                 double trainTermWeight = termIt->weight;
-                
                 double testTermWeight = tf * getContentCredibility(termId, trainClass);
-              
+            
                 similarity[termIt->docId] += ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) );
             }
         }
@@ -155,7 +157,19 @@ void KNN::test(Examples& exs){
         //sim of each example in test set
         set<docWeighted, docWeightedCmp> sim;
         for(map<string, double>::iterator trainIt = similarity.begin(); trainIt != similarity.end(); trainIt++){
-            docWeighted dw(trainIt->first, trainIt->second);
+            
+            //calculating graph credibility....if so
+            vector<double> graphsCreds(graphsCredibility.size());
+            double similarity = trainIt->second;
+
+            for(unsigned int g = 0 ; g < graphsCredibility.size(); g++){
+                double gsim = getGraphCredibility(g, eId, stats->getTrainClass(trainIt->first));
+//                cout<<gsim<< " eid = " << eId << " eclass = " << classId << " traindocclass = " << stats->getTrainClass(trainIt->first) << " similarit = " << similarity << " final = " << similarity * gsim << endl;
+                similarity *= (0.5+gsim);
+            } 
+            
+            //never change this, it is necessary
+            docWeighted dw(trainIt->first, similarity);
             sim.insert(dw);
         }
 
