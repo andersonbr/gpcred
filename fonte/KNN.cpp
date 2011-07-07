@@ -81,7 +81,7 @@ void KNN::train(Examples& exs){
 		}
 
         vector<double> numTokens = (e)-> getNumericalTokens();
-        docCont[eId] = numTokens;
+        exTrain[eId] = numTokens;
         
         docTrainSizes[eId] = docSize;
     }
@@ -159,31 +159,33 @@ void KNN::test(Examples& exs){
         }
         
             
-        for(map<string, vector<double> >::iterator docIt = docCont.begin(); docIt != docCont.end(); docIt++){
+        for(map<string, vector<double> >::iterator trainIt  = exTrain.begin(); trainIt != exTrain.end(); trainIt++){
             double sim = 0.0;
-            for( unsigned int i = 0; i < numTokens.size(); i++){
-                sim += (numTokens[i] - docCont[docIt->first][i]) * ( numTokens[i] - docCont[docIt->first][i]);
+            for(unsigned int i = 0; i < numTokens.size(); i++){
+                sim += ((numTokens[i] - exTrain[trainIt->first][i]) * ( numTokens[i] - exTrain[trainIt->first][i]));
+//                cout<<sim<<endl;
             }
-            similarity[docIt->first] += sqrt(sim);
+//            cout<<"doc = " << trainIt->first << " sim = " << sqrt(sim)<< " simantes = " << similarity[trainIt->first] << endl;
+            similarity[trainIt->first] += sqrt(1.0/sim);
         }
 
 
         //sim of each example in test set
         set<docWeighted, docWeightedCmp> sim;
-        for(map<string, double>::iterator trainIt = similarity.begin(); trainIt != similarity.end(); trainIt++){
+        for(map<string, double>::iterator testIt = similarity.begin(); testIt != similarity.end(); testIt++){
             
             //calculating graph credibility....if so
             vector<double> graphsCreds(graphsCredibility.size());
-            double similarity = trainIt->second;
+            double similarity = testIt->second;
 
             for(unsigned int g = 0 ; g < graphsCredibility.size(); g++){
-                double gsim = getGraphCredibility(g, eId, stats->getTrainClass(trainIt->first));
+                double gsim = getGraphCredibility(g, eId, stats->getTrainClass(testIt->first));
 //                cout<<gsim<< " eid = " << eId << " eclass = " << classId << " traindocclass = " << stats->getTrainClass(trainIt->first) << " similarit = " << similarity << " final = " << similarity * gsim << endl;
                 similarity *= (0.5+gsim);
             } 
             
             //never change this, it is necessary
-            docWeighted dw(trainIt->first, similarity);
+            docWeighted dw(testIt->first, similarity);
             sim.insert(dw);
         }
 

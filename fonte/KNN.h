@@ -45,7 +45,7 @@ class KNN : public ICredibilityClassifier
         map< int, map< string, double > > deviations;
         
         //used for numerical values
-        map<string, vector<double> > docCont;
+        map<string, vector<double> > exTrain;
     
         //confusion matrix
         map<string, map< string, int> > confusionMatrix;
