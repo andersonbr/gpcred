@@ -1,0 +1,24 @@
+Running final baseline:
+NaiveBayes --- train
+NaiveBayes --- test
+MicroF1: 0.709143
+1 - MicroF1: 0.290857
+MacroF1: 0.743624
+1 - MacroF1: 0.256376
+[OK]
+NaiveBayes --- setCredibilityConfigurations
+Performing final test:
+-----------------  Gen: 50 ------------- Ind: 48 ----------------
+NaiveBayes --- useContentCredibility
+NaiveBayes --- train
+NaiveBayes --- test
+MicroF1: 0.957073
+1 - MicroF1: 0.0429272
+MacroF1: 0.928461
+1 - MacroF1: 0.0715388
+Adfs: (* (* (* (* (* Strength(d,c) Strength(d,c)) Strength(d,c)) Strength(d,c)) Strength(d,c)) Strength(d,c))
+
+real    10028m3.394s
+user    9949m37.080s
+sys     4m9.580s
+
