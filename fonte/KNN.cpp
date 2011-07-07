@@ -79,6 +79,9 @@ void KNN::train(Examples& exs){
             docWeighted dw(eId, tfidf);
             termDocWset[termId].insert(dw);
 		}
+
+        vector<double> numTokens = (e)-> getNumericalTokens();
+        docCont[eId] = numTokens;
         
         docTrainSizes[eId] = docSize;
     }
@@ -121,7 +124,8 @@ void KNN::test(Examples& exs){
         Example ex = *it;
 
         vector<string> textTokens = ex.getTextTokens();	
-    
+        vector<double> numTokens = ex.getNumericalTokens();
+
         string eId = ex.getId();
         string classId = ex.getClass();
         
@@ -153,6 +157,16 @@ void KNN::test(Examples& exs){
                 similarity[termIt->docId] += ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) );
             }
         }
+        
+            
+        for(map<string, vector<double> >::iterator docIt = docCont.begin(); docIt != docCont.end(); docIt++){
+            double sim = 0.0;
+            for( unsigned int i = 0; i < numTokens.size(); i++){
+                sim += (numTokens[i] - docCont[docIt->first][i]) * ( numTokens[i] - docCont[docIt->first][i]);
+            }
+            similarity[docIt->first] += sqrt(sim);
+        }
+
 
         //sim of each example in test set
         set<docWeighted, docWeightedCmp> sim;
