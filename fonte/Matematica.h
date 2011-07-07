@@ -19,6 +19,7 @@ inline bool lessOrEqualThanZero(double val) { return cmp(val) <= 0 ? true : fals
 inline bool isZero(double val) { return cmp(val) == 0 ? true : false;}
 inline bool greaterThan(double a, double b = 0.0) {return cmp(a,b) == 1 ? true : false;}
 inline bool lesserThan(double a, double b = 0.0) {return cmp(a,b) == -1 ? true : false;}
+inline bool equals(double a, double b) {return cmp(a,b) == 0 ? true : false;}
 
 inline double my_log(double val){ double res = log(val); return (lessThanZero(res) || isnan(res) || isinf(res)) ? 0.0 : res;}
 inline double my_log_avoid_zero(double val){ double res = log(val); return (isnan(res) || isinf(res)) ? 0.0 : res;}

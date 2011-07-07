@@ -166,29 +166,28 @@ void KNN::test(Examples& exs){
 //                cout<<sim<<endl;
             }
 //            cout<<"doc = " << trainIt->first << " sim = " << sqrt(sim)<< " simantes = " << similarity[trainIt->first] << endl;
-            similarity[trainIt->first] += sqrt(1.0/sim);
+            similarity[trainIt->first] += 1.0/sim;
         }
-
-
+        
         //sim of each example in test set
         set<docWeighted, docWeightedCmp> sim;
         for(map<string, double>::iterator testIt = similarity.begin(); testIt != similarity.end(); testIt++){
             
             //calculating graph credibility....if so
             vector<double> graphsCreds(graphsCredibility.size());
-            double similarity = testIt->second;
+            double similarityValue = testIt->second;
 
             for(unsigned int g = 0 ; g < graphsCredibility.size(); g++){
                 double gsim = getGraphCredibility(g, eId, stats->getTrainClass(testIt->first));
 //                cout<<gsim<< " eid = " << eId << " eclass = " << classId << " traindocclass = " << stats->getTrainClass(trainIt->first) << " similarit = " << similarity << " final = " << similarity * gsim << endl;
-                similarity *= (0.5+gsim);
+                similarityValue *= (0.5+gsim);
             } 
-            
+           
             //never change this, it is necessary
-            docWeighted dw(testIt->first, similarity);
+            docWeighted dw(testIt->first, similarityValue);
             sim.insert(dw);
         }
-
+        
         string predictedLabel = getPredictedClass(sim);
 
         computeConfusionMatrix(classId, predictedLabel);

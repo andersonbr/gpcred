@@ -21,9 +21,9 @@ class docWeighted{
 
 struct docWeightedCmp {
     bool operator() (const docWeighted& lhs, const docWeighted& rhs) const
-    {return greaterThan(lhs.weight,rhs.weight);}
+    {return greaterThan(lhs.weight, rhs.weight) || ( equals(lhs.weight,rhs.weight) && lhs.docId > rhs.docId);}
+//    {return lhs.docId > rhs.docId;}
 };
-
 
 class KNN : public ICredibilityClassifier
 {
