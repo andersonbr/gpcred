@@ -110,7 +110,8 @@ def carregaRelacao(mapa, lista):
         print l, correta, escolhida, max, acertei, errei
         
     print "Avaliacao final =>>> acertei =  ", acertei , "  errei = " , errei
-    print "MicroF1 = " , float(acertei / float(acertei + errei))
+    microF1 = float(acertei / float(acertei + errei))
+    print "MicroF1 = " , microF1
     
     macroF1 = 0.0
     contaClasse = []
@@ -145,6 +146,9 @@ def carregaRelacao(mapa, lista):
     macroF1 = float( macroF1 / len(contaClasse) )
     print "MacroF1 = " , macroF1
     
+    outfile = open("final.out", "w")
+    print >>outfile, "Test", microF1, macroF1
+    outfile.close()
 
 
 mapa = carregaTreino()
