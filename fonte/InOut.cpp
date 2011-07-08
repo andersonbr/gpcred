@@ -27,6 +27,7 @@ InOut::InOut(string basename, int seed){
     _usingEvaluateFile = false;
     _usingFinalOutFile = false;
     numericalCollums = 0;
+    categoricalCollums = 0;
     numExamplesOriginalTrain  = 0;
     numExamplesOriginalTest   = 0;
 
@@ -101,19 +102,21 @@ void InOut::read(const char* filename, int option){
 		
 		while(std::getline(file, line)){
 
+			vector<string> textTokens;
 			vector<string> catTokens;
             vector<double> numTokens;
-			Tokenizer::stringTokenize(line, catTokens, ";");
+			Tokenizer::stringTokenize(line, textTokens, ";");
 			
             //Blank line
-			if(catTokens.size() < 3) continue;
+			if(textTokens.size() < 3) continue;
             
-            Tokenizer::setNumericalTokens(catTokens, numTokens, numericalCollums);
+            Tokenizer::setNumericalTokens(textTokens, numTokens, numericalCollums);
+            Tokenizer::setCategoricalTokens(textTokens, catTokens, categoricalCollums);
 
-			string docClass = Tokenizer::cleanClassToken(catTokens[2]);
-			string id = catTokens[0];
+			string docClass = Tokenizer::cleanClassToken(textTokens[2]);
+			string id = textTokens[0];
 
-			Example e(id,docClass,catTokens,numTokens);
+			Example e(id,docClass,textTokens,catTokens,numTokens);
 
 			switch(option){
 			
@@ -168,6 +171,14 @@ void InOut::setNumericalCollums(int nc){
 
 int InOut::getNumericalCollums(int nc){
     return numericalCollums;
+}
+
+void InOut::setCategoricalCollums(int nc){
+    categoricalCollums= nc;
+}
+
+int InOut::getCategoricalCollums(int nc){
+    return categoricalCollums;
 }
 
 Examples& InOut::getTrain(){

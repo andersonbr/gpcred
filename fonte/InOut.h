@@ -44,6 +44,7 @@ class InOut : public IInOut
 		enum{ train_option, validation_option, test_option };
     
         int numericalCollums;
+        int categoricalCollums;
 
         int numExamplesOriginalTrain;
         int numExamplesOriginalTest;
@@ -64,7 +65,10 @@ class InOut : public IInOut
         void setNumericalCollums(int nc);
         int getNumericalCollums(int nc);
 
-		ofstream& getHistFile();
+        void setCategoricalCollums(int cc);
+        int getCategoricalCollums(int cc);
+		
+        ofstream& getHistFile();
 		ofstream& getBestFile();
 
         bool isUsingBrunoroFile();

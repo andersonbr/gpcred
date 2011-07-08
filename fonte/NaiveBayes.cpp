@@ -6,7 +6,7 @@
 
 #define TAG "NaiveBayes"
 
-NaiveBayes::NaiveBayes(Statistics* st): usingContentCredibility(false), stats(st), Normalizer(10.0), microF1(0), macroF1(0) 
+NaiveBayes::NaiveBayes(Statistics* st): usingContentCredibility(false), usingGraphCredibility(false), stats(st), Normalizer(10.0), microF1(0), macroF1(0) 
 {
     usingNormalEstimator = stats ->getNormalEstimator();
 }
@@ -39,8 +39,59 @@ double NaiveBayes::getGraphCredibility(int g, string id, string classId){
 
 	return 1.0;
 }
+double NaiveBayes::getCategoricalCredibility(int i, string token, string classId){
+   
+    double occurrences = tupleValue[i][classId][token] + 1.0; //laplacian correction
+    double freq = 1.0 * (stats->getSumDFperClass(classId) + tupleValue[i][classId].size());
 
+    double apareceForaClasse = 0;
+    double aparece = 0;
+    for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++) {
+        if(*classIt != classId)
+            apareceForaClasse += tupleValue[i][*classIt][token];
+        aparece += tupleValue[i][*classIt][token];
+    }
+
+    double PdeTeNaoC = apareceForaClasse / stats->getTotalDocs();
+
+
+    double PdeC = stats->getSumDFperClass(classId) / ( 1.0 * stats->getTotalDocs());
+    double PdenaoC = 1.0 - PdeC;
+    
+    double PdeT = 1.0 / (tupleValue[i][classId]).size();
+    double PdenaoT = 1.0 - PdeT;
+
+    double PdeTtalqueC = (occurrences/freq);
+    double PdeTtalqueNaoC =  (PdeTeNaoC + 1.0) / (1.0-PdeC + 1.0) ; //suavizada
+    double PdeNaoTtalqueNaoC = 1.0 - PdeTtalqueNaoC;
+    double PdeNaoTtalqueC = 1.0 - PdeTtalqueC;
+    
+//    return PdeTtalqueC;
+    double gss = PdeTtalqueC * PdeNaoTtalqueNaoC - PdeTtalqueNaoC * PdeNaoTtalqueC;
+    double den = sqrt( PdeT*PdenaoT * PdeC *PdenaoC );
+/*
+    cout<<"P de t talque C = " << PdeTtalqueC <<endl;
+    cout<<"P de naoT talque nao C = "<<  PdeNaoTtalqueNaoC <<endl;
+    cout<<"P de T talque nao C = " << PdeTtalqueNaoC <<endl;
+    cout<<"P de nao T talque C = " <<PdeNaoTtalqueC<<endl;
+    cout<<"P de T = " << PdeT <<endl;
+    cout<<"P de naoT = " << PdenaoT <<endl;
+    cout<<"P de C = " << PdeC <<endl;
+    cout<<"P de naoC = " << PdenaoC<<endl;
+
+    cout<<gss/den<<endl;
+*/
+    double chi2 = gss/den;
+    double am = occurrences / (aparece + tupleValue[i][classId].size()); 
+    double ig = (PdeTtalqueC * log(PdeTtalqueC / (PdeT*PdeC))) + 
+                (PdeNaoTtalqueC * log(PdeNaoTtalqueC / (PdenaoT*PdeC))) +
+                (PdeTtalqueNaoC * log(PdeTtalqueNaoC / (PdeT*PdenaoC))) +
+                (PdeNaoTtalqueNaoC * log(PdeNaoTtalqueNaoC / (PdenaoT*PdenaoC)));
+//    cout<<"am = " <<am<<endl;
+    return 0.5 + ig / occurrences;//0.5+(1.0/occurrences) + 0.001*am; //1.0/am;
+}
 void NaiveBayes::setGraphCredibilityMaps(vector< map<string, double> >& gCred){
+    usingGraphCredibility = true;
 	graphsCredibility = gCred;
 }
 
@@ -72,7 +123,7 @@ void NaiveBayes::train(Examples& exs){
 
 //      cout<<" Example id = " << (e)->getId()<<endl;
 
-		vector<string> tokens = (e)->getCategoricalTokens();
+		vector<string> tokens = (e)->getTextTokens();
 		string exampleClass = (e)->getClass();
 
 //      cout<<" Tokens categoricos  =  " << tokens.size() << endl;
@@ -91,6 +142,13 @@ void NaiveBayes::train(Examples& exs){
                 means[i][exampleClass] += numTokens[i]; 
             }
         }
+
+        vector<string> catTokens = (e)->getCategoricalTokens();
+        for(unsigned int i = 0; i < catTokens.size(); i++){
+            tupleValue[i][exampleClass][catTokens[i]]++;   
+            //cout<<"i = " << i << " class =  " << exampleClass << " " << catTokens[i]<< " "<< tupleValue[i][exampleClass][catTokens[i]]<<endl;   
+        } 
+
 	}
     if(!usingNormalEstimator){
         for(unsigned int i = 0; i < means.size(); i++){
@@ -202,6 +260,7 @@ void NaiveBayes::test(Examples& exs){
     for(ExampleIterator it = exs.getBegin(); it != exs.getEnd(); it++){
         Example ex = *it;
 
+        vector<string> textTokens = ex.getTextTokens();	
         vector<string> catTokens = ex.getCategoricalTokens();	
         vector<double> numTokens = ex.getNumericalTokens();	
         string id = ex.getId();
@@ -219,25 +278,37 @@ void NaiveBayes::test(Examples& exs){
             //cout<<"usingNormalEstimator = " << usingNormalEstimator <<endl;
             for(unsigned int i = 0; i < numTokens.size(); i++){
                 double tmp = 0.0;
+                double tmp2 = 0.0;
+                double tmp3 = 0.0;
 
                 if(!usingNormalEstimator){
-                  tmp =  std::max(1e-75,gaussianDistribution(numTokens[i], means[i][*classIt], deviations[i][*classIt]));
+                    tmp =  std::max(1e-75,gaussianDistribution(numTokens[i], means[i][*classIt], deviations[i][*classIt]));
+                    tmp2 =  std::max(1e-75,exponentialDistribution(means[i][*classIt] + deviations[i][*classIt], 0.5));
+                    tmp3 =  std::max(1e-75,weibullDistribution(means[i][*classIt] + deviations[i][*classIt], 1,1));
+
                 }else{
-                      tmp = std::max(1e-75, nEstimator[i][*classIt].getProbability(ex.getNumericalValue(i)));
-                      //tmp *= Normalizer;
-        //            cout<<"Tokens = " << i <<" original = " << nEstimator[i][*classIt].getProbability(i) << " class =  " << *classIt << " val = " << tmp<< " mean = " << nEstimator[i][*classIt].getMean() << " deviations = " << nEstimator[i][*classIt].getStdDev() << " precision = " << nEstimator[i][*classIt].getPrecision()<< " sumofweights = " << nEstimator[i][*classIt].getSumOfWeights() << endl;
+                    tmp = std::max(1e-75, nEstimator[i][*classIt].getProbability(ex.getNumericalValue(i)));
                 }                                                                                            
-                
         //          cout<<"Tokens = " << i << " val = " << tmp<< " mean = " << means[i][*classIt] << " deviations = " << deviations[i][*classIt] << endl;
         //          cout<<"log(val) = " << my_log_avoid_zero(tmp)<<endl;
         //          cout<<"log(val) = " << log(tmp)<<endl<<endl;
                 probCond += log(tmp);
             }
 
-            //categorical tokens evaluate
-            for(unsigned int i = 3 ; i < catTokens.size(); i+=2){
-                string termId = catTokens[i];
-                int tf = atoi(catTokens[i+1].c_str());
+            //categorical tokens evaluation
+            for(unsigned int i = 0; i < catTokens.size(); i++){
+                string value = catTokens[i];
+                double occurrences = tupleValue[i][*classIt][catTokens[i]] + 1.0; //laplacian correction
+                double freq = 1.0 * (stats->getSumDFperClass(*classIt) + tupleValue[i][*classIt].size());
+//                cout<<"classIt = " << *classIt << " count = " << stats->getSumDFperClass(*classIt) << endl;
+
+                probCond += log(getCategoricalCredibility(i,catTokens[i],*classIt) * (occurrences/freq));
+            }
+
+            //text tokens evaluation
+            for(unsigned int i = 3 ; i < textTokens.size(); i+=2){
+                string termId = textTokens[i];
+                int tf = atoi(textTokens[i+1].c_str());
                 double numerator = computeConditionalNumerator(termId, *classIt);
                 double fraction = numerator / condDenominator[*classIt];
                 probCond += (tf * log(fraction)); 
@@ -250,13 +321,15 @@ void NaiveBayes::test(Examples& exs){
                 graphsCreds[g] = 0.5 + getGraphCredibility(g,id,*classIt);
             }
 
+//            cout<<"P( " << *classIt << " ) = " << aPriori[*classIt] << endl;
+
             double PofCGivenD = log(aPriori[*classIt]) + probCond;
             for(unsigned int g = 0 ; g < graphsCreds.size(); g++){
                 PofCGivenD += log(graphsCreds[g]);
             }
 
             probMap[*classIt] = PofCGivenD;
-            //cout<<" id = " << id << " class = " << *classIt << " prob = " << PofCGivenD <<endl;
+//          cout<<" id = " << id << " class = " << *classIt << " prob = " << PofCGivenD <<endl;
             probNormalizer += PofCGivenD;
 
         }
@@ -265,13 +338,24 @@ void NaiveBayes::test(Examples& exs){
 
         for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++){
             probMap[*classIt] = -1.0 * probMap[*classIt]/probNormalizer;
-            //cout<<"Class = " << *classIt << " prob = " << probMap[*classIt] << endl;
+//            cout<<"Class = " << *classIt << " prob = " << -1*probMap[*classIt] << endl;
 
             if(greaterThan(probMap[*classIt], greatestProb)){
                 greatestProb = probMap[*classIt];
                 predictedLabel = *classIt;
             }
         }
+
+/*
+        for(unsigned int i = 0; i < exs.getNumberOfCategoricalAttibutes(); i++){
+            for(map<string, map<string, int> >::iterator it = tupleValue[i].begin(); it!= tupleValue[i].end(); it++){
+                for(map<string, int> ::iterator it2 = tupleValue[i][it->first].begin(); it2 != tupleValue[i][it->first].end(); it2++){
+                    cout<<" att "<< i << " class= " << it->first << " val = " << it2->first << " p = " << (1.0+it2->second) * 1.0 / (stats->getSumDFperClass(it->first) + tupleValue[i][it->first].size())<<endl;              
+                }
+            }
+            
+        }
+*/
 
         computeConfusionMatrix(classId, predictedLabel);
 
@@ -282,6 +366,7 @@ void NaiveBayes::test(Examples& exs){
             classHits[classId] ++;			
         }
         else{
+//          cout<<"errei " << id<<endl;
             classMiss[classId]++;
         }
 
@@ -289,6 +374,7 @@ void NaiveBayes::test(Examples& exs){
         docsPerClass[classId]++;
     }
 
+    showConfusionMatrix();
     calculateF1(classHits,classMiss,docsPerClass, mappedDocs);
 }
 
@@ -343,6 +429,17 @@ double NaiveBayes::getMicroF1(){
 
 double NaiveBayes::getMacroF1(){
 	return macroF1;
+}
+
+double NaiveBayes::weibullDistribution(double value, double gamma, int k){
+    if(value < 0 ) return 0.0;
+
+    return (k/gamma) * pow((value/gamma),k-1) * pow(exp(-1*value/gamma), k);
+
+}
+
+double NaiveBayes::exponentialDistribution(double value, double gamma){
+    return gamma * exp(-1*gamma*value);
 }
 
 double NaiveBayes::gaussianDistribution(double value, double mean, double deviation){

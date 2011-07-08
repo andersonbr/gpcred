@@ -7,6 +7,10 @@
 //  Example functions.
 ///
 
+vector<string>& Example::getTextTokens(){
+	return textTokens;
+}
+
 vector<string>& Example::getCategoricalTokens(){
 	return categoricalTokens;
 }
@@ -17,6 +21,10 @@ vector<double>& Example::getNumericalTokens(){
 
 int Example::getNumberOfNumericalTokens(){
     return numericalTokens.size();
+}
+
+int Example::getNumberOfCategoricalTokens(){
+    return categoricalTokens.size();
 }
 
 double Example::getNumericalValue(unsigned int index) const{
@@ -71,6 +79,11 @@ int Examples::getNumberOfNumericalAttibutes(){
 
 }
 
+int Examples::getNumberOfCategoricalAttibutes(){
+    if(sexamples.size() == 0) return 0;
+    return sexamples[0].getNumberOfCategoricalTokens();
+
+}
 void Examples::clear(){
     sexamples.clear();
 }

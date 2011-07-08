@@ -12,6 +12,7 @@ class Example{
 	private:
 		string id;
 		string docClass;
+		vector<string> textTokens;
 		vector<string> categoricalTokens;
 		vector<double> numericalTokens;
 /*
@@ -24,15 +25,17 @@ class Example{
 */
 	public:
 		Example() {}
-		Example(string id, string dclass, vector<string> cattoks, vector<double> numTokens) : id(id), docClass(dclass), categoricalTokens(cattoks), numericalTokens(numTokens)
+		Example(string id, string dclass, vector<string> textToks, vector<string> catTokens, vector<double> numTokens) : id(id), docClass(dclass), textTokens(textToks), categoricalTokens(catTokens), numericalTokens(numTokens)
 //			{ age= 1000; difficult = 1000;}
 			{}
 
 		virtual ~Example(){}
 		
+        vector<string>& getTextTokens();
         vector<string>& getCategoricalTokens();
         vector<double>& getNumericalTokens();
         int getNumberOfNumericalTokens();
+        int getNumberOfCategoricalTokens();
 		string getClass();
 		string getId();
  
@@ -71,6 +74,7 @@ class Examples{
         void sort(unsigned int index);
     
         int getNumberOfNumericalAttibutes();
+        int getNumberOfCategoricalAttibutes();
         ExampleIterator erase(ExampleIterator it);
 };
 

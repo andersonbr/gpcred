@@ -14,6 +14,7 @@ class Tokenizer{
 		static void stringTokenize(const string& str, vector<string>& tokens, const string& delimiters = " ");
 		static string cleanClassToken(string& token);
         static void setNumericalTokens(vector<string>& tokens, vector<double>& numTokens, int numericalCollums);
+        static void setCategoricalTokens(vector<string>& tokens, vector<string>& catTokens, int categoricalCollums);
 
 };
 

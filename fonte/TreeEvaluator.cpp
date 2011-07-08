@@ -21,7 +21,7 @@ void TreeEvaluator::evaluateFromFile(string fileName){
 
     ICredibilityClassifier *classifier;
     if(stats->getUsingKNN())
-        classifier = new KNN(stats, stats->getK());
+        classifier = new KNN(stats, stats->getK(), stats->getUsingKNNOptimize());
     else
         classifier = new NaiveBayes(stats);
 
@@ -48,6 +48,7 @@ void TreeEvaluator::evaluateFromFile(string fileName){
             Tokenizer::stringTokenize(line, tokens, " ");
             if(tokens.size() == 0) continue;
 
+            cout<<"==========================================================" <<endl;
             cout<<"line = " << line <<endl;
             std::map<string, double> credibilityMap;
             std::vector< std::map<string, double> > graphsCredibility(stats->getNumberOfGraphs());
@@ -123,7 +124,7 @@ void TreeEvaluator::evaluateFromFile(string fileName){
             }
             
             if(stats->getUsingKNN())
-                classifier = new KNN(stats, stats->getK());
+                classifier = new KNN(stats, stats->getK(), stats->getUsingKNNOptimize());
             else
                 classifier = new NaiveBayes(stats);
             
@@ -353,7 +354,7 @@ double TreeEvaluator::getOperandValue(string operand, string id, string classNam
     else if(operand == "DiceSimilarity"){
         return stats->getDiceSimilarity(id, className, graphId);
     }
-    else if(operand == "InverseLigSimilarity"){
+    else if(operand == "InverseLigSimilarity" || operand == "InverseLogSimilarity"){
         return stats->getInverseLogSimilarity(id, className, graphId);
     }
     else if(operand == "AvgNeighborHoodDegree"){

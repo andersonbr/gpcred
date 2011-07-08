@@ -25,7 +25,10 @@ class NaiveBayes : public ICredibilityClassifier
         bool usingNormalEstimator;
         map< int, map< string, double > > means;
         map< int, map< string, double > > deviations;
-    
+   
+        //used for categorical values
+        map< int, map < string, map< string, int> > > tupleValue;
+
         map< int, map< string, NormalEstimator> > nEstimator;
 
         //confusion matrix
@@ -45,9 +48,9 @@ class NaiveBayes : public ICredibilityClassifier
         void savePrediction(string exampleId, string correctClass, string predictedClass);
         bool printPrediction;
 
-
 		double getContentCredibility(string term, string docClass);
 		double getGraphCredibility(int,string,string);
+        double getCategoricalCredibility(int i, string token, string classId);
 
 		//Statistical object
 		Statistics* stats;
@@ -73,6 +76,8 @@ class NaiveBayes : public ICredibilityClassifier
         void computeConfusionMatrix(string actual, string predicted);
         void showConfusionMatrix();
 
+        double weibullDistribution(double value, double gamma, int k);
+        double exponentialDistribution(double value, double gamma);
 	public:
 		NaiveBayes(Statistics* st);
 		virtual ~NaiveBayes();
