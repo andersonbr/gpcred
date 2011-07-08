@@ -16,13 +16,17 @@ Statistics::~Statistics(){
     clear();
 }
 
-void Statistics::setUsingKNN(bool usingKNN, int K){
+void Statistics::setUsingKNN(bool usingKNN, int K, bool usingKNNOptimize){
     this->usingKNN = usingKNN;
     KNNK = K;
+    this->usingKNNOptimize = usingKNNOptimize;
 }
 
 bool Statistics::getUsingKNN(){
     return usingKNN;
+}
+bool Statistics::getUsingKNNOptimize(){
+    return usingKNNOptimize;
 }
 
 int Statistics::getK(){

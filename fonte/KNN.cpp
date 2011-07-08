@@ -3,10 +3,13 @@
 
 #define TAG "KNN"
 
-KNN::KNN(Statistics* st, int K): usingContentCredibility(false), usingGraphCredibility(false), stats(st), Normalizer(10.0), microF1(0), macroF1(0), K(K) 
+KNN::KNN(Statistics* st, int K, bool boolOpt): usingContentCredibility(false), usingGraphCredibility(false), usingKNNOptimize(boolOpt), stats(st), Normalizer(10.0), microF1(0), macroF1(0), K(K) 
 {
     usingNormalEstimator = stats->getNormalEstimator();
 }
+
+bool KNN::valuesSaved = false;
+map<string, map< string, double> > KNN::saveValues;
 
 KNN::~KNN(){
 }
@@ -136,41 +139,54 @@ void KNN::test(Examples& exs){
         string classId = ex.getClass();
         
         map<string, double> examplesTestSize;
+//      cout<<"vs = "<<valuesSaved<<endl;
         //credibility to each class
-        for(unsigned int i = 3; i < textTokens.size(); i+=2){
-            string termId = textTokens[i];
-            int tf = atoi(textTokens[i+1].c_str());
+        if((usingKNNOptimize && !valuesSaved )  || !usingKNNOptimize){
+//          cout<<"AAAAAAA calculando..."<<endl;
+            for(unsigned int i = 3; i < textTokens.size(); i+=2){
+                string termId = textTokens[i];
+                int tf = atoi(textTokens[i+1].c_str());
 
-            for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++) {
-                double tfidf = tf * getContentCredibility(termId, *classIt);
-                examplesTestSize[*classIt] += (tfidf * tfidf);
+                for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++) {
+                    double tfidf = tf * getContentCredibility(termId, *classIt);
+                    examplesTestSize[*classIt] += (tfidf * tfidf);
+                }
             }
         }
-
         map<string, double> similarity;
-		for(unsigned int i = 3; i < textTokens.size();i+=2){
-			string termId = textTokens[i];
-            int tf = atoi(textTokens[i+1].c_str());
 
-            for(set<docWeighted, docWeightedCmp>::iterator termIt = termDocWset[termId].begin(); termIt != termDocWset[termId].end(); termIt++){
-                string trainClass = stats-> getTrainClass(termIt->docId);
-
-                double trainDocSize = docTrainSizes[termIt->docId];
-                double trainTermWeight = termIt->weight;
-                double testTermWeight = tf * getContentCredibility(termId, trainClass);
-            
-                similarity[termIt->docId] += ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) );
-            }
+        if(usingKNNOptimize && valuesSaved){
+            similarity = saveValues[eId];
         }
-            
-        for(map<string, vector<double> >::iterator trainIt  = exTrain.begin(); trainIt != exTrain.end(); trainIt++){
-            double sim = 0.0;
-            for(unsigned int i = 0; i < numTokens.size(); i++){
-                sim += ((numTokens[i] - exTrain[trainIt->first][i]) * ( numTokens[i] - exTrain[trainIt->first][i]));
+        else{
+//          cout<<"BBBBB calculando..."<<endl;
+            for(unsigned int i = 3; i < textTokens.size();i+=2){
+                string termId = textTokens[i];
+                int tf = atoi(textTokens[i+1].c_str());
+
+                for(set<docWeighted, docWeightedCmp>::iterator termIt = termDocWset[termId].begin(); termIt != termDocWset[termId].end(); termIt++){
+                    string trainClass = stats-> getTrainClass(termIt->docId);
+
+                    double trainDocSize = docTrainSizes[termIt->docId];
+                    double trainTermWeight = termIt->weight;
+                    double testTermWeight = tf * getContentCredibility(termId, trainClass);
+
+                    similarity[termIt->docId] += ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) );
+                }
             }
-            similarity[trainIt->first] += 1.0/sim;
+
+            for(map<string, vector<double> >::iterator trainIt  = exTrain.begin(); trainIt != exTrain.end(); trainIt++){
+                double sim = 0.0;
+                for(unsigned int i = 0; i < numTokens.size(); i++){
+                    sim += ((numTokens[i] - exTrain[trainIt->first][i]) * ( numTokens[i] - exTrain[trainIt->first][i]));
+                }
+                similarity[trainIt->first] += 1.0/sim;
+            }
         }
         
+        if(!valuesSaved)
+            saveValues[eId] = similarity;
+
         //sim of each example in test set
         set<docWeighted, docWeightedCmp> sim;
         for(map<string, double>::iterator testIt = similarity.begin(); testIt != similarity.end(); testIt++){
@@ -206,6 +222,10 @@ void KNN::test(Examples& exs){
 
         mappedDocs[predictedLabel]++;
         docsPerClass[classId]++;
+    }
+    if(valuesSaved == false){
+        valuesSaved = true;
+        cout<<"changin valuesSaved para verdadeiro!! " << valuesSaved<<endl;
     }
     calculateF1(classHits,classMiss,docsPerClass, mappedDocs);
 }

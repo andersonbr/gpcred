@@ -49,7 +49,12 @@ class KNN : public ICredibilityClassifier
     
         //confusion matrix
         map<string, map< string, int> > confusionMatrix;
-       
+        
+        //optimizing...
+        static map<string, map< string, double> > saveValues;
+        static bool valuesSaved;
+        bool usingKNNOptimize;
+
         //prediction table: prediction [exampleId] -> guess
         class guess{
             public:
@@ -84,7 +89,7 @@ class KNN : public ICredibilityClassifier
         string getPredictedClass(set<docWeighted, docWeightedCmp>& trainExamples);
 
 	public:
-		KNN(Statistics* st, int K);
+		KNN(Statistics* st, int K, bool optimize);
 		virtual ~KNN();
 		
 		void train(Examples& exs);		
