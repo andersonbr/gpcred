@@ -2,8 +2,9 @@
 import sys
 
 treino = open(sys.argv[1])
-rel = open(sys.argv[2])
-teste = open(sys.argv[3])
+val = open(sys.argv[2])
+rel = open(sys.argv[3])
+teste = open(sys.argv[4])
 
 mapaTest = {}
 numPerClassTest = {}
@@ -15,11 +16,9 @@ relacao = []
 for line in rel:
     relacao.append(line)
 
-def carregaTreino():
+def carregaTreino(fileIn, mapIdClass):
 
-    mapIdClass = {}
-
-    for line in treino:
+    for line in fileIn:
     #    print line
 
         fields = line.split(";")
@@ -31,8 +30,6 @@ def carregaTreino():
         
         if classid not in classes:
             classes.append(classid)
-
-    return mapIdClass
 
 def carregaTeste():
     lista = []
@@ -151,7 +148,9 @@ def carregaRelacao(mapa, lista):
     outfile.close()
 
 
-mapa = carregaTreino()
+mapa = {}
+carregaTreino(treino,mapa)
+carregaTreino(val,mapa)
 lista = carregaTeste()
 carregaRelacao(mapa, lista)
 
