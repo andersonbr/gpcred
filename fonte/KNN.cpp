@@ -120,8 +120,14 @@ void KNN::test(Examples& exs){
     map<string,unsigned long long> mappedDocs;
     map<string,unsigned long long> docsPerClass;
     
+    int numExamples = 0;
     for(ExampleIterator it = exs.getBegin(); it != exs.getEnd(); it++){
+        numExamples++;
+        if(numExamples % 100 == 0)
+            cout<<"Evaluated: " << numExamples<<endl;
+
         Example ex = *it;
+
 
         vector<string> textTokens = ex.getTextTokens();	
         vector<double> numTokens = ex.getNumericalTokens();
@@ -129,20 +135,19 @@ void KNN::test(Examples& exs){
         string eId = ex.getId();
         string classId = ex.getClass();
         
-        //credibility to each class
         map<string, double> examplesTestSize;
-		for(unsigned int i = 3; i < textTokens.size(); i+=2){
-			string termId = textTokens[i];
-			int tf = atoi(textTokens[i+1].c_str());
+        //credibility to each class
+        for(unsigned int i = 3; i < textTokens.size(); i+=2){
+            string termId = textTokens[i];
+            int tf = atoi(textTokens[i+1].c_str());
 
             for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++) {
                 double tfidf = tf * getContentCredibility(termId, *classIt);
                 examplesTestSize[*classIt] += (tfidf * tfidf);
             }
-		}
+        }
 
         map<string, double> similarity;
-
 		for(unsigned int i = 3; i < textTokens.size();i+=2){
 			string termId = textTokens[i];
             int tf = atoi(textTokens[i+1].c_str());
@@ -157,15 +162,12 @@ void KNN::test(Examples& exs){
                 similarity[termIt->docId] += ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) );
             }
         }
-        
             
         for(map<string, vector<double> >::iterator trainIt  = exTrain.begin(); trainIt != exTrain.end(); trainIt++){
             double sim = 0.0;
             for(unsigned int i = 0; i < numTokens.size(); i++){
                 sim += ((numTokens[i] - exTrain[trainIt->first][i]) * ( numTokens[i] - exTrain[trainIt->first][i]));
-//                cout<<sim<<endl;
             }
-//            cout<<"doc = " << trainIt->first << " sim = " << sqrt(sim)<< " simantes = " << similarity[trainIt->first] << endl;
             similarity[trainIt->first] += 1.0/sim;
         }
         
