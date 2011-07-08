@@ -57,7 +57,7 @@ void MyGP::evaluate(bool printFinalOutfile, std::string msg){
     
     ICredibilityClassifier *classifier;
     if(stats->getUsingKNN())
-        classifier = new KNN(stats, stats->getK());
+        classifier = new KNN(stats, stats->getK(), stats->getUsingKNNOptimize());
     else
         classifier = new NaiveBayes(stats);
     

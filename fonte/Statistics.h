@@ -109,6 +109,7 @@ class Statistics {
         //ok, it shouldnt be here...sorry software engs.
         bool usingKNN;
         int KNNK;
+        bool usingKNNOptimize;
 
     public:
 
@@ -118,9 +119,10 @@ class Statistics {
         //clean up everything!
         void clear();
 
-        void setUsingKNN(bool usingKNN, int K);
+        void setUsingKNN(bool usingKNN, int K, bool usingknnoptimize);
         bool getUsingKNN();
-        
+        bool getUsingKNNOptimize();
+
         int getK();
         void setNormalEstimator(bool nEstimator){
             normalEstimator = nEstimator;

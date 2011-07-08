@@ -16,7 +16,7 @@
 #include "TreeEvaluator.h"
 #include "gp.h"
 
-void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, int& categoricalCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluateFromFile, string &evaluationDestiny, int& genToChange, bool& evalOnly, bool& optimizeGraphMetrics, bool& usingKNN, int& KNNK);
+void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, int& categoricalCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluateFromFile, string &evaluationDestiny, int& genToChange, bool& evalOnly, bool& optimizeGraphMetrics, bool& usingKNN, int& KNNK, bool& usingKNNOptimize);
 
 void configureTermCredibility(Statistics& stats, bool useTermCredibility, bool normalEstimator, bool normalizeTermsPerGreatestClassValue);
 void configureGraphCredibility(Statistics& stats, InOut& io, vector<string>& graphsNames);
@@ -38,18 +38,18 @@ int main(int argc, char **argv)
 	bool loadPop = false, dontsave = false,  newSaveFileName = false, useTermCredibility = true, usingValidation = false;
     bool printPredictionsFile = true, printBrunoroFile = false, normalEstimator = false, evaluationFromFile = false, evalOnly = false;
     bool normalizeTermsPerGreatestClassValue = false;
-    bool optimizeGraphMetrics = true;
+    bool optimizeGraphMetrics = true, usingKNNOptimize = false;
     bool usingKNN = false;
     int KNNK = 0;
 
-	getParameters(argc, argv, trainFile, validationFile, usingValidation, testFile, parameterConfigFileName, seed, loadPop, loadFileName, dontsave, saveFileName, newSaveFileName, useTermCredibility, graphsNames, numericalCollums, categoricalCollums, predictionsFileName, printPredictionsFile, brunoroFileName, printBrunoroFile, normalEstimator, normalizeTermsPerGreatestClassValue, evaluationFileName, evaluationFromFile, evaluationDestiny, genToChange, evalOnly, optimizeGraphMetrics, usingKNN, KNNK);
+	getParameters(argc, argv, trainFile, validationFile, usingValidation, testFile, parameterConfigFileName, seed, loadPop, loadFileName, dontsave, saveFileName, newSaveFileName, useTermCredibility, graphsNames, numericalCollums, categoricalCollums, predictionsFileName, printPredictionsFile, brunoroFileName, printBrunoroFile, normalEstimator, normalizeTermsPerGreatestClassValue, evaluationFileName, evaluationFromFile, evaluationDestiny, genToChange, evalOnly, optimizeGraphMetrics, usingKNN, KNNK, usingKNNOptimize);
 
 	//Get Files
 	InOut io(baseName, seed);
 	Statistics stats;
 
     stats.setOptimizeGraphMetrics(optimizeGraphMetrics);
-    stats.setUsingKNN(usingKNN, KNNK);
+    stats.setUsingKNN(usingKNN, KNNK, usingKNNOptimize);
     
     io.setGPParameterConfigFileName(parameterConfigFileName);
     io.setFinalOutFile(finalOutFileName);
@@ -92,11 +92,12 @@ int main(int argc, char **argv)
 
     	ICredibilityClassifier *classifier; 
         if(usingKNN)
-    	    classifier = new KNN(&stats, KNNK); 
+    	    classifier = new KNN(&stats, KNNK, usingKNNOptimize); 
     	else
             classifier = new NaiveBayes(&stats); 
 	    classifier->train(io.getTrain());
         classifier->test(io.getTest());
+        classifier->printFinalOutFile(io.getFinalOutFile(), "TrainBaseline");
 	    return 0;
     }
 
@@ -111,7 +112,7 @@ int main(int argc, char **argv)
 	//Set classifier parameters
     ICredibilityClassifier *classifier;
     if(usingKNN)
-	    classifier = new KNN(&stats, KNNK); 
+	    classifier = new KNN(&stats, KNNK, usingKNNOptimize); 
     else
 	    classifier = new NaiveBayes(&stats); 
         
@@ -194,7 +195,7 @@ int main(int argc, char **argv)
     
     cout<<endl<<"Running final baseline:"<<endl;
 	if(usingKNN)
-        classifier = new KNN(&stats, KNNK); 
+        classifier = new KNN(&stats, KNNK, usingKNNOptimize); 
 	else
         classifier = new NaiveBayes(&stats); 
 
@@ -265,6 +266,7 @@ void parametersHelp()
     cout<<"          -evalonly: Only evaluate the baseline."<<endl;
     cout<<"          -dontoptimize: Dont use graphs optimization (use it when memory is a problem)."<<endl;
     cout<<"          -KNN K: Set it to use KNN instead of NB."<<endl;
+    cout<<"          -KNNOptimize: Use it when all you want is to evaluate gp with graphs and KNN."<<endl;
 }
 
 bool has(int limit, const char *word, ...)
@@ -329,7 +331,7 @@ int isdigit (int c)
 		return 0;
 }
 
-void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, int& categoricalCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluationFromFile, string &evaluationDestiny, int& genToChange, bool& evalOnly, bool& optimizeGraphMetrics, bool& usingKNN, int &KNNK)
+void getParameters(int argc, char** argv, string& trainFile, string& validationFile, bool& usingValidation, string& testFile, string& parameterConfigFileName, int &seed, bool& loadPop, string& loadFileName, bool& dontsave, string& saveFileName, bool& newSaveFileName, bool& useTermsCredibility, vector<string> &graphsNames, int& numCollums, int& categoricalCollums, string& predictionsFilename,  bool& printPredictionsFile, string& brunoroFilename, bool& printBrunoroFile, bool& normalEstimator, bool& normalizeTermsPerGreatestClassValue, string& evaluationFileName, bool& evaluationFromFile, string &evaluationDestiny, int& genToChange, bool& evalOnly, bool& optimizeGraphMetrics, bool& usingKNN, int &KNNK, bool& usingKNNOptimize)
 {
 	TRACE_V("MAIN","getParameters.");
 	
@@ -450,11 +452,15 @@ void getParameters(int argc, char** argv, string& trainFile, string& validationF
             optimizeGraphMetrics = false;
             cout<<"Not optimizing graph metrics"<<endl;
         }
-    	else if( has(2, argv[i], "-knn", "--knn") ){
+    	else if( has(4, argv[i], "-knn", "--knn","-KNN","--KNN") ){
             usingKNN = true;
             KNNK = getIntArgument(i,argc,argv);
             i++;
             cout<<"Using KNN, K = "<< KNNK<<endl;
+        }
+    	else if( has(6, argv[i], "-knnoptimize", "--knnoptimize","--KNNOptimize","-KNNOptimize","--knnopt","-knnopt") ){
+            usingKNNOptimize = true;
+            cout<<"Using KNN optimize option...please avoid using it with you're evaluating content."<<endl;
         }
         else{
 			fprintf (stderr, "Unknown option `-%s'.\n", argv[i]);
