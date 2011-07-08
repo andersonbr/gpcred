@@ -97,6 +97,7 @@ int main(int argc, char **argv)
             classifier = new NaiveBayes(&stats); 
 	    classifier->train(io.getTrain());
         classifier->test(io.getTest());
+        classifier->printFinalOutFile(io.getFinalOutFile(), "TrainBaseline");
 	    return 0;
     }
 
