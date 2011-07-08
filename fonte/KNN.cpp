@@ -233,12 +233,21 @@ void KNN::calculateF1(map<string, unsigned long long> hits, map<string, unsigned
 
 	unsigned long totalHits = 0;
 	unsigned long totalDocs = 0;
+    set<string> classUsed;
 
 	for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++) {
 
-		double precision = (mappedDocs[*classIt] == 0) ? 0.0 : ((double) hits[*classIt] / (double) mappedDocs[*classIt]);
-		double recall = (docsPerClass[*classIt] == 0) ? 0.0 : ((double) hits[*classIt] / (double)(docsPerClass[*classIt]));
+        double precision = 0.0;
+        double recall = 0.0;
 
+        if( mappedDocs[*classIt] > 0) {
+            precision = ((double) hits[*classIt] / (double) mappedDocs[*classIt]);
+            classUsed.insert(*classIt);
+        }
+        if( docsPerClass[*classIt] > 0){ 
+		    recall = ((double) hits[*classIt] / (double)(docsPerClass[*classIt]));
+            classUsed.insert(*classIt);
+        }
 		totalHits += hits[*classIt];
 		totalDocs += docsPerClass[*classIt];
 
@@ -246,7 +255,7 @@ void KNN::calculateF1(map<string, unsigned long long> hits, map<string, unsigned
 		macroF1 += F1;
 	}
 
-	macroF1 /= stats->getClasses().size();
+	macroF1 /= classUsed.size();
 	microF1 = ((double)totalHits / (double)totalDocs);
 
 	cerr << "MicroF1: " << microF1 << endl;
@@ -254,6 +263,7 @@ void KNN::calculateF1(map<string, unsigned long long> hits, map<string, unsigned
 
 	cerr << "MacroF1: " << macroF1 << endl;
 	cerr << "1 - MacroF1: " << 1.0 -  macroF1 << endl;
+
 }
 
 double KNN::getMicroF1(){

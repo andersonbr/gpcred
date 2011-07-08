@@ -6,12 +6,14 @@ rel = open(sys.argv[2])
 teste = open(sys.argv[3])
 
 mapaTest = {}
-
+numPerClassTest = {}
+predictedClassTest = {}
+hits = {}
+classes = []
 relacao = []
 
 for line in rel:
     relacao.append(line)
-
 
 def carregaTreino():
 
@@ -26,6 +28,9 @@ def carregaTreino():
         classid = fields[2]
     #   print id,classid
         mapIdClass[id] = classid
+        
+        if classid not in classes:
+            classes.append(classid)
 
     return mapIdClass
 
@@ -36,7 +41,9 @@ def carregaTeste():
         id = fields[0]
         classid = fields[2]
         lista.append(id)
-
+        
+        if classid not in classes:
+            classes.append(classid)
         mapaTest[id] = classid
 
     return lista
@@ -48,6 +55,12 @@ def carregaRelacao(mapa, lista):
 
     for l in lista:
         correta = mapaTest[l]
+        if correta in numPerClassTest:
+            numPerClassTest[correta] += 1
+        else:
+            numPerClassTest[correta] = 1
+
+
 #        print l, correta
 
         votes = {}
@@ -73,27 +86,69 @@ def carregaRelacao(mapa, lista):
                     votes[classOther] += float(weight)
 	
         max = 0
-	escolhida = -1
-	for (c,v) in votes.iteritems():
+        escolhida = -1
+        for (c,v) in votes.iteritems():
             if v > max:
                 max = v
                 escolhida = c
 
         if correta == escolhida:
             acertei += 1
+            if escolhida in hits:
+                hits[escolhida] += 1
+            else:
+                hits[escolhida] = 1
         else:
             errei += 1
 
+        if escolhida in predictedClassTest:
+            predictedClassTest[escolhida] += 1
+        else:
+            predictedClassTest[escolhida] = 1
+
+        
         print l, correta, escolhida, max, acertei, errei
         
     print "Avaliacao final =>>> acertei =  ", acertei , "  errei = " , errei
+    print "MicroF1 = " , float(acertei / float(acertei + errei))
+    
+    macroF1 = 0.0
+    contaClasse = []
+
+    for c in classes:
+        precision = 0.0
+        recall = 0.0
+        f1 = 0.0
+        
+        if c not in numPerClassTest:
+            numPerClassTest[c] = 0.0
+        if c not in hits:
+            hits[c] = 0.0
+        if c not in predictedClassTest:
+            predictedClassTest[c] = 0.0
+
+        if numPerClassTest[c] > 0:
+            recall = float(hits[c] / numPerClassTest[c])
+            if c not in contaClasse:
+                contaClasse.append(c)
+        if predictedClassTest[c] > 0:
+            precision = float(hits[c] / predictedClassTest[c])
+            if c not in contaClasse:
+                contaClasse.append(c)
+        if precision+recall > 0:
+            f1 = float(2.0*precision*recall / float(precision+recall))
+
+        macroF1 += float(f1)
+        print "class = " , c , " macro = ", macroF1, " f1 = " , f1, " precision = " , precision, " recall = ", recall
+
+    print "macroF1 = " , macroF1, " contaClasses = " , len(contaClasse)
+    macroF1 = float( macroF1 / len(contaClasse) )
+    print "MacroF1 = " , macroF1
+    
 
 
 mapa = carregaTreino()
 lista = carregaTeste()
 carregaRelacao(mapa, lista)
-
-
-
 
 
