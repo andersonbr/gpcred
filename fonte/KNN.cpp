@@ -139,10 +139,8 @@ void KNN::test(Examples& exs){
         string classId = ex.getClass();
         
         map<string, double> examplesTestSize;
-//      cout<<"vs = "<<valuesSaved<<endl;
         //credibility to each class
         if((usingKNNOptimize && !valuesSaved )  || !usingKNNOptimize){
-//          cout<<"AAAAAAA calculando..."<<endl;
             for(unsigned int i = 3; i < textTokens.size(); i+=2){
                 string termId = textTokens[i];
                 int tf = atoi(textTokens[i+1].c_str());
@@ -159,7 +157,6 @@ void KNN::test(Examples& exs){
             similarity = saveValues[eId];
         }
         else{
-//          cout<<"BBBBB calculando..."<<endl;
             for(unsigned int i = 3; i < textTokens.size();i+=2){
                 string termId = textTokens[i];
                 int tf = atoi(textTokens[i+1].c_str());
@@ -225,7 +222,6 @@ void KNN::test(Examples& exs){
     }
     if(valuesSaved == false){
         valuesSaved = true;
-        cout<<"changin valuesSaved para verdadeiro!! " << valuesSaved<<endl;
     }
     calculateF1(classHits,classMiss,docsPerClass, mappedDocs);
 }
