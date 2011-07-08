@@ -65,6 +65,7 @@ void Statistics::readGraph(string filename){
             if( tokens.size() > 2 ) {
                 value = atof( tokens[2].c_str() );
             }
+
             //TODO: experimental feature
             bool usaInfo = true;
 //            if( DFperClass[classv1] < 10 || DFperClass[classv2] < 10) usaInfo = true;
@@ -86,7 +87,7 @@ void Statistics::readGraph(string filename){
             }
         }
         file.close();
-        
+
         map<string, IGraph*> classIGraph;
         for(map<string, Graph>::iterator it = classGraph.begin(); it != classGraph.end(); it++){
             classIGraph[it->first] = new IGraph( &(it->second) );
@@ -123,9 +124,11 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
     //	idClassAvgNearstNeighborDegree.resize(graphNumberCounter);
 
     for(map<int, map<string,IGraph*> >::iterator graphIt = iGraphs.begin(); graphIt != iGraphs.end(); graphIt++){
-        for(map<string,IGraph*>::iterator classGraphIt = graphIt->second.begin(); classGraphIt != graphIt->second.end(); classGraphIt++){ 
+        int totalNumberClasses = graphIt->second.size();
+        int counter = 0;
+        for(map<string,IGraph*>::iterator classGraphIt = graphIt->second.begin(); classGraphIt != graphIt->second.end(); classGraphIt++, counter++){ 
 
-            cout<<"graphId = " << graphIt->first << " class= "<<classGraphIt->first<<endl;
+            cout<<"graphId = " << graphIt->first << " class= "<<classGraphIt->first<< " " << counter<<"/"<<totalNumberClasses<<endl;
 
             GraphInterface *igraph = classGraphIt->second;
 
@@ -182,7 +185,7 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
             cout<<"out of class "<<classGraphIt->first<<endl;
         }
     }
-    cout<<"out of retrieve graphs mtrics..."<<endl;
+    cout<<"out of retrieve graphs metrics..."<<endl;
 }
 
 double Statistics::getGraphValue(int metric, int graph, string id, string classId){
