@@ -111,6 +111,9 @@ class Statistics {
         int KNNK;
         bool usingKNNOptimize;
 
+        //categorical values
+        map< int, map < string, map< string, int> > > tupleValue;
+
     public:
 
         Statistics();
@@ -123,6 +126,8 @@ class Statistics {
         bool getUsingKNN();
         bool getUsingKNNOptimize();
 
+        int getCategoricalValue(int index, string classId, string token);
+        int getCategoricalSize(int index, string classId);
         int getK();
         void setNormalEstimator(bool nEstimator){
             normalEstimator = nEstimator;
