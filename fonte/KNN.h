@@ -21,8 +21,7 @@ class docWeighted{
 
 struct docWeightedCmp {
     bool operator() (const docWeighted& lhs, const docWeighted& rhs) const
-    {return greaterThan(lhs.weight, rhs.weight) || ( equals(lhs.weight,rhs.weight) && lhs.docId > rhs.docId);}
-//    {return lhs.docId > rhs.docId;}
+    {return lesserThan(lhs.weight, rhs.weight) || ( equals(lhs.weight,rhs.weight) && lhs.docId < rhs.docId);}
 };
 
 class KNN : public ICredibilityClassifier
@@ -54,6 +53,11 @@ class KNN : public ICredibilityClassifier
         static map<string, map< string, double> > saveValues;
         static bool valuesSaved;
         bool usingKNNOptimize;
+
+        //min-max
+        map<int, double> minv;
+        map<int, double> maxv;
+        double minMaxNorm(double value, int index);
 
         //prediction table: prediction [exampleId] -> guess
         class guess{
