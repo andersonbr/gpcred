@@ -231,8 +231,10 @@ void KNN::test(Examples& exs){
 //            cout<<"------------------------"<<endl;
         }
 
-        if(!valuesSaved)
+        if(!valuesSaved && usingKNNOptimize){
             saveValues[eId] = similarity;
+            cout<<"saving..."<<endl;
+        }
 
         //sim of each example in test set
         set<docWeighted, docWeightedCmp> sim;
