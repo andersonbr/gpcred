@@ -233,7 +233,6 @@ void KNN::test(Examples& exs){
 
         if(!valuesSaved && usingKNNOptimize){
             saveValues[eId] = similarity;
-            cout<<"saving..."<<endl;
         }
 
         //sim of each example in test set
@@ -385,4 +384,12 @@ void KNN::printFinalOutFile(ostream& out, string msg){
     out<< msg<< "\t"<< microF1<< "\t"<< macroF1<< endl;
 }
 
+void KNN::cleanStaticFields(){
+    for(map<string, map<string, double> >::iterator it = saveValues.begin(); it != saveValues.end(); it++){
+        saveValues[it->first].clear();
+    }
+    saveValues.clear();
+
+    valuesSaved = false;
+}
 

@@ -17,7 +17,7 @@ class ICredibilityClassifier : public IClassifier
 		
         virtual void setContentCredibilityMap(map<string, double>& contentCredibility) = 0;
 		virtual void setGraphCredibilityMaps(vector< map<string, double> >& graphCredibility) = 0;
-
+        virtual void cleanStaticFields() =0;
 };
 
 #endif

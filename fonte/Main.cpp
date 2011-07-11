@@ -194,15 +194,18 @@ int main(int argc, char **argv)
     configureGraphCredibility(stats, io, graphsNames);
     
     cout<<endl<<"Running final baseline:"<<endl;
+    //force to not optimize
+    usingKNNOptimize = false;
 	if(usingKNN)
         classifier = new KNN(&stats, KNNK, usingKNNOptimize); 
 	else
         classifier = new NaiveBayes(&stats); 
 
-	classifier->train(io.getTrain());
+	classifier->cleanStaticFields();
+    classifier->train(io.getTrain());
 	//classifier->train(io.getValidation());
 	classifier->test(io.getTest());
-	classifier->showConfusionMatrix();
+//	classifier->showConfusionMatrix();
     classifier->printFinalOutFile(io.getFinalOutFile(), "TestBaseline");
     cout<<"[OK]"<<endl;
 

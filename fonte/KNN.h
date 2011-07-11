@@ -114,6 +114,8 @@ class KNN : public ICredibilityClassifier
 		double getMacroF1();
 
         void printFinalOutFile(ostream& out, string msg);
+        
+        void cleanStaticFields();
 };
 
 #endif
