@@ -1,6 +1,8 @@
 #include "KNN.h"
 #include "Matematica.h"
 
+#include <limits>
+
 #define TAG "KNN"
 
 KNN::KNN(Statistics* st, int K, bool boolOpt): usingContentCredibility(false), usingGraphCredibility(false), usingKNNOptimize(boolOpt), stats(st), Normalizer(10.0), microF1(0), macroF1(0), K(K) 
@@ -62,6 +64,11 @@ void KNN::train(Examples& exs){
     
     //Maybe we didnt calculate this before...
     stats->calculateIDF();
+ 
+    for(int i = 0; i < exs.getNumberOfNumericalAttibutes(); i++){
+        maxv[i] = numeric_limits<double>::min();
+        minv[i] = numeric_limits<double>::max();
+    }
     
 	for(ExampleIterator e = exs.getBegin(); e != exs.getEnd(); e++){
    
@@ -82,8 +89,18 @@ void KNN::train(Examples& exs){
             docWeighted dw(eId, tfidf);
             termDocWset[termId].insert(dw);
 		}
+        
+        vector<double> numTokens = (e)->getNumericalTokens();
+       
+        for(unsigned int i = 0; i < numTokens.size(); i++){
+            if(greaterThan(numTokens[i], maxv[i])){
+                maxv[i] = numTokens[i];
+            }
+            if(lesserThan(numTokens[i], minv[i])){
+                minv[i] = numTokens[i];
+            }
+        }
 
-        vector<double> numTokens = (e)-> getNumericalTokens();
         exTrain[eId] = numTokens;
         
         docTrainSizes[eId] = docSize;
@@ -91,24 +108,42 @@ void KNN::train(Examples& exs){
 
 }
 
+double KNN::minMaxNorm(double value, int index){
+//    cout<<"maxv["<<index<<"] = " << maxv[index] << "  min = " << minv[index] <<endl;
+    return (value - minv[index] ) / (maxv[index] - minv[index]);
+}
+
 string KNN::getPredictedClass(set<docWeighted, docWeightedCmp>& trainExamples){
     
     map<string, double> votes;
+    map<string, double> sum;
 
     int counter = 0;
     for(set<docWeighted>::iterator ex = trainExamples.begin(); ex != trainExamples.end() && counter < K; ex++, counter++){
         string classId = stats->getTrainClass((ex)->docId);
-        votes[classId] += ex->weight;
+        votes[classId] += 1;//ex->weight;
+        sum[classId] += ex->weight;
+
+//        cout<<"docID = " << (ex)->docId<< " classe = " <<  classId << "\tsim = " << ex->weight <<endl;
     }
     
-    string predictedClass;
-    double max = 0.0;
+    string predictedClass = "";
+    double max = 0;
     for(map<string, double>::iterator it = votes.begin(); it != votes.end(); it++){
         if(greaterThan(it->second, max)){
             max = it->second;
             predictedClass = it->first;
         }
+        else if(equals(it->second, max) && max > 0.0){
+
+            if(lesserThan(sum[it->first] , sum[predictedClass])){
+                max = it->second;
+                predictedClass = it->first;
+            }
+        }
+//        cout<<"classe = " << it->first << "\tsim = " << it->second<< " sum = " << sum[it->first] << endl;
     }
+//    cout<<"predicter = " << predictedClass << "  -> " << max<<endl;
 
     return predictedClass;
 }
@@ -171,18 +206,35 @@ void KNN::test(Examples& exs){
                     similarity[termIt->docId] += ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) );
                 }
             }
-
+//            cout<<"------------------------"<<endl;
             for(map<string, vector<double> >::iterator trainIt  = exTrain.begin(); trainIt != exTrain.end(); trainIt++){
-                double sim = 0.0;
+                double dist = 0.0;
                 for(unsigned int i = 0; i < numTokens.size(); i++){
-                    sim += ((numTokens[i] - exTrain[trainIt->first][i]) * ( numTokens[i] - exTrain[trainIt->first][i]));
+                    double a = minMaxNorm(numTokens[i],i);
+                    double b = minMaxNorm(exTrain[trainIt->first][i],i);
+                    double val = (a-b)*(a-b);
+                    //double val = (numTokens[i] - exTrain[trainIt->first][i]) * ( numTokens[i] - exTrain[trainIt->first][i]);
+//                    cout<<numTokens[i] << " - " <<exTrain[trainIt->first][i] <<endl;
+//                    cout<<"a = " << a << " b = " << b << " val =" << val<<endl;
+                    if( greaterThan(dist + val, numeric_limits<double>::max())){
+//                        cerr<<"OOOOOOOOOOOOOOOPA!!!"<<endl;
+//                        exit(0);
+                        dist = numeric_limits<double>::max() - 1.0;
+                        break;
+                    }
+                    dist += val;
+//                    cout<<"dist =" << dist<<endl;
                 }
-                similarity[trainIt->first] += 1.0/sim;
+ //               cout<<"class = " << classId << " doc = " << trainIt->first<< " docClass = " << stats->getTrainClass(trainIt->first) << " dist="<<dist<< " 1/dist = " <<1.0/dist<< " sqrt = "<<sqrt(dist)<<endl;
+                similarity[trainIt->first] += sqrt(dist);
             }
+//            cout<<"------------------------"<<endl;
         }
-        
-        if(!valuesSaved)
+
+        if(!valuesSaved && usingKNNOptimize){
             saveValues[eId] = similarity;
+            cout<<"saving..."<<endl;
+        }
 
         //sim of each example in test set
         set<docWeighted, docWeightedCmp> sim;
@@ -224,6 +276,7 @@ void KNN::test(Examples& exs){
         valuesSaved = true;
     }
     calculateF1(classHits,classMiss,docsPerClass, mappedDocs);
+//    showConfusionMatrix();
 }
 
 void KNN::calculateF1(map<string, unsigned long long> hits, map<string, unsigned long long> misses, map<string, unsigned long long> docsPerClass, map<string, unsigned long long> mappedDocs){
@@ -286,7 +339,7 @@ void KNN::showConfusionMatrix(){
 
     map<string, int> totalCollums;
     int totalLine = 0;
-
+    int total = 0;
 
     cout<<"Confusion Matrix: "<<endl;
     cout<<"\t\t";
@@ -311,8 +364,9 @@ void KNN::showConfusionMatrix(){
     cout<<"Pred->\t\t";
     for(set<string>::iterator class1 = stats->getClasses().begin(); class1 != stats->getClasses().end(); class1++){
         cout<<totalCollums[*class1]<<"\t";
+        total += totalCollums[*class1];
     }
-    cout<<endl;
+    cout<<total<<endl;
 }
 
 void KNN::setPrintPrediction(bool pred){

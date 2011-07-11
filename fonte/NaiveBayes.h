@@ -26,8 +26,6 @@ class NaiveBayes : public ICredibilityClassifier
         map< int, map< string, double > > means;
         map< int, map< string, double > > deviations;
    
-        //used for categorical values
-        map< int, map < string, map< string, int> > > tupleValue;
 
         map< int, map< string, NormalEstimator> > nEstimator;
 

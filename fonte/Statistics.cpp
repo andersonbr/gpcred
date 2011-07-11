@@ -32,6 +32,15 @@ bool Statistics::getUsingKNNOptimize(){
 int Statistics::getK(){
     return KNNK;
 }
+int Statistics::getCategoricalValue(int index, string classId, string token){
+    if(tupleValue[index][classId].count(token) )
+        return tupleValue[index][classId][token];
+    else
+        return 0;
+}
+int Statistics::getCategoricalSize(int index, string classId){
+    return tupleValue[index][classId].size();
+}
 
 void Statistics::readGraph(string filename){
 
@@ -262,31 +271,37 @@ void Statistics::readExamples(Examples exs) {
         vector<string> textTokens = exp.getTextTokens();
 
         string id = exp.getId();
-        string docClass = exp.getClass();
+        string exampleClass = exp.getClass();
 
         totalDocs++;
 
-        classes.insert(docClass);
+        classes.insert(exampleClass);
 
-        trainIdClass[id] = docClass;
-        string docIdClassName = getCompIndex(id,docClass);
-        sumDFperClass[docClass]++;
+        trainIdClass[id] = exampleClass;
+        string docIdClassName = getCompIndex(id,exampleClass);
+        sumDFperClass[exampleClass]++;
 
         // retrieve each term frequency and update occurrencies
         for (unsigned int i = 3; i < textTokens.size()-1; i+=2) {
             int tf = atoi(textTokens[i+1].c_str());
             string termId = textTokens[i];
-            string idxTermClass = getCompIndex(termId, docClass);
+            string idxTermClass = getCompIndex(termId, exampleClass);
 
             vocabulary.insert(termId);
-            sumTFperClass[docClass] += tf;
+            sumTFperClass[exampleClass] += tf;
             DFperTerm[termId]++;
             DFperClass[idxTermClass]++;
             TFperClass[idxTermClass] += tf;
             TFperTerm[termId] += tf;
             sumTF += tf;
-            CFperTerm[termId].insert(docClass);
+            CFperTerm[termId].insert(exampleClass);
         }
+
+        vector<string> catTokens = exp.getCategoricalTokens();
+        for(unsigned int i = 0; i < catTokens.size(); i++){
+            tupleValue[i][exampleClass][catTokens[i]]++;   
+            //cout<<"i = " << i << " class =  " << exampleClass << " " << catTokens[i]<< " "<< tupleValue[i][exampleClass][catTokens[i]]<<endl;   
+        } 
     }
 }
 

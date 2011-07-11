@@ -126,11 +126,11 @@ def carregaRelacao(mapa, lista):
             predictedClassTest[c] = 0.0
 
         if numPerClassTest[c] > 0:
-            recall = float(hits[c] / numPerClassTest[c])
+            recall = float(hits[c]) / float(numPerClassTest[c])
             if c not in contaClasse:
                 contaClasse.append(c)
         if predictedClassTest[c] > 0:
-            precision = float(hits[c] / predictedClassTest[c])
+            precision = float(hits[c]) / float(predictedClassTest[c])
             if c not in contaClasse:
                 contaClasse.append(c)
         if precision+recall > 0:

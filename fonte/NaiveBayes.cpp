@@ -41,15 +41,15 @@ double NaiveBayes::getGraphCredibility(int g, string id, string classId){
 }
 double NaiveBayes::getCategoricalCredibility(int i, string token, string classId){
    
-    double occurrences = tupleValue[i][classId][token] + 1.0; //laplacian correction
-    double freq = 1.0 * (stats->getSumDFperClass(classId) + tupleValue[i][classId].size());
+    double occurrences = stats->getCategoricalValue(i,classId,token) + 1.0; //laplacian correction
+    double freq = 1.0 * (stats->getSumDFperClass(classId) + stats->getCategoricalSize(i,classId));
 
     double apareceForaClasse = 0;
     double aparece = 0;
     for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++) {
         if(*classIt != classId)
-            apareceForaClasse += tupleValue[i][*classIt][token];
-        aparece += tupleValue[i][*classIt][token];
+            apareceForaClasse += stats->getCategoricalValue(i,*classIt,token);
+        aparece += stats->getCategoricalValue(i,*classIt,token);
     }
 
     double PdeTeNaoC = apareceForaClasse / stats->getTotalDocs();
@@ -58,7 +58,7 @@ double NaiveBayes::getCategoricalCredibility(int i, string token, string classId
     double PdeC = stats->getSumDFperClass(classId) / ( 1.0 * stats->getTotalDocs());
     double PdenaoC = 1.0 - PdeC;
     
-    double PdeT = 1.0 / (tupleValue[i][classId]).size();
+    double PdeT = 1.0 / (stats->getCategoricalSize(i,classId));
     double PdenaoT = 1.0 - PdeT;
 
     double PdeTtalqueC = (occurrences/freq);
@@ -82,7 +82,7 @@ double NaiveBayes::getCategoricalCredibility(int i, string token, string classId
     cout<<gss/den<<endl;
 */
     double chi2 = gss/den;
-    double am = occurrences / (aparece + tupleValue[i][classId].size()); 
+    double am = occurrences / (aparece + stats->getCategoricalSize(i,classId)); 
     double ig = (PdeTtalqueC * log(PdeTtalqueC / (PdeT*PdeC))) + 
                 (PdeNaoTtalqueC * log(PdeNaoTtalqueC / (PdenaoT*PdeC))) +
                 (PdeTtalqueNaoC * log(PdeTtalqueNaoC / (PdeT*PdenaoC))) +
@@ -142,13 +142,6 @@ void NaiveBayes::train(Examples& exs){
                 means[i][exampleClass] += numTokens[i]; 
             }
         }
-
-        vector<string> catTokens = (e)->getCategoricalTokens();
-        for(unsigned int i = 0; i < catTokens.size(); i++){
-            tupleValue[i][exampleClass][catTokens[i]]++;   
-            //cout<<"i = " << i << " class =  " << exampleClass << " " << catTokens[i]<< " "<< tupleValue[i][exampleClass][catTokens[i]]<<endl;   
-        } 
-
 	}
     if(!usingNormalEstimator){
         for(unsigned int i = 0; i < means.size(); i++){
@@ -298,8 +291,8 @@ void NaiveBayes::test(Examples& exs){
             //categorical tokens evaluation
             for(unsigned int i = 0; i < catTokens.size(); i++){
                 string value = catTokens[i];
-                double occurrences = tupleValue[i][*classIt][catTokens[i]] + 1.0; //laplacian correction
-                double freq = 1.0 * (stats->getSumDFperClass(*classIt) + tupleValue[i][*classIt].size());
+                double occurrences = stats->getCategoricalValue(i,*classIt,catTokens[i]) + 1.0; //laplacian correction
+                double freq = 1.0 * (stats->getSumDFperClass(*classIt) + stats->getCategoricalSize(i,*classIt));
 //                cout<<"classIt = " << *classIt << " count = " << stats->getSumDFperClass(*classIt) << endl;
 
                 probCond += log(getCategoricalCredibility(i,catTokens[i],*classIt) * (occurrences/freq));
