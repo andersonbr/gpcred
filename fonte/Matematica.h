@@ -18,6 +18,7 @@ inline bool lessThanZero(double val) { return cmp(val) == -1 ? true : false;}
 inline bool lessOrEqualThanZero(double val) { return cmp(val) <= 0 ? true : false;}
 inline bool isZero(double val) { return cmp(val) == 0 ? true : false;}
 inline bool greaterThan(double a, double b = 0.0) {return cmp(a,b) == 1 ? true : false;}
+inline bool greaterOrEqualThan(double a, double b = 0.0) {return cmp(a,b) >= 1 ? true : false;}
 inline bool lesserThan(double a, double b = 0.0) {return cmp(a,b) == -1 ? true : false;}
 inline bool equals(double a, double b) {return cmp(a,b) == 0 ? true : false;}
 
