@@ -1,0 +1,37 @@
+MAIN --- Starting program.
+MAIN --- getParameters.
+Training File: ../../../../colecoes/uci/cat/nursery/fold2//_treino2.jformat
+Validation File: ../../../../colecoes/uci/cat/nursery/fold2//_validacao2.jformat
+Test File = ../../../../colecoes/uci/cat/nursery/fold2//_teste2.jformat
+Brunoro File: fold2.gpvis
+Dont save populations
+Number of categorical collums: 8
+(Using categorical collums will disabe term credibility.)
+Only evaluating the baseline.
+Using KNN, K = 1
+InOut --- readTrain method -> ../../../../colecoes/uci/cat/nursery/fold2//_treino2.jformat
+InOut --- read method.
+InOut --- readTrain method -> ../../../../colecoes/uci/cat/nursery/fold2//_validacao2.jformat
+InOut --- read method.
+Statistics --- readExamples -> 10373
+InOut --- readTest method -> ../../../../colecoes/uci/cat/nursery/fold2//_teste2.jformat
+InOut --- read method.
+KNN --- train
+KNN --- test
+Evaluated: 100
+Evaluated: 200
+Evaluated: 300
+Evaluated: 400
+Evaluated: 500
+Evaluated: 600
+Evaluated: 700
+Evaluated: 800
+Evaluated: 900
+Evaluated: 1000
+Evaluated: 1100
+Evaluated: 1200
+Evaluated: 1300
+Evaluated: 1400
+Evaluated: 1500
+Evaluated: 1600
+Evaluated: 1700
