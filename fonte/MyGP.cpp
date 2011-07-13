@@ -26,15 +26,31 @@ void MyGP::evaluate(bool printFinalOutfile, std::string msg){
 
     cout << "-----------------  Gen: " << MyGP::gennum  <<" ------------- Ind: "<< ++MyGP::indCounter <<" ----------------"<<endl;
 
-    int termCredibilityOffset = stats->getUsingTermCredibility()? 1 : 0;
+    int contentCredibilityOffset = stats->getUsingTermCredibility() || stats->getUsingCategoricalCredibility() ? 1 : 0;
 
-    if(stats->getUsingTermCredibility()){
+    if( stats->getUsingTermCredibility()){
         for(set<string>::iterator vocIt = stats->getVocabulary().begin(); vocIt != stats->getVocabulary().end(); vocIt++) {
             for(set<string>::iterator clIt = (stats->getClasses()).begin(); clIt != (stats->getClasses()).end(); clIt++) {
 
                 double credibility = NthMyGene(0)->evaluate(*this, *vocIt, *clIt);
                 string idx = getCompIndex(*vocIt, *clIt);
                 credibilities[idx] = credibility;
+            }
+        }
+    }
+    else if( stats->getUsingCategoricalCredibility()){
+        for(int i = 0; i < stats->getNumberOfCategoricalAttibutes(); i++){
+            set<string> tokenSet = stats->getCategoricalSet(i);
+
+            for(set<string>::iterator tokenIt = tokenSet.begin(); tokenIt != tokenSet.end(); tokenIt++){    
+                set<string> classes = stats->getClasses();
+                for(set<string>::iterator classIt = classes.begin(); classIt != classes.end(); classIt++) {
+                    string idxa = getCompIndex(i, *tokenIt);
+                    string idx = getCompIndex(idxa, *classIt);
+                    
+                    double credibility = NthMyGene(0)->evaluate(*this, idxa, *classIt);
+                    credibilities[idx] = credibility;
+                }
             }
         }
     }
@@ -47,7 +63,7 @@ void MyGP::evaluate(bool printFinalOutfile, std::string msg){
 
                 Example e = *testIt;
 
-                double credibility = NthMyGene(termCredibilityOffset + g)-> evaluate(*this, e.getId(), *classIt, g);
+                double credibility = NthMyGene(contentCredibilityOffset + g)-> evaluate(*this, e.getId(), *classIt, g);
 
                 string idx = getCompIndex(e.getId(), *classIt);
                 credibilityGraph[g][idx] = credibility;
@@ -72,7 +88,7 @@ void MyGP::evaluate(bool printFinalOutfile, std::string msg){
         classifier->printFinalOutFile(io->getFinalOutFile(), msg);
 
     // Print trees related to solutions generated (for debugging purposes).
-    for(int i = 0; i < termCredibilityOffset + stats->getNumberOfGraphs(); i++){
+    for(int i = 0; i < contentCredibilityOffset + stats->getNumberOfGraphs(); i++){
         cout<<"Adfs: "; NthMyGene(i)->printOn(cout); cout<<endl;
     }
 
@@ -86,7 +102,18 @@ void MyGP::evaluate(bool printFinalOutfile, std::string msg){
       fstats.close();
      **/
 
-    stdFitness = (1.0 - classifier->getMicroF1())*100.0;
+    if(stats->getUsingMicroF1() && stats->getUsingMacroF1()){
+        stdFitness = ((1.0 - classifier->getMicroF1())*100.0) + ((1.0 - classifier->getMacroF1())*100.0);
+        cout<<"using both"<<endl;
+    }
+    else if(stats->getUsingMacroF1()){
+        stdFitness = (1.0 - classifier->getMacroF1())*100.0;
+        cout<<"using macro"<<endl;
+    }
+    else{
+        stdFitness = (1.0 - classifier->getMicroF1())*100.0;
+        cout<<"using micro"<<endl;
+    }
     delete classifier;
 }
 
@@ -313,6 +340,18 @@ double MyGene::evaluate(MyGP &gp, string id, string className = "", int graphId)
             case AVGNEIGHBORHOODDEGREE:
                 returnValue = stats->getAvgNearstNeighborDegree(id, className, graphId);
                 break;
+            
+            case NUM1:
+                returnValue = 1.0;
+                break;
+ 
+            case NUM2:
+                returnValue = 2.0;
+                break;
+ 
+            case NUM3:
+                returnValue = 3.0;
+                break;
 
             default:
                 cout << "   Terminal: " << node->value() << endl;
@@ -323,7 +362,7 @@ double MyGene::evaluate(MyGP &gp, string id, string className = "", int graphId)
         cerr<<"Not a number found! Stop it!"<<endl;
         cerr<<"Valor do nodo = " << node->value()<<endl;
         returnValue=0;
-        exit(-1);
+        //exit(-1);
     }
 
     //DEBUG(cout<<"  valor = "<<returnValue <<endl);;

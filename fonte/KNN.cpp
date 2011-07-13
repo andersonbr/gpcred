@@ -101,7 +101,8 @@ void KNN::train(Examples& exs){
             }
         }
 
-        exTrain[eId] = numTokens;
+        exNumTrain[eId] = numTokens;
+        exCatTrain[eId] = (e)->getCategoricalTokens();
         
         docTrainSizes[eId] = docSize;
     }
@@ -169,6 +170,7 @@ void KNN::test(Examples& exs){
 
         vector<string> textTokens = ex.getTextTokens();	
         vector<double> numTokens = ex.getNumericalTokens();
+        vector<string> catTokens = ex.getCategoricalTokens();
 
         string eId = ex.getId();
         string classId = ex.getClass();
@@ -207,14 +209,16 @@ void KNN::test(Examples& exs){
                 }
             }
 //            cout<<"------------------------"<<endl;
-            for(map<string, vector<double> >::iterator trainIt  = exTrain.begin(); trainIt != exTrain.end(); trainIt++){
+            for(map<string, vector<double> >::iterator trainIt  = exNumTrain.begin(); trainIt != exNumTrain.end(); trainIt++){
                 double dist = 0.0;
+                
+                //numerical KNN
                 for(unsigned int i = 0; i < numTokens.size(); i++){
                     double a = minMaxNorm(numTokens[i],i);
-                    double b = minMaxNorm(exTrain[trainIt->first][i],i);
+                    double b = minMaxNorm(exNumTrain[trainIt->first][i],i);
                     double val = (a-b)*(a-b);
-                    //double val = (numTokens[i] - exTrain[trainIt->first][i]) * ( numTokens[i] - exTrain[trainIt->first][i]);
-//                    cout<<numTokens[i] << " - " <<exTrain[trainIt->first][i] <<endl;
+                    //double val = (numTokens[i] - exNumTrain[trainIt->first][i]) * ( numTokens[i] - exNumTrain[trainIt->first][i]);
+//                    cout<<numTokens[i] << " - " <<exNumTrain[trainIt->first][i] <<endl;
 //                    cout<<"a = " << a << " b = " << b << " val =" << val<<endl;
                     if( greaterThan(dist + val, numeric_limits<double>::max())){
 //                        cerr<<"OOOOOOOOOOOOOOOPA!!!"<<endl;
@@ -225,6 +229,15 @@ void KNN::test(Examples& exs){
                     dist += val;
 //                    cout<<"dist =" << dist<<endl;
                 }
+                //categorical KNN
+                for(unsigned int i = 0; i < catTokens.size(); i++){
+                    string trainTok = exCatTrain[trainIt->first][i];
+                    string testTok = catTokens[i];
+
+                    if(trainTok != testTok)
+                        dist+=1;
+                }
+
  //               cout<<"class = " << classId << " doc = " << trainIt->first<< " docClass = " << stats->getTrainClass(trainIt->first) << " dist="<<dist<< " 1/dist = " <<1.0/dist<< " sqrt = "<<sqrt(dist)<<endl;
                 similarity[trainIt->first] += sqrt(dist);
             }

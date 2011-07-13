@@ -110,9 +110,15 @@ class Statistics {
         bool usingKNN;
         int KNNK;
         bool usingKNNOptimize;
+        bool usingCategoricalCredibility;
+        int categoricalAttrs;
 
         //categorical values
         map< int, map < string, map< string, int> > > tupleValue;
+        map< int, set < string > > categoricalSets;
+
+        //fitness control
+        bool usingMicroF1, usingMacroF1;
 
     public:
 
@@ -122,12 +128,19 @@ class Statistics {
         //clean up everything!
         void clear();
 
+        void printCategoricalScores();
         void setUsingKNN(bool usingKNN, int K, bool usingknnoptimize);
         bool getUsingKNN();
         bool getUsingKNNOptimize();
 
         int getCategoricalValue(int index, string classId, string token);
         int getCategoricalSize(int index, string classId);
+        void setUsingCategoricalCredibility(bool catCred){
+            usingCategoricalCredibility = catCred;
+        }
+        bool getUsingCategoricalCredibility(){
+            return usingCategoricalCredibility;
+        }
         int getK();
         void setNormalEstimator(bool nEstimator){
             normalEstimator = nEstimator;
@@ -143,6 +156,7 @@ class Statistics {
 
         void calculateIDF();
         void retrieveContentMetrics();
+        void retrieveCategoricalMetrics();
         void setUsingTermCredibility(){
             usingTermCredibility = true;
         }
@@ -153,6 +167,12 @@ class Statistics {
         
         int getNumberOfGraphs(){
             return graphNumberCounter;
+        }
+        int getNumberOfCategoricalAttibutes(){
+            return categoricalAttrs;
+        }
+        set<string> getCategoricalSet(int idx){
+            return categoricalSets[idx];
         }
 
         string getTrainClass(string exampleId){
@@ -243,6 +263,20 @@ class Statistics {
 
         double getCC(string t, string c)                                   {return getValue(CC, getCompIndex(t,c));}
         double getMaxCC(string t)                                          {return getValue(MaxCC, t);}
+
+        void setUsingMicroF1(bool b){
+            usingMicroF1 = b;
+        }
+        void setUsingMacroF1(bool b){
+            usingMacroF1 = b;
+        }
+        bool getUsingMicroF1(){
+            return usingMicroF1;
+        }
+        bool getUsingMacroF1(){
+            return usingMacroF1;
+        }
+
 };
 
 #endif

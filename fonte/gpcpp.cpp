@@ -159,16 +159,16 @@ void gpcpp::createNodeSet(){
 	// Reserve space for the node sets (root tree and ADF tree for ratios 
 	// (decrease structural complexity)
 
-	int termCredibilityOffset = stats->getUsingTermCredibility() ? 1 : 0;
+	int contentCredibilityOffset = stats->getUsingTermCredibility() || stats->getUsingCategoricalCredibility() ? 1 : 0;
 
-	adfNs.reserveSpace (termCredibilityOffset + stats->getNumberOfGraphs());
+	adfNs.reserveSpace (contentCredibilityOffset + stats->getNumberOfGraphs());
 
-	cout<<" termCredibilityOffset = " << termCredibilityOffset <<endl;
+	cout<<" contentCredibilityOffset = " << contentCredibilityOffset <<endl;
 	cout<<" stats->getNumberOfGraphs() = "<< stats->getNumberOfGraphs()<<endl;
 
 
 	GPNodeSet **ns;
-	ns = new GPNodeSet * [ termCredibilityOffset  + stats->getNumberOfGraphs() ];
+	ns = new GPNodeSet * [ contentCredibilityOffset  + stats->getNumberOfGraphs() ];
 
 	if(stats->getUsingTermCredibility()){
 
@@ -213,8 +213,34 @@ void gpcpp::createNodeSet(){
 		ns[0]->putNode (*new GPNode (MAX_TFICF,(char*) "MaxTFICF")); 
 
 	}
+	else if(stats->getUsingCategoricalCredibility()){
 
-	for(int i =  termCredibilityOffset; i < (stats->getNumberOfGraphs() +  termCredibilityOffset); i++){
+		ns[0] = new GPNodeSet (17);
+		adfNs.put(0, *ns[0]);
+
+		ns[0]->putNode (*new GPNode (SUM, (char*) "+", 2));
+		ns[0]->putNode (*new GPNode (SUB, (char*) "-", 2));
+		ns[0]->putNode (*new GPNode (MULT, (char*) "*", 2));
+		ns[0]->putNode (*new GPNode (DIV, (char*) "%", 2));
+		ns[0]->putNode (*new GPNode (LOG, (char*) "Log", 2));
+		ns[0]->putNode (*new GPNode (POW, (char*) "Pow", 2));
+
+		ns[0]->putNode (*new GPNode (NUM1, (char*) "NUM1"));
+    	ns[0]->putNode (*new GPNode (NUM2, (char*) "NUM2"));
+    	ns[0]->putNode (*new GPNode (NUM3, (char*) "NUM3"));
+		ns[0]->putNode (*new GPNode (AM, (char*) "AM"));
+		ns[0]->putNode (*new GPNode (GINI,(char*)  "GINI"));
+		ns[0]->putNode (*new GPNode (IG,(char*) "IG"));
+		ns[0]->putNode (*new GPNode (CHI,(char*) "CHI"));
+		ns[0]->putNode (*new GPNode (GSS,(char*) "GSS"));
+		ns[0]->putNode (*new GPNode (CC,(char*) "CC"));
+		ns[0]->putNode (*new GPNode (OR,(char*) "OR"));
+		ns[0]->putNode (*new GPNode (TFIDF, (char *) "TFIDF"));
+
+	}
+
+
+	for(int i =  contentCredibilityOffset; i < (stats->getNumberOfGraphs() +  contentCredibilityOffset); i++){
 		ns[i] = new GPNodeSet (22);
 		adfNs.put (i, *ns[i]);
 

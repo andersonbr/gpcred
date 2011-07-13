@@ -15,8 +15,8 @@ class NaiveBayes : public ICredibilityClassifier
 		//Denominador da equacao, usando esse mapa para economizar processamento
 		map<string, double> sumTF;
 		map<string, double> contentCredibility;
-		bool usingContentCredibility;
-		
+        bool usingContentCredibility;
+
 		vector< map<string, double> > graphsCredibility;
 		vector<string> graphsNames;
 		bool usingGraphCredibility;

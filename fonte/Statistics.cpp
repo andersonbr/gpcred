@@ -7,14 +7,31 @@
 
 using namespace std;
 
-Statistics::Statistics(): usingTermCredibility(false), totalDocs(0), graphNumberCounter(0), sumTF(0), normalEstimator(false), usingNomalizePerGreatestClassValue(false), optimizeGraphMetrics(false), usingKNN(false)
+Statistics::Statistics(): usingTermCredibility(false), totalDocs(0), graphNumberCounter(0), sumTF(0), normalEstimator(false), usingNomalizePerGreatestClassValue(false), optimizeGraphMetrics(false), usingKNN(false), usingCategoricalCredibility(false), categoricalAttrs(0)
 {
-
+    graphNumberCounter = 0;
+    sumTF = 0;
+    totalDocs = 0;
+    usingMicroF1 = true;
+    usingMacroF1= false;
 }
 
 Statistics::~Statistics(){
     clear();
 }
+
+void Statistics::printCategoricalScores(){
+
+    for(unsigned int i = 0; i < categoricalAttrs; i++){
+        for(map<string, map<string, int> >::iterator it = tupleValue[i].begin(); it!= tupleValue[i].end(); it++){
+            for(map<string, int> ::iterator it2 = tupleValue[i][it->first].begin(); it2 != tupleValue[i][it->first].end(); it2++){
+cout<<" att "<< i << " class= " << it->first << " val = " << it2->first << " p = " << (1.0+it2->second) * 1.0 / (getSumDFperClass(it->first) + tupleValue[i][it->first].size())<<endl;              
+            }
+        }
+
+    }
+}
+
 
 void Statistics::setUsingKNN(bool usingKNN, int K, bool usingKNNOptimize){
     this->usingKNN = usingKNN;
@@ -262,7 +279,7 @@ double Statistics::getGraphValue(int metric, int graph, string id, string classI
 // Trainment based on examples: update term frequencies for priori and cond.
 void Statistics::readExamples(Examples exs) {
 
-    TRACE_V(TAG,"readExamples");
+    TRACE_V(TAG,"readExamples -> " << exs.size());
 
     for(ExampleIterator it = exs.getBegin(); it != exs.getEnd(); it++){
 
@@ -300,9 +317,11 @@ void Statistics::readExamples(Examples exs) {
         vector<string> catTokens = exp.getCategoricalTokens();
         for(unsigned int i = 0; i < catTokens.size(); i++){
             tupleValue[i][exampleClass][catTokens[i]]++;   
+            categoricalSets[i].insert(catTokens[i]);
             //cout<<"i = " << i << " class =  " << exampleClass << " " << catTokens[i]<< " "<< tupleValue[i][exampleClass][catTokens[i]]<<endl;   
         } 
     }
+    categoricalAttrs = exs.getNumberOfCategoricalAttibutes();
 }
 
 
@@ -316,8 +335,105 @@ void Statistics::calculateIDF() {
     }
 }
 
+void Statistics::retrieveCategoricalMetrics(){
+  
+    for(int i = 0; i < categoricalAttrs; i++){
+        for(set<string>::iterator tokenIt = categoricalSets[i].begin(); tokenIt != categoricalSets[i].end(); tokenIt++){    
+            
+            double giniVal = 0.0;
+            string idxa = getCompIndex(i, *tokenIt);
+            
+            for(set<string>::iterator classIt = getClasses().begin(); classIt != getClasses().end(); classIt++) {
+                string idx = getCompIndex(idxa, *classIt);
+
+                double occurrences = getCategoricalValue(i,*classIt,*tokenIt) + 1.0; //laplacian correction
+                double freq = 1.0 * ( sumDFperClass[*classIt] + getCategoricalSize(i,*classIt));
+ 
+                double apperOtherClass = 0;
+                double apperInThisClass = 0;
+                for(set<string>::iterator classInternIt = getClasses().begin(); classInternIt != getClasses().end(); classInternIt++) {
+                    if(*classIt != *classInternIt)
+                        apperOtherClass += getCategoricalValue(i,*classIt,*tokenIt);
+                    apperInThisClass += getCategoricalValue(i,*classIt,*tokenIt);
+                }
+
+                double notZero = 1e-100;
+
+                double PdeT = 1.0 / (getCategoricalSize(i,*classIt))   + notZero;
+                double PdeC = getSumDFperClass(*classIt) / ( 1.0 * getTotalDocs()) + notZero;
+                
+                double PdeTeC = PdeT * PdeC + notZero;
+                double PdeTeNaoC = PdeT * (1-PdeC) + notZero;
+                
+                //double PdeTeC = (occurrences/freq);
+                //double PdeTeNaoC = apperOtherClass / (1.0*getTotalDocs());
+
+                double PdenaoC = 1.0 - PdeC + notZero;
+                double PdenaoT = 1.0 - PdeT + notZero;
+
+                double PdeTtalqueC = my_div(PdeTeC,PdeC) + notZero;
+                double PdeCtalqueT = my_div(PdeTeC,PdeT) + notZero;
+
+                double PdeTtalqueNaoC =  my_div( (PdeTeNaoC), (PdenaoC)) + notZero; 
+                double PdeNaoTtalqueNaoC = 1.0 - PdeTtalqueNaoC + notZero ;
+                double PdeNaoTtalqueC = 1.0 - PdeTtalqueC + notZero;
+
+                //    return PdeTtalqueC;
+                double gss = PdeTtalqueC * PdeNaoTtalqueNaoC - PdeTtalqueNaoC * PdeNaoTtalqueC;
+                double den = sqrt( PdeT*PdenaoT * PdeC *PdenaoC );
+              
+                double amVal = occurrences / (apperInThisClass + getCategoricalSize(i,*classIt)); 
+                double igVal = (PdeTtalqueC * log(PdeTtalqueC / (PdeT*PdeC))) + 
+                    (PdeNaoTtalqueC * log(PdeNaoTtalqueC / (PdenaoT*PdeC))) +
+                    (PdeTtalqueNaoC * log(PdeTtalqueNaoC / (PdeT*PdenaoC))) +
+                    (PdeNaoTtalqueNaoC * log(PdeNaoTtalqueNaoC / (PdenaoT*PdenaoC)));
+                
+                giniVal += PdeTtalqueC * PdeTtalqueC + PdeCtalqueT * PdeCtalqueT;
+               
+                double orVal = my_div((double)(PdeTtalqueC * PdeNaoTtalqueNaoC), (double) (PdeNaoTtalqueC * PdeTtalqueNaoC)); 
+                double chiVal = (sqrt(totalDocs) * ( gss * gss ) + 1.0) / ( den + 1.0 ); //suavizada
+                double ccVal = (sqrt(totalDocs) * ( gss ) + 1.0) / ( sqrt(den) + 1.0 ); //versao suavizada
+/*
+                cout<<"P de T = " << PdeT <<endl;
+                cout<<"P de C = " << PdeC <<endl;
+                cout<<"P de t e C = " << PdeTeC<<endl;
+                cout<<"P de t e C (2) = " << PdeTeC2<<endl;
+                cout<<"P de t e nao C = " << PdeTeNaoC<<endl;
+                cout<<"P de t talque C = " << PdeTtalqueC <<endl;
+                cout<<"P de naoT talque nao C = "<<  PdeNaoTtalqueNaoC <<endl;
+                cout<<"P de T talque nao C = " << PdeTtalqueNaoC <<endl;
+                cout<<"P de nao T talque C = " <<PdeNaoTtalqueC<<endl;
+                cout<<"P de naoT = " << PdenaoT <<endl;
+                cout<<"P de naoC = " << PdenaoC<<endl;
+                cout<<"am = " << amVal<<endl;
+                cout<<"ig = " <<igVal <<endl;
+                cout<<"or = " << orVal << endl;
+                cout<<"gss = " << gss << endl;
+                cout<<"den = " << den<<endl;
+                cout<<"chi = " << chiVal<<endl;
+*/
+                AM[idx] = amVal;
+                IG[idx] = igVal;
+                OR[idx] = orVal;
+                GSS[idx] = gss;
+                CHI[idx] = chiVal;
+                CC[idx] = ccVal;
+                TFIDF[idx] = occurrences;
+
+            }
+            Gini[idxa] = giniVal;
+            cout<<"gini = " << giniVal << endl;
+        }
+    }
+}
+
 
 void Statistics::retrieveContentMetrics() {
+
+    if(usingCategoricalCredibility){
+        retrieveCategoricalMetrics();
+        return;
+    }
 
     TRACE_V(TAG, "retrieveContentMetrics");
 
@@ -759,6 +875,19 @@ void Statistics::clear(){
     sumTFperClass.clear();
     DFperTerm.clear(); 
     DFperClass.clear(); 
+    
+    for(map<int , map<string, map<string,int> > >::iterator it = tupleValue.begin() ; it != tupleValue.end(); it++){
+        for( map<string, map<string,int> >::iterator it2 = tupleValue[it->first].begin() ; it2 != tupleValue[it->first].end(); it2++){
+            (it2->second).clear();
+        }
+        (it->second).clear();
+    }
+    tupleValue.clear();
+
+    for(map<int , set<string> >::iterator it = categoricalSets.begin() ; it != categoricalSets.end(); it++){
+        (it->second).clear();
+    }
+    categoricalSets.clear();
 
     TFperClass.clear(); 
     TFperTerm.clear(); 
@@ -850,7 +979,6 @@ void Statistics::clear(){
     sumTF = 0;
     totalDocs = 0;
 
-    //TODO: terminar isso aqui!
 }
 
 

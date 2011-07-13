@@ -16,13 +16,26 @@ NaiveBayes::~NaiveBayes(){
 
 double NaiveBayes::getContentCredibility(string term, string docClass){
 
-	if(!usingContentCredibility) return 1.0; //stats->getIDF(term);
-	if(contentCredibility.size() == 0) return 1.0; //stats->getIDF(term);
-	string idx = getCompIndex(term,docClass);
+	if(!usingContentCredibility) return 1.0; 
+	if(contentCredibility.size() == 0) return 1.0;
+	
+    string idx = getCompIndex(term,docClass);
+    if(contentCredibility.find(idx) != contentCredibility.end()) return contentCredibility[idx] * Normalizer;
 
-	if(contentCredibility.find(idx) != contentCredibility.end()) return contentCredibility[idx] * Normalizer;
+	return 1.0;
+}
 
-	return 1.0;// stats->getIDF(term);
+double NaiveBayes::getCategoricalCredibility(int i, string token, string classId){
+
+	if(!usingContentCredibility) return 1.0; 
+	if(contentCredibility.size() == 0) return 1.0;
+	
+	string idxa = getCompIndex(i,token);
+	string idx = getCompIndex(idxa,classId);
+
+    if(contentCredibility.find(idx) != contentCredibility.end()) return contentCredibility[idx] * Normalizer;
+
+	return 1.0;
 }
 
 void NaiveBayes::setContentCredibilityMap(map<string, double>& contentCred){
@@ -39,57 +52,7 @@ double NaiveBayes::getGraphCredibility(int g, string id, string classId){
 
 	return 1.0;
 }
-double NaiveBayes::getCategoricalCredibility(int i, string token, string classId){
-   
-    double occurrences = stats->getCategoricalValue(i,classId,token) + 1.0; //laplacian correction
-    double freq = 1.0 * (stats->getSumDFperClass(classId) + stats->getCategoricalSize(i,classId));
 
-    double apareceForaClasse = 0;
-    double aparece = 0;
-    for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++) {
-        if(*classIt != classId)
-            apareceForaClasse += stats->getCategoricalValue(i,*classIt,token);
-        aparece += stats->getCategoricalValue(i,*classIt,token);
-    }
-
-    double PdeTeNaoC = apareceForaClasse / stats->getTotalDocs();
-
-
-    double PdeC = stats->getSumDFperClass(classId) / ( 1.0 * stats->getTotalDocs());
-    double PdenaoC = 1.0 - PdeC;
-    
-    double PdeT = 1.0 / (stats->getCategoricalSize(i,classId));
-    double PdenaoT = 1.0 - PdeT;
-
-    double PdeTtalqueC = (occurrences/freq);
-    double PdeTtalqueNaoC =  (PdeTeNaoC + 1.0) / (1.0-PdeC + 1.0) ; //suavizada
-    double PdeNaoTtalqueNaoC = 1.0 - PdeTtalqueNaoC;
-    double PdeNaoTtalqueC = 1.0 - PdeTtalqueC;
-    
-//    return PdeTtalqueC;
-    double gss = PdeTtalqueC * PdeNaoTtalqueNaoC - PdeTtalqueNaoC * PdeNaoTtalqueC;
-    double den = sqrt( PdeT*PdenaoT * PdeC *PdenaoC );
-/*
-    cout<<"P de t talque C = " << PdeTtalqueC <<endl;
-    cout<<"P de naoT talque nao C = "<<  PdeNaoTtalqueNaoC <<endl;
-    cout<<"P de T talque nao C = " << PdeTtalqueNaoC <<endl;
-    cout<<"P de nao T talque C = " <<PdeNaoTtalqueC<<endl;
-    cout<<"P de T = " << PdeT <<endl;
-    cout<<"P de naoT = " << PdenaoT <<endl;
-    cout<<"P de C = " << PdeC <<endl;
-    cout<<"P de naoC = " << PdenaoC<<endl;
-
-    cout<<gss/den<<endl;
-*/
-    double chi2 = gss/den;
-    double am = occurrences / (aparece + stats->getCategoricalSize(i,classId)); 
-    double ig = (PdeTtalqueC * log(PdeTtalqueC / (PdeT*PdeC))) + 
-                (PdeNaoTtalqueC * log(PdeNaoTtalqueC / (PdenaoT*PdeC))) +
-                (PdeTtalqueNaoC * log(PdeTtalqueNaoC / (PdeT*PdenaoC))) +
-                (PdeNaoTtalqueNaoC * log(PdeNaoTtalqueNaoC / (PdenaoT*PdenaoC)));
-//    cout<<"am = " <<am<<endl;
-    return 0.5 + ig / occurrences;//0.5+(1.0/occurrences) + 0.001*am; //1.0/am;
-}
 void NaiveBayes::setGraphCredibilityMaps(vector< map<string, double> >& gCred){
     usingGraphCredibility = true;
 	graphsCredibility = gCred;
@@ -293,9 +256,15 @@ void NaiveBayes::test(Examples& exs){
                 string value = catTokens[i];
                 double occurrences = stats->getCategoricalValue(i,*classIt,catTokens[i]) + 1.0; //laplacian correction
                 double freq = 1.0 * (stats->getSumDFperClass(*classIt) + stats->getCategoricalSize(i,*classIt));
-//                cout<<"classIt = " << *classIt << " count = " << stats->getSumDFperClass(*classIt) << endl;
 
-                probCond += log(getCategoricalCredibility(i,catTokens[i],*classIt) * (occurrences/freq));
+                //cout<<" i = "<<i<<" classIt = "<<*classIt << "val = " << occurrences/freq << endl;
+//                probCond += log( getCategoricalCredibility(i,catTokens[i],*classIt) * (occurrences/freq));
+                
+                double catCred = 1.0;
+                if(usingContentCredibility)  
+                    catCred = 0.5 + getCategoricalCredibility(i,catTokens[i],*classIt);
+//                cout<<"id = " << id << " i = " << i << " token = "  << catTokens[i] << " class = " << *classIt << " catCred = " << catCred<< endl;
+                probCond += log( catCred * (occurrences/freq));
             }
 
             //text tokens evaluation
@@ -309,7 +278,6 @@ void NaiveBayes::test(Examples& exs){
             }
 
             vector<double> graphsCreds(graphsCredibility.size());
-
             for(unsigned int g = 0 ; g < graphsCredibility.size(); g++){
                 graphsCreds[g] = 0.5 + getGraphCredibility(g,id,*classIt);
             }
@@ -339,17 +307,6 @@ void NaiveBayes::test(Examples& exs){
             }
         }
 
-/*
-        for(unsigned int i = 0; i < exs.getNumberOfCategoricalAttibutes(); i++){
-            for(map<string, map<string, int> >::iterator it = tupleValue[i].begin(); it!= tupleValue[i].end(); it++){
-                for(map<string, int> ::iterator it2 = tupleValue[i][it->first].begin(); it2 != tupleValue[i][it->first].end(); it2++){
-                    cout<<" att "<< i << " class= " << it->first << " val = " << it2->first << " p = " << (1.0+it2->second) * 1.0 / (stats->getSumDFperClass(it->first) + tupleValue[i][it->first].size())<<endl;              
-                }
-            }
-            
-        }
-*/
-
         computeConfusionMatrix(classId, predictedLabel);
 
         //        if(io->usingPredictionsFile)
@@ -367,6 +324,7 @@ void NaiveBayes::test(Examples& exs){
         docsPerClass[classId]++;
     }
 
+//    stats->printCategoricalScores();
     showConfusionMatrix();
     calculateF1(classHits,classMiss,docsPerClass, mappedDocs);
 }

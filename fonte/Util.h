@@ -25,6 +25,12 @@ inline void TRACE_V(string TAG, string msg){
 */
 #define TRACE_V(TAG,MSG) {std::cout<<TAG << " --- " << MSG << std::endl;}
 
+inline std::string getCompIndex(int a, std::string c){
+    char buffer [16];
+    sprintf(buffer,"%d",a);
+    std::string s(buffer);
+	return s+"-"+c;
+}
 
 inline std::string getCompIndex(std::string t, std::string c){
 	return t+"-"+c;

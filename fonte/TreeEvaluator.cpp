@@ -53,7 +53,7 @@ void TreeEvaluator::evaluateFromFile(string fileName){
             std::map<string, double> credibilityMap;
             std::vector< std::map<string, double> > graphsCredibility(stats->getNumberOfGraphs());
             
-            if(stats->getUsingTermCredibility()){
+            if(stats->getUsingTermCredibility() || stats->getUsingCategoricalCredibility()){
 
                for( set<string>::iterator vocIt = (stats->getVocabulary()).begin(); vocIt != (stats->getVocabulary()).end(); vocIt++) {
                     for(set<string>::iterator clIt = (stats->getClasses()).begin();clIt != (stats->getClasses()).end(); clIt++) {

@@ -52,7 +52,12 @@ enum termMetrics{
         JACCARDSIMILARITY,
         DICESIMILARITY,
         INVERSELOGSIMILARITY,
-        AVGNEIGHBORHOODDEGREE
+        AVGNEIGHBORHOODDEGREE,
+
+        NUM1,
+        NUM2,
+        NUM3
+
 };
 
 enum operators{
