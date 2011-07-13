@@ -1,0 +1,6 @@
+time java weka.classifiers.bayes.NaiveBayes^Ct _treino.arff -T _teste.arff -v -i
+
+ time java weka.classifiers.lazy.IBk -t _treino.arff -T _teste.arff -K 1 -v -i
+
+
+

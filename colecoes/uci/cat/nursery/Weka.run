@@ -1,0 +1,6 @@
+time java -classpath CLASSPATH:/home/palotti/weka/weka-3-6-4/weka.jar  weka.classifiers.bayes.NaiveBayes  _treino.arff -T _teste.arff -v -i
+
+time java -classpath CLASSPATH:/home/palotti/weka/weka-3-6-4/weka.jar weka.classifiers.lazy.IBk -t _treino.arff -T _teste.arff -K 1 -v -i
+
+
+
