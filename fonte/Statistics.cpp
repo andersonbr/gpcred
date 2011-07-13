@@ -422,7 +422,7 @@ void Statistics::retrieveCategoricalMetrics(){
 
             }
             Gini[idxa] = giniVal;
-            cout<<"gini = " << giniVal << endl;
+//            cout<<"gini = " << giniVal << endl;
         }
     }
 }

@@ -26,6 +26,19 @@ double KNN::getContentCredibility(string term, string docClass){
 	return stats->getIDF(term);
 }
 
+double KNN::getCategoricalCredibility(int i, string token, string classId){
+
+	if(!usingContentCredibility) return 1.0; 
+	if(contentCredibility.size() == 0) return 1.0;
+	
+	string idxa = getCompIndex(i,token);
+	string idx = getCompIndex(idxa,classId);
+
+    if(contentCredibility.find(idx) != contentCredibility.end()) return contentCredibility[idx] * Normalizer;
+
+	return 1.0;
+}
+
 double KNN::getGraphCredibility(int g, string id, string classId){
 	
     if(!usingGraphCredibility) return 1.0;
@@ -208,40 +221,49 @@ void KNN::test(Examples& exs){
                     similarity[termIt->docId] += ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) );
                 }
             }
-//            cout<<"------------------------"<<endl;
+
+            //numerical KNN
             for(map<string, vector<double> >::iterator trainIt  = exNumTrain.begin(); trainIt != exNumTrain.end(); trainIt++){
                 double dist = 0.0;
-                
-                //numerical KNN
+
                 for(unsigned int i = 0; i < numTokens.size(); i++){
                     double a = minMaxNorm(numTokens[i],i);
                     double b = minMaxNorm(exNumTrain[trainIt->first][i],i);
                     double val = (a-b)*(a-b);
                     //double val = (numTokens[i] - exNumTrain[trainIt->first][i]) * ( numTokens[i] - exNumTrain[trainIt->first][i]);
-//                    cout<<numTokens[i] << " - " <<exNumTrain[trainIt->first][i] <<endl;
-//                    cout<<"a = " << a << " b = " << b << " val =" << val<<endl;
+                    //                    cout<<numTokens[i] << " - " <<exNumTrain[trainIt->first][i] <<endl;
+                    //                    cout<<"a = " << a << " b = " << b << " val =" << val<<endl;
                     if( greaterThan(dist + val, numeric_limits<double>::max())){
-//                        cerr<<"OOOOOOOOOOOOOOOPA!!!"<<endl;
-//                        exit(0);
+                        //                        cerr<<"OOOOOOOOOOOOOOOPA!!!"<<endl;
+                        //                        exit(0);
                         dist = numeric_limits<double>::max() - 1.0;
                         break;
                     }
                     dist += val;
-//                    cout<<"dist =" << dist<<endl;
+                    //                    cout<<"dist =" << dist<<endl;
                 }
-                //categorical KNN
+                similarity[trainIt->first] += dist;
+            }
+
+            //categorical KNN
+            for(map<string, vector<string> >::iterator trainIt  = exCatTrain.begin(); trainIt != exCatTrain.end(); trainIt++){
+                double dist = 0.0;
+
                 for(unsigned int i = 0; i < catTokens.size(); i++){
                     string trainTok = exCatTrain[trainIt->first][i];
                     string testTok = catTokens[i];
 
-                    if(trainTok != testTok)
-                        dist+=1;
+                    double catCred = getCategoricalCredibility(i, testTok, stats->getTrainClass(trainIt->first));
+//                    cout<<"catCred = " <<catCred<<endl;
+//                    cout<<" i = " << i << "teste = " << testTok<<" treino = " << trainTok<<endl;
+                    if(trainTok != testTok){
+                        dist+= 1.0/(catCred+ 1.0) + 1.0;
+//                        cout<<"dist = " << dist<<endl;
+                    }
                 }
-
- //               cout<<"class = " << classId << " doc = " << trainIt->first<< " docClass = " << stats->getTrainClass(trainIt->first) << " dist="<<dist<< " 1/dist = " <<1.0/dist<< " sqrt = "<<sqrt(dist)<<endl;
-                similarity[trainIt->first] += sqrt(dist);
+                similarity[trainIt->first] += dist;
             }
-//            cout<<"------------------------"<<endl;
+ //               cout<<"class = " << classId << " doc = " << trainIt->first<< " docClass = " << stats->getTrainClass(trainIt->first) << " dist="<<dist<< " 1/dist = " <<1.0/dist<< " sqrt = "<<sqrt(dist)<<endl;
         }
 
         if(!valuesSaved && usingKNNOptimize){

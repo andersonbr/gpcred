@@ -77,6 +77,7 @@ class KNN : public ICredibilityClassifier
         bool printPrediction;
 
 		double getContentCredibility(string term, string docClass);
+        double getCategoricalCredibility(int i, string token, string classId);
 		double getGraphCredibility(int,string,string);
 
 		//Statistical object
