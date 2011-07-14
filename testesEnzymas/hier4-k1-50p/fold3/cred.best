@@ -7,3 +7,6 @@ GP: (- (+ (Pow Closeness Strength) Constraint) InverseLogSimilarity)
 Best of generation 2 (Fitness = 4.03474, Structural Complexity = 19)
 GP: (Pow (Pow Closeness Strength) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (Pow Authority CoCitation) (+ InverseLogSimilarity InverseLogSimilarity))))
 
+Best of generation 3 (Fitness = 4.01665, Structural Complexity = 23)
+GP: (Pow (Pow Closeness Strength) (+ (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% BibCoupling Neighborhood2)) (% (Pow Authority CoCitation) (+ InverseLogSimilarity InverseLogSimilarity))))
+
