@@ -10,6 +10,6 @@ testepath=$base/_teste$fold.jformat
 brunoro=fold$fold.gpvis
 
 
-python runme.py ./gp-cred -treino $treinopath -validacao $validacaopath -teste $testepath -brunoro $brunoro -dontsave -cat $cat
+python runme.py ./gp-cred -treino $treinopath -validacao $validacaopath -teste $testepath -brunoro $brunoro -dontsave -cat $cat -sumMacro
 
 
