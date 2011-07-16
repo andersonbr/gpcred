@@ -1,0 +1,9 @@
+Best of generation 0 (Fitness = 4.1185, Structural Complexity = 31)
+GP: (Pow (Log (Pow (- Strength Constraint) (- Neighborhood3 EigenVector)) (Pow (Pow JaccardSimilarity Neighborhood1) (* Neighborhood2 Neighborhood3))) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (Pow Authority CoCitation) (+ InverseLogSimilarity InverseLogSimilarity))))
+
+Best of generation 1 (Fitness = 4.10043, Structural Complexity = 17)
+GP: (Pow (Log (Pow (- Strength Constraint) (- Neighborhood3 EigenVector)) (- (Pow Neighborhood1 EigenVector) InverseLogSimilarity)) (- Neighborhood3 EigenVector))
+
+Best of generation 2 (Fitness = 3.93786, Structural Complexity = 49)
+GP: (Pow (Pow (Log (% (Pow Authority CoCitation) (+ InverseLogSimilarity InverseLogSimilarity)) (- (% (Pow Authority CoCitation) (+ InverseLogSimilarity InverseLogSimilarity)) InverseLogSimilarity)) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (Pow Authority CoCitation) (% (Pow Authority CoCitation) (+ InverseLogSimilarity InverseLogSimilarity))))) (+ (% BibCoupling Neighborhood2) (% (Pow Authority CoCitation) (+ InverseLogSimilarity InverseLogSimilarity))))
+
