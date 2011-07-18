@@ -7,3 +7,15 @@ GP: (- (- (Pow Authority CoCitation) (% (Pow Authority CoCitation) (+ InverseLog
 Best of generation 2 (Fitness = 4.00965, Structural Complexity = 23)
 GP: (- (Pow Authority CoCitation) (% (Pow Authority CoCitation) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity)))))
 
+Best of generation 3 (Fitness = 3.97253, Structural Complexity = 43)
+GP: (- (Pow Authority CoCitation) (% (Pow Authority CoCitation) (+ (+ (Log HubScore PageRank) (% (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity))))) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity)))))
+
+Best of generation 4 (Fitness = 3.89827, Structural Complexity = 63)
+GP: (- (Pow Authority CoCitation) (% (Pow Authority CoCitation) (+ (% (+ (Log HubScore PageRank) (% (+ (% (% BibCoupling Neighborhood2) (+ InverseLogSimilarity InverseLogSimilarity)) (% BibCoupling Neighborhood2)) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity))))) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity)))) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity)))))
+
+Best of generation 5 (Fitness = 3.89827, Structural Complexity = 55)
+GP: (- (Pow Authority CoCitation) (% (Pow Authority CoCitation) (+ (% (+ (Log HubScore PageRank) (% (+ (% (% BibCoupling Neighborhood2) (Log HubScore PageRank)) (% BibCoupling Neighborhood2)) (+ (% BibCoupling Neighborhood2) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity))))) (+ (Pow Authority CoCitation) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity)))) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity)))))
+
+Best of generation 6 (Fitness = 3.87971, Structural Complexity = 67)
+GP: (- (Pow Authority CoCitation) (% (Pow Authority CoCitation) (+ (% (+ (Log HubScore PageRank) (% (+ (% (% BibCoupling Neighborhood2) (+ InverseLogSimilarity InverseLogSimilarity)) (% BibCoupling Neighborhood2)) (+ (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity))) (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2))))) (+ (% BibCoupling Neighborhood2) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity)))) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity)))))
+
