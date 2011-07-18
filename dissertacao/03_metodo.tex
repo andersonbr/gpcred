@@ -198,13 +198,18 @@ Essa proximidade é tipicamente calculada por uma métrica de distância que pod
    dist(X_1, X_2) = \sum_{1 < i < d \ \wedge \ x_{i1} \neq x_{i2}} 1.0
 \end{equation}
 
-\item textual, tomamos todos os termos que são comuns entre $X_1$ e $X_2$ e somamos o produto dos seus pesos, normalizando toda a somatória pelo produto da norma de ambos os exemplos. Ou seja, sendo $||X_j|| = \sqrt{x_{1j}^2 + x_{2j}^2 + x_{3j}^2 + ... + x_{dj}^2}$ a norma do vetor representado por um exemplo $X_j$ no espaço e, $x_{ij}$, o peso de um termo $A_i$ no documento $j$, temos que a distância entre duas instâncias $X_1$ e $X_2$ pode ser definida como:
+\item textual, tomamos o a distância dos cosenos entre os dois exemplos $X_1$ e $X_2$ e invertemos o seu sinal. Ou seja, sendo $||X_j|| = \sqrt{x_{1j}^2 + x_{2j}^2 + x_{3j}^2 + ... + x_{dj}^2}$ a norma do vetor representado por um exemplo $X_j$ no espaço e, $x_{ij}$, o peso de um termo $A_i$ no documento $j$, temos que a semelhança entre duas instâncias $X_1$ e $X_2$ pode ser definida como:
 
 \begin{equation}\label{eqn::distancia_texto}
-    dist(X_1, X_2) = \frac{  x_{i1} \cdot x_{i2} }{ ||X_1|| \cdot ||X_2|| }
+    cosSim(X_1, X_2) = \frac{  x_{i1} \cdot x_{i2} }{ ||X_1|| \cdot ||X_2|| }
 \end{equation}
 
-Nesse trabalho, usamos a métrica \textit{term-frequency - inverse document frequency}, tf-idf, como o peso $x_{ij}$ de o termo $A_i$ no documento $j$. Deixamos os detalhes a respeito dessa métrica para a Seção~\ref{subsubsection::tfidf}.
+Primeiramente cabe explicar que usamos a métrica \textit{term-frequency - inverse document frequency}, \textit{tf-idf}, como o peso $x_{ij}$ do termo $A_i$ no documento $j$, mais detalhes sobre a métrica \textit{tf-idf} na Seção~\ref{subsubsection::tfidf}. Segundo que, como dito, a métrica acima é chamada de semelhança dos cosenos por se basear no ângulo coseno entre dois vetores no espaço. Como já reparado, estamos interessados na métrica inversa, logo:
+ 
+ \begin{equation}\label{eqn::distancia_texto}
+    dist(X_1, X_2) = - cos_sim(X_1, X_2)
+\end{equation}
+
 
 \end{itemize}
 
