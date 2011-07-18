@@ -41,9 +41,9 @@ def meanAndVar(values):
 
 #    for f in range(3,4):
         
-    
-    print '%.2f, %.3f, %.2f, %.3f, %.2f'  %  ( means[1] , deviates[1] , means[2], deviates[2], (means[2]/means[1] - 1.0) * 100.0 )
-    print "%.2f, %.3f, %.2f, %.3f, %.2f" % ( means[3] , deviates[3], means[4], deviates[4], (means[4]/means[3] - 1.0) * 100.0 )
+    print 'Baseline Deviate Best Deviate Gain'
+    print 'Train %.2f, %.3f, %.2f, %.3f, %.2f'  %  ( means[1] , deviates[1] , means[2], deviates[2], (means[2]/means[1] - 1.0) * 100.0 )
+    print "Test %.2f, %.3f, %.2f, %.3f, %.2f" % ( means[3] , deviates[3], means[4], deviates[4], (means[4]/means[3] - 1.0) * 100.0 )
     
  #   print (means[2] - means[1])
 

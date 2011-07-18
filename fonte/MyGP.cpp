@@ -190,7 +190,11 @@ double MyGene::evaluate(MyGP &gp, string id, string className = "", int graphId)
                 break;
 
             case PROB_COND:
-                returnValue = my_div(stats->getTFperClass(id, className) , stats->getTFperTerm(id));
+                //returnValue = my_div(stats->getTFperClass(id, className) , stats->getTFperTerm(id));
+                //versao 2:
+                returnValue = ( stats->getTFperClass(id, className)  / ( stats->getSumTF() + 1.0));  //suavizada         
+                returnValue /= ( stats->getSumTFperClass(className) + 1.0) / (stats->getSumTF() + 1.0 );//suavizada
+                
                 break;
 
             case PROB_COND_NEG:

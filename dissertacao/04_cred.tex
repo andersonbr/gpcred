@@ -1,58 +1,126 @@
 
 \section{Programação Genética}
 
+\subsection{Operadores}
+
+\subsection{Fitness}
+
+
 \section{Credibilidade baseada no Conteúdo}
-\label{sec::04_cred_baseada_conteudo}
+\label{sec::pg_cred_baseada_conteudo}
 
 \subsection{Metricas Modeladas.}
-\label{subsec::04_metricas_conteudo}
+\label{subsec::pg_metricas_conteudo}
 
 
-\subsubsection{Ambiguity Measure}
+\subsubsection{Medida de Ambiguidade - Ambiguity Measure(AM)}
 \label{subsubsection::am}
 
+\cite{Mengle08}
+
+\begin{equation}\label{eqn::am}
+   AM(t_k, c_i) = \frac{ N_{t_{k}c_{i}}}{\sum_{c_j \in \mathbb{C}} N_{t_{k}c_{j}}}.
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Probilidade Condicional}
 \label{subsubsection::pc}
 
+\begin{equation}\label{eqn::pctalquec}
+    P(x_k|c_i) = \frac{ N_{x_{k}c_{i}} }{ \sum\limits^{d}_{1} { } N_{x_{l}c_{i}} } 
+\end{equation}
 
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Probabilidade Condicional barrada!?}
 \label{subsubsection::pc'}
 
+\begin{equation}\label{eqn::plinhattalquec}
+   P'(x_k|C) = 1.0 - P(x_k|c)
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Índice de GINI}
 \label{subsubsection::gini}
 
+\cite{Shang07}
+\begin{equation}\label{eqn::gini}
+   GINI(x_k) = \sum_{c \in \mathbb{C}} P(x_k|c)^2 \cdot P(c|x_k)^2
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Dominância}
 \label{subsubsection::dom}
 
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Ganho de Informação}
 \label{subsubsection::ig}
+
+\cite{couto06}
+\begin{equation}\label{eqn::ig}
+   IG(t_k, c_i) = \sum_{c \in \{c_i, \overline{c_i}\}}\sum_{t \in \{t_k, \overline{t_k}\}}P(t|c)\log_2\frac{P(t|c)}{P(t)P(c)}.
+\end{equation}
 
 \subsubsection{CHI}
 \label{subsubsection::chi}
 
+\cite{Zheng03}
+\begin{equation}\label{eqn::chi}
+   CHI(t_k, c_i) = N \cdot \frac{ [ P(x_k|c_i) \cdot P(\overline{x_k}|\overline{c_i}) - P(x_k|\overline{c_i}) \cdot P(\overline{x_k}|c_i) ]^2 } {P(x_k) \cdot P(\overline{x_k}) \cdot P(c_i) \ \cdot P(\overline{c_i}) }
+\end{equation}
+
 \subsubsection{GSS}
 \label{subsubsection::gss}
 
+\begin{equation}\label{eqn::gss}
+   GSS(t_k, c_i) = P(x_k|c_i) \cdot P(\overline{x_k}|\overline{c_i}) - P(x_k|\overline{c_i}) \cdot P(\overline{x_k}|c_i) 
+\end{equation}
+
 \subsubsection{Coeficiente de Correlação}
 \label{subsubsection::cc}
+\cite{Zheng03}
+\begin{equation}\label{eqn::ce}
+   CE(t_k, c_i) = \sqrt{N} \cdot \frac{ P(x_k|c_i) \cdot P(\overline{x_k}|\overline{c_i}) - P(x_k|\overline{c_i}) \cdot P(\overline{x_k}|c_i) } {\sqrt{ P(x_k) \cdot P(\overline{x_k}) \cdot P(c_i) \ \cdot P(\overline{c_i}) } }
+\end{equation}
 
-
-\subsubsection{CE}
+\subsubsection{Cross Entropy}
 \label{subsubsection::}
-
+\cite{Shang07}
+\begin{equation}\label{eqn::ce}
+   CE(x_k) =  P(x_k) \cdot \sum_{c \in \mathbb{C}} P(c|x_k) \cdot log_2 \frac{ P(c|x_k) } { P(c) }
+\end{equation}
 
 \subsubsection{Odds Ratio}
 \label{subsubsection::or}
 
-\subsubsection{CTD}
+\cite{Zheng03}
+\begin{equation}\label{eqn::or}
+   OR(x_k, c_i) = \frac{ P(x_k|c_i) \cdot [ 1.0 - P(x_k|\overline{c_i}) ] }{ [ 1.0 - P(x_k|c_i) ] \cdot P(x_k|\overline{c_i})}
+\end{equation}
+
+\subsubsection{Category Term Description}
 \label{subsubsection::ctd}
+\cite{ChihHow04}
+\begin{equation}\label{eqn::cdt}
+   CDT(x_k, c_i) = TF() \cdot IDF() \cdot ICF()
+\end{equation}
 
 
 \subsubsection{IDF}
 \label{subsubsection::idf}
 
+\cite{ChihHow04}
+\begin{equation}\label{eqn::tficf}
+   IDF(x_k, c_i) = log( \frac{|D|} {df(x_k)} )
+\end{equation}
+
+
 \subsubsection{TFICF}
 \label{subsubsection::tfidf}
+\cite{ChihHow04}
+\begin{equation}\label{eqn::tficf}
+   TFICF(x_k, c_i) = TF(x_k, c_i) \cdot log( \frac{|C|} {cf(x_k)} )
+\end{equation}
 
 
 \subsubsection{TFIDF}
@@ -98,16 +166,19 @@
 \subsubsection{MaxTFIDF}
 \label{subsubsection::maxtfidf}
 
-\subsubsection{MaxTFICF}; 
+\subsubsection{MaxTFICF} 
 \label{subsubsection::maxtficf}
+
+\cite{ChihHow04}
+
 
 
 
 \section{Credibilidade baseada em Grafos}
-\label{sec::04_cred_baseada_grafos}
+\label{sec::pg_cred_baseada_grafos}
 
 \subsection{Métricas modeladas.}
-\label{subsec::04_metricas_grafos}
+\label{subsec::pg_metricas_grafos}
 
 asdf
 

@@ -257,7 +257,8 @@ void KNN::test(Examples& exs){
 //                    cout<<"catCred = " <<catCred<<endl;
 //                    cout<<" i = " << i << "teste = " << testTok<<" treino = " << trainTok<<endl;
                     if(trainTok != testTok){
-                        dist+= 1.0/(catCred+ 1.0) + 1.0;
+//                        dist+= 1.0/(catCred+ 1.0) + 1.0;
+                        dist+= 1.0/(catCred+ 1.0);
 //                        cout<<"dist = " << dist<<endl;
                     }
                 }
@@ -281,7 +282,7 @@ void KNN::test(Examples& exs){
             for(unsigned int g = 0 ; g < graphsCredibility.size(); g++){
                 double gsim = getGraphCredibility(g, eId, stats->getTrainClass(testIt->first));
 //                cout<<gsim<< " eid = " << eId << " eclass = " << classId << " traindocclass = " << stats->getTrainClass(trainIt->first) << " similarit = " << similarity << " final = " << similarity * gsim << endl;
-                similarityValue *= (0.5+gsim);
+                similarityValue /= (0.5+gsim);
             } 
            
             //never change this, it is necessary

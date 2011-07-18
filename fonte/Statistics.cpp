@@ -362,6 +362,7 @@ void Statistics::retrieveCategoricalMetrics(){
                 double PdeT = 1.0 / (getCategoricalSize(i,*classIt))   + notZero;
                 double PdeC = getSumDFperClass(*classIt) / ( 1.0 * getTotalDocs()) + notZero;
                 
+                //TODO: consertar urgente:
                 double PdeTeC = PdeT * PdeC + notZero;
                 double PdeTeNaoC = PdeT * (1-PdeC) + notZero;
                 
@@ -380,9 +381,9 @@ void Statistics::retrieveCategoricalMetrics(){
 
                 //    return PdeTtalqueC;
                 double gss = PdeTtalqueC * PdeNaoTtalqueNaoC - PdeTtalqueNaoC * PdeNaoTtalqueC;
-                double den = sqrt( PdeT*PdenaoT * PdeC *PdenaoC );
+                double den = PdeT*PdenaoT * PdeC *PdenaoC;
               
-                double amVal = occurrences / (apperInThisClass + getCategoricalSize(i,*classIt)); 
+                double amVal = occurrences / (apperInThisClass + apperOtherClass + getCategoricalSize(i,*classIt)); 
                 double igVal = (PdeTtalqueC * log(PdeTtalqueC / (PdeT*PdeC))) + 
                     (PdeNaoTtalqueC * log(PdeNaoTtalqueC / (PdenaoT*PdeC))) +
                     (PdeTtalqueNaoC * log(PdeTtalqueNaoC / (PdeT*PdenaoC))) +
@@ -391,7 +392,7 @@ void Statistics::retrieveCategoricalMetrics(){
                 giniVal += PdeTtalqueC * PdeTtalqueC + PdeCtalqueT * PdeCtalqueT;
                
                 double orVal = my_div((double)(PdeTtalqueC * PdeNaoTtalqueNaoC), (double) (PdeNaoTtalqueC * PdeTtalqueNaoC)); 
-                double chiVal = (sqrt(totalDocs) * ( gss * gss ) + 1.0) / ( den + 1.0 ); //suavizada
+                double chiVal = ( (totalDocs) * ( gss * gss ) + 1.0) / ( den + 1.0 ); //suavizada
                 double ccVal = (sqrt(totalDocs) * ( gss ) + 1.0) / ( sqrt(den) + 1.0 ); //versao suavizada
 /*
                 cout<<"P de T = " << PdeT <<endl;
@@ -517,6 +518,7 @@ void Statistics::retrieveContentMetrics() {
 
             ///calculo do AM
             double amVal = (getValue(TFperClass, idx) + 1.0) / (getValue(TFperTerm, *it) + 1.0); // versao suavisada
+            //double amVal = (getValue(TFperClass, idx) ) / (getValue(TFperTerm, *it)); 
 
             AM[idx] = amVal;
             if ( lesserThan(amVal, minAM))  minAM = amVal;
