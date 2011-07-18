@@ -138,7 +138,7 @@ string KNN::getPredictedClass(set<docWeighted, docWeightedCmp>& trainExamples){
         votes[classId] += 1;//ex->weight;
         sum[classId] += ex->weight;
 
-//        cout<<"docID = " << (ex)->docId<< " classe = " <<  classId << "\tsim = " << ex->weight <<endl;
+//        cout<<" k = " << counter << " docID = " << (ex)->docId<< " classe = " <<  classId << "\tsim = " << ex->weight <<endl;
     }
     
     string predictedClass = "";
@@ -158,7 +158,7 @@ string KNN::getPredictedClass(set<docWeighted, docWeightedCmp>& trainExamples){
 //        cout<<"classe = " << it->first << "\tsim = " << it->second<< " sum = " << sum[it->first] << endl;
     }
 //    cout<<"predicter = " << predictedClass << "  -> " << max<<endl;
-
+//    cout<<"====================================="<<endl;
     return predictedClass;
 }
 
@@ -217,8 +217,9 @@ void KNN::test(Examples& exs){
                     double trainDocSize = docTrainSizes[termIt->docId];
                     double trainTermWeight = termIt->weight;
                     double testTermWeight = tf * getContentCredibility(termId, trainClass);
-
-                    similarity[termIt->docId] += ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) );
+                    
+                    similarity[termIt->docId] +=  ( - ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) ));
+//                    cout<<"sim = " << similarity[termIt->docId] <<endl;
                 }
             }
 
@@ -279,9 +280,10 @@ void KNN::test(Examples& exs){
             vector<double> graphsCreds(graphsCredibility.size());
             double similarityValue = testIt->second;
 
+//            cout<< " eid = " << eId << " eclass = " << classId << " traindocclass = " << stats->getTrainClass(testIt->first) << " similarit = " << similarityValue<< endl;
+
             for(unsigned int g = 0 ; g < graphsCredibility.size(); g++){
                 double gsim = getGraphCredibility(g, eId, stats->getTrainClass(testIt->first));
-//                cout<<gsim<< " eid = " << eId << " eclass = " << classId << " traindocclass = " << stats->getTrainClass(trainIt->first) << " similarit = " << similarity << " final = " << similarity * gsim << endl;
                 similarityValue /= (0.5+gsim);
             } 
            
