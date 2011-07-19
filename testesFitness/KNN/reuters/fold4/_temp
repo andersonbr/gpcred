@@ -1,12 +1,36 @@
 MAIN --- Starting program.
 MAIN --- getParameters.
-Training File: ../../../../arquivos/reuters/CV5/treino/treino0
-Validation File: ../../../../arquivos/reuters/CV5/validacao/validacao0
-Test File = ../../../../arquivos/reuters/CV5/teste/teste0
+Training File: ../../../../arquivos/reuters/CV5/treino/treino4
+Validation File: ../../../../arquivos/reuters/CV5/validacao/validacao4
+Test File = ../../../../arquivos/reuters/CV5/teste/teste4
 Only evaluating the baseline.
-Using KNN, K = 4
-InOut --- readTrain method -> ../../../../arquivos/reuters/CV5/treino/treino0
+Using KNN, K = 20
+InOut --- readTrain method -> ../../../../arquivos/reuters/CV5/treino/treino4
 InOut --- read method.
-InOut --- readTrain method -> ../../../../arquivos/reuters/CV5/validacao/validacao0
+InOut --- readTrain method -> ../../../../arquivos/reuters/CV5/validacao/validacao4
 InOut --- read method.
-Statistics --- readExamples -> 6548
+Statistics --- readExamples -> 6547
+InOut --- readTest method -> ../../../../arquivos/reuters/CV5/teste/teste4
+InOut --- read method.
+KNN --- train
+KNN --- test
+Evaluated: 100
+Evaluated: 200
+Evaluated: 300
+Evaluated: 400
+Evaluated: 500
+Evaluated: 600
+Evaluated: 700
+Evaluated: 800
+Evaluated: 900
+Evaluated: 1000
+Evaluated: 1100
+Evaluated: 1200
+Evaluated: 1300
+Evaluated: 1400
+Evaluated: 1500
+Evaluated: 1600
+MicroF1: 0.908369
+1 - MicroF1: 0.091631
+MacroF1: 0.861288
+1 - MacroF1: 0.138712
