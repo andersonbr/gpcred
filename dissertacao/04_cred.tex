@@ -13,22 +13,25 @@
 \label{subsec::pg_metricas_conteudo}
 
 
-\subsubsection{Medida de Ambiguidade - Ambiguity Measure(AM)}
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Medida de Ambiguidade - Ambiguity Measure (AM)}
 \label{subsubsection::am}
 
-\cite{Mengle08}
+A medida de ambiguidade (AM de \textit{Ambiguity Measure}) foi definida por~\cite{Mengle08} e utilizada como um método de seleção de atributos. Ele atribui valores maiores para os atributos considerados menos ambíguos, onde um atributo é não ambíguo quando sua preseça indica com um alto grau de confiança que o exemplo pertence a uma classe específica. Dado que $N_{x_{i}c{j}}$ é o número de vezes que temos o valor $x_i$ para o atributos $A_i$ na classe $c_j$, podemos calcular $AM(x_i, c_j)$ como:
 
 \begin{equation}\label{eqn::am}
-   AM(t_k, c_i) = \frac{ N_{t_{k}c_{i}}}{\sum_{c_j \in \mathbb{C}} N_{t_{k}c_{j}}}.
+   AM(x_i, c_j) = \frac{ N_{x_{i}c_{j}}}{\sum_{c_k \in \mathbb{C}} N_{x_{i}c_{k}}}.
 \end{equation}
-
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Probilidade Condicional}
 \label{subsubsection::pc}
 
+A probabilidade condicional $P(x_i|c_j)$ provém do algoritmo \textit{Naïve Bayes} como foi discutido na Seção~\ref{subsec::cred_nb}.
+Basicamente, para uma certa classe $c_j$, calculamos a probabilidade do atributo $A_i$ ter o valor $x_i$
+
 \begin{equation}\label{eqn::pctalquec}
-    P(x_k|c_i) = \frac{ N_{x_{k}c_{i}} }{ \sum\limits^{d}_{1} { } N_{x_{l}c_{i}} } 
+    P(x_i|c_j) = \frac{ N_{x_{i}c_{j}} }{ \sum\limits^{d}_{k = 1} { } N_{x_{k}c_{j}} } 
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,6 +64,7 @@
    IG(t_k, c_i) = \sum_{c \in \{c_i, \overline{c_i}\}}\sum_{t \in \{t_k, \overline{t_k}\}}P(t|c)\log_2\frac{P(t|c)}{P(t)P(c)}.
 \end{equation}
 
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{CHI}
 \label{subsubsection::chi}
 
@@ -69,6 +73,7 @@
    CHI(t_k, c_i) = N \cdot \frac{ [ P(x_k|c_i) \cdot P(\overline{x_k}|\overline{c_i}) - P(x_k|\overline{c_i}) \cdot P(\overline{x_k}|c_i) ]^2 } {P(x_k) \cdot P(\overline{x_k}) \cdot P(c_i) \ \cdot P(\overline{c_i}) }
 \end{equation}
 
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{GSS}
 \label{subsubsection::gss}
 
@@ -76,6 +81,7 @@
    GSS(t_k, c_i) = P(x_k|c_i) \cdot P(\overline{x_k}|\overline{c_i}) - P(x_k|\overline{c_i}) \cdot P(\overline{x_k}|c_i) 
 \end{equation}
 
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Coeficiente de Correlação}
 \label{subsubsection::cc}
 \cite{Zheng03}
@@ -83,6 +89,7 @@
    CE(t_k, c_i) = \sqrt{N} \cdot \frac{ P(x_k|c_i) \cdot P(\overline{x_k}|\overline{c_i}) - P(x_k|\overline{c_i}) \cdot P(\overline{x_k}|c_i) } {\sqrt{ P(x_k) \cdot P(\overline{x_k}) \cdot P(c_i) \ \cdot P(\overline{c_i}) } }
 \end{equation}
 
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Cross Entropy}
 \label{subsubsection::}
 \cite{Shang07}
@@ -90,6 +97,7 @@
    CE(x_k) =  P(x_k) \cdot \sum_{c \in \mathbb{C}} P(c|x_k) \cdot log_2 \frac{ P(c|x_k) } { P(c) }
 \end{equation}
 
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Odds Ratio}
 \label{subsubsection::or}
 
@@ -98,6 +106,7 @@
    OR(x_k, c_i) = \frac{ P(x_k|c_i) \cdot [ 1.0 - P(x_k|\overline{c_i}) ] }{ [ 1.0 - P(x_k|c_i) ] \cdot P(x_k|\overline{c_i})}
 \end{equation}
 
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Category Term Description}
 \label{subsubsection::ctd}
 \cite{ChihHow04}
@@ -106,6 +115,7 @@
 \end{equation}
 
 
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{IDF}
 \label{subsubsection::idf}
 
@@ -115,6 +125,7 @@
 \end{equation}
 
 
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{TFICF}
 \label{subsubsection::tfidf}
 \cite{ChihHow04}
@@ -123,6 +134,7 @@
 \end{equation}
 
 
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{TFIDF}
 \label{subsubsection::tfidf}
 
