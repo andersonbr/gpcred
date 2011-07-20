@@ -1,12 +1,18 @@
 MAIN --- Starting program.
 MAIN --- getParameters.
-Training File: ../../../../arquivos/reuters/CV5/treino/treino0
-Validation File: ../../../../arquivos/reuters/CV5/validacao/validacao0
-Test File = ../../../../arquivos/reuters/CV5/teste/teste0
+Training File: ../../../../arquivos/ohsumed/CV5/treino/treino1
+Validation File: ../../../../arquivos/ohsumed/CV5/validacao/validacao1
+Test File = ../../../../arquivos/ohsumed/CV5/teste/teste1
 Only evaluating the baseline.
-Using KNN, K = 4
-InOut --- readTrain method -> ../../../../arquivos/reuters/CV5/treino/treino0
+Using KNN, K = 25
+InOut --- readTrain method -> ../../../../arquivos/ohsumed/CV5/treino/treino1
 InOut --- read method.
-InOut --- readTrain method -> ../../../../arquivos/reuters/CV5/validacao/validacao0
+InOut --- readTrain method -> ../../../../arquivos/ohsumed/CV5/validacao/validacao1
 InOut --- read method.
-Statistics --- readExamples -> 6548
+Statistics --- readExamples -> 14641
+InOut --- readTest method -> ../../../../arquivos/ohsumed/CV5/teste/teste1
+InOut --- read method.
+KNN --- train
+KNN --- test
+Evaluated: 100
+Evaluated: 200
