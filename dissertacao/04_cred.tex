@@ -18,9 +18,8 @@
 \label{subsubsection::am}
 
 A medida de ambiguidade (AM de \textit{Ambiguity Measure}) foi definida por~\cite{Mengle08} e utilizada como um método de seleção de atributos. Ele atribui valores maiores para os atributos considerados menos ambíguos, onde um atributo é não ambíguo quando sua preseça indica com um alto grau de confiança que o exemplo pertence a uma classe específica. Dado que $N_{x_{i}c{j}}$ é o número de vezes que temos o valor $x_i$ para o atributos $A_i$ na classe $c_j$, podemos calcular $AM(x_i, c_j)$ como:
-
 \begin{equation}\label{eqn::am}
-   AM(x_i, c_j) = \frac{ N_{x_{i}c_{j}}}{\sum_{c_k \in \mathbb{C}} N_{x_{i}c_{k}}}.
+   AM(x_i, c_j) = \frac{ N_{x_{i}c_{j}}}{\sum\limits_{c_k \in \mathbb{C}} N_{x_{i}c_{k}}}.
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -28,32 +27,48 @@ A medida de ambiguidade (AM de \textit{Ambiguity Measure}) foi definida por~\cit
 \label{subsubsection::pc}
 
 A probabilidade condicional $P(x_i|c_j)$ provém do algoritmo \textit{Naïve Bayes} como foi discutido na Seção~\ref{subsec::cred_nb}.
-Basicamente, para uma certa classe $c_j$, calculamos a probabilidade do atributo $A_i$ ter o valor $x_i$
-
-\begin{equation}\label{eqn::pctalquec}
-    P(x_i|c_j) = \frac{ N_{x_{i}c_{j}} }{ \sum\limits^{d}_{k = 1} { } N_{x_{k}c_{j}} } 
-\end{equation}
+Temos dois modos de calcular $P(x_i|c_j)$, um para quando temos $A_i$ categórico e outro para quando estamos realizando classificação textual.
+Basicamente, a ideia de ambos é a mesma, para uma dada classe $c_j$, calculamos a probabilidade do atributo $A_i$ ter o valor $x_i$ entre todos possíveis. 
+Para classificação categórica, basta apenas contar quantas vezes $A_i$ vale $x_i$ para uma dada classe $c_j$:
+    \begin{equation}\label{eqn::nbcattexto}
+        P(x_i|c_j) = \frac{ N_{x_{i}c_{j}} }{ N_{c_{j}} } 
+    \end{equation}
+Onde $N_{x_{i}c_{j}}$ é o número de vezes que temos o termo $x_i$ nos exemplos de treino da classe $c_j$ e $N_{c_{j}}$ é o número de exemplos de treino da classe $c_j$.
+        
+Para classificação textual, contamos quantas vezes um termo aparece em uma classe em comparação a todos os termos possíveis:
+    \begin{equation}\label{eqn::nbcattexto}
+        P(x_i|c_j) = \frac{ N_{x_{i}c_{j}} }{ \sum\limits^{D}_{k = 1} {  N_{x_{k}c_{j}}} } 
+    \end{equation}
+Onde $N_{x_{i}c_{j}}$ é o número de vezes que temos o termo $x_i$ nos documentos de treino da classe $c_j$ e $D$ é o número o vocabulário conhecido no treino.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Probabilidade Condicional barrada!?}
+\subsubsection{Inverso da Probabilidade Condicional}
 \label{subsubsection::pc'}
-
+Com o inverso da probabilidade condicional, calculamos a probabilidade de um atributo $A_i$ não valer $x_i$ para uma classe $c_j$. Podemos realizar esse calculo apenas com a seguinte fórmula:
 \begin{equation}\label{eqn::plinhattalquec}
-   P'(x_k|C) = 1.0 - P(x_k|c)
+   P(\overline{x_i}|c_j) = 1.0 - P(x_i|c_j)
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Índice de GINI}
+\subsubsection{Índice de Gini melhorado}
 \label{subsubsection::gini}
 
-\cite{Shang07}
+O índice de Gini é uma métrica baseada na curva de Lorenz que mostra a função de distribuição acumulada de uma variável. Esse índice é amplamente utilizado nas Ciências Econômicas como uma métrica para avaliação da distribuição de renda pela população de um certo país ou região. Infelizmente por essa métrica, o Brasil é um dos países mais desiguais do mundo (ver \cite{cia-gini}). 
+Baseado na ideia de desigualdade, podemos pensar na distribuição de um atributo nas M classes possíveis. Um atributo que seja desigualmente distribuído é certamente um atributo com um maior poder de discriminação, e portanto, um atributo mais importante. O trabalho de~\cite{Shang07} consistiu na criação de um selecionador de atributos para classificadores textuais baseando-se no Índice de Gini, chamado Índice de Gini melhorado. Ao contrario da maioria das métricas expostas nessa seção, o Índice de Gini melhorado tem apenas um parâmetro, o valor do $i$-ésimo atributo, não levando em consideração nenhuma classe específica. Ele é considerado melhorado por algumas pequenas diferenças com o método tradicional de Gini, entre elas o fato de um maior valor se referir a um melhor atributo e não ao contrário como é feito no método original. A fórmula sugerida por \cite{Shang07} para ser utilizada em classificação de atributos textuais é dada por:
+%O índice de GINI melhorado para classificação de atributos foi enunciado pela primeira vez no trabalho de~\cite{Shang07}. Ao contrario da maioria das métricas expostas nessa seção, o Índice de Gini melhorado tem apenas um parâmetro, o valor do $i$-ésimo atributo, não levando em consideração nenhuma classe específica. Ele é considerado melhorado por algumas pequenas diferenças com o método tradicional de GINI, amplamente utilizado nas ciências econômicas para avaliação de distribuição de renda pela população de um certo país ou região. A fórmula sugerida por \cite{Shang07} para ser utilizada em classificação de atributos textuais é dada por:
 \begin{equation}\label{eqn::gini}
-   GINI(x_k) = \sum_{c \in \mathbb{C}} P(x_k|c)^2 \cdot P(c|x_k)^2
+   GINI(x_i) = \sum_{c \in \mathbb{C}} P(x_i|c)^2 \cdot P(c|x_i)^2
 \end{equation}
+Shang et al. destaca o fato da não utilização do fator $P(x_i)$, fazendo com que o Índice de GINI melhorado sofra menos a influência de atributos frequentes conseguindo capturar a capacidade de um atributo ser importante para distinguir uma classe, independente de qual classe é. Destacamos que $P(c|x_i)$ é justamente a probabilidade que o algoritmo Bayesiano pretende calcular, logo aproximamos esse fator como:
+\begin{equation}\label{eqn::gini}
+   P(c_j|x_i) = \frac{  P(c_j \wedge x_i) } { P(x_i) } = \frac{ \frac{ N_{x_ic_j}}{  \sum\limits_{c \in \mathbb{C}} \sum\limits_{k=1}^{D} {Nx_kc}  } } { \frac{\sum\limits_{c \in \mathbb{C}} N_{x_ic}}{ \sum\limits_{c \in \mathbb{C}} \sum\limits_{k=1}^{D} {Nx_kc}}} = \frac{ N_{x_{i}c_{j}}}{\sum\limits{c_k \in \mathbb{C}} N_{x_{i}c_{k}}}.
+\end{equation}
+Que é o mesmo valor definido por~\cite{Mengle08} para a métrica Medida da Ambiguidade mostrada na Seção~\ref{subsubsection::am}.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Dominância}
 \label{subsubsection::dom}
+TODO: Ver referencia sugerida pelo Tsalles!!! 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Ganho de Informação}
@@ -65,13 +80,24 @@ Basicamente, para uma certa classe $c_j$, calculamos a probabilidade do atributo
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{CHI}
+\subsubsection{CHI-Quadrado}
 \label{subsubsection::chi}
 
-\cite{Zheng03}
+O teste \textit{CHI-quadrado} é utilizado no campo da Estatística para testar a independência entre dois eventos. Quando usado para seleção de atributos, tipicamente temos que os dois eventos são a ocorrência de uma classe e a ocorrência de um atributo $A_i$ com valor $x_i$, ver~\cite{Zheng03}. Logo,
 \begin{equation}\label{eqn::chi}
-   CHI(t_k, c_i) = N \cdot \frac{ [ P(x_k|c_i) \cdot P(\overline{x_k}|\overline{c_i}) - P(x_k|\overline{c_i}) \cdot P(\overline{x_k}|c_i) ]^2 } {P(x_k) \cdot P(\overline{x_k}) \cdot P(c_i) \ \cdot P(\overline{c_i}) }
+   CHI(x_i, c_j) = N \cdot \frac{ [ P(x_i|c_j) \cdot P(\overline{x_i}|\overline{c_j}) - P(x_i|\overline{c_j}) \cdot P(\overline{x_i}|c_j) ]^2 } {P(x_i) \cdot P(\overline{x_i}) \cdot P(c_j) \ \cdot P(\overline{c_j}) }
 \end{equation}
+como $P(x_i|c_j)$ a probabilidade de termos o atributo $A_i$ com valor $x_i$ dada a classe $c_j$ para classificação categórica e a probabilidade de um documento ter o termos $x_i$ dado que ele pertence a classe $c_j$. 
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Coeficiente de Correlação}
+\label{subsubsection::cc}
+
+\cite{Ng97}
+\begin{equation}\label{eqn::ce}
+   CE(t_k, c_i) = \sqrt{N} \cdot \frac{ P(x_k|c_i) \cdot P(\overline{x_k}|\overline{c_i}) - P(x_k|\overline{c_i}) \cdot P(\overline{x_k}|c_i) } {\sqrt{ P(x_k) \cdot P(\overline{x_k}) \cdot P(c_i) \ \cdot P(\overline{c_i}) } }
+\end{equation}
+
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{GSS}
@@ -82,14 +108,6 @@ Basicamente, para uma certa classe $c_j$, calculamos a probabilidade do atributo
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Coeficiente de Correlação}
-\label{subsubsection::cc}
-\cite{Zheng03}
-\begin{equation}\label{eqn::ce}
-   CE(t_k, c_i) = \sqrt{N} \cdot \frac{ P(x_k|c_i) \cdot P(\overline{x_k}|\overline{c_i}) - P(x_k|\overline{c_i}) \cdot P(\overline{x_k}|c_i) } {\sqrt{ P(x_k) \cdot P(\overline{x_k}) \cdot P(c_i) \ \cdot P(\overline{c_i}) } }
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Cross Entropy}
 \label{subsubsection::}
 \cite{Shang07}
@@ -97,23 +115,23 @@ Basicamente, para uma certa classe $c_j$, calculamos a probabilidade do atributo
    CE(x_k) =  P(x_k) \cdot \sum_{c \in \mathbb{C}} P(c|x_k) \cdot log_2 \frac{ P(c|x_k) } { P(c) }
 \end{equation}
 
+
+
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Odds Ratio}
+\subsubsection{Razão de Chances - \textit{Odds Ratio} (OR)}
 \label{subsubsection::or}
 
-\cite{Zheng03}
+Proposta originalmente por~\cite{Rijsbergen79}, a métrica Razão de Chances, do inglês \textit{Odds Ration} (OR), também é uma métrica de seleção de atributos. A ideia básica é que a distribuição de atributos em exemplos relevantes é diferente da distribuição de atributos em exemplos não relevantes. Isso quer dizer que poderíamos definir dois eventos A e B e calculamos a probabilidade de ocorrência de A dividida pela probabilidade de não ocorrência de A e a comparamos com a probabilidade ocorrência de B dividida pela probabilidade de não ocorrência de B:
 \begin{equation}\label{eqn::or}
-   OR(x_k, c_i) = \frac{ P(x_k|c_i) \cdot [ 1.0 - P(x_k|\overline{c_i}) ] }{ [ 1.0 - P(x_k|c_i) ] \cdot P(x_k|\overline{c_i})}
+   OR(A, B) = \frac{\frac{A}{1-A}} {\frac{B}{1-B}} = \frac{ A \cdot ( 1 - B )} { B \cdot ( 1 - A ) } 
 \end{equation}
+Uma razão de chances de 1.0 indica que ocorrer A ou B é igualmente provável, uma razão maior do que 1.0 indica que ocorrer A é mais provável, enquanto que uma razão de chances menor do que 1 indica que o evento B é tem uma probabilidade maior de ocorrer.
 
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Category Term Description}
-\label{subsubsection::ctd}
-\cite{ChihHow04}
-\begin{equation}\label{eqn::cdt}
-   CDT(x_k, c_i) = TF() \cdot IDF() \cdot ICF()
+A razão de chances tem sido utilizada para selecionamento de atributos por \cite{dunja98} fazendo com que A seja $P(x_i|c_j)$ e B seja $P(x_i,\overline{c_j})$. Logo,
+\begin{equation}\label{eqn::or}
+   OR(x_i, c_j) = \frac{ P(x_i|c_j) \cdot [ 1.0 - P(x_i|\overline{c_j}) ] }{ [ 1.0 - P(x_i|c_j) ] \cdot P(x_i|\overline{c_j})},
 \end{equation}
-
+em que $P(x_i, c_j)$ é a probabilidade de termos o atributo $A_i$ com valor $x_i$ em exemplos que pertencem a classe $c_j$ e $P(x_i|\overline{c_j})$ é a probabilidade de termos $x_i$ em outras classes que não sejam $c_j$.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{IDF}
@@ -124,19 +142,35 @@ Basicamente, para uma certa classe $c_j$, calculamos a probabilidade do atributo
    IDF(x_k, c_i) = log( \frac{|D|} {df(x_k)} )
 \end{equation}
 
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{TFICF}
-\label{subsubsection::tfidf}
-\cite{ChihHow04}
-\begin{equation}\label{eqn::tficf}
-   TFICF(x_k, c_i) = TF(x_k, c_i) \cdot log( \frac{|C|} {cf(x_k)} )
-\end{equation}
-
-
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{TFIDF}
 \label{subsubsection::tfidf}
+
+Uma das métricas de pesos para atributos em classificação de textos mais populares na literatura é o TFIDF (do inglês, \textit{Term Frequency Inversed Document Frequency}), ver \cite{salton87}. O TFIDF combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento é mais importante que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de TFIDF é nada mais que a multiplicação das métricas TF e IDF, como já esperávamos:
+\begin{equation}\label{eqn::tficf}
+   TFIDF(x_i, c_j) =  N_{x_ic_j} \cdot log( \frac{DF_{c_j}}{ DF_{x_ic_j} } )
+\end{equation}
+Onde $N_{x_ic_j}$ é o número de vezes que temos o termo $x_i$ na classe $c_j$, $DF_{c_j}$ é o número de documentos da classe $c_j$ e, finalmente, $DF_{x_ic_j}$ é o número de documentos que contém o termo $x_i$ e são da classe $c_j$.
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{TFICF}
+\label{subsubsection::tficf}
+
+O TFICF (do inglês, \textit{Term Frequency Inversed Class Frequency}) é uma variação do esquema TFIDF (ver Seção~\ref{subsubsection::tfidf}). Novamente, TF se refere a quanto importante é um termo em uma classe, pois trata-se de sua frequência; por sua vez, ICF é interpretado como a frequência relativa de um termo em uma classe. Como é possível observar, não existe uma forma de diferenciarmos entre um termo que aparece frequentemente em um pequeno subconjunto de documentos e um termo que está presente em um grande número de documentos entre as classes. Como mostrado por~\cite{ChihHow04}, a fórmula para TFICF é:
+\begin{equation}\label{eqn::tficf}
+   TFICF(x_i, c_j) = N_{x_ic_j} \cdot log( \frac{M}{CF_{x_i}} )
+\end{equation}
+Onde temos que $N_{x_ic_j}$ é o número de vezes que temos o termo $x_i$ na classe $c_j$, $M$, como previamente definido, é o número de classes da coleção e $CF_{x_i}$ é o número de classes que contém o termo $x_i$. 
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Category Term Description}
+\label{subsubsection::ctd}
+
+Definido por~\cite{ChihHow04}, \textit{Category Term Description} é uma métrica de seleção de atributos para classificação textual baseada em TFIDF (Seção~\ref{subsubsection::tfidf}) e TFICF (Seção~\ref{subsubsection::tficf}). How et al. propõe uma melhoria ao TDICF acreditando que quanto menos um termo ocorre entre os documentos, maior o poder discriminativo daquele termo, logo:
+\begin{equation}\label{eqn::cdt}
+   CDT(x_i, c_j) = TF(x_i, c_j) \cdot ICF(x_i, c_j) \cdot IDF(x_i,c_j) =  N_{x_ic_j} \cdot log( \frac{M}{CF_{x_i}} ) \cdot  log( \frac{DF_{c_j}}{ DF_{x_ic_j} } )
+\end{equation}
+Onde temos que $N_{x_ic_j}$ é o número de vezes que temos o termo $x_i$ na classe $c_j$, $M$ é o número de classes da coleção, $CF_{x_i}$ é o número de classes que contém o termo $x_i$, $DF_{c_j}$ é o número de documentos da classe $c_j$ e $DF_{x_ic_j}$ é o número de documentos que contém o termo $x_i$ e são da classe $c_j$.
 
 \subsubsection{TF}
 \label{subsubsection::tf}
@@ -182,9 +216,6 @@ Basicamente, para uma certa classe $c_j$, calculamos a probabilidade do atributo
 \label{subsubsection::maxtficf}
 
 \cite{ChihHow04}
-
-
-
 
 \section{Credibilidade baseada em Grafos}
 \label{sec::pg_cred_baseada_grafos}

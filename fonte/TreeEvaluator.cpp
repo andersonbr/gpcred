@@ -226,8 +226,11 @@ double TreeEvaluator::getOperandValue(string operand, string id, string classNam
     }
     else if(operand == "P"){
         return my_div(stats->getTFperClass(id, className) , stats->getTFperTerm(id));
+//          return my_div(stats->getTFperClass(id,className) + 1.0, stats->getSumTFperClass(className)+ stats->getVocabularySize()) ;
+//          return (stats->getTFperClass(id,className) + 1.0) / (stats->getSumTFperClass(className)+ stats->getVocabularySize());
     }
     else if(operand == "P'"){
+//        return my_div(stats->getTFperClass(id, className) , stats->getTFperTerm(id));
         return 1.0 - my_div(stats->getTFperClass(id, className) , stats->getTFperTerm(id));
     }
     else if(operand == "GINI"){ 

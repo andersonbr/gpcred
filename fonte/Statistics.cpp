@@ -32,7 +32,6 @@ cout<<" att "<< i << " class= " << it->first << " val = " << it2->first << " p =
     }
 }
 
-
 void Statistics::setUsingKNN(bool usingKNN, int K, bool usingKNNOptimize){
     this->usingKNN = usingKNN;
     KNNK = K;
@@ -391,7 +390,7 @@ void Statistics::retrieveCategoricalMetrics(){
                 
                 giniVal += PdeTtalqueC * PdeTtalqueC + PdeCtalqueT * PdeCtalqueT;
                
-                double orVal = my_div((double)(PdeTtalqueC * PdeNaoTtalqueNaoC), (double) (PdeNaoTtalqueC * PdeTtalqueNaoC)); 
+                double orVal = my_div((double)((PdeTtalqueC + 0.5) * (PdeNaoTtalqueNaoC + 0.5)), (double) ((PdeNaoTtalqueC + 0.5) * (PdeTtalqueNaoC + 0.5))); 
                 double chiVal = ( (totalDocs) * ( gss * gss ) + 1.0) / ( den + 1.0 ); //suavizada
                 double ccVal = (sqrt(totalDocs) * ( gss ) + 1.0) / ( sqrt(den) + 1.0 ); //versao suavizada
 /*
