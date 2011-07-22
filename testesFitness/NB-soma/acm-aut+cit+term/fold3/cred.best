@@ -1,0 +1,505 @@
+Best of generation 0 (Fitness = 65.8817, Structural Complexity = 9)
+GP: (Pow MaxIG MaxGSS)
+ADF0: (Log DiceSimilarity EigenVector)
+ADF1: (+ BibCoupling Closeness)
+
+Best of generation 1 (Fitness = 65.8817, Structural Complexity = 9)
+GP: (Pow MaxIG MaxGSS)
+ADF0: (Log DiceSimilarity EigenVector)
+ADF1: (+ BibCoupling Closeness)
+
+Best of generation 2 (Fitness = 63.6383, Structural Complexity = 21)
+GP: (* OR (* MaxIG IDF))
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (+ DiceSimilarity CoCitation)))
+ADF1: (+ (* (Pow JaccardSimilarity DiceSimilarity) Closeness) Neighborhood3)
+
+Best of generation 3 (Fitness = 63.6383, Structural Complexity = 21)
+GP: (* OR (* MaxIG IDF))
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (+ DiceSimilarity CoCitation)))
+ADF1: (+ (* (Pow JaccardSimilarity DiceSimilarity) Closeness) Neighborhood3)
+
+Best of generation 4 (Fitness = 63.6383, Structural Complexity = 21)
+GP: (* OR (* MaxIG IDF))
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (+ DiceSimilarity CoCitation)))
+ADF1: (+ (* (Pow JaccardSimilarity DiceSimilarity) Closeness) Neighborhood3)
+
+Best of generation 5 (Fitness = 63.6383, Structural Complexity = 21)
+GP: (* OR (* MaxIG IDF))
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (+ DiceSimilarity CoCitation)))
+ADF1: (+ (* (Pow JaccardSimilarity DiceSimilarity) Closeness) Neighborhood3)
+
+Best of generation 6 (Fitness = 63.6383, Structural Complexity = 21)
+GP: (* OR (* MaxIG IDF))
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (+ DiceSimilarity CoCitation)))
+ADF1: (+ (* (Pow JaccardSimilarity DiceSimilarity) Closeness) Neighborhood3)
+
+Best of generation 7 (Fitness = 63.6383, Structural Complexity = 21)
+GP: (* OR (* MaxIG IDF))
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (+ DiceSimilarity CoCitation)))
+ADF1: (+ (* (Log Neighborhood2 EigenVector) Closeness) Neighborhood3)
+
+Best of generation 8 (Fitness = 63.6383, Structural Complexity = 21)
+GP: (* OR (* MaxIG IDF))
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (+ DiceSimilarity CoCitation)))
+ADF1: (+ (* (Log Neighborhood2 EigenVector) Closeness) Neighborhood3)
+
+Best of generation 9 (Fitness = 63.6383, Structural Complexity = 21)
+GP: (* OR (* MaxIG IDF))
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (+ DiceSimilarity CoCitation)))
+ADF1: (+ (* (Log Neighborhood2 EigenVector) Closeness) Neighborhood3)
+
+Best of generation 10 (Fitness = 63.6383, Structural Complexity = 19)
+GP: (* OR (* MaxIG IDF))
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (+ DiceSimilarity CoCitation)))
+ADF1: (+ (- Authority DiceSimilarity) Neighborhood3)
+
+Best of generation 11 (Fitness = 62.1183, Structural Complexity = 19)
+GP: (* OR GINI)
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (+ DiceSimilarity CoCitation)))
+ADF1: (+ (* (Pow Constraint PageRank) Closeness) Neighborhood3)
+
+Best of generation 12 (Fitness = 62.0901, Structural Complexity = 19)
+GP: (* OR GINI)
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (Log Authority Constraint)))
+ADF1: (+ (* (Pow Constraint PageRank) Closeness) Neighborhood3)
+
+Best of generation 13 (Fitness = 62.0901, Structural Complexity = 19)
+GP: (* OR GINI)
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (Log Authority Constraint)))
+ADF1: (+ (* (Pow Constraint PageRank) Closeness) Neighborhood3)
+
+Best of generation 14 (Fitness = 62.0901, Structural Complexity = 19)
+GP: (* OR GINI)
+ADF0: (% Authority (% (Log Neighborhood1 CoCitation) (Log Authority Constraint)))
+ADF1: (+ (* (Pow Constraint PageRank) Closeness) Neighborhood3)
+
+Best of generation 15 (Fitness = 62.0901, Structural Complexity = 17)
+GP: (* OR GINI)
+ADF0: (% Authority (+ DiceSimilarity CoCitation))
+ADF1: (+ (* (* (Pow PageRank DiceSimilarity) BibCoupling) Closeness) Neighborhood3)
+
+Best of generation 16 (Fitness = 61.4045, Structural Complexity = 13)
+GP: (* OR GINI)
+ADF0: (+ DiceSimilarity CoCitation)
+ADF1: (+ (* (Pow Constraint PageRank) Closeness) Neighborhood3)
+
+Best of generation 17 (Fitness = 61.4045, Structural Complexity = 13)
+GP: (* OR GINI)
+ADF0: (+ DiceSimilarity CoCitation)
+ADF1: (+ (* (Pow Constraint PageRank) Closeness) Neighborhood3)
+
+Best of generation 18 (Fitness = 61.4045, Structural Complexity = 13)
+GP: (* OR GINI)
+ADF0: (+ DiceSimilarity CoCitation)
+ADF1: (+ (* (Pow Constraint PageRank) Closeness) Neighborhood3)
+
+Best of generation 19 (Fitness = 61.1597, Structural Complexity = 17)
+GP: (* (* OR GINI) MaxAM)
+ADF0: (- Neighborhood1 EigenVector)
+ADF1: (+ (- (Log DiceSimilarity Constraint) (% BibCoupling InverseLogSimilarity)) BibCoupling)
+
+Best of generation 20 (Fitness = 61.0628, Structural Complexity = 17)
+GP: (* (* OR GINI) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (+ (- (Log DiceSimilarity Constraint) (% BibCoupling InverseLogSimilarity)) BibCoupling)
+
+Best of generation 21 (Fitness = 61.0628, Structural Complexity = 17)
+GP: (* (* OR GINI) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (+ (- (Log DiceSimilarity Constraint) (% BibCoupling InverseLogSimilarity)) BibCoupling)
+
+Best of generation 22 (Fitness = 61.0628, Structural Complexity = 17)
+GP: (* (* OR GINI) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (+ (- (Log DiceSimilarity Constraint) (% BibCoupling InverseLogSimilarity)) BibCoupling)
+
+Best of generation 23 (Fitness = 61.0628, Structural Complexity = 17)
+GP: (* (* OR GINI) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (+ (- (Log DiceSimilarity Constraint) (% BibCoupling InverseLogSimilarity)) BibCoupling)
+
+Best of generation 24 (Fitness = 61.0628, Structural Complexity = 13)
+GP: (* (* OR GINI) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (+ (Log PageRank DiceSimilarity) BibCoupling)
+
+Best of generation 25 (Fitness = 61.0628, Structural Complexity = 13)
+GP: (* (* OR GINI) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (+ (Log PageRank DiceSimilarity) BibCoupling)
+
+Best of generation 26 (Fitness = 61.0387, Structural Complexity = 15)
+GP: (* (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (* (Log PageRank InverseLogSimilarity) Closeness)
+
+Best of generation 27 (Fitness = 61.0387, Structural Complexity = 15)
+GP: (* (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (* (Log PageRank InverseLogSimilarity) Closeness)
+
+Best of generation 28 (Fitness = 61.0387, Structural Complexity = 15)
+GP: (* (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (* (Log PageRank InverseLogSimilarity) Closeness)
+
+Best of generation 29 (Fitness = 61.0238, Structural Complexity = 15)
+GP: (* (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (* (Log CoCitation BibCoupling) Closeness)
+
+Best of generation 30 (Fitness = 61.0238, Structural Complexity = 15)
+GP: (* (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (* (Log CoCitation BibCoupling) Closeness)
+
+Best of generation 31 (Fitness = 61.0238, Structural Complexity = 15)
+GP: (* (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (* (Log CoCitation BibCoupling) Closeness)
+
+Best of generation 32 (Fitness = 61.0238, Structural Complexity = 15)
+GP: (* (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (* (Log CoCitation BibCoupling) Closeness)
+
+Best of generation 33 (Fitness = 61.0238, Structural Complexity = 15)
+GP: (* (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (* (Log CoCitation BibCoupling) Closeness)
+
+Best of generation 34 (Fitness = 61.0238, Structural Complexity = 15)
+GP: (* (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (* (Log CoCitation BibCoupling) Closeness)
+
+Best of generation 35 (Fitness = 61.0238, Structural Complexity = 15)
+GP: (* (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (* (Log CoCitation BibCoupling) Closeness)
+
+Best of generation 36 (Fitness = 61.0238, Structural Complexity = 15)
+GP: (* (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (* (Log CoCitation BibCoupling) Closeness)
+
+Best of generation 37 (Fitness = 60.2031, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (- Neighborhood2 Closeness)
+ADF1: (- (- Betweenness PageRank) DiceSimilarity)
+
+Best of generation 38 (Fitness = 60.2031, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (- Neighborhood2 Closeness)
+ADF1: (- (- Betweenness PageRank) DiceSimilarity)
+
+Best of generation 39 (Fitness = 60.2031, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (- Neighborhood2 Closeness)
+ADF1: (- (- Betweenness PageRank) DiceSimilarity)
+
+Best of generation 40 (Fitness = 60.2031, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (- Neighborhood2 Closeness)
+ADF1: (- (- Betweenness PageRank) DiceSimilarity)
+
+Best of generation 41 (Fitness = 60.2031, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (- Neighborhood2 Closeness)
+ADF1: (- (- Betweenness PageRank) DiceSimilarity)
+
+Best of generation 42 (Fitness = 60.1857, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (- Neighborhood2 Closeness)
+ADF1: (- Betweenness PageRank)
+
+Best of generation 43 (Fitness = 60.1857, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (- Neighborhood2 Closeness)
+ADF1: (- Betweenness PageRank)
+
+Best of generation 44 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 45 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 46 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 47 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 48 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 49 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 50 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 51 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 52 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 53 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 54 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 55 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 56 (Fitness = 59.9726, Structural Complexity = 15)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (+ Neighborhood1 DiceSimilarity)
+ADF1: (- (+ Betweenness PageRank) DiceSimilarity)
+
+Best of generation 57 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 58 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 59 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 60 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 61 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 62 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 63 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 64 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 65 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 66 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 67 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 68 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 69 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 70 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 71 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 72 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 73 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 74 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 75 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 76 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 77 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 78 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 79 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 80 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 81 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 82 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 83 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 84 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 85 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 86 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 87 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 88 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 89 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 90 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 91 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (+ Betweenness PageRank)
+
+Best of generation 92 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (- Betweenness Authority)
+
+Best of generation 93 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (- Betweenness Authority)
+
+Best of generation 94 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (- Betweenness Authority)
+
+Best of generation 95 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (- Betweenness Authority)
+
+Best of generation 96 (Fitness = 59.902, Structural Complexity = 13)
+GP: (Pow (* (* OR GINI) MaxAM) MaxAM)
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (- Betweenness Authority)
+
+Best of generation 97 (Fitness = 59.178, Structural Complexity = 13)
+GP: (* IG (Pow (* OR GINI) MaxAM))
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (% Betweenness PageRank)
+
+Best of generation 98 (Fitness = 59.178, Structural Complexity = 13)
+GP: (* IG (Pow (* OR GINI) MaxAM))
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (% Betweenness PageRank)
+
+Best of generation 99 (Fitness = 59.178, Structural Complexity = 13)
+GP: (* IG (Pow (* OR GINI) MaxAM))
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (% Betweenness PageRank)
+
+Best of generation 100 (Fitness = 59.178, Structural Complexity = 13)
+GP: (* IG (Pow (* OR GINI) MaxAM))
+ADF0: (* Neighborhood1 DiceSimilarity)
+ADF1: (% Betweenness PageRank)
+

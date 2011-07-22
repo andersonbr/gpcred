@@ -9,7 +9,7 @@
 \section{Credibilidade baseada no Conteúdo}
 \label{sec::pg_cred_baseada_conteudo}
 
-\subsection{Metricas Modeladas.}
+\subsection{Métricas Modeladas.}
 \label{subsec::pg_metricas_conteudo}
 
 
@@ -17,13 +17,13 @@
 \subsubsection{Medida de Ambiguidade - Ambiguity Measure (AM)}
 \label{subsubsection::am}
 
-A medida de ambiguidade (AM de \textit{Ambiguity Measure}) foi definida por~\cite{Mengle08} e utilizada como um método de seleção de atributos. Ele atribui valores maiores para os atributos considerados menos ambíguos, onde um atributo é não ambíguo quando sua preseça indica com um alto grau de confiança que o exemplo pertence a uma classe específica. Dado que $N_{x_{i}c{j}}$ é o número de vezes que temos o valor $x_i$ para o atributos $A_i$ na classe $c_j$, podemos calcular $AM(x_i, c_j)$ como:
+A medida de ambiguidade (AM de \textit{Ambiguity Measure}) foi definida por~\cite{Mengle08} e utilizada como um método de seleção de atributos. Ele atribui valores maiores para os atributos considerados menos ambíguos, onde um atributo é não ambíguo quando sua presença indica com um alto grau de confiança que o exemplo pertence a uma classe específica. Dado que $N_{x_{i}c{j}}$ é o número de vezes que temos o valor $x_i$ para o atributos $A_i$ na classe $c_j$, podemos calcular $AM(x_i, c_j)$ como:
 \begin{equation}\label{eqn::am}
    AM(x_i, c_j) = \frac{ N_{x_{i}c_{j}}}{\sum\limits_{c_k \in \mathbb{C}} N_{x_{i}c_{k}}}.
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Probilidade Condicional}
+\subsubsection{Probabilidade Condicional}
 \label{subsubsection::pc}
 
 A probabilidade condicional $P(x_i|c_j)$ provém do algoritmo \textit{Naïve Bayes} como foi discutido na Seção~\ref{subsec::cred_nb}.
@@ -55,9 +55,8 @@ Com o inverso da probabilidade condicional, calculamos a probabilidade de um atr
 
 O índice de Gini é uma métrica baseada na curva de Lorenz que mostra a função de distribuição acumulada de uma variável. Esse índice é amplamente utilizado nas Ciências Econômicas como uma métrica para avaliação da distribuição de renda pela população de um certo país ou região. Infelizmente por essa métrica, o Brasil é um dos países mais desiguais do mundo (ver \cite{cia-gini}). 
 Baseado na ideia de desigualdade, podemos pensar na distribuição de um atributo nas M classes possíveis. Um atributo que seja desigualmente distribuído é certamente um atributo com um maior poder de discriminação, e portanto, um atributo mais importante. O trabalho de~\cite{Shang07} consistiu na criação de um selecionador de atributos para classificadores textuais baseando-se no Índice de Gini, chamado Índice de Gini melhorado. Ao contrario da maioria das métricas expostas nessa seção, o Índice de Gini melhorado tem apenas um parâmetro, o valor do $i$-ésimo atributo, não levando em consideração nenhuma classe específica. Ele é considerado melhorado por algumas pequenas diferenças com o método tradicional de Gini, entre elas o fato de um maior valor se referir a um melhor atributo e não ao contrário como é feito no método original. A fórmula sugerida por \cite{Shang07} para ser utilizada em classificação de atributos textuais é dada por:
-%O índice de GINI melhorado para classificação de atributos foi enunciado pela primeira vez no trabalho de~\cite{Shang07}. Ao contrario da maioria das métricas expostas nessa seção, o Índice de Gini melhorado tem apenas um parâmetro, o valor do $i$-ésimo atributo, não levando em consideração nenhuma classe específica. Ele é considerado melhorado por algumas pequenas diferenças com o método tradicional de GINI, amplamente utilizado nas ciências econômicas para avaliação de distribuição de renda pela população de um certo país ou região. A fórmula sugerida por \cite{Shang07} para ser utilizada em classificação de atributos textuais é dada por:
 \begin{equation}\label{eqn::gini}
-   GINI(x_i) = \sum_{c \in \mathbb{C}} P(x_i|c)^2 \cdot P(c|x_i)^2
+   GINI(x_i) = \sum\limits_{c_k \in \mathbb{C}} P(x_i|c_k)^2 \cdot P(c_k|x_i)^2
 \end{equation}
 Shang et al. destaca o fato da não utilização do fator $P(x_i)$, fazendo com que o Índice de GINI melhorado sofra menos a influência de atributos frequentes conseguindo capturar a capacidade de um atributo ser importante para distinguir uma classe, independente de qual classe é. Destacamos que $P(c|x_i)$ é justamente a probabilidade que o algoritmo Bayesiano pretende calcular, logo aproximamos esse fator como:
 \begin{equation}\label{eqn::gini}
@@ -66,55 +65,51 @@ Shang et al. destaca o fato da não utilização do fator $P(x_i)$, fazendo com 
 Que é o mesmo valor definido por~\cite{Mengle08} para a métrica Medida da Ambiguidade mostrada na Seção~\ref{subsubsection::am}.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Dominância}
-\label{subsubsection::dom}
-TODO: Ver referencia sugerida pelo Tsalles!!! 
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Ganho de Informação}
 \label{subsubsection::ig}
 
-\cite{couto06}
+O Ganho de Informação (\textit{Information Gain}, IG), \cite{Yang97}, mede a diminuição da entropia quando um atributo é usado ou não. A entropia é uma medida utilizada no campo da Ciência da Informação que tenta quantificar a desordem, a imprevisibilidade. Quanto maior a entropia maior a entropia, mais difícil é prever um resultado, portanto a métrica IG seleciona os atributos que diminuam o valor da entropia, facilitando descobrir a qual classe um exemplo pertence. O Ganho da Informação pode ser calculado da seguinte forma:
 \begin{equation}\label{eqn::ig}
-   IG(t_k, c_i) = \sum_{c \in \{c_i, \overline{c_i}\}}\sum_{t \in \{t_k, \overline{t_k}\}}P(t|c)\log_2\frac{P(t|c)}{P(t)P(c)}.
+   IG(x_i, c_j) = \sum_{c \in \{c_j, \overline{c_j}\}}\sum_{x \in \{x_i, \overline{x_i}\}}P(x|c)\log_2\frac{P(x|c)}{P(x)P(c)}.
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Cross Entropy}
+\label{subsubsection::}
+
+\textit{Cross Entropy} (CE), assim como o Índice de Gini Melhorado, Seção~\cite{subsubsection::gini}, apresenta apenas um parâmetro, um atributo. Novamente aproximamos o calculamos $P(c|x_i)$, pois esse já é o resultado do algoritmo \textit{Naïve Bayes} e, portanto, não o teríamos enquanto estamos calculando a credibilidade de um atributo em relação a uma classe. Assim como enunciado por~\cite{Koller97} e adaptado para seleção de atributos em~\cite{Mladenic98}, essa métrica assume a seguinte fórmula:
+\begin{equation}\label{eqn::ce}
+   CE(x_i) =  P(x_i) \cdot \sum_{c \in \mathbb{C}} P(c|x_i) \cdot \log_2 \frac{ P(c|x_i) } { P(c) }
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{CHI-Quadrado}
 \label{subsubsection::chi}
 
-O teste \textit{CHI-quadrado} é utilizado no campo da Estatística para testar a independência entre dois eventos. Quando usado para seleção de atributos, tipicamente temos que os dois eventos são a ocorrência de uma classe e a ocorrência de um atributo $A_i$ com valor $x_i$, ver~\cite{Zheng03}. Logo,
+O teste \textit{CHI-quadrado - $\chi^2$} é utilizado no campo da Estatística para testar a independência entre dois eventos. Quando usado para seleção de atributos, tipicamente temos que os dois eventos são a ocorrência de uma classe e a ocorrência de um atributo $A_i$ com valor $x_i$, ver~\cite{Zheng03}. Logo,
 \begin{equation}\label{eqn::chi}
    CHI(x_i, c_j) = N \cdot \frac{ [ P(x_i|c_j) \cdot P(\overline{x_i}|\overline{c_j}) - P(x_i|\overline{c_j}) \cdot P(\overline{x_i}|c_j) ]^2 } {P(x_i) \cdot P(\overline{x_i}) \cdot P(c_j) \ \cdot P(\overline{c_j}) }
 \end{equation}
-como $P(x_i|c_j)$ a probabilidade de termos o atributo $A_i$ com valor $x_i$ dada a classe $c_j$ para classificação categórica e a probabilidade de um documento ter o termos $x_i$ dado que ele pertence a classe $c_j$. 
+como $P(x_i|c_j)$ a probabilidade de termos o atributo $A_i$ com valor $x_i$ dada a classe $c_j$ para classificação categórica e a probabilidade de um documento ter o termos $x_i$ dado que ele pertence a classe $c_j$. Valores próximos de zero indicam a falta de relação entre $x_i$ e $c_j$.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Coeficiente de Correlação}
 \label{subsubsection::cc}
 
-\cite{Ng97}
+O Coeficiente de Correlação (CC) é uma métrica de seleção de atributos, variante da métrica \textit{CHI-Quadrada - $\chi^2$}, ver Seção~\ref{subsubsection::chi}. Definida por~\cite{Ng97}, temos que $(CC)^2 = \chi^2$, logo:
 \begin{equation}\label{eqn::ce}
-   CE(t_k, c_i) = \sqrt{N} \cdot \frac{ P(x_k|c_i) \cdot P(\overline{x_k}|\overline{c_i}) - P(x_k|\overline{c_i}) \cdot P(\overline{x_k}|c_i) } {\sqrt{ P(x_k) \cdot P(\overline{x_k}) \cdot P(c_i) \ \cdot P(\overline{c_i}) } }
+   CC(x_i, c_j) = \sqrt{N} \cdot \frac{ P(x_i|c_j) \cdot P(\overline{x_i}|\overline{c_j}) - P(x_i|\overline{c_j}) \cdot P(\overline{x_i}|c_j) } {\sqrt{ P(x_i) \cdot P(\overline{x_i}) \cdot P(c_j) \ \cdot P(\overline{c_j}) } }
 \end{equation}
-
+como a mesma definição de $P(x_i|c_j)$ usada para a métrica $\chi^2$. Os valores positivos para CC correspondem a pertinência do valor de um atributo a uma classe, enquanto valores negativos indicam a não pertinência. Quanto mais positivo (negativo) são os valores de CC, mais fortemente o atributo é relacionado (não relacionado) a uma classe. Para fins de seleção de atributo, valores mais elevados de CC são os mais interessantes, pois mostram uma correlação positiva entre um atributo e uma classe. Em contraste com CC, $\chi^2$ também considera importantes correlações negativas entre atributos e classes, o que acaba resultando que atributos que fortemente indicam a falta de pertinência a uma classe são tão importantes quanto os que indicam.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{GSS}
+\subsubsection{Coeficiente GSS}
 \label{subsubsection::gss}
-
+O coeficiente Galavotti–Sebastiani–Simi (GSS) introduzido por~\cite{Galavotti00} é bastante similar a $\chi^2$, Seção~\ref{subsubsection::chi}, e pode ser definido como:
 \begin{equation}\label{eqn::gss}
-   GSS(t_k, c_i) = P(x_k|c_i) \cdot P(\overline{x_k}|\overline{c_i}) - P(x_k|\overline{c_i}) \cdot P(\overline{x_k}|c_i) 
+   GSS(x_i, c_j) = P(x_i|c_j) \cdot P(\overline{x_i}|\overline{c_j}) - P(x_i|\overline{c_j}) \cdot P(\overline{x_i}|c_j) 
 \end{equation}
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Cross Entropy}
-\label{subsubsection::}
-\cite{Shang07}
-\begin{equation}\label{eqn::ce}
-   CE(x_k) =  P(x_k) \cdot \sum_{c \in \mathbb{C}} P(c|x_k) \cdot log_2 \frac{ P(c|x_k) } { P(c) }
-\end{equation}
-
+sendo $P(x_i|c_j)$ definido na Seção~\ref{subsubsection::pc}. Da mesma forma como o Coeficiente de Correlação, Seção~\ref{subsubsection::cc}, valores positivos correspondem a pertinência de um atributo a uma categoria e, negativos, a não pertinência. 
 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -127,7 +122,7 @@ Proposta originalmente por~\cite{Rijsbergen79}, a métrica Razão de Chances, do
 \end{equation}
 Uma razão de chances de 1.0 indica que ocorrer A ou B é igualmente provável, uma razão maior do que 1.0 indica que ocorrer A é mais provável, enquanto que uma razão de chances menor do que 1 indica que o evento B é tem uma probabilidade maior de ocorrer.
 
-A razão de chances tem sido utilizada para selecionamento de atributos por \cite{dunja98} fazendo com que A seja $P(x_i|c_j)$ e B seja $P(x_i,\overline{c_j})$. Logo,
+A razão de chances tem sido utilizada para selecionamento de atributos por \cite{Mladenic98} fazendo com que A seja $P(x_i|c_j)$ e B seja $P(x_i,\overline{c_j})$. Logo,
 \begin{equation}\label{eqn::or}
    OR(x_i, c_j) = \frac{ P(x_i|c_j) \cdot [ 1.0 - P(x_i|\overline{c_j}) ] }{ [ 1.0 - P(x_i|c_j) ] \cdot P(x_i|\overline{c_j})},
 \end{equation}
@@ -146,7 +141,7 @@ em que $P(x_i, c_j)$ é a probabilidade de termos o atributo $A_i$ com valor $x_
 \subsubsection{TFIDF}
 \label{subsubsection::tfidf}
 
-Uma das métricas de pesos para atributos em classificação de textos mais populares na literatura é o TFIDF (do inglês, \textit{Term Frequency Inversed Document Frequency}), ver \cite{salton87}. O TFIDF combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento é mais importante que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de TFIDF é nada mais que a multiplicação das métricas TF e IDF, como já esperávamos:
+Uma das métricas de pesos para atributos em classificação de textos mais populares na literatura é o TFIDF (do inglês, \textit{Term Frequency Inversed Document Frequency}), ver \cite{Salton88}. O TFIDF combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento é mais importante que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de TFIDF é nada mais que a multiplicação das métricas TF e IDF, como já esperávamos:
 \begin{equation}\label{eqn::tficf}
    TFIDF(x_i, c_j) =  N_{x_ic_j} \cdot log( \frac{DF_{c_j}}{ DF_{x_ic_j} } )
 \end{equation}
@@ -171,6 +166,16 @@ Definido por~\cite{ChihHow04}, \textit{Category Term Description} é uma métric
    CDT(x_i, c_j) = TF(x_i, c_j) \cdot ICF(x_i, c_j) \cdot IDF(x_i,c_j) =  N_{x_ic_j} \cdot log( \frac{M}{CF_{x_i}} ) \cdot  log( \frac{DF_{c_j}}{ DF_{x_ic_j} } )
 \end{equation}
 Onde temos que $N_{x_ic_j}$ é o número de vezes que temos o termo $x_i$ na classe $c_j$, $M$ é o número de classes da coleção, $CF_{x_i}$ é o número de classes que contém o termo $x_i$, $DF_{c_j}$ é o número de documentos da classe $c_j$ e $DF_{x_ic_j}$ é o número de documentos que contém o termo $x_i$ e são da classe $c_j$.
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Dominância}
+\label{subsubsection::dom}
+
+Dominância é uma métrica originalmente proposta em~\cite{Zaiane02} e utilizada mais recentemente no trabalho de~\cite{Rocha08} para criação do que foi chamado de janela temporal de um documento. Em suma, utilizado exclusivamente em classificação textual, o método normaliza a frequência de um documento em um classe por todas as classes existentes, logo:
+
+\begin{equation}\label{eqn::dom}
+   Dominancia(x_i, c_j) = \frac{ DF_{x_ic_j} } { \sum\limits_{c_k \in \mathbb{C}} DF_{ x_ic_k } } 
+\end{equation}
 
 \subsubsection{TF}
 \label{subsubsection::tf}
