@@ -22,7 +22,7 @@ Statistics::~Statistics(){
 
 void Statistics::printCategoricalScores(){
 
-    for(unsigned int i = 0; i < categoricalAttrs; i++){
+    for(int i = 0; i < categoricalAttrs; i++){
         for(map<string, map<string, int> >::iterator it = tupleValue[i].begin(); it!= tupleValue[i].end(); it++){
             for(map<string, int> ::iterator it2 = tupleValue[i][it->first].begin(); it2 != tupleValue[i][it->first].end(); it2++){
 cout<<" att "<< i << " class= " << it->first << " val = " << it2->first << " p = " << (1.0+it2->second) * 1.0 / (getSumDFperClass(it->first) + tupleValue[i][it->first].size())<<endl;              
@@ -346,7 +346,7 @@ void Statistics::retrieveCategoricalMetrics(){
                 string idx = getCompIndex(idxa, *classIt);
 
                 double occurrences = getCategoricalValue(i,*classIt,*tokenIt) + 1.0; //laplacian correction
-                double freq = 1.0 * ( sumDFperClass[*classIt] + getCategoricalSize(i,*classIt));
+//                double freq = 1.0 * ( sumDFperClass[*classIt] + getCategoricalSize(i,*classIt));
  
                 double apperOtherClass = 0;
                 double apperInThisClass = 0;
@@ -525,7 +525,7 @@ void Statistics::retrieveContentMetrics() {
 
             //probabilidades de uso geral:
             double Ptec = my_div( (getValue(TFperClass, idx) + 1.0) , (sumTF + 1.0));  //suavizada 
-            double Pc = my_div((getValue(sumTFperClass, *classIt) + 1.0) ,/ (sumTF + 1.0 ));//suavizada
+            double Pc = my_div((getValue(sumTFperClass, *classIt) + 1.0) , (sumTF + 1.0 ));//suavizada
             //double Pc = (getValue(sumDFperClass, *classIt) + 1.0) / (totalDocs + 1.0 );//suavizada
             
             double PdeTtalqueC  = my_div(Ptec,Pc) ;
@@ -536,7 +536,7 @@ void Statistics::retrieveContentMetrics() {
             ///calculo do coeficiente de GINI
             giniVal += PdeTtalqueC * PdeTtalqueC + PdeCtalqueT * PdeCtalqueT;
 
-            double PdeTeNaoC =my_div(( getValue(TFperTerm, *it) - getValue(TFperClass, idx) + 1.0) / ( 1.0 + sumTF)); //suavizada
+            double PdeTeNaoC =my_div(( getValue(TFperTerm, *it) - getValue(TFperClass, idx) + 1.0) , ( 1.0 + sumTF)); //suavizada
             double PdeTtalqueNaoC =  my_div((PdeTeNaoC + 1.0) , (1.0-Pc + 1.0)) ; //suavizada
             double PdeNaoTtalqueNaoC = 1.0 - PdeTtalqueNaoC;
             double PdeNaoTtalqueC = 1.0 - PdeTtalqueC;
