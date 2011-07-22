@@ -109,7 +109,7 @@ O coeficiente Galavotti–Sebastiani–Simi (GSS) introduzido por~\cite{Galavott
 \begin{equation}\label{eqn::gss}
    GSS(x_i, c_j) = P(x_i|c_j) \cdot P(\overline{x_i}|\overline{c_j}) - P(x_i|\overline{c_j}) \cdot P(\overline{x_i}|c_j) 
 \end{equation}
-sendo $P(x_i|c_j)$ definido na Seção~\ref{subsubsection::pc}. Da mesma forma como o Coeficiente de Correlação, Seção~\ref{subsubsection::cc}, valores positivos correspondem a pertinência de um atributo a uma categoria e, negativos, a não pertinência. 
+sendo $P(x_i|c_j)$ definido na Seção~\ref{subsubsection::pc}. Da mesma forma como o Coeficiente de Correlação, Seção~\ref{subsubsection::cc}, valores positivos correspondem à pertinência de um atributo a uma categoria e, negativos, à não pertinência. 
 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -129,15 +129,54 @@ A razão de chances tem sido utilizada para selecionamento de atributos por \cit
 em que $P(x_i, c_j)$ é a probabilidade de termos o atributo $A_i$ com valor $x_i$ em exemplos que pertencem a classe $c_j$ e $P(x_i|\overline{c_j})$ é a probabilidade de termos $x_i$ em outras classes que não sejam $c_j$.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{IDF}
+\subsubsection{Frequência dos Documentos por Termo}
+\label{subsubsection::df}
+
+\begin{equation}\label{eqn::df}
+   DF(x_i) = 1.0 + \log{ ( DF_{x_i} ) }
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Frequência de Docummentos por Termo-Classe}
+\label{subsubsection::sumdf}
+
+\begin{equation}\label{eqn::sumtf}
+   DFporClasse(x_i) = 1.0 + \log{ ( DF_{x_ic_k} ) }
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Inverso da Frequência de Documentos (IDF)}
 \label{subsubsection::idf}
 
-\cite{ChihHow04}
+O Inverso da Frequência de Documentos, IDF do inglês \textit{Inverse Document Frequency}, é uma conhecida métrica que avalia a popularidade de um determinado termo em um conjunto de documentos. Temos que quanto mais popular é um termo ao longo dos documentos de uma coleção, pior é sua capacidade de discriminação, logo:
 \begin{equation}\label{eqn::tficf}
-   IDF(x_k, c_i) = log( \frac{|D|} {df(x_k)} )
+   IDF(x_i) = log( \frac{|N|} {DF(x_i)} )
+\end{equation}
+Onde temos $N$ documentos na base de treinamento da coleção e $DF_{x_i}$ é o número de documentos que apresentam o termo $x_i$.
+
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Frequência do Termo}
+\label{subsubsection::sumtf}
+\begin{equation}\label{eqn::sumtf}
+   TF(x_i) = 1.0 + \log{ ( N_{x_i} ) }
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Frequência do Termo por Classe}
+\label{subsubsection::tf}
+TF per class...
+\begin{equation}\label{eqn::tf}
+   TFporClasse(x_i, c_j) = 1.0 + \log{ ( N_{x_ic_j} ) }
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsubsection{TFIDF}
 \label{subsubsection::tfidf}
 
@@ -177,18 +216,8 @@ Dominância é uma métrica originalmente proposta em~\cite{Zaiane02} e utilizad
    Dominancia(x_i, c_j) = \frac{ DF_{x_ic_j} } { \sum\limits_{c_k \in \mathbb{C}} DF_{ x_ic_k } } 
 \end{equation}
 
-\subsubsection{TF}
-\label{subsubsection::tf}
-
-\subsubsection{sumTF}
-\label{subsubsection::sumtf}
-
-\subsubsection{Frequência dos Documentos}
-\label{subsubsection::df}
 
 
-\subsubsection{sumDF}
-\label{subsubsection::sumdf}
 
 \subsubsection{MaxDom}
 \label{subsubsection::maxdom}
@@ -229,4 +258,36 @@ Dominância é uma métrica originalmente proposta em~\cite{Zaiane02} e utilizad
 \label{subsec::pg_metricas_grafos}
 
 asdf
+
+
+\subsubsection{NeighborhoodSize3(id,className,graphId)}
+break;
+\subsubsection{getHubScore(id, className, graphId)}
+break;
+\subsubsection{getAuthority(id, className, graphId)}
+break;
+\subsubsection{getEigenVectorCentrality(id, className, graphId)}
+break;
+\subsubsection{getCloseness(id, className, graphId)}
+break;
+\subsubsection{getStrength(id, className, graphId)}
+break;
+\subsubsection{getConstraint(id, className, graphId)}
+break;
+\subsubsection{getPageRank(id, className, graphId)}
+break;
+\subsubsection{getBetweenness(id, className, graphId)}
+break;
+\subsubsection{getBibCoupling(id, className, graphId)}
+break;
+\subsubsection{getCoCitation(id, className, graphId)}
+break;
+\subsubsection{getJaccardSimilarity(id, className, graphId)}
+break;
+\subsubsection{getDiceSimilarity(id, className, graphId)}
+break;
+\subsubsection{getInverseLogSimilarity(id, className, graphId)}
+break;
+\subsubsection{getAvgNearstNeighborDegree(id, className, graphId)}
+acho que nao to uando
 

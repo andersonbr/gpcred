@@ -184,14 +184,14 @@ Por essa figura, vemos a importância do parâmetro $k$ na decisão da classe qu
 \end{figure}
 
 Como vimos, uma parte fundamental do \textit{KNN} é podermos calcular o quão próximo uma instância de teste está das instâncias de treinamento. 
-Essa proximidade é tipicamente calculada por uma métrica de distância que pode variar de problema para problema. Neste trabalho, utilizamos 3 métricas diferentes, dependendo se estamos classificando um atributo $A_i$ que seja categórico, numérico ou textual. Para duas instâncias $X_1 =  (x_{11}, x_{21}, x_{31}, ..., x_{d1})$ e $X_2 = (x_{12}, x_{22}, x_{32}, ..., x_{d2})$, nas quais $x_{ij}$ representa o valor do atributo $A_i$ para a instância $j$, temos que, caso $A_i$ seja:
+Essa proximidade é tipicamente calculada por uma métrica de distância que pode variar de problema para problema. Neste trabalho, utilizamos 3 métricas diferentes, dependendo se estamos classificando um atributo $A_i$ que seja categórico, numérico ou textual. Para duas instâncias $X_1 =  (x_{11}, x_{21}, x_{31}, ..., x_{D1})$ e $X_2 = (x_{12}, x_{22}, x_{32}, ..., x_{D2})$, nas quais $x_{ij}$ representa o valor do atributo $A_i$ para a instância $j$, temos que, caso $A_i$ seja:
 
 \begin{itemize}
 
 \item numérico, utilizamos a distância Euclidiana:
 
 \begin{equation}\label{eqn::distancia_euclidiana}
-    dist(X_1, X_2) =  \sqrt{\sum_{i=1}^d (x_{i1}-x_{i2})^2}
+    dist(X_1, X_2) =  \sqrt{\sum_{i=1}^D (x_{i1}-x_{i2})^2}
 \end{equation}
 
     Com o intuito de evitar que um atributo com grande escala de valores sobreponha um outro atributo de uma menor escala, empregamos a normalização \textit{min-max} para todos os valores $x_i$ do correspondente atributo $A_i$: 
@@ -203,10 +203,10 @@ Essa proximidade é tipicamente calculada por uma métrica de distância que pod
 \item categórico, então iremos comparar $X_1$ e $X_2$ e somar uma unidade a distância entre as instâncias para cada $x_i$ que tenha valores distintos entre $X_1$ e $X_2$.
 
 \begin{equation}\label{eqn::distancia_cat}
-   dist(X_1, X_2) = \sum_{1 < i < d \ \wedge \ x_{i1} \neq x_{i2}} 1.0
+   dist(X_1, X_2) = \sum_{1 < i < D \ \wedge \ x_{i1} \neq x_{i2}} 1.0
 \end{equation}
 
-\item textual, tomamos o a distância dos cosenos entre os dois exemplos $X_1$ e $X_2$ e invertemos o seu sinal. Ou seja, sendo $||X_j|| = \sqrt{x_{1j}^2 + x_{2j}^2 + x_{3j}^2 + ... + x_{dj}^2}$ a norma do vetor representado por um exemplo $X_j$ no espaço e, $x_{ij}$, o peso de um termo $A_i$ no documento $j$, temos que a semelhança entre duas instâncias $X_1$ e $X_2$ pode ser definida como:
+\item textual, tomamos o a distância dos cosenos entre os dois exemplos $X_1$ e $X_2$ e invertemos o seu sinal. Ou seja, sendo $||X_j|| = \sqrt{x_{1j}^2 + x_{2j}^2 + x_{3j}^2 + ... + x_{Dj}^2}$ a norma do vetor representado por um exemplo $X_j$ no espaço e, $x_{ij}$, o peso de um termo $A_i$ no documento $j$, temos que a semelhança entre duas instâncias $X_1$ e $X_2$ pode ser definida como:
 
 \begin{equation}\label{eqn::distancia_texto}
     cosSim(X_1, X_2) = \frac{  x_{i1} \cdot x_{i2} }{ ||X_1|| \cdot ||X_2|| }
@@ -264,7 +264,7 @@ Visualmente, o que queremos com a modificação realizada no algoritmo dos vizin
 Levando em consideração o que foi mostrado até esse ponto, sendo $X_1$ a instância de teste, $X_2$ a de treino e $c_{X_2}$ a classe a qual nossa instância de treinamento pertence, modificamos a Equação~\ref{eqn::distancia_cat} para:
 
 \begin{equation} \label{eqn::distancia_cat_cred}
-   dist(X_1, X_2) = \sum_{1 < i < d \ \wedge \ x_{i1} \neq x_{i2}} 1.0 + \frac{1.0}{1.0 + Cr_{cont}(x_{i1}, c_{X_2} ))}
+   dist(X_1, X_2) = \sum_{1 < i < D\ \wedge \ x_{i1} \neq x_{i2}} 1.0 + \frac{1.0}{1.0 + Cr_{cont}(x_{i1}, c_{X_2} ))}
 \end{equation}
 
 Para estarmos de acordo com o efeito mostrado na Figura \ref{fig::KNNantesedepois}, apenas adicionamos um termo relacionado a credibilidade na Equação~\ref{eqn::distancia_cat}, um fator inversamente proporcional ao valor calculado para a credibilidade. Note que teríamos os mesmos resultados se excluíssemos o primeiro 1.0 existente dentro do somatório da equação acima, porém o que faríamos seria aproximar os exemplos com maior credibilidade ao invés de afastar os com menor.
@@ -278,7 +278,7 @@ Decidimos, assim como feito na incorporação da credibilidade nos atributos cat
     dist(X_1, X_2) = \frac{  Cr_{cont}(x_{i1}, c_{X_2}) \cdot x_{i1} \cdot x_{i2} }{ ||X'_1|| \cdot ||X_2|| }
 \end{equation}
 
-Repare que utilizamos $||X'_1||$ como a norma do vetor $X_1$, levando em conta a credibilidade em relação à classe da instância de treino $X_2$, logo teríamos que $||X'_1|| = \sqrt{ ( Cr_{cont}(x_{11}, c_{X_2}) \cdot x_{11} )^2 + ( Cr_{cont}(x_{21}, c_{X_2}) \cdot x_{21} )^2 +  ... +  ( Cr_{cont}(x_{d1}, c_{X_2}) \cdot  x_{d1} )^2}$.
+Repare que utilizamos $||X'_1||$ como a norma do vetor $X_1$, levando em conta a credibilidade em relação à classe da instância de treino $X_2$, logo teríamos que $||X'_1|| = \sqrt{ ( Cr_{cont}(x_{11}, c_{X_2}) \cdot x_{11} )^2 + ( Cr_{cont}(x_{21}, c_{X_2}) \cdot x_{21} )^2 +  ... +  ( Cr_{cont}(x_{D1}, c_{X_2}) \cdot  x_{D1} )^2}$.
 Novamente, assim como discutido na Seção~\ref{subsubsec::nbcredconteudo}, existem diversas métricas que podemos utilizar para inferirmos a credibilidade de um elemento, a fim de melhorarmos a capacidade do algoritmo \textit{KNN} em classificar. Algumas dessas métricas já foram previamente discutidas e o serão novamente ao longo desse trabalho, entretanto, voltamos a frisar que a escolha de uma função de credibilidade é dependente ao contexto que a mesma está inserida e combinar as métricas disponíveis é uma tarefa combinacional cara e, para tanto, estamos usando Programação Genética como será discutido em detalhes no Capítulo~\ref{cap::programacao_genetica}.
 
 \subsection{\textit{KNN} com credibilidade baseada em relacionamentos.}

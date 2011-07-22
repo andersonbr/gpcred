@@ -418,7 +418,7 @@ void Statistics::retrieveCategoricalMetrics(){
                 GSS[idx] = gss;
                 CHI[idx] = chiVal;
                 CC[idx] = ccVal;
-                TFIDF[idx] = occurrences;
+//->matar                TFIDF[idx] = occurrences;
 
             }
             Gini[idxa] = giniVal;
@@ -574,14 +574,20 @@ void Statistics::retrieveContentMetrics() {
             if( lesserThan(tficfVal, minTFICF) ) minTFICF = tficfVal;
             if( greaterThan(tficfVal, maxTFICF) ) maxTFICF = tficfVal;
 
+
+            double idfclass = log10(  my_div( ((double) (getValue(sumDFperClass, *classIt) + 1.0)) , ((double) (getValue(DFperClass, idx) + 1.0 ))));
+            //IDFc[idx] = idfclass;
+
             /// TFIDF
             double tfidfVal = (double)getValue(TFperClass, idx) * idf;
+            //double tfidfVal = (double)getValue(TFperClass, idx) * idfclass;
             TFIDF[idx] = tfidfVal;
             if( lesserThan(tfidfVal, minTFIDF) ) minTFIDF = tfidfVal;
             if( greaterThan(tfidfVal, maxTFIDF) ) maxTFIDF = tfidfVal;
 
             ///CTD : Category term Descriptor
             double ctdVal = getValue(TFIDF, idx) * ICF * idf;
+            //double ctdVal = getValue(TFIDF, idx) * ICF * idfclass;
             CTD[idx] = ctdVal;
             if( lesserThan(ctdVal , minCTD) ) minCTD = ctdVal;
             if( greaterThan(ctdVal , maxCTD) ) maxCTD = ctdVal;
