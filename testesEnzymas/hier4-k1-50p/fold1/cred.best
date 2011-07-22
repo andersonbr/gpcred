@@ -25,3 +25,12 @@ GP: (Pow (Log (Pow (Pow JaccardSimilarity Neighborhood1) (+ InverseLogSimilarity
 Best of generation 8 (Fitness = 4.41738, Structural Complexity = 47)
 GP: (Pow (Log (Pow (Pow JaccardSimilarity Neighborhood1) (+ InverseLogSimilarity InverseLogSimilarity)) (Pow Authority CoCitation)) (+ (+ (- PageRank Closeness) (% BibCoupling Neighborhood2)) (% (% (Pow Authority CoCitation) (% (Pow Authority CoCitation) (- Neighborhood3 EigenVector))) (% (% (% (Pow Authority CoCitation) (* Neighborhood2 Neighborhood3)) (+ InverseLogSimilarity InverseLogSimilarity)) (+ InverseLogSimilarity InverseLogSimilarity)))))
 
+Best of generation 9 (Fitness = 4.41738, Structural Complexity = 47)
+GP: (Pow (Log (Pow (Pow JaccardSimilarity Neighborhood1) (+ InverseLogSimilarity InverseLogSimilarity)) (Pow Authority CoCitation)) (+ (+ (- PageRank Closeness) (% BibCoupling Neighborhood2)) (% (% (Pow Authority CoCitation) (% (Pow Authority CoCitation) (- Neighborhood3 EigenVector))) (% (% (% (Pow Authority CoCitation) (* Neighborhood2 Neighborhood3)) (+ InverseLogSimilarity InverseLogSimilarity)) (+ InverseLogSimilarity InverseLogSimilarity)))))
+
+Best of generation 10 (Fitness = 4.41738, Structural Complexity = 43)
+GP: (Pow (Log (Pow (Pow JaccardSimilarity Neighborhood1) (+ InverseLogSimilarity InverseLogSimilarity)) (Pow Authority CoCitation)) (+ (+ (- PageRank Closeness) (% BibCoupling Neighborhood2)) (% (% (Pow Authority CoCitation) (+ InverseLogSimilarity InverseLogSimilarity)) (% (% (% (Pow Authority CoCitation) (* Neighborhood2 Neighborhood3)) (+ InverseLogSimilarity InverseLogSimilarity)) (+ InverseLogSimilarity InverseLogSimilarity)))))
+
+Best of generation 11 (Fitness = 4.41738, Structural Complexity = 57)
+GP: (Pow (Log (Pow (Pow JaccardSimilarity Neighborhood1) (+ InverseLogSimilarity InverseLogSimilarity)) (Pow (Log Neighborhood3 (- PageRank Closeness)) (% (Pow Authority CoCitation) (+ InverseLogSimilarity InverseLogSimilarity)))) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (% (Pow Authority CoCitation) (% (Pow Authority CoCitation) (- Neighborhood3 EigenVector))) (% (% (% (Pow Authority CoCitation) (* Neighborhood2 Neighborhood3)) (+ InverseLogSimilarity InverseLogSimilarity)) (+ InverseLogSimilarity InverseLogSimilarity)))))
+
