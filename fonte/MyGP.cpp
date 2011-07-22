@@ -226,6 +226,7 @@ double MyGene::evaluate(MyGP &gp, string id, string className = "", int graphId)
                 break;
 
             case IDF:
+                //returnValue = stats->getIDFclass(id, className);
                 returnValue = stats->getIDF(id);
                 break;
 
