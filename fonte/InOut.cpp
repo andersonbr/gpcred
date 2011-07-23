@@ -105,7 +105,8 @@ void InOut::read(const char* filename, int option){
 			vector<string> textTokens;
 			vector<string> catTokens;
             vector<double> numTokens;
-			Tokenizer::stringTokenize(line, textTokens, ";");
+            vector<int> freqTextTokens;
+			Tokenizer::stringTokenize(line, textTokens, freqTextTokens, ";");
 			
             //Blank line
 			if(textTokens.size() < 3) continue;
@@ -116,7 +117,7 @@ void InOut::read(const char* filename, int option){
 			string docClass = Tokenizer::cleanClassToken(textTokens[2]);
 			string id = textTokens[0];
 
-			Example e(id,docClass,textTokens,catTokens,numTokens);
+			Example e(id,docClass,textTokens,freqTextTokens,catTokens,numTokens);
 
 			switch(option){
 			

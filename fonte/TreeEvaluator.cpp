@@ -45,7 +45,8 @@ void TreeEvaluator::evaluateFromFile(string fileName){
         string line = "";
         while(std::getline(file,line)){
             vector<string> tokens;
-            Tokenizer::stringTokenize(line, tokens, " ");
+            vector<int> freqTokens;
+            Tokenizer::stringLineTokenize(line, tokens, " ");
             if(tokens.size() == 0) continue;
 
             cout<<"==========================================================" <<endl;

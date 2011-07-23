@@ -9,15 +9,178 @@
 \section{Credibilidade baseada no Conteúdo}
 \label{sec::pg_cred_baseada_conteudo}
 
-\subsection{Métricas Modeladas.}
+Nessa seção apresentamos várias métricas utilizadas na construção dos indivíduos usados pelo Programa Genético. Elas foram modeladas diferentemente para os casos nos quais os atributos são textuais ou categóricos, sendo que a modelagem para atributos numéricos foi deixada como trabalho futuro. Em suma, métricas que realizam cálculos baseados em frequência de termos e documentos não puderam ser usadas para atributos categóricos, porém todas as demais foram. Dessa forma, na Seção~\ref{subsec::pg_metricas_conteudo_textual} temos as métricas que foram modeladas única e exclusivamente para serem utilizadas na tarefa de classificação de textos e na Seção~\ref{subsec::pg_metricas_conteudo} temos as métricas que foram estendidas e estão sendo usadas para classificação categórica, além da textual.
+
+\subsection{Métricas Modeladas Para Atributos Textuais Exclusivamente.}
+\label{subsec::pg_metricas_conteudo_textual}
+
+As métricas usadas para atributos textuais consistem em algumas variantes do \textit{TFIDF}, métrica mais difundida entre as apresentadas. Na tabela~\ref{table::metricas_textuais}, temos apresentados algumas expressões amplamente utilizadas nas métricas aqui listadas.
+
+\begin{table}[ht*]
+\centering
+\begin{tabular}{|c|c|}
+\toprule
+    \textbf{Expressão} & \textbf{Explicação} \\
+\midrule
+    $N$           & Número de documentos na base de treinamento. \tabularnewline \hline
+    $M$           & Número de classes da coleção. \tabularnewline \hline
+    $DF_{x_i} $   & Número de documentos do conjunto do treino que contém o termo $x_i$. \tabularnewline \hline
+    $DF_{x_ic_j}$ & Número de documentos do treino com o termo $x_i$ e pertencentes a classe $c_j$. \tabularnewline \hline
+    $CF_{x_i}$    & Número de classes em que o termo $x_i$ ocorre. \tabularnewline \hline 
+    $F_{x_i}$     & Número de vezes que o termo $x_i$ aparece nos documentos de treinamento. \tabularnewline \hline
+    $F_{x_ic_j}$  & Número de vezes que o termo $x_i$ aparece em documentos da classe $c_j$ no treino. \tabularnewline 
+\bottomrule
+\end{tabular}
+\label{table::metricas_textuais}
+\caption{Explicação das principais expressões utilizadas para definição das métricas para atributos textuais.}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Frequência do Termo (TF)}
+\label{subsubsection::sumtf}
+
+A frequência de um termo, \textit{TF} da expressão em inglês, \textit{Term Frequency}, é simplesmente o número de vezes que um termo aparece na coleção de treinamento. Utilizamos o logaritmo desse valor como um fator normalizador, para evitar que termos muito frequentes dominem a função de credibilidade:
+\begin{equation}\label{eqn::sumtf}
+   TF(x_i) = 1.0 + \log{ ( F_{x_i} ) }
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Frequência do Termo por Classe (TFClasse)}
+\label{subsubsection::tf}
+
+A frequência de um termo em uma classe, \textit{TFClasse}, segue o mesmo padrão utilizado pela métrica \textit{TF}, porém dessa vez contamos apenas os termos que aparecem em uma dada classse $c_j$:
+\begin{equation}\label{eqn::tf}
+   TFClasse(x_i, c_j) = 1.0 + \log{ ( F_{x_ic_j} ) }
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Frequência dos Documentos por Termo (DF)}
+\label{subsubsection::df}
+
+A métrica \textit{DF}, do inglês, \textit{Document Frequency}, procura analisar a importância de um termo em relação ao número de documentos que o mesmo aparece:
+\begin{equation}\label{eqn::df}
+   DF(x_i) = 1.0 + \log{ ( DF_{x_i} ) }
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Frequência de Documentos por Termo-Classe (DFClasse)}
+\label{subsubsection::sumdf}
+
+A métrica \textit{DFClasse} apenas avalia o número de documentos que um termo aparece em relação a uma classe específica, tentando capturar a importância de um termo para uma classe em relação ao número de documentos onde aquele termo está presente:
+\begin{equation}\label{eqn::sumtf}
+   DFClasse(x_i,c_j) = 1.0 + \log{ ( DF_{x_ic_j} ) }
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Inverso da Frequência de Documentos (IDF)}
+\label{subsubsection::idf}
+
+O Inverso da Frequência de Documentos, \textit{IDF} do inglês \textit{Inverse Document Frequency}, é uma conhecida métrica que avalia a popularidade de um determinado termo em um conjunto de documentos. Temos que quanto mais popular é um termo ao longo dos documentos de uma coleção, pior é sua capacidade de discriminação, logo:
+\begin{equation}\label{eqn::tficf}
+   IDF(x_i) = \log( \frac{|N|} {DF(x_i)} )
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Inverso da Frequência de Documentos por Classe (IDFClasse)}
+\label{subsubsection::idf}
+
+O Inverso da Frequência de Documentos por classe, \textit{IDFClasse} é uma versão do \textit{IDF} em selecionamos somente documentos de uma dada classe:
+\begin{equation}\label{eqn::tficf}
+   IDFClasse(x_i,c_j) = \log( \frac{DF_{c_j}} {DF(x_ic_j)} )
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Frequência do Termo Inverso da Frequência de Documentos (TFIDF)}
+\label{subsubsection::tfidf}
+
+Uma das métricas de pesos para atributos em classificação de textos mais populares na literatura é o \textit{TFIDF} (do inglês, \textit{Term Frequency Inversed Document Frequency}), ver \cite{Salton88}. O \textit{TFIDF} combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento é mais importante que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de TFIDF é nada mais que a multiplicação das métricas TF e IDF, como já esperávamos:
+\begin{equation}\label{eqn::tficf}
+   TFIDF(x_i, c_j) =  F_{x_ic_j} \cdot \log( \frac{DF_{c_j}}{ DF_{x_ic_j} } )
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Frequência do Termo Inverso da Frequência da Classe (TFICF)}
+\label{subsubsection::tficf}
+
+O TFICF (do inglês, \textit{Term Frequency Inversed Class Frequency}) é uma variação do esquema TFIDF (ver Seção~\ref{subsubsection::tfidf}). Novamente, TF se refere a quanto importante é um termo em uma classe, pois trata-se de sua frequência; por sua vez, ICF é interpretado como a frequência relativa de um termo em uma classe. Como é possível observar, não existe uma forma de diferenciarmos entre um termo que aparece frequentemente em um pequeno subconjunto de documentos e um termo que está presente em um grande número de documentos entre as classes. Como mostrado por~\cite{ChihHow04}, a fórmula para TFICF é:
+\begin{equation}\label{eqn::tficf}
+   TFICF(x_i, c_j) = N_{x_ic_j} \cdot \log( \frac{M}{CF_{x_i}} )
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Category Term Description}
+\label{subsubsection::ctd}
+
+Definido por~\cite{ChihHow04}, \textit{Category Term Description} é uma métrica de seleção de atributos para classificação textual baseada em TFIDF (Seção~\ref{subsubsection::tfidf}) e TFICF (Seção~\ref{subsubsection::tficf}). How et al. propõe uma melhoria ao TDICF acreditando que quanto menos um termo ocorre entre os documentos, maior o poder discriminativo daquele termo, logo:
+\begin{equation}\label{eqn::cdt}
+   CDT(x_i, c_j) = TFClass(x_i, c_j) \cdot ICF(x_i, c_j) \cdot IDFClass(x_i,c_j)
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Dominância}
+\label{subsubsection::dom}
+
+Dominância é uma métrica originalmente proposta em~\cite{Zaiane02} e utilizada mais recentemente no trabalho de~\cite{Rocha08} para criação do que foi chamado de janela temporal de um documento. Em suma, utilizado exclusivamente em classificação textual, o método normaliza a frequência de um documento em um classe por todas as classes existentes, logo:
+
+\begin{equation}\label{eqn::dom}
+   Dominancia(x_i, c_j) = \frac{ DF_{x_ic_j} } { \sum\limits_{c_k \in \mathbb{C}} DF_{ x_ic_k } } 
+\end{equation}
+
+\subsubsection{MaxTFIDF}
+\label{subsubsection::maxtfidf}
+
+\subsubsection{MaxTFICF} 
+\label{subsubsection::maxtficf}
+
+\subsubsection{MaxCTD}
+\label{subsubsection::maxctd}
+
+\subsubsection{MaxDom}
+\label{subsubsection::maxdom}
+
+
+
+\subsection{Métricas Modeladas Para Atributos Textuais e Categóricos.}
 \label{subsec::pg_metricas_conteudo}
+
+
+Todas as métricas apresentadas nessa seção foram utilizadas...foram?!
+
+\begin{table}[ht*]
+\centering
+\begin{tabular}{|c|c|}
+\toprule
+    \textbf{Métrica} & \textbf{Explicação} \\
+\midrule
+    $N$           & Número de documentos na base de treinamento. \tabularnewline \hline
+    $M$           & Número de classes da coleção. \tabularnewline \hline
+    $DF_{x_i} $   & Número de documentos do conjunto do treino que contém o termo $x_i$. \tabularnewline \hline
+    $DF_{x_ic_j}$ & Número de documentos do treino com o termo $x_i$ e pertencentes a classe $c_j$. \tabularnewline \hline
+    $CF_{x_i}$    & Número de classes em que o termo $x_i$ ocorre. \tabularnewline \hline 
+    $F_{x_i}$     & Número de vezes que o termo $x_i$ aparece nos documentos de treinamento. \tabularnewline \hline
+    $F_{x_ic_j}$  & Número de vezes que o termo $x_i$ aparece em documentos da classe $c_j$ no treino. \tabularnewline 
+\bottomrule
+\end{tabular}
+\label{table::metricas_textuais}
+\caption{Explicação das principais expressões utilizadas para definição das métricas para atributos textuais.}
+\end{table}
+
 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Medida de Ambiguidade - Ambiguity Measure (AM)}
 \label{subsubsection::am}
 
-A medida de ambiguidade (AM de \textit{Ambiguity Measure}) foi definida por~\cite{Mengle08} e utilizada como um método de seleção de atributos. Ele atribui valores maiores para os atributos considerados menos ambíguos, onde um atributo é não ambíguo quando sua presença indica com um alto grau de confiança que o exemplo pertence a uma classe específica. Dado que $N_{x_{i}c{j}}$ é o número de vezes que temos o valor $x_i$ para o atributos $A_i$ na classe $c_j$, podemos calcular $AM(x_i, c_j)$ como:
+A medida de ambiguidade (AM de \textit{Ambiguity Measure}) foi definida por~\cite{Mengle08} e utilizada como um método de seleção de atributos. Ela atribui valores maiores para os atributos considerados menos ambíguos, onde um atributo é não ambíguo quando sua presença indica com um alto grau de confiança que o exemplo pertence a uma classe específica. Dado que $N_{x_{i}c{j}}$ é o número de vezes que temos o valor $x_i$ para o atributos $A_i$ na classe $c_j$, podemos calcular $AM(x_i, c_j)$ como:
 \begin{equation}\label{eqn::am}
    AM(x_i, c_j) = \frac{ N_{x_{i}c_{j}}}{\sum\limits_{c_k \in \mathbb{C}} N_{x_{i}c_{k}}}.
 \end{equation}
@@ -128,111 +291,14 @@ A razão de chances tem sido utilizada para selecionamento de atributos por \cit
 \end{equation}
 em que $P(x_i, c_j)$ é a probabilidade de termos o atributo $A_i$ com valor $x_i$ em exemplos que pertencem a classe $c_j$ e $P(x_i|\overline{c_j})$ é a probabilidade de termos $x_i$ em outras classes que não sejam $c_j$.
 
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Frequência dos Documentos por Termo}
-\label{subsubsection::df}
-
-\begin{equation}\label{eqn::df}
-   DF(x_i) = 1.0 + \log{ ( DF_{x_i} ) }
-\end{equation}
-
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{Frequência de Docummentos por Termo-Classe}
-\label{subsubsection::sumdf}
-
-\begin{equation}\label{eqn::sumtf}
-   DFporClasse(x_i) = 1.0 + \log{ ( DF_{x_ic_k} ) }
-\end{equation}
-
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Inverso da Frequência de Documentos (IDF)}
-\label{subsubsection::idf}
-
-O Inverso da Frequência de Documentos, IDF do inglês \textit{Inverse Document Frequency}, é uma conhecida métrica que avalia a popularidade de um determinado termo em um conjunto de documentos. Temos que quanto mais popular é um termo ao longo dos documentos de uma coleção, pior é sua capacidade de discriminação, logo:
-\begin{equation}\label{eqn::tficf}
-   IDF(x_i) = log( \frac{|N|} {DF(x_i)} )
-\end{equation}
-Onde temos $N$ documentos na base de treinamento da coleção e $DF_{x_i}$ é o número de documentos que apresentam o termo $x_i$.
-
-
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Frequência do Termo}
-\label{subsubsection::sumtf}
-\begin{equation}\label{eqn::sumtf}
-   TF(x_i) = 1.0 + \log{ ( N_{x_i} ) }
-\end{equation}
-
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Frequência do Termo por Classe}
-\label{subsubsection::tf}
-TF per class...
-\begin{equation}\label{eqn::tf}
-   TFporClasse(x_i, c_j) = 1.0 + \log{ ( N_{x_ic_j} ) }
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{TFIDF}
-\label{subsubsection::tfidf}
-
-Uma das métricas de pesos para atributos em classificação de textos mais populares na literatura é o TFIDF (do inglês, \textit{Term Frequency Inversed Document Frequency}), ver \cite{Salton88}. O TFIDF combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento é mais importante que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de TFIDF é nada mais que a multiplicação das métricas TF e IDF, como já esperávamos:
-\begin{equation}\label{eqn::tficf}
-   TFIDF(x_i, c_j) =  N_{x_ic_j} \cdot log( \frac{DF_{c_j}}{ DF_{x_ic_j} } )
-\end{equation}
-Onde $N_{x_ic_j}$ é o número de vezes que temos o termo $x_i$ na classe $c_j$, $DF_{c_j}$ é o número de documentos da classe $c_j$ e, finalmente, $DF_{x_ic_j}$ é o número de documentos que contém o termo $x_i$ e são da classe $c_j$.
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{TFICF}
-\label{subsubsection::tficf}
-
-O TFICF (do inglês, \textit{Term Frequency Inversed Class Frequency}) é uma variação do esquema TFIDF (ver Seção~\ref{subsubsection::tfidf}). Novamente, TF se refere a quanto importante é um termo em uma classe, pois trata-se de sua frequência; por sua vez, ICF é interpretado como a frequência relativa de um termo em uma classe. Como é possível observar, não existe uma forma de diferenciarmos entre um termo que aparece frequentemente em um pequeno subconjunto de documentos e um termo que está presente em um grande número de documentos entre as classes. Como mostrado por~\cite{ChihHow04}, a fórmula para TFICF é:
-\begin{equation}\label{eqn::tficf}
-   TFICF(x_i, c_j) = N_{x_ic_j} \cdot log( \frac{M}{CF_{x_i}} )
-\end{equation}
-Onde temos que $N_{x_ic_j}$ é o número de vezes que temos o termo $x_i$ na classe $c_j$, $M$, como previamente definido, é o número de classes da coleção e $CF_{x_i}$ é o número de classes que contém o termo $x_i$. 
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Category Term Description}
-\label{subsubsection::ctd}
-
-Definido por~\cite{ChihHow04}, \textit{Category Term Description} é uma métrica de seleção de atributos para classificação textual baseada em TFIDF (Seção~\ref{subsubsection::tfidf}) e TFICF (Seção~\ref{subsubsection::tficf}). How et al. propõe uma melhoria ao TDICF acreditando que quanto menos um termo ocorre entre os documentos, maior o poder discriminativo daquele termo, logo:
-\begin{equation}\label{eqn::cdt}
-   CDT(x_i, c_j) = TF(x_i, c_j) \cdot ICF(x_i, c_j) \cdot IDF(x_i,c_j) =  N_{x_ic_j} \cdot log( \frac{M}{CF_{x_i}} ) \cdot  log( \frac{DF_{c_j}}{ DF_{x_ic_j} } )
-\end{equation}
-Onde temos que $N_{x_ic_j}$ é o número de vezes que temos o termo $x_i$ na classe $c_j$, $M$ é o número de classes da coleção, $CF_{x_i}$ é o número de classes que contém o termo $x_i$, $DF_{c_j}$ é o número de documentos da classe $c_j$ e $DF_{x_ic_j}$ é o número de documentos que contém o termo $x_i$ e são da classe $c_j$.
-
-%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Dominância}
-\label{subsubsection::dom}
-
-Dominância é uma métrica originalmente proposta em~\cite{Zaiane02} e utilizada mais recentemente no trabalho de~\cite{Rocha08} para criação do que foi chamado de janela temporal de um documento. Em suma, utilizado exclusivamente em classificação textual, o método normaliza a frequência de um documento em um classe por todas as classes existentes, logo:
-
-\begin{equation}\label{eqn::dom}
-   Dominancia(x_i, c_j) = \frac{ DF_{x_ic_j} } { \sum\limits_{c_k \in \mathbb{C}} DF_{ x_ic_k } } 
-\end{equation}
-
-
-
-
-\subsubsection{MaxDom}
-\label{subsubsection::maxdom}
+\subsubsection{MaxAM}
+\label{subsubsection::maxam}
 
 \subsubsection{MaxIG}
 \label{subsubsection::maxig}
 
-\subsubsection{MaxAM}
-\label{subsubsection::maxam}
-
 \subsubsection{MaxCHI}
 \label{subsubsection::maxchi}
-
-\subsubsection{MaxGSS}
-\label{subsubsection::maxgss}
 
 \subsubsection{MaxCC}
 \label{subsubsection::maxcc}
@@ -240,16 +306,11 @@ Dominância é uma métrica originalmente proposta em~\cite{Zaiane02} e utilizad
 \subsubsection{MaxOR}
 \label{subsubsection::maxor}
 
-\subsubsection{MaxCTD}
-\label{subsubsection::maxctd}
+\subsubsection{MaxGSS}
+\label{subsubsection::maxgss}
 
-\subsubsection{MaxTFIDF}
-\label{subsubsection::maxtfidf}
 
-\subsubsection{MaxTFICF} 
-\label{subsubsection::maxtficf}
 
-\cite{ChihHow04}
 
 \section{Credibilidade baseada em Grafos}
 \label{sec::pg_cred_baseada_grafos}

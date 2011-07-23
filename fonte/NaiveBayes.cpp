@@ -87,11 +87,12 @@ void NaiveBayes::train(Examples& exs){
 //      cout<<" Example id = " << (e)->getId()<<endl;
 
 		vector<string> tokens = (e)->getTextTokens();
+		vector<int> freqTextTokens = (e)->getTextFrequency();
 		string exampleClass = (e)->getClass();
 
 //      cout<<" Tokens categoricos  =  " << tokens.size() << endl;
-		for(unsigned int i = 3; i < tokens.size()-1; i+=2){
-			int tf = atoi(tokens[i+1].c_str());
+		for(unsigned int i = 3; i < tokens.size(); i++){
+			int tf = freqTextTokens[i-3];
 			string termId = tokens[i];
 			sumTF[exampleClass] += tf * (getContentCredibility(termId,exampleClass));
 		}
@@ -219,6 +220,7 @@ void NaiveBayes::test(Examples& exs){
         vector<string> textTokens = ex.getTextTokens();	
         vector<string> catTokens = ex.getCategoricalTokens();	
         vector<double> numTokens = ex.getNumericalTokens();	
+        vector<int> freqTextTokens = ex.getTextFrequency();	
         string id = ex.getId();
         string classId = ex.getClass();
 
@@ -267,10 +269,12 @@ void NaiveBayes::test(Examples& exs){
                 probCond += log( catCred * my_div(occurrences,freq));
             }
 
+//            cout<<"size = " << textTokens.size() << " size freq = " << freqTextTokens.size()<<endl;
             //text tokens evaluation
-            for(unsigned int i = 3 ; i < textTokens.size(); i+=2){
+            for(unsigned int i = 3 ; i < textTokens.size(); i++){
+              //   cout<<textTokens[i] << " -- " << freqTextTokens[i-3];
                 string termId = textTokens[i];
-                int tf = atoi(textTokens[i+1].c_str());
+                int tf = freqTextTokens[i-3];
                 double numerator = computeConditionalNumerator(termId, *classIt);
                 double fraction = my_div(numerator,condDenominator[*classIt]);
                 probCond += (tf * log(fraction)); 

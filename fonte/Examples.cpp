@@ -11,6 +11,10 @@ vector<string>& Example::getTextTokens(){
 	return textTokens;
 }
 
+vector<int>& Example::getTextFrequency(){
+	return freqTextTokens;
+}
+
 vector<string>& Example::getCategoricalTokens(){
 	return categoricalTokens;
 }
