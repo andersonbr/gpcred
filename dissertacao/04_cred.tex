@@ -31,8 +31,8 @@ As métricas usadas para atributos textuais consistem em algumas variantes do \t
     $F_{x_ic_j}$  & Número de vezes que o termo $x_i$ aparece em documentos da classe $c_j$ no treino. \tabularnewline 
 \bottomrule
 \end{tabular}
-\label{table::metricas_textuais}
 \caption{Explicação das principais expressões utilizadas para definição das métricas para atributos textuais.}
+\label{table::metricas_textuais}
 \end{table}
 
 
@@ -153,7 +153,8 @@ Dominância é uma métrica originalmente proposta em~\cite{Zaiane02} e utilizad
 \label{subsec::pg_metricas_conteudo}
 
 
-Todas as métricas apresentadas nessa seção foram utilizadas...foram?!
+Todas as métricas apresentadas nessa seção foram utilizadas para geração de uma função de credibilidade tanto para atributos textuais quanto para os categóricos. Elas são inspiradas em probabilidades que podem ser facilmente calculadas dos exemplos contidos no conjunto de treinamento. Destacamos que a probabilidade condicional $P(x_i|c_j)$ é a principal métrica, pois as demais, complexas ou não, são derivações dessa. Pretendemos através da Tabela~\ref{table::metricas_textuais_categoricos} mostrar as definições utilizadas para definição dos atributos categórico, lembrando que quando se trata de um problema de classificação de texto deve-se recorrer a Tabela~\ref{table::metricas_textuais}.
+
 
 \begin{table}[ht*]
 \centering
@@ -161,51 +162,46 @@ Todas as métricas apresentadas nessa seção foram utilizadas...foram?!
 \toprule
     \textbf{Métrica} & \textbf{Explicação} \\
 \midrule
-    $N$           & Número de documentos na base de treinamento. \tabularnewline \hline
+    $N$           & Número de exemplos na base de treinamento. \tabularnewline \hline
     $M$           & Número de classes da coleção. \tabularnewline \hline
-    $DF_{x_i} $   & Número de documentos do conjunto do treino que contém o termo $x_i$. \tabularnewline \hline
-    $DF_{x_ic_j}$ & Número de documentos do treino com o termo $x_i$ e pertencentes a classe $c_j$. \tabularnewline \hline
-    $CF_{x_i}$    & Número de classes em que o termo $x_i$ ocorre. \tabularnewline \hline 
-    $F_{x_i}$     & Número de vezes que o termo $x_i$ aparece nos documentos de treinamento. \tabularnewline \hline
-    $F_{x_ic_j}$  & Número de vezes que o termo $x_i$ aparece em documentos da classe $c_j$ no treino. \tabularnewline 
+    $F_{x_ic_j}$  & Número de vezes que temos o atributo $A_i$ com o valor $x_i$ em exemplos da classe $c_j$. \tabularnewline \hline
+    $F_{c_j}$     & Número de vezes que o atributo $A_j$ assume o valor $x_i$ em exemplos da classe $c_j$. \tabularnewline 
 \bottomrule
 \end{tabular}
-\label{table::metricas_textuais}
-\caption{Explicação das principais expressões utilizadas para definição das métricas para atributos textuais.}
+\caption{Explicação das principais expressões utilizadas para definição das métricas para atributos categóricos.}
+\label{table::metricas_textuais_categoricos}
 \end{table}
 
-
-
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Medida de Ambiguidade - Ambiguity Measure (AM)}
+\subsubsection{Medida de Ambiguidade (AM)}
 \label{subsubsection::am}
 
-A medida de ambiguidade (AM de \textit{Ambiguity Measure}) foi definida por~\cite{Mengle08} e utilizada como um método de seleção de atributos. Ela atribui valores maiores para os atributos considerados menos ambíguos, onde um atributo é não ambíguo quando sua presença indica com um alto grau de confiança que o exemplo pertence a uma classe específica. Dado que $N_{x_{i}c{j}}$ é o número de vezes que temos o valor $x_i$ para o atributos $A_i$ na classe $c_j$, podemos calcular $AM(x_i, c_j)$ como:
+A medida de ambiguidade (AM de \textit{Ambiguity Measure}) foi definida por~\cite{Mengle08} e utilizada como um método de seleção de atributos. Ela atribui valores maiores para os atributos considerados menos ambíguos, onde um atributo é não ambíguo quando sua presença indica com um alto grau de confiança que o exemplo pertence a uma classe específica. Podemos calcular $AM(x_i, c_j)$ como:
 \begin{equation}\label{eqn::am}
    AM(x_i, c_j) = \frac{ N_{x_{i}c_{j}}}{\sum\limits_{c_k \in \mathbb{C}} N_{x_{i}c_{k}}}.
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Probabilidade Condicional}
+\subsubsection{Probabilidade Condicional ($P(x_i|c_j)$)}
 \label{subsubsection::pc}
 
 A probabilidade condicional $P(x_i|c_j)$ provém do algoritmo \textit{Naïve Bayes} como foi discutido na Seção~\ref{subsec::cred_nb}.
 Temos dois modos de calcular $P(x_i|c_j)$, um para quando temos $A_i$ categórico e outro para quando estamos realizando classificação textual.
-Basicamente, a ideia de ambos é a mesma, para uma dada classe $c_j$, calculamos a probabilidade do atributo $A_i$ ter o valor $x_i$ entre todos possíveis. 
+A ideia principal de ambos é a mesma, para uma dada classe $c_j$, calculamos a probabilidade do atributo $A_i$ ter o valor $x_i$ entre todos possíveis. 
 Para classificação categórica, basta apenas contar quantas vezes $A_i$ vale $x_i$ para uma dada classe $c_j$:
     \begin{equation}\label{eqn::nbcattexto}
         P(x_i|c_j) = \frac{ N_{x_{i}c_{j}} }{ N_{c_{j}} } 
     \end{equation}
-Onde $N_{x_{i}c_{j}}$ é o número de vezes que temos o termo $x_i$ nos exemplos de treino da classe $c_j$ e $N_{c_{j}}$ é o número de exemplos de treino da classe $c_j$.
+%Onde $N_{x_{i}c_{j}}$ é o número de vezes que temos o termo $x_i$ nos exemplos de treino da classe $c_j$ e $N_{c_{j}}$ é o número de exemplos de treino da classe $c_j$.
         
 Para classificação textual, contamos quantas vezes um termo aparece em uma classe em comparação a todos os termos possíveis:
     \begin{equation}\label{eqn::nbcattexto}
         P(x_i|c_j) = \frac{ N_{x_{i}c_{j}} }{ \sum\limits^{D}_{k = 1} {  N_{x_{k}c_{j}}} } 
     \end{equation}
-Onde $N_{x_{i}c_{j}}$ é o número de vezes que temos o termo $x_i$ nos documentos de treino da classe $c_j$ e $D$ é o número o vocabulário conhecido no treino.
+%Onde $N_{x_{i}c_{j}}$ é o número de vezes que temos o termo $x_i$ nos documentos de treino da classe $c_j$ e $D$ é o número o vocabulário conhecido no treino.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Inverso da Probabilidade Condicional}
+\subsubsection{Inverso da Probabilidade Condicional ($P(x_i|c_j)$)}
 \label{subsubsection::pc'}
 Com o inverso da probabilidade condicional, calculamos a probabilidade de um atributo $A_i$ não valer $x_i$ para uma classe $c_j$. Podemos realizar esse calculo apenas com a seguinte fórmula:
 \begin{equation}\label{eqn::plinhattalquec}
@@ -213,7 +209,7 @@ Com o inverso da probabilidade condicional, calculamos a probabilidade de um atr
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Índice de Gini melhorado}
+\subsubsection{Índice de Gini melhorado (GINI)}
 \label{subsubsection::gini}
 
 O índice de Gini é uma métrica baseada na curva de Lorenz que mostra a função de distribuição acumulada de uma variável. Esse índice é amplamente utilizado nas Ciências Econômicas como uma métrica para avaliação da distribuição de renda pela população de um certo país ou região. Infelizmente por essa métrica, o Brasil é um dos países mais desiguais do mundo (ver \cite{cia-gini}). 
@@ -253,7 +249,7 @@ O teste \textit{CHI-quadrado - $\chi^2$} é utilizado no campo da Estatística p
 \begin{equation}\label{eqn::chi}
    CHI(x_i, c_j) = N \cdot \frac{ [ P(x_i|c_j) \cdot P(\overline{x_i}|\overline{c_j}) - P(x_i|\overline{c_j}) \cdot P(\overline{x_i}|c_j) ]^2 } {P(x_i) \cdot P(\overline{x_i}) \cdot P(c_j) \ \cdot P(\overline{c_j}) }
 \end{equation}
-como $P(x_i|c_j)$ a probabilidade de termos o atributo $A_i$ com valor $x_i$ dada a classe $c_j$ para classificação categórica e a probabilidade de um documento ter o termos $x_i$ dado que ele pertence a classe $c_j$. Valores próximos de zero indicam a falta de relação entre $x_i$ e $c_j$.
+%como $P(x_i|c_j)$ a probabilidade de termos o atributo $A_i$ com valor $x_i$ dada a classe $c_j$ para classificação categórica e a probabilidade de um documento ter o termos $x_i$ dado que ele pertence a classe $c_j$. Valores próximos de zero indicam a falta de relação entre $x_i$ e $c_j$.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Coeficiente de Correlação}
@@ -261,7 +257,7 @@ como $P(x_i|c_j)$ a probabilidade de termos o atributo $A_i$ com valor $x_i$ dad
 
 O Coeficiente de Correlação (CC) é uma métrica de seleção de atributos, variante da métrica \textit{CHI-Quadrada - $\chi^2$}, ver Seção~\ref{subsubsection::chi}. Definida por~\cite{Ng97}, temos que $(CC)^2 = \chi^2$, logo:
 \begin{equation}\label{eqn::ce}
-   CC(x_i, c_j) = \sqrt{N} \cdot \frac{ P(x_i|c_j) \cdot P(\overline{x_i}|\overline{c_j}) - P(x_i|\overline{c_j}) \cdot P(\overline{x_i}|c_j) } {\sqrt{ P(x_i) \cdot P(\overline{x_i}) \cdot P(c_j) \ \cdot P(\overline{c_j}) } }
+   CC(x_i, c_j) = \sqrt{N} \cdot \frac{ P(x_i|c_j) \cdot P(\overline{x_i}|\overline{c_j}) - P(x_i|\overline{c_j}) \cdot P(\overline{x_i}|c_j) } {\sqrt{ P(x_i) \cdot P(\overline{x_i}) \cdot P(c_j) \ \cdot P(\overline{c_j}) } }.
 \end{equation}
 como a mesma definição de $P(x_i|c_j)$ usada para a métrica $\chi^2$. Os valores positivos para CC correspondem a pertinência do valor de um atributo a uma classe, enquanto valores negativos indicam a não pertinência. Quanto mais positivo (negativo) são os valores de CC, mais fortemente o atributo é relacionado (não relacionado) a uma classe. Para fins de seleção de atributo, valores mais elevados de CC são os mais interessantes, pois mostram uma correlação positiva entre um atributo e uma classe. Em contraste com CC, $\chi^2$ também considera importantes correlações negativas entre atributos e classes, o que acaba resultando que atributos que fortemente indicam a falta de pertinência a uma classe são tão importantes quanto os que indicam.
 
@@ -270,9 +266,9 @@ como a mesma definição de $P(x_i|c_j)$ usada para a métrica $\chi^2$. Os valo
 \label{subsubsection::gss}
 O coeficiente Galavotti–Sebastiani–Simi (GSS) introduzido por~\cite{Galavotti00} é bastante similar a $\chi^2$, Seção~\ref{subsubsection::chi}, e pode ser definido como:
 \begin{equation}\label{eqn::gss}
-   GSS(x_i, c_j) = P(x_i|c_j) \cdot P(\overline{x_i}|\overline{c_j}) - P(x_i|\overline{c_j}) \cdot P(\overline{x_i}|c_j) 
+   GSS(x_i, c_j) = P(x_i|c_j) \cdot P(\overline{x_i}|\overline{c_j}) - P(x_i|\overline{c_j}) \cdot P(\overline{x_i}|c_j).
 \end{equation}
-sendo $P(x_i|c_j)$ definido na Seção~\ref{subsubsection::pc}. Da mesma forma como o Coeficiente de Correlação, Seção~\ref{subsubsection::cc}, valores positivos correspondem à pertinência de um atributo a uma categoria e, negativos, à não pertinência. 
+%sendo $P(x_i|c_j)$ definido na Seção~\ref{subsubsection::pc}. Da mesma forma como o Coeficiente de Correlação, Seção~\ref{subsubsection::cc}, valores positivos correspondem à pertinência de um atributo a uma categoria e, negativos, à não pertinência. 
 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -281,15 +277,15 @@ sendo $P(x_i|c_j)$ definido na Seção~\ref{subsubsection::pc}. Da mesma forma c
 
 Proposta originalmente por~\cite{Rijsbergen79}, a métrica Razão de Chances, do inglês \textit{Odds Ration} (OR), também é uma métrica de seleção de atributos. A ideia básica é que a distribuição de atributos em exemplos relevantes é diferente da distribuição de atributos em exemplos não relevantes. Isso quer dizer que poderíamos definir dois eventos A e B e calculamos a probabilidade de ocorrência de A dividida pela probabilidade de não ocorrência de A e a comparamos com a probabilidade ocorrência de B dividida pela probabilidade de não ocorrência de B:
 \begin{equation}\label{eqn::or}
-   OR(A, B) = \frac{\frac{A}{1-A}} {\frac{B}{1-B}} = \frac{ A \cdot ( 1 - B )} { B \cdot ( 1 - A ) } 
+   OR(A, B) = \frac{\frac{A}{1-A}} {\frac{B}{1-B}} = \frac{ A \cdot ( 1 - B )} { B \cdot ( 1 - A ) } .
 \end{equation}
 Uma razão de chances de 1.0 indica que ocorrer A ou B é igualmente provável, uma razão maior do que 1.0 indica que ocorrer A é mais provável, enquanto que uma razão de chances menor do que 1 indica que o evento B é tem uma probabilidade maior de ocorrer.
 
 A razão de chances tem sido utilizada para selecionamento de atributos por \cite{Mladenic98} fazendo com que A seja $P(x_i|c_j)$ e B seja $P(x_i,\overline{c_j})$. Logo,
 \begin{equation}\label{eqn::or}
-   OR(x_i, c_j) = \frac{ P(x_i|c_j) \cdot [ 1.0 - P(x_i|\overline{c_j}) ] }{ [ 1.0 - P(x_i|c_j) ] \cdot P(x_i|\overline{c_j})},
+   OR(x_i, c_j) = \frac{ P(x_i|c_j) \cdot [ 1.0 - P(x_i|\overline{c_j}) ] }{ [ 1.0 - P(x_i|c_j) ] \cdot P(x_i|\overline{c_j})}.
 \end{equation}
-em que $P(x_i, c_j)$ é a probabilidade de termos o atributo $A_i$ com valor $x_i$ em exemplos que pertencem a classe $c_j$ e $P(x_i|\overline{c_j})$ é a probabilidade de termos $x_i$ em outras classes que não sejam $c_j$.
+%em que $P(x_i, c_j)$ é a probabilidade de termos o atributo $A_i$ com valor $x_i$ em exemplos que pertencem a classe $c_j$ e $P(x_i|\overline{c_j})$ é a probabilidade de termos $x_i$ em outras classes que não sejam $c_j$.
 
 \subsubsection{MaxAM}
 \label{subsubsection::maxam}
@@ -310,35 +306,65 @@ em que $P(x_i, c_j)$ é a probabilidade de termos o atributo $A_i$ com valor $x_
 \label{subsubsection::maxgss}
 
 
-
-
 \section{Credibilidade baseada em Grafos}
 \label{sec::pg_cred_baseada_grafos}
 
 \subsection{Métricas modeladas.}
 \label{subsec::pg_metricas_grafos}
 
-asdf
+asdfsad
 
 
 \subsubsection{NeighborhoodSize3(id,className,graphId)}
+\label{subsubsection::neighborhoodsize}
+
 break;
-\subsubsection{getHubScore(id, className, graphId)}
-break;
-\subsubsection{getAuthority(id, className, graphId)}
-break;
-\subsubsection{getEigenVectorCentrality(id, className, graphId)}
-break;
-\subsubsection{getCloseness(id, className, graphId)}
-break;
-\subsubsection{getStrength(id, className, graphId)}
-break;
-\subsubsection{getConstraint(id, className, graphId)}
-break;
+%\subsubsection{getHubScore(id, className, graphId)}
+%break;
+%QUAL A TRADUCAO DE HUB?
+
+
+\subsubsection{Closeness}
+\label{subsubsection::closeness}
+
+De maneira intuitiva, dizemos que dois objetos estão próximos se eles estão a uma distância arbitrariamente pequena um do outro. Muitas vezes, entretanto, não é fácil estipular o que vem a ser uma distância pequena. Em teoria dos grafos, medimos a distância entre os vértices utilizando o calculo conhecido como caminho mínimo que conta o número mínimo de vértices que necessitamos atravessar para ligar dois vértices escolhidos em um grafo. \textit{Closeness} é uma métrica que calcula a proximidade de um vértice $v$ em relação a todo o grafo usando a média dos caminhos mínimos de $v$ para todos os outros vértices alcançáveis a partir de $v$, ver~\cite{Beauchamp65}. Dessa forma, podemos medir a importância de um vértice calculando quanto tempo em média é gasto para uma informação se espalhar a partir de um vértice $v$ para todo o resto do grafo. Por fim, são considerados vértices mais ``próximos'' aqueles que minimizam esse tempo.
+
+\subsubsection{Betweenness}
+\label{subsubsection::constraint}
+A métrica de centralidade denominada \textit{Betweenness} se baseia no fato que um vértice é importante em um grafo se ele está entre o caminho de outros vértice, ou seja, um vértice é importante por estar sempre conectando outros vértices em um grafo. O algoritmo do caminho mínimo é o que se utiliza para percorrer da melhor maneira possível uma dada distância em um grafo e portanto, \textit{betweenness} calcula a importância de um vértice contando quantas vezes aquele vértice participa do caminho mínimo entre quaisquer dois outros vértices do grafo em questão, ver~\cite{Sabidussi66}. Obviamente, um vértice central que está no caminho mínimo de vários outros tem mais acesso a informação que circula pelo grafo que um vértice periférico com poucas ligações.
+
+\subsubsection{Eigenvector Centrality}
+\label{subsubsection::eigenvector}
+A centralidade do Autovetor, em inglês \textit{Eigenvector Centrality}, também é uma medida de centralidade que avalia a importância de um vértice em todo o grafo. Ela atribui valores aos vértices baseados nas conexões que os mesmos têm, sendo que um vértice ganhará uma importância maior se estiver conectado a vértices de maior importância. De maneira matemática, dado que $x_i$ é o valor atribuído ao vértice $i$ e que podemos montar a matriz de adjacência $A$ com os $N$ vértices do grafo, na qual $A_{ij} = 1$ se existe uma aresta entre $i$ e $j$ e $A_{ij}=0$, caso contrário, temos:
+\begin{equation}\label{eqn::eigenvector1}
+   x_i = \frac{1}{\lambda} \cdot \sum\limits_{j=1}^{N} A_{ij} \cdot x_j
+\end{equation}
+Que pode ser rescrita utilizando vetores como:
+\begin{equation}\label{eqn::eigenvector2}
+   X = \frac{1}{\lambda} AX  \;\; \Longleftrightarrow\;\;  AX = \lambda X
+\end{equation}
+Onde $X$ é dito ser o \textit{autovetor} formado pelos valores de $x_i$ com $0 \leq i \leq N$ e associado ao \textit{autovalor} $\lambda$.  Podem existir muitos valores para $\lambda$ para os quais a Equação~\ref{eqn::eigenvector2} possui solução. Entretanto se utilizarmos todos os valores do \textit{autovetor} como positivos, teremos um único e maior possivel valor para o \textit{autovetor}, ver~\cite{Newman10}. Vale resaltar que o algoritmo \textit{PageRank}, Seção~\ref{subsubsection::pagerank}, é uma variação desse.
+
+
+\subsubsection{Hub e Autoridade de Kleinberg (Hub e Auth)}
+\label{subsubsection::hub}
+As métricas conhecidas como Hub e Autoridade de Kleinberg são provenientes do trabalho de~\cite{Kleinberg99}. Elas também são conhecidas pelo nome de algoritmo \textit{Hyperlink-Induced Topic Search} (HITS) e por serem predecessoras do algoritmo \textit{PageRank}, Seção~\ref{subsubsection::pagerank}. Em suma, na \textit{Web}, algumas páginas são conhecidas como \textit{hubs} por não serem especialistas em nenhum assunto específico, mas possuírem ligações para vários outras páginas que são especialistas em seus respectivos assuntos, sendo, portanto, \textit{autoridades} no assunto tratado. Logo, o que temos é que um bom \textit{hub} é representado por uma página (vértice, no grafo que a \textit{Web} representa) que aponta para várias autoridades e uma boa autoridade é aquela apontada por vários \textit{hubs}. Uma página com poucas ligações e com poucas referências não é nem um bom \textit{hub} e nem uma boa autoridade.
+
 \subsubsection{getPageRank(id, className, graphId)}
+\label{subsubsection::pagerank}
 break;
-\subsubsection{getBetweenness(id, className, graphId)}
+
+
+
+\subsubsection{getStrength(id, className, graphId)}
+\label{subsubsection::strength}
 break;
+
+\subsubsection{Burt's Constraint}
+\label{subsubsection::constraint}
+\cite{Burt04}
+break;
+
 \subsubsection{getBibCoupling(id, className, graphId)}
 break;
 \subsubsection{getCoCitation(id, className, graphId)}
