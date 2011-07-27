@@ -86,13 +86,14 @@ void KNN::train(Examples& exs){
 	for(ExampleIterator e = exs.getBegin(); e != exs.getEnd(); e++){
    
         vector<string> textTokens = (e)->getTextTokens();
+        vector<int> textFrequencyTokens = (e)->getTextFrequency();
 		string exampleClass = (e)->getClass();
         string eId = (e)->getId();
         double docSize = 0.0;
 
 //      cout<<" Tokens categoricos  =  " << tokens.size() << endl;
-		for(unsigned int i = 3; i < textTokens.size()-1; i+=2){
-			int tf = atoi(textTokens[i+1].c_str());
+		for(unsigned int i = 3; i < textTokens.size(); i++){
+			int tf = textFrequencyTokens[i-3];
 			string termId = textTokens[i];
             
             double tfidf = tf * stats->getIDF(termId);
@@ -182,6 +183,7 @@ void KNN::test(Examples& exs){
 
 
         vector<string> textTokens = ex.getTextTokens();	
+        vector<int>    textFreqTokens = ex.getTextFrequency();	
         vector<double> numTokens = ex.getNumericalTokens();
         vector<string> catTokens = ex.getCategoricalTokens();
 
@@ -191,9 +193,9 @@ void KNN::test(Examples& exs){
         map<string, double> examplesTestSize;
         //credibility to each class
         if((usingKNNOptimize && !valuesSaved )  || !usingKNNOptimize){
-            for(unsigned int i = 3; i < textTokens.size(); i+=2){
+            for(unsigned int i = 3; i < textTokens.size(); i++){
                 string termId = textTokens[i];
-                int tf = atoi(textTokens[i+1].c_str());
+                int tf = textFreqTokens[i-3];
 
                 for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++) {
                     double tfidf = tf * getContentCredibility(termId, *classIt);
@@ -207,9 +209,9 @@ void KNN::test(Examples& exs){
             similarity = saveValues[eId];
         }
         else{
-            for(unsigned int i = 3; i < textTokens.size();i+=2){
+            for(unsigned int i = 3; i < textTokens.size();i++){
                 string termId = textTokens[i];
-                int tf = atoi(textTokens[i+1].c_str());
+                int tf = textFreqTokens[1-3];
 
                 for(set<docWeighted, docWeightedCmp>::iterator termIt = termDocWset[termId].begin(); termIt != termDocWset[termId].end(); termIt++){
                     string trainClass = stats-> getTrainClass(termIt->docId);

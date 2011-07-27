@@ -22,7 +22,7 @@ Statistics::~Statistics(){
 
 void Statistics::printCategoricalScores(){
 
-    for(unsigned int i = 0; i < categoricalAttrs; i++){
+    for(int i = 0; i < categoricalAttrs; i++){
         for(map<string, map<string, int> >::iterator it = tupleValue[i].begin(); it!= tupleValue[i].end(); it++){
             for(map<string, int> ::iterator it2 = tupleValue[i][it->first].begin(); it2 != tupleValue[i][it->first].end(); it2++){
 cout<<" att "<< i << " class= " << it->first << " val = " << it2->first << " p = " << (1.0+it2->second) * 1.0 / (getSumDFperClass(it->first) + tupleValue[i][it->first].size())<<endl;              
@@ -31,7 +31,6 @@ cout<<" att "<< i << " class= " << it->first << " val = " << it2->first << " p =
 
     }
 }
-
 
 void Statistics::setUsingKNN(bool usingKNN, int K, bool usingKNNOptimize){
     this->usingKNN = usingKNN;
@@ -72,7 +71,7 @@ void Statistics::readGraph(string filename){
         while(getline(file, line)) {
 
             vector<string> tokens;
-            Tokenizer::stringTokenize(line, tokens, " ");
+            Tokenizer::stringLineTokenize(line, tokens, " ");
             string classv1 = "";
             string classv2 = "";
             string id1 = tokens[0];
@@ -286,6 +285,7 @@ void Statistics::readExamples(Examples exs) {
         Example exp = *it;
 
         vector<string> textTokens = exp.getTextTokens();
+        vector<int> freqTokens = exp.getTextFrequency();
 
         string id = exp.getId();
         string exampleClass = exp.getClass();
@@ -299,8 +299,8 @@ void Statistics::readExamples(Examples exs) {
         sumDFperClass[exampleClass]++;
 
         // retrieve each term frequency and update occurrencies
-        for (unsigned int i = 3; i < textTokens.size()-1; i+=2) {
-            int tf = atoi(textTokens[i+1].c_str());
+        for (unsigned int i = 3; i < textTokens.size(); i++) {
+            int tf = freqTokens[i-3];
             string termId = textTokens[i];
             string idxTermClass = getCompIndex(termId, exampleClass);
 
@@ -330,7 +330,7 @@ void Statistics::calculateIDF() {
     if(IDF.size() != 0) return;
 
     for(set<string>::iterator it = vocabulary.begin(); it != vocabulary.end(); it++) {
-        double idf = log10(((double) (totalDocs + 1.0)) / ((double) (getValue(DFperTerm, *it) + 1.0 )));
+        double idf = log10( my_div(((double) (totalDocs + 1.0)) , ((double) (getValue(DFperTerm, *it) + 1.0 ))));
         IDF[*it] = idf;
     }
 }
@@ -347,7 +347,7 @@ void Statistics::retrieveCategoricalMetrics(){
                 string idx = getCompIndex(idxa, *classIt);
 
                 double occurrences = getCategoricalValue(i,*classIt,*tokenIt) + 1.0; //laplacian correction
-                double freq = 1.0 * ( sumDFperClass[*classIt] + getCategoricalSize(i,*classIt));
+//                double freq = 1.0 * ( sumDFperClass[*classIt] + getCategoricalSize(i,*classIt));
  
                 double apperOtherClass = 0;
                 double apperInThisClass = 0;
@@ -359,8 +359,8 @@ void Statistics::retrieveCategoricalMetrics(){
 
                 double notZero = 1e-100;
 
-                double PdeT = 1.0 / (getCategoricalSize(i,*classIt))   + notZero;
-                double PdeC = getSumDFperClass(*classIt) / ( 1.0 * getTotalDocs()) + notZero;
+                double PdeT = my_div(1.0,(getCategoricalSize(i,*classIt)))   + notZero;
+                double PdeC = my_div(getSumDFperClass(*classIt) , ( 1.0 * getTotalDocs())) + notZero;
                 
                 //TODO: consertar urgente:
                 double PdeTeC = PdeT * PdeC + notZero;
@@ -383,17 +383,17 @@ void Statistics::retrieveCategoricalMetrics(){
                 double gss = PdeTtalqueC * PdeNaoTtalqueNaoC - PdeTtalqueNaoC * PdeNaoTtalqueC;
                 double den = PdeT*PdenaoT * PdeC *PdenaoC;
               
-                double amVal = occurrences / (apperInThisClass + apperOtherClass + getCategoricalSize(i,*classIt)); 
-                double igVal = (PdeTtalqueC * log(PdeTtalqueC / (PdeT*PdeC))) + 
-                    (PdeNaoTtalqueC * log(PdeNaoTtalqueC / (PdenaoT*PdeC))) +
-                    (PdeTtalqueNaoC * log(PdeTtalqueNaoC / (PdeT*PdenaoC))) +
-                    (PdeNaoTtalqueNaoC * log(PdeNaoTtalqueNaoC / (PdenaoT*PdenaoC)));
+                double amVal = my_div(occurrences, (apperInThisClass + apperOtherClass + getCategoricalSize(i,*classIt))); 
+                double igVal = (PdeTtalqueC * log(  my_div(PdeTtalqueC , (PdeT*PdeC)))) + 
+                    (PdeNaoTtalqueC * log(my_div(PdeNaoTtalqueC , (PdenaoT*PdeC)))) +
+                    (PdeTtalqueNaoC * log(my_div(PdeTtalqueNaoC , (PdeT*PdenaoC)))) +
+                    (PdeNaoTtalqueNaoC * log(my_div(PdeNaoTtalqueNaoC , (PdenaoT*PdenaoC))));
                 
                 giniVal += PdeTtalqueC * PdeTtalqueC + PdeCtalqueT * PdeCtalqueT;
                
-                double orVal = my_div((double)(PdeTtalqueC * PdeNaoTtalqueNaoC), (double) (PdeNaoTtalqueC * PdeTtalqueNaoC)); 
-                double chiVal = ( (totalDocs) * ( gss * gss ) + 1.0) / ( den + 1.0 ); //suavizada
-                double ccVal = (sqrt(totalDocs) * ( gss ) + 1.0) / ( sqrt(den) + 1.0 ); //versao suavizada
+                double orVal = my_div((double)((PdeTtalqueC + 0.5) * (PdeNaoTtalqueNaoC + 0.5)), (double) ((PdeNaoTtalqueC + 0.5) * (PdeTtalqueNaoC + 0.5))); 
+                double chiVal = my_div(( (totalDocs) * ( gss * gss ) + 1.0) , ( den + 1.0)); //suavizada
+                double ccVal = my_div((sqrt(totalDocs) * ( gss ) + 1.0),( sqrt(den) + 1.0 )); //versao suavizada
 /*
                 cout<<"P de T = " << PdeT <<endl;
                 cout<<"P de C = " << PdeC <<endl;
@@ -419,7 +419,7 @@ void Statistics::retrieveCategoricalMetrics(){
                 GSS[idx] = gss;
                 CHI[idx] = chiVal;
                 CC[idx] = ccVal;
-                TFIDF[idx] = occurrences;
+//->matar                TFIDF[idx] = occurrences;
 
             }
             Gini[idxa] = giniVal;
@@ -473,11 +473,11 @@ void Statistics::retrieveContentMetrics() {
 
     for(set<string>::iterator it = vocabulary.begin(); it != vocabulary.end(); it++) {
 
-        double idf = log10(((double) (totalDocs + 1.0)) / ((double) (getValue(DFperTerm, *it) + 1.0 )));
+        double idf = log10(  my_div( ((double) (totalDocs + 1.0)) , ((double) (getValue(DFperTerm, *it) + 1.0 ))));
         IDF[*it] = idf;
 
         //probabilidade para Gini, IG, CE, entre outros
-        double Pt = (getValue(TFperTerm, *it) + 1.0) / (sumTF + 1.0);  //versao suavizada
+        double Pt = my_div((getValue(TFperTerm, *it) + 1.0),(sumTF + 1.0));  //versao suavizada
 
         double giniVal  = 0;
         double sumEntropy = 0;
@@ -517,7 +517,7 @@ void Statistics::retrieveContentMetrics() {
             string idx = getCompIndex(*it, *classIt);
 
             ///calculo do AM
-            double amVal = (getValue(TFperClass, idx) + 1.0) / (getValue(TFperTerm, *it) + 1.0); // versao suavisada
+            double amVal = my_div((getValue(TFperClass, idx) + 1.0) , (getValue(TFperTerm, *it) + 1.0)); // versao suavisada
             //double amVal = (getValue(TFperClass, idx) ) / (getValue(TFperTerm, *it)); 
 
             AM[idx] = amVal;
@@ -525,8 +525,8 @@ void Statistics::retrieveContentMetrics() {
             if ( greaterThan(amVal, maxAM)) maxAM = amVal;
 
             //probabilidades de uso geral:
-            double Ptec = (getValue(TFperClass, idx) + 1.0) / (sumTF + 1.0);  //suavizada 
-            double Pc = (getValue(sumTFperClass, *classIt) + 1.0) / (sumTF + 1.0 );//suavizada
+            double Ptec = my_div( (getValue(TFperClass, idx) + 1.0) , (sumTF + 1.0));  //suavizada 
+            double Pc = my_div((getValue(sumTFperClass, *classIt) + 1.0) , (sumTF + 1.0 ));//suavizada
             //double Pc = (getValue(sumDFperClass, *classIt) + 1.0) / (totalDocs + 1.0 );//suavizada
             
             double PdeTtalqueC  = my_div(Ptec,Pc) ;
@@ -537,8 +537,8 @@ void Statistics::retrieveContentMetrics() {
             ///calculo do coeficiente de GINI
             giniVal += PdeTtalqueC * PdeTtalqueC + PdeCtalqueT * PdeCtalqueT;
 
-            double PdeTeNaoC = ( getValue(TFperTerm, *it) - getValue(TFperClass, idx) + 1.0) / ( 1.0 + sumTF); //suavizada
-            double PdeTtalqueNaoC =  (PdeTeNaoC + 1.0) / (1.0-Pc + 1.0) ; //suavizada
+            double PdeTeNaoC =my_div(( getValue(TFperTerm, *it) - getValue(TFperClass, idx) + 1.0) , ( 1.0 + sumTF)); //suavizada
+            double PdeTtalqueNaoC =  my_div((PdeTeNaoC + 1.0) , (1.0-Pc + 1.0)) ; //suavizada
             double PdeNaoTtalqueNaoC = 1.0 - PdeTtalqueNaoC;
             double PdeNaoTtalqueC = 1.0 - PdeTtalqueC;
 
@@ -567,7 +567,7 @@ void Statistics::retrieveContentMetrics() {
             if( greaterThan(orVal,maxOR)) maxOR = orVal;
 
             //ICF: Inverse class frequency
-            double ICF = my_log( (classes.size()+1.0)/(CFperTerm[*it].size()+1.0)); // Suavizada
+            double ICF = my_log( my_div((classes.size()+1.0),(CFperTerm[*it].size()+1.0))); // Suavizada
 
             /// TFICF 
             double tficfVal = (double)getValue(TFperClass, idx) * ICF;
@@ -575,14 +575,20 @@ void Statistics::retrieveContentMetrics() {
             if( lesserThan(tficfVal, minTFICF) ) minTFICF = tficfVal;
             if( greaterThan(tficfVal, maxTFICF) ) maxTFICF = tficfVal;
 
+
+            double idfclass = log10(  my_div( ((double) (getValue(sumDFperClass, *classIt) + 1.0)) , ((double) (getValue(DFperClass, idx) + 1.0 ))));
+            //IDFc[idx] = idfclass;
+
             /// TFIDF
             double tfidfVal = (double)getValue(TFperClass, idx) * idf;
+            //double tfidfVal = (double)getValue(TFperClass, idx) * idfclass;
             TFIDF[idx] = tfidfVal;
             if( lesserThan(tfidfVal, minTFIDF) ) minTFIDF = tfidfVal;
             if( greaterThan(tfidfVal, maxTFIDF) ) maxTFIDF = tfidfVal;
 
             ///CTD : Category term Descriptor
             double ctdVal = getValue(TFIDF, idx) * ICF * idf;
+            //double ctdVal = getValue(TFIDF, idx) * ICF * idfclass;
             CTD[idx] = ctdVal;
             if( lesserThan(ctdVal , minCTD) ) minCTD = ctdVal;
             if( greaterThan(ctdVal , maxCTD) ) maxCTD = ctdVal;
@@ -777,7 +783,7 @@ double Statistics::minmaxNormalization(double val, double minValue, double maxVa
 }
 
 double Statistics::maxNormalization(double val, double maxValue){
-    return val/maxValue;
+    return my_div(val,maxValue);
 }
 
 void Statistics::setOptimizeGraphMetrics(bool optimize){

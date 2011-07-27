@@ -13,6 +13,7 @@ class Example{
 		string id;
 		string docClass;
 		vector<string> textTokens;
+		vector<int> freqTextTokens;
 		vector<string> categoricalTokens;
 		vector<double> numericalTokens;
 /*
@@ -25,12 +26,13 @@ class Example{
 */
 	public:
 		Example() {}
-		Example(string id, string dclass, vector<string> textToks, vector<string> catTokens, vector<double> numTokens) : id(id), docClass(dclass), textTokens(textToks), categoricalTokens(catTokens), numericalTokens(numTokens)
+		Example(string id, string dclass, vector<string> textToks, vector<int> ftt, vector<string> catTokens, vector<double> numTokens) : id(id), docClass(dclass), textTokens(textToks), freqTextTokens(ftt), categoricalTokens(catTokens), numericalTokens(numTokens)
 //			{ age= 1000; difficult = 1000;}
 			{}
 
 		virtual ~Example(){}
 		
+        vector<int>& getTextFrequency();
         vector<string>& getTextTokens();
         vector<string>& getCategoricalTokens();
         vector<double>& getNumericalTokens();
