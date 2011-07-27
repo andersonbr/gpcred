@@ -9,7 +9,7 @@ validacaopath=$path/CV5/validacao/validacao$fold
 testepath=$path/CV5/teste/teste$fold
 brunoro=fold$fold.gpvis
 
-k=16
+k=17
 
 python runme.py ./gp-cred -treino $treinopath -validacao $validacaopath -teste $testepath -brunoro $brunoro -dontsave -knn $k 
 

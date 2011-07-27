@@ -4,7 +4,7 @@ Training File: ../../../../arquivos/ohsumed/CV5/treino/treino2
 Validation File: ../../../../arquivos/ohsumed/CV5/validacao/validacao2
 Test File = ../../../../arquivos/ohsumed/CV5/teste/teste2
 Only evaluating the baseline.
-Using KNN, K = 20
+Using KNN, K = 100
 InOut --- readTrain method -> ../../../../arquivos/ohsumed/CV5/treino/treino2
 InOut --- read method.
 InOut --- readTrain method -> ../../../../arquivos/ohsumed/CV5/validacao/validacao2
@@ -47,3 +47,10 @@ Evaluated: 3000
 Evaluated: 3100
 Evaluated: 3200
 Evaluated: 3300
+Evaluated: 3400
+Evaluated: 3500
+Evaluated: 3600
+MicroF1: 0.635619
+1 - MicroF1: 0.364381
+MacroF1: 0.521765
+1 - MacroF1: 0.478235
