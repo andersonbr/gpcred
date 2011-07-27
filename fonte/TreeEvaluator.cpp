@@ -45,7 +45,8 @@ void TreeEvaluator::evaluateFromFile(string fileName){
         string line = "";
         while(std::getline(file,line)){
             vector<string> tokens;
-            Tokenizer::stringTokenize(line, tokens, " ");
+            vector<int> freqTokens;
+            Tokenizer::stringLineTokenize(line, tokens, " ");
             if(tokens.size() == 0) continue;
 
             cout<<"==========================================================" <<endl;
@@ -226,8 +227,11 @@ double TreeEvaluator::getOperandValue(string operand, string id, string classNam
     }
     else if(operand == "P"){
         return my_div(stats->getTFperClass(id, className) , stats->getTFperTerm(id));
+//          return my_div(stats->getTFperClass(id,className) + 1.0, stats->getSumTFperClass(className)+ stats->getVocabularySize()) ;
+//          return (stats->getTFperClass(id,className) + 1.0) / (stats->getSumTFperClass(className)+ stats->getVocabularySize());
     }
     else if(operand == "P'"){
+//        return my_div(stats->getTFperClass(id, className) , stats->getTFperTerm(id));
         return 1.0 - my_div(stats->getTFperClass(id, className) , stats->getTFperTerm(id));
     }
     else if(operand == "GINI"){ 

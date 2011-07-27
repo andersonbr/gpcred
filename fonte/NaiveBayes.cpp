@@ -87,11 +87,12 @@ void NaiveBayes::train(Examples& exs){
 //      cout<<" Example id = " << (e)->getId()<<endl;
 
 		vector<string> tokens = (e)->getTextTokens();
+		vector<int> freqTextTokens = (e)->getTextFrequency();
 		string exampleClass = (e)->getClass();
 
 //      cout<<" Tokens categoricos  =  " << tokens.size() << endl;
-		for(unsigned int i = 3; i < tokens.size()-1; i+=2){
-			int tf = atoi(tokens[i+1].c_str());
+		for(unsigned int i = 3; i < tokens.size(); i++){
+			int tf = freqTextTokens[i-3];
 			string termId = tokens[i];
 			sumTF[exampleClass] += tf * (getContentCredibility(termId,exampleClass));
 		}
@@ -110,7 +111,7 @@ void NaiveBayes::train(Examples& exs){
         for(unsigned int i = 0; i < means.size(); i++){
             for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++){
                 //          cout<<" Class = " <<*classIt << " sum  =  " << means[i][*classIt] << endl;
-                means[i][*classIt] /= stats->getSumDFperClass(*classIt);
+                means[i][*classIt] = my_div(means[i][*classIt], stats->getSumDFperClass(*classIt));
             }
         }
 
@@ -130,7 +131,7 @@ void NaiveBayes::train(Examples& exs){
                 if( isZero(deviations[i][*classIt]))
                     cerr<<"WARNING: Deviations is 0 or less for attibute " << i << " in class "<< *classIt<<endl;
                 else
-                    deviations[i][*classIt] = sqrt(deviations[i][*classIt] / (stats->getSumDFperClass(*classIt) - 1));
+                    deviations[i][*classIt] = my_div( sqrt (deviations[i][*classIt]) , (stats->getSumDFperClass(*classIt) - 1));
             }
         }
     }
@@ -219,6 +220,7 @@ void NaiveBayes::test(Examples& exs){
         vector<string> textTokens = ex.getTextTokens();	
         vector<string> catTokens = ex.getCategoricalTokens();	
         vector<double> numTokens = ex.getNumericalTokens();	
+        vector<int> freqTextTokens = ex.getTextFrequency();	
         string id = ex.getId();
         string classId = ex.getClass();
 
@@ -239,8 +241,8 @@ void NaiveBayes::test(Examples& exs){
 
                 if(!usingNormalEstimator){
                     tmp =  std::max(1e-75,gaussianDistribution(numTokens[i], means[i][*classIt], deviations[i][*classIt]));
-                    tmp2 =  std::max(1e-75,exponentialDistribution(means[i][*classIt] + deviations[i][*classIt], 0.5));
-                    tmp3 =  std::max(1e-75,weibullDistribution(means[i][*classIt] + deviations[i][*classIt], 1,1));
+//                    tmp2 =  std::max(1e-75,exponentialDistribution(means[i][*classIt] + deviations[i][*classIt], 0.5));
+//                    tmp3 =  std::max(1e-75,weibullDistribution(means[i][*classIt] + deviations[i][*classIt], 1,1));
 
                 }else{
                     tmp = std::max(1e-75, nEstimator[i][*classIt].getProbability(ex.getNumericalValue(i)));
@@ -264,15 +266,17 @@ void NaiveBayes::test(Examples& exs){
                 if(usingContentCredibility)  
                     catCred = 0.5 + getCategoricalCredibility(i,catTokens[i],*classIt);
 //                cout<<"id = " << id << " i = " << i << " token = "  << catTokens[i] << " class = " << *classIt << " catCred = " << catCred<< endl;
-                probCond += log( catCred * (occurrences/freq));
+                probCond += log( catCred * my_div(occurrences,freq));
             }
 
+//            cout<<"size = " << textTokens.size() << " size freq = " << freqTextTokens.size()<<endl;
             //text tokens evaluation
-            for(unsigned int i = 3 ; i < textTokens.size(); i+=2){
+            for(unsigned int i = 3 ; i < textTokens.size(); i++){
+              //   cout<<textTokens[i] << " -- " << freqTextTokens[i-3];
                 string termId = textTokens[i];
-                int tf = atoi(textTokens[i+1].c_str());
+                int tf = freqTextTokens[i-3];
                 double numerator = computeConditionalNumerator(termId, *classIt);
-                double fraction = numerator / condDenominator[*classIt];
+                double fraction = my_div(numerator,condDenominator[*classIt]);
                 probCond += (tf * log(fraction)); 
                 //probCond += ( log( tf * fraction)); 
             }
@@ -298,7 +302,7 @@ void NaiveBayes::test(Examples& exs){
         string predictedLabel;
 
         for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++){
-            probMap[*classIt] = -1.0 * probMap[*classIt]/probNormalizer;
+            probMap[*classIt] = -1.0 * my_div(probMap[*classIt],probNormalizer);
 //            cout<<"Class = " << *classIt << " prob = " << -1*probMap[*classIt] << endl;
 
             if(greaterThan(probMap[*classIt], greatestProb)){
@@ -344,11 +348,11 @@ void NaiveBayes::calculateF1(map<string, unsigned long long> hits, map<string, u
         double recall = 0.0;
 
         if( mappedDocs[*classIt] > 0) {
-            precision = ((double) hits[*classIt] / (double) mappedDocs[*classIt]);
+            precision = my_div((double) hits[*classIt] , (double) mappedDocs[*classIt]);
             classUsed.insert(*classIt);
         }
         if( docsPerClass[*classIt] > 0){ 
-		    recall = ((double) hits[*classIt] / (double)(docsPerClass[*classIt]));
+		    recall = my_div((double) hits[*classIt] , (double)(docsPerClass[*classIt]));
             classUsed.insert(*classIt);
         }
 		totalHits += hits[*classIt];
@@ -358,8 +362,8 @@ void NaiveBayes::calculateF1(map<string, unsigned long long> hits, map<string, u
 		macroF1 += F1;
 	}
 
-	macroF1 /= classUsed.size();
-	microF1 = ((double)totalHits / (double)totalDocs);
+	macroF1 = my_div(macroF1,classUsed.size());
+	microF1 = my_div((double)totalHits, (double)totalDocs);
 
 	cerr << "MicroF1: " << microF1 << endl;
 	cerr << "1 - MicroF1: " << 1.0 -  microF1 << endl;
@@ -392,7 +396,7 @@ double NaiveBayes::getMacroF1(){
 }
 
 double NaiveBayes::weibullDistribution(double value, double gamma, int k){
-    if(value < 0 ) return 0.0;
+    if(value < 0) return 0.0;
 
     return (k/gamma) * pow((value/gamma),k-1) * pow(exp(-1*value/gamma), k);
 

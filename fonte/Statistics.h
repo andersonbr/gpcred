@@ -42,6 +42,7 @@ class Statistics {
         map<string, double> TFperTerm; 
 
         map<string, double> IDF;
+        map<string, double> IDFc;
 
         map<string, double> TFIDF;
         map<string, double> MaxTFIDF;
@@ -229,6 +230,7 @@ class Statistics {
         double getTFperTerm(string t)					                   {return getValue(TFperTerm, t);}
 
         double getIDF(string t)						                       {return getValue(IDF, t);}
+        double getIDFclass(string t, string c)						       {return getValue(IDFc, getCompIndex(t,c));}
 
         double getTFIDF(string t, string c)				                   {return getValue(TFIDF, getCompIndex(t,c));}
         double getMaxTFIDF(string t)					                   {return getValue(MaxTFIDF, t);}

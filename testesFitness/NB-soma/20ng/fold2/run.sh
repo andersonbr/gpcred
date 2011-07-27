@@ -13,6 +13,6 @@ brunoro=fold$fold.gpvis
 
 macro="-sumMacro"
 
-python runme.py ./gp-cred -treino $treinopath -validacao $validacaopath -teste $testepath -brunoro $brunoro -dontsave $macro
+python runme.py ./gp-cred -treino $treinopath -validacao $validacaopath -teste $testepath -brunoro $brunoro -dontsave $macro -seed 229
 
 

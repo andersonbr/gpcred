@@ -86,13 +86,14 @@ void KNN::train(Examples& exs){
 	for(ExampleIterator e = exs.getBegin(); e != exs.getEnd(); e++){
    
         vector<string> textTokens = (e)->getTextTokens();
+        vector<int> textFrequencyTokens = (e)->getTextFrequency();
 		string exampleClass = (e)->getClass();
         string eId = (e)->getId();
         double docSize = 0.0;
 
 //      cout<<" Tokens categoricos  =  " << tokens.size() << endl;
-		for(unsigned int i = 3; i < textTokens.size()-1; i+=2){
-			int tf = atoi(textTokens[i+1].c_str());
+		for(unsigned int i = 3; i < textTokens.size(); i++){
+			int tf = textFrequencyTokens[i-3];
 			string termId = textTokens[i];
             
             double tfidf = tf * stats->getIDF(termId);
@@ -138,7 +139,7 @@ string KNN::getPredictedClass(set<docWeighted, docWeightedCmp>& trainExamples){
         votes[classId] += 1;//ex->weight;
         sum[classId] += ex->weight;
 
-//        cout<<"docID = " << (ex)->docId<< " classe = " <<  classId << "\tsim = " << ex->weight <<endl;
+//        cout<<" k = " << counter << " docID = " << (ex)->docId<< " classe = " <<  classId << "\tsim = " << ex->weight <<endl;
     }
     
     string predictedClass = "";
@@ -158,7 +159,7 @@ string KNN::getPredictedClass(set<docWeighted, docWeightedCmp>& trainExamples){
 //        cout<<"classe = " << it->first << "\tsim = " << it->second<< " sum = " << sum[it->first] << endl;
     }
 //    cout<<"predicter = " << predictedClass << "  -> " << max<<endl;
-
+//    cout<<"====================================="<<endl;
     return predictedClass;
 }
 
@@ -182,6 +183,7 @@ void KNN::test(Examples& exs){
 
 
         vector<string> textTokens = ex.getTextTokens();	
+        vector<int>    textFreqTokens = ex.getTextFrequency();	
         vector<double> numTokens = ex.getNumericalTokens();
         vector<string> catTokens = ex.getCategoricalTokens();
 
@@ -191,9 +193,9 @@ void KNN::test(Examples& exs){
         map<string, double> examplesTestSize;
         //credibility to each class
         if((usingKNNOptimize && !valuesSaved )  || !usingKNNOptimize){
-            for(unsigned int i = 3; i < textTokens.size(); i+=2){
+            for(unsigned int i = 3; i < textTokens.size(); i++){
                 string termId = textTokens[i];
-                int tf = atoi(textTokens[i+1].c_str());
+                int tf = textFreqTokens[i-3];
 
                 for(set<string>::iterator classIt = stats->getClasses().begin(); classIt != stats->getClasses().end(); classIt++) {
                     double tfidf = tf * getContentCredibility(termId, *classIt);
@@ -207,9 +209,9 @@ void KNN::test(Examples& exs){
             similarity = saveValues[eId];
         }
         else{
-            for(unsigned int i = 3; i < textTokens.size();i+=2){
+            for(unsigned int i = 3; i < textTokens.size();i++){
                 string termId = textTokens[i];
-                int tf = atoi(textTokens[i+1].c_str());
+                int tf = textFreqTokens[1-3];
 
                 for(set<docWeighted, docWeightedCmp>::iterator termIt = termDocWset[termId].begin(); termIt != termDocWset[termId].end(); termIt++){
                     string trainClass = stats-> getTrainClass(termIt->docId);
@@ -217,8 +219,9 @@ void KNN::test(Examples& exs){
                     double trainDocSize = docTrainSizes[termIt->docId];
                     double trainTermWeight = termIt->weight;
                     double testTermWeight = tf * getContentCredibility(termId, trainClass);
-
-                    similarity[termIt->docId] += ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) );
+                    
+                    similarity[termIt->docId] +=  ( - ( trainTermWeight / sqrt(trainDocSize)  * testTermWeight / sqrt(examplesTestSize[trainClass]) ));
+//                    cout<<"sim = " << similarity[termIt->docId] <<endl;
                 }
             }
 
@@ -257,7 +260,8 @@ void KNN::test(Examples& exs){
 //                    cout<<"catCred = " <<catCred<<endl;
 //                    cout<<" i = " << i << "teste = " << testTok<<" treino = " << trainTok<<endl;
                     if(trainTok != testTok){
-                        dist+= 1.0/(catCred+ 1.0) + 1.0;
+//                        dist+= 1.0/(catCred+ 1.0) + 1.0;
+                        dist+= 1.0/(catCred+ 1.0);
 //                        cout<<"dist = " << dist<<endl;
                     }
                 }
@@ -278,10 +282,11 @@ void KNN::test(Examples& exs){
             vector<double> graphsCreds(graphsCredibility.size());
             double similarityValue = testIt->second;
 
+//            cout<< " eid = " << eId << " eclass = " << classId << " traindocclass = " << stats->getTrainClass(testIt->first) << " similarit = " << similarityValue<< endl;
+
             for(unsigned int g = 0 ; g < graphsCredibility.size(); g++){
                 double gsim = getGraphCredibility(g, eId, stats->getTrainClass(testIt->first));
-//                cout<<gsim<< " eid = " << eId << " eclass = " << classId << " traindocclass = " << stats->getTrainClass(trainIt->first) << " similarit = " << similarity << " final = " << similarity * gsim << endl;
-                similarityValue *= (0.5+gsim);
+                similarityValue /= (0.5+gsim);
             } 
            
             //never change this, it is necessary
