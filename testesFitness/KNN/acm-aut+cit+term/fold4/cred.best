@@ -1,0 +1,30 @@
+Best of generation 0 (Fitness = 31.1107, Structural Complexity = 21)
+GP: (+ (- MaxCHI DOM) (- MaxCTD CHI))
+ADF0: (* (+ PageRank Constraint) (- PageRank HubScore))
+ADF1: (% (% PageRank Authority) (Pow Betweenness Neighborhood2))
+
+Best of generation 1 (Fitness = 29.6445, Structural Complexity = 13)
+GP: (% IG MaxIG)
+ADF0: (- (Pow JaccardSimilarity Strength) (+ InverseLogSimilarity DiceSimilarity))
+ADF1: (Log EigenVector Neighborhood1)
+
+Best of generation 2 (Fitness = 29.6445, Structural Complexity = 13)
+GP: (% IG MaxIG)
+ADF0: (- (Pow JaccardSimilarity Strength) (+ InverseLogSimilarity DiceSimilarity))
+ADF1: (Log EigenVector Neighborhood1)
+
+Best of generation 3 (Fitness = 29.0621, Structural Complexity = 15)
+GP: (* sumTF (* GSS IDF))
+ADF0: (* Betweenness PageRank)
+ADF1: (Pow (- Authority Authority) (* HubScore HubScore))
+
+Best of generation 4 (Fitness = 29.0621, Structural Complexity = 15)
+GP: (* sumTF (* GSS IDF))
+ADF0: (* Betweenness PageRank)
+ADF1: (Pow (- Authority Authority) (* HubScore HubScore))
+
+Best of generation 5 (Fitness = 29.0621, Structural Complexity = 15)
+GP: (* sumTF (* GSS IDF))
+ADF0: (* Betweenness PageRank)
+ADF1: (Pow (- Authority Authority) (* HubScore HubScore))
+

@@ -1,0 +1,30 @@
+Best of generation 0 (Fitness = 29.3976, Structural Complexity = 21)
+GP: (+ (- MaxCHI DOM) (- MaxCTD CHI))
+ADF0: (* (+ PageRank Constraint) (- PageRank HubScore))
+ADF1: (% (% PageRank Authority) (Pow Betweenness Neighborhood2))
+
+Best of generation 1 (Fitness = 29.3976, Structural Complexity = 21)
+GP: (+ (- MaxCHI DOM) (- MaxCTD CHI))
+ADF0: (* (+ PageRank Constraint) (- PageRank HubScore))
+ADF1: (% (% PageRank Authority) (Pow Betweenness Neighborhood2))
+
+Best of generation 2 (Fitness = 29.3976, Structural Complexity = 21)
+GP: (+ (- MaxCHI DOM) (- MaxCTD CHI))
+ADF0: (* (+ PageRank Constraint) (- PageRank HubScore))
+ADF1: (% (Log PageRank Authority) (* BibCoupling PageRank))
+
+Best of generation 3 (Fitness = 29.3976, Structural Complexity = 21)
+GP: (+ (- MaxCHI DOM) (- MaxCTD CHI))
+ADF0: (* (+ PageRank Constraint) (- PageRank HubScore))
+ADF1: (% (Log PageRank Authority) (* BibCoupling PageRank))
+
+Best of generation 4 (Fitness = 27.0281, Structural Complexity = 17)
+GP: (Pow GINI CC)
+ADF0: (* Constraint (Pow (Log JaccardSimilarity Authority) Constraint))
+ADF1: (- EigenVector (Pow (Pow DiceSimilarity Strength) Strength))
+
+Best of generation 5 (Fitness = 27.0281, Structural Complexity = 17)
+GP: (Pow GINI CC)
+ADF0: (* Constraint (Pow (Log JaccardSimilarity Authority) Constraint))
+ADF1: (- EigenVector (Pow (Pow DiceSimilarity Strength) Strength))
+

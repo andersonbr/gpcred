@@ -71,7 +71,7 @@ void Statistics::readGraph(string filename){
         while(getline(file, line)) {
 
             vector<string> tokens;
-            Tokenizer::stringTokenize(line, tokens, " ");
+            Tokenizer::stringLineTokenize(line, tokens, " ");
             string classv1 = "";
             string classv2 = "";
             string id1 = tokens[0];
@@ -285,6 +285,7 @@ void Statistics::readExamples(Examples exs) {
         Example exp = *it;
 
         vector<string> textTokens = exp.getTextTokens();
+        vector<int> freqTokens = exp.getTextFrequency();
 
         string id = exp.getId();
         string exampleClass = exp.getClass();
@@ -298,8 +299,8 @@ void Statistics::readExamples(Examples exs) {
         sumDFperClass[exampleClass]++;
 
         // retrieve each term frequency and update occurrencies
-        for (unsigned int i = 3; i < textTokens.size()-1; i+=2) {
-            int tf = atoi(textTokens[i+1].c_str());
+        for (unsigned int i = 3; i < textTokens.size(); i++) {
+            int tf = freqTokens[i-3];
             string termId = textTokens[i];
             string idxTermClass = getCompIndex(termId, exampleClass);
 
