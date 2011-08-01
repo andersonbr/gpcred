@@ -1,64 +1,144 @@
 
 \section{Programação Genética}
+\label{cap::gp}
 
- 
+No Capítulo~\ref{cap::metodo},
+além de mostrarmos os algoritmos de classificação \textit{Naïve Bayes} e \textsc{KNN}, vimos como podemos incorporar a credibilidade nos mesmos.
+Discutimos também que existem várias métricas que podem ser utilizadas para mensurar a credibilidade de um exemplo, 
+embora não detalhamos essas métricas.
 
-\subsection{Operadores}
+Nesse trabalho, modelamos a credibilidade em duas abordagens diferentes, uma levando em consideração os atributos dos exemplos e outra utilizando os seus relacionamentos. 
+Em ambas, somos capazes de gerar uma grande gama de métricas que conseguem capturar a relação entre os exemplos e uma determinada classe.
+Entretanto, necessitamos de uma forma de selecionar e combinar essas métricas de uma maneira robusta. Para solucionar esse problema, recorremos ao uso de Programação Genética (\textsc{PG}).
 
+Segundo a Teoria da Evolução de Darwin, indivíduos mais adaptados ao ambiente em que se encontram têm uma maior chance de sobreviverem e se reproduzirem, passando seu material genético às gerações posteriores. Baseado nessa teoria, o método Programação Genética é adequado para evoluir uma função de credibilidade, pois possui mecanismos que o torna capaz de explorar bem o imenso espaço de soluções formado pelo grande número de métricas disponíveis. Além disso, \textsc{PG} é flexível o bastante para podermos representar as funções que desejamos.
+%Programação Genética é um método baseado na Teoria da Evolução de Darwin que define que indivíduos mais adaptados ao ambiente em que se encontram têm uma maior chance de sobreviverem e se reproduzirem, passando seu material genético às gerações posteriores. PG é um método adequado para evoluir uma função de credibilidade, pois consegue explorar bem o imenso espaço de soluções formado pelo grande número de métricas disponíveis e é flexível o bastante para podermos representar as funções que desejamos.
 
+Para entendermos melhor como é o funcionamento de um \textsc{PG}, a Figura~\ref{fig::gpwf} ilustra de forma genérica os seus principais componentes.
+Como podemos ver, o primeiro passo é definirmos um conjunto de funções internas e terminais para serem usados pelo \textsc{PG}, iremos explicar com mais clareza e exemplos o que são funções internas e terminais em breve nesse capítulo, porém é importante saber agora que eles são usados para formarmos indivíduos. 
+Esses por sua vez são soluções para o problema que abordamos (em nosso caso, um indivíduo é uma possível função de credibilidade).
+Um conjunto de indivíduos é chamado de população e, como mostrado pelo segundo retângulo no diagrama da Figura~\ref{fig::gpwf}, a população inicial é aleatoriamente criada. 
+Cada indivíduo é então avaliado por uma função de \textit{fitness}, que calcula a habilidade do mesmo em resolver o problema apresentado, ou seja, o quão bom aquele indivíduo é.
+
+Após avaliarmos a \textit{fitness} dos indivíduos, os melhores são selecionados e submetidos às operações genéticas de cruzamento, mutação e reprodução, com probabilidade $P_c$, $P_m$ e $P_r$, respectivamente.
+Uma forma muito usada de selecionar os indivíduos é através de torneios, nos quais aleatoriamente tomamos um número pré-definido de indivíduos da população e selecionamos aquele com maior valor da função de \textit{fitness}. Existem diversas outras variações do método de seleção, ver (citacao), sendo que o importante é utilizarmos o conhecimento da função \textit{fitness} dos indivíduos de forma a criamos uma próxima geração mais bem preparada para resolução do problema. 
+
+Após selecionados, os indivíduos podem sofrer alguma alteração genética através das operações de mutação e cruzamento ou podem ser transferidos diretamente para a próxima geração, através da reprodução. 
+Na operação de mutação, uma parte do indivíduo selecionado é aleatoriamente alterada, buscando obter uma melhoria da \textit{fitness} na próxima geração.
+Por sua vez, a operação de cruzamento exige a participação de dois indivíduos que são combinados a fim de obtermos uma prole mais adaptada na próxima geração.
+Do modo como está mostrado na Figura~\ref{fig::gpwf} somente uma dessas três operações é realizada em cada indivíduo selecionado, entretanto é comum também implementações em que é aplicada a probabilidade de mutação para todos os indivíduos, logo após uma nova prole ser gerada pelo cruzamento ou reprodução.
+
+Repare que todo o \textit{processo} exposto na Figura~\ref{fig::gpwf} é independente da aplicação na qual o \textsc{PG} é utilizado. 
+Entretanto, três importantes componentes devem ser instanciados dependendo do contexto no qual trabalhamos. 
+Eles são a representação dos indivíduos, que incluem as funções internas e terminais utilizados (Seção~\ref{subsec::individuos}), a função de \textit{fitness} (Seção~\ref{subsec::fitness}) e como são usados os operadores genéticos (Seção~\ref{subsec::operadores}).
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/gpwf.png}
+\caption{Fluxograma de um Programa Genético}
+\label{fig::gpwf}
+\end{figure}
+
+\subsection{Indivíduos}
+\label{subsec::individuos}
+
+Uma parte essencial da construção um \textsc{PG} é definir os indivíduos que compõem a população do mesmo.
+Para isso, temos que ter definir três aspectos primordiais, o que um indivíduo representa, quais serão suas funções internas e quais são os seus terminais. Independente de quais são as funções internas e terminais escolhidos, o propósito de um indivíduo é representar uma função de credibilidade que, a não ser que seja dito o contrário, relaciona um exemplo de treino a uma classe retornando um valor real. 
+
+Como já discutido nas Seções~\ref{subsubsec::nbcredconteudo} e \ref{subsubsec::nbcredgrafos} para o \textit{Naïve Bayes} e Seções~\ref{subsubsec::knncredconteudo} e \ref{subsubsec::knncredgrafos} para o \textsc{KNN}, modelamos duas funções de credibilidade diferentes, uma baseada nos atributos dos exemplos e outra baseada nos relacionamentos dos mesmos.
+Ambas, entretanto, compartilham o mesmo conjunto de funções internas, porém os terminais utilizados são diferentes para cada caso. As funções internas são utilizadas para que haja uma interação entre os terminais.
+Como usual para um \textsc{PG} que evolui uma função matemática numérica, as funções internas do \textsc{PG} consistem de funções matemáticas conhecidas, como a multiplicação, divisão, soma entre outros que estão mostrados na Tabela~\ref{table::funcoespg}. 
+Observe que modificações as funções de subtração, divisão e logaritmo.
+Tanto a divisão por zero, quanto o logaritmo de números negativos não são matematicamente definidos, portanto explicitamente tratamos esses casos retornando zero. Além disso, não queremos ter uma função de credibilidade negativa, portanto evitamos que a subtração e o logaritmo retornem números negativos.
 
 \begin{table}[ht*]
 \centering
 \begin{tabular}{|c|c|}
 \toprule
-    \textbf{Expressão} & \textbf{Explicação} \\
+    \textbf{Função Interna} & \textbf{Explicação} \\
 \midrule
-    $N$           & Número de documentos na base de treinamento. \tabularnewline \hline
-    $M$           & Número de classes da coleção. \tabularnewline \hline
-    $DF_{x_i} $   & Número de documentos do conjunto do treino que contém o termo $x_i$. \tabularnewline \hline
-    $DF_{x_ic_j}$ & Número de documentos do treino com o termo $x_i$ e pertencentes a classe $c_j$. \tabularnewline \hline
-    $CF_{x_i}$    & Número de classes em que o termo $x_i$ ocorre. \tabularnewline \hline 
-    $F_{x_i}$     & Número de vezes que o termo $x_i$ aparece nos documentos de treinamento. \tabularnewline \hline
-    $F_{x_ic_j}$  & Número de vezes que o termo $x_i$ aparece em documentos da classe $c_j$ no treino. \tabularnewline 
+    $+(a,b)$           & Soma a com b. \tabularnewline \hline
+    $-(a,b)$           & Subtrai b de a, porém retorna 0 se b for maior que a.\tabularnewline \hline
+    $\times(a,b) $     & Multiplica a com b. \tabularnewline \hline
+    $\%(a,b)$          & Divide a por b, porém retorna 0 se b for 0. \tabularnewline \hline
+    $\text{Pow}(a,b)$  & Eleva à potência de b. \tabularnewline \hline 
+    $\log(a,b) $       & Logaritmo de a na base b, retorna 0 se a ou b forem menores que 1. \tabularnewline
 \bottomrule
 \end{tabular}
-\caption{Explicação das principais expressões utilizadas para definição das métricas para atributos textuais.}
-\label{table::metricas_textuais}
+\caption{Explicação das principais funções utilizadas para definição das métricas para atributos textuais.}
+\label{table::funcoespg}
 \end{table}
 
+Pelo fato de termos um grande número de operadores definidos, reservamos as Seções~\ref{sec::pg_cred_baseada_conteudo} e~\ref{sec::pg_cred_baseada_grafos} exclusivamente para descrevermos os operadores relacionados ao atributos dos exemplos e em mensurar os relacionamentos entre os exemplos, respectivamente. Na Figuras~\ref{fig::gps1} e~\ref{fig::gps2} temos ao todo cinco exemplos de funções de credibilidades que poderiam ser geradas pelo \textsc{PG}, as três da primeira figura ilustram funções de crebilidade baseadas em atributos e as demais são baseadas em relacionamentos entre os exemplos. As cores nas mesmas são usadas apenas para auxiliar na explicação das operações genéticas de mutação e cruzamento na seção a seguir.
 
-
-\begin{figure}[ht!]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/gpwf.png}
-\caption{Fluxo de um Programa Genético}
-\label{fig::vizinhos}
+\subfloat[Individuo 1:\newline \hspace*{6mm}$\textsc{GINI}(x)^{\textsc{CC}(x,c)}$]{
+    \includegraphics[width=0.25\textwidth]{figures/gp1c.png}
+}
+\subfloat[Individuo 2:\newline \hspace*{4mm} $(\textsc{AM}(x,c) + \textsc{P}(x|c)) \% (\textsc{IG}(x,c))$]{
+    \includegraphics[width=0.33\textwidth]{figures/gp2c.png}
+}
+\subfloat[Individual 3:\newline \hspace*{4mm} $\textsc{GINI}(x)^{(\textsc{AM}(x,c)\ + \ \textsc{P}(x|c))}$]{
+    \includegraphics[width=0.33\textwidth]{figures/gp3c.png}
+}
+\caption{Três possíveis indivíduos utilizados como função de credibilidade de atributos.}
+\label{fig::gps1}
 \end{figure}
 
 
+\begin{figure}[ht]
+\centering
+\subfloat[Individuo 1:\newline \hspace*{6mm}$\textsc{Bib}(X,c) - {\textsc{Hub}(x,c)}$]{
+%\subfloat[Individuo 1:$\textsc{Bib}(X,c) - {\textsc{Hub}(x,c)}$]{
+    \includegraphics[width=0.30\textwidth]{figures/gp1c_grafos.png}
+}
+\subfloat[Individuo 2:\newline \hspace*{5mm} $\textsc{Bib}(X,c) - \textsc{PR}(X,c) $]{
+    \includegraphics[width=0.30\textwidth]{figures/gp2c_grafos.png}
+}
+\caption{Dois possíveis indivíduos utilizados como função de credibilidade para relacionamentos.}
+\label{fig::gps2}
+\end{figure}
 
-\subsection{Fitness (ou aptidão?!?!)}
-\label{subsec:Fitness}
+\subsection{Operadores Genéticos}
+\label{subsec::operadoresgeneticos}
 
-A função de fitness utilizada foi
+Em nosso trabalho, utilizamos três operadores genéticos na geração dos indivíduos, como mostrado na Figura~\ref{fig::gpwf}. Primeiramente, sorteamos teremos uma operação de cruzamento, mutação ou reprodução, para o primeiro caso, sorteamos dois indivíduos, para os demais casos, apenas um. Os indivíduos são selecionados por torneio, onde escolhemos aleatoriamente $T$ indivíduos da população atual e dizemos que aquele com maior \textit{fitness} é o ganhador do torneio. 
 
-%verificar se esta faltando alguma variavel para definir
+A operação de reprodução é a mais simples, nela apenas introduzimos o ganhador do torneio na próxima geração. Por sua vez, a operação de cruzamento é a mais complexa. Nela selecionamos um ponto em cada indivíduo e geramos um novo indivíduos contendo partes de ambos. Na Figura~\ref{fig::gps1}, temos a ilustração desse processo. 
+Os indivíduos 1 e 2 são selecionados cada um por um torneio diferente, depois escolhemos um ponto de troca no indivíduo 1, no caso a métrica \textsc{CC(x,c)} e um ponto de troca no 2, a função interna +. Por fim, trocamos a métrica \textsc{CC(x,c)} por toda a parte selecionada no indivíduo 2, gerando o indivíduo 3. Finalmente, a operação de mutação também consiste em uma troca em um indivíduo, porém trata-se de apenas uma única mudança, sem alterar a estrutura. Na Figura~\ref{fig::gps2} vemos uma mutação ocorrendo entre o indivíduo 1 e 2, onde temos a métrica Hub (Seção~\ref{subsubsection::hub}) sendo trocada pela métrica \textit{PageRank} (\textsc{PR}, Seção~\ref{subsubsection::pagerank}).
 
-Alg.~\ref{alg:fitness} describes the process followed to calculate the fitness of an individual.
-First, each individual is mapped to a content-based credibility function, and the score attributed by this function to each ordered pair $(t, c) \in \mathbb{V} \times \mathbb{C}$ is generated.
-Then, each test document $d'$ is classified using the modified version of Na\"{i}ve Bayes, and the achieved micro-F$_1$ is used as the final fitness function. The micro-F$_1$ measures the fraction of correct decisions made by the classifier, and is given by
-$\text{Micro-F}_1 = \frac{2 \times P \times R}{(P + R)}$, where P and R stand for the precision and recall, defined as
-$P = \frac{\# \text{of docs correctly assigned to category C}}{\text{total} \: \# \: \text{of docs assigned to category C}}$ and
-$R = \frac{\# \: \text{of docs correctly assigned to category C}}{\# \: \text{of docs from category C}}$.
 
-\begin{eqnarray}
-P & = & \frac{\# \text{of docs correctly assigned to category C}} {\text{total} \: \# \: \text{of docs assigned to category C}} \\
-R & = & \frac{\# \: \text{of docs correctly assigned to category C}}{\# \: \text{of docs from category C}}                      
-\end{eqnarray}
+\subsection{\textit{Fitness}}
+\label{subsec::fitness}
 
+No algoritmo~\ref{alg::fitness} descrevemos o processo usado para calcular a \textit{fitness} de um individuo. 
+Mesmo existindo casos em que estamos interessados somente em evoluir uma função de credibilidade, ou atributos ou relacionamentos, o algoritmo~\ref{alg::fitness} aborda ambos os casos. 
+Quando não estivermos evoluindo uma das funções de credibilidade, basta ignorá-la no calculo da \textit{fitness}.
+No algoritmo~\ref{alg::fitness}, primeiramente calculamos e mapeamos a credibilidade de cada atributo e cada classe para a função de credibilidade que o individuo representa. Logo depois, calculamos a credibilidade de cada relacionamento no conjunto de relacionamentos $\mathbb{R}$, usando o conjunto de exemplos $\mathbb{E}$ do treinamento.
+Por fim, calculamos qual o valor da métrica chamada \textit{$F_1$} para os resultados do classificador utilizado. 
+O classificador recebe o conjunto de exemplos de teste, $\mathbb{T}$, o conjunto de exemplos de treinamento, $\mathbb{E}$, o conjunto de classes, $\mathbb{C}$ e os valores mapeados para as funções de credibilidade de atributos e relacionamentos, $f_x$ e $f_r$.
+
+A \textit{$F_1$} é uma métrica amplamente utilizada por representar um compromisso interessante entre a precisão e a revocação, outras duas importante métricas. A precisão ($\textsc{P}$) calcula, para uma classe específica, o quanto acertamos entre todos os exemplos que classificamos para aquela classe: 
 \begin{equation}
-\text{Micro-F}_1 = \frac{2 \times P \times R}{(P + R)}
+\textsc{P(c)} = \frac{\# \text{de exemplos da classe c corretamente classificados como classe c}} {\# \: \text{ total de exemplos classificados como classe c}} \\,
 \end{equation}
+logo determinamos o quão bom somos em avaliar exemplos de uma classe específica. 
+Por sua vez, a revocação (\textsc{R}) calcula, para uma classe, o quanto conseguimos acertar entre o que deveríamos ter acertado:
+\begin{equation}
+\textsc{R(c)} = \frac{\# \: \text{de exemplos da classes c corretamente classificados como classe c}}{\# \: \text{de exemplos existentes na classe c}},                      
+\end{equation}
+logo, calculamos o quão bom somos para achar exemplos de uma dada classe. 
+Por fim, a \textit{$F_1$} é a média harmonica entre a precisão e a revocação:
+\begin{equation}
+\text{F}_1(c) = \frac{2 \times P(c) \times R(c)}{(P(c) + R(c))}.
+\end{equation}
+
+A partir da $F_1$ podemos calcular as métricas \textit{macro-$F_1$} e \textit{micro-$F_1$}. A \textit{macro-$F_1$} leva em consideração a $F_1$ de cada uma das classes e depois calcula a média das mesmas:
+\begin{equation}
+\text{MacroF}_1 = \frac{\sum\limits_{c \in \mathbb{C}} F_1(c) } { |\mathbb{C}| },
+\end{equation}
+já a \textit{micro-$F_1$} simplesmente calcula a precisão e revocação ao final, sem levar em consideração o cálculo classe por classe. Decidimos por utilizar a \textit{micro-$F_1$} como função de \textit{fitness} pelos bons resultados encontrados, porém sempre medimos e reportamos a \textit{macro-$F_1$}. Mostramos os resultados dos vários experimentos com micro e macro-F1, além de uma combinação de ambas no Capítulo~\ref{cap::experimentos}.
 
 %traduzir comandos?!?!
 \algrenewcommand\algorithmicforall{\textbf{Para Cada}}
@@ -69,27 +149,32 @@ R & = & \frac{\# \: \text{of docs correctly assigned to category C}}{\# \: \text
 \begin{algorithm}
 \centering
 \caption{Calula Fitness.}
-\label{alg:fitness}
+\label{alg::fitness}
 \begin{algorithmic}[1]
 {
-\Function{EvaluateFitness}{$individual$}
-  \State \textit{Step 1:}
-  \ForAll{$t \in \mathbb{V}$}
+%\scriptsize
+\Function{CalculaFitness}{$individuo$}
+  \State \textit{Credibilidade baseada em atributos:}
+  \ForAll{$x \in \mathbb{A}$}
     \ForAll{$c \in \mathbb{C}$}
-      \State $CredMap[t][c] \gets eval(individual, t, c)$
+      \State $f_a(x,c) \gets eval(individuo_{attrs}, x, c)$
     \EndFor
   \EndFor
-  \State \textit{Step 2:}
-  \State fitness $\gets$ \textsc{MicF$_1$}(\textsc{Classifier}$(d', \mathbb{D}, \mathbb{C}, CredMap)$)
+  \State \textit{Credibilidade baseada em relacionamentos:}
+  \ForAll{$r \in \mathbb{R}$}
+    \ForAll{$e \in \mathbb{E}$}
+        \ForAll{$c \in \mathbb{C}$}
+            \State $f_r(r,d,c) \gets eval(r,individuo_{rel}, d, c)$
+        \EndFor
+    \EndFor
+  \EndFor
+  \State \textit{Avaliação da Fitness:}
+  \State fitness $\gets$ \textsc{F$_1$}(\textsc{Classifier}$(\mathbb{T}, \mathbb{E}, \mathbb{C}, f_x, f_r)$)
   \State \textbf{return} fitness
 \EndFunction
 }
 \end{algorithmic}
 \end{algorithm}
-
-
-
-\subsection{Terminais}
 
 \section{Credibilidade baseada no Conteúdo}
 \label{sec::pg_cred_baseada_conteudo}
@@ -99,7 +184,7 @@ Nessa seção apresentamos várias métricas utilizadas na construção dos indi
 \subsection{Métricas Modeladas Para Atributos Textuais Exclusivamente.}
 \label{subsec::pg_metricas_conteudo_textual}
 
-As métricas usadas para atributos textuais consistem em algumas variantes do \textit{TFIDF}, métrica mais difundida entre as apresentadas. Na tabela~\ref{table::metricas_textuais}, temos apresentados algumas expressões amplamente utilizadas nas métricas aqui listadas.
+As métricas usadas para atributos textuais consistem em algumas variantes do \textsc{TFIDF}, métrica mais difundida entre as apresentadas. Na tabela~\ref{table::metricas_textuais}, temos apresentados algumas expressões amplamente utilizadas nas métricas aqui listadas.
 
 \begin{table}[ht*]
 \centering
@@ -125,17 +210,17 @@ As métricas usadas para atributos textuais consistem em algumas variantes do \t
 \subsubsection{Frequência do Termo (TF)}
 \label{subsubsection::sumtf}
 
-A frequência de um termo, \textit{TF} da expressão em inglês, \textit{Term Frequency}, é simplesmente o número de vezes que um termo aparece na coleção de treinamento. Utilizamos o logaritmo desse valor como um fator normalizador, para evitar que termos muito frequentes dominem a função de credibilidade:
+A frequência de um termo, \textsc{TF} da expressão em inglês, \textit{Term Frequency}, é simplesmente o número de vezes que um termo aparece na coleção de treinamento. Utilizamos o logaritmo desse valor como um fator normalizador, para evitar que termos muito frequentes dominem a função de credibilidade:
 \begin{equation}\label{eqn::sumtf}
    \textsc{TF}(x_i) = 1.0 + \log{ ( F_{x_i} ) }
 \end{equation}
 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Frequência do Termo por Classe (TFClasse)}
+\subsubsection{Frequência do Termo por Classe (\textsc{TFClasse})}
 \label{subsubsection::tf}
 
-A frequência de um termo em uma classe, \textit{TFClasse}, segue o mesmo padrão utilizado pela métrica \textit{TF}, porém dessa vez contamos apenas os termos que aparecem em uma dada classse $c_j$:
+A frequência de um termo em uma classe, \textsc{TFClasse}, segue o mesmo padrão utilizado pela métrica \textsc{TF}, porém dessa vez contamos apenas os termos que aparecem em uma dada classse $c_j$:
 \begin{equation}\label{eqn::tf}
   \textsc{TFClasse}(x_i, c_j) = 1.0 + \log{ ( F_{x_ic_j} ) }
 \end{equation}
@@ -145,7 +230,7 @@ A frequência de um termo em uma classe, \textit{TFClasse}, segue o mesmo padrã
 \subsubsection{Frequência dos Documentos por Termo (DF)}
 \label{subsubsection::df}
 
-A métrica \textit{DF}, do inglês, \textit{Document Frequency}, procura analisar a importância de um termo em relação ao número de documentos que o mesmo aparece:
+A métrica \textsc{DF}, do inglês, \textit{Document Frequency}, procura analisar a importância de um termo em relação ao número de documentos que o mesmo aparece:
 \begin{equation}\label{eqn::df}
   \textsc{DF}(x_i) = 1.0 + \log{ ( DF_{x_i} ) }
 \end{equation}
@@ -156,27 +241,27 @@ A métrica \textit{DF}, do inglês, \textit{Document Frequency}, procura analisa
 \subsubsection{Frequência de Documentos por Termo-Classe (DFClasse)}
 \label{subsubsection::sumdf}
 
-A métrica \textit{DFClasse} apenas avalia o número de documentos que um termo aparece em relação a uma classe específica, tentando capturar a importância de um termo para uma classe em relação ao número de documentos onde aquele termo está presente:
+A métrica \textsc{DFClasse} apenas avalia o número de documentos que um termo aparece em relação a uma classe específica, tentando capturar a importância de um termo para uma classe em relação ao número de documentos onde aquele termo está presente:
 \begin{equation}\label{eqn::sumtf}
  \textsc{DFClasse}(x_i,c_j) = 1.0 + \log{ ( DF_{x_ic_j} ) }
 \end{equation}
 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Inverso da Frequência de Documentos (IDF)}
+\subsubsection{Inverso da Frequência de Documentos (\textsc{IDF})}
 \label{subsubsection::idf}
 
-O Inverso da Frequência de Documentos, \textit{IDF} do inglês \textit{Inverse Document Frequency}, é uma conhecida métrica que avalia a popularidade de um determinado termo em um conjunto de documentos. Temos que quanto mais popular é um termo ao longo dos documentos de uma coleção, pior é sua capacidade de discriminação, logo:
+O Inverso da Frequência de Documentos, \textsc{IDF} do inglês \textit{Inverse Document Frequency}, é uma conhecida métrica que avalia a popularidade de um determinado termo em um conjunto de documentos. Temos que quanto mais popular é um termo ao longo dos documentos de uma coleção, pior é sua capacidade de discriminação, logo:
 \begin{equation}\label{eqn::tficf}
  \textsc{IDF}(x_i) = \log( \frac{|N|} {DF(x_i)} )
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Inverso da Frequência de Documentos por Classe (IDFClasse)}
+\subsubsection{Inverso da Frequência de Documentos por Classe (\textsc{IDFClasse})}
 \label{subsubsection::idf}
 
-O Inverso da Frequência de Documentos por classe, \textit{IDFClasse} é uma versão do \textit{IDF} em selecionamos somente documentos de uma dada classe:
+O Inverso da Frequência de Documentos por classe, \textsc{IDFClasse} é uma versão do \textsc{IDF} em selecionamos somente documentos de uma dada classe:
 \begin{equation}\label{eqn::tficf}
  \textsc{IDFClasse}(x_i,c_j) = \log( \frac{DF_{c_j}} {DF(x_ic_j)} )
 \end{equation}
@@ -184,10 +269,10 @@ O Inverso da Frequência de Documentos por classe, \textit{IDFClasse} é uma ver
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Frequência do Termo Inverso da Frequência de Documentos (TFIDF)}
+\subsubsection{Frequência do Termo Inverso da Frequência de Documentos (\textsc{TFIDF})}
 \label{subsubsection::tfidf}
 
-Uma das métricas de pesos para atributos em classificação de textos mais populares na literatura é o \textit{TFIDF} (do inglês, \textit{Term Frequency Inversed Document Frequency}), ver \cite{Salton88}. O \textit{TFIDF} combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento é mais importante que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de TFIDF é nada mais que a multiplicação das métricas TF e IDF, como já esperávamos:
+Uma das métricas de pesos para atributos em classificação de textos mais populares na literatura é o \textsc{TFIDF} (do inglês, \textit{Term Frequency Inversed Document Frequency}), ver \cite{Salton88}. O \textsc{TFIDF} combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento é mais importante que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de \textsc{TFIDF} é nada mais que a multiplicação das métricas \textsc{TF} e \textsc{IDF}, como já esperávamos:
 \begin{equation}\label{eqn::tficf}
  \textsc{TFIDF}(x_i, c_j) =  F_{x_ic_j} \cdot \log( \frac{DF_{c_j}}{ DF_{x_ic_j} } )
 \end{equation}
@@ -205,9 +290,9 @@ O TFICF (do inglês, \textit{Term Frequency Inversed Class Frequency}) é uma va
 \subsubsection{Category Term Description}
 \label{subsubsection::ctd}
 
-Definido por~\cite{ChihHow04}, \textit{Category Term Description} é uma métrica de seleção de atributos para classificação textual baseada em TFIDF (Seção~\ref{subsubsection::tfidf}) e TFICF (Seção~\ref{subsubsection::tficf}). How et al. propõe uma melhoria ao TDICF acreditando que quanto menos um termo ocorre entre os documentos, maior o poder discriminativo daquele termo, logo:
+Definido por~\cite{ChihHow04}, \textit{Category Term Description} é uma métrica de seleção de atributos para classificação textual baseada em \textsc{TFIDF} (Seção~\ref{subsubsection::tfidf}) e \textsc{TFICF} (Seção~\ref{subsubsection::tficf}). How et al. propõe uma melhoria ao TDICF acreditando que quanto menos um termo ocorre entre os documentos, maior o poder discriminativo daquele termo, logo:
 \begin{equation}\label{eqn::cdt}
- \textsc{CDT}(x_i, c_j) = TFClass(x_i, c_j) \cdot ICF(x_i, c_j) \cdot IDFClass(x_i,c_j)
+ \textsc{CDT}(x_i, c_j) = \textsc{TFClass}(x_i, c_j) \cdot \textsc{ICF}(x_i, c_j) \cdot \textsc{IDFClass}(x_i,c_j)
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -261,7 +346,7 @@ Todas as métricas apresentadas nessa seção foram utilizadas para geração de
 \subsubsection{Medida de Ambiguidade (AM)}
 \label{subsubsection::am}
 
-A medida de ambiguidade (AM de \textit{Ambiguity Measure}) foi definida por~\cite{Mengle08} e utilizada como um método de seleção de atributos. Ela atribui valores maiores para os atributos considerados menos ambíguos, onde um atributo é não ambíguo quando sua presença indica com um alto grau de confiança que o exemplo pertence a uma classe específica. Podemos calcular $AM(x_i, c_j)$ como:
+A medida de ambiguidade (\textsc{AM} de \textit{Ambiguity Measure}) foi definida por~\cite{Mengle08} e utilizada como um método de seleção de atributos. Ela atribui valores maiores para os atributos considerados menos ambíguos, onde um atributo é não ambíguo quando sua presença indica com um alto grau de confiança que o exemplo pertence a uma classe específica. Podemos calcular $AM(x_i, c_j)$ como:
 \begin{equation}\label{eqn::am}
  \textsc{AM}(x_i, c_j) = \frac{ N_{x_{i}c_{j}}}{\sum\limits_{c_k \in \mathbb{C}} N_{x_{i}c_{k}}}.
 \end{equation}
@@ -312,7 +397,7 @@ Que é o mesmo valor definido por~\cite{Mengle08} para a métrica Medida da Ambi
 \subsubsection{Ganho de Informação}
 \label{subsubsection::ig}
 
-O Ganho de Informação (\textit{Information Gain}, IG), \cite{Yang97}, mede a diminuição da entropia quando um atributo é usado ou não. A entropia é uma medida utilizada no campo da Ciência da Informação que tenta quantificar a desordem, a imprevisibilidade. Quanto maior a entropia maior a entropia, mais difícil é prever um resultado, portanto a métrica IG seleciona os atributos que diminuam o valor da entropia, facilitando descobrir a qual classe um exemplo pertence. O Ganho da Informação pode ser calculado da seguinte forma:
+O Ganho de Informação (\textit{Information Gain}, \textsc{IG}), \cite{Yang97}, mede a diminuição da entropia quando um atributo é usado ou não. A entropia é uma medida utilizada no campo da Ciência da Informação que tenta quantificar a desordem, a imprevisibilidade. Quanto maior a entropia maior a entropia, mais difícil é prever um resultado, portanto a métrica IG seleciona os atributos que diminuam o valor da entropia, facilitando descobrir a qual classe um exemplo pertence. O Ganho da Informação pode ser calculado da seguinte forma:
 \begin{equation}\label{eqn::ig}
  \textsc{IG}(x_i, c_j) = \sum_{c \in \{c_j, \overline{c_j}\}}\sum_{x \in \{x_i, \overline{x_i}\}} \textsc{P}(x|c)\log_2\frac{\textsc{P}(x|c)}{ \textsc{P}(x)\textsc{P}(c)}.
 \end{equation}
@@ -321,7 +406,7 @@ O Ganho de Informação (\textit{Information Gain}, IG), \cite{Yang97}, mede a d
 \subsubsection{Cross Entropy}
 \label{subsubsection::}
 
-\textit{Cross Entropy} (CE), assim como o Índice de Gini Melhorado, Seção~\cite{subsubsection::gini}, apresenta apenas um parâmetro, um atributo. Novamente aproximamos o calculamos $P(c|x_i)$, pois esse já é o resultado do algoritmo \textit{Naïve Bayes} e, portanto, não o teríamos enquanto estamos calculando a credibilidade de um atributo em relação a uma classe. Assim como enunciado por~\cite{Koller97} e adaptado para seleção de atributos em~\cite{Mladenic98}, essa métrica assume a seguinte fórmula:
+\textit{Cross Entropy} (\textsc{CE}), assim como o Índice de Gini Melhorado, Seção~\cite{subsubsection::gini}, apresenta apenas um parâmetro, um atributo. Novamente aproximamos o calculamos $P(c|x_i)$, pois esse já é o resultado do algoritmo \textit{Naïve Bayes} e, portanto, não o teríamos enquanto estamos calculando a credibilidade de um atributo em relação a uma classe. Assim como enunciado por~\cite{Koller97} e adaptado para seleção de atributos em~\cite{Mladenic98}, essa métrica assume a seguinte fórmula:
 \begin{equation}\label{eqn::ce}
  \textsc{CE}(x_i) =  \textsc{P}(x_i) \cdot \sum_{c \in \mathbb{C}} \textsc{P}(c|x_i) \cdot \log_2 \frac{ \textsc{P}(c|x_i) } {\textsc{P}(c) }
 \end{equation}
@@ -360,7 +445,7 @@ O coeficiente Galavotti–Sebastiani–Simi (GSS) introduzido por~\cite{Galavott
 \subsubsection{Razão de Chances - \textit{Odds Ratio} (OR)}
 \label{subsubsection::or}
 
-Proposta originalmente por~\cite{Rijsbergen79}, a métrica Razão de Chances, do inglês \textit{Odds Ration} (OR), também é uma métrica de seleção de atributos. A ideia básica é que a distribuição de atributos em exemplos relevantes é diferente da distribuição de atributos em exemplos não relevantes. Isso quer dizer que poderíamos definir dois eventos A e B e calculamos a probabilidade de ocorrência de A dividida pela probabilidade de não ocorrência de A e a comparamos com a probabilidade ocorrência de B dividida pela probabilidade de não ocorrência de B:
+Proposta originalmente por~\cite{Rijsbergen79}, a métrica Razão de Chances, do inglês \textit{Odds Ration} (\textsc{OR}), também é uma métrica de seleção de atributos. A ideia básica é que a distribuição de atributos em exemplos relevantes é diferente da distribuição de atributos em exemplos não relevantes. Isso quer dizer que poderíamos definir dois eventos A e B e calculamos a probabilidade de ocorrência de A dividida pela probabilidade de não ocorrência de A e a comparamos com a probabilidade ocorrência de B dividida pela probabilidade de não ocorrência de B:
 \begin{equation}\label{eqn::or}
    \textsc{OR}(A, B) = \frac{\frac{A}{1-A}} {\frac{B}{1-B}} = \frac{ A \cdot ( 1 - B )} { B \cdot ( 1 - A ) } .
 \end{equation}
@@ -391,13 +476,15 @@ A razão de chances tem sido utilizada para selecionamento de atributos por \cit
 \label{subsubsection::maxgss}
 
 
-\section{Credibilidade baseada em Grafos}
+\section{Credibilidade baseada em Relacionamentos}
 \label{sec::pg_cred_baseada_grafos}
+
+O que sao metricas baseadas em relacionamentos
 
 \subsection{Métricas modeladas.}
 \label{subsec::pg_metricas_grafos}
 
-asdfsad
+o que vai ser usado pelas métricas...tabela entra aqui
 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -429,7 +516,7 @@ De maneira intuitiva, dizemos que dois objetos estão próximos se eles estão a
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Centralidade}
 \label{subsubsection::constraint}
-A métrica de centralidade denominada \textit{Betweenness} se baseia no fato que um vértice é importante em um grafo se ele está entre o caminho de outros vértice, ou seja, um vértice é importante por estar sempre conectando outros vértices em um grafo. O algoritmo do caminho mínimo é o que se utiliza para percorrer da melhor maneira possível uma dada distância em um grafo e portanto, \textit{betweenness} calcula a importância de um vértice contando quantas vezes aquele vértice participa do caminho mínimo entre quaisquer dois outros vértices do grafo em questão, ver~\cite{Sabidussi66}. Obviamente, um vértice central que está no caminho mínimo de vários outros tem mais acesso a informação que circula pelo grafo que um vértice periférico com poucas ligações.
+A métrica de centralidade denominada \textit{Centralidade} (em inglês,\textit{Betweenness}) se baseia no fato que um vértice é importante em um grafo se ele está entre o caminho de outros vértice, ou seja, um vértice é importante por estar sempre conectando outros vértices em um grafo. O algoritmo do caminho mínimo é o que se utiliza para percorrer da melhor maneira possível uma dada distância em um grafo e portanto, \textit{betweenness} calcula a importância de um vértice contando quantas vezes aquele vértice participa do caminho mínimo entre quaisquer dois outros vértices do grafo em questão, ver~\cite{Sabidussi66}. Obviamente, um vértice central que está no caminho mínimo de vários outros tem mais acesso a informação que circula pelo grafo que um vértice periférico com poucas ligações.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Centralidade do Autovetor.}
