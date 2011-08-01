@@ -94,7 +94,7 @@ void Statistics::readGraph(string filename){
             //TODO: experimental feature
             bool usaInfo = true;
 //            if( DFperClass[classv1] < 10 || DFperClass[classv2] < 10) usaInfo = true;
-//          cerr<<"lidos : " << id1 << "(" << classv1 << ")  and " << id2 << " ("<< classv2 << ") -> " << value<<endl;
+           //cout<<"lidos : " << id1 << "(" << classv1 << ")  and " << id2 << " ("<< classv2 << ") -> " << value<<endl;
             //We have both ids in the train and both have the same class
             if(usaInfo && id1IsInTrain && id2IsInTrain && classv1 == classv2){
                 classGraph[classv1].addEdge(id1,id2,value);
