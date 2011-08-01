@@ -1,0 +1,991 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Log,2) (Pow,2) 
+	terms: MaxTFICF MaxTFIDF MaxCTD MaxOR MaxCC MaxGSS MaxCHI MaxAM MaxIG MaxDom sumDF DF sumTF TF TFIDF TFICF IDF CTD OR CE CC GSS CHI IG DOM GINI P' P AM
+generation 0:
+	ind: 	39.3252	* MaxOR AM
+	ind: 	16.6901	Log * MaxGSS CE + AM TF
+	ind: 	25.2059	Pow - * OR IDF IG DF
+	ind: 	16.6901	- DOM DF
+	ind: 	27.6361	* % TFICF MaxIG MaxCTD
+	ind: 	16.6901	* * Log MaxAM MaxAM % DF TFIDF Log Log MaxCHI DOM % sumDF CE
+	ind: 	46.1338	+ GSS DF
+	ind: 	45.3906	* Pow TF AM Pow TFICF sumDF
+	ind: 	27.616	* OR Pow TFIDF Log IG TFIDF
+	ind: 	16.6901	- CE DF
+	ind: 	67.624	% DOM Pow sumDF CHI
+	ind: 	41.2934	+ + % MaxTFIDF GSS + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF
+	ind: 	21.912	- GINI GSS
+	ind: 	23.9807	Log Log DF GINI + CHI IDF
+	ind: 	49.4477	* * OR MaxTFIDF MaxAM
+	ind: 	61.8598	Pow GSS sumDF
+	ind: 	48.2426	- CHI OR
+	ind: 	38.9837	+ Pow + MaxCC MaxIG % CTD DOM + % IG sumDF * IDF MaxGSS
+	ind: 	32.4161	* MaxIG sumDF
+	ind: 	62.9645	% * MaxTFICF CE + GINI TF
+	ind: 	33.099	+ CTD Log MaxCTD OR
+	ind: 	34.1635	+ CC CC
+	ind: 	65.3947	Pow Pow MaxIG MaxAM Log MaxCC AM
+	ind: 	29.9859	Pow % - sumTF DOM % CHI GSS * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	53.4646	% P' MaxCHI
+	ind: 	42.2977	Pow * MaxIG CC % sumTF TF
+	ind: 	15.8064	% DF * TFIDF MaxGSS
+	ind: 	25.0452	* MaxOR CC
+	ind: 	68.3471	+ - MaxDom MaxOR - IDF DF
+	ind: 	16.6901	* - Log MaxTFIDF OR - sumDF TF Pow + DF GINI * MaxAM MaxGSS
+	ind: 	47.5397	% GINI GSS
+	ind: 	16.6901	% Log MaxCTD DOM Pow AM P'
+	ind: 	58.5057	+ GSS - Log sumDF P + TF P
+	ind: 	52.5608	* GSS IDF
+	ind: 	24.041	- MaxOR % MaxCHI P'
+	ind: 	20.4459	+ % + MaxIG CHI - CC MaxTFICF % Log CTD TFIDF Pow CC TF
+	ind: 	15.3846	+ MaxIG MaxCC
+	ind: 	58.6865	+ - MaxIG P' Pow CTD P
+	ind: 	32.3358	Pow DOM CTD
+	ind: 	21.0484	% MaxCHI MaxCTD
+	ind: 	54.288	+ * MaxTFIDF sumTF DF
+	ind: 	51.0745	+ Log * MaxDom OR - GINI GSS % + MaxAM AM % TF MaxAM
+	ind: 	49.8695	Pow MaxIG MaxGSS
+	ind: 	28.3591	Log % MaxDom CHI + MaxCHI MaxAM
+	ind: 	23.6594	% MaxIG MaxTFIDF
+	ind: 	45.8927	Log sumDF TF
+	ind: 	16.6901	Log TFIDF sumTF
+	ind: 	38.2406	+ * Pow DOM DOM * P' MaxAM + Pow MaxCTD MaxGSS + MaxDom sumDF
+	ind: 	16.6901	- GSS GSS
+	ind: 	48.1422	* Pow MaxCC DF + P P
+	ind: 	35.6497	* AM MaxAM
+	ind: 	31.7935	- MaxTFICF GINI
+	ind: 	44.768	% CTD TFIDF
+	ind: 	32.858	+ + - MaxCTD MaxCHI Pow DOM TFIDF - * MaxTFIDF DOM - MaxCHI sumTF
+	ind: 	18.2366	Pow sumDF sumDF
+	ind: 	40.5503	Pow - MaxAM AM % CE CHI
+	ind: 	24.764	* - CTD Log MaxTFIDF P sumDF
+	ind: 	34.6254	Pow MaxCTD MaxAM
+	ind: 	64.5511	Pow % MaxOR CTD Pow IG MaxCHI
+	ind: 	16.6901	% % + sumDF GINI % IG GINI Log - DOM MaxGSS % IG IDF
+	ind: 	57.0597	% DF MaxOR
+	ind: 	69.5923	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	16.6901	Log GINI * Log IDF P' IDF
+	ind: 	16.6901	Log CTD GSS
+	ind: 	16.6901	Log DF P
+	ind: 	28.801	- * * TFICF CHI % MaxTFIDF TFIDF + Pow DF CE Log IG GINI
+	ind: 	16.6901	- P P
+	ind: 	26.1699	* Pow TFICF MaxTFIDF - CC GSS
+	ind: 	64.4306	+ AM GSS
+	ind: 	57.3007	* MaxIG IDF
+	ind: 	16.6901	Log MaxCTD Log DF MaxDom
+	ind: 	16.6901	+ * Log TFIDF TFICF Pow TFICF OR * Log DOM MaxIG Pow CTD MaxTFICF
+	ind: 	16.6901	Log AM sumTF
+	ind: 	62.0004	* - DF MaxCC - MaxTFIDF MaxIG
+	ind: 	15.0834	Pow * % TFIDF TF MaxAM sumDF
+	ind: 	16.6901	Log MaxCTD TFICF
+	ind: 	30.0864	- % MaxDom IG TFICF
+	ind: 	63.8682	- + + IDF P Log DF IG + - sumTF MaxCTD + IG IG
+	ind: 	68.7086	% IG MaxIG
+	ind: 	16.6901	* % P' CE Log DOM DOM
+	ind: 	11.2472	+ * MaxTFICF MaxGSS P'
+	ind: 	42.9203	+ MaxOR AM
+	ind: 	44.045	- Pow MaxCC MaxAM + MaxTFIDF AM
+	ind: 	16.6901	% Pow % AM TFIDF + DOM IG % Log CC AM % DF OR
+	ind: 	44.8082	* DF MaxOR
+	ind: 	16.6901	Log - OR CHI * TF CHI
+	ind: 	23.5589	Pow % + MaxDom MaxTFICF MaxOR MaxCC
+	ind: 	29.5843	* DOM sumDF
+	ind: 	16.6901	* sumTF Log MaxDom MaxAM
+	ind: 	20.1647	+ * * MaxTFICF P' Log AM MaxTFIDF Pow - MaxDom DOM + TFIDF DF
+	ind: 	27.5156	Pow MaxCHI IDF
+	ind: 	16.6901	% * DF IG Log IG CE
+	ind: 	16.6901	Log + MaxOR MaxTFICF Log Log CC MaxTFIDF % CE CTD
+	ind: 	32.0546	+ MaxTFICF P'
+	ind: 	52.4202	% sumTF % P' DOM
+	ind: 	37.2364	% + + AM MaxTFICF Pow sumTF AM - + sumDF MaxAM % OR MaxCC
+	ind: 	47.4593	* OR OR
+	ind: 	49.9498	% + MaxOR OR Pow P MaxGSS
+	ind: 	16.6901	Log Log - DOM CTD IDF MaxAM
+	ind: 	38.1	Pow OR sumTF
+	rep: 61  -> 61
+	rep: 81 9  -> 0
+	rep: 81 9  -> 1
+	rep: 72 29  -> 2
+	rep: 72 29  -> 3
+	rep: 77 93  -> 4
+	rep: 77 93  -> 5
+	rep: 29 91  -> 6
+	rep: 29 91  -> 7
+	rep: 41 85  -> 8
+	rep: 41 85  -> 9
+	rep: 2 70  -> 10
+	rep: 2 70  -> 11
+	rep: 19 67  -> 12
+	rep: 19 67  -> 13
+	rep: 45 71  -> 14
+	rep: 45 71  -> 15
+	rep: 6 52  -> 16
+	rep: 6 52  -> 17
+	rep: 61 13  -> 18
+	rep: 61 13  -> 19
+	rep: 82 76  -> 20
+	rep: 82 76  -> 21
+	rep: 30 87  -> 22
+	rep: 30 87  -> 23
+	rep: 77 7  -> 25
+	rep: 77 7  -> 26
+	rep: 88  -> 27
+	rep: 34 91  -> 28
+	rep: 34 91  -> 29
+	rep: 75 74  -> 30
+	rep: 75 74  -> 31
+	rep: 7 53  -> 32
+	rep: 7 53  -> 33
+	rep: 32 48  -> 34
+	rep: 32 48  -> 35
+	rep: 10 60  -> 36
+	rep: 10 60  -> 37
+	rep: 52 74  -> 38
+	rep: 52 74  -> 39
+	rep: 11 17  -> 40
+	rep: 11 17  -> 41
+	rep: 67 98  -> 42
+	rep: 67 98  -> 43
+	rep: 1 88  -> 44
+	rep: 1 88  -> 45
+	rep: 61 31  -> 46
+	rep: 61 31  -> 47
+	rep: 43 26  -> 48
+	rep: 43 26  -> 49
+	rep: 23 23  -> 50
+	rep: 23 23  -> 51
+	rep: 99 91  -> 52
+	rep: 99 91  -> 53
+	rep: 86 98  -> 54
+	rep: 86 98  -> 55
+	rep: 13 79  -> 56
+	rep: 13 79  -> 57
+	rep: 11 2  -> 58
+	rep: 11 2  -> 59
+	rep: 69  -> 60
+	rep: 55 4  -> 62
+	rep: 55 4  -> 63
+	rep: 65 31  -> 64
+	rep: 65 31  -> 65
+	rep: 82 79  -> 67
+	rep: 82 79  -> 68
+	rep: 20 12  -> 69
+	rep: 20 12  -> 70
+	rep: 33 85  -> 71
+	rep: 33 85  -> 72
+	rep: 32 74  -> 73
+	rep: 32 74  -> 74
+	rep: 69 26  -> 75
+	rep: 69 26  -> 76
+	rep: 19 63  -> 77
+	rep: 19 63  -> 78
+	rep: 78 10  -> 79
+	rep: 78 10  -> 80
+	rep: 82 91  -> 82
+	rep: 82 91  -> 83
+	rep: 50 62  -> 84
+	rep: 50 62  -> 85
+	rep: 23 46  -> 86
+	rep: 23 46  -> 87
+	rep: 51 83  -> 88
+	rep: 51 83  -> 89
+	rep: 38 4  -> 90
+	rep: 38 4  -> 91
+	rep: 33 35  -> 92
+	rep: 33 35  -> 93
+	rep: 27 71  -> 94
+	rep: 27 71  -> 95
+	rep: 56 89  -> 96
+	rep: 56 89  -> 97
+	rep: 1 26  -> 98
+	rep: 1 26  -> 99
+generation 1:
+	ind: 	54.0671	+ MaxOR AM
+	ind: 	16.6901	- CE DF
+	ind: 	46.0735	+ DF GINI
+	ind: 	16.6901	* - Log MaxTFIDF OR - sumDF TF Pow Log AM sumTF * MaxAM MaxGSS
+	ind: 	63.9888	- + + IDF P + MaxTFICF P' + - sumTF MaxCTD + IG IG
+	ind: 	16.6901	Log DF IG
+	ind: 	16.6901	* - Log MaxTFIDF OR - sumDF TF Pow + DF GINI * MaxAM MaxGSS
+	ind: 	16.6901	% * DF IG Log IG CE
+	ind: 	51.0745	+ Log * MaxDom OR - GINI GSS % + MaxAM AM % TF MaxAM
+	ind: 	16.6901	Log - OR CHI * TF CHI
+	ind: 	25.2059	Pow - * OR IDF IG DF
+	ind: 	16.6901	Log MaxCTD Log DF MaxDom
+	ind: 	37.1561	% * MaxTFICF CE + GINI TF
+	ind: 	24.6234	* Pow TFICF MaxTFIDF - CC GSS
+	ind: 	16.6901	+ * Log TFIDF TFICF Pow TFICF OR * Log DOM MaxIG Pow CTD MaxTFICF
+	ind: 	61.3175	Log sumDF TF
+	ind: 	46.1338	+ GSS DF
+	ind: 	44.768	% CTD TFIDF
+	ind: 	43.4023	% - MaxCHI DOM - MaxCTD CHI
+	ind: 	23.9807	Log Log DF GINI * CHI IDF
+	ind: 	34.043	- Pow MaxCC MaxAM + MaxTFIDF AM
+	ind: 	38.6825	- % MaxDom IG TFICF
+	ind: 	35.9711	% GINI GSS
+	ind: 	42.0767	* DOM sumDF
+	ind: 	36.9954	- MaxTFIDF GSS
+	ind: 	43.0609	- + + IDF P Log DF IG + * Pow TF AM Pow TFICF sumDF + IG IG
+	ind: 	37.0556	- sumTF MaxCTD
+	ind: 	16.6901	* sumTF Log MaxDom MaxAM
+	ind: 	24.041	- MaxOR % MaxCHI P'
+	ind: 	16.6901	% * DF IG Log IG CE
+	ind: 	16.6901	Log MaxCTD TFICF
+	ind: 	20.6869	Pow * % TFIDF TF MaxAM sumDF
+	ind: 	45.3906	* Pow TF AM Pow TFICF sumDF
+	ind: 	32.858	+ + - MaxCTD MaxCHI Pow DOM TFIDF - * MaxTFIDF DOM - MaxCHI sumTF
+	ind: 	58.5057	+ GSS - - GSS GSS + TF P
+	ind: 	16.6901	Log sumDF P
+	ind: 	64.1695	% DOM % DF MaxOR
+	ind: 	64.2298	Pow sumDF CHI
+	ind: 	16.5897	Pow * % TFIDF TF MaxAM sumDF
+	ind: 	40.1888	% CTD TFIDF
+	ind: 	37.3167	+ + % CTD DOM + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF
+	ind: 	42.9403	+ Pow + MaxCC MaxIG % MaxTFIDF GSS + % IG sumDF * IDF MaxGSS
+	ind: 	25.5473	* Pow TFICF MaxTFIDF - CC GSS
+	ind: 	16.6901	Log Log - DOM CTD IDF MaxAM
+	ind: 	16.6901	Log * MaxGSS CE + AM TF
+	ind: 	16.6901	* sumTF Log MaxDom MaxAM
+	ind: 	16.6901	Log MaxCTD DOM
+	ind: 	45.0693	% + - MaxCHI DOM - MaxCTD CHI Pow AM P'
+	ind: 	16.6901	Log * TFIDF MaxGSS + MaxCHI MaxAM
+	ind: 	44.8684	% DF % MaxDom CHI
+	ind: 	33.9626	Pow % - sumTF DOM % CHI GSS * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	29.9859	Pow % - sumTF DOM % CHI GSS * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	47.9414	* DF IG
+	ind: 	16.6901	% Pow OR sumTF Log IG CE
+	ind: 	17.1721	Pow % + MaxDom MaxTFICF MaxOR MaxCC
+	ind: 	16.6901	Log Log - DOM CTD IDF MaxAM
+	ind: 	23.9807	Log Log DF GINI + CHI IDF
+	ind: 	16.6901	* % P' CE Log DOM DOM
+	ind: 	36.5937	- * OR IDF IG
+	ind: 	21.7714	Pow + + % MaxTFIDF GSS + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF DF
+	ind: 	57.3007	* MaxIG IDF
+	ind: 	69.5923	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	40.5503	Pow - MaxAM AM % CE CHI
+	ind: 	27.6762	* % TFICF MaxIG MaxCTD
+	ind: 	28.801	- * * TFICF CHI % MaxTFIDF TFIDF + Pow DF CE Log IG GINI
+	ind: 	16.6901	% Log MaxCTD DOM Pow AM P'
+	ind: 	24.4627	Log GINI Pow GINI MaxTFICF
+	ind: 	37.2565	- Pow MaxCC MaxAM + MaxTFIDF AM
+	ind: 	16.6901	* % P' CE Log DOM DOM
+	ind: 	23.0368	+ CTD Log MaxCTD OR
+	ind: 	21.7915	- GINI GSS
+	ind: 	33.3199	* GSS IDF
+	ind: 	16.6901	Log - OR CHI * TF CHI
+	ind: 	50.6126	+ GSS - Log sumDF P + TF P
+	ind: 	16.6901	Pow * % TFIDF TF MaxAM sumDF
+	ind: 	67.6642	* MaxIG IDF
+	ind: 	15.3846	% DF * TFIDF MaxGSS
+	ind: 	62.9645	% * MaxTFICF CE + GINI TF
+	ind: 	16.6901	Log CTD GSS
+	ind: 	64.2298	Pow sumDF CHI
+	ind: 	67.3629	% DOM % IG MaxIG
+	ind: 	16.6901	* Pow * TFIDF GINI Pow IDF sumDF % - TF MaxCHI IG
+	ind: 	44.045	- Pow MaxCC MaxAM + MaxTFIDF AM
+	ind: 	16.6901	% Pow DF IG Log IG CE
+	ind: 	30.3475	* AM MaxAM
+	ind: 	16.6901	Log GINI * Log IDF P' IDF
+	ind: 	36.3125	Pow % Log TFIDF sumTF % CHI GSS * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	62.5628	- sumTF DOM
+	ind: 	22.3539	- % DF OR GINI
+	ind: 	16.6901	% Pow % AM TFIDF + DOM IG % Log CC AM MaxTFICF
+	ind: 	34.2438	% TFICF MaxIG
+	ind: 	34.3242	* Pow DOM CTD MaxCTD
+	ind: 	49.4276	Pow CC TF
+	ind: 	20.4459	+ % + MaxIG CHI - CC MaxTFICF % Log CTD TFIDF * GSS IDF
+	ind: 	24.9247	* MaxOR CC
+	ind: 	16.6901	+ * Log TFIDF TFICF Pow TFICF OR * Log DOM MaxIG Pow CTD MaxTFICF
+	ind: 	24.764	* - CTD Log MaxTFIDF P sumDF
+	ind: 	14.2599	+ * * MaxTFICF P' Log AM MaxTFIDF Pow - MaxDom DOM + TFIDF DF
+	ind: 	16.6901	Log * MaxGSS CE % DF * TFIDF MaxGSS
+	ind: 	55.1115	+ AM TF
+	rep: 61  -> 61
+	rep: 52 42  -> 0
+	rep: 52 42  -> 1
+	rep: 2 93  -> 2
+	rep: 2 93  -> 3
+	rep: 75 94  -> 4
+	rep: 75 94  -> 5
+	rep: 66 69  -> 6
+	rep: 66 69  -> 7
+	rep: 84  -> 8
+	rep: 17 66  -> 9
+	rep: 17 66  -> 10
+	rep: 4 59  -> 11
+	rep: 4 59  -> 12
+	rep: 75 40  -> 13
+	rep: 75 40  -> 14
+	rep: 20 59  -> 15
+	rep: 20 59  -> 16
+	rep: 36 55  -> 18
+	rep: 36 55  -> 19
+	rep: 33 27  -> 21
+	rep: 33 27  -> 22
+	rep: 77 88  -> 24
+	rep: 77 88  -> 25
+	rep: 23 76  -> 26
+	rep: 23 76  -> 27
+	rep: 15 28  -> 28
+	rep: 15 28  -> 29
+	rep: 16 22  -> 30
+	rep: 16 22  -> 31
+	rep: 42 48  -> 32
+	rep: 42 48  -> 33
+	rep: 94 43  -> 34
+	rep: 94 43  -> 35
+	rep: 92  -> 36
+	rep: 30 9  -> 37
+	rep: 30 9  -> 38
+	rep: 77 63  -> 39
+	rep: 77 63  -> 40
+	rep: 61 32  -> 41
+	rep: 61 32  -> 42
+	rep: 23 86  -> 43
+	rep: 23 86  -> 44
+	rep: 94 31  -> 45
+	rep: 94 31  -> 46
+	rep: 36 58  -> 47
+	rep: 36 58  -> 48
+	rep: 20 95  -> 49
+	rep: 20 95  -> 50
+	rep: 40 66  -> 51
+	rep: 40 66  -> 52
+	rep: 93 83  -> 53
+	rep: 93 83  -> 54
+	rep: 33 81  -> 55
+	rep: 33 81  -> 56
+	rep: 36 36  -> 57
+	rep: 36 36  -> 58
+	rep: 15 5  -> 60
+	rep: 15 5  -> 62
+	rep: 56 78  -> 63
+	rep: 56 78  -> 64
+	rep: 89 45  -> 65
+	rep: 89 45  -> 66
+	rep: 61 36  -> 67
+	rep: 61 36  -> 68
+	rep: 23 90  -> 69
+	rep: 23 90  -> 70
+	rep: 60 51  -> 71
+	rep: 60 51  -> 72
+	rep: 21 67  -> 73
+	rep: 21 67  -> 74
+	rep: 0 71  -> 75
+	rep: 0 71  -> 76
+	rep: 0 50  -> 77
+	rep: 0 50  -> 78
+	rep: 66 57  -> 79
+	rep: 66 57  -> 80
+	rep: 92  -> 81
+	rep: 41 31  -> 82
+	rep: 41 31  -> 83
+	rep: 77 73  -> 84
+	rep: 77 73  -> 85
+	rep: 23 54  -> 86
+	rep: 23 54  -> 87
+	rep: 24 27  -> 88
+	rep: 24 27  -> 89
+	rep: 60 59  -> 90
+	rep: 60 59  -> 91
+	rep: 71 70  -> 92
+	rep: 71 70  -> 93
+	rep: 41 86  -> 94
+	rep: 41 86  -> 95
+	rep: 39 12  -> 97
+	rep: 39 12  -> 98
+	rep: 52 13  -> 99
+generation 2:
+	ind: 	12.9544	- CC GSS
+	ind: 	39.0842	* Pow TFICF MaxTFIDF * DF IG
+	ind: 	16.6901	Log CTD TFIDF
+	ind: 	22.8158	+ % + MaxIG CHI - CC MaxTFICF % + DF GINI * GSS IDF
+	ind: 	67.6642	* MaxIG IDF
+	ind: 	19.8032	* MaxOR CC
+	ind: 	16.6901	Log GINI + CTD Log MaxCTD OR
+	ind: 	23.6795	Pow GINI MaxTFICF
+	ind: 	30.3475	* AM MaxAM
+	ind: 	37.4975	% CTD TFIDF
+	ind: 	24.4828	Log GINI Pow GINI MaxTFICF
+	ind: 	63.9888	- + + IDF P + MaxTFICF P' + - sumTF MaxCTD + IG IG
+	ind: 	21.7313	Pow + + % MaxTFIDF GSS + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF DF
+	ind: 	52.4402	+ % CTD DOM + P' TFIDF
+	ind: 	47.7405	+ * MaxIG IDF Log Log MaxCC MaxTFICF % DOM TFICF
+	ind: 	34.0229	- Pow MaxCC MaxAM Log Log MaxCC MaxTFICF % DOM TFICF
+	ind: 	21.7112	Pow + + % MaxTFIDF GSS + P' TFIDF + MaxTFIDF AM DF
+	ind: 	44.8283	% TF IDF
+	ind: 	16.6901	% DOM Log Log - DOM CTD IDF MaxAM
+	ind: 	56.7986	% DF MaxOR
+	ind: 	31.3918	Log DF % MaxDom MaxAM
+	ind: 	32.8379	+ + - MaxCTD MaxCHI Pow DOM TFIDF - * MaxTFIDF DOM - MaxCHI sumTF
+	ind: 	16.6901	* sumTF Log MaxDom MaxAM
+	ind: 	15.3846	% MaxGSS OR
+	ind: 	62.9645	% * MaxTFICF CE + GINI TF
+	ind: 	22.3338	- % DF OR GINI
+	ind: 	53.8462	* DOM sumDF
+	ind: 	15.3846	% DF * TFIDF MaxGSS
+	ind: 	55.4127	Log sumDF TF
+	ind: 	24.0811	- MaxOR % MaxCHI P'
+	ind: 	54.2478	% GINI GSS
+	ind: 	30.8496	+ GSS DF
+	ind: 	25.5473	* Pow TFICF MaxTFIDF - CC GSS
+	ind: 	16.6901	Log * TFIDF MaxGSS + MaxCHI MaxAM
+	ind: 	26.1097	Log + DOM CTD IDF
+	ind: 	16.6901	Log * MaxOR CC MaxAM
+	ind: 	49.4276	Pow CC TF
+	ind: 	16.6901	Log MaxCTD TFICF
+	ind: 	16.6901	Log - OR CHI * TF CHI
+	ind: 	54.6696	* % TFICF MaxIG MaxCTD
+	ind: 	60.3736	% * MaxTFICF CE + GINI TF
+	ind: 	69.5923	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	25.1456	* Pow TF AM Pow TFICF sumDF
+	ind: 	48.9054	% CHI GSS
+	ind: 	36.3125	Pow % Log TFIDF sumTF * DOM sumDF * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	21.8317	* % TFIDF TF MaxAM
+	ind: 	42.3981	Pow * MaxOR CC sumDF
+	ind: 	64.1695	% DOM % DF MaxOR
+	ind: 	36.5937	- * OR IDF IG
+	ind: 	34.043	- Pow MaxCC MaxAM Pow CTD MaxTFICF
+	ind: 	16.6901	+ * Log TFIDF TFICF Pow TFICF OR * Log DOM MaxIG + MaxTFIDF AM
+	ind: 	32.7978	+ + % CTD DOM + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF
+	ind: 	24.4828	Log GINI Pow GINI MaxTFICF
+	ind: 	20.3053	+ % + MaxIG CHI - CC MaxTFICF % Log CTD TFIDF * GSS IDF
+	ind: 	16.6901	% Pow DF IG Log IG CE
+	ind: 	35.9108	+ + - MaxCTD MaxCHI Pow DOM TFIDF - - TF MaxCHI - MaxCHI sumTF
+	ind: 	33.4204	* Pow * TFIDF GINI Pow IDF sumDF % * MaxTFIDF DOM IG
+	ind: 	64.1695	% DOM % DF MaxOR
+	ind: 	64.1695	% DOM % DF MaxOR
+	ind: 	39.9478	% MaxDom MaxTFIDF
+	ind: 	16.6901	Log DF IG
+	ind: 	69.5923	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	30.7291	Log sumDF TF
+	ind: 	16.6901	Log Log CTD GSS + CHI IDF
+	ind: 	24.282	Log DF GINI
+	ind: 	16.6901	% Pow % AM TFIDF + DOM IG % Log CC AM MaxTFICF
+	ind: 	16.6901	* sumTF Log MaxDom MaxAM
+	ind: 	69.5923	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	60.6347	% DOM % DF MaxOR
+	ind: 	40.2892	* DOM sumDF
+	ind: 	34.2438	% TFICF MaxIG
+	ind: 	63.4465	* MaxIG IDF
+	ind: 	30.0462	Pow % - sumTF DOM % CHI GSS * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	39.0038	- % MaxDom IG TFICF
+	ind: 	37.2565	- Pow MaxCC MaxAM + MaxTFIDF AM
+	ind: 	64.2699	* GSS IDF
+	ind: 	29.1223	+ MaxOR AM
+	ind: 	56.7584	+ MaxOR AM
+	ind: 	33.9626	Pow % - sumTF DOM % CHI GSS * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	24.5431	Log GINI Pow GINI MaxTFICF
+	ind: 	16.6901	* % P' CE Log DOM DOM
+	ind: 	49.4276	Pow CC TF
+	ind: 	42.9403	+ Pow + MaxCC MaxIG % MaxTFIDF GSS Pow * % TFIDF TF MaxAM sumDF
+	ind: 	15.3846	+ % IG sumDF * IDF MaxGSS
+	ind: 	62.9645	% * MaxTFICF CE + GINI TF
+	ind: 	34.2237	+ GSS - Log sumDF P + TF P
+	ind: 	44.0048	* DOM sumDF
+	ind: 	17.1721	Pow % + MaxDom MaxTFICF MaxOR MaxCC
+	ind: 	37.5176	- MaxTFIDF GSS
+	ind: 	16.6901	* sumTF Log MaxDom MaxAM
+	ind: 	33.3601	* MaxIG IDF
+	ind: 	39.8474	Pow + + % MaxTFIDF GSS + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF DF
+	ind: 	46.1137	* GSS IDF
+	ind: 	21.7514	- GINI GSS
+	ind: 	42.9403	+ Pow + MaxCC MaxIG % MaxTFIDF GSS + % IG sumDF * MaxCHI AM
+	ind: 	47.8008	Pow % Log TFIDF sumTF % CHI GSS * + MaxCTD MaxCC * IDF MaxGSS
+	ind: 	16.6901	- Pow AM P % GSS MaxOR
+	ind: 	30.9299	% CTD TFIDF
+	ind: 	62.8841	% * MaxTFICF CE + GINI TF
+	ind: 	58.0237	* DF IG
+	rep: 41  -> 41
+	rep: 9 8  -> 0
+	rep: 9 8  -> 1
+	rep: 61 67  -> 2
+	rep: 61 67  -> 3
+	rep: 91 49  -> 4
+	rep: 91 49  -> 5
+	rep: 79 0  -> 6
+	rep: 79 0  -> 7
+	rep: 55 72  -> 8
+	rep: 55 72  -> 9
+	rep: 74 74  -> 10
+	rep: 74 74  -> 11
+	rep: 74 76  -> 12
+	rep: 74 76  -> 13
+	rep: 4 58  -> 14
+	rep: 4 58  -> 15
+	rep: 57 91  -> 16
+	rep: 57 91  -> 17
+	rep: 85 6  -> 18
+	rep: 85 6  -> 19
+	rep: 69  -> 20
+	rep: 93 35  -> 21
+	rep: 93 35  -> 22
+	rep: 56 18  -> 23
+	rep: 56 18  -> 24
+	rep: 73 0  -> 25
+	rep: 73 0  -> 26
+	rep: 44 16  -> 27
+	rep: 44 16  -> 28
+	rep: 99 60  -> 29
+	rep: 99 60  -> 30
+	rep: 84 81  -> 31
+	rep: 84 81  -> 32
+	rep: 28 82  -> 33
+	rep: 28 82  -> 34
+	rep: 61 19  -> 35
+	rep: 61 19  -> 36
+	rep: 90 23  -> 37
+	rep: 90 23  -> 38
+	rep: 22 66  -> 39
+	rep: 22 66  -> 40
+	rep: 51 63  -> 43
+	rep: 51 63  -> 44
+	rep: 75 66  -> 45
+	rep: 75 66  -> 46
+	rep: 90 89  -> 47
+	rep: 90 89  -> 48
+	rep: 28  -> 49
+	rep: 19 77  -> 50
+	rep: 19 77  -> 51
+	rep: 98 60  -> 52
+	rep: 98 60  -> 53
+	rep: 91 89  -> 54
+	rep: 91 89  -> 55
+	rep: 98 56  -> 56
+	rep: 98 56  -> 57
+	rep: 77 97  -> 58
+	rep: 77 97  -> 59
+	rep: 61  -> 60
+	rep: 57 92  -> 62
+	rep: 57 92  -> 63
+	rep: 42 27  -> 64
+	rep: 42 27  -> 65
+	rep: 57 92  -> 66
+	rep: 57 92  -> 67
+	rep: 78 2  -> 68
+	rep: 78 2  -> 69
+	rep: 36 65  -> 70
+	rep: 36 65  -> 71
+	rep: 69 96  -> 72
+	rep: 69 96  -> 73
+	rep: 8 16  -> 74
+	rep: 8 16  -> 75
+	rep: 4 8  -> 76
+	rep: 4 8  -> 77
+	rep: 9  -> 78
+	rep: 14 92  -> 79
+	rep: 14 92  -> 80
+	rep: 86 34  -> 81
+	rep: 86 34  -> 82
+	rep: 1 93  -> 83
+	rep: 1 93  -> 84
+	rep: 43 80  -> 85
+	rep: 43 80  -> 86
+	rep: 95 76  -> 87
+	rep: 95 76  -> 88
+	rep: 57 95  -> 89
+	rep: 57 95  -> 90
+	rep: 84 94  -> 91
+	rep: 84 94  -> 92
+	rep: 96 33  -> 93
+	rep: 96 33  -> 94
+	rep: 26 88  -> 95
+	rep: 26 88  -> 96
+	rep: 36 52  -> 97
+	rep: 36 52  -> 98
+generation 3:
+	ind: 	44.5471	% CTD TFIDF
+	ind: 	30.1265	* AM MaxAM
+	ind: 	69.5923	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	68.5881	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	38.1603	Pow + + % MaxTFIDF GSS - Pow MaxCC MaxAM Pow CTD MaxTFICF Log Log MaxCC MaxTFICF % DOM TFICF DF
+	ind: 	30.488	+ P' TFIDF
+	ind: 	24.4025	Log GINI Pow GINI MaxTFICF
+	ind: 	12.2314	- CC GSS
+	ind: 	62.0406	+ + - MaxCTD MaxCHI Pow DOM TFIDF - - TF MaxCHI - MaxCHI sumTF
+	ind: 	29.4437	Pow % - sumTF DOM % CHI GSS * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	37.2565	- Pow MaxCC MaxAM + MaxTFIDF AM
+	ind: 	33.9024	- Pow MaxCC MaxAM + MaxTFIDF AM
+	ind: 	37.2565	- Pow MaxCC MaxAM + MaxOR AM
+	ind: 	29.042	+ MaxTFIDF AM
+	ind: 	57.0597	% DF MaxOR
+	ind: 	67.0617	% DOM * MaxIG IDF
+	ind: 	51.4762	% DOM % DF MaxOR
+	ind: 	41.5545	Pow + + % MaxTFIDF GSS + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF DF
+	ind: 	34.2237	+ GSS - Log sumDF P + TF P
+	ind: 	16.6901	Log GINI + CTD Log MaxCTD OR
+	ind: 	40.2892	* DOM sumDF
+	ind: 	16.6901	Log * MaxOR CC MaxAM
+	ind: 	21.9723	- GINI GSS
+	ind: 	33.4204	* Pow * TFIDF GINI Pow IDF sumDF % * MaxTFIDF DOM IG
+	ind: 	16.6901	% DOM Log Log - DOM CTD IDF MaxAM
+	ind: 	38.6825	- % MaxDom IG TFICF
+	ind: 	13.3561	- CC GSS
+	ind: 	36.3125	Pow % Log TFIDF sumTF * DOM sumDF * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	31.5324	Pow + + % MaxTFIDF GSS + P' TFIDF + MaxTFIDF AM DF
+	ind: 	57.8028	* DF IG
+	ind: 	16.6901	Log DF IG
+	ind: 	62.9645	% * MaxTFICF CE + GINI TF
+	ind: 	49.4276	Pow CC TF
+	ind: 	61.3175	Log sumDF TF
+	ind: 	42.9403	+ Pow + MaxCC MaxIG % MaxTFIDF GSS Pow * % TFIDF TF MaxAM sumDF
+	ind: 	57.0597	% DF MaxOR
+	ind: 	69.4517	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	15.3444	% MaxGSS OR
+	ind: 	67.6642	* MaxIG IDF
+	ind: 	16.6901	Log MaxDom MaxAM
+	ind: 	16.6901	* sumTF * sumTF Log MaxDom MaxAM
+	ind: 	69.5923	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	42.8198	+ + TFIDF MaxAM sumDF
+	ind: 	32.7978	+ + % CTD DOM + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF
+	ind: 	16.6901	Log Log CTD GSS + CHI IDF
+	ind: 	33.2999	* GSS IDF
+	ind: 	16.6901	* sumTF Log MaxDom MaxAM
+	ind: 	16.6901	Log MaxDom MaxAM
+	ind: 	65.3947	* sumTF * MaxIG IDF
+	ind: 	55.4127	Log sumDF TF
+	ind: 	56.4973	+ MaxOR AM
+	ind: 	57.0597	% DF MaxOR
+	ind: 	63.9285	% Pow MaxTFICF CE + GINI TF
+	ind: 	16.6901	Log DF IG
+	ind: 	39.1243	Pow + + % MaxTFIDF GSS + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF DF
+	ind: 	16.6901	* sumTF Log MaxDom MaxAM
+	ind: 	59.992	% Pow IDF sumDF + GINI TF
+	ind: 	57.3609	* Pow * TFIDF GINI * MaxTFICF CE % * MaxTFIDF DOM IG
+	ind: 	60.6748	% CTD TFIDF
+	ind: 	29.1424	+ MaxOR AM
+	ind: 	69.5923	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	54.6897	Log MaxTFIDF MaxTFICF
+	ind: 	46.7162	% DOM % DF MaxOR
+	ind: 	52.5608	* GSS IDF
+	ind: 	15.3846	% DF * TFIDF MaxGSS
+	ind: 	35.7903	* Pow TF AM Pow TFICF sumDF
+	ind: 	66.901	% DOM * GSS IDF
+	ind: 	38.6825	% DF MaxOR
+	ind: 	16.6901	Log CTD TFIDF
+	ind: 	31.4521	Pow % - sumTF DOM % CHI GSS * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	16.6901	% Log CC AM MaxTFICF
+	ind: 	44.7078	% Pow % AM TFIDF + DOM IG Pow CC TF
+	ind: 	45.2902	* DOM sumDF
+	ind: 	16.6901	- Pow AM P % GSS MaxOR
+	ind: 	29.2227	+ % MaxTFIDF GSS + P' TFIDF
+	ind: 	21.7714	Pow + * AM MaxAM + MaxTFIDF AM DF
+	ind: 	67.6642	* MaxIG IDF
+	ind: 	30.1868	* AM MaxAM
+	ind: 	37.4975	% CTD TFIDF
+	ind: 	48.2225	+ * GSS IDF Log Log MaxCC MaxTFICF % DOM TFICF
+	ind: 	45.7923	* MaxIG IDF
+	ind: 	35.9912	Log + DOM CTD IDF
+	ind: 	29.6043	* DOM sumDF
+	ind: 	39.0842	* Pow TFICF MaxTFIDF * DF IG
+	ind: 	21.7514	- GINI GSS
+	ind: 	34.1233	% CHI GSS
+	ind: 	16.6901	* % P' CE Log DOM DOM
+	ind: 	49.6485	Pow % Log TFIDF sumTF % CHI GSS * + MaxCTD MaxCC * IDF MaxGSS
+	ind: 	29.1424	+ MaxOR AM
+	ind: 	48.4635	% DOM * + MaxCTD MaxCC * IDF MaxGSS
+	ind: 	16.6901	Pow % Log TFIDF sumTF % CHI GSS % DF MaxOR
+	ind: 	59.8514	% * MaxTFICF CE + GINI TF
+	ind: 	68.5077	+ Pow + MaxCC MaxIG % MaxTFIDF GSS + % IG sumDF * MaxCHI AM
+	ind: 	16.6901	- Pow AM P Pow GSS MaxOR
+	ind: 	16.6901	Log * TFIDF MaxGSS + MaxCHI MaxAM
+	ind: 	53.2035	- MaxTFIDF GSS
+	ind: 	38.5017	* DOM sumDF
+	ind: 	39.9076	Pow CC TF
+	ind: 	24.523	Log GINI Pow GINI MaxTFICF
+	ind: 	34.1434	+ CHI MaxGSS
+	rep: 41  -> 41
+	rep: 76 69  -> 0
+	rep: 76 69  -> 1
+	rep: 45 84  -> 2
+	rep: 45 84  -> 3
+	rep: 13 46  -> 5
+	rep: 13 46  -> 6
+	rep: 20  -> 7
+	rep: 60 73  -> 8
+	rep: 60 73  -> 9
+	rep: 51 69  -> 10
+	rep: 51 69  -> 11
+	rep: 91 24  -> 12
+	rep: 91 24  -> 13
+	rep: 71 22  -> 14
+	rep: 71 22  -> 15
+	rep: 51 45  -> 16
+	rep: 51 45  -> 17
+	rep: 62 98  -> 19
+	rep: 62 98  -> 20
+	rep: 84 84  -> 21
+	rep: 84 84  -> 22
+	rep: 17 46  -> 23
+	rep: 17 46  -> 24
+	rep: 94 44  -> 25
+	rep: 94 44  -> 26
+	rep: 12 59  -> 27
+	rep: 12 59  -> 28
+	rep: 17 94  -> 29
+	rep: 17 94  -> 30
+	rep: 69 88  -> 31
+	rep: 69 88  -> 32
+	rep: 14 44  -> 33
+	rep: 14 44  -> 34
+	rep: 18 22  -> 35
+	rep: 18 22  -> 36
+	rep: 96 53  -> 37
+	rep: 96 53  -> 38
+	rep: 76 20  -> 39
+	rep: 76 20  -> 40
+	rep: 62 72  -> 42
+	rep: 62 72  -> 43
+	rep: 51 78  -> 44
+	rep: 51 78  -> 45
+	rep: 60 28  -> 46
+	rep: 60 28  -> 47
+	rep: 34 25  -> 48
+	rep: 34 25  -> 49
+	rep: 76 10  -> 50
+	rep: 76 10  -> 51
+	rep: 67 65  -> 52
+	rep: 67 65  -> 53
+	rep: 57 10  -> 54
+	rep: 57 10  -> 55
+	rep: 61 45  -> 56
+	rep: 61 45  -> 57
+	rep: 31  -> 58
+	rep: 65 64  -> 59
+	rep: 65 64  -> 60
+	rep: 3 26  -> 61
+	rep: 3 26  -> 62
+	rep: 66 54  -> 63
+	rep: 66 54  -> 64
+	rep: 66 25  -> 65
+	rep: 66 25  -> 66
+	rep: 41 40  -> 67
+	rep: 41 40  -> 68
+	rep: 32 69  -> 69
+	rep: 32 69  -> 70
+	rep: 72 9  -> 72
+	rep: 72 9  -> 73
+	rep: 35 96  -> 74
+	rep: 35 96  -> 75
+	rep: 61 62  -> 76
+	rep: 61 62  -> 77
+	rep: 99 1  -> 78
+	rep: 99 1  -> 79
+	rep: 33 73  -> 80
+	rep: 33 73  -> 81
+	rep: 6 26  -> 82
+	rep: 6 26  -> 83
+	rep: 50 72  -> 84
+	rep: 50 72  -> 85
+	rep: 4 1  -> 86
+	rep: 4 1  -> 87
+	rep: 73 7  -> 88
+	rep: 73 7  -> 89
+	rep: 95 17  -> 90
+	rep: 95 17  -> 91
+	rep: 0 39  -> 92
+	rep: 0 39  -> 93
+	rep: 29 22  -> 94
+	rep: 29 22  -> 95
+	rep: 68 39  -> 96
+	rep: 68 39  -> 97
+	rep: 91 7  -> 98
+	rep: 91 7  -> 99
+generation 4:
+	ind: 	60.7351	+ MaxCTD MaxCC
+	ind: 	17.9755	Pow % - sumTF DOM % CHI GSS * * MaxIG IDF * MaxCHI AM
+	ind: 	20.1848	- GINI GSS
+	ind: 	33.3199	* GSS IDF
+	ind: 	72.2836	Pow GINI CC
+	ind: 	29.0219	+ * sumTF Log MaxDom MaxAM AM
+	ind: 	43.0609	MaxTFIDF
+	ind: 	40.2892	* DOM sumDF
+	ind: 	60.9962	% GSS MaxOR
+	ind: 	16.6901	- Pow AM P + - MaxCHI DOM - MaxCTD CHI
+	ind: 	42.3177	% DF MaxOR
+	ind: 	33.8622	Pow % - sumTF DOM % CHI GSS * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	32.5969	% * MaxTFICF CE + GINI TF
+	ind: 	16.6901	% DOM Log Log - DOM CTD IDF MaxAM
+	ind: 	20.8877	% - GINI GSS Pow CC TF
+	ind: 	70.6568	Pow % AM TFIDF + DOM IG
+	ind: 	68.0659	* GSS IDF
+	ind: 	28.0177	% DF MaxOR
+	ind: 	21.5103	* TFIDF MaxIG
+	ind: 	64.1695	% DOM % DF MaxOR
+	ind: 	24.5029	Log GINI Pow GINI MaxTFICF
+	ind: 	21.7514	- GINI GSS
+	ind: 	21.7514	- GINI GSS
+	ind: 	41.5545	Pow + + % MaxTFIDF GSS + P' TFIDF Log Log MaxCC MaxTFICF * sumTF Log MaxDom MaxAM DF
+	ind: 	46.9371	% DOM TFICF
+	ind: 	16.6901	Log Log CTD GSS + MaxCHI MaxAM
+	ind: 	16.6901	Log * TFIDF MaxGSS + CHI IDF
+	ind: 	37.1159	- Pow MaxCC MaxAM + MaxOR AM
+	ind: 	29.1223	+ MaxOR AM
+	ind: 	61.2774	Pow * TFIDF MaxGSS DF
+	ind: 	33.1994	Log + + % MaxTFIDF GSS + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF + MaxCHI MaxAM
+	ind: 	33.802	Pow % - sumTF DOM % CHI GSS * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	29.1223	+ MaxOR AM
+	ind: 	16.6901	Log Log CTD GSS + CHI IDF
+	ind: 	28.2185	% DF MaxOR
+	ind: 	68.6684	+ GSS - Log sumDF P + TF P
+	ind: 	21.912	- GINI GSS
+	ind: 	16.6901	Log DF IG
+	ind: 	58.345	* DOM sumDF
+	ind: 	49.7891	* MaxIG IDF
+	ind: 	52.4001	* DOM sumDF
+	ind: 	69.5923	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	46.0534	% DOM % DF MaxOR
+	ind: 	58.566	* DOM sumDF
+	ind: 	60.6748	% CTD TFIDF
+	ind: 	34.6656	% DF MaxOR
+	ind: 	69.5923	+ - MaxCHI DOM - MaxCTD CHI
+	ind: 	53.2637	Pow + + % MaxTFIDF GSS + P' TFIDF + MaxTFIDF AM DF
+	ind: 	45.0693	% MaxDom IG
+	ind: 	43.1211	- + Pow + MaxCC MaxIG % MaxTFIDF GSS Pow * % TFIDF TF MaxAM sumDF TFICF
+	ind: 	42.2173	* MaxIG IDF
+	ind: 	37.2565	- Pow MaxCC MaxAM * MaxTFIDF AM
+	ind: 	37.2364	% DF MaxOR
+	ind: 	36.9552	* Pow TF AM Pow TFICF sumDF
+	ind: 	57.3609	* Pow * TFIDF GINI * MaxTFICF CE % * MaxTFIDF DOM IG
+	ind: 	33.9827	- Pow MaxCC MaxAM + MaxTFIDF AM
+	ind: 	28.1181	Log MaxTFIDF MaxTFICF
+	ind: 	64.2699	* GSS IDF
+	ind: 	67.2625	% + MaxTFICF CE + GINI TF
+	ind: 	35.7301	* Pow TF AM Pow TFICF sumDF
+	ind: 	15.3846	% DF * TFIDF MaxGSS
+	ind: 	67.6843	+ - MaxCHI DOM - CC GSS
+	ind: 	62.7636	- MaxCTD CHI
+	ind: 	58.4053	% DOM * GSS IDF
+	ind: 	21.7514	Pow + + % MaxTFIDF GSS + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF DF
+	ind: 	45.3906	% DOM * GSS IDF
+	ind: 	56.0554	- % MaxDom IG TFICF
+	ind: 	68.7287	+ - MaxCHI DOM * sumTF * sumTF Log MaxDom MaxAM
+	ind: 	33.9024	- MaxCTD CHI
+	ind: 	47.3991	Pow CC TF
+	ind: 	31.9341	Pow % - sumTF DOM % CHI GSS * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	16.6901	Log P' + CHI AM
+	ind: 	47.6602	% - sumTF DOM % CHI GSS
+	ind: 	21.5505	Pow * DOM sumDF * + MaxCTD MaxCC * MaxCHI AM
+	ind: 	58.345	* DOM sumDF
+	ind: 	36.3326	% DF MaxOR
+	ind: 	49.3673	% DOM % DF MaxOR
+	ind: 	47.5999	Log MaxTFIDF MaxTFICF
+	ind: 	34.1434	+ CHI MaxGSS
+	ind: 	30.1265	* AM MaxAM
+	ind: 	61.3175	Log sumDF TF
+	ind: 	16.6901	- Pow AM P % GSS MaxOR
+	ind: 	16.6901	Log GINI - CC GSS
+	ind: 	45.5111	Pow GINI MaxTFICF
+	ind: 	58.084	* DOM sumDF
+	ind: 	44.6274	+ MaxOR AM
+	ind: 	26.1699	Pow + + % MaxTFIDF GSS - Pow MaxCC MaxAM Pow CTD MaxTFICF Log Log MaxCC MaxTFICF % DOM TFICF DF
+	ind: 	30.3675	* AM MaxAM
+	ind: 	16.6901	- - CC GSS % GSS MaxOR
+	ind: 	42.4985	Pow AM P
+	ind: 	57.5417	- MaxTFIDF GSS
+	ind: 	36.674	Pow + + % MaxTFIDF GSS + P' TFIDF Log Log MaxCC MaxTFICF % DOM TFICF DF
+	ind: 	44.768	% CTD TFIDF
+	ind: 	16.6901	Log MaxDom MaxAM
+	ind: 	70.3153	GINI
+	ind: 	66.0374	- * DF IG GSS
+	ind: 	16.6901	Log CTD TFIDF
+	ind: 	16.6901	Log MaxDom MaxAM
+	ind: 	59.751	% * MaxTFICF CE + GINI TF
+	ind: 	11.5887	- CC GSS
+	rep: 4  -> 4
+	rep: 57 62  -> 0
+	rep: 57 62  -> 1
+	rep: 95 5  -> 2
+	rep: 95 5  -> 3
+	rep: 84 66  -> 5
+	rep: 84 66  -> 6
+	rep: 22 60  -> 7
+	rep: 22 60  -> 8
+	rep: 63 32  -> 9
+	rep: 63 32  -> 10
+	rep: 86 60  -> 11
+	rep: 86 60  -> 12
+	rep: 94 73  -> 13
+	rep: 94 73  -> 14
+	rep: 63 96  -> 15
+	rep: 63 96  -> 16
+	rep: 65 50  -> 17
+	rep: 65 50  -> 18
+	rep: 0 47  -> 19
+	rep: 0 47  -> 20
+	rep: 80 66  -> 21
+	rep: 80 66  -> 22
+	rep: 24 11  -> 23
+	rep: 24 11  -> 24
+	rep: 42 52  -> 25
+	rep: 42 52  -> 26
+	rep: 90  -> 27
+	rep: 69 28  -> 28
+	rep: 69 28  -> 29
+	rep: 68 17  -> 30
+	rep: 68 17  -> 31
+	rep: 7 13  -> 32
+	rep: 7 13  -> 33
+	rep: 80 74  -> 34
+	rep: 80 74  -> 35
+	rep: 53 88  -> 36
+	rep: 53 88  -> 37
+	rep: 0 45  -> 38
+	rep: 0 45  -> 39
+	rep: 4  -> 40
+	rep: 48 59  -> 41
+	rep: 48 59  -> 42
+	rep: 44 33  -> 46
+	rep: 44 33  -> 47
+	rep: 48 31  -> 48
+	rep: 48 31  -> 49
+	rep: 95  -> 50
+	rep: 50 28  -> 51
+	rep: 50 28  -> 52
+	rep: 63 53  -> 53
+	rep: 63 53  -> 54
+	rep: 44  -> 55
+	rep: 63 55  -> 56
+	rep: 63 55  -> 57
+	rep: 91 86  -> 58
+	rep: 91 86  -> 59
+	rep: 21 18  -> 60
+	rep: 21 18  -> 61
+	rep: 54 78  -> 62
+	rep: 54 78  -> 63
+	rep: 45 21  -> 64
+	rep: 45 21  -> 65
+	rep: 75 59  -> 66
+	rep: 75 59  -> 67
+	rep: 92 86  -> 68
+	rep: 92 86  -> 69
+	rep: 95  -> 70
+	rep: 16  -> 71
+	rep: 92 88  -> 72
+	rep: 92 88  -> 73
+	rep: 55 96  -> 74
+	rep: 55 96  -> 75
+	rep: 46 81  -> 76
+	rep: 46 81  -> 77
+	rep: 81 99  -> 78
+	rep: 81 99  -> 79
+	rep: 81 88  -> 80
+	rep: 81 88  -> 81
+	rep: 39 83  -> 82
+	rep: 39 83  -> 83
+	rep: 46 8  -> 84
+	rep: 46 8  -> 85
+	rep: 78 3  -> 86
+	rep: 78 3  -> 87
+	rep: 66  -> 88
+	rep: 5 9  -> 89
+	rep: 5 9  -> 90
+	rep: 35 42  -> 91
+	rep: 35 42  -> 92
+	rep: 32  -> 93
+	rep: 93 71  -> 94
+	rep: 93 71  -> 95
+	rep: 15 69  -> 96
+	rep: 15 69  -> 97
+	rep: 84  -> 98
+	rep: 4 32  -> 99
