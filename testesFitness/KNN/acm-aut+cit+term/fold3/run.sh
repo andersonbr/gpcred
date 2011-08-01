@@ -16,6 +16,6 @@ grafoboth="-g 2  ../../../../fonte/graphs/authorship.txt ../../../../fonte/graph
 
 fitness=""
 
-python runme.py ./gp-cred -treino $treinopath -validacao $validacaopath -teste $testepath -brunoro $brunoro -dontsave -knn $k $grafoboth 
+python runme.py ./gp-cred -treino $treinopath -validacao $validacaopath -teste $testepath -brunoro $brunoro -knn $k $grafoboth 
 
 

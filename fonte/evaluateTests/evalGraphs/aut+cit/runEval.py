@@ -17,7 +17,7 @@ for l in file:
 
         evalFileNameout = metricName+str(i)
 
-        command = "./gp-cred -treino ../../../../arquivos/acm/CV5/treino/treino" +str(i)+" -validacao ../../../../arquivos/acm/CV5/validacao/validacao"+str(i) + " -teste ../../../../arquivos/acm/CV5/teste/teste"+str(i)+" -noterms -dontoptimize -g 2 ../../../graphs/authorship.txt ../../../graphs/citation.txt -eval evalfile.in "+evalFileNameout
+        command = "./gp-cred -treino ../../../../arquivos/acm/CV5/treino/treino" +str(i)+" -teste ../../../../arquivos/acm/CV5/validacao/validacao"+str(i) + " -noterms -dontoptimize -g 2 ../../../graphs/authorship.txt ../../../graphs/citation.txt -eval evalfile.in "+evalFileNameout
         
         print i, metricName, evalFileNameout, command
         os.system(command)
