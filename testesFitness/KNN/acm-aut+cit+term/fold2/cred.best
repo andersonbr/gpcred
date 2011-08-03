@@ -1,0 +1,45 @@
+Best of generation 0 (Fitness = 30.1406, Structural Complexity = 21)
+GP: (+ (- MaxCHI DOM) (- MaxCTD CHI))
+ADF0: (* (+ PageRank Constraint) (- PageRank HubScore))
+ADF1: (% (% PageRank Authority) (Pow Betweenness Neighborhood2))
+
+Best of generation 1 (Fitness = 28.8956, Structural Complexity = 13)
+GP: (% IG MaxIG)
+ADF0: (- (Pow JaccardSimilarity Strength) (+ InverseLogSimilarity DiceSimilarity))
+ADF1: (Log EigenVector Neighborhood1)
+
+Best of generation 2 (Fitness = 28.8956, Structural Complexity = 13)
+GP: (% IG MaxIG)
+ADF0: (- (Pow JaccardSimilarity Strength) (+ InverseLogSimilarity DiceSimilarity))
+ADF1: (Log EigenVector Neighborhood1)
+
+Best of generation 3 (Fitness = 28.7751, Structural Complexity = 15)
+GP: (* sumTF (* GSS IDF))
+ADF0: (* Betweenness PageRank)
+ADF1: (Pow (- Authority Authority) (* HubScore HubScore))
+
+Best of generation 4 (Fitness = 28.7751, Structural Complexity = 15)
+GP: (* sumTF (* GSS IDF))
+ADF0: (* Betweenness PageRank)
+ADF1: (Pow (- Authority Authority) (* HubScore HubScore))
+
+Best of generation 5 (Fitness = 28.7751, Structural Complexity = 15)
+GP: (* sumTF (* GSS IDF))
+ADF0: (* Betweenness PageRank)
+ADF1: (Pow (- Authority Authority) (* HubScore HubScore))
+
+Best of generation 6 (Fitness = 28.2932, Structural Complexity = 33)
+GP: (Pow GINI GSS)
+ADF0: (- (- (- InverseLogSimilarity Strength) (* HubScore Strength)) (* InverseLogSimilarity Strength))
+ADF1: (- (- (* InverseLogSimilarity Closeness) (% BibCoupling Neighborhood3)) (Log (+ (- (Pow HubScore Closeness) Closeness) Neighborhood3) (Log HubScore PageRank)))
+
+Best of generation 7 (Fitness = 28.2932, Structural Complexity = 33)
+GP: (Pow GINI GSS)
+ADF0: (- (- (- InverseLogSimilarity Strength) (* HubScore Strength)) (* InverseLogSimilarity Strength))
+ADF1: (- (- (* InverseLogSimilarity Closeness) (% BibCoupling Neighborhood3)) (Log (+ (- (Pow HubScore Closeness) Closeness) Neighborhood3) (Log HubScore PageRank)))
+
+Best of generation 8 (Fitness = 28.2932, Structural Complexity = 33)
+GP: (Pow GINI GSS)
+ADF0: (- (- (- InverseLogSimilarity Strength) (* HubScore Strength)) (* InverseLogSimilarity Strength))
+ADF1: (- (- (* InverseLogSimilarity Closeness) (% BibCoupling Neighborhood3)) (Log (+ (- (Pow HubScore Closeness) Closeness) Neighborhood3) (Log HubScore PageRank)))
+

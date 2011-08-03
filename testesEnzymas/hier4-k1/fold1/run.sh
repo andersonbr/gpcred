@@ -9,6 +9,6 @@ brunoro=fold$fold.gpvis
 
 graph=../../../fonte/enzymes/top950.blast.ok3.sorted
 
-python runme.py ./gp-cred -treino $treinopath -validacao $validacaopath -teste $testepath -brunoro $brunoro -dontsave -num 15 -noterms -knn 1 -KNNOptimize -g 1 $graph
+python runme.py ./gp-cred -treino $treinopath -validacao $validacaopath -teste $testepath -brunoro $brunoro -num 15 -noterms -knn 1 -KNNOptimize -g 1 $graph
 
 

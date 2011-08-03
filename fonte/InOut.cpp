@@ -106,7 +106,7 @@ void InOut::read(const char* filename, int option){
 			vector<string> catTokens;
             vector<double> numTokens;
             vector<int> freqTextTokens;
-			Tokenizer::stringTokenize(line, textTokens, freqTextTokens, ";");
+			Tokenizer::stringTokenize(line, numericalCollums, categoricalCollums, textTokens, freqTextTokens, ";");
 			
             //Blank line
 			if(textTokens.size() < 3) continue;
