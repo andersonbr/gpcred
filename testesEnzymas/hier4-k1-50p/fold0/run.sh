@@ -2,7 +2,7 @@ fold=$(pwd | sed 's/fold/ /g' | cut -f2 -d' ')
 
 base=$(pwd | sed 's/\/fold/ /g' | cut -f 1 -d' ' | sed 's/\NB\// /g' | cut -f 2 -d' ')
 
-path=../../../fonte/enzymes/files/hier4/
+path=../../../fonte/enzymes/files/hier4_50p/
 
 #../../../fonte/enzymes/files/hier4/fold0/
 
