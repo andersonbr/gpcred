@@ -162,7 +162,7 @@ int main(int argc, char **argv)
 	//gp->setCredibilityConfigurations(usingTermCredibility, graphsNames);
 	
 	int genMax = gp->getMaxGen();
-	for( int gen = gp->getActualGen(); gen < genMax; gen++){
+	for(int gen = gp->getActualGen(); gen < genMax; gen++){
 
 		cout<<"Atual gen ============================================================================= "<< gen<<endl;
 
@@ -183,7 +183,6 @@ int main(int argc, char **argv)
             configureContentCredibility(stats, usingTermCredibility, normalEstimator, normalizeTermsPerGreatestClassValue, usingCategoricalCredibility);
             configureGraphCredibility(stats, io, graphsNames);
         }
-
 	}
     
     gp->printFinalOutFile();
@@ -211,7 +210,9 @@ int main(int argc, char **argv)
     cout<<endl<<"Running final baseline:"<<endl;
     //force to not optimize
     usingKNNOptimize = false;
-	if(usingKNN)
+    stats.setUsingKNN(usingKNN, KNNK, usingKNNOptimize);
+	
+    if(usingKNN)
         classifier = new KNN(&stats, KNNK, usingKNNOptimize); 
 	else
         classifier = new NaiveBayes(&stats); 
