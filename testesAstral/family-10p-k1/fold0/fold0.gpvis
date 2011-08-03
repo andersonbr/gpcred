@@ -1,0 +1,1013 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Pow,2) (Log,2) 
+	terms: InverseLogSimilarity DiceSimilarity JaccardSimilarity CoCitation BibCoupling Betweenness PageRank Constraint Strength Closeness EigenVector Authority HubScore Neighborhood3 Neighborhood2 Neighborhood1
+generation 0:
+	ind: 	82.4953	* Neighborhood3 Betweenness
+	ind: 	93.6685	+ + BibCoupling DiceSimilarity - Strength HubScore
+	ind: 	93.203	- Neighborhood3 * + DiceSimilarity BibCoupling % Neighborhood1 Strength
+	ind: 	78.3985	+ * % Log Closeness Constraint - DiceSimilarity BibCoupling - Pow Strength Constraint - Betweenness DiceSimilarity Log - Log JaccardSimilarity JaccardSimilarity - InverseLogSimilarity Closeness + + EigenVector Betweenness + PageRank Betweenness
+	ind: 	72.7188	Pow Closeness Closeness
+	ind: 	93.1099	% Neighborhood3 DiceSimilarity
+	ind: 	93.3892	- + EigenVector Neighborhood3 * Neighborhood1 Neighborhood1
+	ind: 	93.1099	- * Log Closeness CoCitation + Betweenness Neighborhood3 Pow + CoCitation Neighborhood1 % Strength HubScore
+	ind: 	91.0615	+ JaccardSimilarity % Betweenness * * Authority Betweenness Pow Strength Constraint
+	ind: 	74.581	Log Log * + + Neighborhood2 Closeness * Constraint Neighborhood2 * - HubScore Constraint Pow HubScore Authority Pow - % JaccardSimilarity BibCoupling % CoCitation Neighborhood1 - - BibCoupling DiceSimilarity % Neighborhood2 PageRank % - * % Betweenness InverseLogSimilarity - JaccardSimilarity CoCitation % - EigenVector Neighborhood1 Pow EigenVector Authority + Pow Log Constraint Neighborhood1 - HubScore Neighborhood1 Log * JaccardSimilarity Neighborhood2 Pow Neighborhood1 InverseLogSimilarity
+	ind: 	92.2719	% BibCoupling JaccardSimilarity
+	ind: 	89.9441	% + JaccardSimilarity DiceSimilarity - HubScore InverseLogSimilarity
+	ind: 	11.825	Pow Closeness Neighborhood3
+	ind: 	11.4525	% - % + Neighborhood1 HubScore Log InverseLogSimilarity Neighborhood1 * - Neighborhood2 JaccardSimilarity - DiceSimilarity Neighborhood3 - + + InverseLogSimilarity PageRank Pow Strength JaccardSimilarity Log - Neighborhood1 Closeness Log Neighborhood3 Neighborhood1
+	ind: 	88.3613	% Authority * Pow Constraint DiceSimilarity Log * % Strength Strength % Neighborhood2 DiceSimilarity % Betweenness EigenVector
+	ind: 	13.6872	% Neighborhood1 Strength
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.0168	% * % BibCoupling CoCitation - Strength Closeness - * DiceSimilarity Neighborhood1 Log PageRank Betweenness
+	ind: 	81.4711	* EigenVector HubScore
+	ind: 	93.203	- % * * % Neighborhood3 Neighborhood3 % Closeness EigenVector * Pow Authority Neighborhood2 Log CoCitation CoCitation * Log % InverseLogSimilarity Neighborhood1 - JaccardSimilarity Closeness Pow * Constraint Closeness + Strength JaccardSimilarity Log Log + Log EigenVector Authority % Authority Neighborhood1 - + Strength PageRank % Constraint InverseLogSimilarity + + * EigenVector JaccardSimilarity * Closeness DiceSimilarity - % Constraint Neighborhood1 + BibCoupling CoCitation
+	ind: 	93.1099	- CoCitation HubScore
+	ind: 	46.9274	Pow * Neighborhood2 Betweenness * Strength BibCoupling
+	ind: 	62.7561	Pow EigenVector Closeness
+	ind: 	76.3501	Pow % Log * Strength Neighborhood2 - Authority Neighborhood1 - Log Neighborhood2 Betweenness * CoCitation PageRank * + % Neighborhood3 Neighborhood1 Pow Authority CoCitation Pow Log DiceSimilarity Neighborhood3 % Constraint PageRank
+	ind: 	83.054	% Neighborhood2 % Pow - Strength Log EigenVector CoCitation + % Neighborhood3 BibCoupling * JaccardSimilarity Neighborhood2 Pow BibCoupling Neighborhood3
+	ind: 	41.3408	Log Authority InverseLogSimilarity
+	ind: 	90.1304	- Betweenness EigenVector
+	ind: 	21.8808	* + Log Closeness Neighborhood1 - BibCoupling Neighborhood2 Log - PageRank EigenVector Log BibCoupling Neighborhood3
+	ind: 	93.3892	Log Log Neighborhood1 Neighborhood3 DiceSimilarity
+	ind: 	93.3892	- - % * Pow HubScore InverseLogSimilarity * Strength Neighborhood3 Pow * EigenVector Betweenness + InverseLogSimilarity Closeness + - Pow CoCitation Authority Log HubScore Constraint + Pow Neighborhood2 Authority % CoCitation Strength % * Log % Neighborhood1 BibCoupling - Constraint Authority - - Betweenness EigenVector * Neighborhood2 InverseLogSimilarity + * + Strength Strength - InverseLogSimilarity EigenVector % - Neighborhood2 Neighborhood2 Log Neighborhood3 Strength
+	ind: 	76.8156	Pow DiceSimilarity Neighborhood2
+	ind: 	92.2719	- + PageRank Betweenness * Closeness DiceSimilarity
+	ind: 	91.6201	* Log Pow Authority DiceSimilarity Constraint + % Strength Authority Pow EigenVector CoCitation
+	ind: 	37.8957	+ Log - Log HubScore JaccardSimilarity Log CoCitation Authority Pow % Authority InverseLogSimilarity Log PageRank HubScore % Log * JaccardSimilarity Authority - CoCitation BibCoupling * + Strength HubScore * Betweenness CoCitation
+	ind: 	93.3892	- Betweenness InverseLogSimilarity
+	ind: 	87.6164	- Closeness PageRank
+	ind: 	93.203	* Neighborhood1 % CoCitation Neighborhood2
+	ind: 	76.9088	Log * + Betweenness Constraint Pow Constraint Authority Pow + EigenVector Closeness Log Neighborhood1 PageRank
+	ind: 	41.8063	Log PageRank Neighborhood2
+	ind: 	27.095	Log - % * * Neighborhood1 EigenVector Log Neighborhood3 EigenVector - Log CoCitation DiceSimilarity + BibCoupling Constraint Log Pow % Closeness Neighborhood3 Pow InverseLogSimilarity Betweenness * Log Constraint JaccardSimilarity + DiceSimilarity Authority + % Pow Pow JaccardSimilarity JaccardSimilarity * Constraint BibCoupling Log Log Constraint EigenVector - Neighborhood2 Constraint Log + - DiceSimilarity Constraint * Neighborhood2 PageRank % - Neighborhood1 EigenVector Log Constraint Authority
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	81.0056	- % InverseLogSimilarity Neighborhood1 * Closeness Strength
+	ind: 	93.3892	Log Log EigenVector InverseLogSimilarity Constraint
+	ind: 	91.0615	% % Log Pow Authority Neighborhood1 * Neighborhood1 BibCoupling Log % Betweenness HubScore Log Authority InverseLogSimilarity Log % * Strength Authority % Strength JaccardSimilarity Pow * BibCoupling InverseLogSimilarity Log Authority PageRank
+	ind: 	93.9479	% Strength - Constraint Neighborhood3
+	ind: 	93.2961	+ Betweenness Neighborhood3
+	ind: 	76.3501	Log Neighborhood3 - PageRank Closeness
+	ind: 	92.8305	Log + + DiceSimilarity CoCitation % BibCoupling HubScore Pow % Closeness CoCitation Pow InverseLogSimilarity Betweenness
+	ind: 	75.6052	Pow % Neighborhood2 BibCoupling EigenVector
+	ind: 	52.2346	+ Pow * % + DiceSimilarity BibCoupling % CoCitation Constraint * + DiceSimilarity Betweenness Pow Closeness Strength Pow + - Betweenness Constraint * Neighborhood2 CoCitation Pow % Strength PageRank + Neighborhood1 HubScore + * Pow Pow EigenVector Neighborhood3 + EigenVector JaccardSimilarity + Pow EigenVector InverseLogSimilarity + CoCitation Neighborhood2 * Pow % Neighborhood1 Neighborhood1 Log Neighborhood2 Authority % * Neighborhood2 BibCoupling - Neighborhood1 Neighborhood3
+	ind: 	93.6685	+ BibCoupling Strength
+	ind: 	79.8883	* Log Neighborhood2 BibCoupling Log Betweenness Authority
+	ind: 	76.7225	- JaccardSimilarity % * PageRank DiceSimilarity - BibCoupling DiceSimilarity
+	ind: 	87.1508	% - + % InverseLogSimilarity Authority - CoCitation HubScore - % JaccardSimilarity InverseLogSimilarity Log Constraint PageRank % % + Strength EigenVector % PageRank Neighborhood1 * % Strength HubScore * Betweenness HubScore
+	ind: 	87.2439	+ - * Authority + Pow EigenVector Neighborhood1 Strength Neighborhood3 Log DiceSimilarity Neighborhood2
+	ind: 	76.8156	Log Authority Closeness
+	ind: 	76.7225	- Pow Neighborhood1 EigenVector InverseLogSimilarity
+	ind: 	32.6816	Pow Pow Log CoCitation Strength * Neighborhood2 Neighborhood3 Pow Pow Closeness Constraint % Constraint DiceSimilarity
+	ind: 	74.2086	Log Constraint Closeness
+	ind: 	91.9926	+ - * % Log Betweenness InverseLogSimilarity Pow BibCoupling Neighborhood2 + * BibCoupling InverseLogSimilarity + PageRank Closeness * * Pow JaccardSimilarity Strength Log DiceSimilarity Neighborhood1 Pow % EigenVector Strength + Neighborhood3 CoCitation % * + + InverseLogSimilarity InverseLogSimilarity Pow PageRank Neighborhood2 % - CoCitation Constraint * Closeness HubScore Pow + Log Betweenness Neighborhood2 % Neighborhood2 CoCitation Log + Strength Neighborhood3 + Strength DiceSimilarity
+	ind: 	76.8156	Log BibCoupling JaccardSimilarity
+	ind: 	88.3613	* % Neighborhood2 Neighborhood1 * JaccardSimilarity Authority
+	ind: 	93.6685	+ Neighborhood3 CoCitation
+	ind: 	76.8156	Pow Log Pow - Strength Constraint - Neighborhood3 EigenVector Pow Pow JaccardSimilarity Neighborhood1 * Neighborhood2 Neighborhood3 + + Log HubScore PageRank % BibCoupling Neighborhood2 % Pow Authority CoCitation + InverseLogSimilarity InverseLogSimilarity
+	ind: 	76.8156	Log Neighborhood2 DiceSimilarity
+	ind: 	76.8156	Log Strength DiceSimilarity
+	ind: 	92.4581	- + BibCoupling Closeness % HubScore JaccardSimilarity
+	ind: 	76.7225	+ - Log PageRank Authority Log InverseLogSimilarity PageRank * % InverseLogSimilarity DiceSimilarity Pow EigenVector Strength
+	ind: 	18.4358	% Constraint Neighborhood1
+	ind: 	81.2849	+ Pow % * Log Authority Neighborhood3 Pow Neighborhood3 Closeness - + Neighborhood1 HubScore Pow PageRank Neighborhood3 + * Pow Closeness Constraint Pow Closeness PageRank Log % CoCitation InverseLogSimilarity Log BibCoupling Neighborhood1 Pow Log % + BibCoupling Strength * Neighborhood3 Neighborhood3 - Pow InverseLogSimilarity HubScore Pow CoCitation Closeness + % % InverseLogSimilarity CoCitation Log Closeness Authority - * DiceSimilarity InverseLogSimilarity + Neighborhood2 Betweenness
+	ind: 	65.7356	% EigenVector HubScore
+	ind: 	72.7188	- - HubScore Constraint % CoCitation InverseLogSimilarity
+	ind: 	87.8026	* PageRank * Pow Neighborhood1 Neighborhood3 - Authority CoCitation
+	ind: 	59.6834	Pow % - + Strength JaccardSimilarity % InverseLogSimilarity Authority % + InverseLogSimilarity CoCitation * Constraint Strength % - - JaccardSimilarity PageRank * InverseLogSimilarity DiceSimilarity % Log Neighborhood2 CoCitation Pow Constraint Neighborhood3
+	ind: 	40.2235	* Log Neighborhood1 Neighborhood2 - + Log - Strength BibCoupling * Betweenness Neighborhood2 Pow % CoCitation InverseLogSimilarity PageRank BibCoupling
+	ind: 	64.0596	% Closeness Constraint
+	ind: 	42.365	+ % EigenVector JaccardSimilarity Authority
+	ind: 	92.0857	+ Log % Betweenness Neighborhood1 % Neighborhood3 Constraint + * Neighborhood1 Neighborhood2 Pow Strength Neighborhood3
+	ind: 	31.9367	% JaccardSimilarity Neighborhood1
+	ind: 	68.8082	+ - * Pow - Strength Closeness % PageRank Strength Log - Neighborhood1 DiceSimilarity + Strength Authority * Pow Log BibCoupling CoCitation - Neighborhood2 JaccardSimilarity % - CoCitation CoCitation * Closeness BibCoupling + * Pow + Neighborhood2 InverseLogSimilarity Pow EigenVector JaccardSimilarity * Log PageRank InverseLogSimilarity % Constraint HubScore - + Pow Authority Betweenness Pow PageRank JaccardSimilarity - Pow PageRank Neighborhood3 - InverseLogSimilarity Neighborhood3
+	ind: 	92.9236	* CoCitation JaccardSimilarity
+	ind: 	93.3892	Log Pow InverseLogSimilarity BibCoupling - Authority Neighborhood1
+	ind: 	92.365	- Neighborhood2 Betweenness
+	ind: 	92.8305	* - - + Neighborhood2 Neighborhood3 Log Betweenness Betweenness % Pow InverseLogSimilarity Constraint % Closeness PageRank * - Log Strength PageRank Pow Neighborhood1 Strength + - Neighborhood3 Neighborhood2 Log Neighborhood1 CoCitation
+	ind: 	42.365	+ HubScore Pow EigenVector DiceSimilarity
+	ind: 	12.1043	% Authority CoCitation
+	ind: 	39.2924	+ Pow Closeness Strength Constraint
+	ind: 	82.0298	* + Log Neighborhood2 EigenVector * Neighborhood1 Neighborhood3 * * EigenVector Closeness * Betweenness Constraint
+	ind: 	93.9479	- Strength Log Log - InverseLogSimilarity Strength Betweenness % % Authority BibCoupling Neighborhood2
+	ind: 	86.9646	- % % % + EigenVector EigenVector % EigenVector Neighborhood3 Pow - DiceSimilarity Closeness % JaccardSimilarity InverseLogSimilarity * - - DiceSimilarity Constraint % Closeness InverseLogSimilarity Pow Pow Constraint Strength - CoCitation Neighborhood2 % - + % Neighborhood1 InverseLogSimilarity + BibCoupling Neighborhood2 Log Pow HubScore Closeness - PageRank Betweenness Pow + Pow Neighborhood2 Neighborhood1 Log Neighborhood1 JaccardSimilarity % Log Strength HubScore % HubScore JaccardSimilarity
+	ind: 	93.3892	- Authority Neighborhood1
+	ind: 	52.7002	- * Strength PageRank Log DiceSimilarity PageRank
+	ind: 	51.3035	+ Authority % - EigenVector JaccardSimilarity * EigenVector Neighborhood2
+	ind: 	41.527	- + Log Log CoCitation Neighborhood3 Pow Authority EigenVector - Log Authority CoCitation * PageRank Closeness - * * Betweenness Authority % DiceSimilarity PageRank Log Log Neighborhood3 Constraint + EigenVector JaccardSimilarity
+	ind: 	73.6499	Log + - - Closeness DiceSimilarity HubScore - % PageRank Log JaccardSimilarity Neighborhood1 + + DiceSimilarity JaccardSimilarity Authority - Authority Pow Closeness Betweenness
+	ind: 	93.6685	+ CoCitation Neighborhood3
+	ind: 	93.7616	+ * Constraint Authority Neighborhood1
+	ind: 	11.2663	Log Pow Pow DiceSimilarity DiceSimilarity + Neighborhood2 Betweenness % * Betweenness Neighborhood2 - HubScore Strength
+	ind: 	85.3818	Log - Neighborhood3 Closeness + * PageRank Authority HubScore
+	ind: 	93.0168	% Log Log + - Strength Constraint - Neighborhood3 CoCitation Pow - CoCitation InverseLogSimilarity * Betweenness Neighborhood3 Log % % Neighborhood2 InverseLogSimilarity % Neighborhood3 PageRank - * DiceSimilarity HubScore * Neighborhood2 Neighborhood1 Log % - Pow DiceSimilarity Neighborhood2 Pow Neighborhood2 Betweenness Log Pow EigenVector Constraint Pow Constraint HubScore % * Log BibCoupling EigenVector % Closeness JaccardSimilarity + * HubScore JaccardSimilarity Pow Betweenness PageRank
+generation 1:
+	ind: 	93.9479	+ + HubScore Strength Neighborhood1
+	ind: 	93.6685	+ + BibCoupling DiceSimilarity - Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Betweenness % Strength - Constraint Neighborhood3
+	ind: 	93.3892	- + EigenVector Neighborhood3 * Neighborhood1 Neighborhood1
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.6685	+ + Neighborhood3 CoCitation Neighborhood1
+	ind: 	93.9479	+ Betweenness % Strength - Constraint Neighborhood3
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + HubScore Strength Neighborhood1
+	ind: 	93.203	+ + BibCoupling DiceSimilarity - Betweenness InverseLogSimilarity
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	87.3371	Closeness
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.203	- % * * % Neighborhood3 Neighborhood3 % Closeness EigenVector * Pow Authority Neighborhood2 Log CoCitation CoCitation * Log % InverseLogSimilarity Neighborhood1 - JaccardSimilarity Closeness Pow * Constraint Closeness + Strength JaccardSimilarity Log Log + Log EigenVector Authority % Authority Neighborhood1 - + Strength PageRank % Constraint InverseLogSimilarity + + * EigenVector JaccardSimilarity * Closeness DiceSimilarity - % Constraint Neighborhood1 + BibCoupling CoCitation
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.2961	- CoCitation Constraint
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.3892	- - % * Pow HubScore InverseLogSimilarity * Strength Neighborhood3 Pow * EigenVector Betweenness + InverseLogSimilarity Closeness + - Pow CoCitation Authority Log HubScore Constraint + Pow Neighborhood2 Authority % CoCitation Strength % * Log % Neighborhood1 BibCoupling - Constraint Authority - - Betweenness EigenVector * Neighborhood2 InverseLogSimilarity + * + Strength Strength - InverseLogSimilarity EigenVector % - Neighborhood2 Neighborhood2 Log Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.3892	- Betweenness InverseLogSimilarity
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.203	* Neighborhood1 % CoCitation Neighborhood2
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.6685	* Neighborhood1 Neighborhood1
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	% Strength - Constraint Neighborhood3
+	ind: 	93.2961	+ Betweenness Neighborhood3
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.4823	% * % BibCoupling CoCitation - Strength Closeness + EigenVector Neighborhood3
+	ind: 	93.6685	+ BibCoupling Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Betweenness % Strength - Constraint Neighborhood3
+	ind: 	90.4097	- Strength + HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	91.9926	+ - * % Log Betweenness InverseLogSimilarity Pow BibCoupling Neighborhood2 + * BibCoupling InverseLogSimilarity + PageRank Closeness * * Pow JaccardSimilarity Strength Log DiceSimilarity Neighborhood1 Pow % EigenVector Strength + Neighborhood3 CoCitation % * + + InverseLogSimilarity InverseLogSimilarity Pow PageRank Neighborhood2 % - CoCitation Constraint * Closeness HubScore Pow + Log Betweenness Neighborhood2 % Neighborhood2 CoCitation Log + Strength Neighborhood3 + Strength DiceSimilarity
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	76.9088	- - % * Pow HubScore InverseLogSimilarity * Strength Neighborhood3 Pow * EigenVector Betweenness + InverseLogSimilarity Closeness + - Pow CoCitation Authority Log HubScore Constraint + HubScore Strength % * Log % Neighborhood1 BibCoupling - Constraint Authority - - Betweenness EigenVector * Neighborhood2 InverseLogSimilarity + * + Strength Strength - InverseLogSimilarity EigenVector % - Neighborhood2 Neighborhood2 Log Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.6685	+ + Neighborhood3 CoCitation Neighborhood1
+	ind: 	93.3892	Log Log EigenVector InverseLogSimilarity Constraint
+	ind: 	93.6685	+ + Neighborhood3 CoCitation Neighborhood1
+	ind: 	92.0857	+ Log % Betweenness Neighborhood1 % Neighborhood3 Constraint + * Neighborhood1 Neighborhood2 Pow Strength Neighborhood3
+	ind: 	93.3892	- Strength + Neighborhood3 Strength
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ + HubScore Strength Neighborhood1
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.3892	- + EigenVector Neighborhood3 - Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.3892	- Constraint Neighborhood3
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Log Log - InverseLogSimilarity Strength Betweenness % % Authority BibCoupling Neighborhood2
+	ind: 	93.9479	+ + Neighborhood3 Strength Neighborhood1
+	ind: 	93.3892	- Authority Neighborhood1
+	ind: 	93.6685	+ + Neighborhood3 CoCitation Neighborhood1
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.6685	+ Betweenness + CoCitation Neighborhood3
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.6685	+ CoCitation Neighborhood3
+	ind: 	93.7616	+ * Constraint Authority Neighborhood1
+	ind: 	93.2961	- CoCitation Constraint
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+generation 2:
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Betweenness % Strength - Constraint Neighborhood3
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	41.0615	Log Authority CoCitation
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Betweenness % Strength - Constraint Neighborhood3
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ + HubScore Strength Neighborhood1
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Betweenness + Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength Log Log - InverseLogSimilarity Strength Betweenness % % Authority BibCoupling Neighborhood2
+	ind: 	82.0298	+ Betweenness % Strength + Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + HubScore Strength Neighborhood1
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+generation 3:
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Betweenness % Strength - Constraint Neighborhood3
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- - Strength Closeness HubScore
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Betweenness + Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ Betweenness + HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Betweenness + Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+generation 4:
+	ind: 	92.7374	* Neighborhood2 Neighborhood2
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ - Strength Closeness Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ - Strength HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	76.8156	- Strength Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	88.175	HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ + HubScore Strength Strength
+generation 5:
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore + Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+generation 6:
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ - Strength HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+generation 7:
+	ind: 	93.9479	Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+generation 8:
+	ind: 	93.9479	Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore + HubScore Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore + HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+generation 9:
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ + HubScore Strength Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	- Strength HubScore
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ HubScore Strength
+	ind: 	93.9479	+ + Neighborhood3 Strength Strength
+	ind: 	93.9479	- Strength Closeness
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	+ Neighborhood3 Strength
+	ind: 	93.9479	- - Strength HubScore HubScore
+	ind: 	93.9479	+ HubScore Strength
