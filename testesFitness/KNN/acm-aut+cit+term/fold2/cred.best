@@ -28,3 +28,18 @@ GP: (* sumTF (* GSS IDF))
 ADF0: (* Betweenness PageRank)
 ADF1: (Pow (- Authority Authority) (* HubScore HubScore))
 
+Best of generation 6 (Fitness = 28.2932, Structural Complexity = 33)
+GP: (Pow GINI GSS)
+ADF0: (- (- (- InverseLogSimilarity Strength) (* HubScore Strength)) (* InverseLogSimilarity Strength))
+ADF1: (- (- (* InverseLogSimilarity Closeness) (% BibCoupling Neighborhood3)) (Log (+ (- (Pow HubScore Closeness) Closeness) Neighborhood3) (Log HubScore PageRank)))
+
+Best of generation 7 (Fitness = 28.2932, Structural Complexity = 33)
+GP: (Pow GINI GSS)
+ADF0: (- (- (- InverseLogSimilarity Strength) (* HubScore Strength)) (* InverseLogSimilarity Strength))
+ADF1: (- (- (* InverseLogSimilarity Closeness) (% BibCoupling Neighborhood3)) (Log (+ (- (Pow HubScore Closeness) Closeness) Neighborhood3) (Log HubScore PageRank)))
+
+Best of generation 8 (Fitness = 28.2932, Structural Complexity = 33)
+GP: (Pow GINI GSS)
+ADF0: (- (- (- InverseLogSimilarity Strength) (* HubScore Strength)) (* InverseLogSimilarity Strength))
+ADF1: (- (- (* InverseLogSimilarity Closeness) (% BibCoupling Neighborhood3)) (Log (+ (- (Pow HubScore Closeness) Closeness) Neighborhood3) (Log HubScore PageRank)))
+
