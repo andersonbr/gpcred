@@ -1,0 +1,43 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Pow,2) (Log,2) 
+	terms: InverseLogSimilarity DiceSimilarity JaccardSimilarity CoCitation BibCoupling Betweenness PageRank Constraint Strength Closeness EigenVector Authority HubScore Neighborhood3 Neighborhood2 Neighborhood1
+generation 0:
+	ind: 	85.2673	* Neighborhood3 Betweenness
+	ind: 	95.7295	+ + BibCoupling DiceSimilarity - Strength HubScore
+	ind: 	94.8164	- Neighborhood3 * + DiceSimilarity BibCoupling % Neighborhood1 Strength
+	ind: 	94.8925	+ JaccardSimilarity CoCitation
+	ind: 	82.6707	Log Constraint DiceSimilarity
+	ind: 	80.8921	+ - Pow Strength Constraint - Betweenness DiceSimilarity Log - CoCitation JaccardSimilarity * Betweenness InverseLogSimilarity
+	ind: 	84.4969	% InverseLogSimilarity Betweenness
+	ind: 	62.7259	+ Pow Betweenness HubScore Log Closeness Betweenness
+	ind: 	82.6707	% Neighborhood3 Neighborhood3
+	ind: 	90.8218	* EigenVector CoCitation
+	ind: 	83.2794	Pow % BibCoupling Neighborhood1 Neighborhood1
+	ind: 	95.1874	- * Log Closeness CoCitation + Betweenness Neighborhood3 Pow + CoCitation Neighborhood1 % Strength HubScore
+	ind: 	95.3966	+ JaccardSimilarity DiceSimilarity
+	ind: 	69.631	Log - Neighborhood2 JaccardSimilarity Pow Neighborhood2 Betweenness
+	ind: 	85.4099	% Betweenness Pow Strength Constraint
+	ind: 	17.6051	Log DiceSimilarity Strength
+	ind: 	65.8455	+ Pow Strength Neighborhood2 - Constraint HubScore
+	ind: 	82.2713	% Pow - DiceSimilarity JaccardSimilarity * Constraint CoCitation - - Closeness BibCoupling - DiceSimilarity Neighborhood2
+	ind: 	84.0023	+ Constraint Constraint
+	ind: 	42.6859	- + Constraint JaccardSimilarity % Closeness Closeness
+	rep: 1  -> 1
+	rep: 17 16  -> 2
+	rep: 17 16  -> 3
+	rep: 0 10  -> 4
+	rep: 0 10  -> 5
+	rep: 1 15  -> 6
+	rep: 1 15  -> 7
+	rep: 10 7  -> 8
+	rep: 10 7  -> 9
+	rep: 14 4  -> 10
+	rep: 14 4  -> 11
+	rep: 4 15  -> 12
+	rep: 4 15  -> 13
+	rep: 13 13  -> 14
+	rep: 13 13  -> 15
+	rep: 9 8  -> 16
+	rep: 9 8  -> 17
+	rep: 18 17  -> 18
+	rep: 18 17  -> 19
