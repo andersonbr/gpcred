@@ -1,5 +1,5 @@
-\section{Programação Genética}
-\label{cap::gp}
+%\section{Programação Genética}
+%\label{cap::gp}
 
 No Capítulo~\ref{cap::metodo},
 além de mostrarmos os algoritmos de classificação \textit{Naïve Bayes} e \textsc{KNN}, vimos como podemos incorporar a credibilidade nos mesmos.
@@ -28,19 +28,24 @@ Por sua vez, a operação de cruzamento exige a participação de dois indivídu
 Do modo como está mostrado na Figura~\ref{fig::gpwf}, somente uma dessas três operações é realizada em cada indivíduo selecionado, entretanto é comum também implementações em que é aplicada a probabilidade de mutação para todos os indivíduos, logo após uma nova prole ser gerada pelo cruzamento ou reprodução.
 
 Repare que todo o processo exposto na Figura~\ref{fig::gpwf} é \textit{independente} da aplicação na qual o \textsc{PG} é utilizado. 
-Entretanto, três importantes componentes devem ser instanciados dependendo do contexto no qual trabalhamos. 
-Eles são a representação dos indivíduos, que incluem as funções internas e terminais utilizados (Seção~\ref{subsec::individuos}), 
-como são usados os operadores genéticos (Seção~\ref{subsec::operadoresgeneticos}),
-e a função de \textit{fitness} construída (Seção~\ref{subsec::fitness}).
+Entretanto, três importantes componentes devem ser instanciados dependendo do contexto no qual trabalhamos. Eles são:
+\begin{enumerate}
+\item a representação dos indivíduos, que incluem as funções internas e terminais utilizados, abordados na Seção~\ref{subsec::individuos}, 
+\item os operadores genéticos, abordados na Seção~\ref{subsec::operadoresgeneticos},
+\item a função de \textit{fitness} construída na Seção~\ref{subsec::fitness}.
+\end{enumerate}
+Além disso, pelo fato de termos definido muitos terminais e como queremos explicar um por um deles, utilizamos as Seções~\ref{sec::pg_cred_baseada_conteudo} e \ref{sec::pg_cred_baseada_grafos} para as métricas baseadas em atributos e em relacionamentos, respectivamente.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/gpwf.png}
+%\includegraphics[width=1.0\textwidth]{figures/gpwf.png}
+\includegraphics[width=1.1\textwidth]{figures/gpwf_new.png}
 \caption{Fluxograma de um Programa Genético}
 \label{fig::gpwf}
 \end{figure}
 
-\subsection{Indivíduos}
+
+\section{Indivíduos}
 \label{subsec::individuos}
 
 Uma parte essencial da construção de um \textsc{PG} é definir os indivíduos que compõem a população do mesmo.
@@ -101,7 +106,7 @@ Pelo fato de termos um grande número de terminais definidos, reservamos as Seç
 \label{fig::gps2}
 \end{figure}
 
-\subsection{Operadores Genéticos}
+\section{Operadores Genéticos}
 \label{subsec::operadoresgeneticos}
 
 Em nosso trabalho, utilizamos três operadores genéticos na geração dos indivíduos, como mostrado na Figura~\ref{fig::gpwf}. 
@@ -113,37 +118,81 @@ A operação de reprodução é a mais simples, nela apenas introduzimos o ganha
 Os indivíduos 1 e 2 são selecionados cada um por um torneio diferente, depois escolhemos um ponto de troca no indivíduo 1, no caso a métrica \textsc{CC(x,c)} (Seção~\ref{subsubsection::cc}) e um ponto de troca no 2, a função interna +. Por fim, trocamos a métrica \textsc{CC(x,c)} por toda a parte selecionada no indivíduo 2, gerando o indivíduo 3. Finalmente, a operação de mutação também consiste em uma troca em um indivíduo, porém trata-se de apenas uma única mudança, sem alterar a estrutura. Na Figura~\ref{fig::gps2} vemos uma mutação ocorrendo entre o indivíduo 1 e 2, onde temos a métrica Hub (Seção~\ref{subsubsection::hub}) sendo trocada pela métrica \textit{PageRank} (\textsc{PR}, Seção~\ref{subsubsection::pagerank}).
 
 
-\subsection{\textit{Fitness}}
+\section{\textit{Fitness}}
 \label{subsec::fitness}
 
-No algoritmo~\ref{alg::fitness}, descrevemos o processo usado para calcular a \textit{fitness} de um individuo. 
-Mesmo existindo casos em que estamos interessados somente em evoluir uma função de credibilidade, ou atributos ou relacionamentos, o algoritmo~\ref{alg::fitness} aborda ambos os casos. 
+No Algoritmo~\ref{alg::fitness}, descrevemos o processo usado para calcular a \textit{fitness} de um individuo levando em consideração funções evoluidas tanto para atributos quanto para relacionamentos.
 Quando não estivermos evoluindo uma das funções de credibilidade, basta ignorá-la no cálculo da \textit{fitness}.
-No algoritmo~\ref{alg::fitness}, primeiramente calculamos e mapeamos a credibilidade de cada atributo e cada classe para a função de credibilidade que o individuo representa. Logo depois, calculamos a credibilidade de cada relacionamento no conjunto de relacionamentos $\mathbb{R}$, usando o conjunto de exemplos $\mathbb{E}$ do treinamento.
-Por fim, calculamos qual o valor da métrica chamada \textit{$F_1$} para os resultados do classificador utilizado. 
-O classificador recebe o conjunto de exemplos de teste, $\mathbb{T}$, o conjunto de exemplos de treinamento, $\mathbb{E}$, o conjunto de classes, $\mathbb{C}$ e os valores mapeados para as funções de credibilidade de atributos e relacionamentos, $f_x$ e $f_r$.
 
-A \textit{$F_1$} é uma métrica amplamente utilizada por representar um compromisso interessante entre a precisão e a revocação, outras duas importante métricas. 
-A precisão ($\textsc{P}$) calcula, para uma classe específica, o quanto o classificador acerta entre todos os exemplos que ele classificou para aquela classe: 
+Começamos o Algoritmo~\ref{alg::fitness} com o mapeamento do relacionamento $f_a$ formado pela aplicação da função de credibilidade que o indivíduo representa a cada par de atributos e classes.
+Logo depois, calculamos a credibilidade de cada relacionamento no conjunto de relacionamentos $\mathbb{R}$, usando o conjunto $\mathbb{E}$ de exemplos de treinamento em um mapa $f_r$.
+Por fim, o classificador recebe o conjunto $\mathbb{T}$ de exemplos de teste, o conjunto $\mathbb{E}$ de exemplos de treinamento, o conjunto $\mathbb{C}$ de classes e os valores mapeados para as funções $f_a$ e $f_r$ de credibilidade de atributos e relacionamentos e retorna para cada exemplo de $\mathbb{T}$ uma possível classe de $\mathbb{C}$.
+Assim, podemos calcular qual o valor da métrica chamada \textit{$F_1$} baseada nos resultados do classificador utilizado. 
+
+Para explicar a métrica $F_1$, utlizamos a Tabela~\ref{table::confusao}. Nela, temos um cenário simplificado o qual duas classes são possíveis para uma instância de teste, as classe + e -, e as quatro situações (A, B, C e D) podem ser geradas. Dessa forma, A é quando o exemplo de teste pertence a classe + e é classificado corretamente (verdadeiro positivo), B é a situação a qual o exemplo é da classe - e é classificado como + (falso positivo), C é quando o exemplo pertence a classe + e classificado como - (falso negativo) e, finalmente, D é quando classificamos o exemplo como - e realmente pertece a - (verdadeiro negativo).
+
+\begin{table}[ht*]
+\centering
+\begin{tabular}{|c|c|c|}
+\toprule
+       &    \textbf{Pertence a classe +} & \textbf{Pertence a classe -} \\
+\midrule
+    \textbf{Classificado como +}  & A & B \tabularnewline \hline
+    \textbf{Classificado como -}  & C & D \tabularnewline
+\bottomrule
+\end{tabular}
+\caption{Matrix de confusão usada para exemplificar as métricas de precisão e revocação.}
+\label{table::confusao}
+\end{table}
+
+A partir dos conceirtos de A, B, C e D, podemos definir duas importantes métricas comumente utilizadas na literatura, precisão e revocação. A precisão \textsc{P} é definida como:
 \begin{equation}
-\textsc{P(c)} = \frac{\# \text{de exemplos da classe c corretamente classificados como classe c}} {\# \: \text{ total de exemplos classificados como classe c}} \\,
+\textsc{P} = \frac{A}{(A+C)} = \frac{\# \text{de exemplos da classe c corretamente classificados como classe c}} {\# \: \text{ total de exemplos classificados como classe c}} \\,
 \end{equation}
-logo determinamos o quão bom o classificador é em avaliar exemplos de uma classe específica. 
-Por sua vez, a revocação (\textsc{R}) calcula, para uma classe, o quanto foi corretamente classificado entre o que deveria ter sido classificado para classe em questão:
+e a revocação \textsc{R} como sendo:
 \begin{equation}
-\textsc{R(c)} = \frac{\# \: \text{de exemplos da classes c corretamente classificados como classe c}}{\# \: \text{de exemplos existentes na classe c}},                      
+\textsc{R} = \frac{A}{(A+B)} = \frac{\# \: \text{de exemplos da classes c corretamente classificados como classe c}}{\# \: \text{de exemplos existentes na classe c}}.
 \end{equation}
-logo, calculamos o quão bom o classificador é para achar exemplos de uma dada classe. 
-Por fim, a \textit{$F_1$} é a média harmónica entre a precisão e a revocação:
+Dessa forma, a precisão calcula o quanto um classificador acerta em uma determinada classe e a revocação mede o quanto o classificador é bom em achar os exemplos pertencentes àquela classe.
+Ambas métricas são bastante importantes e a média harmônica de ambas é utilizada para formar a medida chamada $F_1$:
 \begin{equation}
-\text{F}_1(c) = \frac{2 \cdot P(c) \cdot R(c)}{(P(c) + R(c))}.
+\text{F}_1 = \frac{2 \cdot P \cdot R}{(P + R)}.
 \end{equation}
 
-A partir da $F_1$ podemos calcular as métricas \textit{macro-$F_1$} e \textit{micro-$F_1$}. A \textit{macro-$F_1$} leva em consideração a $F_1$ de cada uma das classes e depois calcula a média das mesmas:
-\begin{equation}
-\text{MacroF}_1 = \frac{\sum\limits_{c \in \mathbb{C}} F_1(c) } { |\mathbb{C}| },
-\end{equation}
-já a \textit{micro-$F_1$} calcula a precisão e revocação sem levar em considerar o cálculo classe a classe, portanto usamos a precisão e revocação considerando o sistema como um todo. Decidimos por utilizar a \textit{micro-$F_1$} como função de \textit{fitness} pelos bons resultados encontrados, porém sempre medimos e reportamos a \textit{macro-$F_1$}. Mostramos os resultados dos vários experimentos com \textit{micro} e \textit{macro-$F_1$}, além de uma combinação de ambas no Capítulo~\ref{cap::experimentos}.
+Existem ainda duas formas derivadas da $F_1$ chamadas \textit{micro-$F_1$} e \textit{macro-$F_1$}. A primeria, \textit{micro-$F_1$}, leva em consideração a precisão e a revocação do classificador como um todo. 
+Portanto, o componente A usado na precisão e revocação é representada pelo número de exemplos corretamente, indepentende de qual classe eles pertencem.
+Por sua vez, a \textit{macro-$F_1$} realiza a média da $F_1$ calculada individualmente para cada uma das classes. 
+
+Dada a forma como são formuladas, a \textit{macro-$F_1$} e \textit{micro-$F_1$} tendem a se diferenciarem se a base de dados tiver classes desbalanceadas. Em geral, uma exemplo pertencente a uma classe pouco popular é mais difícil de ser classificado que um outro pertencente a uma classe muito popular. Portanto, se estivermos analisando uma base de dados desbalanceada, a \textit{macro-$F_1$} tenderá a ter um valor menor que a \textit{micro-$F_1$}, pois a primeira é prejudicada pelas classes mais raras. 
+
+%A \textit{$F_1$} é uma métrica amplamente utilizada por representar um compromisso interessante entre a precisão e a revocação, outras duas importante métricas. 
+%A precisão ($\textsc{P}$) calcula, para uma classe específica, o quanto o classificador acerta entre todos os exemplos que ele classificou para aquela classe: 
+%\begin{equation}
+%\textsc{P(c)} = \frac{\# \text{de exemplos da classe c corretamente classificados como classe c}} {\# \: \text{ total de exemplos classificados como classe c}} \\,
+%\end{equation}
+%logo determinamos o quão bom o classificador é em avaliar exemplos de uma classe específica. 
+%Por sua vez, a revocação (\textsc{R}) calcula, para uma classe, o quanto foi corretamente classificado entre o que deveria ter sido classificado para classe em questão:
+%\begin{equation}
+%\textsc{R(c)} = \frac{\# \: \text{de exemplos da classes c corretamente classificados como classe c}}{\# \: \text{de exemplos existentes na classe c}},                      
+%\end{equation}
+%logo, calculamos o quão bom o classificador é para achar exemplos de uma dada classe. 
+%Por fim, a \textit{$F_1$} é a média harmónica entre a precisão e a revocação:
+%\begin{equation}
+%\text{F}_1(c) = \frac{2 \cdot P(c) \cdot R(c)}{(P(c) + R(c))}.
+%\end{equation}
+
+%A partir da $F_1$ podemos calcular as métricas \textit{macro-$F_1$} e \textit{micro-$F_1$}. 
+
+%Já a \textit{micro-$F_1$} calcula a precisão e revocação de toda a coleção de uma so vez.
+%A \textit{macro-$F_1$} leva em consideração a $F_1$ de cada uma das classes e depois calcula a média das mesmas. 
+
+
+%sem levar em considerar o cálculo classe a classe, portanto usamos a precisão e revocação considerando o sistema como um todo.
+Por ser uma métrica amplamente mais utilizada na literatura, optamos por utilizar a \textit{micro-$F_1$} como função de \textit{fitness}. Porém sempre medimos e reportamos a \textit{macro-$F_1$}. Mostramos os resultados dos vários experimentos com \textit{micro} e \textit{macro-$F_1$}, além de uma combinação de ambas no Capítulo~\ref{cap::experimentos}.
+
+%\begin{equation}
+%\text{MacroF}_1 = \frac{\sum\limits_{c \in \mathbb{C}} F_1(c) } { |\mathbb{C}| },
+%\end{equation}
 
 %traduzir comandos?!?!
 \algrenewcommand\algorithmicforall{\textbf{Para Cada}}
@@ -180,6 +229,7 @@ já a \textit{micro-$F_1$} calcula a precisão e revocação sem levar em consid
 }
 \end{algorithmic}
 \end{algorithm}
+
 
 \section{Credibilidade Baseada nos Atributos}
 \label{sec::pg_cred_baseada_conteudo}
@@ -282,9 +332,9 @@ O Inverso da Frequência de Documentos por classe, \textsc{IDFClasse} é uma ver
 \subsubsection{Frequência do Termo Inverso da Frequência de Documentos}% (\textsc{TFIDF})}
 \label{subsubsection::tfidf}
 
-Uma das métricas de pesos para atributos em classificação de documentos mais populares na literatura é o \textsc{TFIDF} (do inglês, \textit{Term Frequency Inversed Document Frequency}), ver \cite{Salton88}. O \textsc{TFIDF} combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento é mais importante que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de \textsc{TFIDF} é:
+Uma das métricas de pesos para atributos em classificação de documentos mais populares na literatura é o \textsc{TFIDF} (do inglês, \textit{Term Frequency Inversed Document Frequency}), ver \cite{Salton88}. O \textsc{TFIDF} combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento são mais importantes que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de \textsc{TFIDF} é:
 \begin{equation}\label{eqn::tficf}
- \textsc{TFIDF}(t_i, c_j) =  F_{t_ic_j} \cdot \log( \frac{DF_{c_j}}{ DF_{t_ic_j} } ).
+ \textsc{TFIDF}(t_i, c_j) =  F_{t_ic_j} \cdot \log( \frac{|N|} {DF_{t_i}} ).
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

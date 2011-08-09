@@ -117,7 +117,7 @@ Dessa forma, avaliamos para cada atributo $A_i$ o quanto ganhamos sabendo que $A
 \end{equation}
    onde $F_{x_{i}c_{j}}$ é o número de instâncias no treino com $A_i$ valendo $x_i$ e pertencentes a classe $c_j$. Especificamente, no problema de classificação de documentos, modelamos como \textsc{AM} usando $F_{t_{i}c_{j}}$ que é a frequência do termo $t_i$ referente ao atributo $A_i$ nos documentos de classe $c_j$.
 
-    Por sua vez, o \textit{Ganho de Informação} (ver \cite{forman03}) mede o quanto de informação adquirimos para prever uma classe, sabendo o valor de um certo atributo. Formalmente, temos:
+    Por sua vez, o \textit{Ganho de Informação} (ver \cite{Forman03}) mede o quanto de informação adquirimos para prever uma classe, sabendo o valor de um certo atributo. Formalmente, temos:
 \begin{equation}\label{eqn::classindependence_conteudo_ig}
    Cr_{cont} = IG(x_i, c_j) = \sum_{c \in \{c_j, \overline{c_j}\}}\sum_{t \in \{x_i, \overline{x_i}\}}P(t|c) \cdot \log_2\frac{P(t|c)}{P(t) \cdot P(c)}.
 \end{equation}
