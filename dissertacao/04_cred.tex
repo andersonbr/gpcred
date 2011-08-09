@@ -10,31 +10,40 @@ Nessa dissertação, modelamos a credibilidade em duas abordagens diferentes, um
 Em ambas, somos capazes de gerar uma grande gama de métricas que conseguem capturar a relação entre os exemplos e uma determinada classe.
 Entretanto, necessitamos de uma forma de selecionar e combinar essas métricas de uma maneira robusta. Para solucionar esse problema, recorremos ao uso de Programação Genética (\textsc{PG}).
 
-Segundo a Teoria da Evolução de Darwin, indivíduos mais adaptados ao ambiente em que se encontram têm uma maior chance de sobreviverem e se reproduzirem, passando seu material genético às gerações posteriores. Baseado nessa teoria, o método Programação Genética é adequado para evoluir uma função de credibilidade, pois possui mecanismos que o torna capaz de explorar bem o imenso espaço de soluções formado pelo grande número de métricas disponíveis. Além disso, \textsc{PG} é flexível o bastante para podermos representar as funções que desejamos.
+Segundo a Teoria da Evolução de Darwin, indivíduos mais adaptados ao ambiente em que se encontram têm uma maior chance de sobreviverem e se reproduzirem, passando seu material genético às gerações posteriores. Baseado nessa teoria, o método Programação Genética é adequado para evoluir uma função de credibilidade, pois possui mecanismos que o torna capaz de explorar bem o imenso espaço de soluções formado pelo grande número de métricas disponíveis. Além disso, \textsc{PG} é flexível o bastante para ser capaz de representar as funções que desejamos.
 %Programação Genética é um método baseado na Teoria da Evolução de Darwin que define que indivíduos mais adaptados ao ambiente em que se encontram têm uma maior chance de sobreviverem e se reproduzirem, passando seu material genético às gerações posteriores. PG é um método adequado para evoluir uma função de credibilidade, pois consegue explorar bem o imenso espaço de soluções formado pelo grande número de métricas disponíveis e é flexível o bastante para podermos representar as funções que desejamos.
 
 Para entendermos melhor como é o funcionamento de um \textsc{PG}, utilizamos a Figura~\ref{fig::gpwf} que ilustra de forma genérica os seus principais componentes.
-Como podemos ver, o primeiro passo é definirmos um conjunto de funções internas e terminais para serem usados pelo \textsc{PG}, iremos explicar com mais clareza e exemplos o que são funções internas e terminais em breve nesse capítulo, porém é importante saber que eles são usados para formarmos indivíduos. 
+Como podemos ver, o primeiro passo é definir um conjunto de funções internas e terminais para serem usados pelo \textsc{PG}, iremos explicar com mais clareza e exemplos o que são funções internas e terminais em breve nesse capítulo, porém é importante saber que eles são usados para formarmos indivíduos. 
 Esses, por sua vez, são soluções para o problema que abordamos (no caso, um indivíduo é uma possível função de credibilidade).
 Um conjunto de indivíduos é chamado de população e, como mostrado pelo segundo retângulo no diagrama da Figura~\ref{fig::gpwf}, a população inicial é aleatoriamente criada. 
 Cada indivíduo é então avaliado por uma função de \textit{fitness}, que calcula a habilidade do mesmo em resolver o problema apresentado, ou seja, o quão bom aquele indivíduo é.
 
 Após avaliarmos a \textit{fitness} dos indivíduos, os melhores são selecionados e submetidos às operações genéticas de cruzamento, mutação e reprodução, com probabilidade $P_c$, $P_m$ e $P_r$, respectivamente.
-Uma forma muito usada de selecionar os indivíduos é através de torneios, nos quais aleatoriamente tomamos um número pré-definido de indivíduos da população e selecionamos aquele com maior valor da função de \textit{fitness}. Existem diversas outras variações do método de seleção, ver (citacao), sendo que o importante é utilizarmos o conhecimento da função \textit{fitness} dos indivíduos de forma a criamos uma próxima geração mais bem preparada para resolução do problema. 
+Uma forma muito usada de selecionar os indivíduos é através de torneios, nos quais aleatoriamente tomamos um número pré-definido de indivíduos da população e selecionamos aquele com maior valor da função de \textit{fitness}. Existem diversas outras variações do método de seleção, ver (citacao), sendo que o importante é a utilização do conhecimento da função \textit{fitness} dos indivíduos de forma a criamos uma próxima geração mais bem preparada para resolução do problema. 
 
-Após selecionados, os indivíduos podem sofrer alguma alteração genética através das operações de mutação e cruzamento ou podem ser transferidos diretamente para a próxima geração, através da reprodução. 
-Na operação de mutação, uma parte do indivíduo selecionado é aleatoriamente alterada, buscando obter uma melhoria da \textit{fitness} na próxima geração.
-Por sua vez, a operação de cruzamento exige a participação de dois indivíduos que são combinados a fim de obtermos uma prole mais adaptada na próxima geração.
-Do modo como está mostrado na Figura~\ref{fig::gpwf}, somente uma dessas três operações é realizada em cada indivíduo selecionado, entretanto é comum também implementações em que é aplicada a probabilidade de mutação para todos os indivíduos, logo após uma nova prole ser gerada pelo cruzamento ou reprodução.
+Depois de serem selecionados, os indivíduos podem passar por reprodução ou cruzamento, com probabilidades $P_r$ e $P_c$, respectivamente. 
+A operação genética de reprodução simplesmente transfere o indivíduo para próxima geração, enquanto o cruzamento exige a participação de dois indivíduos que são combinados a fim de obertmos
+uma prole mais adaptada na próxima geração.
+Após esse processo, o indivíduo resultante da reprodução ou cruzamento pode ser submetido a mutação com uma probabilidade $P_m$.
+Em geral, a mutação é uma pequena alteração em alguma parte especifica do indivíduo, alterando uma função interna ou um terminal.
+Variações nas quais a operação de mutação ocorre em paralelo a de reprodução ou cruzamento também são bem comuns na literatura.
+
+Temos então que a nova geração é construída, indivíduo a indivíduo, até alcançarmos um número limite do tamanho da população. Após chegarmos a esse limite, uma nova geração é iniciada. Limitar o número de gerações, por sua vez, é uma forma muito comum de terminarmos o funcionamento do \textsc{PG}. Outras formas seriam chegar à um variação arbitrariamente pequena de melhoria ou algum indivíduo conseguir alcançar um valor de fitness pré-definido, por exemplo. Por fim, o \textsc{PG} retorna o melhor indivíduo evoluído.
+
+%Depois de serem selecionados, os indivíduos podem sofrer alguma alteração genética através das operações de mutação e cruzamento ou podem ser transferidos diretamente para a próxima geração, através da reprodução. 
+%a operação de mutação, uma parte do indivíduo selecionado é aleatoriamente alterada, buscando obter uma melhoria da \textit{fitness} na próxima geração.
+%or sua vez, a operação de cruzamento exige a participação de dois indivíduos que são combinados a fim de obtermos uma prole mais adaptada na próxima geração.
+%o modo como está mostrado na Figura~\ref{fig::gpwf}, somente uma dessas três operações é realizada em cada indivíduo selecionado, entretanto é comum também implementações em que é aplicada a probabilidade de mutação para todos os indivíduos, logo após uma nova prole ser gerada pelo cruzamento ou reprodução.
 
 Repare que todo o processo exposto na Figura~\ref{fig::gpwf} é \textit{independente} da aplicação na qual o \textsc{PG} é utilizado. 
 Entretanto, três importantes componentes devem ser instanciados dependendo do contexto no qual trabalhamos. Eles são:
 \begin{enumerate}
 \item a representação dos indivíduos, que incluem as funções internas e terminais utilizados, abordados na Seção~\ref{subsec::individuos}, 
 \item os operadores genéticos, abordados na Seção~\ref{subsec::operadoresgeneticos},
-\item a função de \textit{fitness} construída na Seção~\ref{subsec::fitness}.
+\item a função de \textit{fitness} construída, ver Seção~\ref{subsec::fitness}.
 \end{enumerate}
-Além disso, pelo fato de termos definido muitos terminais e como queremos explicar um por um deles, utilizamos as Seções~\ref{sec::pg_cred_baseada_conteudo} e \ref{sec::pg_cred_baseada_grafos} para as métricas baseadas em atributos e em relacionamentos, respectivamente.
+Além disso, pelo fato de termos uma vasta gama de terminais e queremos explicar um por um deles, separamos as Seções~\ref{sec::pg_cred_baseada_conteudo} e \ref{sec::pg_cred_baseada_grafos} para explicarmos com detalhes as métricas baseadas em atributos e em relacionamentos, respectivamente.
 
 \begin{figure}[ht!]
 \centering
@@ -44,16 +53,15 @@ Além disso, pelo fato de termos definido muitos terminais e como queremos expli
 \label{fig::gpwf}
 \end{figure}
 
-
 \section{Indivíduos}
 \label{subsec::individuos}
 
 Uma parte essencial da construção de um \textsc{PG} é definir os indivíduos que compõem a população do mesmo.
-Para isso, temos que definir três aspectos primordiais: o que um indivíduo representa, quais são suas funções internas e quais são os seus terminais. Independente de quais são as funções internas e terminais escolhidos, o propósito de um indivíduo no \textit{PG} modelado é representar uma função de credibilidade que, a não ser que seja dito o contrário, relaciona um exemplo de teste, seja por seus atributos ou relacionamentos, a uma classe, retornando um valor real. 
+Para isso, temos que definir três aspectos primordiais: o que um indivíduo representa, quais são suas funções internas e quais são os seus terminais. Independente de quais são as funções internas e terminais escolhidos, o propósito de um indivíduo no \textsc{PG} modelado é representar uma função de credibilidade que, a não ser que seja dito o contrário, relaciona um exemplo de teste, seja por seus atributos ou relacionamentos, a uma classe, retornando um valor real. 
 
 Como já discutido nas Seções~\ref{subsubsec::nbcredatributos} e \ref{subsubsec::nbcredgrafos} para o \textit{Naïve Bayes} e Seções~\ref{subsubsec::knncredatributos} e \ref{subsubsec::knncredgrafos} para o \textsc{KNN}, modelamos duas funções de credibilidade diferentes, uma baseada nos atributos dos exemplos e outra baseada nos relacionamentos dos mesmos.
 Ambas, entretanto, compartilham o mesmo conjunto de funções internas, porém os terminais utilizados são diferentes para cada caso. As funções internas são utilizadas para que haja uma interação entre os terminais.
-Como usual para um \textsc{PG} que evolui uma função matemática numérica, as funções internas do \textsc{PG} consistem de funções matemáticas conhecidas, como a multiplicação, divisão, soma entre outros que estão mostradas na Tabela~\ref{table::funcoespg}. 
+Como usual para um \textsc{PG} que evolui uma função matemática numérica, as funções internas do \textsc{PG} consistem de funções matemáticas conhecidas, como a multiplicação, divisão, soma, entre outros que estão mostradas na Tabela~\ref{table::funcoespg}. 
 Observe que modificamos as funções de subtração, divisão e logaritmo.
 Tanto a divisão por zero, quanto o logaritmo de números negativos não são matematicamente definidos, portanto explicitamente tratamos esses casos retornando zero. Além disso, não queremos ter uma função de credibilidade negativa, portanto evitamos que a subtração e o logaritmo retornem números negativos.
 
@@ -75,7 +83,7 @@ Tanto a divisão por zero, quanto o logaritmo de números negativos não são ma
 \label{table::funcoespg}
 \end{table}
 
-Pelo fato de termos um grande número de terminais definidos, reservamos as Seções~\ref{sec::pg_cred_baseada_conteudo} e~\ref{sec::pg_cred_baseada_grafos} exclusivamente para descrevermos aqueles relacionados ao atributos dos exemplos e em mensurar os relacionamentos entre os exemplos, respectivamente. Na Figuras~\ref{fig::gps1} e~\ref{fig::gps2} temos ao todo cinco exemplos de funções de credibilidades que poderiam ser geradas pelo \textsc{PG}, as três da primeira figura ilustram funções de cribilidade baseadas em atributos e as demais são baseadas em relacionamentos entre os exemplos. As cores nas mesmas são usadas apenas para auxiliar na explicação das operações genéticas de mutação e cruzamento na seção a seguir.
+Pelo fato de termos um grande número de terminais definidos, reservamos as Seções~\ref{sec::pg_cred_baseada_conteudo} e~\ref{sec::pg_cred_baseada_grafos} exclusivamente para descrevermos aqueles relacionados ao atributos dos exemplos e em mensurar os relacionamentos entre os exemplos, respectivamente. Na Figuras~\ref{fig::gps1} e~\ref{fig::gps2} temos ao todo cinco exemplos de funções de credibilidades que poderiam ser geradas pelo \textsc{PG}, as três da primeira figura ilustram funções de credibilidade baseadas em atributos e as demais são baseadas em relacionamentos entre os exemplos. As cores nas mesmas são usadas apenas para auxiliar na explicação das operações genéticas de mutação e cruzamento na seção a seguir.
 
 \begin{figure}[ht]
 \centering
@@ -110,26 +118,35 @@ Pelo fato de termos um grande número de terminais definidos, reservamos as Seç
 \label{subsec::operadoresgeneticos}
 
 Em nosso trabalho, utilizamos três operadores genéticos na geração dos indivíduos, como mostrado na Figura~\ref{fig::gpwf}. 
-Primeiramente, como exibido, os indivíduos podem ser submetidos as operações de cruzamento, mutação ou reprodução. 
-Para o primeiro caso, sorteamos dois indivíduos, para mutação ou reprodução, somente um. 
-Os indivíduos são selecionados por meio de um torneio, onde escolhemos aleatoriamente $T$ indivíduos da população atual e dizemos que aquele com maior \textit{fitness} é o ganhador do torneio. 
+Primeiramente, como exibido, os indivíduos podem ser submetidos as operações de cruzamento ou reprodução. 
+Para o primeiro caso, sorteamos dois indivíduos, para reprodução, somente um. 
+Os indivíduos usados nessas operações são selecionados por meio de um torneio, onde escolhemos aleatoriamente $T$ indivíduos da população atual e dizemos que aquele com maior \textit{fitness} é o ganhador do torneio. 
+%Primeiramente, como exibido, os indivíduos podem ser submetidos as operações de cruzamento, mutação ou reprodução. 
+%Para o primeiro caso, sorteamos dois indivíduos, para mutação ou reprodução, somente um. 
+%Os indivíduos são selecionados por meio de um torneio, onde escolhemos aleatoriamente $T$ indivíduos da população atual e dizemos que aquele com maior \textit{fitness} é o ganhador do torneio.
 
-A operação de reprodução é a mais simples, nela apenas introduzimos o ganhador do torneio na próxima geração. Por sua vez, a operação de cruzamento é a mais complexa. Nela selecionamos um ponto em cada indivíduo e geramos um novo indivíduos contendo partes de ambos. Na Figura~\ref{fig::gps1}, temos a ilustração desse processo. 
-Os indivíduos 1 e 2 são selecionados cada um por um torneio diferente, depois escolhemos um ponto de troca no indivíduo 1, no caso a métrica \textsc{CC(x,c)} (Seção~\ref{subsubsection::cc}) e um ponto de troca no 2, a função interna +. Por fim, trocamos a métrica \textsc{CC(x,c)} por toda a parte selecionada no indivíduo 2, gerando o indivíduo 3. Finalmente, a operação de mutação também consiste em uma troca em um indivíduo, porém trata-se de apenas uma única mudança, sem alterar a estrutura. Na Figura~\ref{fig::gps2} vemos uma mutação ocorrendo entre o indivíduo 1 e 2, onde temos a métrica Hub (Seção~\ref{subsubsection::hub}) sendo trocada pela métrica \textit{PageRank} (\textsc{PR}, Seção~\ref{subsubsection::pagerank}).
+A operação de reprodução é a mais simples, nela apenas introduzimos o ganhador do torneio na próxima geração. Por sua vez, na operação de cruzamento, temos que inicialmente realizar dois torneios, um para cada indivíduo selecionado. Depois disso, selecionamos aleatoriamente um ponto em cada um dos dois indivíduos utilizados e geramos uma nova prole contendo partes de ambos. Na Figura~\ref{fig::gps1}, temos a ilustração desse processo. 
+Os indivíduos 1 e 2 são selecionados cada um por um torneio diferente, como dito, depois escolhemos um ponto de troca no indivíduo 1, no caso a métrica \textsc{CC(x,c)} (Seção~\ref{subsubsection::cc}) e um ponto de troca no 2, a função interna +. Por fim, trocamos a métrica \textsc{CC(x,c)} por toda a parte selecionada no indivíduo 2, gerando o indivíduo 3. 
 
+Finalmente, a prole resultante da reprodução ou cruzamento, pode ser submetida a operação de mutação. Essa operação também consiste em uma troca no indivíduo, porém trata-se de apenas uma única mudança, sem alterar a estrutura. Na Figura~\ref{fig::gps2} vemos uma mutação ocorrendo entre o indivíduo 1 e 2, onde temos a métrica Hub (Seção~\ref{subsubsection::hub}) sendo trocada pela métrica \textit{PageRank} (\textsc{PR}, Seção~\ref{subsubsection::pagerank}).
+
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
 
 \section{\textit{Fitness}}
 \label{subsec::fitness}
 
-No Algoritmo~\ref{alg::fitness}, descrevemos o processo usado para calcular a \textit{fitness} de um individuo levando em consideração funções evoluidas tanto para atributos quanto para relacionamentos.
+No Algoritmo~\ref{alg::fitness}, descrevemos o processo usado para calcular a \textit{fitness} de um individuo levando em consideração funções evoluídas tanto para atributos quanto para relacionamentos.
 Quando não estivermos evoluindo uma das funções de credibilidade, basta ignorá-la no cálculo da \textit{fitness}.
 
-Começamos o Algoritmo~\ref{alg::fitness} com o mapeamento do relacionamento $f_a$ formado pela aplicação da função de credibilidade que o indivíduo representa a cada par de atributos e classes.
-Logo depois, calculamos a credibilidade de cada relacionamento no conjunto de relacionamentos $\mathbb{R}$, usando o conjunto $\mathbb{E}$ de exemplos de treinamento em um mapa $f_r$.
-Por fim, o classificador recebe o conjunto $\mathbb{T}$ de exemplos de teste, o conjunto $\mathbb{E}$ de exemplos de treinamento, o conjunto $\mathbb{C}$ de classes e os valores mapeados para as funções $f_a$ e $f_r$ de credibilidade de atributos e relacionamentos e retorna para cada exemplo de $\mathbb{T}$ uma possível classe de $\mathbb{C}$.
+Começamos o Algoritmo~\ref{alg::fitness} com a formação do mapeamento $f_a$, formado pela aplicação da função de credibilidade que o indivíduo representa a cada par de atributos e classes.
+Logo depois, calculamos a credibilidade de cada relacionamento no conjunto $\mathbb{R}$ de relacionamentos, usando o conjunto $\mathbb{E}$ de exemplos de treinamento em um mapa $f_r$.
+Por fim, o classificador recebe o conjunto $\mathbb{T}$ de exemplos de teste, o conjunto $\mathbb{E}$ de exemplos de treinamento, o conjunto $\mathbb{C}$ de classes e os valores mapeados para as funções $f_a$ e $f_r$ de credibilidade de atributos e relacionamentos, respectivamente, retornando para cada exemplo de $\mathbb{T}$ uma possível classe de $\mathbb{C}$.
 Assim, podemos calcular qual o valor da métrica chamada \textit{$F_1$} baseada nos resultados do classificador utilizado. 
 
-Para explicar a métrica $F_1$, utlizamos a Tabela~\ref{table::confusao}. Nela, temos um cenário simplificado o qual duas classes são possíveis para uma instância de teste, as classe + e -, e as quatro situações (A, B, C e D) podem ser geradas. Dessa forma, A é quando o exemplo de teste pertence a classe + e é classificado corretamente (verdadeiro positivo), B é a situação a qual o exemplo é da classe - e é classificado como + (falso positivo), C é quando o exemplo pertence a classe + e classificado como - (falso negativo) e, finalmente, D é quando classificamos o exemplo como - e realmente pertece a - (verdadeiro negativo).
+Para explicar a métrica $F_1$, utilizamos a Tabela~\ref{table::confusao}. Nela, temos um cenário simplificado no qual duas classes são possíveis para uma instância de teste, + e -, e as quatro situações podem ser geradas, A, B, C ou D. Dessa forma, A é a situação na qual o exemplo de teste pertence a classe + e é classificado corretamente (verdadeiro positivo), B ocorre quando o exemplo é da classe - e é classificado como + (falso positivo), C ocorre nas vezes quando o exemplo pertence a classe + e classificado como - (falso negativo) e, finalmente, D é quando classificamos o exemplo como - e realmente pertence a - (verdadeiro negativo).
 
 \begin{table}[ht*]
 \centering
@@ -145,7 +162,7 @@ Para explicar a métrica $F_1$, utlizamos a Tabela~\ref{table::confusao}. Nela, 
 \label{table::confusao}
 \end{table}
 
-A partir dos conceirtos de A, B, C e D, podemos definir duas importantes métricas comumente utilizadas na literatura, precisão e revocação. A precisão \textsc{P} é definida como:
+A partir dos conceitos de A, B, C e D, podemos definir duas importantes métricas comumente utilizadas na literatura, precisão e revocação. A precisão \textsc{P} é definida como:
 \begin{equation}
 \textsc{P} = \frac{A}{(A+C)} = \frac{\# \text{de exemplos da classe c corretamente classificados como classe c}} {\# \: \text{ total de exemplos classificados como classe c}} \\,
 \end{equation}
@@ -154,16 +171,16 @@ e a revocação \textsc{R} como sendo:
 \textsc{R} = \frac{A}{(A+B)} = \frac{\# \: \text{de exemplos da classes c corretamente classificados como classe c}}{\# \: \text{de exemplos existentes na classe c}}.
 \end{equation}
 Dessa forma, a precisão calcula o quanto um classificador acerta em uma determinada classe e a revocação mede o quanto o classificador é bom em achar os exemplos pertencentes àquela classe.
-Ambas métricas são bastante importantes e a média harmônica de ambas é utilizada para formar a medida chamada $F_1$:
+Ambas métricas são bastante importantes e a média harmônica delas é utilizada para formar a medida chamada $F_1$:
 \begin{equation}
 \text{F}_1 = \frac{2 \cdot P \cdot R}{(P + R)}.
 \end{equation}
 
-Existem ainda duas formas derivadas da $F_1$ chamadas \textit{micro-$F_1$} e \textit{macro-$F_1$}. A primeria, \textit{micro-$F_1$}, leva em consideração a precisão e a revocação do classificador como um todo. 
-Portanto, o componente A usado na precisão e revocação é representada pelo número de exemplos corretamente, indepentende de qual classe eles pertencem.
+Existem ainda duas formas derivadas da $F_1$, nomeadas \textit{micro-$F_1$} e \textit{macro-$F_1$}. A primeira, \textit{micro-$F_1$}, leva em consideração a precisão e a revocação do classificador como um todo. 
+Portanto, o componente A da Tabela~\ref{table::confusao} usado na \textit{micro-$F_1$} é representado pelo número de exemplos corretamente classificados, independente de qual classe eles pertencem.
 Por sua vez, a \textit{macro-$F_1$} realiza a média da $F_1$ calculada individualmente para cada uma das classes. 
 
-Dada a forma como são formuladas, a \textit{macro-$F_1$} e \textit{micro-$F_1$} tendem a se diferenciarem se a base de dados tiver classes desbalanceadas. Em geral, uma exemplo pertencente a uma classe pouco popular é mais difícil de ser classificado que um outro pertencente a uma classe muito popular. Portanto, se estivermos analisando uma base de dados desbalanceada, a \textit{macro-$F_1$} tenderá a ter um valor menor que a \textit{micro-$F_1$}, pois a primeira é prejudicada pelas classes mais raras. 
+Dada a forma como são enunciadas, a \textit{macro-$F_1$} e \textit{micro-$F_1$} tendem a se diferenciar se a base de dados tiver classes desbalanceadas. Em geral, uma exemplo pertencente a uma classe pouco popular é mais difícil de ser classificado que um outro pertencente a uma classe muito popular. Portanto, se estivermos analisando uma base de dados desbalanceada, a \textit{macro-$F_1$} tenderá a ter um valor menor que a \textit{micro-$F_1$}, pois a primeira é prejudicada pelas classes mais raras. 
 
 %A \textit{$F_1$} é uma métrica amplamente utilizada por representar um compromisso interessante entre a precisão e a revocação, outras duas importante métricas. 
 %A precisão ($\textsc{P}$) calcula, para uma classe específica, o quanto o classificador acerta entre todos os exemplos que ele classificou para aquela classe: 
@@ -240,7 +257,7 @@ Em suma, algumas métricas são muito atreladas a classificação de documentos,
 Entretanto, muitas são genéricas o suficiente para serem utilizadas em qualquer contexto de classificação baseada em atributos.
 Dessa forma, na Seção~\ref{subsec::pg_metricas_conteudo_textual} mostramos as métricas que foram modeladas única e exclusivamente para serem utilizadas na tarefa de classificação de documentos  e na Seção~\ref{subsec::pg_metricas_conteudo} temos as métricas que foram estendidas e estão sendo usadas também para a classificação categórica.
 
-\subsection{Métricas Modeladas Para Atributos Textuais Exclusivamente.}
+\subsection{Métricas Modeladas Exclusivamente Para Atributos Textuais.}
 \label{subsec::pg_metricas_conteudo_textual}
 
 As métricas usadas para atributos textuais consistem em algumas variantes do \textsc{TFIDF}, métrica mais difundida entre as apresentadas. Na tabela~\ref{table::metricas_textuais} estão concentradas algumas expressões amplamente utilizadas nas métricas aqui listadas.
@@ -275,6 +292,7 @@ A frequência de um termo (\textsc{TF} da expressão em inglês, \textit{Term Fr
    \textsc{TF}(t_i) = 1.0 + \log{ ( F_{t_i} ) }.
 \end{equation}
 
+Temos que $TF(t_i)$ é a primeira e uma das muitas métricas que são chamadas de métricas globais. Essa denominação provêm de trabalhos como o de \cite{Lan05} ou \cite{Liu09}, nos quais métricas que não utilizam a informação da classe são vistas como globais por terem o mesmo valor para todas as possíveis classes. Em geral, métricas que calculam máximo são globais, ver Seções~\ref{subsubsection::maxctd},~\ref{subsubsection::maxdom}, entre outras muitas.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Frequência do Termo por Classe} % (\textsc{TFClasse})}

@@ -1,6 +1,6 @@
 fold=$(pwd | sed 's/fold/ /g' | cut -f2 -d' ')
 
-path=../../../fonte/enzymes/astral/family10p/
+path=../../../../fonte/enzymes/astral/family10p/
 
 treinopath=$path/treino/_treino$fold
 validacaopath=$path/validacao/_validacao$fold
