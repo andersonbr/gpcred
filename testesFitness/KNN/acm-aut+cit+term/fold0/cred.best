@@ -43,3 +43,33 @@ GP: (Pow GINI CC)
 ADF0: (* Constraint (Pow (Log JaccardSimilarity Authority) Constraint))
 ADF1: (- EigenVector (Pow (Pow DiceSimilarity Strength) Strength))
 
+Best of generation 9 (Fitness = 27.7164, Structural Complexity = 17)
+GP: (Pow GINI CC)
+ADF0: (* Constraint (Pow (Log JaccardSimilarity Authority) Constraint))
+ADF1: (- EigenVector (Pow (Pow DiceSimilarity Strength) Strength))
+
+Best of generation 10 (Fitness = 27.5758, Structural Complexity = 11)
+GP: (* GINI GSS)
+ADF0: (* Betweenness PageRank)
+ADF1: (% (Log EigenVector Neighborhood1) EigenVector)
+
+Best of generation 11 (Fitness = 27.5758, Structural Complexity = 9)
+GP: (* GINI GSS)
+ADF0: (- PageRank PageRank)
+ADF1: (Log EigenVector Neighborhood1)
+
+Best of generation 12 (Fitness = 26.1498, Structural Complexity = 11)
+GP: (* GINI CC)
+ADF0: (Pow (% PageRank Constraint) Neighborhood2)
+ADF1: (Log Constraint Betweenness)
+
+Best of generation 13 (Fitness = 26.1498, Structural Complexity = 11)
+GP: (* GINI CC)
+ADF0: (Pow (% PageRank Constraint) Neighborhood2)
+ADF1: (Log Constraint Betweenness)
+
+Best of generation 14 (Fitness = 26.1498, Structural Complexity = 11)
+GP: (* GINI CC)
+ADF0: (Pow (- PageRank HubScore) Neighborhood2)
+ADF1: (Log Constraint Betweenness)
+

@@ -43,3 +43,38 @@ GP: (Pow GINI GSS)
 ADF0: (- (- (- InverseLogSimilarity Strength) (* HubScore Strength)) (* InverseLogSimilarity Strength))
 ADF1: (- (- (* InverseLogSimilarity Closeness) (% BibCoupling Neighborhood3)) (Log (+ (- (Pow HubScore Closeness) Closeness) Neighborhood3) (Log HubScore PageRank)))
 
+Best of generation 9 (Fitness = 27.3293, Structural Complexity = 33)
+GP: (Pow GINI GSS)
+ADF0: (- (- (Pow JaccardSimilarity Strength) (* HubScore Strength)) (* InverseLogSimilarity Strength))
+ADF1: (- (- (* InverseLogSimilarity Closeness) (% BibCoupling Neighborhood3)) (Log (+ (- (Pow HubScore Closeness) Closeness) Neighborhood3) (Log HubScore PageRank)))
+
+Best of generation 10 (Fitness = 27.3293, Structural Complexity = 33)
+GP: (Pow GINI GSS)
+ADF0: (- (- (Pow JaccardSimilarity Strength) (* HubScore Strength)) (* InverseLogSimilarity Strength))
+ADF1: (- (- (* InverseLogSimilarity Closeness) (% BibCoupling Neighborhood3)) (Log (+ (- (Pow HubScore Closeness) Closeness) Neighborhood3) (Log HubScore PageRank)))
+
+Best of generation 11 (Fitness = 27.3293, Structural Complexity = 33)
+GP: (Pow GINI GSS)
+ADF0: (- (- (Pow JaccardSimilarity Strength) (* HubScore Strength)) (* InverseLogSimilarity Strength))
+ADF1: (- (- (* InverseLogSimilarity Closeness) (% BibCoupling Neighborhood3)) (Log (+ (- (Pow HubScore Closeness) Closeness) Neighborhood3) (Log HubScore PageRank)))
+
+Best of generation 12 (Fitness = 27.3293, Structural Complexity = 31)
+GP: (Pow GINI GSS)
+ADF0: (- (- (Pow JaccardSimilarity Strength) (* HubScore Strength)) (* InverseLogSimilarity Strength))
+ADF1: (- (- (* InverseLogSimilarity Closeness) (% BibCoupling Neighborhood3)) (Log (Log (* Neighborhood2 Closeness) Strength) (Log HubScore PageRank)))
+
+Best of generation 13 (Fitness = 26.6867, Structural Complexity = 21)
+GP: MaxDom
+ADF0: (* (% EigenVector (- Neighborhood1 HubScore)) (Log JaccardSimilarity Strength))
+ADF1: (+ (Pow Closeness EigenVector) (Pow (* HubScore HubScore) (- Strength Constraint)))
+
+Best of generation 14 (Fitness = 26.6867, Structural Complexity = 19)
+GP: MaxDom
+ADF0: (* (- JaccardSimilarity Strength) (Log JaccardSimilarity Strength))
+ADF1: (+ (Pow Closeness EigenVector) (Pow (* HubScore HubScore) (- Strength Constraint)))
+
+Best of generation 15 (Fitness = 26.6867, Structural Complexity = 19)
+GP: MaxDom
+ADF0: (* (- JaccardSimilarity Strength) (Log JaccardSimilarity Strength))
+ADF1: (+ (Pow Closeness EigenVector) (Pow (* HubScore HubScore) (- Strength Constraint)))
+
