@@ -1,5 +1,6 @@
-%\section{Programação Genética}
-%\label{cap::gp}
+
+\chapter{Modelando a Credibilidade com Programação Genética}
+\label{cap::programacao_genetica}
 
 No Capítulo~\ref{cap::metodo},
 além de mostrarmos os algoritmos de classificação \textit{Naïve Bayes} e \textsc{KNN}, vimos como podemos incorporar a credibilidade nos mesmos.
@@ -158,7 +159,7 @@ Para explicar a métrica $F_1$, utilizamos a Tabela~\ref{table::confusao}. Nela,
     \textbf{Classificado como -}  & C & D \tabularnewline
 \bottomrule
 \end{tabular}
-\caption{Matrix de confusão usada para exemplificar as métricas de precisão e revocação.}
+\caption{Matriz de confusão usada para exemplificar as métricas de precisão e revocação.}
 \label{table::confusao}
 \end{table}
 
@@ -329,7 +330,7 @@ A métrica \textsc{DFClasse} avalia o número de documentos que um termo aparece
 \subsubsection{Inverso da Frequência de Documentos}% (\textsc{IDF})}
 \label{subsubsection::idf}
 
-O Inverso da Frequência de Documentos, \textsc{IDF} do inglês \textit{Inverse Document Frequency}, é uma conhecida métrica que avalia a popularidade de um determinado termo em um conjunto de documentos. Temos que quanto mais popular é um termo ao longo dos documentos de uma coleção, pior é sua capacidade de discriminação, logo:
+O Inverso da Frequência de Documentos, \textsc{IDF} do inglês \textit{Inverse Document Frequency}, é uma métrica que avalia a popularidade de um determinado termo em um conjunto de documentos. Temos que quanto mais popular é um termo ao longo dos documentos de uma coleção, pior é sua capacidade de discriminação, logo:
 \begin{equation}\label{eqn::tficf}
  \textsc{IDF}(t_i) = \log( \frac{|N|} {DF_{t_i}} ).
 \end{equation}
@@ -350,7 +351,7 @@ O Inverso da Frequência de Documentos por classe, \textsc{IDFClasse} é uma ver
 \subsubsection{Frequência do Termo Inverso da Frequência de Documentos}% (\textsc{TFIDF})}
 \label{subsubsection::tfidf}
 
-Uma das métricas de pesos para atributos em classificação de documentos mais populares na literatura é o \textsc{TFIDF} (do inglês, \textit{Term Frequency Inversed Document Frequency}), ver \cite{Salton88}. O \textsc{TFIDF} combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento são mais importantes que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de \textsc{TFIDF} é:
+Uma das métricas de pesos para atributos em classificação de documentos mais populares na literatura é o \textsc{TFIDF} (do inglês, \textit{Term Frequency Inversed Document Frequency} (\cite{Salton88}). O \textsc{TFIDF} combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento são mais importantes que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de \textsc{TFIDF} é:
 \begin{equation}\label{eqn::tficf}
  \textsc{TFIDF}(t_i, c_j) =  F_{t_ic_j} \cdot \log( \frac{|N|} {DF_{t_i}} ).
 \end{equation}
@@ -359,7 +360,7 @@ Uma das métricas de pesos para atributos em classificação de documentos mais 
 \subsubsection{Frequência do Termo Inverso da Frequência da Classe}% (TFICF)}
 \label{subsubsection::tficf}
 
-O \textsc{TFICF} (do inglês, \textit{Term Frequency Inversed Class Frequency}) é uma variação do esquema \textsc{TFIDF} (ver Seção~\ref{subsubsection::tfidf}). Novamente, \textsc{TF} se refere a quanto importante é um termo em uma classe, pois trata-se de sua frequência. Por sua vez, \textsc{ICF} é usado para que termos que aparecem em poucas classes tenham maior importância.
+O \textsc{TFICF} (do inglês, \textit{Term Frequency Inversed Class Frequency}) é uma variação do \textsc{TFIDF}. Novamente, \textsc{TF} se refere a quanto importante é um termo em uma classe, pois trata-se de sua frequência. Por sua vez, \textsc{ICF} é usado para que termos que aparecem em poucas classes tenham maior importância.
 Como é possível observar, uma desvantagem do \textsc{ICF} é que um termo que aparecesse em todos os documentos de uma determinada classe e em um único documento de cada uma das outras teria um o mesmo peso que um outro que fosse igualmente distribuído entre todas as classes. 
 Como mostrado por~\cite{ChihHow04}, a fórmula para \textsc{TFICF} é:
 \begin{equation}\label{eqn::tficf}
@@ -371,13 +372,14 @@ Como mostrado por~\cite{ChihHow04}, a fórmula para \textsc{TFICF} é:
 \label{subsubsection::ctd}
 
 Definido por~\cite{ChihHow04}, \textit{Category Term Description} é uma métrica de seleção de atributos para classificação textual baseada em \textsc{TFIDF} (Seção~\ref{subsubsection::tfidf}) e \textsc{TFICF} (Seção~\ref{subsubsection::tficf}). How et al. propõe uma melhoria ao TDICF, tentando adicionar o fato que termos que aparecem em poucos documentos devem ter maior importância que os termos mais populares, pois tem maior poder discriminativo, logo:
+
 \begin{equation}\label{eqn::cdt}
  \textsc{CDT}(t_i, c_j) = \textsc{TFClass}(t_i, c_j) \cdot \textsc{ICF}(t_i, c_j) \cdot \textsc{IDF}(t_i)
 \end{equation}
 
 \subsubsection{Máximo \textit{Category Term Description}}
 \label{subsubsection::maxctd}
-Calculamos o valor máximo de \textsc{CTD} para todas as classes e utilizamos esse valor como uma métrica discriminatória que relacionará mais fortemente os termos com as classes nas quais o \textsc{CTD} é máximo. Logo, usamos:
+Calculamos o valor máximo de \textsc{CTD} para todas as classes e utilizamos esse valor como uma métrica discriminatória global que relacionará mais fortemente os termos com as classes nas quais o \textsc{CTD} é máximo. Logo, usamos:
 
 \begin{equation}\label{eqn::maxdom}
  \textsc{MaxCTD}(t_i) = \textsc{CTD}(t_i,c_j) \; \; | \;\; \textsc{CTD}(t_i, c_j) > \textsc{CTD}(t_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}
@@ -387,7 +389,9 @@ Calculamos o valor máximo de \textsc{CTD} para todas as classes e utilizamos es
 \subsubsection{Dominância}
 \label{subsubsection::dom}
 
-Dominância é uma métrica originalmente proposta em~\cite{Zaiane02} e utilizada mais recentemente no trabalho de~\cite{Rocha08} para criação do que foi chamado de janela temporal de um documento. Em suma, utilizado exclusivamente em classificação textual, o método normaliza a frequência de um documento em uma classe por todas as classes existentes, logo:
+Dominância é uma métrica originalmente proposta em~\cite{Zaiane02}.
+%e utilizada mais recentemente no trabalho de~\cite{Rocha08} para criação do que foi chamado de janela temporal de um documento. Em suma,
+Utilizado exclusivamente em classificação textual, o método normaliza a frequência de um documento em uma classe por todas as classes existentes, logo:
 \begin{equation}\label{eqn::dom}
  \textsc{Dom}(t_i, c_j) = \frac{ DF_{t_ic_j} } { \sum\limits_{c_k \in \mathbb{C}} DF_{t_ic_k} } 
 \end{equation}
@@ -399,7 +403,7 @@ Dominância é uma métrica originalmente proposta em~\cite{Zaiane02} e utilizad
 
 \subsubsection{Máxima Dominância}
 \label{subsubsection::maxdom}
-A máxima dominância é uma métrica extrapolada da Dominância (Seção~\ref{subsubsection::dom}). Aqui trabalhamos somente em estipular a dominância de um termo e consideramos que ela é o valor máximo entre todas as possíveis classes. Logo,
+A máxima dominância é uma métrica extrapolada da Dominância (Seção~\ref{subsubsection::dom}). Aqui trabalhamos somente em estipular a dominância global de um termo e consideramos que ela é o valor máximo entre todas as possíveis classes. Logo,
 
 \begin{equation}\label{eqn::maxdom}
  \textsc{MaxDom}(t_i) = \textsc{Dom}(t_i,c_j) \; \; | \;\; \textsc{Dom}(t_i, c_j) > \textsc{Dom}(t_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}
@@ -449,7 +453,7 @@ Como explicado, podemos usar essa métrica (e todas as demais dessa seção) com
 \subsubsection{Máxima Medida de Ambiguidade}
 \label{subsubsection::maxam}
 
-Também sugerido por~\cite{Mengle08}, o maior valor para a métrica \textsc{AM} dentre todas as classes pode ser utilizado como valor discriminar usando:
+Também sugerido por~\cite{Mengle08}, o maior valor para a métrica \textsc{AM} dentre todas as classes pode ser utilizado como valor global discriminativo usando:
  
  \begin{equation}\label{eqn::maxdom}
  \textsc{MaxAM}(x_i) = \textsc{AM}(x_i,c_j) \; \; | \;\; \textsc{AM}(x_i, c_j) > \textsc{AM}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
@@ -460,7 +464,7 @@ Também sugerido por~\cite{Mengle08}, o maior valor para a métrica \textsc{AM} 
 \subsubsection{Probabilidade Condicional} % ($P(x_i|c_j)$)}
 \label{subsubsection::pc}
 
-A probabilidade condicional $P(x_i|c_j)$ provém do algoritmo \textit{Naïve Bayes} como foi discutido na Seção~\ref{subsec::cred_nb}.
+A probabilidade condicional $P(x_i|c_j)$ advém do algoritmo \textit{Naïve Bayes} como foi discutido na Seção~\ref{subsec::cred_nb}.
 Temos dois modos de calcular $P(x_i|c_j)$, um para quando temos $A_i$ categórico e outro para quando estamos realizando classificação textual.
 A ideia principal de ambos é a mesma, queremos saber a probabilidade de um atributo $A_i$ ter o valor $x_i$ (ou um termo $t_i$ estar presente), dado que estamos analisando um exemplo pertencente a classe $c_j$.
 
@@ -474,7 +478,7 @@ Para classificação textual, contamos quantas vezes um termo $t_i$ aparece em u
        \textsc{P}(t_i|c_j) = \frac{ F_{t_{i}c_{j}} }{ \sum\limits^{D}_{k = 1} {  F_{t_{k}c_{j}}} } 
     \end{equation}
 
-Todas as demais métricas dessa seção estão diretamente ligadas a probabilidade condicional e evitaremos realizar a diferenciação entre a classificação categórica e textual utilizando somente a notação $P(x_i|c_j)$, tanto para categorias quanto para textos.
+Todas as demais métricas dessa seção estão diretamente ligadas a probabilidade condicional, e evitaremos diferenciar entre a classificação categórica e textual utilizando somente a notação $P(x_i|c_j)$, tanto para categorias quanto para textos.
 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -489,22 +493,22 @@ Com o inverso da probabilidade condicional, calculamos a probabilidade de um atr
 \subsubsection{Índice de Gini Melhorado} % (GINI)}
 \label{subsubsection::gini}
 
-O índice de Gini é uma métrica baseada na curva de Lorenz que mostra a função de distribuição acumulada de uma variável. Esse índice é amplamente utilizado nas Ciências Econômicas como uma métrica para avaliação da distribuição de renda pela população de um certo país ou região. Infelizmente por essa métrica, o Brasil é um dos países mais desiguais do mundo (ver \cite{cia-gini}). 
-Baseado na ideia de desigualdade, podemos pensar na distribuição de um atributo nas M classes possíveis. Um atributo que seja desigualmente distribuído é certamente um atributo com um maior poder de discriminação, e portanto, um atributo mais importante. O trabalho de~\cite{Shang07} consistiu na criação de um selecionador de atributos para classificadores textuais baseando-se no Índice de Gini, chamado Índice de Gini Melhorado. Ao contrario da maioria das métricas expostas nessa seção, o Índice de Gini melhorado tem apenas um parâmetro, o valor do $i$-ésimo atributo, não levando em consideração nenhuma classe específica. Ele é considerado melhorado por algumas pequenas diferenças com o método tradicional de Gini, entre elas o fato de um maior valor se referir a um melhor atributo e não ao contrário como é feito no método original. A fórmula sugerida por \cite{Shang07} é dada por:
+O índice de Gini é uma métrica baseada na curva de Lorenz que mostra a função de distribuição acumulada de uma variável (\cite{Shang07}). Esse índice é amplamente utilizado nas Ciências Econômicas como uma métrica para avaliação da distribuição de renda pela população de um certo país ou região. Infelizmente por essa métrica, o Brasil é um dos países mais desiguais do mundo (ver \cite{cia-gini}). 
+Baseado na ideia de desigualdade, podemos pensar na distribuição de um atributo nas M classes possíveis. Um atributo que seja desigualmente distribuído é certamente um atributo com um maior poder de discriminação, e portanto, um atributo mais importante. O trabalho de~\cite{Shang07} criou um método de seleção de atributos para classificadores textuais baseando-se no Índice de Gini, chamado Índice de Gini Melhorado. Ao contrário da maioria das métricas expostas nessa seção, o Índice de Gini melhorado tem apenas um parâmetro: o valor do $i$-ésimo atributo, não levando em consideração nenhuma classe específica. Ele é considerado melhorado por algumas pequenas diferenças com o método tradicional de Gini, entre elas o fato de um maior valor se referir a um melhor atributo e não ao contrário como é feito no método original. A fórmula sugerida por \cite{Shang07} é dada por:
 \begin{equation}\label{eqn::gini}
  \textsc{Gini}(x_i) = \sum\limits_{c_k \in \mathbb{C}} \textsc{P}(x_i|c_k)^2 \cdot \textsc{P}(c_k|x_i)^2
 \end{equation}
-Shang et al. destaca o fato da não utilização do fator $P(x_i)$, fazendo com que o Índice de Gini melhorado sofra menos a influência de atributos frequentes conseguindo capturar a capacidade de um atributo ser importante para distinguir uma classe, independente de qual classe é. Destacamos que $P(c|x_i)$ é justamente a probabilidade que o algoritmo Bayesiano pretende calcular, logo aproximamos esse fator como:
+Shang et al. destaca o fato da não utilização do fator $P(x_i)$, fazendo com que o Índice de Gini melhorado sofra menos influência de atributos frequentes, conseguindo capturar a capacidade de um atributo ser importante para distinguir uma classe, independente de qual classe. Destacamos que $P(c|x_i)$ é justamente a probabilidade que o algoritmo Bayesiano pretende calcular, logo aproximamos esse fator como:
 \begin{equation}\label{eqn::gini}
- \textsc{P}(c_j|x_i) = \frac{ \textsc{P}(c_j \wedge x_i) } {\textsc{P}(x_i) } = \frac{ \frac{ F_{x_ic_j}}{  \sum\limits_{c \in \mathbb{C}} \sum\limits_{k=1}^{D} {Fx_kc}  } } { \frac{\sum\limits_{c \in \mathbb{C}} F_{x_ic}}{ \sum\limits_{c \in \mathbb{C}} \sum\limits_{k=1}^{D} {Fx_kc}}} = \frac{ F_{x_{i}c_{j}}}{\sum\limits_{c_k \in \mathbb{C}} F_{x_{i}c_{k}}}.
+ \textsc{P}(c_j|x_i) = \frac{ \textsc{P}(c_j \wedge x_i) } {\textsc{P}(x_i) } = \frac{ \frac{ F_{x_ic_j}}{  \sum\limits_{c \in \mathbb{C}} \sum\limits_{k=1}^{D} {Fx_kc}  } } { \frac{\sum\limits_{c \in \mathbb{C}} F_{x_ic}}{ \sum\limits_{c \in \mathbb{C}} \sum\limits_{k=1}^{D} {Fx_kc}}} = \frac{ F_{x_{i}c_{j}}}{\sum\limits_{c_k \in \mathbb{C}} F_{x_{i}c_{k}}},
 \end{equation}
-Que é o mesmo valor definido por~\cite{Mengle08} para a métrica Medida da Ambiguidade mostrada na Seção~\ref{subsubsection::am}. Entretanto, Mengle et. al não explicita ou mostra nenhum cálculo de como foi feito para alcançar a fórmula da métrica \textsc{AM}. 
+que é o mesmo valor definido por~\cite{Mengle08} para a métrica Medida da Ambiguidade mostrada anteriormente. Entretanto, Mengle et. al não explicita ou mostra nenhum cálculo de como foi feito para alcançar a fórmula da métrica \textsc{AM}. 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Ganho de Informação}
 \label{subsubsection::ig}
 
-O Ganho de Informação (\textit{Information Gain}, \textsc{IG}), \cite{Yang97}, mede a diminuição da entropia quando um atributo é usado ou não. A entropia é uma medida utilizada no campo da Ciência da Informação que tenta quantificar a desordem, a imprevisibilidade. Quanto maior a entropia, mais difícil é prever um resultado, portanto a métrica \textsc{IG} atribui valores mais elevados para os atributos que diminuam o valor da entropia, facilitando descobrir a qual classe um exemplo pertence. O Ganho da Informação pode ser calculado da seguinte forma:
+O Ganho de Informação (\textit{Information Gain}, \textsc{IG}) mede a diminuição da entropia quando um atributo é usado ou não (\cite{Yang97}). A entropia é uma medida utilizada no campo da Ciência da Informação que tenta quantificar a desordem, a imprevisibilidade. Quanto maior a entropia, mais difícil é prever um resultado, portanto a métrica \textsc{IG} atribui valores mais elevados para os atributos que diminuam o valor da entropia, facilitando descobrir a qual classe um exemplo pertence. O Ganho da Informação pode ser calculado da seguinte forma:
 \begin{equation}\label{eqn::ig}
  \textsc{IG}(x_i, c_j) = \sum_{c \in \{c_j, \overline{c_j}\}}\sum_{x \in \{x_i, \overline{x_i}\}} \textsc{P}(x|c) \cdot \log_2\frac{\textsc{P}(x|c)}{ \textsc{P}(x) \cdot \textsc{P}(c)}.
 \end{equation}
@@ -512,17 +516,17 @@ O Ganho de Informação (\textit{Information Gain}, \textsc{IG}), \cite{Yang97},
 \subsubsection{Máximo Ganho de Informação}
 \label{subsubsection::maxig}
 
-Assim como feito por outras métricas, definimos:
+Assim como feito por outras métricas globais, definimos:
 
 \begin{equation}\label{eqn::maxdom}
 \textsc{MaxIG}(x_i) = \textsc{IG}(x_i,c_j) \; \; | \;\; \textsc{IG}(x_i, c_j) > \textsc{IG}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Cross Entropy (entropia cruzada!?!?!)}
+\subsubsection{\textit{Cross Entropy}}
 \label{subsubsection::}
 
-\textit{Cross Entropy} (\textsc{CE}), assim como o Índice de Gini Melhorado, Seção~\ref{subsubsection::gini}, apresenta apenas um parâmetro, um atributo. Novamente, necessitamos aproximar o calculamos $P(c|x_i)$, pois esse já é o resultado do algoritmo \textit{Naïve Bayes} e, portanto, não o teríamos enquanto estamos calculando a credibilidade de um atributo em relação a uma classe. Assim como enunciado por~\cite{Koller97} e adaptado para seleção de atributos em~\cite{Mladenic98}, essa métrica pode mensurar a credibilidade de um atributo $x_i$ pela seguinte fórmula:
+\textit{Cross Entropy} (\textsc{CE}), assim como o Índice de Gini Melhorado, Seção~\ref{subsubsection::gini}, apresenta um atributo como parâmetro. Novamente, necessitamos aproximar o calculamos $P(c|x_i)$, pois esse já é o resultado do algoritmo \textit{Naïve Bayes} e, portanto, não o teríamos enquanto estamos calculando a credibilidade de um atributo em relação a uma classe. Assim como enunciado por~\cite{Koller97} e adaptado para seleção de atributos em~\cite{Mladenic98}, essa métrica pode mensurar a credibilidade de um atributo $x_i$ pela seguinte fórmula:
 \begin{equation}\label{eqn::ce}
  \textsc{CE}(x_i) =  \textsc{P}(x_i) \cdot \sum_{c \in \mathbb{C}} \textsc{P}(c|x_i) \cdot \log_2 \frac{ \textsc{P}(c|x_i) } {\textsc{P}(c) }
 \end{equation}
@@ -540,7 +544,7 @@ Valores próximos de zero indicam a falta de relação entre $x_i$ e $c_j$, enqu
 \subsubsection{Máximo CHI-Quadrado}
 \label{subsubsection::maxchi}
 
-Assim como feito por outras métricas, definimos:
+Assim como feito por outras métricas globais, definimos:
 \begin{equation}\label{eqn::maxchi}
 \textsc{MaxCHI}(x_i) = \textsc{CHI}(x_i,c_j) \; \; | \;\; \textsc{CHI}(x_i, c_j) > \textsc{CHI}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
 \end{equation}
@@ -559,7 +563,7 @@ Os valores positivos para CC correspondem a pertinência do valor de um atributo
 \subsubsection{Máximo Coeficiente de Correlação}
 \label{subsubsection::maxcc}
 
-Assim como feito por outras métricas, definimos:
+Assim como feito por outras métricas globais, definimos:
 \begin{equation}\label{eqn::maxcc}
 \textsc{MaxCC}(x_i) = \textsc{CC}(x_i,c_j) \; \; | \;\; \textsc{CC}(x_i, c_j) > \textsc{CC}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
 \end{equation}
@@ -569,7 +573,7 @@ Assim como feito por outras métricas, definimos:
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Coeficiente GSS}
 \label{subsubsection::gss}
-O coeficiente Galavotti–Sebastiani–Simi (GSS) introduzido por~\cite{Galavotti00} é bastante similar a $\chi^2$, Seção~\ref{subsubsection::chi}, e pode ser definido como:
+O coeficiente Galavotti–Sebastiani–Simi (GSS), introduzido por~\cite{Galavotti00}, é bastante similar a $\chi^2$ e pode ser definido como:
 \begin{equation}\label{eqn::gss}
    \textsc{GSS}(x_i, c_j) = \textsc{P}(x_i|c_j) \cdot \textsc{P}(\overline{x_i}|\overline{c_j}) - \textsc{P}(x_i|\overline{c_j}) \cdot \textsc{P}(\overline{x_i}|c_j).
 \end{equation}
@@ -578,16 +582,16 @@ Ele se mostra uma forma bastante simplificada do $\chi^2$, levando em considera�
 \subsubsection{Máximo Coeficiente GSS}
 \label{subsubsection::maxgss}
 
-Assim como feito por outras métricas, definimos:
+Assim como feito por outras métricas globais, definimos:
 \begin{equation}\label{eqn::maxgss}
 \textsc{MaxGSS}(x_i) = \textsc{GSS}(x_i,c_j) \; \; | \;\; \textsc{GSS}(x_i, c_j) > \textsc{GSS}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Razão de Chances}% - \textit{Odds Ratio} (OR)}
+\subsubsection{\textit{Odds Ratio}}
 \label{subsubsection::or}
 
-Proposta originalmente por~\cite{Rijsbergen79}, a métrica Razão de Chances, do inglês \textit{Odds Ration} (\textsc{OR}), também é uma métrica amplamente utilizada para seleção de atributos. A ideia básica é que a distribuição de atributos em exemplos relevantes é diferente da distribuição de atributos em exemplos não relevantes. Isso quer dizer que podemos definir dois eventos A e B e calculamos a probabilidade da ocorrência de A dividida pela probabilidade da não ocorrência de A e a comparamos com a probabilidade da ocorrência de B dividida pela probabilidade da não ocorrência de B:
+Proposta originalmente por~\cite{Rijsbergen79}, a métrica \textit{Odds Ratio} (\textsc{OR}), também é uma métrica amplamente utilizada para seleção de atributos. A ideia básica é que a distribuição de atributos em exemplos relevantes é diferente da distribuição de atributos em exemplos não relevantes. Isso quer dizer que podemos definir dois eventos A e B e calculamos a probabilidade da ocorrência de A dividida pela probabilidade da não ocorrência de A e a comparamos com a probabilidade da ocorrência de B dividida pela probabilidade da não ocorrência de B:
 \begin{equation}\label{eqn::or}
    \textsc{OR}(A, B) = \frac{\frac{A}{1-A}} {\frac{B}{1-B}} = \frac{ A \cdot ( 1 - B )} { B \cdot ( 1 - A ) } .
 \end{equation}
@@ -601,7 +605,7 @@ Logo valores maiores que um \textsc{OR} indicam que uma maior chance de $x_i$ es
 
 \subsubsection{MaxOR}
 \label{subsubsection::maxor}
-Assim como feito por outras métricas, definimos:
+Assim como feito por outras métricas globais, definimos:
 \begin{equation}\label{eqn::maxor}
 \textsc{MaxOR}(x_i) = \textsc{OR}(x_i,c_j) \; \; | \;\; \textsc{OR}(x_i, c_j) > \textsc{OR}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
 \end{equation}
@@ -610,10 +614,10 @@ Assim como feito por outras métricas, definimos:
 \section{Credibilidade baseada em Relacionamentos}
 \label{sec::pg_cred_baseada_grafos}
 
-Abordamos durante essa seção as métricas utilizadas como terminais dos indivíduos evoluídos para credibilidade baseada em relacionamentos, assim como descrito na Seção~\ref{subsec::individuos}. Todas as métricas contidas aqui são todas amplamente utilizadas em Redes Complexas (citacao), pois são medidas que conseguem explorar bem as propriedades estruturais dos grafos modelados.
+Abordamos durante essa seção as métricas utilizadas como terminais dos indivíduos evoluídos para credibilidade baseada em relacionamentos, assim como descrito na Seção~\ref{subsec::individuos}. Todas as métricas contidas aqui são amplamente utilizadas em Redes Complexas (citacao), pois são medidas que conseguem explorar bem as propriedades estruturais dos grafos modelados.
 
 Lembramos que o primeiro passo é a construção dos grafos representando o relacionamento modelado do ponto das várias classes. 
-Como já dito, construímos um grafo para cada classe, de forma a efetivamente isolarmos um classe da outra.
+Como já dito, construímos um grafo para cada classe, de forma a efetivamente isolar um classe da outra.
 Logo depois, introduzimos o exemplo de teste e todas suas arestas para os exemplos de treinamento. Assim, de forma geral, calculamos para cada uma das classe o valor da métrica, $\textsc{Métrica}(teste, classe)$, que modela a credibilidade de determinada classe em relação ao exemplo de teste. 
 
 Várias métricas não relacionam diretamente o teste a uma classe, mas o teste a cada um dos exemplos de treinamento de uma classe. Esse é o caso das métricas de similaridade, como veremos a seguir. Para essas situações, calculamos o valor da mesma para todos os exemplos de uma mesma classe e somamos os resultados obtidos. Logo,
@@ -625,7 +629,8 @@ resultando em somente um valor para a credibilidade de uma classe em relação a
 \subsection{Métricas modeladas.}
 \label{subsec::pg_metricas_grafos}
 
-Se eu seguir o padrao das ultimas secoes, aqui devo colcoar uma tabela mostrando as metricas que vao ser usadas, como Adj(x). Faco isso mesmo?! Acho que sim. Esperando apenas confirmacao.
+Se eu seguir o padrao das ultimas secoes, aqui devo colocar uma tabela mostrando as metricas que vao ser usadas, como Adj(x). Faco isso mesmo?! Acho que sim. Esperando apenas confirmacao.
+
 
 %As métricas usadas para atributos textuais consistem em algumas variantes do \textsc{TFIDF}, métrica mais difundida entre as apresentadas. Na tabela~\ref{table::metricas_textuais} estão concentradas algumas expressões amplamente utilizadas nas métricas aqui listadas.
 
@@ -649,7 +654,11 @@ Se eu seguir o padrao das ultimas secoes, aqui devo colcoar uma tabela mostrando
 \subsubsection{Tamanho da Vizinhança}
 \label{subsubsection::neighborhoodsize}
 
-Um vértice adjacente, ou seja, conectado por uma aresta é dito ser um vértice vizinho de primeira ordem. Na Figura~\ref{fig::vizinhos}, temos que os vértices 2, 3, 4 e 5 são vizinhos de primeira ordem do vértice 1. Seguindo esse raciocínio, o vértice 6 é vizinho de segunda ordem do vértice 1 e de terceira ordem do vértice 2 e 3. Simplesmente contar o número de vizinhos existentes dada uma ordem de vizinhança é a métrica mais simples que podemos utilizar para relacionar um vértice a um grafo. Um exemplo de teste com muitas ligações ao grafo de uma determinada classe tem mais chances de pertencer aquela classe do que um outro exemplo que tem pouca ou nenhuma aresta que o conecta àquele grafo. Repare que decidimos não levar em consideração a direção das arestas quando temos um grafo direcionado, somente estamos nos importando com o número de conexões totais do teste ao grafo de uma determinada classe, não importando se são arestas de entrada ou de saída do vértice que representa o teste. Por fim, criamos 3 métricas relacionadas a vizinhança, \textsc{Viz1(teste, classe)}, \textsc{Viz2(teste, classe)}, \textsc{Viz3(teste, classe)}, respectivamente ao fato contarmos o tamanho da vizinhança para primeira, segunda e terceira ordem do teste em uma determinada classe.
+Um vértice adjacente, ou seja, conectado por uma aresta é dito ser um vértice vizinho de primeira ordem. Na Figura~\ref{fig::vizinhos}, temos que os vértices 2, 3, 4 e 5 são vizinhos de primeira ordem do vértice 1. Seguindo esse raciocínio, o vértice 6 é vizinho de segunda ordem do vértice 1 e de terceira ordem do vértice 2 e 3. 
+Simplesmente contar o número de vizinhos existentes, dada uma ordem de vizinhança, consiste na métrica mais simples que podemos utilizar para relacionar um vértice a um grafo. Um exemplo de teste com muitas ligações ao grafo de uma determinada classe tem mais chances de pertencer aquela classe do que um outro exemplo que tem pouca ou nenhuma aresta que o conecta àquele grafo. 
+
+Repare que decidimos não levar em consideração a direção das arestas quando temos um grafo direcionado. Somente nos importamos com o número de conexões totais do teste ao grafo de uma determinada classe, independente de serem arestas de entrada ou de saída do vértice que representa o teste. Baseado nessa teoria, criamos 3 métricas relacionadas a vizinhança, denominadas \textsc{VizN(teste, classe)}, onde $N$ representa a ordem de vizinhaça do teste em determinada classe.
+
 %Em um grafo direcionado, temos ainda a noção de direção de uma aresta, logo podemos ter uma aresta que aponta de um vértice A para um vértice B, mas não o contrário. Em um grafo de citações por exemplo, um documento A que cita um outro documento B, é representando como uma aresta de aponta do vértice A para vértice B. O número de vizinhos que um vértice tem é chamado grau do vértice. Temos ainda os conceitos de grau de entrada e de saída, representando o número de arestas que chegam e saem de um vértice, respectivamente. 
 
 \begin{figure}[ht!]
@@ -663,7 +672,7 @@ Um vértice adjacente, ou seja, conectado por uma aresta é dito ser um vértice
 \subsubsection{Força}
 \label{subsubsection::strength}
 
-A métrica \textsc{força(teste,classe)} é uma variação do tamanho da vizinhança de primeira ordem. Quando temos um grafo no qual as arestas têm peso, essa métrica realiza a soma dos pesos das arestas vizinhas ao invés de contar o número das mesmas. O peso de uma aresta, como já dito, é uma forma de representarmos alguma informação importante em relação aos vértices ligados pela aresta. Em um grafo que os vértices representam cidades e as arestas representam ligações entre essas cidades, o peso de uma aresta pode significar a distância entre duas cidades, por exemplo. Dessa forma, pode ser mais significativo saber o quão longe (ou perto) uma cidade esta de suas vizinhas do que simplesmente saber o número de vizinhas que a mesma possui.
+A métrica \textsc{força(teste,classe)} é uma variação do tamanho da vizinhança de primeira ordem. Quando temos um grafo no qual as arestas têm peso, essa métrica realiza a soma dos pesos das arestas vizinhas ao invés de contar o número das mesmas. O peso de uma aresta, como já dito, é uma forma de representarmos informações importantes em relação aos vértices ligados pela aresta. Em um grafo em que os vértices representam cidades e as arestas representam ligações entre essas cidades, o peso de uma aresta pode significar a distância entre duas cidades, por exemplo. Dessa forma, pode ser mais significativo saber o quão longe (ou perto) uma cidade esta de suas vizinhas do que simplesmente saber o número de vizinhas que a mesma possui.
 Destacamos que quando um grafo não possuí pesos nas arestas, atribuímos um peso unitário para todas as arestas, logo a \textsc{força} de um vértice seria igual ao grau de primeira ordem dele.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -672,31 +681,33 @@ Destacamos que quando um grafo não possuí pesos nas arestas, atribuímos um pe
 
 De maneira intuitiva, dizemos que dois objetos estão próximos se eles estão a uma distância arbitrariamente pequena um do outro. Muitas vezes, entretanto, não é fácil estipular o que vem a ser uma distância pequena. 
 
-Em teoria dos grafos, medimos a distância entre os vértices utilizando o algoritmo conhecido como \textit{caminho mínimo} que, caso não leve em consideração o peso das arestas, conta o número mínimo de vértices que necessitamos atravessar para ligar conectar vértices escolhidos em um grafo. A \textsc{Proximidade(teste, classe)} (do inglês, \textit{Closeness}) é uma métrica que estima o quão próximo um vértice $v$ está em relação a todo o grafo usando a média dos caminhos mínimos de $v$ para todos os outros vértices alcançáveis a partir de $v$, ver~\cite{Beauchamp65}. Dessa forma, podemos medir a importância de um vértice calculando quanto tempo em média é gasto para uma informação se espalhar a partir de um vértice $v$ para todo o resto do grafo. Por fim, são considerados vértices mais ``próximos'' aqueles que minimizam esse tempo.
+Em teoria dos grafos, medimos a distância entre os vértices utilizando o algoritmo conhecido como \textit{caminho mínimo}, que caso não leve em consideração o peso das arestas, conta o número mínimo de vértices que necessitamos atravessar para ligar conectar vértices escolhidos em um grafo. A \textsc{Proximidade(teste, classe)} (do inglês, \textit{Closeness}) é uma métrica que estima o quão próximo um vértice $v$ está em relação a todo o grafo usando a média dos caminhos mínimos de $v$ para todos os outros vértices alcançáveis a partir de $v$ (\cite{Beauchamp65}). Dessa forma, podemos medir a importância de um vértice calculando quanto tempo em média é gasto para uma informação se espalhar a partir de um vértice $v$ para todo o resto do grafo. Por fim, são considerados vértices mais ``próximos'' aqueles que minimizam esse tempo.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Centralidade}
 \label{subsubsection::constraint}
-A métrica de centralidade denominada \textsc{Centralidade(teste, classe)} (em inglês, \textit{Betweenness}) se baseia no fato que um vértice é importante em um grafo se ele está no percurso de outros vértices, sendo obrigatoriamente muito visitado. Sendo assim, um vértice tem maior credibilidade por ser usado para conectar os vários vértices em um grafo, pertencendo a vários caminhos mínimos. Como já dito, o algoritmo do caminho mínimo é o que se utiliza para percorrer da melhor maneira possível uma dada distância em um grafo. A métrica \textsc{Centralidade} calcula a importância de um vértice contando quantas vezes aquele vértice participa do caminho mínimo entre quaisquer dois outros vértices do grafo em questão, ver~\cite{Sabidussi66}. Obviamente, um vértice central que está no caminho mínimo de vários outros tem mais acesso a informação que circula pelo grafo que um vértice periférico com poucas ligações.
+A métrica de centralidade (em inglês, \textit{Betweenness}) \textsc{Centralidade(teste, classe)} se baseia no fato que um vértice é importante em um grafo se ele está no percurso de outros vértices, sendo obrigatoriamente muito visitado. Sendo assim, um vértice tem maior credibilidade se for usado para conectar os vários vértices em um grafo, pertencendo a vários caminhos mínimos.
+%Como já dito, o algoritmo do caminho mínimo é o que se utiliza para percorrer da melhor maneira possível uma dada distância em um grafo. 
+A métrica \textsc{Centralidade} calcula a importância de um vértice contando quantas vezes aquele vértice participa do caminho mínimo entre quaisquer dois outros vértices do grafo em questão (\cite{Sabidussi66}). Obviamente, um vértice central que está no caminho mínimo de vários outros tem mais acesso a informação que circula pelo grafo que um vértice periférico com poucas ligações.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Centralidade do Autovetor.}
 \label{subsubsection::eigenvector}
 
-A centralidade do Autovetor (\textsc{Eigen}(teste, classe), do inglês \textit{Eigenvector Centrality}) é uma medida de centralidade que avalia a importância de um vértice em todo o grafo. Ela atribui valores aos vértices baseados nas conexões que os mesmos têm, sendo que um vértice ganhará uma credibilidade maior se estiver conectado a vértices de maior credibilidade. De maneira matemática, dado que $x_i$ é o valor atribuído ao vértice $i$ e que podemos montar a matriz de adjacência $A$ com os $N$ vértices do grafo, na qual $A_{ij} = 1$ se existe uma aresta entre $i$ e $j$ e $A_{ij}=0$, caso contrário, temos:
+A centralidade do Autovetor (\textsc{Eigen}(teste, classe), do inglês \textit{Eigenvector Centrality}) é uma medida de centralidade que avalia a importância de um vértice em todo o grafo. Ela atribui valores aos vértices baseados nas conexões que os mesmos têm, sendo que um vértice ganhará uma credibilidade maior se estiver conectado a vértices de maior credibilidade. Formalmente, dado que $x_i$ é o valor atribuído ao vértice $i$ e que podemos montar a matriz de adjacência $A$ com os $N$ vértices do grafo, na qual $A_{ij} = 1$ se existe uma aresta entre $i$ e $j$ e $A_{ij}=0$, caso contrário, temos:
 \begin{equation}\label{eqn::eigenvector1}
    x_i = \frac{1}{\lambda} \cdot \sum\limits_{j=1}^{N} A_{ij} \cdot x_j
 \end{equation}
-Que pode ser rescrita utilizando vetores como:
+Que pode ser reescrita utilizando vetores como:
 \begin{equation}\label{eqn::eigenvector2}
    X = \frac{1}{\lambda} AX  \;\; \Longleftrightarrow\;\;  AX = \lambda X
 \end{equation}
-Onde $X$ é dito ser o \textit{autovetor} formado pelos valores de $x_i$ com $0 \leq i \leq N$ e associado ao \textit{autovalor} $\lambda$.  Podem existir muitos valores para $\lambda$ para os quais a Equação~\ref{eqn::eigenvector2} possui solução. Entretanto se utilizarmos todos os valores do \textit{autovetor} como positivos, teremos um único e maior possivel valor para o \textit{autovetor}, ver~\cite{Newman10}. 
+Onde $X$ é dito ser o \textit{autovetor} formado pelos valores de $x_i$ com $0 \leq i \leq N$ e associado ao \textit{autovalor} $\lambda$.  Podem existir muitos valores para $\lambda$ para os quais a Equação~\ref{eqn::eigenvector2} possui solução. Entretanto, se utilizarmos todos os valores do \textit{autovetor} como positivos, teremos o único e maior valor possível para o \textit{autovalor} (\cite{Newman10}). 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Hub (concentrador??) e Autoridade de Kleinberg (Hub e Auth)}
+\subsubsection{\textit{Hub} e Autoridade de Kleinberg}
 \label{subsubsection::hub}
-As métricas conhecidas como \textsc{Hub(teste, classe)} e \textsc{Autoridade(teste, classe)} de Kleinberg são provenientes do trabalho de~\cite{Kleinberg99}. Elas também podem ser apresentadas em conjunto pelo nome de Algoritmo \textit{Hyperlink-Induced Topic Search} (HITS) e por serem predecessoras do \textit{PageRank}, Seção~\ref{subsubsection::pagerank}. 
+As métricas conhecidas como \textsc{Hub(teste, classe)} e \textsc{Autoridade(teste, classe)} de Kleinberg são provenientes do trabalho de~\cite{Kleinberg99}. Elas também podem ser apresentadas em conjunto pelo nome de Algoritmo \textit{Hyperlink-Induced Topic Search} (HITS) e por serem predecessoras do \textit{PageRank}.
 
 Em suma, a ideia aqui modelada se baseia no fato de que na \textit{Web}, algumas páginas são conhecidas como \textit{hubs} por não serem especialistas em nenhum assunto específico, mas possuírem ligações para vários outras páginas que são especialistas em seus respectivos assuntos, sendo, portanto, \textit{autoridades} no assunto tratado. Logo, o que temos é que um bom \textit{hub} é representado por uma página (vértice, no grafo que a \textit{Web} representa) que aponta para várias autoridades e uma boa autoridade é aquela apontada por vários \textit{hubs}. Uma página com poucas ligações e com poucas referências não é nem um bom \textit{hub} e nem uma boa autoridade.
 
@@ -704,9 +715,9 @@ Em suma, a ideia aqui modelada se baseia no fato de que na \textit{Web}, algumas
 \subsubsection{PageRank}
 \label{subsubsection::pagerank}
 
-O algoritmo \textit{PageRank} tem seu nome proveniente do seu criador Lawrence Page, ver~\cite{Page98}. Assim como o algoritmo \textit{HITS}, Seção~\ref{subsubsection::hub}, o \textit{PageRank} se baseia na ideia de ordenar os vértices de um grafo baseado-se nas relações entre eles, sendo que quando mais ``popular'' um vértice é, maior é o seu \textit{PageRank}. Em resumo, temos que
+O algoritmo \textit{PageRank} tem seu nome proveniente do seu criador Lawrence Page (\cite{Page98}). Assim como o algoritmo \textit{HITS}, Seção~\ref{subsubsection::hub}, o \textit{PageRank} se baseia na ideia de ordenar os vértices de um grafo baseado-se nas relações entre eles, sendo que quando mais ``popular'' um vértice é, maior é o seu \textit{PageRank}. Em resumo, temos que
 \begin{equation}\label{eqn::pagerank}
-PR(teste, classe) = \sum_{v \in Adj(a)} \frac{PR(v, classe)}{L(v)}
+PR(teste, classe) = \sum_{v \in Adj(a)} \frac{PR(v, classe)}{L(v)},
 \end{equation}
 onde $Adj(x)$ é o conjunto dos vizinhos do vértice $x$ e $L(x)$ é o grau de saída de $x$, ou seja, o número de vértices alcançáveis a partir de $x$.
 
@@ -714,19 +725,19 @@ onde $Adj(x)$ é o conjunto dos vizinhos do vértice $x$ e $L(x)$ é o grau de s
 \subsubsection{Burt's Constraint}
 \label{subsubsection::constraint}
 
-O termo capital social é um conceito sociológico abrangente, mas em geral pode-se dizer que está relacionado a relações sociais e consiste na expectativa de benefícios derivados de relações e cooperações entre indivíduos de um grupo e entre os vários grupos existentes na sociedade modelada. Ronald Burt é um sociologista que definiu em um de seus estudos, ver~\cite{Burt92}, alguns benefícios que indivíduos podem ter no mercado de trabalho provenientes das relações sociais que mantêm. Burt investigou as estruturas de rede do capital social, focando em indivíduos chaves em distintas organizações e chegou a conclusão que quem tem boas e diversificadas relações sociais consegue, entre outras coisas, melhores cargos, promoções e salários.  
+O termo capital social é um conceito sociológico abrangente, mas em geral pode-se dizer que está relacionado a relações sociais e consiste na expectativa de benefícios derivados de relações e cooperações entre indivíduos de um grupo e entre os vários grupos existentes na sociedade modelada. Ronald Burt é um sociologista que estudou alguns benefícios que indivíduos podem ter no mercado de trabalho provenientes das relações sociais que mantêm (\cite{Burt92}). Investigando as estruturas de rede do capital social, focando em indivíduos chaves em distintas organizações, ele chegou a conclusão que quem tem boas e diversificadas relações sociais consegue, entre outras coisas, melhores cargos, promoções e salários.  
 
-Outro conceito importante são os buracos estruturais, que podem ser definidos como a falta de acesso entre sub-grafos distintos que compões um mesmo grafo. Burt propôs que vértices que conseguem preenche esses buracos estruturais, unindo vários sub-grafos são mais importantes que aqueles vértices que estão unidos somente a um mesmo grafo ou os que estão isolados. Esse conceito é usado diretamente para calcular o~\textit{Burt's Constraint} de um vértice. Logo, \textsc{Burt}(teste, classe) é maior se o vértice de teste é capaz de se conectar a mais indivíduos que pertencem a partes não conectadas entre si do grafo modelado pela classe em questão.
+Outro conceito importante são os buracos estruturais, que podem ser definidos como a falta de acesso entre sub-grafos distintos que compões um mesmo grafo. Burt propôs que vértices que conseguem preenche esses buracos estruturais, unindo vários sub-grafos, são mais importantes que aqueles vértices que estão unidos somente a um mesmo grafo ou os que estão isolados. Esse conceito é usado diretamente para calcular o~\textit{Burt's Constraint} de um vértice. Logo, \textsc{Burt}(teste, classe) é maior se o vértice de teste é capaz de se conectar a mais indivíduos que pertencem a partes não conectadas entre si do grafo modelado pela classe em questão.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Bibliographic Coupling (sugestao de traducao?!)}
+\subsubsection{Bibliographic Coupling}
 \label{subsubsection::bibcoup}
 %http://igraph.sourceforge.net/doc/html/igraph_bibcoupling.html
 \textit{Bibliographic Coupling} é uma métrica introduzida em~\cite{Kessler63} que calcula, para dois trabalhos científicos, o número de referências em comum que ambos possuem. A ideia dessa métrica é que se dois trabalhos apresentam muitas referências em comum, então provavelmente eles abordam o mesmo assunto. Em geral, podemos definir que:
 \begin{equation}
 \textsc{Bib}(a, b) =  |Adj(a) \cap Adj(b)|,
 \end{equation}
-onde $Adj(x)$ é o conjunto de vizinhos que o vértice $x$ está conectado. Como estamos interessados em calcular a similariedade de um vértice (exemplo de teste) com uma classe, necessitamos de apenas um valor que defina o quanto aquele vértice se assemelha aos demais, logo calculamos o valor de \textit{bibliographic coupling} do exemplo de teste com todos os vértices que ele se conecta:
+onde $Adj(x)$ é o conjunto de vizinhos que o vértice $x$ está conectado. Como estamos interessados em calcular a similaridade de um vértice (exemplo de teste) com uma classe, necessitamos apenas de um valor que defina o quanto aquele vértice se assemelha aos demais. Logo, calculamos o valor do \textit{bibliographic coupling} do exemplo de teste com todos os vértices que ele se conecta:
 \begin{equation}
 \textsc{BibCoup}(teste, c_j) =  \sum\limits_{v' \in c_j} Bib(teste, v').
 \end{equation}
@@ -734,7 +745,7 @@ onde $Adj(x)$ é o conjunto de vizinhos que o vértice $x$ está conectado. Como
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Co-Citação}
 \label{subsubsection::cocitation}
-A métrica co-citação mede para dois vértices, o número de outros vértices que citam ambos, ver~\cite{Small73}. Assim como a métrica \textit{Bibliographic Coupling}, procuramos atribuir um valor único para um exemplo de teste e, portanto, calculamos o somatório da co-citação entre o teste e todos os vértices presentes no grafo.
+A métrica co-citação mede, para dois vértices, o número de outros vértices que citam ambos (\cite{Small73}). Assim como a métrica \textit{Bibliographic Coupling}, procuramos atribuir um valor único para um exemplo de teste e, portanto, calculamos o somatório da co-citação entre o teste e todos os vértices presentes no grafo.
 %TODO: se eu mudar para um unico grafo de varias classes, tenho que colocar aqui q to levando em consideracao so uma classe por vez.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
