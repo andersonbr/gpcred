@@ -87,6 +87,47 @@ void TreeEvaluator::evaluateFromFile(string fileName){
                 }
             }
 
+            if(stats->getUsingCategoricalCredibility()){
+                for(int i = 0; i < stats-> getNumberOfCategoricalAttibutes(); i++){
+                    
+                    set<string> tokenSet = stats->getCategoricalSet(i);
+                    for(set<string>::iterator tokenIt = tokenSet.begin(); tokenIt != tokenSet.end(); tokenIt++){    
+                        set<string> classes = stats->getClasses();
+                        for(set<string>::iterator classIt = classes.begin(); classIt != classes.end(); classIt++) {
+                            string idxa = getCompIndex(i, *tokenIt);
+                            string idx = getCompIndex(idxa, *classIt);
+                            
+                            
+                            std::stack<double> values;
+
+                            for(vector<string>::reverse_iterator rit = tokens.rbegin(); rit != tokens.rend(); rit++){
+//                            cout<<*rit<<endl;
+
+                                if(isOperator(*rit)){
+//                                   cout<<"operator = " << *rit <<endl;
+                                    double result = getResult(*rit, values);
+                                    values.push(result);
+                                }
+                                else if(isOperand(*rit)){
+//                                  cout<<"operand = " << *rit << endl;
+                                    values.push( getOperandValue(*rit, idxa, *classIt) );
+                                }
+                                else{
+                                    cerr<<"Error..."<< *rit << " is not known."<<endl;
+                                    exit(1);
+                                }
+                            }
+//                          cout<< endl;
+                            double result = values.top();
+                            values.pop();
+                  
+                            credibilityMap[ idx ]  = result;
+                        }        
+                    } 
+                }
+            }
+
+
             if(stats->getNumberOfGraphs()){
                 cout<<"Using Graph credibility"<<endl;
                 for(int g = 0; g < stats->getNumberOfGraphs(); g++){
@@ -130,9 +171,9 @@ void TreeEvaluator::evaluateFromFile(string fileName){
                 classifier = new NaiveBayes(stats);
             
             classifier->useContentCredibility(true);
-            if(stats->getUsingTermCredibility())
+            if(stats->getUsingTermCredibility() || stats->getUsingCategoricalCredibility())
                 classifier->setContentCredibilityMap(credibilityMap);
-
+            
             if(stats->getNumberOfGraphs())
                 classifier->setGraphCredibilityMaps(graphsCredibility);
 
