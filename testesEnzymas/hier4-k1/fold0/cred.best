@@ -10,3 +10,12 @@ GP: (- (Pow (Pow JaccardSimilarity Neighborhood1) (* Neighborhood2 Neighborhood3
 Best of generation 3 (Fitness = 2.18599, Structural Complexity = 59)
 GP: (Pow (Log Authority InverseLogSimilarity) (+ (+ (Log HubScore PageRank) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (- (- Neighborhood3 EigenVector) InverseLogSimilarity) (+ (Log Authority InverseLogSimilarity) (% (+ InverseLogSimilarity InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity)))))) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (- (- Neighborhood3 EigenVector) InverseLogSimilarity) (+ (Log Authority InverseLogSimilarity) (% (Pow Authority CoCitation) (+ InverseLogSimilarity InverseLogSimilarity)))))))
 
+Best of generation 4 (Fitness = 2.18599, Structural Complexity = 21)
+GP: (Pow (Log Authority InverseLogSimilarity) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (- (- Neighborhood3 EigenVector) InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity))))
+
+Best of generation 5 (Fitness = 2.18599, Structural Complexity = 21)
+GP: (Pow (Log Authority InverseLogSimilarity) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (- (- Neighborhood3 EigenVector) InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity))))
+
+Best of generation 6 (Fitness = 2.18599, Structural Complexity = 21)
+GP: (Pow (Log Authority InverseLogSimilarity) (+ (+ (Log HubScore PageRank) (% BibCoupling Neighborhood2)) (% (- (- Neighborhood3 EigenVector) InverseLogSimilarity) (+ InverseLogSimilarity InverseLogSimilarity))))
+
