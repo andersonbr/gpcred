@@ -1,0 +1,192 @@
+definition:
+	ops: (+,2) (-,2) (*,2) (%,2) (Pow,2) (Log,2) 
+	terms: InverseLogSimilarity DiceSimilarity JaccardSimilarity CoCitation BibCoupling Betweenness PageRank Constraint Strength Closeness EigenVector Authority HubScore Neighborhood3 Neighborhood2 Neighborhood1
+generation 0:
+	ind: 	85.5599	* Neighborhood3 Betweenness
+	ind: 	95.6116	+ + BibCoupling DiceSimilarity - Strength HubScore
+	ind: 	94.4937	- Neighborhood3 * + DiceSimilarity BibCoupling % Neighborhood1 Strength
+	ind: 	94.6138	+ JaccardSimilarity CoCitation
+	ind: 	82.3263	Log Constraint DiceSimilarity
+	ind: 	80.6818	+ - Pow Strength Constraint - Betweenness DiceSimilarity Log - CoCitation JaccardSimilarity * Betweenness InverseLogSimilarity
+	ind: 	84.4697	% InverseLogSimilarity Betweenness
+	ind: 	61.4468	+ Pow Betweenness HubScore Log Closeness Betweenness
+	ind: 	82.3263	% Neighborhood3 Neighborhood3
+	ind: 	90.4841	* EigenVector CoCitation
+	rep: 1  -> 1
+	rep: 8 7  -> 0
+	rep: 8 7  -> 2
+	rep: 3 5  -> 3
+	rep: 3 5  -> 4
+	rep: 6 8  -> 5
+	rep: 6 8  -> 6
+	rep: 6 8  -> 7
+	rep: 6 8  -> 8
+	rep: 7 7  -> 9
+generation 1:
+	ind: 	75.1848	Log Closeness Betweenness
+	ind: 	95.6116	+ + BibCoupling DiceSimilarity - Strength HubScore
+	ind: 	62.0288	+ Pow Betweenness HubScore % Neighborhood3 Neighborhood3
+	ind: 	94.0041	- CoCitation JaccardSimilarity
+	ind: 	80.6726	+ - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	82.3263	% Neighborhood3 Neighborhood3
+	ind: 	84.4697	% InverseLogSimilarity Betweenness
+	ind: 	82.3263	% Neighborhood3 Neighborhood3
+	ind: 	84.4697	% InverseLogSimilarity Betweenness
+	ind: 	61.4468	+ Pow Betweenness HubScore Log Closeness Betweenness
+	rep: 1  -> 1
+	rep: 5 9  -> 0
+	rep: 5 9  -> 2
+	rep: 4 0  -> 3
+	rep: 4 0  -> 4
+	rep: 5 2  -> 5
+	rep: 5 2  -> 6
+	rep: 6 9  -> 7
+	rep: 6 9  -> 8
+	rep: 4 4  -> 9
+generation 2:
+	ind: 	38.5717	Pow Betweenness HubScore
+	ind: 	95.6116	+ + BibCoupling DiceSimilarity - Strength HubScore
+	ind: 	80.2661	+ % Neighborhood3 Neighborhood3 Log Closeness Betweenness
+	ind: 	75.1848	Log Closeness Betweenness
+	ind: 	80.6726	+ - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	82.3263	% Neighborhood3 Neighborhood3
+	ind: 	62.0288	+ Pow Betweenness HubScore % Neighborhood3 Neighborhood3
+	ind: 	61.4468	+ Pow Betweenness HubScore Log Closeness Betweenness
+	ind: 	94.3089	- InverseLogSimilarity Betweenness
+	ind: 	87.8511	+ - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation + - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	rep: 1  -> 1
+	rep: 2 0  -> 0
+	rep: 2 0  -> 2
+	rep: 8 3  -> 3
+	rep: 8 3  -> 4
+	rep: 9 4  -> 5
+	rep: 9 4  -> 6
+	rep: 8 7  -> 7
+	rep: 8 7  -> 8
+	rep: 1 7  -> 9
+generation 3:
+	ind: 	61.4468	+ Pow Betweenness HubScore Log Closeness Betweenness
+	ind: 	95.6116	+ + BibCoupling DiceSimilarity - Strength HubScore
+	ind: 	82.3263	% Neighborhood3 Neighborhood3
+	ind: 	75.1848	Log Closeness Betweenness
+	ind: 	94.3089	- InverseLogSimilarity Betweenness
+	ind: 	86.4653	+ - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation + + - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	70.8149	- Pow Strength Constraint - Betweenness DiceSimilarity
+	ind: 	75.1848	Log Closeness Betweenness
+	ind: 	75.9146	+ Pow Betweenness HubScore - InverseLogSimilarity Betweenness
+	ind: 	95.7502	+ - Closeness Betweenness - Strength HubScore
+	rep: 9  -> 9
+	rep: 5 6  -> 0
+	rep: 5 6  -> 1
+	rep: 3 0  -> 2
+	rep: 3 0  -> 3
+	rep: 4 0  -> 4
+	rep: 4 0  -> 5
+	rep: 5 3  -> 6
+	rep: 5 3  -> 7
+	rep: 2 0  -> 8
+generation 4:
+	ind: 	86.4653	+ - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation + + - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	70.8149	- Pow Strength Constraint - Betweenness DiceSimilarity
+	ind: 	61.4468	+ Pow Betweenness HubScore Log Closeness Betweenness
+	ind: 	75.1848	Log Closeness Betweenness
+	ind: 	61.4468	+ Pow Betweenness HubScore Log Closeness Betweenness
+	ind: 	94.3089	- InverseLogSimilarity Betweenness
+	ind: 	84.5713	+ - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation + + - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation Log Closeness Betweenness Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	85.3936	* Betweenness InverseLogSimilarity
+	ind: 	75.1848	Log Closeness Betweenness
+	ind: 	95.7502	+ - Closeness Betweenness - Strength HubScore
+	rep: 9  -> 9
+	rep: 5 8  -> 0
+	rep: 5 8  -> 1
+	rep: 7 4  -> 2
+	rep: 7 4  -> 3
+	rep: 9 8  -> 4
+	rep: 9 8  -> 5
+	rep: 0 6  -> 6
+	rep: 0 6  -> 7
+	rep: 5 3  -> 8
+generation 5:
+	ind: 	75.1848	Log Closeness Betweenness
+	ind: 	94.3089	- InverseLogSimilarity Betweenness
+	ind: 	38.5717	Pow Betweenness HubScore
+	ind: 	85.4028	+ * Betweenness InverseLogSimilarity Log Closeness Betweenness
+	ind: 	95.7502	+ Log Closeness Betweenness - Strength HubScore
+	ind: 	85.6153	* Closeness Betweenness
+	ind: 	85.1996	+ - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation + + - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	86.0957	+ * Betweenness InverseLogSimilarity Log + JaccardSimilarity CoCitation + + - Pow Strength Constraint - Betweenness DiceSimilarity Log + JaccardSimilarity CoCitation Log Closeness Betweenness Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	75.1848	Log Closeness Betweenness
+	ind: 	95.7502	+ - Closeness Betweenness - Strength HubScore
+	rep: 4  -> 4
+	rep: 3 8  -> 0
+	rep: 3 8  -> 1
+	rep: 0 0  -> 2
+	rep: 0 0  -> 3
+	rep: 4 3  -> 5
+	rep: 4 3  -> 6
+	rep: 4 7  -> 7
+	rep: 4 7  -> 8
+	rep: 1  -> 9
+generation 6:
+	ind: 	75.1848	Log Closeness Betweenness
+	ind: 	85.4028	+ * Betweenness InverseLogSimilarity Log Closeness Betweenness
+	ind: 	82.4095	Log Closeness Log Closeness Betweenness
+	ind: 	92.4612	HubScore
+	ind: 	95.7502	+ Log Closeness Betweenness - Strength HubScore
+	ind: 	85.4028	+ * Betweenness InverseLogSimilarity Log Closeness Betweenness
+	ind: 	95.7502	+ Log Closeness Betweenness - Strength HubScore
+	ind: 	94.8171	- Betweenness DiceSimilarity
+	ind: 	86.5299	+ * Betweenness InverseLogSimilarity Log + JaccardSimilarity CoCitation + + - Pow Strength Constraint + Log Closeness Betweenness - Strength HubScore Log + JaccardSimilarity CoCitation Log Closeness Betweenness Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	94.3089	- InverseLogSimilarity Betweenness
+	rep: 4  -> 4
+	rep: 4 3  -> 0
+	rep: 4 3  -> 1
+	rep: 8  -> 2
+	rep: 4  -> 3
+	rep: 8 2  -> 5
+	rep: 8 2  -> 6
+	rep: 7 8  -> 7
+	rep: 7 8  -> 8
+	rep: 5 0  -> 9
+generation 7:
+	ind: 	95.7502	+ HubScore - Strength HubScore
+	ind: 	75.1848	Log Closeness Betweenness
+	ind: 	86.5299	+ * Betweenness InverseLogSimilarity Log + JaccardSimilarity CoCitation + + - Pow Strength Constraint + Log Closeness Betweenness - Strength HubScore Log + JaccardSimilarity CoCitation Log Closeness Betweenness Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	95.7502	+ Log Closeness Betweenness - Strength HubScore
+	ind: 	95.7502	+ Log Closeness Betweenness - Strength HubScore
+	ind: 	86.5392	+ * Betweenness InverseLogSimilarity Log + JaccardSimilarity CoCitation + + - Pow Strength Constraint + Log Closeness Betweenness - Strength HubScore Log Closeness Betweenness Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	78.4276	Log Closeness Log + JaccardSimilarity CoCitation Log Closeness Betweenness
+	ind: 	92.1286	+ + - Pow Strength Constraint + Log Closeness Betweenness - Strength HubScore Log + JaccardSimilarity CoCitation Log Closeness Betweenness Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	85.4582	+ * Betweenness InverseLogSimilarity Log + JaccardSimilarity CoCitation - Betweenness DiceSimilarity
+	ind: 	75.1848	Log Closeness Betweenness
+	rep: 0  -> 0
+	rep: 3 7  -> 1
+	rep: 3 7  -> 2
+	rep: 4 2  -> 3
+	rep: 4 2  -> 4
+	rep: 0 5  -> 5
+	rep: 0 5  -> 6
+	rep: 5 8  -> 7
+	rep: 5 8  -> 8
+	rep: 4 9  -> 9
+generation 8:
+	ind: 	95.7502	+ HubScore - Strength HubScore
+	ind: 	95.7317	+ Log Closeness Betweenness + Log Closeness Betweenness - Strength HubScore
+	ind: 	88.9782	+ + - Pow Strength Constraint - Strength HubScore Log + JaccardSimilarity CoCitation Log Closeness Betweenness Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	95.7502	+ + - Pow Strength Constraint + Log Closeness Betweenness - Strength HubScore Log + JaccardSimilarity CoCitation Log Closeness Betweenness - Strength HubScore
+	ind: 	89.0244	+ * Betweenness InverseLogSimilarity Log + JaccardSimilarity CoCitation + Log Closeness Betweenness Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	81.0606	+ HubScore Log Closeness Betweenness
+	ind: 	89.2092	+ * Betweenness InverseLogSimilarity Log + JaccardSimilarity CoCitation + + - Pow Strength Constraint + - Strength HubScore - Strength HubScore Log Closeness Betweenness Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	89.8374	+ * Betweenness InverseLogSimilarity Log + JaccardSimilarity CoCitation + + - Pow Strength Constraint + * Betweenness InverseLogSimilarity - Strength HubScore Log Closeness Betweenness Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	82.4095	+ Log Closeness Betweenness Log + JaccardSimilarity CoCitation - Betweenness DiceSimilarity
+	ind: 	95.7502	+ Log Closeness Betweenness - Strength HubScore
+	rep: 0  -> 0
+	rep: 9 7  -> 1
+	rep: 9 7  -> 2
+	rep: 9 9  -> 3
+	rep: 9 9  -> 4
+	rep: 3 4  -> 5
+	rep: 3 4  -> 6
+	rep: 9 9  -> 7
+	rep: 9 9  -> 8
+	rep: 9 7  -> 9
