@@ -41,3 +41,44 @@ generation 0:
 	rep: 9 8  -> 17
 	rep: 18 17  -> 18
 	rep: 18 17  -> 19
+generation 1:
+	ind: 	95.3776	- EigenVector JaccardSimilarity
+	ind: 	95.7295	+ + BibCoupling DiceSimilarity - Strength HubScore
+	ind: 	17.6051	% Pow - DiceSimilarity JaccardSimilarity * Constraint CoCitation Pow Strength Neighborhood2
+	ind: 	91.3639	+ - - Closeness BibCoupling - DiceSimilarity Neighborhood2 - Constraint HubScore
+	ind: 	83.2794	Pow % BibCoupling Neighborhood1 Neighborhood1
+	ind: 	85.2673	* Neighborhood3 Betweenness
+	ind: 	93.5515	+ + BibCoupling DiceSimilarity Log DiceSimilarity Strength
+	ind: 	95.9102	- Strength HubScore
+	ind: 	74.9667	Pow + Pow Betweenness HubScore Log Closeness Betweenness Neighborhood1
+	ind: 	94.3028	- BibCoupling Neighborhood1
+	ind: 	42.6859	Pow Constraint DiceSimilarity
+	ind: 	85.4099	% Betweenness Pow Strength Constraint
+	ind: 	17.6051	Log DiceSimilarity Strength
+	ind: 	82.6707	Log Constraint DiceSimilarity
+	ind: 	82.6707	Log Pow Neighborhood2 Betweenness Pow Neighborhood2 Betweenness
+	ind: 	82.6707	Log - Neighborhood2 JaccardSimilarity - Neighborhood2 JaccardSimilarity
+	ind: 	82.6707	% Neighborhood3 Neighborhood3
+	ind: 	90.8218	* EigenVector CoCitation
+	ind: 	95.3395	- Closeness BibCoupling
+	ind: 	19.0127	% Pow - DiceSimilarity JaccardSimilarity * Constraint CoCitation - + Constraint Constraint - DiceSimilarity Neighborhood2
+	rep: 7  -> 7
+	rep: 17 13  -> 0
+	rep: 17 13  -> 1
+	rep: 14 10  -> 2
+	rep: 14 10  -> 3
+	rep: 18 15  -> 4
+	rep: 18 15  -> 5
+	rep: 14 12  -> 6
+	rep: 14 12  -> 8
+	rep: 3 10  -> 9
+	rep: 3 10  -> 10
+	rep: 17 5  -> 11
+	rep: 17 5  -> 12
+	rep: 17 14  -> 13
+	rep: 17 14  -> 14
+	rep: 18 19  -> 15
+	rep: 18 19  -> 16
+	rep: 0  -> 17
+	rep: 4 16  -> 18
+	rep: 4 16  -> 19
