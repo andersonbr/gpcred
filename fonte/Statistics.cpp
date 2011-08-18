@@ -420,7 +420,7 @@ void Statistics::retrieveCategoricalMetrics(){
                 CHI[idx] = chiVal;
                 CC[idx] = ccVal;
 //->matar ou explicar na dissertacao?
-//                TFIDF[idx] = occurrences;
+                TFIDF[idx] = occurrences;
 
             }
             Gini[idxa] = giniVal;
