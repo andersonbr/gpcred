@@ -215,7 +215,7 @@ void gpcpp::createNodeSet(){
 	}
 	else if(stats->getUsingCategoricalCredibility()){
 
-		ns[0] = new GPNodeSet (17);
+		ns[0] = new GPNodeSet (16);
 		adfNs.put(0, *ns[0]);
 
 		ns[0]->putNode (*new GPNode (SUM, (char*) "+", 2));
@@ -235,7 +235,7 @@ void gpcpp::createNodeSet(){
 		ns[0]->putNode (*new GPNode (GSS,(char*) "GSS"));
 		ns[0]->putNode (*new GPNode (CC,(char*) "CC"));
 		ns[0]->putNode (*new GPNode (OR,(char*) "OR"));
-		ns[0]->putNode (*new GPNode (TFIDF, (char *) "TFIDF"));
+//		ns[0]->putNode (*new GPNode (TFIDF, (char *) "TFIDF"));
 
 	}
 

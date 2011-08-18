@@ -1,0 +1,60 @@
+Best of generation 0 (Fitness = 73.0303, Structural Complexity = 7)
+GP: (+ (Pow Strength Neighborhood2) (- Constraint HubScore))
+
+Best of generation 1 (Fitness = 73.0303, Structural Complexity = 7)
+GP: (+ (Pow Strength Neighborhood2) (- Constraint HubScore))
+
+Best of generation 2 (Fitness = 60.8081, Structural Complexity = 7)
+GP: (Pow (Pow Neighborhood3 (- Neighborhood2 JaccardSimilarity)) Neighborhood1)
+
+Best of generation 3 (Fitness = 60.8081, Structural Complexity = 7)
+GP: (Pow (Pow Neighborhood3 (- Neighborhood2 JaccardSimilarity)) Neighborhood1)
+
+Best of generation 4 (Fitness = 57.7778, Structural Complexity = 7)
+GP: (Pow (Pow Neighborhood3 (+ HubScore CoCitation)) Neighborhood1)
+
+Best of generation 5 (Fitness = 57.4747, Structural Complexity = 7)
+GP: (Pow (Pow Neighborhood3 (+ DiceSimilarity CoCitation)) Neighborhood1)
+
+Best of generation 6 (Fitness = 57.4747, Structural Complexity = 7)
+GP: (Pow (Pow Neighborhood3 (+ DiceSimilarity CoCitation)) Neighborhood1)
+
+Best of generation 7 (Fitness = 56.7677, Structural Complexity = 7)
+GP: (Pow (Pow Strength Neighborhood2) (- Neighborhood3 Closeness))
+
+Best of generation 8 (Fitness = 56.7677, Structural Complexity = 7)
+GP: (Pow (Pow Strength Neighborhood2) (- Neighborhood3 Closeness))
+
+Best of generation 9 (Fitness = 56.7677, Structural Complexity = 7)
+GP: (Pow (Pow Strength Neighborhood2) (- Neighborhood3 Closeness))
+
+Best of generation 10 (Fitness = 56.7677, Structural Complexity = 7)
+GP: (Pow (Pow Strength Neighborhood2) (- Neighborhood3 Closeness))
+
+Best of generation 11 (Fitness = 52.0202, Structural Complexity = 7)
+GP: (Pow (Log Neighborhood2 Neighborhood3) (- Strength BibCoupling))
+
+Best of generation 12 (Fitness = 52.0202, Structural Complexity = 7)
+GP: (Pow (Log Neighborhood2 Neighborhood3) (- Strength BibCoupling))
+
+Best of generation 13 (Fitness = 52.0202, Structural Complexity = 7)
+GP: (Pow (Log Neighborhood2 Neighborhood3) (- Strength BibCoupling))
+
+Best of generation 14 (Fitness = 52.0202, Structural Complexity = 7)
+GP: (Pow (Log Neighborhood2 Neighborhood3) (- Strength BibCoupling))
+
+Best of generation 15 (Fitness = 43.0303, Structural Complexity = 11)
+GP: (Pow Neighborhood3 (% (Pow Authority (- Betweenness Betweenness)) (% Neighborhood3 Strength)))
+
+Best of generation 16 (Fitness = 43.0303, Structural Complexity = 11)
+GP: (Pow Neighborhood3 (% (Pow Authority (- Betweenness Betweenness)) (% Neighborhood3 Strength)))
+
+Best of generation 17 (Fitness = 42.9293, Structural Complexity = 13)
+GP: (Pow Neighborhood3 (% (- (Pow Neighborhood3 Closeness) (+ CoCitation CoCitation)) (% Neighborhood3 Strength)))
+
+Best of generation 18 (Fitness = 42.9293, Structural Complexity = 13)
+GP: (Pow Neighborhood3 (% (- (Pow Neighborhood3 Closeness) (+ CoCitation CoCitation)) (% Neighborhood3 Strength)))
+
+Best of generation 19 (Fitness = 42.9293, Structural Complexity = 13)
+GP: (Pow Neighborhood3 (% (- (Pow Neighborhood3 Closeness) (+ CoCitation CoCitation)) (% Neighborhood3 Strength)))
+
