@@ -190,3 +190,24 @@ generation 8:
 	rep: 9 9  -> 7
 	rep: 9 9  -> 8
 	rep: 9 7  -> 9
+generation 9:
+	ind: 	95.7502	+ HubScore - Strength HubScore
+	ind: 	92.9878	- Closeness Betweenness
+	ind: 	79.721	+ * Betweenness InverseLogSimilarity Log + JaccardSimilarity CoCitation + + - Pow Strength Constraint + * Betweenness InverseLogSimilarity - Strength HubScore + Log Closeness Betweenness - Strength HubScore Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity
+	ind: 	75.1848	Log Closeness Betweenness
+	ind: 	95.7409	+ + Log Closeness Betweenness - Strength HubScore - Strength HubScore
+	ind: 	95.7409	+ + - Log + JaccardSimilarity CoCitation + Log Closeness Betweenness Log + JaccardSimilarity CoCitation * Betweenness InverseLogSimilarity + Log Closeness Betweenness - Strength HubScore Log + JaccardSimilarity CoCitation Log Closeness Betweenness - Strength HubScore
+	ind: 	86.456	+ * Betweenness InverseLogSimilarity Pow Strength Constraint
+	ind: 	95.7502	+ Log Closeness Betweenness - Strength HubScore
+	ind: 	95.7502	+ Log Closeness Betweenness - Strength HubScore
+	ind: 	78.3629	+ Log Closeness Betweenness + - Pow Strength Constraint + * Betweenness InverseLogSimilarity - Strength HubScore Log Closeness Betweenness
+	rep: 0  -> 0
+	rep: 2 9  -> 1
+	rep: 2 9  -> 2
+	rep: 0 9  -> 3
+	rep: 0 9  -> 4
+	rep: 4  -> 5
+	rep: 5 9  -> 6
+	rep: 5 9  -> 7
+	rep: 0 9  -> 8
+	rep: 0 9  -> 9
