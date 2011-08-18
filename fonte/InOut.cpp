@@ -11,16 +11,18 @@
 using namespace std;
 #define TAG "InOut"
 
-InOut::InOut(string basename, int seed){
+InOut::InOut(string basename, int seed, bool dontClearFiles){
 
 	this->basename = basename;
 	
     string histf = this->basename + ".hist";
 	string bestf = this->basename + ".best";
 
-	histFile.open(histf.c_str());
-	bestFile.open(bestf.c_str());
-    
+    if(!dontClearFiles){
+	    bestFile.open(histf.c_str());
+	    histFile.open(bestf.c_str());
+    }
+
     _usingBrunoroFile = false;
 	_usingPredictionsFile = false;
 //    _usingValidationSet = false;

@@ -18,8 +18,10 @@ void TreeEvaluator::evaluateFromFile(string fileName){
 
     //baseline test
     ifstream file(fileName.c_str(), ifstream::in);
-
     ICredibilityClassifier *classifier;
+    double blmicro = 0.0;
+    double blmacro = 0.0;
+    
     if(stats->getUsingKNN())
         classifier = new KNN(stats, stats->getK(), stats->getUsingKNNOptimize());
     else
@@ -33,9 +35,11 @@ void TreeEvaluator::evaluateFromFile(string fileName){
     ostream &out = io->getEvaluateFile();
     out.setf(ios::fixed,ios::floatfield);
     out.precision(5);
-    out<<"Baseline"<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<"\t-\t-"<<endl;
-    double blmicro = classifier->getMicroF1();
-    double blmacro = classifier->getMacroF1();
+    out<<"Baseline"<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1();
+    out<<endl;
+    //out<<"\t-\t-"<<endl;
+    blmicro = classifier->getMicroF1();
+    blmacro = classifier->getMacroF1();
 
     delete classifier;
     
@@ -189,8 +193,10 @@ void TreeEvaluator::evaluateFromFile(string fileName){
             ostream &out = io->getEvaluateFile();
             out.setf(ios::fixed,ios::floatfield);
             out.precision(5);
-            out<<line<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<"\t";
-            out<<((classifier->getMicroF1()/blmicro) -1.0) *100.0 << "\t" << ((classifier->getMacroF1()/blmacro) -1.0) *100.0 <<endl;
+            //out<<line<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<"\t";
+            out<<"Funcao\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<"\t";
+            out<<endl;
+//          out<<((classifier->getMicroF1()/blmicro) -1.0) *100.0 << "\t" << ((classifier->getMacroF1()/blmacro) -1.0) *100.0 <<endl;
     
             delete classifier;
         }
@@ -208,7 +214,6 @@ double TreeEvaluator::getResult(string operatorID, std::stack<double>& values){
     double a = values.top();
     values.pop();
       
-    //TODO: conferir numero de operadores...
     double b = values.top();
     values.pop();
 
@@ -405,16 +410,19 @@ double TreeEvaluator::getOperandValue(string operand, string id, string classNam
     else if(operand == "AvgNeighborHoodDegree"){
         return stats->getAvgNearstNeighborDegree(id, className, graphId);
     }
-
-    else if(operand == "1"){
+    else if(operand == "1" || operand == "NUM1"){
         return 1.0;
     }
-    
+    else if(operand == "NUM2"){
+        return 2.0;
+    }
+    else if(operand == "NUM3"){
+        return 3.0;
+    }
     else{
         cerr<<"Error!! Invalid operand: " << operand << endl;
         exit(1);
     }
-
     return 0.0;
 }
 

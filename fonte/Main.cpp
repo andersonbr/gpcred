@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 	getParameters(argc, argv, trainFile, validationFile, usingValidation, testFile, parameterConfigFileName, seed, loadPop, loadFileName, dontsave, saveFileName, newSaveFileName, usingTermCredibility, graphsNames, numericalCollums, categoricalCollums, usingCategoricalCredibility, predictionsFileName, printPredictionsFile, brunoroFileName, printBrunoroFile, normalEstimator, normalizeTermsPerGreatestClassValue, evaluationFileName, evaluationFromFile, evaluationDestiny, genToChange, evalOnly, optimizeGraphMetrics, usingKNN, KNNK, usingKNNOptimize, sumMacro, macroNotMicro);
 
 	//Get Files
-	InOut io(baseName, seed);
+	InOut io(baseName, seed, evaluationFromFile || evalOnly);
 	Statistics stats;
 
     stats.setOptimizeGraphMetrics(optimizeGraphMetrics);
@@ -67,7 +67,9 @@ int main(int argc, char **argv)
     }
     
     io.setGPParameterConfigFileName(parameterConfigFileName);
-    io.setFinalOutFile(finalOutFileName);
+    
+    if(!evaluationFromFile && !evalOnly)
+        io.setFinalOutFile(finalOutFileName);
 
     if(printBrunoroFile){
         io.setBrunoroFile(brunoroFileName);

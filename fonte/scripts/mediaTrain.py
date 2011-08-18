@@ -69,8 +69,10 @@ for p in range(1, len(sys.argv)):
         depotMacro[counter].append(float(fields[2]))
         counter += 1
 
+print "MICRO"
 meanAndVar(depotMicro)
-#meanAndVar(depotMacro)
+print "MACRO"
+meanAndVar(depotMacro)
 
 
 

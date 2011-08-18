@@ -419,7 +419,8 @@ void Statistics::retrieveCategoricalMetrics(){
                 GSS[idx] = gss;
                 CHI[idx] = chiVal;
                 CC[idx] = ccVal;
-//->matar                TFIDF[idx] = occurrences;
+//->matar ou explicar na dissertacao?
+//                TFIDF[idx] = occurrences;
 
             }
             Gini[idxa] = giniVal;

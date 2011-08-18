@@ -50,7 +50,7 @@ class InOut : public IInOut
         int numExamplesOriginalTest;
 
 	public:
-		InOut(string basename, int seed);
+		InOut(string basename, int seed, bool dontClearFiles);
 	    ~InOut();
 
         void clear();
