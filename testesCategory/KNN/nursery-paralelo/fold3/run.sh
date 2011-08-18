@@ -1,6 +1,6 @@
 cat=$(cat ../collums.number); 
 fold=$(pwd | sed 's/fold/ /g' | cut -f2 -d' ')
-colecao=$(pwd | sed 's/\/fold/ /g' | cut -f 1 -d' '| sed 's/\/KNN\// /g' | cut -f 2 -d' ')
+colecao=nursery
 k=10
 base=../../../../colecoes/uci/cat/$colecao/fold$fold/
 
