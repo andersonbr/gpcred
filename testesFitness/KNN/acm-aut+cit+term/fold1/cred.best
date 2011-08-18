@@ -128,3 +128,8 @@ GP: (* sumTF (* GSS IDF))
 ADF0: (* Betweenness PageRank)
 ADF1: (Pow (- Authority Authority) (* HubScore HubScore))
 
+Best of generation 26 (Fitness = 28.821, Structural Complexity = 15)
+GP: (* sumTF (* GSS IDF))
+ADF0: (Pow Neighborhood3 Closeness)
+ADF1: (Pow (- Authority Authority) (* HubScore HubScore))
+
