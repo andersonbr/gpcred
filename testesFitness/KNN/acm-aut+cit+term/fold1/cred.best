@@ -133,3 +133,8 @@ GP: (* sumTF (* GSS IDF))
 ADF0: (Pow Neighborhood3 Closeness)
 ADF1: (Pow (- Authority Authority) (* HubScore HubScore))
 
+Best of generation 27 (Fitness = 28.821, Structural Complexity = 13)
+GP: (* sumTF (* GSS IDF))
+ADF0: Closeness
+ADF1: (Pow (Log DiceSimilarity Closeness) (* HubScore HubScore))
+

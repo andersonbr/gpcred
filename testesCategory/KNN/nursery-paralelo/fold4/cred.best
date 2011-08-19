@@ -1,33 +1,13 @@
-Best of generation 0 (Fitness = 3.42879, Structural Complexity = 9)
-GP: (% (% GINI AM) (- GINI (Log NUM2 GINI)))
-
-Best of generation 1 (Fitness = 2.97664, Structural Complexity = 3)
-GP: (Pow TFIDF IG)
-
-Best of generation 2 (Fitness = 2.97664, Structural Complexity = 3)
-GP: (Pow TFIDF IG)
-
-Best of generation 3 (Fitness = 2.97664, Structural Complexity = 3)
-GP: (Pow TFIDF IG)
-
-Best of generation 4 (Fitness = 2.97664, Structural Complexity = 3)
-GP: (Pow TFIDF IG)
-
-Best of generation 5 (Fitness = 2.97664, Structural Complexity = 3)
-GP: (Pow TFIDF IG)
-
-Best of generation 6 (Fitness = 2.97664, Structural Complexity = 3)
-GP: (Pow TFIDF IG)
-
-Best of generation 7 (Fitness = 2.93896, Structural Complexity = 23)
-GP: (Pow (Pow TFIDF IG) (Pow (+ AM AM) (- (* CHI OR) (Pow (% (- NUM2 NUM3) (Pow GINI NUM1)) (Pow NUM2 NUM3)))))
-
-Best of generation 8 (Fitness = 2.93896, Structural Complexity = 23)
-GP: (Pow (Pow TFIDF IG) (Pow (+ AM AM) (- (* CHI OR) (Pow (% (- NUM2 NUM3) (+ AM NUM2)) (Pow NUM2 NUM3)))))
-
-Best of generation 9 (Fitness = 2.93896, Structural Complexity = 23)
-GP: (Pow (Pow TFIDF IG) (Pow (+ AM AM) (- (* CHI OR) (Pow (% (- NUM2 NUM3) (+ AM NUM2)) (Pow NUM2 NUM3)))))
-
-Best of generation 10 (Fitness = 2.93896, Structural Complexity = 23)
-GP: (Pow (Pow TFIDF IG) (Pow (+ AM AM) (- (* CHI OR) (Pow (% (- NUM2 NUM3) (+ AM NUM2)) (Pow NUM2 NUM3)))))
-
+#Gen|       Fitness     |      Length       |   Depth
+#   |  Best|Avg.|Worst  |  Best|Avg.|Worst  |  Best|Avg.|Worst
+0 4.14469 4.52524 4.78523     3 5.6 9     2 2.6 4
+1 4.14469 7.03466 30.3316     3 5 3     2 2.4 2
+2 4.14469 4.54032 5.50113     3 4.6 15     2 2.3 4
+3 4.14469 4.50641 5.50113     3 4.2 15     2 2.2 4
+4 4.10701 4.43105 4.78523     3 3 3     2 2 2
+5 4.10701 4.39337 4.78523     3 3 3     2 2 2
+6 4.10701 4.46119 4.78523     3 3 3     2 2 2
+7 4.10701 4.67596 7.91258     3 3.2 5     2 2.1 3
+8 4.10701 4.34062 4.78523     3 3 3     2 2 2
+9 4.10701 4.34062 4.78523     3 3 3     2 2 2
+10 4.10701 4.57423 4.78523     3 3 3     2 2 2
