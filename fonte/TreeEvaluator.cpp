@@ -36,8 +36,8 @@ void TreeEvaluator::evaluateFromFile(string fileName){
     out.setf(ios::fixed,ios::floatfield);
     out.precision(5);
     out<<"Baseline"<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1();
-    out<<endl;
-    //out<<"\t-\t-"<<endl;
+    //out<<endl;
+    out<<"\t-\t-"<<endl;
     blmicro = classifier->getMicroF1();
     blmacro = classifier->getMacroF1();
 
@@ -193,10 +193,10 @@ void TreeEvaluator::evaluateFromFile(string fileName){
             ostream &out = io->getEvaluateFile();
             out.setf(ios::fixed,ios::floatfield);
             out.precision(5);
-            //out<<line<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<"\t";
-            out<<"Funcao\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<"\t";
-            out<<endl;
-//          out<<((classifier->getMicroF1()/blmicro) -1.0) *100.0 << "\t" << ((classifier->getMacroF1()/blmacro) -1.0) *100.0 <<endl;
+            out<<line<<"\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<"\t";
+//            out<<"Funcao\t"<< classifier->getMicroF1() << "\t" << classifier->getMacroF1()<<"\t";
+//            out<<endl;
+            out<<((classifier->getMicroF1()/blmicro) -1.0) *100.0 << "\t" << ((classifier->getMacroF1()/blmacro) -1.0) *100.0 <<endl;
     
             delete classifier;
         }

@@ -185,6 +185,12 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
                 idClassDiceSimilarity[graphIt->first][idClassIdx] = igraph->getDiceSimilarity(e.getId());
                 idClassInverseLogSimilarity[graphIt->first][idClassIdx] = igraph->getInverseLogSimilarity(e.getId());
                 //Nao descomentar				idClassAvgNearstNeighborDegree[graphIt->first][idClassIdx] = igraph->getAvgNearstNeighborDegree(e.getId());
+                
+                
+                if(idClassAuthority[graphIt->first][idClassIdx] > 0.000001){
+                	cout<<"Buscando por "<< e.getId() << " his class = "<< e.getClass() << " over class "<< classGraphIt->first;
+                    cout<<"  Authority: " << idClassAuthority[graphIt->first][idClassIdx]<<endl;
+                }
                /* 
                    cout<<"  NeighborhoodSize1: " << idClassNeighborhoodSize1[graphIt->first][idClassIdx];
                    cout<<"  NeighborhoodSize2: " << idClassNeighborhoodSize1[graphIt->first][idClassIdx];

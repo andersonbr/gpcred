@@ -49,7 +49,7 @@ def meanAndVar(values):
     
     if l < 0 and r < 0:
         print "Statiscally worst"
-    elif l < 0 and r > 0:
+    elif l <= 0 and r >= 0:
         print "Statistically equal"
     else:
         print "Statistically better"
