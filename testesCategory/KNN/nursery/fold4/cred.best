@@ -34,3 +34,6 @@ GP: (Pow (Pow TFIDF IG) (Pow (+ AM AM) (- (* CHI OR) (Pow (% (- NUM2 NUM3) (+ AM
 Best of generation 11 (Fitness = 2.93896, Structural Complexity = 19)
 GP: (Pow (Pow TFIDF IG) (Pow (+ AM AM) (- (* CHI OR) (Pow (- AM TFIDF) (Pow NUM2 NUM3)))))
 
+Best of generation 12 (Fitness = 2.78824, Structural Complexity = 11)
+GP: (% (Pow (Pow TFIDF IG) (Pow OR IG)) (Pow GINI NUM1))
+
