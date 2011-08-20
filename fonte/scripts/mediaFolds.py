@@ -23,7 +23,7 @@ def meanAndVar(values):
         for c in values[f]:    
             sum2 += (c - means[f]) * (c - means[f])
 
-        deviate = math.sqrt(sum2)
+        deviate = math.sqrt(sum2/len(values[f]))
         deviates[f] = deviate
 
     sumpar = 0
