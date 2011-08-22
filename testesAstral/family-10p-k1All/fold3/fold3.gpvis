@@ -2978,3 +2978,602 @@ generation 14:
 	rep: 84 43  -> 97
 	rep: 11 31  -> 98
 	rep: 11 31  -> 99
+generation 15:
+	ind: 	38.3285	Log Neighborhood3 CoCitation
+	ind: 	87.4352	- HubScore + CoCitation InverseLogSimilarity
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	78.7896	* * Neighborhood2 Pow CoCitation Authority * Authority * Authority Closeness
+	ind: 	81.6138	- InverseLogSimilarity BibCoupling
+	ind: 	88.7032	Strength
+	ind: 	87.4352	- Neighborhood3 - Neighborhood3 - Constraint Neighborhood1
+	ind: 	11.2392	% - Neighborhood1 Strength * DiceSimilarity CoCitation
+	ind: 	87.4352	- Neighborhood3 + DiceSimilarity Neighborhood3
+	ind: 	51.8156	- HubScore + Pow * - Constraint HubScore + DiceSimilarity Neighborhood3 InverseLogSimilarity * Authority Closeness
+	ind: 	87.4928	- HubScore * BibCoupling Strength
+	ind: 	85.6484	- Neighborhood3 CoCitation
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	74.5821	* * Neighborhood2 Pow CoCitation Authority % Authority * DiceSimilarity CoCitation
+	ind: 	81.1527	% Authority Log PageRank Neighborhood1
+	ind: 	87.4352	- EigenVector Neighborhood1
+	ind: 	59.4813	Pow - DiceSimilarity CoCitation - - Neighborhood2 JaccardSimilarity * DiceSimilarity CoCitation
+	ind: 	72.6801	% % CoCitation InverseLogSimilarity - Constraint HubScore
+	ind: 	60.0576	- Neighborhood3 * Pow Neighborhood2 JaccardSimilarity % Authority Pow * Authority Closeness % Strength - DiceSimilarity CoCitation
+	ind: 	28.2997	Pow * * + DiceSimilarity BibCoupling * Betweenness Betweenness + DiceSimilarity + Constraint HubScore InverseLogSimilarity
+	ind: 	60.1729	- Neighborhood3 Pow * DiceSimilarity CoCitation BibCoupling
+	ind: 	87.4352	+ DiceSimilarity Neighborhood3
+	ind: 	46.8012	% EigenVector Betweenness
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	78.1556	% Strength Neighborhood2
+	ind: 	80	+ Pow - Neighborhood2 Betweenness + DiceSimilarity Neighborhood3 Strength
+	ind: 	85.5908	- Neighborhood2 Betweenness
+	ind: 	88.6455	+ Pow - EigenVector Neighborhood1 + DiceSimilarity Neighborhood3 Strength
+	ind: 	59.4813	Pow - DiceSimilarity CoCitation BibCoupling
+	ind: 	60.0576	Log Constraint - Constraint Neighborhood1
+	ind: 	35.9078	Log Strength Pow % Log Neighborhood1 Strength * Authority Closeness BibCoupling
+	ind: 	53.5447	* CoCitation Pow % EigenVector + + Constraint HubScore - DiceSimilarity CoCitation BibCoupling
+	ind: 	88.7032	- Strength - - Neighborhood3 - Betweenness Closeness - Constraint Neighborhood1
+	ind: 	87.4352	- Constraint Neighborhood1
+	ind: 	81.3833	% EigenVector Pow Authority Betweenness
+	ind: 	82.2478	+ - Neighborhood3 % EigenVector Betweenness - Betweenness Closeness
+	ind: 	46.8012	% EigenVector Betweenness
+	ind: 	47.147	Pow Authority Betweenness
+	ind: 	59.4813	Pow - DiceSimilarity CoCitation % Authority % Log Neighborhood1 Strength - DiceSimilarity CoCitation
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	74.755	Pow Strength Strength
+	ind: 	87.4352	Neighborhood1
+	ind: 	81.6138	- InverseLogSimilarity BibCoupling
+	ind: 	86.9164	- Neighborhood3 - Neighborhood3 - DiceSimilarity CoCitation
+	ind: 	88.7032	Strength
+	ind: 	6.57061	Log DiceSimilarity Pow Strength Strength
+	ind: 	75.389	* Authority Closeness
+	ind: 	86.3401	- Neighborhood3 - Neighborhood3 - InverseLogSimilarity BibCoupling
+	ind: 	79.5389	Pow * DiceSimilarity CoCitation BibCoupling
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	83.2277	+ Pow DiceSimilarity CoCitation * InverseLogSimilarity Closeness
+	ind: 	81.1527	% Authority Log PageRank Neighborhood1
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	50.7781	Pow Pow Log % InverseLogSimilarity JaccardSimilarity Neighborhood2 Authority - - Neighborhood2 JaccardSimilarity * DiceSimilarity CoCitation
+	ind: 	61.7867	% CoCitation InverseLogSimilarity
+	ind: 	7.14697	Log DiceSimilarity CoCitation
+	ind: 	77.2334	Pow + - Neighborhood3 Pow - Neighborhood2 JaccardSimilarity - Constraint HubScore * DiceSimilarity CoCitation + Pow InverseLogSimilarity Neighborhood2 HubScore
+	ind: 	86.9164	Pow - DiceSimilarity CoCitation % EigenVector - DiceSimilarity CoCitation
+	ind: 	60.0576	- % Constraint Neighborhood1 % Constraint Neighborhood1
+	ind: 	82.1326	% Authority % Authority Closeness
+	ind: 	7.14697	Pow Log Neighborhood1 Strength BibCoupling
+	ind: 	75.389	* Authority Closeness
+	ind: 	87.4352	- EigenVector Neighborhood1
+	ind: 	46.8012	% EigenVector Betweenness
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	84.2075	+ + Constraint HubScore * Authority Closeness
+	ind: 	85.6484	- Neighborhood3 * - Neighborhood1 Strength * DiceSimilarity CoCitation
+	ind: 	47.4928	Log PageRank Neighborhood1
+	ind: 	69.9135	% Authority Log Strength Pow % Log Neighborhood1 Strength - DiceSimilarity CoCitation BibCoupling
+	ind: 	60.5187	Log BibCoupling CoCitation
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	79.5389	Pow * DiceSimilarity CoCitation BibCoupling
+	ind: 	80.6916	+ Pow - Neighborhood2 JaccardSimilarity + DiceSimilarity Neighborhood3 Strength
+	ind: 	7.14697	Pow Log Neighborhood1 Strength BibCoupling
+	ind: 	85.6484	- Neighborhood3 CoCitation
+	ind: 	60.0576	Log Neighborhood1 Neighborhood3
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	77.2911	- Neighborhood3 % - Neighborhood1 Strength - EigenVector Neighborhood1
+	ind: 	59.7118	- HubScore Pow BibCoupling Strength
+	ind: 	80.1153	- Constraint Pow - - EigenVector Neighborhood1 CoCitation % Log Neighborhood1 Strength - DiceSimilarity CoCitation
+	ind: 	73.2565	- Neighborhood3 % - Neighborhood1 Strength * PageRank CoCitation
+	ind: 	83.7464	- - Constraint Betweenness Betweenness
+	ind: 	29.7406	Log Strength Pow + JaccardSimilarity Pow Log % InverseLogSimilarity JaccardSimilarity Neighborhood2 Authority BibCoupling
+	ind: 	88.6455	+ - Neighborhood3 % EigenVector Betweenness Strength
+	ind: 	6.97406	% EigenVector + - Neighborhood2 JaccardSimilarity - Betweenness Closeness
+	ind: 	60.0576	- Constraint Pow Strength Strength
+	ind: 	59.7695	Log Constraint - HubScore * BibCoupling Strength
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	87.4352	- Neighborhood3 + DiceSimilarity Neighborhood3
+	ind: 	82.4784	* * Neighborhood2 * DiceSimilarity CoCitation % Authority * DiceSimilarity CoCitation
+	ind: 	84.3228	+ + Constraint HubScore * Authority Pow CoCitation Authority
+	ind: 	37.7522	+ Log Strength Pow + JaccardSimilarity - - Constraint Betweenness Betweenness BibCoupling * Authority Closeness
+	ind: 	83.804	+ Constraint HubScore
+	ind: 	87.4352	- Neighborhood3 + DiceSimilarity Neighborhood3
+	ind: 	60.5187	Log BibCoupling CoCitation
+	ind: 	86.5706	BibCoupling
+	ind: 	60.0576	- Neighborhood3 % Neighborhood2 JaccardSimilarity
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	69.3372	- Neighborhood3 * Pow Neighborhood2 JaccardSimilarity % Authority - - Neighborhood2 JaccardSimilarity * DiceSimilarity CoCitation
+	ind: 	28.2997	Pow * * + DiceSimilarity BibCoupling * Betweenness Betweenness + DiceSimilarity + Constraint HubScore InverseLogSimilarity
+	rep: 5  -> 5
+	rep: 11 92  -> 0
+	rep: 11 92  -> 1
+	rep: 33 48  -> 2
+	rep: 33 48  -> 3
+	rep: 59 28  -> 6
+	rep: 59 28  -> 7
+	rep: 17 29  -> 8
+	rep: 17 29  -> 9
+	rep: 14 17  -> 10
+	rep: 14 17  -> 11
+	rep: 3 19  -> 12
+	rep: 3 19  -> 13
+	rep: 50 48  -> 14
+	rep: 50 48  -> 15
+	rep: 10  -> 16
+	rep: 49 82  -> 17
+	rep: 49 82  -> 18
+	rep: 21 98  -> 19
+	rep: 21 98  -> 20
+	rep: 88 95  -> 21
+	rep: 88 95  -> 22
+	rep: 64 2  -> 23
+	rep: 64 2  -> 24
+	rep: 53 60  -> 25
+	rep: 53 60  -> 26
+	rep: 46 84  -> 27
+	rep: 46 84  -> 28
+	rep: 99 55  -> 29
+	rep: 99 55  -> 30
+	rep: 47 48  -> 32
+	rep: 47 48  -> 33
+	rep: 21 56  -> 34
+	rep: 21 56  -> 35
+	rep: 81 96  -> 36
+	rep: 81 96  -> 37
+	rep: 97 55  -> 38
+	rep: 97 55  -> 39
+	rep: 15 98  -> 40
+	rep: 15 98  -> 41
+	rep: 81 67  -> 42
+	rep: 81 67  -> 43
+	rep: 41 1  -> 44
+	rep: 41 1  -> 45
+	rep: 34  -> 46
+	rep: 43  -> 47
+	rep: 8 86  -> 48
+	rep: 8 86  -> 49
+	rep: 2 84  -> 50
+	rep: 2 84  -> 51
+	rep: 64 11  -> 52
+	rep: 64 11  -> 53
+	rep: 49 73  -> 54
+	rep: 49 73  -> 55
+	rep: 93 71  -> 56
+	rep: 93 71  -> 57
+	rep: 1 0  -> 58
+	rep: 1 0  -> 59
+	rep: 11 71  -> 60
+	rep: 11 71  -> 61
+	rep: 35 82  -> 62
+	rep: 35 82  -> 63
+	rep: 94  -> 64
+	rep: 1 14  -> 65
+	rep: 1 14  -> 66
+	rep: 0 30  -> 67
+	rep: 0 30  -> 68
+	rep: 56 63  -> 69
+	rep: 56 63  -> 70
+	rep: 80 0  -> 71
+	rep: 80 0  -> 72
+	rep: 93 76  -> 73
+	rep: 93 76  -> 74
+	rep: 21 64  -> 75
+	rep: 21 64  -> 76
+	rep: 25 48  -> 77
+	rep: 25 48  -> 78
+	rep: 6 37  -> 79
+	rep: 6 37  -> 80
+	rep: 65 55  -> 81
+	rep: 65 55  -> 82
+	rep: 35 35  -> 83
+	rep: 35 35  -> 84
+	rep: 71 31  -> 85
+	rep: 71 31  -> 86
+	rep: 44 43  -> 87
+	rep: 44 43  -> 88
+	rep: 46 86  -> 89
+	rep: 46 86  -> 90
+	rep: 49 75  -> 91
+	rep: 49 75  -> 92
+	rep: 4 16  -> 93
+	rep: 4 16  -> 94
+	rep: 95 22  -> 95
+	rep: 95 22  -> 96
+	rep: 56 82  -> 97
+	rep: 56 82  -> 98
+	rep: 51 16  -> 99
+generation 16:
+	ind: 	87.2622	+ BibCoupling HubScore
+	ind: 	85.6484	- Neighborhood3 CoCitation
+	ind: 	79.5389	Pow * DiceSimilarity CoCitation BibCoupling
+	ind: 	87.4352	- Constraint Neighborhood1
+	ind: 	78.9625	+ PageRank + Pow InverseLogSimilarity CoCitation Closeness
+	ind: 	88.7032	Strength
+	ind: 	81.0951	% Authority Pow - DiceSimilarity CoCitation BibCoupling
+	ind: 	38.2133	% Authority Closeness
+	ind: 	87.4352	- Constraint Neighborhood1
+	ind: 	50.2594	Log Constraint % % CoCitation InverseLogSimilarity - Constraint HubScore
+	ind: 	79.6542	% Authority % CoCitation InverseLogSimilarity
+	ind: 	73.487	% - PageRank Neighborhood1 - Constraint HubScore
+	ind: 	66.0519	* * + DiceSimilarity BibCoupling * Betweenness Betweenness + DiceSimilarity + Constraint HubScore
+	ind: 	48.415	Pow * * Neighborhood2 Pow CoCitation Authority * Authority * Authority Closeness InverseLogSimilarity
+	ind: 	80.4035	+ Pow * DiceSimilarity CoCitation BibCoupling * InverseLogSimilarity Closeness
+	ind: 	60.0576	Pow DiceSimilarity CoCitation
+	ind: 	87.4928	- HubScore * BibCoupling Strength
+	ind: 	60	Pow Log Pow InverseLogSimilarity JaccardSimilarity Neighborhood2 Authority
+	ind: 	29.1066	Log Strength Pow + JaccardSimilarity - DiceSimilarity CoCitation BibCoupling
+	ind: 	72.7954	- - Neighborhood2 JaccardSimilarity * DiceSimilarity CoCitation
+	ind: 	71.1816	- Neighborhood3 * Pow Neighborhood2 JaccardSimilarity % Authority + DiceSimilarity Neighborhood3
+	ind: 	86.5706	BibCoupling
+	ind: 	87.4352	- Neighborhood3 + DiceSimilarity Neighborhood3
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	40.5764	Pow Pow Log Neighborhood1 Strength Authority - - Neighborhood2 JaccardSimilarity * DiceSimilarity CoCitation
+	ind: 	47.6081	Pow Log % InverseLogSimilarity JaccardSimilarity Neighborhood2 BibCoupling
+	ind: 	86.3401	- Neighborhood2 JaccardSimilarity
+	ind: 	70.6052	Log EigenVector + * Authority Closeness - Betweenness Closeness
+	ind: 	7.14697	Log DiceSimilarity CoCitation
+	ind: 	28.2997	Pow * * + DiceSimilarity BibCoupling * Betweenness Betweenness + DiceSimilarity + Constraint HubScore InverseLogSimilarity
+	ind: 	28.5879	Log Closeness BibCoupling
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	60.8646	Pow - Neighborhood3 - Neighborhood3 - InverseLogSimilarity BibCoupling BibCoupling
+	ind: 	74.1787	Pow - Neighborhood2 JaccardSimilarity - Constraint HubScore
+	ind: 	78.6744	Pow + - Neighborhood3 + DiceSimilarity Neighborhood3 * DiceSimilarity CoCitation + Pow InverseLogSimilarity Neighborhood2 HubScore
+	ind: 	60.0576	- Neighborhood3 % Neighborhood2 JaccardSimilarity
+	ind: 	83.7464	- - Constraint Betweenness Betweenness
+	ind: 	7.14697	Log DiceSimilarity CoCitation
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	81.268	- Neighborhood3 * Pow Neighborhood2 JaccardSimilarity % Authority - - Neighborhood2 JaccardSimilarity - EigenVector Neighborhood1
+	ind: 	47.4928	Log PageRank Neighborhood1
+	ind: 	83.7464	- - Constraint Betweenness Betweenness
+	ind: 	87.9539	+ CoCitation InverseLogSimilarity
+	ind: 	87.4352	- HubScore Neighborhood1
+	ind: 	81.3833	% EigenVector Pow Authority Betweenness
+	ind: 	86.9164	- Neighborhood3 - Neighborhood3 - DiceSimilarity CoCitation
+	ind: 	87.4928	- HubScore * BibCoupling Strength
+	ind: 	60.0576	Log Constraint - Neighborhood3 + DiceSimilarity Neighborhood3
+	ind: 	86.3401	+ - Neighborhood2 JaccardSimilarity - Betweenness Closeness
+	ind: 	8.18444	% EigenVector * DiceSimilarity CoCitation
+	ind: 	85.6484	- Neighborhood3 CoCitation
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	31.2392	Log Neighborhood1 Strength
+	ind: 	59.4813	Pow - DiceSimilarity CoCitation BibCoupling
+	ind: 	85.6484	- Neighborhood3 * DiceSimilarity CoCitation
+	ind: 	78.8473	Pow + DiceSimilarity Neighborhood3 BibCoupling
+	ind: 	59.0778	- HubScore Log Neighborhood3 CoCitation
+	ind: 	87.9539	+ CoCitation InverseLogSimilarity
+	ind: 	79.5389	Pow * DiceSimilarity CoCitation BibCoupling
+	ind: 	85.6484	- Neighborhood3 CoCitation
+	ind: 	29.7406	Log Strength Pow + JaccardSimilarity Pow Log % InverseLogSimilarity JaccardSimilarity Neighborhood2 Authority BibCoupling
+	ind: 	82.2478	+ - Neighborhood3 % EigenVector Betweenness - Betweenness Closeness
+	ind: 	60.5187	Log BibCoupling CoCitation
+	ind: 	47.4928	Log PageRank Neighborhood1
+	ind: 	22.0749	% Authority - HubScore + CoCitation InverseLogSimilarity
+	ind: 	75.389	* Authority Closeness
+	ind: 	75.7925	Log Strength Pow % Log Neighborhood1 Strength Log Neighborhood3 CoCitation BibCoupling
+	ind: 	81.6138	- EigenVector Betweenness
+	ind: 	77.2334	Pow + - Neighborhood3 Pow - Neighborhood2 JaccardSimilarity - Constraint HubScore * DiceSimilarity CoCitation + Pow InverseLogSimilarity Neighborhood2 HubScore
+	ind: 	80.3458	- Neighborhood3 Log Neighborhood3 CoCitation
+	ind: 	60.8069	% - Neighborhood1 Strength * PageRank CoCitation
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	82.0173	- Neighborhood3 Log DiceSimilarity Neighborhood3
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	87.4352	+ DiceSimilarity Neighborhood3
+	ind: 	80.9798	+ Pow - Neighborhood2 Betweenness Pow * DiceSimilarity CoCitation BibCoupling Strength
+	ind: 	87.4352	+ DiceSimilarity Neighborhood3
+	ind: 	47.147	Pow Authority Betweenness
+	ind: 	87.4352	- Neighborhood3 - Neighborhood3 - Constraint Neighborhood1
+	ind: 	40.9798	+ + Constraint HubScore Log DiceSimilarity CoCitation
+	ind: 	75.389	* Authority Closeness
+	ind: 	87.6081	+ - Neighborhood3 - Betweenness Closeness - Betweenness Closeness
+	ind: 	75.1585	+ - Neighborhood3 % EigenVector Betweenness % EigenVector Betweenness
+	ind: 	17.6945	% EigenVector + + Constraint HubScore - DiceSimilarity CoCitation
+	ind: 	80.6916	* CoCitation Pow Pow * DiceSimilarity CoCitation BibCoupling BibCoupling
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	87.5504	- Neighborhood3 - Neighborhood3 Strength
+	ind: 	87.0317	* BibCoupling Strength
+	ind: 	54.0058	Log Constraint - HubScore * Authority Closeness
+	ind: 	60.0576	Log Neighborhood1 Neighborhood3
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	72.7954	- - Neighborhood2 JaccardSimilarity * DiceSimilarity CoCitation
+	ind: 	59.4813	Pow - DiceSimilarity CoCitation - InverseLogSimilarity BibCoupling
+	ind: 	46.8012	% EigenVector Betweenness
+	ind: 	86.5706	BibCoupling
+	ind: 	77.0605	Pow Pow + JaccardSimilarity Pow Log % InverseLogSimilarity JaccardSimilarity Neighborhood2 Authority BibCoupling + Pow InverseLogSimilarity Neighborhood2 HubScore
+	ind: 	67.4352	Log Strength + - Neighborhood3 Pow Log Neighborhood2 JaccardSimilarity - Constraint HubScore * DiceSimilarity CoCitation
+	ind: 	86.3401	- Neighborhood2 JaccardSimilarity
+	rep: 5  -> 5
+	rep: 56 67  -> 0
+	rep: 56 67  -> 1
+	rep: 12  -> 2
+	rep: 12 66  -> 3
+	rep: 12 66  -> 4
+	rep: 8 94  -> 6
+	rep: 8 94  -> 7
+	rep: 40 61  -> 8
+	rep: 40 61  -> 9
+	rep: 58 42  -> 10
+	rep: 58 42  -> 11
+	rep: 12  -> 12
+	rep: 92 54  -> 13
+	rep: 92 54  -> 14
+	rep: 82  -> 15
+	rep: 48 73  -> 16
+	rep: 48 73  -> 17
+	rep: 88 53  -> 18
+	rep: 88 53  -> 19
+	rep: 76 61  -> 20
+	rep: 76 61  -> 21
+	rep: 73 64  -> 22
+	rep: 73 64  -> 23
+	rep: 24 84  -> 24
+	rep: 24 84  -> 25
+	rep: 32 46  -> 26
+	rep: 32 46  -> 27
+	rep: 39 17  -> 28
+	rep: 39 17  -> 29
+	rep: 47 26  -> 30
+	rep: 47 26  -> 31
+	rep: 78 34  -> 32
+	rep: 78 34  -> 33
+	rep: 8 17  -> 34
+	rep: 8 17  -> 35
+	rep: 0 2  -> 36
+	rep: 0 2  -> 37
+	rep: 20 49  -> 38
+	rep: 20 49  -> 39
+	rep: 44 90  -> 41
+	rep: 44 90  -> 42
+	rep: 22 64  -> 43
+	rep: 22 64  -> 44
+	rep: 49 38  -> 45
+	rep: 49 38  -> 46
+	rep: 85  -> 47
+	rep: 99 79  -> 48
+	rep: 99 79  -> 49
+	rep: 83 27  -> 50
+	rep: 83 27  -> 51
+	rep: 43 97  -> 52
+	rep: 43 97  -> 53
+	rep: 74 71  -> 54
+	rep: 74 71  -> 55
+	rep: 97 15  -> 56
+	rep: 97 15  -> 57
+	rep: 34 28  -> 58
+	rep: 34 28  -> 59
+	rep: 79 79  -> 60
+	rep: 79 79  -> 61
+	rep: 59 37  -> 62
+	rep: 59 37  -> 63
+	rep: 46 77  -> 64
+	rep: 46 77  -> 65
+	rep: 46 31  -> 66
+	rep: 46 31  -> 67
+	rep: 43 64  -> 68
+	rep: 43 64  -> 69
+	rep: 60 95  -> 70
+	rep: 60 95  -> 71
+	rep: 71 42  -> 72
+	rep: 71 42  -> 73
+	rep: 11 7  -> 74
+	rep: 11 7  -> 75
+	rep: 97 84  -> 76
+	rep: 97 84  -> 77
+	rep: 19 90  -> 78
+	rep: 19 90  -> 79
+	rep: 71 90  -> 80
+	rep: 71 90  -> 81
+	rep: 22  -> 82
+	rep: 50 33  -> 83
+	rep: 50 33  -> 84
+	rep: 47 77  -> 85
+	rep: 47 77  -> 86
+	rep: 25 38  -> 87
+	rep: 25 38  -> 88
+	rep: 72 42  -> 89
+	rep: 72 42  -> 90
+	rep: 75 85  -> 91
+	rep: 75 85  -> 92
+	rep: 36 66  -> 93
+	rep: 36 66  -> 94
+	rep: 96 7  -> 95
+	rep: 96 7  -> 96
+	rep: 71 93  -> 97
+	rep: 71 93  -> 98
+	rep: 12 7  -> 99
+generation 17:
+	ind: 	87.4928	- Neighborhood3 * Authority Closeness
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	66.0519	* * + DiceSimilarity BibCoupling * Betweenness Betweenness + DiceSimilarity + Constraint HubScore
+	ind: 	64.7262	* * % Authority - HubScore + CoCitation InverseLogSimilarity * Betweenness Betweenness + DiceSimilarity + Constraint HubScore
+	ind: 	87.7233	+ DiceSimilarity BibCoupling
+	ind: 	88.7032	Strength
+	ind: 	7.14697	Log DiceSimilarity CoCitation
+	ind: 	60.0576	Pow - Constraint Neighborhood1 - InverseLogSimilarity BibCoupling
+	ind: 	85.6484	- Neighborhood3 CoCitation
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	47.4928	Log PageRank Neighborhood1
+	ind: 	59.0778	- HubScore Log Neighborhood3 CoCitation
+	ind: 	66.0519	* * + DiceSimilarity BibCoupling * Betweenness Betweenness + DiceSimilarity + Constraint HubScore
+	ind: 	31.2392	Log Neighborhood1 Strength
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	43.2853	Pow Authority Closeness
+	ind: 	11.2392	% DiceSimilarity CoCitation
+	ind: 	87.4928	- HubScore * BibCoupling Strength
+	ind: 	87.4928	- Neighborhood3 - DiceSimilarity CoCitation
+	ind: 	87.4352	- Neighborhood3 Strength
+	ind: 	87.2046	+ DiceSimilarity - Neighborhood3 CoCitation
+	ind: 	87.4352	Neighborhood3
+	ind: 	60.5187	Log BibCoupling CoCitation
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	46.8012	% EigenVector Betweenness
+	ind: 	81.8444	+ - Neighborhood3 - DiceSimilarity CoCitation % EigenVector Betweenness
+	ind: 	81.3833	% EigenVector Pow Authority Betweenness
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	60	Pow Log Pow InverseLogSimilarity JaccardSimilarity Neighborhood2 Authority
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	81.9597	Pow Neighborhood3 % InverseLogSimilarity JaccardSimilarity
+	ind: 	7.20461	Pow Log - Neighborhood3 - DiceSimilarity CoCitation Neighborhood2 BibCoupling
+	ind: 	86.3401	- Neighborhood2 JaccardSimilarity
+	ind: 	74.928	Pow + DiceSimilarity Neighborhood3 - Constraint HubScore
+	ind: 	86.6859	Pow InverseLogSimilarity JaccardSimilarity
+	ind: 	10.4323	Pow Log - Constraint Neighborhood1 Neighborhood2 Authority
+	ind: 	86.7435	* DiceSimilarity CoCitation
+	ind: 	77.6369	Pow + BibCoupling HubScore BibCoupling
+	ind: 	71.1816	- Neighborhood3 * Pow Neighborhood2 JaccardSimilarity % Authority + DiceSimilarity Neighborhood3
+	ind: 	60.0576	Log Constraint - Neighborhood3 + DiceSimilarity Neighborhood3
+	ind: 	87.4352	% Closeness Log DiceSimilarity Neighborhood1
+	ind: 	85.245	- Authority Closeness
+	ind: 	60.0576	Log Constraint - HubScore + CoCitation InverseLogSimilarity
+	ind: 	77.3487	- Neighborhood3 Log BibCoupling CoCitation
+	ind: 	87.4352	+ DiceSimilarity Neighborhood3
+	ind: 	39.1354	Log Constraint - Neighborhood3 Log DiceSimilarity CoCitation
+	ind: 	87.4352	+ DiceSimilarity Neighborhood3
+	ind: 	17.6945	% EigenVector + + Constraint HubScore - DiceSimilarity CoCitation
+	ind: 	47.147	Pow Authority Betweenness
+	ind: 	86.3977	+ Neighborhood2 JaccardSimilarity
+	ind: 	87.5504	+ - Neighborhood3 - Neighborhood2 JaccardSimilarity - Betweenness Closeness
+	ind: 	87.4928	- Betweenness Closeness
+	ind: 	88.0115	Log % InverseLogSimilarity JaccardSimilarity Neighborhood2
+	ind: 	77.0605	Pow Pow + JaccardSimilarity Pow - - Constraint Betweenness Betweenness Authority BibCoupling + Pow InverseLogSimilarity Neighborhood2 HubScore
+	ind: 	80.3458	- Neighborhood3 Log Neighborhood3 CoCitation
+	ind: 	82.0173	- Neighborhood3 Log DiceSimilarity Neighborhood3
+	ind: 	60.0576	Pow Pow DiceSimilarity CoCitation + Pow InverseLogSimilarity Neighborhood2 HubScore
+	ind: 	80.1153	Pow + JaccardSimilarity Pow Log % InverseLogSimilarity JaccardSimilarity Neighborhood2 Authority BibCoupling
+	ind: 	82.0173	Pow - Neighborhood2 JaccardSimilarity + * Authority Closeness + Betweenness Closeness
+	ind: 	60.0576	Log EigenVector - Constraint HubScore
+	ind: 	47.147	Pow Authority Betweenness
+	ind: 	83.0548	+ Authority Betweenness
+	ind: 	83.9769	- Constraint Betweenness
+	ind: 	66.1671	* + CoCitation InverseLogSimilarity Betweenness
+	ind: 	80.9798	+ Pow - Neighborhood2 Betweenness Pow * DiceSimilarity CoCitation BibCoupling Strength
+	ind: 	81.3833	% EigenVector Pow Authority Betweenness
+	ind: 	83.2853	% EigenVector Log Closeness BibCoupling
+	ind: 	83.0548	+ Authority Betweenness
+	ind: 	60.5187	Log BibCoupling CoCitation
+	ind: 	83.7464	- - Constraint Betweenness Betweenness
+	ind: 	46.8012	% EigenVector Betweenness
+	ind: 	79.5389	Pow * DiceSimilarity CoCitation BibCoupling
+	ind: 	87.4352	+ PageRank Neighborhood1
+	ind: 	80.3458	- Neighborhood3 Log Neighborhood3 CoCitation
+	ind: 	51.4121	% % Authority Closeness - Constraint HubScore
+	ind: 	87.4352	- PageRank Neighborhood1
+	ind: 	78.0403	Pow Pow + JaccardSimilarity Pow Log % InverseLogSimilarity JaccardSimilarity Neighborhood2 Authority BibCoupling + % EigenVector Betweenness HubScore
+	ind: 	75.2738	+ - Neighborhood3 % EigenVector Betweenness Pow InverseLogSimilarity Neighborhood2
+	ind: 	87.147	- * Authority Closeness * DiceSimilarity CoCitation
+	ind: 	60.0576	Log Constraint - HubScore - Neighborhood2 JaccardSimilarity
+	ind: 	75.389	* Authority Closeness
+	ind: 	60.0576	Log Constraint - HubScore - Neighborhood3 Log Neighborhood3 CoCitation
+	ind: 	87.4352	- Neighborhood3 + DiceSimilarity Neighborhood3
+	ind: 	88.0115	- Neighborhood3 - InverseLogSimilarity BibCoupling
+	ind: 	60.0576	Pow - Neighborhood3 + - Neighborhood2 JaccardSimilarity - Betweenness Closeness BibCoupling
+	ind: 	87.4352	- Neighborhood3 + Pow - Neighborhood2 Betweenness Pow * DiceSimilarity CoCitation BibCoupling Strength
+	ind: 	87.4928	- Neighborhood3 - DiceSimilarity CoCitation
+	ind: 	59.9424	Pow Pow Log Neighborhood1 Strength Authority Log DiceSimilarity CoCitation
+	ind: 	72.7954	- - Neighborhood2 JaccardSimilarity * DiceSimilarity CoCitation
+	ind: 	49.5101	- Log PageRank Neighborhood1 * PageRank CoCitation
+	ind: 	87.4352	- Neighborhood1 Strength
+	ind: 	86.9164	- DiceSimilarity CoCitation
+	ind: 	17.6945	% EigenVector + + Constraint HubScore - DiceSimilarity CoCitation
+	ind: 	22.0749	% Authority - HubScore + CoCitation InverseLogSimilarity
+	ind: 	60.0576	- Neighborhood3 % Neighborhood2 JaccardSimilarity
+	ind: 	38.2133	% Authority Closeness
+	ind: 	86.5706	BibCoupling
+	ind: 	87.3775	- Neighborhood3 - Neighborhood2 JaccardSimilarity
+	ind: 	59.7118	- Log Neighborhood3 CoCitation * DiceSimilarity CoCitation
+	ind: 	80.7493	* % Authority Closeness + DiceSimilarity + Constraint HubScore
+	rep: 5  -> 5
+	rep: 91 63  -> 0
+	rep: 91 63  -> 1
+	rep: 66 76  -> 2
+	rep: 66 76  -> 3
+	rep: 17 81  -> 4
+	rep: 17 81  -> 6
+	rep: 21 69  -> 7
+	rep: 21 69  -> 8
+	rep: 21 73  -> 9
+	rep: 21 73  -> 10
+	rep: 98 16  -> 11
+	rep: 98 16  -> 12
+	rep: 19 61  -> 13
+	rep: 19 61  -> 14
+	rep: 19 7  -> 15
+	rep: 19 7  -> 16
+	rep: 8 68  -> 17
+	rep: 8 68  -> 18
+	rep: 97 38  -> 19
+	rep: 97 38  -> 20
+	rep: 82 56  -> 21
+	rep: 82 56  -> 22
+	rep: 19 73  -> 23
+	rep: 19 73  -> 24
+	rep: 4 31  -> 25
+	rep: 4 31  -> 26
+	rep: 63 45  -> 27
+	rep: 63 45  -> 28
+	rep: 41 30  -> 29
+	rep: 41 30  -> 30
+	rep: 34 45  -> 31
+	rep: 34 45  -> 32
+	rep: 65  -> 33
+	rep: 75  -> 34
+	rep: 94 48  -> 35
+	rep: 94 48  -> 36
+	rep: 50 70  -> 37
+	rep: 50 70  -> 38
+	rep: 22 98  -> 39
+	rep: 22 98  -> 40
+	rep: 36 64  -> 41
+	rep: 36 64  -> 42
+	rep: 83 18  -> 43
+	rep: 83 18  -> 44
+	rep: 32 43  -> 45
+	rep: 32 43  -> 46
+	rep: 53 89  -> 47
+	rep: 53 89  -> 48
+	rep: 29 63  -> 49
+	rep: 29 63  -> 50
+	rep: 66 56  -> 51
+	rep: 66 56  -> 52
+	rep: 19 25  -> 53
+	rep: 19 25  -> 54
+	rep: 83 37  -> 55
+	rep: 83 37  -> 56
+	rep: 72 12  -> 57
+	rep: 72 12  -> 58
+	rep: 32 53  -> 59
+	rep: 32 53  -> 60
+	rep: 87 89  -> 61
+	rep: 87 89  -> 62
+	rep: 48 15  -> 63
+	rep: 48 15  -> 64
+	rep: 34 74  -> 65
+	rep: 34 74  -> 66
+	rep: 49 89  -> 67
+	rep: 49 89  -> 68
+	rep: 5 28  -> 69
+	rep: 5 28  -> 70
+	rep: 18 34  -> 72
+	rep: 18 34  -> 73
+	rep: 83 86  -> 74
+	rep: 83 86  -> 75
+	rep: 20 41  -> 76
+	rep: 20 41  -> 77
+	rep: 27  -> 78
+	rep: 69 98  -> 79
+	rep: 69 98  -> 80
+	rep: 85  -> 81
+	rep: 83 93  -> 82
+	rep: 83 93  -> 83
+	rep: 20  -> 84
+	rep: 5 94  -> 85
+	rep: 5 94  -> 86
+	rep: 43 7  -> 87
+	rep: 43 7  -> 88
+	rep: 91 62  -> 89
+	rep: 91 62  -> 90
+	rep: 82 32  -> 91
+	rep: 82 32  -> 92
+	rep: 46 42  -> 93
+	rep: 46 42  -> 94
+	rep: 76 38  -> 95
+	rep: 76 38  -> 96
+	rep: 57 74  -> 97
+	rep: 57 74  -> 98
+	rep: 82 38  -> 99
