@@ -1,103 +1,303 @@
-#Gen|       Fitness     |      Length       |   Depth
-#   |  Best|Avg.|Worst  |  Best|Avg.|Worst  |  Best|Avg.|Worst
-0 28.4538 58.0108 99.8193     3 6.56 7     2 2.84 3
-1 28.4538 58.09 99.8394     3 5.84 15     2 2.79 4
-2 28.4538 57.3243 98.7349     3 5.82 3     2 2.8 2
-3 28.4538 57.941 99.8193     3 6 23     2 2.82 5
-4 28.4538 58.6129 99.498     3 5.92 9     2 2.81 4
-5 28.4538 52.6914 99.8193     3 5.96 3     2 2.82 2
-6 28.4538 49.3986 99.4578     3 5.5 11     2 2.72 4
-7 27.2088 48.6857 98.7349     3 5.22 3     2 2.63 2
-8 27.2088 51.5741 99.8193     3 5.02 13     2 2.58 5
-9 27.2088 46.443 98.7349     3 4.78 3     2 2.54 2
-10 27.2088 47.8337 98.6145     3 4.78 7     2 2.56 3
-11 27.2088 47.3554 98.5944     3 4.54 1     2 2.48 1
-12 27.2088 45.6275 98.5944     3 4.52 1     2 2.47 1
-13 27.2088 48.8191 99.7189     3 4.74 5     2 2.5 3
-14 27.2088 48.7944 99.7189     3 5 11     2 2.57 4
-15 27.2088 45.0496 90.3815     3 4.68 15     2 2.48 5
-16 27.2088 42.7309 85.2811     3 4.88 3     2 2.54 2
-17 27.2088 46.7715 98.6145     3 5.08 7     2 2.62 3
-18 26.9277 51.5675 95.743     7 4.92 9     3 2.61 4
-19 26.9277 46.2847 93.1325     7 4.9 9     3 2.58 4
-20 26.9277 48.8365 98.5542     7 5.42 3     3 2.72 2
-21 26.9277 47.596 98.6145     7 5.54 5     3 2.73 3
-22 26.9277 44.2171 90.7229     7 5.32 9     3 2.64 4
-23 26.9277 48.1771 98.5944     7 5.18 3     3 2.63 2
-24 26.9277 48.362 98.5944     7 4.98 3     3 2.61 2
-25 26.9277 46.8048 98.755     7 4.96 7     3 2.55 3
-26 26.9277 47.8803 98.6145     7 4.9 13     3 2.53 4
-27 26.6667 46.8865 98.6145     5 5.3 13     3 2.63 4
-28 26.6667 49.2114 98.6145     5 5.38 15     3 2.63 4
-29 26.6667 50.0753 98.5944     5 5.26 11     3 2.61 4
-30 26.6667 47.7321 99.7992     5 5.26 7     3 2.66 3
-31 26.6667 45.648 98.6145     5 5.16 7     3 2.64 3
-32 26.6667 51.6791 98.6145     5 5.36 9     3 2.73 4
-33 26.6667 53.1755 99.6185     5 4.96 7     3 2.59 3
-34 26.6667 47.4791 98.6145     5 4.54 11     3 2.52 4
-35 26.6667 47.7012 99.7992     5 4.52 5     3 2.54 3
-36 26.6667 45.9329 98.6145     5 4.46 13     3 2.52 4
-37 26.6667 45.7171 98.5944     5 4.32 7     3 2.49 4
-38 26.6667 44.0608 99.8193     5 4.18 11     3 2.44 4
-39 26.6667 42.7932 98.6145     5 4 7     3 2.42 4
-40 26.4056 41.8189 98.6145     5 4.34 7     3 2.53 4
-41 26.4056 42.3118 98.6145     5 3.94 3     3 2.39 2
-42 26.4056 39.4839 98.5944     5 4.04 1     3 2.42 1
-43 26.4056 40.3494 98.5944     5 4.1 1     3 2.4 1
-44 26.4056 42.1012 97.7912     5 4.12 5     3 2.43 3
-45 26.4056 40.7707 99.7791     5 4.28 5     3 2.5 3
-46 26.4056 43.2373 99.7791     5 4.2 7     3 2.5 4
-47 26.4056 44.4616 99.7791     5 4.44 9     3 2.55 4
-48 26.4056 43.1817 99.7791     5 4.42 5     3 2.53 3
-49 26.4056 43.2972 98.6145     5 4.14 1     3 2.49 1
-50 26.4056 45.1058 98.6145     5 4.2 1     3 2.49 1
-51 26.4056 44.711 98.6145     5 4.1 1     3 2.43 1
-52 26.4056 44.2568 97.5703     5 4.02 9     3 2.43 4
-53 26.4056 45.7452 87.4096     5 4.34 7     3 2.53 3
-54 26.4056 47.6536 98.5944     5 4.56 3     3 2.58 2
-55 26.4056 47.0761 98.5944     5 4.62 3     3 2.57 2
-56 26.4056 44.2239 98.5944     5 4.16 3     3 2.43 2
-57 26.4056 45.605 97.51     5 4.34 5     3 2.51 3
-58 26.4056 48.3285 98.6145     5 4.32 7     3 2.51 3
-59 26.4056 44.8928 97.1285     5 4.12 11     3 2.45 5
-60 26.4056 42.9068 93.2129     5 3.88 5     3 2.36 3
-61 26.4056 44.7267 98.5944     5 4.34 5     3 2.48 3
-62 26.4056 46.644 96.6265     5 4.16 7     3 2.45 3
-63 26.4056 46.8223 99.8193     5 4.34 11     3 2.5 4
-64 26.4056 41.3221 89.1365     5 3.98 5     3 2.38 3
-65 26.4056 40.9195 96.1847     5 3.96 5     3 2.38 3
-66 26.4056 43.8729 98.5944     5 3.72 5     3 2.29 3
-67 26.4056 44.3821 98.6145     5 3.72 3     3 2.32 2
-68 26.4056 44.9436 98.6145     5 4.06 3     3 2.43 2
-69 26.4056 44.2303 98.5944     5 3.9 3     3 2.4 2
-70 26.4056 51.088 99.8193     5 3.78 3     3 2.36 2
-71 26.4056 47.4892 99.8193     5 3.92 3     3 2.44 2
-72 26.4056 43.3689 98.6145     5 3.88 7     3 2.43 4
-73 26.4056 42.3737 98.6145     5 3.7 5     3 2.34 3
-74 26.4056 43.9723 99.5984     5 3.56 3     3 2.28 2
-75 26.4056 42.8112 99.5984     5 3.72 3     3 2.35 2
-76 26.4056 41.5363 98.6145     5 3.94 5     3 2.46 3
-77 26.4056 45.06 98.6145     5 4.26 3     3 2.58 2
-78 26.4056 41.307 98.6145     5 4.54 3     3 2.73 2
-79 26.4056 44.696 99.8193     5 4.58 7     3 2.76 4
-80 26.4056 43.956 98.6145     5 4.6 3     3 2.75 2
-81 26.4056 41.4189 98.6145     5 4.6 5     3 2.7 3
-82 26.4056 46.5331 98.7349     5 5.06 3     3 2.91 2
-83 26.4056 46.644 99.8193     5 4.48 3     3 2.69 2
-84 26.4056 45.3165 98.6145     5 4.5 13     3 2.68 5
-85 26.4056 47.5869 98.6145     5 4.46 13     3 2.67 6
-86 26.4056 50.1833 98.6145     5 4.52 11     3 2.67 5
-87 26.4056 47.3602 98.6145     5 4.18 7     3 2.55 4
-88 26.4056 46.4757 98.6145     5 4.24 3     3 2.54 2
-89 26.4056 50.8735 99.0161     5 4.24 5     3 2.55 3
-90 26.4056 51.0327 99.0161     5 4.38 5     3 2.58 3
-91 26.4056 48.699 99.0161     5 4.28 5     3 2.54 3
-92 26.4056 51.5761 98.6145     5 4.24 7     3 2.48 4
-93 26.4056 52.7954 98.6145     5 3.92 3     3 2.36 2
-94 26.4056 53.1847 98.6145     5 4.02 5     3 2.43 3
-95 26.4056 53.3759 98.6145     5 3.72 5     3 2.32 3
-96 26.4056 49.6849 98.6145     5 3.6 3     3 2.29 2
-97 26.4056 47.8627 98.6145     5 3.64 5     3 2.3 3
-98 26.4056 46.1369 98.6145     5 3.68 5     3 2.33 3
-99 26.4056 45.4219 98.6145     5 3.92 3     3 2.4 2
-100 26.4056 46.5912 98.6145     5 4.1 3     3 2.44 2
+Best of generation 0 (Fitness = 28.4538, Structural Complexity = 3)
+GP: (Pow GINI P')
+
+Best of generation 1 (Fitness = 28.4538, Structural Complexity = 3)
+GP: (Pow GINI P')
+
+Best of generation 2 (Fitness = 27.751, Structural Complexity = 1)
+GP: TFIDF
+
+Best of generation 3 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 4 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 5 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 6 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 7 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 8 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 9 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 10 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 11 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 12 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 13 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 14 (Fitness = 26.8273, Structural Complexity = 15)
+GP: (Pow (+ (% P' MaxCHI) (* DOM MaxDom)) (- (% sumTF MaxTFICF) (* IDF MaxTFICF)))
+
+Best of generation 15 (Fitness = 26.2048, Structural Complexity = 7)
+GP: (Pow (Pow DOM GSS) (* CHI CC))
+
+Best of generation 16 (Fitness = 26.2048, Structural Complexity = 7)
+GP: (Pow (Pow DOM GSS) (* CHI CC))
+
+Best of generation 17 (Fitness = 26.2048, Structural Complexity = 7)
+GP: (Pow (Pow DOM GSS) (* CHI CC))
+
+Best of generation 18 (Fitness = 25.9237, Structural Complexity = 11)
+GP: (Pow (Pow (Pow DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 19 (Fitness = 25.9237, Structural Complexity = 11)
+GP: (Pow (Pow (Pow DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 20 (Fitness = 25.9237, Structural Complexity = 11)
+GP: (Pow (Pow (Pow DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 21 (Fitness = 25.9237, Structural Complexity = 11)
+GP: (Pow (Pow (Pow DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 22 (Fitness = 25.9237, Structural Complexity = 11)
+GP: (Pow (Pow (Pow DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 23 (Fitness = 25.9237, Structural Complexity = 11)
+GP: (Pow (Pow (Pow DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 24 (Fitness = 25.9237, Structural Complexity = 11)
+GP: (Pow (Pow (Pow DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 25 (Fitness = 25.9237, Structural Complexity = 11)
+GP: (Pow (Pow (Pow DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 26 (Fitness = 25.9237, Structural Complexity = 11)
+GP: (Pow (Pow (Pow DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 27 (Fitness = 25.8233, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 28 (Fitness = 25.8233, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 29 (Fitness = 25.8233, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 30 (Fitness = 25.8233, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 31 (Fitness = 25.8233, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 32 (Fitness = 25.8233, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 33 (Fitness = 25.8233, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (* CHI CC)) (+ DOM GSS))
+
+Best of generation 34 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 35 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 36 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 37 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 38 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 39 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 40 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 41 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 42 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 43 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 44 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 45 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 46 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 47 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 48 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 49 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 50 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 51 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 52 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 53 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 54 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 55 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 56 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 57 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 58 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 59 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 60 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 61 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 62 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 63 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 64 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 65 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 66 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 67 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 68 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 69 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 70 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 71 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 72 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 73 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 74 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 75 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 76 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 77 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 78 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 79 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 80 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 81 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 82 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 83 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 84 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 85 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 86 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 87 (Fitness = 25.7831, Structural Complexity = 11)
+GP: (Pow (Pow (% DOM GSS) (+ DOM GSS)) (Pow CHI CC))
+
+Best of generation 88 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 89 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 90 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 91 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 92 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 93 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 94 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 95 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 96 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 97 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 98 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 99 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
+Best of generation 100 (Fitness = 25.7028, Structural Complexity = 15)
+GP: (Pow (Pow (% DOM GSS) (Pow (+ DOM GSS) (+ DOM GSS))) (Pow CHI CC))
+
