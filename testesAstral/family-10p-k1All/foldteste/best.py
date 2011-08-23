@@ -2,7 +2,7 @@ import sys
 import os
 import re
 
-fold= 0 # int(os.getcwd().split('fold')[1])
+fold= int(os.getcwd().split('fold')[1])
 
 with open('cred.best') as credfile:
     line = (list(credfile)[-2])
@@ -28,7 +28,7 @@ testepath= base+ "/teste/_teste" + str(fold)
 graph = base+"/outfile.astral.blast.ok4"
 
 #teste
-credcmd = "./gp-cred -dontoptimize -treino " + treinopath + " -validacao " + validacaopath + " -teste " + testepath + " -dontsave -num 15 -knn 1 -eval eval.in eval.out -g 1 " + graph
+credcmd = "./gp-cred -treino " + treinopath + " -validacao " + validacaopath + " -teste " + testepath + " -dontsave -num 15 -knn 1 -eval eval.in eval.out -g 1 " + graph
 
 print credcmd
 #os.system(credcmd)
