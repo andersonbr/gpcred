@@ -222,6 +222,14 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
 double Statistics::getGraphValue(int metric, int graph, string id, string classId){
     
     double returnValue = 0.0;
+//    cout<<"metric =  " << metric << "  graph = " << graph << " id =  " <<  id << "  classId " << classId <<endl;
+
+    if(iGraphs.count(graph) == 0) //we dont have this graph
+        return returnValue;
+
+    if(iGraphs[graph].count(id) == 0)
+        return returnValue;
+
     switch(metric){
     
         case NEIGHBORHOOD1: 
