@@ -9,9 +9,9 @@ embora não detalhamos essas métricas.
 
 Nessa dissertação, modelamos a credibilidade em duas abordagens diferentes, uma levando em consideração os atributos dos exemplos e outra utilizando os seus relacionamentos. 
 Em ambas, somos capazes de gerar uma grande gama de métricas que conseguem capturar a relação entre os exemplos e uma determinada classe.
-Entretanto, necessitamos de uma forma de selecionar e combinar essas métricas de uma maneira robusta. Para solucionar esse problema, recorremos ao uso de Programação Genética (\textsc{PG}).
+Entretanto, necessitamos de uma forma de selecionar e combinar essas métricas de uma maneira robusta. Para solucionar esse problema, recorremos ao uso de Programação Genética (\textsc{PG}) (\cite{Koza92}).
 
-Segundo a Teoria da Evolução de Darwin, indivíduos mais adaptados ao ambiente em que se encontram têm uma chance maior de sobreviverem e se reproduzirem, passando seu material genético às gerações posteriores. Baseado nessa teoria, o método Programação Genética é adequado para evoluir uma função de credibilidade, pois possui mecanismos de busca que o torna capaz de explorar bem o imenso espaço de soluções formado pelo grande número de métricas disponíveis (\cite{Fogel00}). Além disso, \textsc{PG} é flexível o bastante para ser capaz de representar as funções que desejamos, sendo também tolerante a ruído.
+Segundo a Teoria da Evolução de Darwin, indivíduos mais adaptados ao ambiente em que se encontram têm uma chance maior de sobreviverem e se reproduzirem, passando seu material genético às gerações posteriores. Baseado nessa teoria, o método de Programação Genética é adequado para evoluir uma função de credibilidade, pois possui mecanismos de busca que o torna capaz de explorar bem o imenso espaço de soluções formado pelo grande número de métricas disponíveis (\cite{Fogel00}). Além disso, \textsc{PG} é flexível o bastante para ser capaz de representar as funções que desejamos, sendo também tolerante a ruído.
 %Programação Genética é um método baseado na Teoria da Evolução de Darwin que define que indivíduos mais adaptados ao ambiente em que se encontram têm uma maior chance de sobreviverem e se reproduzirem, passando seu material genético às gerações posteriores. PG é um método adequado para evoluir uma função de credibilidade, pois consegue explorar bem o imenso espaço de soluções formado pelo grande número de métricas disponíveis e é flexível o bastante para podermos representar as funções que desejamos.
 
 Para entendermos melhor como é o funcionamento de um \textsc{PG}, utilizamos a Figura~\ref{fig::gpwf}. Ela ilustra de forma genérica os seus principais componentes.
@@ -29,13 +29,13 @@ Cada indivíduo da população é então avaliado por uma função de \textit{fi
 \label{fig::gpwf}
 \end{figure}
 
-Após avaliarmos a \textit{fitness} dos indivíduos, os melhores são selecionados e submetidos às operações genéticas de cruzamento, mutação e reprodução, com probabilidade $P_c$, $P_m$ e $P_r$, respectivamente definidas pelo usuário.
+Após avaliarmos a \textit{fitness} dos indivíduos, os melhores são selecionados e submetidos às operações genéticas de cruzamento, reprodução e mutação, com probabilidade $P_c$, $P_r$ e $P_m$, respectivamente definidas pelo usuário.
 Uma forma muito usada de selecionar os indivíduos é através de torneios, nos quais tomamos aleatoriamente um número pré-definido de indivíduos da população e selecionamos aquele com maior valor da função de \textit{fitness}. Existem diversas outras variações do método de seleção (\cite{Koza92}), sendo que o importante é a utilização do conhecimento da função \textit{fitness} dos indivíduos de forma a criamos uma próxima geração mais bem preparada para resolução do problema. 
 
 Depois de serem selecionados, os indivíduos podem passar por reprodução ou cruzamento, com probabilidades $P_r$ e $P_c$, respectivamente. 
 A operação genética de reprodução simplesmente transfere o indivíduo para próxima geração, enquanto o cruzamento exige a participação de dois indivíduos que são combinados a fim de obtermos
 uma prole mais adaptada na próxima geração.
-Após esse processo, o indivíduo resultante da reprodução ou cruzamento pode ser submetido a mutação com uma probabilidade $P_m$.
+Após esse processo, o indivíduo resultante da reprodução ou cruzamento pode ser submetido à mutação com uma probabilidade $P_m$.
 Em geral, a mutação é uma pequena alteração em alguma parte especifica do indivíduo, alterando uma função interna ou um terminal.
 Variações nas quais a operação de mutação ocorre em paralelo a de reprodução ou cruzamento também são comuns na literatura.
 
@@ -49,7 +49,7 @@ Esse processo de criação de indivíduos é repetido até alcançarmos um núme
 Repare que todo o processo exposto na Figura~\ref{fig::gpwf} é \textit{independente} da aplicação na qual o \textsc{PG} é utilizado. 
 Entretanto, três importantes componentes devem ser instanciados dependendo do contexto no qual trabalhamos. Eles são:
 \begin{enumerate}
-\item A representação dos indivíduos, que inclue as funções do \textsc{PG} e terminais relevantes a aplicação, e são abordados na Seção~\ref{subsec::individuos}, 
+\item A representação dos indivíduos, que inclue as funções do \textsc{PG} e terminais relevantes à aplicação, e são abordados na Seção~\ref{subsec::individuos}, 
 \item Os operadores genéticos, descritos na Seção~\ref{subsec::operadoresgeneticos},
 \item A função de \textit{fitness} detalhada na Seção~\ref{subsec::fitness}.
 \end{enumerate}
@@ -150,10 +150,9 @@ Necessitamos de um modo de avaliar os indivíduos da população a fim de saberm
 Para tanto, utilizamos a chamada função de \textit{fitness}. 
 Em nosso caso, estamos criando funções de credibilidade que serão usadas para que um classificador possa criar modelos de classificação mais aprimorados.
 Dessa forma, nossa função de \textit{fitness} tem que estar atrelada a uma forma de avaliar o quanto o classificador melhorou ou piorou ao incorporarmos a ele um função de crebilidade gerada.
-Uma métrica muito utilizada na literatura para avaliação de classificadores é a $F_1$ e, por isso, decidimos por utilizá-la.
-% --> continuar depois..... tenho auqe falar que podemos usar as metricas ja usadas para ver se um metodo de classificacao eh bom, como F1.
-%Portanto, podemos utilizar as métricas de avaliação de classificadores para que possamos 
-No Algoritmo~\ref{alg::fitness}, descrevemos o processo usado para calcular a \textit{fitness} de um individuo levando em consideração funções evoluídas tanto para atributos quanto para relacionamentos.
+Na literatura, uma métrica muito utilizada para avaliação do desempenho de classificadores é a $F_1$ e, por isso, decidimos por utilizá-la.
+Mas antes de falarmos sobre a $F_1$, vamos ver o funcionamento de toda a função de \textit{fitness}, descrita no Algoritmo~\ref{alg::fitness}. 
+Nele, descrevemos o processo usado para calcular a \textit{fitness} de um individuo levando em consideração funções evoluídas tanto para atributos quanto para relacionamentos.
 
 \algrenewcommand\algorithmicforall{\textbf{Para Cada}}
 \algrenewcommand\algorithmicdo{\textbf{Faça}}
@@ -192,15 +191,16 @@ No Algoritmo~\ref{alg::fitness}, descrevemos o processo usado para calcular a \t
   \EndIf
   \State
   \State \textit{Avaliação da Fitness:}
-  \State fitness $\gets$ \textsc{F$_1$}(\textsc{Classifier}$(\mathbb{T}, \mathbb{E}, \mathbb{C}, f_x, f_r)$)
+  \State fitness $\gets$ \textsc{F$_1$}(\textsc{Classifier}$(\mathbb{T}, \mathbb{E}, \mathbb{C}, f_a, f_r)$)
   \State \textbf{return} fitness
 \EndFunction
 }
 \end{algorithmic}
 \end{algorithm}
 
+Se a credibilidade for baseada em abritutos, o Algoritmo~\ref{alg::fitness} se inicia com a formação do mapeamento $f_a(x,a)$, composto pela aplicação da função de credibilidade que o indivíduo representa a cada par de atributo $x$ e classe $c$. A função chamada de \textit{eval} é responsável pela avaliação de um indivíduo. Ou seja, um indivíduo como aqueles mostrados na Figura~\ref{fig::gps1} seria avaliado pela função ...
 
-Começamos o Algoritmo~\ref{alg::fitness} com a formação do mapeamento $f_a$, formado pela aplicação da função de credibilidade que o indivíduo representa a cada par de atributos e classes.
+
 Logo depois, calculamos a credibilidade de cada relacionamento no conjunto $\mathbb{R}$ de relacionamentos, usando o conjunto $\mathbb{E}$ de exemplos de treinamento em um mapa $f_r$.
 Por fim, o classificador recebe o conjunto $\mathbb{T}$ de exemplos de teste, o conjunto $\mathbb{E}$ de exemplos de treinamento, o conjunto $\mathbb{C}$ de classes e os valores mapeados para as funções $f_a$ e $f_r$ de credibilidade de atributos e relacionamentos, respectivamente, retornando para cada exemplo de $\mathbb{T}$ uma possível classe de $\mathbb{C}$.
 Assim, podemos calcular qual o valor da métrica chamada \textit{$F_1$} baseada nos resultados do classificador utilizado. 
