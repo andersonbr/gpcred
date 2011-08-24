@@ -5367,3 +5367,801 @@ generation 26:
 	rep: 17 53  -> 97
 	rep: 70 72  -> 98
 	rep: 70 72  -> 99
+generation 27:
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	95.9797	Pow NUM1 OR
+	ind: 	95.9797	+ NUM1 NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.37	Log TFIDF GINI
+	ind: 	96.37	+ GINI + AM NUM2
+	ind: 	96.2529	% TFIDF GINI
+	ind: 	96.292	Log IG GINI
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.4481	+ GINI + GINI NUM3
+	ind: 	95.6674	Pow NUM3 OR
+	ind: 	96.7603	+ GINI Log TFIDF GINI
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	95.6674	Pow % NUM1 OR NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.6823	+ CHI NUM1
+	ind: 	96.8384	+ AM NUM2
+	ind: 	97.7752	% Pow TFIDF IG + GINI NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.331	- TFIDF IG
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	94.3404	- NUM2 IG
+	ind: 	96.8384	% AM NUM2
+	ind: 	95.9797	Log NUM3 OR
+	ind: 	96.0578	* % NUM2 CHI NUM2
+	ind: 	95.9797	Log NUM3 OR
+	ind: 	96.1358	% + GINI + OR NUM3 + AM NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.331	+ TFIDF IG
+	ind: 	96.8384	+ AM NUM2
+	ind: 	95.6674	Pow NUM3 OR
+	ind: 	95.9797	Log % + OR AM + AM NUM2 GINI
+	ind: 	96.37	Log + AM NUM2 GINI
+	ind: 	96.6432	% + GINI - OR NUM3 Pow NUM3 OR
+	ind: 	95.9797	- AM CHI
+	ind: 	95.9797	+ NUM1 GSS
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.0578	% NUM2 CHI
+	ind: 	96.8384	* + AM NUM2 NUM2
+	ind: 	95.5504	+ Pow AM AM NUM2
+	ind: 	96.8384	AM
+	ind: 	95.9797	% TFIDF Pow Log NUM3 OR NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.8384	+ AM NUM2
+	ind: 	97.8142	+ GINI Pow TFIDF IG
+	ind: 	96.331	+ TFIDF IG
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	95.9797	+ NUM1 GSS
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.8384	Pow + AM NUM2 NUM2
+	ind: 	95.9797	% TFIDF Pow Log NUM3 OR NUM2
+	ind: 	96.5262	+ GINI Pow NUM3 OR
+	ind: 	96.37	+ GINI + AM NUM2
+	ind: 	96.0187	Log GINI Log TFIDF GINI
+	ind: 	95.9797	Log NUM3 OR
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.331	% + TFIDF IG + AM NUM2
+	ind: 	96.7603	+ OR AM
+	ind: 	96.4481	+ GINI + NUM1 GSS
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.0578	% NUM2 CHI
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	96.292	Log IG GINI
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.0968	Log * GINI IG Log NUM3 GINI
+	ind: 	96.37	+ GINI + AM NUM2
+	ind: 	95.9797	- AM NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.8384	+ AM NUM2
+	ind: 	95.8626	Log TFIDF IG
+	ind: 	95.6674	Pow OR NUM3
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.0578	* % NUM2 CHI NUM2
+	ind: 	96.8384	- + AM NUM2 OR
+	ind: 	96.7603	* OR AM
+	ind: 	96.8384	- + AM NUM2 NUM2
+	ind: 	95.9407	- GINI + AM NUM2
+	ind: 	96.5262	+ GINI Pow NUM3 OR
+	ind: 	95.5504	Pow AM AM
+	ind: 	96.4091	Log Pow NUM3 OR GINI
+	ind: 	96.0968	Log * GINI IG Log NUM3 GINI
+	ind: 	97.7752	% Pow TFIDF IG + GINI NUM2
+	ind: 	96.1358	% GINI Log TFIDF GINI
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.8384	+ AM NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.331	+ GINI + TFIDF IG
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	95.9797	% GSS OR
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	96.6823	* NUM2 CHI
+	ind: 	96.8384	* + AM NUM2 NUM2
+	ind: 	96.7603	+ OR AM
+	ind: 	96.8384	% AM + AM NUM2
+	ind: 	96.8384	* AM NUM2
+	ind: 	96.8384	Pow AM NUM2
+	rep: 1  -> 1
+	rep: 28 36  -> 0
+	rep: 28 36  -> 2
+	rep: 9 33  -> 3
+	rep: 9 33  -> 4
+	rep: 42 50  -> 5
+	rep: 42 50  -> 6
+	rep: 28 49  -> 7
+	rep: 28 49  -> 8
+	rep: 86 86  -> 9
+	rep: 86 86  -> 10
+	rep: 90 67  -> 11
+	rep: 90 67  -> 12
+	rep: 76 56  -> 13
+	rep: 76 56  -> 14
+	rep: 35 74  -> 15
+	rep: 35 74  -> 16
+	rep: 44 20  -> 17
+	rep: 44 20  -> 18
+	rep: 90 43  -> 19
+	rep: 90 43  -> 20
+	rep: 0 74  -> 21
+	rep: 0 74  -> 22
+	rep: 0 65  -> 23
+	rep: 0 65  -> 24
+	rep: 9 15  -> 25
+	rep: 9 15  -> 26
+	rep: 68 59  -> 27
+	rep: 68 59  -> 28
+	rep: 40 36  -> 29
+	rep: 40 36  -> 30
+	rep: 78 39  -> 31
+	rep: 78 39  -> 32
+	rep: 24 94  -> 33
+	rep: 24 94  -> 34
+	rep: 30 49  -> 35
+	rep: 30 49  -> 36
+	rep: 59 65  -> 37
+	rep: 59 65  -> 38
+	rep: 17  -> 39
+	rep: 29 79  -> 40
+	rep: 29 79  -> 41
+	rep: 24 88  -> 42
+	rep: 24 88  -> 43
+	rep: 95 47  -> 44
+	rep: 95 47  -> 45
+	rep: 91 43  -> 46
+	rep: 91 43  -> 47
+	rep: 24 27  -> 48
+	rep: 24 27  -> 49
+	rep: 16 6  -> 50
+	rep: 16 6  -> 51
+	rep: 10 46  -> 52
+	rep: 10 46  -> 53
+	rep: 85 28  -> 54
+	rep: 85 28  -> 55
+	rep: 95 99  -> 56
+	rep: 95 99  -> 57
+	rep: 95 7  -> 58
+	rep: 95 7  -> 59
+	rep: 89 72  -> 60
+	rep: 89 72  -> 61
+	rep: 97  -> 62
+	rep: 81 68  -> 63
+	rep: 81 68  -> 64
+	rep: 62  -> 65
+	rep: 51 90  -> 66
+	rep: 51 90  -> 67
+	rep: 39 80  -> 68
+	rep: 39 80  -> 69
+	rep: 77 39  -> 70
+	rep: 77 39  -> 71
+	rep: 22 82  -> 72
+	rep: 22 82  -> 73
+	rep: 16 84  -> 74
+	rep: 16 84  -> 75
+	rep: 21  -> 76
+	rep: 85 83  -> 77
+	rep: 85 83  -> 78
+	rep: 16 84  -> 79
+	rep: 16 84  -> 80
+	rep: 26  -> 81
+	rep: 89  -> 82
+	rep: 39 33  -> 83
+	rep: 39 33  -> 84
+	rep: 8 82  -> 85
+	rep: 8 82  -> 86
+	rep: 24  -> 87
+	rep: 16 62  -> 88
+	rep: 16 62  -> 89
+	rep: 88 0  -> 91
+	rep: 88 0  -> 92
+	rep: 19 6  -> 93
+	rep: 19 6  -> 94
+	rep: 87 97  -> 95
+	rep: 87 97  -> 96
+	rep: 90 39  -> 97
+	rep: 90 39  -> 98
+	rep: 78 57  -> 99
+generation 28:
+	ind: 	95.9797	* + GINI + OR NUM3 - AM CHI
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.8384	+ AM NUM2
+	ind: 	95.9797	Log % + OR AM + AM NUM2 GINI
+	ind: 	96.292	Log IG GINI
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	96.8384	AM
+	ind: 	95.0429	% + NUM1 GSS + AM NUM2
+	ind: 	96.5262	+ GINI + OR NUM3
+	ind: 	96.37	Log TFIDF GINI
+	ind: 	96.37	% GINI % GINI Log TFIDF GINI
+	ind: 	96.6823	+ GINI Log NUM3 GINI
+	ind: 	96.8384	Log * GINI IG + TFIDF IG
+	ind: 	96.0187	* Log GINI Log TFIDF GINI NUM2
+	ind: 	96.0578	% NUM2 CHI
+	ind: 	96.4871	% + GINI - OR NUM3 + GINI NUM2
+	ind: 	95.6674	Pow NUM3 OR
+	ind: 	95.9016	IG
+	ind: 	95.6674	Pow TFIDF Pow TFIDF IG
+	ind: 	95.9797	Log NUM3 OR
+	ind: 	96.4091	% TFIDF Pow + GINI + TFIDF IG NUM2
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	96.292	Log IG GINI
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	95.6674	% NUM1 OR
+	ind: 	96.292	Pow Log IG GINI NUM2
+	ind: 	96.331	+ GINI + TFIDF IG
+	ind: 	95.9797	% + AM NUM2 + AM NUM2
+	ind: 	95.9797	* - AM CHI NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.0578	% NUM2 CHI
+	ind: 	96.7603	* OR AM
+	ind: 	96.6823	* NUM2 CHI
+	ind: 	96.8384	% AM NUM2
+	ind: 	95.9797	+ NUM1 GSS
+	ind: 	96.331	+ TFIDF IG
+	ind: 	96.292	Log IG GINI
+	ind: 	96.331	% + TFIDF IG + AM NUM2
+	ind: 	96.6823	+ CHI NUM1
+	ind: 	96.8384	- + AM NUM2 NUM2
+	ind: 	95.9797	Log AM NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.8384	% AM NUM2
+	ind: 	96.331	+ TFIDF IG
+	ind: 	96.8384	* + AM NUM2 NUM2
+	ind: 	95.9797	% TFIDF Pow Log NUM3 OR NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	95.9797	Log NUM3 OR
+	ind: 	96.8384	* AM NUM2
+	ind: 	96.37	Log TFIDF GINI
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	97.8142	+ GINI Pow TFIDF IG
+	ind: 	96.5262	+ GINI + OR NUM3
+	ind: 	97.7752	% % Pow TFIDF IG + GINI NUM2 + AM NUM2
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	96.8384	* + AM NUM2 NUM2
+	ind: 	96.4871	+ GINI - AM NUM2
+	ind: 	96.8384	* + AM NUM2 NUM2
+	ind: 	96.331	% TFIDF IG
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.8384	% AM + AM NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.5262	+ GINI + GINI Pow NUM3 OR
+	ind: 	96.8384	* AM NUM2
+	ind: 	96.331	+ TFIDF IG
+	ind: 	96.37	+ GINI + AM NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.0187	- GINI % NUM2 CHI
+	ind: 	96.0187	- % NUM2 CHI OR
+	ind: 	96.8384	+ AM NUM2
+	ind: 	95.9797	% AM AM
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	97.0336	* GINI IG
+	ind: 	96.331	Log Pow TFIDF IG Log NUM3 GINI
+	ind: 	96.331	- TFIDF IG
+	ind: 	96.1749	% Pow NUM3 OR + GINI NUM2
+	ind: 	96.4091	Log Pow TFIDF IG GINI
+	ind: 	96.5262	+ GINI IG
+	ind: 	96.331	Log Pow TFIDF IG Log NUM3 GINI
+	ind: 	96.0578	* % NUM2 CHI NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	95.9797	Log % + OR AM + AM NUM2 GINI
+	ind: 	96.0578	% NUM2 CHI
+	ind: 	95.5504	Pow AM AM
+	ind: 	96.331	+ TFIDF GINI
+	ind: 	96.8384	% AM NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.331	+ TFIDF IG
+	ind: 	94.4184	% + NUM1 GSS Pow IG NUM1
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.37	% Log TFIDF GINI + GINI NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.8384	+ AM NUM2
+	ind: 	95.0039	% AM Pow TFIDF IG
+	ind: 	96.0578	% NUM2 CHI
+	ind: 	96.331	+ GINI + TFIDF IG
+	ind: 	95.6674	OR
+	rep: 1  -> 1
+	rep: 10 37  -> 2
+	rep: 10 37  -> 3
+	rep: 8 66  -> 4
+	rep: 8 66  -> 5
+	rep: 91 79  -> 6
+	rep: 91 79  -> 7
+	rep: 88 35  -> 8
+	rep: 88 35  -> 9
+	rep: 78  -> 10
+	rep: 45 95  -> 11
+	rep: 45 95  -> 12
+	rep: 2 81  -> 14
+	rep: 2 81  -> 15
+	rep: 66 16  -> 16
+	rep: 66 16  -> 17
+	rep: 3 16  -> 18
+	rep: 3 16  -> 19
+	rep: 38 25  -> 20
+	rep: 38 25  -> 21
+	rep: 95 73  -> 22
+	rep: 95 73  -> 23
+	rep: 18  -> 24
+	rep: 11 76  -> 25
+	rep: 11 76  -> 26
+	rep: 38  -> 27
+	rep: 87 78  -> 28
+	rep: 87 78  -> 29
+	rep: 31 18  -> 30
+	rep: 31 18  -> 31
+	rep: 71  -> 32
+	rep: 47 28  -> 33
+	rep: 47 28  -> 34
+	rep: 63 58  -> 35
+	rep: 63 58  -> 36
+	rep: 38 81  -> 37
+	rep: 38 81  -> 38
+	rep: 50  -> 39
+	rep: 95 72  -> 40
+	rep: 95 72  -> 41
+	rep: 53 82  -> 42
+	rep: 53 82  -> 43
+	rep: 91 48  -> 44
+	rep: 91 48  -> 45
+	rep: 53 7  -> 46
+	rep: 53 7  -> 47
+	rep: 36 17  -> 48
+	rep: 36 17  -> 49
+	rep: 59 44  -> 50
+	rep: 59 44  -> 51
+	rep: 86  -> 52
+	rep: 6  -> 53
+	rep: 40 35  -> 54
+	rep: 40 35  -> 55
+	rep: 80 16  -> 56
+	rep: 80 16  -> 57
+	rep: 54 0  -> 58
+	rep: 54 0  -> 59
+	rep: 54 25  -> 60
+	rep: 54 25  -> 61
+	rep: 76 19  -> 62
+	rep: 76 19  -> 63
+	rep: 33 4  -> 64
+	rep: 33 4  -> 65
+	rep: 61  -> 66
+	rep: 54 73  -> 67
+	rep: 54 73  -> 68
+	rep: 64 35  -> 69
+	rep: 64 35  -> 70
+	rep: 82 14  -> 71
+	rep: 82 14  -> 72
+	rep: 84  -> 73
+	rep: 12 15  -> 74
+	rep: 12 15  -> 75
+	rep: 70  -> 76
+	rep: 94 54  -> 77
+	rep: 94 54  -> 78
+	rep: 15 76  -> 79
+	rep: 15 76  -> 80
+	rep: 32 37  -> 81
+	rep: 32 37  -> 82
+	rep: 54 20  -> 83
+	rep: 54 20  -> 84
+	rep: 58  -> 85
+	rep: 78 69  -> 86
+	rep: 78 69  -> 87
+	rep: 56 71  -> 88
+	rep: 56 71  -> 89
+	rep: 86 0  -> 90
+	rep: 86 0  -> 91
+	rep: 22 15  -> 92
+	rep: 22 15  -> 93
+	rep: 87 46  -> 94
+	rep: 87 46  -> 95
+	rep: 51 49  -> 96
+	rep: 51 49  -> 97
+	rep: 92 31  -> 98
+	rep: 92 31  -> 99
+generation 29:
+	ind: 	96.1749	* % NUM2 % CC NUM3 IG
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	95.9407	% GINI IG
+	ind: 	95.9797	Log % GINI Log TFIDF GINI GINI
+	ind: 	96.331	+ TFIDF IG
+	ind: 	96.5262	+ GINI + OR NUM3
+	ind: 	96.5262	+ GINI IG
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	95.9797	+ NUM1 GSS
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.4091	Log Pow TFIDF IG GINI
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.8384	* + AM NUM2 NUM2
+	ind: 	96.6823	* CHI AM
+	ind: 	96.0578	% NUM2 CHI
+	ind: 	96.8384	* + AM NUM2 NUM2
+	ind: 	95.6674	Pow NUM3 OR
+	ind: 	96.331	+ TFIDF IG
+	ind: 	95.9797	Log % + OR AM Pow NUM3 OR GINI
+	ind: 	96.8384	+ AM NUM2
+	ind: 	95.6674	% NUM1 OR
+	ind: 	96.331	% + TFIDF IG + AM NUM2
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	95.6674	Pow TFIDF Pow TFIDF IG
+	ind: 	96.331	+ GINI - TFIDF IG
+	ind: 	96.331	Log NUM3 GINI
+	ind: 	96.331	% + TFIDF IG + AM NUM2
+	ind: 	96.37	Log * TFIDF IG GINI
+	ind: 	96.8384	% AM NUM2
+	ind: 	96.331	% TFIDF IG
+	ind: 	96.2529	Pow TFIDF % NUM2 CHI
+	ind: 	96.8384	+ AM NUM2
+	ind: 	95.9797	% + AM NUM2 + AM NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.8384	% AM NUM2
+	ind: 	96.37	+ GINI + AM NUM2
+	ind: 	96.2529	% * % NUM2 CHI NUM2 + AM NUM2
+	ind: 	96.331	+ TFIDF IG
+	ind: 	96.37	Log TFIDF GINI
+	ind: 	95.9797	% AM AM
+	ind: 	96.8384	+ AM NUM2
+	ind: 	97.8142	+ GINI Pow TFIDF IG
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	95.9797	Log NUM3 OR
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	96.4871	+ GINI Log AM NUM2
+	ind: 	94.9649	% + NUM1 GSS Pow TFIDF IG
+	ind: 	95.9016	IG
+	ind: 	96.331	+ TFIDF IG
+	ind: 	96.331	* + TFIDF IG NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.331	+ TFIDF GINI
+	ind: 	96.8384	AM
+	ind: 	95.9797	+ NUM1 GSS
+	ind: 	96.8384	- + AM NUM2 NUM2
+	ind: 	95.9016	Log Pow NUM3 OR Log NUM3 GINI
+	ind: 	96.331	- TFIDF IG
+	ind: 	95.6674	+ OR NUM3
+	ind: 	95.9797	* + GINI + GINI + OR NUM3 - AM CHI
+	ind: 	96.5262	+ GINI % NUM1 OR
+	ind: 	95.6674	* OR NUM3
+	ind: 	95.9797	Log NUM3 NUM3
+	ind: 	96.331	- TFIDF IG
+	ind: 	96.292	Log IG GINI
+	ind: 	96.6823	* NUM2 CHI
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	96.5262	+ GINI + OR NUM3
+	ind: 	95.9797	+ NUM1 GSS
+	ind: 	96.5652	+ GINI + GINI - NUM3 OR
+	ind: 	96.0578	% NUM2 CHI
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.0578	% NUM2 CHI
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	96.9555	% + GINI - OR NUM3 Log * GINI IG + TFIDF IG
+	ind: 	96.0187	- % NUM2 CHI OR
+	ind: 	95.6674	+ OR NUM3
+	ind: 	97.8142	+ GINI Pow TFIDF IG
+	ind: 	96.37	% - TFIDF IG + GINI NUM2
+	ind: 	96.4871	+ GINI - OR NUM3
+	ind: 	96.292	Log IG GINI
+	ind: 	96.7603	* OR AM
+	ind: 	96.4871	+ GINI % TFIDF Pow + GINI + TFIDF IG NUM2
+	ind: 	95.6674	+ OR NUM3
+	ind: 	96.4871	+ GINI - AM NUM2
+	ind: 	96.0187	- GINI % NUM2 CHI
+	ind: 	96.4091	Log Pow TFIDF IG GINI
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	95.9797	* + GINI + OR NUM3 - AM CHI
+	ind: 	96.331	+ TFIDF GINI
+	ind: 	96.4871	% + GINI - OR NUM3 + GINI NUM2
+	ind: 	96.8384	* AM NUM2
+	ind: 	95.9797	Pow Log NUM3 OR NUM2
+	ind: 	96.331	% TFIDF % AM NUM2
+	ind: 	96.8384	* AM NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.0578	% NUM2 CHI
+	ind: 	96.8384	+ AM NUM2
+	rep: 1  -> 1
+	rep: 89 29  -> 0
+	rep: 89 29  -> 2
+	rep: 22 18  -> 3
+	rep: 22 18  -> 4
+	rep: 42 87  -> 6
+	rep: 42 87  -> 7
+	rep: 43 84  -> 8
+	rep: 43 84  -> 9
+	rep: 66 32  -> 10
+	rep: 66 32  -> 11
+	rep: 45 24  -> 12
+	rep: 45 24  -> 13
+	rep: 67 71  -> 14
+	rep: 67 71  -> 15
+	rep: 99 69  -> 16
+	rep: 99 69  -> 17
+	rep: 4 71  -> 18
+	rep: 4 71  -> 19
+	rep: 46 83  -> 20
+	rep: 46 83  -> 21
+	rep: 45 20  -> 22
+	rep: 45 20  -> 23
+	rep: 23 3  -> 24
+	rep: 23 3  -> 25
+	rep: 66 4  -> 26
+	rep: 66 4  -> 27
+	rep: 34 92  -> 28
+	rep: 34 92  -> 29
+	rep: 53 44  -> 30
+	rep: 53 44  -> 31
+	rep: 32  -> 32
+	rep: 11 79  -> 33
+	rep: 11 79  -> 34
+	rep: 41 80  -> 35
+	rep: 41 80  -> 36
+	rep: 65  -> 37
+	rep: 79 71  -> 38
+	rep: 79 71  -> 39
+	rep: 27 24  -> 41
+	rep: 27 24  -> 42
+	rep: 67  -> 43
+	rep: 40 61  -> 44
+	rep: 40 61  -> 45
+	rep: 62 84  -> 46
+	rep: 62 84  -> 47
+	rep: 74 98  -> 48
+	rep: 74 98  -> 49
+	rep: 1  -> 50
+	rep: 67 61  -> 51
+	rep: 67 61  -> 52
+	rep: 83 3  -> 53
+	rep: 83 3  -> 54
+	rep: 13 0  -> 55
+	rep: 13 0  -> 56
+	rep: 57  -> 57
+	rep: 6 18  -> 58
+	rep: 6 18  -> 59
+	rep: 99 86  -> 60
+	rep: 99 86  -> 61
+	rep: 32 56  -> 62
+	rep: 32 56  -> 63
+	rep: 32  -> 64
+	rep: 93 64  -> 65
+	rep: 93 64  -> 66
+	rep: 70 94  -> 67
+	rep: 70 94  -> 68
+	rep: 76 90  -> 69
+	rep: 76 90  -> 70
+	rep: 80 44  -> 71
+	rep: 80 44  -> 72
+	rep: 78  -> 73
+	rep: 39 61  -> 74
+	rep: 39 61  -> 75
+	rep: 36 38  -> 76
+	rep: 36 38  -> 77
+	rep: 23 67  -> 78
+	rep: 23 67  -> 79
+	rep: 37 33  -> 80
+	rep: 37 33  -> 81
+	rep: 42 74  -> 83
+	rep: 42 74  -> 84
+	rep: 32 92  -> 85
+	rep: 32 92  -> 86
+	rep: 39 26  -> 87
+	rep: 39 26  -> 88
+	rep: 1  -> 89
+	rep: 41 96  -> 90
+	rep: 41 96  -> 91
+	rep: 32 64  -> 92
+	rep: 32 64  -> 93
+	rep: 53 85  -> 94
+	rep: 53 85  -> 95
+	rep: 36 61  -> 96
+	rep: 36 61  -> 97
+	rep: 66 27  -> 98
+	rep: 66 27  -> 99
+generation 30:
+	ind: 	96.8384	% AM NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	95.9797	Log % + OR AM Pow NUM3 OR GINI
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	96.37	+ AM Pow NUM3 GINI
+	ind: 	97.8142	+ GINI + Pow TFIDF IG GINI
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	95.6674	+ OR NUM3
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.8384	+ AM NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.37	Pow TFIDF Pow AM NUM2
+	ind: 	96.0578	% NUM2 CHI
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	95.9797	+ NUM1 GSS
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.6823	Pow NUM2 CHI
+	ind: 	96.331	+ TFIDF IG
+	ind: 	96.4871	+ GINI % TFIDF Pow + GINI + TFIDF IG NUM2
+	ind: 	96.4871	+ GINI Log AM NUM2
+	ind: 	95.6674	% NUM1 OR
+	ind: 	96.8384	Pow AM NUM2
+	ind: 	96.1358	% GINI Log TFIDF GINI
+	ind: 	96.37	Log + AM NUM2 GINI
+	ind: 	96.331	+ TFIDF IG
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	95.9797	- OR NUM3
+	ind: 	97.7752	% + GINI Pow TFIDF IG + GINI NUM2
+	ind: 	95.9797	Log NUM3 OR
+	ind: 	96.8384	AM
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.37	% - TFIDF IG + GINI NUM2
+	ind: 	96.8384	* AM NUM2
+	ind: 	96.4871	+ GINI - OR NUM3
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.6823	* NUM2 CHI
+	ind: 	95.5894	% % NUM2 CHI + GINI NUM2
+	ind: 	96.331	- TFIDF IG
+	ind: 	94.4184	% NUM2 IG
+	ind: 	94.4184	% + TFIDF IG Pow TFIDF IG
+	ind: 	96.331	Pow TFIDF + AM NUM2
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	95.6674	* OR NUM3
+	ind: 	95.9797	% AM AM
+	ind: 	95.6674	+ OR NUM3
+	ind: 	95.9797	Log NUM3 NUM3
+	ind: 	96.6823	+ NUM2 CHI
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	95.6674	* OR NUM3
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	96.1749	+ GINI % TFIDF Pow + GINI Log TFIDF GINI NUM2
+	ind: 	95.7845	Log % GINI + TFIDF IG GINI
+	ind: 	96.1749	* % NUM2 % CC NUM3 IG
+	ind: 	95.9797	Log CHI AM
+	ind: 	96.331	- TFIDF IG
+	ind: 	95.9797	Log % + OR AM Log NUM3 OR GINI
+	ind: 	96.5262	+ GINI IG
+	ind: 	96.0187	- GINI % NUM2 CHI
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.331	Log NUM3 GINI
+	ind: 	95.0429	Log Pow NUM3 OR + AM NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.292	Log IG GINI
+	ind: 	96.8384	* AM NUM2
+	ind: 	95.9797	Log NUM3 OR
+	ind: 	96.6042	Pow + GINI + GINI Log NUM3 OR NUM2
+	ind: 	95.9797	* + GINI + OR NUM3 - AM CHI
+	ind: 	96.0187	- % NUM2 CHI OR
+	ind: 	96.4871	+ GINI Log NUM3 OR
+	ind: 	95.9797	- OR NUM3
+	ind: 	97.8142	+ GINI Pow TFIDF IG
+	ind: 	95.6674	* OR NUM3
+	ind: 	96.37	Log TFIDF GINI
+	ind: 	96.331	+ TFIDF IG
+	ind: 	96.37	+ GINI + AM NUM2
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.2529	% * % NUM2 CHI NUM2 + AM NUM2
+	ind: 	95.9797	% + AM NUM2 + AM NUM2
+	ind: 	96.8384	+ GSS AM
+	ind: 	96.4481	+ GINI + GINI NUM2
+	ind: 	96.37	* TFIDF IG
+	ind: 	96.4481	+ GINI NUM2
+	ind: 	96.2529	% + GINI - OR NUM3 + AM NUM2
+	ind: 	96.331	Log NUM3 GINI
+	ind: 	96.0578	* TFIDF GINI
+	ind: 	97.8142	Pow TFIDF IG
+	ind: 	96.8384	* AM NUM2
+	ind: 	96.8384	% AM NUM2
+	ind: 	96.292	Log IG GINI
+	ind: 	96.8384	+ AM NUM2
+	ind: 	96.4871	+ GINI - AM NUM2
+	ind: 	96.8384	AM
+	ind: 	95.6674	* OR NUM3
+	ind: 	96.37	+ GINI + AM NUM2
+	ind: 	96.8384	+ AM NUM2
+	ind: 	94.4184	% + TFIDF IG Pow TFIDF IG
+	rep: 1  -> 1
+	rep: 0 90  -> 0
+	rep: 0 90  -> 2
+	rep: 88 72  -> 3
+	rep: 88 72  -> 4
+	rep: 75 8  -> 5
+	rep: 75 8  -> 6
+	rep: 66 56  -> 7
+	rep: 66 56  -> 8
+	rep: 94 26  -> 9
+	rep: 94 26  -> 10
+	rep: 43 65  -> 11
+	rep: 43 65  -> 12
+	rep: 56 45  -> 13
+	rep: 56 45  -> 14
+	rep: 5 99  -> 15
+	rep: 5 99  -> 16
+	rep: 12 84  -> 17
+	rep: 12 84  -> 18
+	rep: 11  -> 19
+	rep: 25 16  -> 20
+	rep: 25 16  -> 21
+	rep: 0 81  -> 22
+	rep: 0 81  -> 23
+	rep: 52 80  -> 24
+	rep: 52 80  -> 25
+	rep: 10 98  -> 26
+	rep: 10 98  -> 27
+	rep: 7 30  -> 28
+	rep: 7 30  -> 29
+	rep: 9 25  -> 30
+	rep: 9 25  -> 31
+	rep: 48 49  -> 32
+	rep: 48 49  -> 33
+	rep: 10 56  -> 34
+	rep: 10 56  -> 35
+	rep: 57 47  -> 36
+	rep: 57 47  -> 37
+	rep: 12 69  -> 38
+	rep: 12 69  -> 39
+	rep: 82 10  -> 40
+	rep: 82 10  -> 41
+	rep: 39 72  -> 42
+	rep: 39 72  -> 43
+	rep: 50 5  -> 44
+	rep: 50 5  -> 45
+	rep: 89 41  -> 46
+	rep: 89 41  -> 47
+	rep: 12 29  -> 48
+	rep: 12 29  -> 49
+	rep: 49 60  -> 50
+	rep: 49 60  -> 51
+	rep: 37 71  -> 52
+	rep: 37 71  -> 53
+	rep: 6 72  -> 54
+	rep: 6 72  -> 55
+	rep: 5  -> 56
+	rep: 50 10  -> 57
+	rep: 50 10  -> 58
+	rep: 78  -> 59
+	rep: 75 88  -> 60
+	rep: 75 88  -> 61
+	rep: 87 80  -> 62
+	rep: 87 80  -> 63
+	rep: 90 22  -> 64
+	rep: 90 22  -> 65
+	rep: 89 68  -> 66
+	rep: 89 68  -> 67
+	rep: 17 93  -> 68
+	rep: 17 93  -> 69
+	rep: 5 69  -> 70
+	rep: 5 69  -> 71
+	rep: 90 22  -> 72
+	rep: 90 22  -> 73
+	rep: 9 85  -> 74
+	rep: 9 85  -> 75
+	rep: 89 18  -> 76
+	rep: 89 18  -> 77
+	rep: 15 56  -> 78
+	rep: 15 56  -> 79
+	rep: 18 56  -> 80
+	rep: 18 56  -> 81
+	rep: 76 22  -> 82
+	rep: 76 22  -> 83
+	rep: 35 26  -> 84
+	rep: 35 26  -> 85
+	rep: 0 41  -> 86
+	rep: 0 41  -> 87
+	rep: 98 80  -> 88
+	rep: 98 80  -> 89
+	rep: 77 47  -> 90
+	rep: 77 47  -> 91
+	rep: 76 88  -> 92
+	rep: 76 88  -> 93
+	rep: 77 38  -> 94
+	rep: 77 38  -> 95
+	rep: 79  -> 96
+	rep: 4  -> 97
+	rep: 97 53  -> 98
+	rep: 97 53  -> 99
