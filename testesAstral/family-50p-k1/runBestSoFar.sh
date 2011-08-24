@@ -1,5 +1,5 @@
 
-for f in 0 1 2 3 4; do
+for f in 3 4; do
 
 
 cd fold${f}
