@@ -158,32 +158,37 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
             GraphInterface *igraph = classGraphIt->second;
 
             igraph->calculateHubScore();
-            igraph->calculateAuthority();
-            igraph->calculateEigenVectorCentrality();
+            //igraph->calculateAuthority();
+            //igraph->calculateEigenVectorCentrality();
 
             for(ExampleIterator it = test.getBegin(); it != test.getEnd(); it++){
                 Example e = *it;
 
+
+
+//usando gambiarra para astra andar rapido
+//+ + BibCoupling DiceSimilarity - Strength HubScore
+
                 //				cout<<"Buscando por "<< e.getId() << " class = "<< classGraphIt->first;
                 // [GId] [ExampleId] [ClassId]
                 string idClassIdx = getCompIndex(e.getId(), classGraphIt -> first);
-                idClassNeighborhoodSize1[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize1(e.getId());
-                idClassNeighborhoodSize2[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize2(e.getId());
+                //idClassNeighborhoodSize1[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize1(e.getId());
+                //idClassNeighborhoodSize2[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize2(e.getId());
                 idClassNeighborhoodSize3[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize3(e.getId());
                 idClassHubScore[graphIt->first][idClassIdx] = igraph->getHubScore(e.getId());
-                idClassAuthority[graphIt->first][idClassIdx] = igraph->getAuthority(e.getId());
-                idClassEigenVectorCentrality[graphIt->first][idClassIdx] = igraph->getEigenVectorCentrality(e.getId());
-                idClassCloseness[graphIt->first][idClassIdx] = igraph->getCloseness(e.getId());
+                //idClassAuthority[graphIt->first][idClassIdx] = igraph->getAuthority(e.getId());
+                //idClassEigenVectorCentrality[graphIt->first][idClassIdx] = igraph->getEigenVectorCentrality(e.getId());
+                //idClassCloseness[graphIt->first][idClassIdx] = igraph->getCloseness(e.getId());
                 idClassStrength[graphIt->first][idClassIdx] = igraph->getStrength(e.getId());
-                idClassConstraint[graphIt->first][idClassIdx] = igraph->getConstraint(e.getId());
-                idClassPageRank[graphIt->first][idClassIdx] = igraph->getPageRank(e.getId());
-                idClassBetweenness[graphIt->first][idClassIdx] = igraph->getBetweenness(e.getId());
+                //idClassConstraint[graphIt->first][idClassIdx] = igraph->getConstraint(e.getId());
+                //idClassPageRank[graphIt->first][idClassIdx] = igraph->getPageRank(e.getId());
+                //idClassBetweenness[graphIt->first][idClassIdx] = igraph->getBetweenness(e.getId());
 
                 idClassBibCoupling[graphIt->first][idClassIdx] = igraph->getBibCoupling(e.getId());
-                idClassCoCitation[graphIt->first][idClassIdx] = igraph->getCoCitation(e.getId());
-                idClassJaccardSimilarity[graphIt->first][idClassIdx] = igraph->getJaccardSimilarity(e.getId());
+                //idClassCoCitation[graphIt->first][idClassIdx] = igraph->getCoCitation(e.getId());
+                //idClassJaccardSimilarity[graphIt->first][idClassIdx] = igraph->getJaccardSimilarity(e.getId());
                 idClassDiceSimilarity[graphIt->first][idClassIdx] = igraph->getDiceSimilarity(e.getId());
-                idClassInverseLogSimilarity[graphIt->first][idClassIdx] = igraph->getInverseLogSimilarity(e.getId());
+                //idClassInverseLogSimilarity[graphIt->first][idClassIdx] = igraph->getInverseLogSimilarity(e.getId());
                 //Nao descomentar				idClassAvgNearstNeighborDegree[graphIt->first][idClassIdx] = igraph->getAvgNearstNeighborDegree(e.getId());
                 
                 
