@@ -53,15 +53,41 @@ Entretanto, três importantes componentes devem ser instanciados dependendo do c
 \item Os operadores genéticos, descritos na Seção~\ref{subsec::operadoresgeneticos},
 \item A função de \textit{fitness} detalhada na Seção~\ref{subsec::fitness}.
 \end{enumerate}
-Além disso, pelo fato de termos uma vasta gama de terminais e queremos explicar um por um deles, separamos as Seções~\ref{sec::pg_cred_baseada_conteudo} e \ref{sec::pg_cred_baseada_grafos} para explicarmos com detalhes as métricas baseadas em atributos e em relacionamentos, respectivamente.
+>> RETIRAR?! Além disso, pelo fato de termos uma vasta gama de terminais e queremos explicar um por um deles, separamos as Seções~\ref{sec::pg_cred_baseada_conteudo} e \ref{sec::pg_cred_baseada_grafos} para explicarmos com detalhes as métricas baseadas em atributos e em relacionamentos, respectivamente.
 
 \section{Indivíduos}
 \label{subsec::individuos}
 
-Uma parte essencial da construção de um \textsc{PG} é definir os indivíduos que compõem a população do mesmo.
-Para isso, temos que definir três aspectos primordiais: o que um indivíduo representa, quais são suas funções internas e quais são os seus terminais. Independente de quais são as funções internas e terminais escolhidos, o propósito de um indivíduo no \textsc{PG} modelado é representar uma função de credibilidade que, a não ser que seja dito o contrário, relaciona um exemplo de teste, seja por seus atributos ou relacionamentos, a uma classe, retornando um valor real. 
+Uma parte essencial da construção de um \textsc{PG} é definir a representação dos indivíduos que compõem a população.
+Para isso, temos que focar em três aspectos primordiais: o que um indivíduo representa, quais são suas funções e quais são os seus terminais. 
+%Independente de quais são as funções internas e terminais escolhidos, o propósito de um indivíduo no \textsc{PG} modelado é representar uma função de credibilidade que, a não ser que seja dito o contrário, relaciona um exemplo de teste, seja por seus atributos ou relacionamentos, a uma classe, retornando um valor real. 
+ 
+A representação de um indivíduo é dependente das características do problema que estamos lidando. 
+Portanto, o primeiro passo deve ser estudar a base de dados do problema para saber se podemos utilizar a credibilidade de atributos e/ou de relacionamentos e, se usarmos a credibilidade de relacionamentos, quantos e quais relacionamentos podem ser explorados.
+Por exemplo, em uma base de dados de documentos, os termos dos documentos seriam usados para criarmos uma função de credibilidade de atributos e os relacionamentos de autoria e/ou citação seriam usados para criarmos funções de credibilidade de relacionamentos. Entretanto, se estivermos tentando resolver um problema em que não existem informações para inferirmos relacionamentos, então usaremos somente os atributos. O caso contrário também é possível.
 
-Como já discutido nas Seções~\ref{subsubsec::nbcredatributos} e \ref{subsubsec::nbcredgrafos} para o \textit{Naïve Bayes} e Seções~\ref{subsubsec::knncredatributos} e \ref{subsubsec::knncredgrafos} para o \textsc{KNN}, modelamos duas funções de credibilidade diferentes, uma baseada nos atributos dos exemplos e outra baseada nos relacionamentos dos mesmos.
+Como inicialmente discutido no Capitulo~\ref{cap::metodo}, criamos uma função de credibilidade referente a cada dimensão que trabalhamos, ou seja, uma função para os atributos e uma para cada relacionamento utilizado. Dessa forma, um indivíduo é composto por um \textbf{conjunto} de funções de credibilidade que são usadas para melhorarmos os algoritmos de classificação empregados.
+%Na Figura~\ref{fig::gps1} temos mostrados alguns exemplos de funções de credibilidade para atributos e
+As Figuras~\ref{fig::gps1} e~\ref{fig::gps2} mostram cinco exemplos de funções de credibilidade que podem ser geradas pelo \textsc{PG}. As três contidas na primeira figura ilustram funções de credibilidade baseadas em atributos e as demais são baseadas em relacionamentos entre os exemplos\footnote{As cores são usadas apenas para auxiliar na explicação das operações genéticas de mutação e cruzamento na Seção~\ref{subsec::operadoresgeneticos}}.
+Exemplificando, se o problema apresentar a possibilidade de explorarmos a credibilidade de atributos e de dois relacionamentos, então um possível indivíduo do \textsc{PG} poderia ser formado por uma das funções de credibilidade mostradas na figura~\ref{fig::gps1} e das duas funções da figura~\ref{fig::gps2}, uma para cada relacionamento.
+
+%e~\ref{fig::gps2}
+%Nesse trabalho, um indivíduo é modelado para representar funções de credibilidade para os relacionamentos e atributos, como discutido nas Seções~\ref{subsubsec::nbcredatributos} e \ref{subsubsec::nbcredgrafos} para o \textit{Naïve Bayes} e Seções~\ref{subsubsec::knncredatributos} e \ref{subsubsec::knncredgrafos} para o \textsc{KNN}. 
+
+Como já mostrado nas Figuras~\ref{fig::gps1} e \ref{fig::gps2}, as funções de credibilidade apresentam a estrutura de árvore, comuns em trabalhos com \textsc{PG} (\cite{Koza92}). 
+Árvores, em suma, são estruturas de dados semelhantes aos grafos, que nesse trabalho são usados para representar os relacionamentos entre os exemplos.
+Entretanto, as árvores não podem conter ciclos, ou seja, ao se percorrer as arestas a partir de um determinado vértice, não podemos voltar àquele vértice.
+O nome ``árvore'' vem do fato que essa estrutura de dados se assemelhar a uma árvore, encontrada em qualquer jardim, quando vista de cabeça para baixo. 
+Mesmo não sendo uma analogia tão boa, essa estrutura de dados é muito comum na área de Ciência da Computação, sendo muito boa para a representação de funções, entre outras tarefas.
+Por questão de espaço e para não tornar esse texto enfadonho, não iremos entrar em detalhes de como podemos ler as funções representadas nas árvores. Recomendamos a leitura do Capítulo 2.3 de~\cite{Knuth97}.
+
+CONTINUAR!!!!
+
+%Uma das característica que distingue uma árvore de um grafo é a abstinência de ciclos nas árvores, 
+%o que torna possível 
+%ou seja, se seguirmos as arestas entre os vértices em somente uma direção, nunca repetiremos um vértice. 
+
+%Modelamos duas funções de credibilidade diferentes, uma baseada nos atributos dos exemplos e outra baseada nos relacionamentos dos mesmos.
 Ambas, entretanto, compartilham o mesmo conjunto de funções internas, porém os terminais utilizados são diferentes para cada caso. As funções internas são utilizadas para que haja uma interação entre os terminais.
 Como usual para um \textsc{PG} que evolui uma função matemática numérica, as funções internas do \textsc{PG} consistem de funções matemáticas conhecidas, como a multiplicação, divisão, soma, entre outros que estão mostradas na Tabela~\ref{table::funcoespg}. 
 Observe que modificamos as funções de subtração, divisão e logaritmo.
@@ -85,34 +111,37 @@ Tanto a divisão por zero, quanto o logaritmo de números negativos não são ma
 \label{table::funcoespg}
 \end{table}
 
-Pelo fato de termos um grande número de terminais definidos, reservamos as Seções~\ref{sec::pg_cred_baseada_conteudo} e~\ref{sec::pg_cred_baseada_grafos} exclusivamente para descrevermos aqueles relacionados ao atributos dos exemplos e em mensurar os relacionamentos entre os exemplos, respectivamente. Na Figuras~\ref{fig::gps1} e~\ref{fig::gps2} temos ao todo cinco exemplos de funções de credibilidades que poderiam ser geradas pelo \textsc{PG}, as três da primeira figura ilustram funções de credibilidade baseadas em atributos e as demais são baseadas em relacionamentos entre os exemplos. As cores nas mesmas são usadas apenas para auxiliar na explicação das operações genéticas de mutação e cruzamento na seção a seguir.
+Pelo fato de termos um grande número de terminais definidos, reservamos as Seções~\ref{sec::pg_cred_baseada_conteudo} e~\ref{sec::pg_cred_baseada_grafos} exclusivamente para descrevermos aqueles relacionados ao atributos dos exemplos e em mensurar os relacionamentos entre os exemplos, respectivamente. 
+Na Figuras~\ref{fig::gps1} e~\ref{fig::gps2} temos ao todo cinco exemplos de funções de credibilidades que poderiam ser geradas pelo \textsc{PG}, as três da primeira figura ilustram funções de credibilidade baseadas em atributos e as demais são baseadas em relacionamentos entre os exemplos. As cores nas mesmas são usadas apenas para auxiliar na explicação das operações genéticas de mutação e cruzamento na seção a seguir.
 
 \begin{figure}[ht]
 \centering
-\subfloat[Individuo 1:\newline \hspace*{6mm}$\textsc{GINI}(x)^{\textsc{CC}(x,c)}$]{
+%\subfloat[Individuo 1:\newline \hspace*{6mm}$\textsc{GINI}(x)^{\textsc{CC}(x,c)}$]{
+\subfloat[Função 1:\newline \hspace*{6mm}$\textsc{GINI}(x)^{\textsc{CC}(x,c)}$]{
     \includegraphics[width=0.25\textwidth]{figures/gp1c.png}
 }
-\subfloat[Individuo 2:\newline \hspace*{4mm} $(\textsc{AM}(x,c) + \textsc{P}(x|c)) \% (\textsc{IG}(x,c))$]{
+\subfloat[Função 2:\newline \hspace*{4mm} $(\textsc{AM}(x,c) + \textsc{P}(x|c)) \% (\textsc{IG}(x,c))$]{
     \includegraphics[width=0.33\textwidth]{figures/gp2c.png}
 }
-\subfloat[Individual 3:\newline \hspace*{4mm} $\textsc{GINI}(x)^{(\textsc{AM}(x,c)\ + \ \textsc{P}(x|c))}$]{
+\subfloat[Função 3:\newline \hspace*{4mm} $\textsc{GINI}(x)^{(\textsc{AM}(x,c)\ + \ \textsc{P}(x|c))}$]{
     \includegraphics[width=0.33\textwidth]{figures/gp3c.png}
 }
-\caption{Três possíveis indivíduos gerados para representar uma função de credibilidade de atributos.}
+\caption{Três possíveis funções de credibilidade de atributos.}
 \label{fig::gps1}
 \end{figure}
 
 
 \begin{figure}[ht]
 \centering
-\subfloat[Individuo 1:\newline \hspace*{6mm}$\textsc{Bib}(X,c) - {\textsc{Hub}(x,c)}$]{
+\subfloat[Função 1:\newline \hspace*{6mm}$\textsc{Bib}(X,c) - {\textsc{Hub}(x,c)}$]{
 %\subfloat[Individuo 1:$\textsc{Bib}(X,c) - {\textsc{Hub}(x,c)}$]{
     \includegraphics[width=0.30\textwidth]{figures/gp1c_grafos.png}
 }
-\subfloat[Individuo 2:\newline \hspace*{5mm} $\textsc{Bib}(X,c) - \textsc{PR}(X,c) $]{
+\subfloat[Função 2:\newline \hspace*{5mm} $\textsc{Bib}(X,c) - \textsc{PR}(X,c) $]{
     \includegraphics[width=0.30\textwidth]{figures/gp2c_grafos.png}
 }
-\caption{Dois possíveis indivíduos gerados para representar uma função de credibilidade para relacionamentos.}
+%\caption{Dois possíveis indivíduos gerados para representar uma função de credibilidade para relacionamentos.}
+\caption{Duas possíveis funções de credibilidade para relacionamentos.}
 \label{fig::gps2}
 \end{figure}
 
@@ -148,10 +177,12 @@ Na Figura~\ref{fig::gps2}, vemos uma mutação ocorrendo no indivíduo 1, gerand
 
 Necessitamos de um modo de avaliar os indivíduos da população a fim de sabermos quais são aqueles mais aptos a sobreviverem para a próxima geração. 
 Para tanto, utilizamos a chamada função de \textit{fitness}. 
+
 Em nosso caso, estamos criando funções de credibilidade que serão usadas para que um classificador possa criar modelos de classificação mais aprimorados.
-Dessa forma, nossa função de \textit{fitness} tem que estar atrelada a uma forma de avaliar o quanto o classificador melhorou ou piorou ao incorporarmos a ele um função de crebilidade gerada.
+Dessa forma, nossa função de \textit{fitness} tem que estar atrelada a uma forma de avaliar o quanto o classificador melhorou ou piorou ao incorporarmos a ele uma função de crebilidade gerada.
 Na literatura, uma métrica muito utilizada para avaliação do desempenho de classificadores é a $F_1$ e, por isso, decidimos por utilizá-la.
-Mas antes de falarmos sobre a $F_1$, vamos ver o funcionamento de toda a função de \textit{fitness}, descrita no Algoritmo~\ref{alg::fitness}. 
+
+Antes de falarmos sobre a $F_1$, vamos ver o funcionamento da função de \textit{fitness}, descrita no Algoritmo~\ref{alg::fitness}. 
 Nele, descrevemos o processo usado para calcular a \textit{fitness} de um individuo levando em consideração funções evoluídas tanto para atributos quanto para relacionamentos.
 
 \algrenewcommand\algorithmicforall{\textbf{Para Cada}}
@@ -164,7 +195,7 @@ Nele, descrevemos o processo usado para calcular a \textit{fitness} de um indivi
 \centering
 \caption{Calula Fitness.}
 \label{alg::fitness}
-\begin{algorithmic}[h]
+\begin{algorithmic}[!h]
 {
 %\scriptsize
 \Function{CalculaFitness}{$individuo$}
