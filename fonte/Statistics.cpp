@@ -295,7 +295,7 @@ double Statistics::getGraphValue(int metric, int graph, string id, string classI
             break; 
 
     }
-    cout<<"returned = " << returnValue<<endl;
+//    cout<<"returned = " << returnValue<<endl;
     return returnValue;
 }
 
