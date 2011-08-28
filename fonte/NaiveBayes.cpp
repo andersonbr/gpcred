@@ -20,7 +20,8 @@ double NaiveBayes::getContentCredibility(string term, string docClass){
 	if(contentCredibility.size() == 0) return 1.0;
 	
     string idx = getCompIndex(term,docClass);
-    if(contentCredibility.find(idx) != contentCredibility.end()) return contentCredibility[idx] * Normalizer;
+    if(contentCredibility.find(idx) != contentCredibility.end()) return  0.5 +  contentCredibility[idx] * Normalizer;
+    //if(contentCredibility.find(idx) != contentCredibility.end()) return  contentCredibility[idx] * Normalizer;
 
 	return 1.0;
 }

@@ -172,8 +172,8 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
                 //				cout<<"Buscando por "<< e.getId() << " class = "<< classGraphIt->first;
                 // [GId] [ExampleId] [ClassId]
                 string idClassIdx = getCompIndex(e.getId(), classGraphIt -> first);
-                //idClassNeighborhoodSize1[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize1(e.getId());
-                //idClassNeighborhoodSize2[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize2(e.getId());
+                idClassNeighborhoodSize1[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize1(e.getId());
+                idClassNeighborhoodSize2[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize2(e.getId());
                 idClassNeighborhoodSize3[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize3(e.getId());
                 idClassHubScore[graphIt->first][idClassIdx] = igraph->getHubScore(e.getId());
                 //idClassAuthority[graphIt->first][idClassIdx] = igraph->getAuthority(e.getId());
@@ -185,10 +185,10 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
                 //idClassBetweenness[graphIt->first][idClassIdx] = igraph->getBetweenness(e.getId());
 
                 idClassBibCoupling[graphIt->first][idClassIdx] = igraph->getBibCoupling(e.getId());
-                //idClassCoCitation[graphIt->first][idClassIdx] = igraph->getCoCitation(e.getId());
-                //idClassJaccardSimilarity[graphIt->first][idClassIdx] = igraph->getJaccardSimilarity(e.getId());
+                idClassCoCitation[graphIt->first][idClassIdx] = igraph->getCoCitation(e.getId());
+                idClassJaccardSimilarity[graphIt->first][idClassIdx] = igraph->getJaccardSimilarity(e.getId());
                 idClassDiceSimilarity[graphIt->first][idClassIdx] = igraph->getDiceSimilarity(e.getId());
-                //idClassInverseLogSimilarity[graphIt->first][idClassIdx] = igraph->getInverseLogSimilarity(e.getId());
+                idClassInverseLogSimilarity[graphIt->first][idClassIdx] = igraph->getInverseLogSimilarity(e.getId());
                 //Nao descomentar				idClassAvgNearstNeighborDegree[graphIt->first][idClassIdx] = igraph->getAvgNearstNeighborDegree(e.getId());
                 
                 
@@ -227,16 +227,21 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
 double Statistics::getGraphValue(int metric, int graph, string id, string classId){
     
     double returnValue = 0.0;
+    
 //    cout<<"metric =  " << metric << "  graph = " << graph << " id =  " <<  id << "  classId " << classId <<endl;
 
-    if(iGraphs.count(graph) == 0) //we dont have this graph
+    if(iGraphs.count(graph) == 0){ //we dont have this graph
+//        cout<<"graph not found!"<<endl;
         return returnValue;
 
-    if(iGraphs[graph].count(id) == 0)
+    }
+    if(iGraphs[graph].count(classId) == 0){
+//        cout<<"class not found!"<<endl;
         return returnValue;
 
+    }
     switch(metric){
-    
+
         case NEIGHBORHOOD1: 
             returnValue = (iGraphs[graph][classId])->getNeighborhoodSize1(id);
             break; 
@@ -290,6 +295,7 @@ double Statistics::getGraphValue(int metric, int graph, string id, string classI
             break; 
 
     }
+    cout<<"returned = " << returnValue<<endl;
     return returnValue;
 }
 
