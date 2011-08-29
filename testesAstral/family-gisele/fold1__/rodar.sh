@@ -1,0 +1,1 @@
+python runme.py ./gp-cred -treino ../../../fonte/enzymes/astral/family10f/fold1/_treino -validacao ../../../fonte/enzymes/astral/family10f/fold1/_validacao -teste ../../../fonte/enzymes/astral/family10f/fold1/_teste -brunoro fold1_.gpvis -knn 1 -num 15 -g 1 ../../../fonte/enzymes/astral/family10f/../outfile.astral.blast.ok4 -load last.pop
