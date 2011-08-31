@@ -7,6 +7,7 @@ t0 = time.time()
 for p in sys.argv[1:]:
     cmd += " " + p
 
+print cmd
 os.system(cmd)
 tf = time.time()
 
