@@ -284,7 +284,7 @@ void NaiveBayes::test(Examples& exs){
 
             vector<double> graphsCreds(graphsCredibility.size());
             for(unsigned int g = 0 ; g < graphsCredibility.size(); g++){
-                graphsCreds[g] = 0.5 + getGraphCredibility(g,id,*classIt);
+                graphsCreds[g] = 0.5 + getGraphCredibility(g, id, *classIt);
             }
 
 //            cout<<"P( " << *classIt << " ) = " << aPriori[*classIt] << endl;

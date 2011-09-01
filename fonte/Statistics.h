@@ -189,8 +189,6 @@ class Statistics {
         
         void setOptimizeGraphMetrics(bool optimize);
         
-//TODO:Transformar funcoes abaixo de acordo com necessidade de otimizacao....
-
         double getNeighborhoodSize1(string id, string c, int graph)        {return ( optimizeGraphMetrics ?  getValue(idClassNeighborhoodSize1, graph, getCompIndex(id,c)) : getGraphValue( NEIGHBORHOOD1, graph, id, c) ); }
 
         double getNeighborhoodSize2(string id, string c, int graph)        {return ( optimizeGraphMetrics ?  getValue(idClassNeighborhoodSize2, graph, getCompIndex(id,c)): getGraphValue( NEIGHBORHOOD2, graph, id, c) ) ; }
