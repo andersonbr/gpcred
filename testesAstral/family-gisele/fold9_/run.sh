@@ -1,4 +1,4 @@
-fold=$(pwd | sed 's/fold/ /g' | cut -f2 -d' ')
+fold=$(pwd | sed 's/fold/ /g' | cut -f2 -d' ' | cut -d'_' -f1)
 
 base=../../../fonte/enzymes/astral/family10f
 treinopath=$base/fold$fold/_treino
