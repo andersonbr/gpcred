@@ -164,8 +164,6 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
             for(ExampleIterator it = test.getBegin(); it != test.getEnd(); it++){
                 Example e = *it;
 
-
-
 //usando gambiarra para astra andar rapido
 //+ + BibCoupling DiceSimilarity - Strength HubScore
 
@@ -185,7 +183,7 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
     //            idClassBetweenness[graphIt->first][idClassIdx] = igraph->getBetweenness(e.getId());
 
                 idClassBibCoupling[graphIt->first][idClassIdx] = igraph->getBibCoupling(e.getId());
-    //            idClassCoCitation[graphIt->first][idClassIdx] = igraph->getCoCitation(e.getId());
+                idClassCoCitation[graphIt->first][idClassIdx] = igraph->getCoCitation(e.getId());
                 idClassJaccardSimilarity[graphIt->first][idClassIdx] = igraph->getJaccardSimilarity(e.getId());
                 idClassDiceSimilarity[graphIt->first][idClassIdx] = igraph->getDiceSimilarity(e.getId());
     //            idClassInverseLogSimilarity[graphIt->first][idClassIdx] = igraph->getInverseLogSimilarity(e.getId());
@@ -812,88 +810,6 @@ double Statistics::maxNormalization(double val, double maxValue){
 
 void Statistics::setOptimizeGraphMetrics(bool optimize){
     optimizeGraphMetrics = optimize;
-}
-
-//TODO: delete it!
-void Statistics::retrieveGraphMetricsDebug(Examples& test) {
-
-    if(!optimizeGraphMetrics) return;
-    
-    idClassNeighborhoodSize1.resize(graphNumberCounter);
-    idClassNeighborhoodSize2.resize(graphNumberCounter);
-    idClassNeighborhoodSize3.resize(graphNumberCounter);
-    idClassHubScore.resize(graphNumberCounter);
-    idClassAuthority.resize(graphNumberCounter);
-    idClassEigenVectorCentrality.resize(graphNumberCounter);
-    idClassCloseness.resize(graphNumberCounter);
-    idClassStrength.resize(graphNumberCounter);
-    idClassConstraint.resize(graphNumberCounter);
-    idClassPageRank.resize(graphNumberCounter);
-    idClassBetweenness.resize(graphNumberCounter);
-    idClassBibCoupling.resize(graphNumberCounter);
-    idClassCoCitation.resize(graphNumberCounter);
-    idClassJaccardSimilarity.resize(graphNumberCounter);
-    idClassDiceSimilarity.resize(graphNumberCounter);
-    idClassInverseLogSimilarity.resize(graphNumberCounter);
-    //	idClassAvgNearstNeighborDegree.resize(graphNumberCounter);
-
-    for(ExampleIterator it = test.getBegin(); it != test.getEnd(); it++){
-        for(map<int, map<string,IGraph*> >::iterator graphIt = iGraphs.begin(); graphIt != iGraphs.end(); graphIt++){
-            for(map<string,IGraph*>::iterator	classGraphIt = graphIt->second.begin(); classGraphIt != graphIt->second.end(); classGraphIt++){ 
-
-                GraphInterface *igraph = classGraphIt->second;
-
-                igraph->calculateHubScore();
-                igraph->calculateAuthority();
-                igraph->calculateEigenVectorCentrality();
-
-                Example e = *it;
-
-                cout<<"Buscando por "<< e.getId() << " class = "<< classGraphIt->first;
-
-                // [GId] [ExampleId] [ClassId]
-                string idClassIdx = getCompIndex(e.getId(), classGraphIt -> first);
-                idClassNeighborhoodSize1[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize1(e.getId());
-                idClassNeighborhoodSize2[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize2(e.getId());
-                idClassNeighborhoodSize3[graphIt->first][idClassIdx] = igraph->getNeighborhoodSize3(e.getId());
-                idClassHubScore[graphIt->first][idClassIdx] = igraph->getHubScore(e.getId());
-                idClassAuthority[graphIt->first][idClassIdx] = igraph->getAuthority(e.getId());
-                idClassEigenVectorCentrality[graphIt->first][idClassIdx] = igraph->getEigenVectorCentrality(e.getId());
-                idClassCloseness[graphIt->first][idClassIdx] = igraph->getCloseness(e.getId());
-                idClassStrength[graphIt->first][idClassIdx] = igraph->getStrength(e.getId());
-                idClassConstraint[graphIt->first][idClassIdx] = igraph->getConstraint(e.getId());
-                idClassPageRank[graphIt->first][idClassIdx] = igraph->getPageRank(e.getId());
-                idClassBetweenness[graphIt->first][idClassIdx] = igraph->getBetweenness(e.getId());
-                idClassBibCoupling[graphIt->first][idClassIdx] = igraph->getBibCoupling(e.getId());
-                idClassCoCitation[graphIt->first][idClassIdx] = igraph->getCoCitation(e.getId());
-                idClassJaccardSimilarity[graphIt->first][idClassIdx] = igraph->getJaccardSimilarity(e.getId());
-                idClassDiceSimilarity[graphIt->first][idClassIdx] = igraph->getDiceSimilarity(e.getId());
-                idClassInverseLogSimilarity[graphIt->first][idClassIdx] = igraph->getInverseLogSimilarity(e.getId());
-                //				idClassAvgNearstNeighborDegree[graphIt->first][idClassIdx] = igraph->getAvgNearstNeighborDegree(e.getId());
-
-                cout<<"  NeighborhoodSize1: " << idClassNeighborhoodSize1[graphIt->first][idClassIdx];
-                cout<<"  NeighborhoodSize2: " << idClassNeighborhoodSize1[graphIt->first][idClassIdx];
-                cout<<"  NeighborhoodSize3: " << idClassNeighborhoodSize1[graphIt->first][idClassIdx];
-                cout<<"  Hubscore: " << idClassHubScore[graphIt->first][idClassIdx];
-                cout<<"  Authority: " << idClassAuthority[graphIt->first][idClassIdx];
-                cout<<"  Eigen: " << idClassEigenVectorCentrality[graphIt->first][idClassIdx];
-                cout<<"  Close: " << idClassCloseness[graphIt->first][idClassIdx];
-                cout<<"  Strength: " << idClassStrength[graphIt->first][idClassIdx];
-                cout<<"  Const: " << idClassConstraint[graphIt->first][idClassIdx];
-                cout<<"  PageRank: " << idClassPageRank[graphIt->first][idClassIdx];
-                cout<<"  Bet: " << idClassBetweenness[graphIt->first][idClassIdx];
-                cout<<"  BibCou: " <<idClassBibCoupling[graphIt->first][idClassIdx];
-                cout<<"  CoCit: " <<idClassCoCitation[graphIt->first][idClassIdx];
-                cout<<"  JaccSim: " <<idClassJaccardSimilarity[graphIt->first][idClassIdx];
-                cout<<"  DiceSim: " <<idClassDiceSimilarity[graphIt->first][idClassIdx];
-                cout<<"  InvLogSim: " <<idClassInverseLogSimilarity[graphIt->first][idClassIdx]<<endl;
-                //				cout<<"  AvnNerNeiDeg: " <<idClassAvgNearstNeighborDegree[graphIt->first][idClassIdx]<<endl;
-
-                delete igraph;
-            }
-            cout<<endl;
-        }
-    }
 }
 
 void Statistics::clear(){

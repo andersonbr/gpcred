@@ -241,7 +241,8 @@ void gpcpp::createNodeSet(){
 
 
 	for(int i =  contentCredibilityOffset; i < (stats->getNumberOfGraphs() +  contentCredibilityOffset); i++){
-		ns[i] = new GPNodeSet (22);
+		//ns[i] = new GPNodeSet (22);
+		ns[i] = new GPNodeSet(17);
 		adfNs.put (i, *ns[i]);
 
 		ns[i]->putNode (*new GPNode (SUM, (char*) "+", 2));
@@ -255,13 +256,13 @@ void gpcpp::createNodeSet(){
 		ns[i]->putNode(*new GPNode (NEIGHBORHOOD2, (char*) "Neighborhood2"));
 		ns[i]->putNode(*new GPNode (NEIGHBORHOOD3, (char*) "Neighborhood3"));
 		ns[i]->putNode(*new GPNode (HUBSCORE, (char*) "HubScore"));
-		ns[i]->putNode(*new GPNode (AUTHORITY, (char*) "Authority"));
-        ns[i]->putNode(*new GPNode (EIGENVECTOR, (char*) "EigenVector"));
-		ns[i]->putNode(*new GPNode (CLOSENESS, (char*) "Closeness")); 
+		//ns[i]->putNode(*new GPNode (AUTHORITY, (char*) "Authority"));
+        //ns[i]->putNode(*new GPNode (EIGENVECTOR, (char*) "EigenVector"));
+		//ns[i]->putNode(*new GPNode (CLOSENESS, (char*) "Closeness")); 
 		ns[i]->putNode(*new GPNode (STRENGTH, (char*) "Strength"));
 		ns[i]->putNode(*new GPNode (CONSTRAINT, (char*) "Constraint"));
-		ns[i]->putNode(*new GPNode (PAGERANK, (char*) "PageRank"));
-		ns[i]->putNode(*new GPNode (BETWEENNESS, (char*) "Betweenness"));
+		//ns[i]->putNode(*new GPNode (PAGERANK, (char*) "PageRank"));
+		//ns[i]->putNode(*new GPNode (BETWEENNESS, (char*) "Betweenness"));
 		ns[i]->putNode(*new GPNode (BIBCOUPLING, (char*) "BibCoupling"));
 		ns[i]->putNode(*new GPNode (COCITATION, (char*) "CoCitation"));
 		ns[i]->putNode(*new GPNode (JACCARDSIMILARITY, (char*) "JaccardSimilarity"));

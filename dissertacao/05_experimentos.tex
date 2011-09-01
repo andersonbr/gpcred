@@ -1,177 +1,165 @@
-
-\chapter{Experimentos}
-\label{cap::experimentos}
-
 \newcommand{\triangOK}{\textcolor[rgb]{00,0.45,0.10}{$\blacktriangle$}}
 \newcommand{\triangBAD}{\textcolor[rgb]{0.7,00,00}{$\blacktriangledown$}}
 \newcommand{\ball}{\textcolor[rgb]{0.7,0.70,0.0}{$\bullet$}}
  	
 %\begin{table}
 %\centering
+%\caption{}
+%\label{tab::}
 %\begin{footnotesize}
 %\toprule
 %Tabela
 %\midrule
 %\bottomrule
-
-%\caption{}
-%\label{tab::}
 %\end{footnotesize}
 %\end{table}
 
+\chapter{Experimentos}
+\label{cap::experimentos}
+
+\section{Bases de dados}
+
+
+\section{Efeito da função de \textit{fitness}}
 
 \begin{table}
 \centering
+\caption{Experimentos mostrando a micro$F_1$ variando a função de fitness.}
+\label{tab::fitness-micro}
 \begin{footnotesize}
-\begin{tabular}{|c||c|c|}
+\begin{tabular}{|c|c|c|c|c|}
 \toprule
-\textbf{Bases} & \textbf{Micro$F_1$} & \textbf{Macro$F_1$}\tabularnewline
+\multirow{2}{*}{\textbf{Bases}} & \multirow{2}{*}{\textbf{\textit{Baselines}}} & \multicolumn{3}{c|}{\textbf{Funcão de Fitness}}\tabularnewline
+\cline{3-5} 
+ &  & \textbf{Micro$F_1$} & \textbf{Macro$F_1$} & \textbf{Macro$F_1$ + Micro$F_1$}\tabularnewline
 \midrule
-ACM & 73.62 \textpm{} 0.91 & 57.26 \textpm{} 0.93\tabularnewline
+ACM & 73.63 \textpm{} 0.90 & 74.33 \textpm{} 0.72 (0.95 \ball) & 72.96 \textpm{} 0.98 (-0.91 \ball) & 73.99 \textpm{} 0.80 (0.49 \ball)\tabularnewline
 \hline 
-20NG & 84.94 \textpm{} 0.58 & 83.68 \textpm{} 0.82\tabularnewline
+20NG & 84.94 \textpm{} 0.58 & 89.06 \textpm{} 0.15 (4.85 \triangOK) & 87.92 \textpm{} 1.59 (3.61 \triangOK) & 88.71 \textpm{} 0.14 (4.43 \triangOK)\tabularnewline
 \hline 
-Ohsumed & 66.56 \textpm{} 0.66 & 54.76 \textpm{} 1.27\tabularnewline
+Ohsumed & 66.56 \textpm{} 0.66 & 69.34 \textpm{} 0.55 (4.19 \triangOK) & 68.83 \textpm{} 1.47 (3.42 \triangOK) & 69.76 \textpm{} 1.19 (4.81 \triangOK)\tabularnewline
 \hline 
-Reuters & 93.13 \textpm{} 0.29 & 81.96 \textpm{} 1.44\tabularnewline
+Reuters & 93.13 \textpm{} 0.29 & 94.60 \textpm{} 0.44 (1.57 \triangOK) & 93.96 \textpm{} 0.78 (0.89 \triangOK) & 94.59 \textpm{} 0.50 (1.56 \triangOK)\tabularnewline
 \bottomrule
 \end{tabular}
-\caption{\textit{Baselines} das bases de dados usadas.}
-\label{tab::baselines}
 \end{footnotesize}
 \end{table}
 
+
+
 \begin{table}
 \centering
-\begin{scriptsize}
-\begin{tabular}{|c||c|c|c|c|}
+\caption{Experimentos mostrando a macro$F_1$ variando a função de fitness.}
+\label{tab::fitness-macro}
+\begin{footnotesize}
+\begin{tabular}{|c|c|c|c|c|}
 \toprule
- \multirow{2}{*}{Bases} & \multicolumn{2}{c|}{\textit{Fitness} = Micro$F_1$} & \multicolumn{2}{c|}{\textit{Fitness} = Macro$F_1$}\tabularnewline
-\cline{2-5}  & Micro$F_1$ & Macro$F_1$ & Micro$F_1$ & Macro$F_1$\tabularnewline
-\midrule 
-ACM & 74.33 \textpm{} 0.72 (0.95 \ball) & 59.72 \textpm{} 1.26 (4.30 \triangOK) & 72.96 \textpm{} 0.982 (-0.91 \ball) & 60.03 \textpm{} 1.45 (4.84 \triangOK)\tabularnewline
+\multirow{2}{*}{\textbf{Bases}} & \multirow{2}{*}{\textbf{\textit{Baseline}}} & \multicolumn{3}{c|}{\textbf{Funcão de Fitness}}\tabularnewline
+\cline{3-5} 
+ &  & \textbf{Micro$F_1$} & \textbf{Macro$F_1$} & \textbf{Macro$F_1$ + Micro$F_1$}\tabularnewline
+\midrule
+ACM & 57.26 \textpm{} 0.93 & 59.72 \textpm{} 1.26 (4.30 \triangOK) & 60.03 \textpm{} 1.45 (4.84 \triangOK) & 60.21 \textpm{} 1.54 (5.15 \triangOK)\tabularnewline
 \hline 
-20NG & 89.06 \textpm{} 0.15 (4.85 \triangOK) & 88.69 \textpm{} 0.22 (5.99 \triangOK) & 87.92 \textpm{} 1.585 (3.61 \triangOK) & 86.46 \textpm{} 3.80 (3.39 \triangOK)\tabularnewline
+20NG & 83.68 \textpm{} 0.82 & 88.69 \textpm{} 0.22 (5.99 \triangOK) & 86.46 \textpm{} 3.80 (3.39 \triangOK) & 88.34 \textpm{} 0.06 (5.57 \triangOK)\tabularnewline
 \hline 
-Ohsumed & 69.34 \textpm{} 0.55 (4.19 \triangOK) & 63.56 \textpm{} 0.90 (16.06 \triangOK) & 68.83 \textpm{} 1.469 (3.42 \triangOK) &  63.62 \textpm{} 1.88 (16.18 \triangOK)\tabularnewline
+Ohsumed & 54.76 \textpm{} 1.27 & 63.56 \textpm{} 0.90 (16.06 \triangOK) &  63.62 \textpm{} 1.88 (16.18 \triangOK) & 64.38 \textpm{} 1.90 (17.57 \triangOK)\tabularnewline
 \hline 
-Reuters & 94.60 \textpm{} 0.44 (1.57 \triangOK) & 89.33 \textpm{} 0.90 (8.99 \triangOK) & 93.96 \textpm{} 0.784, (0.89 \triangOK) & 88.04 \textpm{} 0.73 (7.42 \triangOK)\tabularnewline
+Reuters & 81.96 \textpm{} 1.44 & 89.33 \textpm{} 0.90 (8.99 \triangOK) & 88.04 \textpm{} 0.73 (7.42 \triangOK) & 89.08 \textpm{} 0.83 (8.69 \triangOK)\tabularnewline
 \bottomrule
 \end{tabular}
-\caption{ASDFAS}
+\end{footnotesize}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
+
+\section{Bases de Documentos}
+
+\begin{table}
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Funções de credibilidade geradas para cada uma das bases.}
 \label{tab::}
+\begin{scriptsize}
+\begin{tabular}{|c|c|}
+\toprule
+\textbf{Base} & \textbf{Função de Credibilidade}\tabularnewline
+\midrule
+ACM   & $F_{ACM} =  DOM^{(GSS)^{(CE + TF)}} $\tabularnewline
+\hline 
+20NG & $F_{20NG} = DF + MaxAM + (\dfrac{ CHI } { TFIDF^{(MaxTFIDF)} }) $\tabularnewline
+\hline 
+Ohsumed  & $ F_{Ohsumed} = (\dfrac{AM}{MaxIG \times CC^{(sumDF)}} )^{(TFICF)^{(TFICF)}} $\tabularnewline
+\hline 
+Reuters & $ F_{Reuters} = IG^{(MaxIG \times GINI)}$\tabularnewline
+\bottomrule
+\end{tabular}
 \end{scriptsize}
 \end{table}
 
- 	
 \begin{table}
 \centering
-\begin{tiny}
-\begin{tabular}{|c||c|c|c|c|c|c|}
-\hline 
- & \multicolumn{2}{c|}{\textit{Fitness} = Micro$F_1$} & \multicolumn{2}{c|}{\textit{Fitness} = Macro$F_1$} & \multicolumn{2}{c}{\textit{Fitness} = Macro$F_1$ + Micro$F_1$}\tabularnewline
-\hline 
-Bases & Micro$F_1$ & Macro$F_1$ & Micro$F_1$ & Macro$F_1$ & Micro$F_1$ & Macro$F_1$\tabularnewline
-\hline 
-ACM & 74.33 \textpm{}0.72 0.95 & 59.72 \textpm{} 1.26 4.30 & 72.96 \textpm{} 0.982 -0.91 & 60.03 \textpm{} 1.45 4.84 & 73.99 \textpm{} 0.804 0.49 & 60.21 \textpm{} 1.54, 5.15\tabularnewline
-\hline 
-20NG & 89.06 \textpm{} 0.15 4.85 & 88.69 \textpm{} 0.22 5.99 & 87.92 \textpm{} 1.585 3.61 & 86.46 \textpm{} 3.80 3.39 & 88.71 \textpm{} 0.143 4.43 & 88.34 \textpm{} 0.06, 5.57\tabularnewline
-\hline 
-Ohsumed & 69.34 \textpm{} 0.55 4.19 & 63.56 \textpm{} 0.90 16.06 & 68.83 \textpm{} 1.469 3.42 &  63.62 \textpm{} 1.88 16.18 & 69.76 \textpm{} 1.188 4.81 & 64.38 \textpm{} 1.90 17.57\tabularnewline
-\hline 
-Reuters & 94.60 \textpm{} 0.44 1.57 & 89.33 \textpm{} 0.90 8.99 & 93.96 \textpm{} 0.784, 0.89 & 88.04 \textpm{} 0.73 7.42 & 94.59 \textpm{} 0.502 1.56 & 89.08 \textpm{} 0.83, 8.69\tabularnewline
-\hline 
-\end{tabular}
-\caption{ASBSD}
-\label{tab::}
-\end{tiny}
-\end{table}
-
-
-
-\begin{table}
-\centering
-\begin{footnotesize}
+\caption{Micro$F_1$ obtida pelo \textit{Naïve Bayes} quando usando a função de credibilidade $F_base$ gerada uma dada base nas demais bases.}
+\label{tab::generalizacao-Micro}
+\begin{scriptsize}
 \begin{tabular}{|c||c|c|c|c|}
 \toprule
-\textbf{Base} & \textbf{Micro$F_1$} & \textbf{Ganho (\%)} & \textbf{Macro$F_1$} & \textbf{Ganho (\%)}\tabularnewline
+\textbf{Funções evoluídas} & \textbf{ACM} & \textbf{Reuters} & \textbf{Ohsumed} & \textbf{20NG}\tabularnewline
 \midrule
-ACM & 74.32 \textpm{} 0.72 &  0.95 \ball & 59.72 \textpm{} 1.26  & 4.30 \triangOK\tabularnewline
+\textit{Baselines} & 73.63 \textpm{} 0.90 & 93.13 \textpm{} 0.29 & 66.56 \textpm{} 0.66 & 84.86 \textpm{} 0.54\tabularnewline
 \hline 
-20NG & 89.06 \textpm{} 0.15 & 4.85 \triangOK & 88.69 \textpm{} 0.22  & 5.99 \triangOK\tabularnewline
+$F_{ACM}$ & 75.04 \textpm{} 0.88 (1.91 \triangOK) & 92.68 \textpm{} 0.45 (-0.48 \triangBAD) & 66.06 \textpm{} 0.59 (-0.75 \ball) & 84.45 \textpm{} 0.35 (-0.49 \triangBAD)\tabularnewline
 \hline 
-Ohsumed & 69.34 \textpm{} 0.55 & 4.19 \triangOK & 63.56 \textpm{} 0.90  & 16.06 \triangOK\tabularnewline
+$F_{20ng}$ & 66.69 \textpm{} 0.65 (-9.42 \triangBAD) & 94.01 \textpm{} 0.53 (0.94 \triangOK) & 67.94 \textpm{} 0.62 (2.08 \triangOK)  & 88.97 \textpm{} 0.17 (4.84 \triangOK)\tabularnewline
 \hline 
-Reuters & 94.60 \textpm{} 0.44 & 1.57 \triangOK & 89.33 \textpm{} 0.90  & 8.99 \triangOK\tabularnewline
+$F_{Ohsumed}$ & 70.09 \textpm{} 0.82 (-4.81 \triangBAD) & 93.45 \textpm{} 0.57 (0.34 \ball) & 69.54 \textpm{} 0.69 (4.49 \triangOK) & 85.60 \textpm{} 0.27 (0.87 \triangOK)\tabularnewline
+\hline 
+$F_{Reuters}$ & 66.55 \textpm{} 0.89 (-9.61 \triangBAD) & 94.87 \textpm{} 0.25 (1.86 \triangOK) & 63.32 \textpm{} 0.82 (-4.86 \triangBAD) & 87.04 \textpm{} 0.41 (2.57 \triangOK)\tabularnewline
 \bottomrule
 \end{tabular}
-\caption{Resultados com Micro$F_1$ como \textit{Fitness}}
-\label{tab::}
-\end{footnotesize}
+\end{scriptsize}
 \end{table}
+
 
 \begin{table}
 \centering
-\begin{footnotesize}
-\begin{tabular}{|c||c|c|}
+\caption{Macro$F_1$ obtida pelo \textit{Naïve Bayes} quando usando a função de credibilidade $F_base$ gerada uma dada base nas demais bases.}
+\label{tab::generalizacao-Macro}
+\begin{scriptsize}
+\begin{tabular}{|c||c|c|c|c|}
 \toprule
-\textbf{Base} & \textbf{Micro$F_1$} & \textbf{Macro$F_1$} \tabularnewline
+\textbf{Funções evoluídas} & \textbf{ACM} & \textbf{Reuters} & \textbf{Ohsumed} & \textbf{20NG}\tabularnewline
 \midrule
-ACM & 74.32 \textpm{} 0.72 (0.95 \ball) & 59.72 \textpm{} 1.26 (4.30 \triangOK)\tabularnewline
+\textit{Baselines} & 57.26 \textpm{} 0.93 & 81.96 \textpm{} 1.44 & 54.76 \textpm{} 1.27 & 83.62 \textpm{} 0.74\tabularnewline
 \hline 
-20NG & 89.06 \textpm{} 0.15 (4.85 \triangOK) & 88.69 \textpm{} 0.22 (5.99 \triangOK)\tabularnewline
+$F_{ACM}$ & 60.13 \textpm{} 1.44 (5.02 \triangOK) & 85.49 \textpm{} 0.94 (4.31 \triangOK) & 56.41 \textpm{}  0.92 (3.00 \triangOK) & 82.88 \textpm{} 0.51 (-0.89 \triangBAD)\tabularnewline
 \hline 
-Ohsumed & 69.34 \textpm{} 0.55 (4.19 \triangOK) & 63.56 \textpm{} 0.90 (16.06 \triangOK)\tabularnewline
+$F_{20NG}$ & 55.83 \textpm{} 0.66 (-2.50 \triangBAD) & 88.64 \textpm{} 1.03 (8.16 \triangOK) & 62.12 \textpm{} 1.41 (13.43 \triangOK) & 88.63 \textpm{} 0.18 (5.99 \triangOK)\tabularnewline
 \hline 
-Reuters & 94.60 \textpm{} 0.44 (1.57 \triangOK) & 89.33 \textpm{} 0.90 (8.99 \triangOK)\tabularnewline
+$F_{Ohsumed}$ & 57.59 \textpm{} 0.56 (0.58 \ball) & 87.41 \textpm{} 0.64 (6.65 \triangOK) & 64.35 \textpm{} 1.17 (17.51 \triangOK) & 84.26 \textpm{}  0.49 (0.77 \triangOK)\tabularnewline
+\hline 
+$F_{Reuters}$ & 54.84 \textpm{} 1.44 (-4.23\triangBAD) & 89.45 \textpm{}  0.74 (9.14 \triangOK) & 57.97 \textpm{} 1.59 (5.85 \triangOK) & 83.15 \textpm{} 2.04 (-0.56 \ball)\tabularnewline
 \bottomrule
 \end{tabular}
-\caption{Resultados com Micro$F_1$ como \textit{Fitness}}
-\label{tab::}
-\end{footnotesize}
+\end{scriptsize}
 \end{table}
 
-\begin{table}
-\centering
-\begin{footnotesize}
-\begin{tabular}{|c||c|c|c|c|c|c|}
-\hline 
- & Base Micro & FinalMicro & Sig & Base & FinalMacro & Sig \tabularnewline
-\hline 
-\hline 
-20ng & 84.9403 \textpm{} 0.578 & 89.0571 \textpm{} 0.154 4.85 & \triangOK &  83.6814 \textpm{} 0.819,  & 88.6903\textpm{} 0.215 5.99 & \triangOK \tabularnewline
-\hline 
-Ohsumed & 66.5555 \textpm{} 0.664  & 69.3421 \textpm{} 0.548, 4.19 & \triangOK & 54.7614 \textpm{} 1.265, & 63.5577\textpm{} 0.889 16.06 & \triangOK \tabularnewline
-\hline 
-Reuters & 93.1329 \textpm{} 0.294,  & 94.5992\textpm{} 0.436, 1.57 & \triangOK & 81.9584 \textpm{} 1.442 & 89.3268\textpm{} 0.899, 8.99 & \triangOK\tabularnewline
-\hline 
-acm-t & 73.6273 \textpm{} 0.905 & 74.1414\textpm{}0.546, 0.70 & \ball & 57.2581 \textpm{} 0.932 & 59.0189\textpm{} 1.014, 3.08 & \triangOK \tabularnewline
-\hline 
-acm-a & 73.6273 \textpm{} 0.905 & 76.1859\textpm{}0.816,, 3.48 & \triangOK & 57.2581 \textpm{} 0.932 & 60.3654\textpm{} 0.703, 5.43 & \triangOK \tabularnewline
-\hline 
-acm-c & 73.6273 \textpm{} 0.905 & 75.5794\textpm{}0.845, 2.65 & \triangOK & 57.2581 \textpm{} 0.932 & 58.9996\textpm{} 0.901, 3.04 & \triangOK \tabularnewline
-\hline 
-acm-ac & 73.6273 \textpm{} 0.905 & 77.2944\textpm{}0.792, 4.98 & \triangOK & 57.2581 \textpm{} 0.932 & 61.4111\textpm{}0.647, 7.25 & \triangOK \tabularnewline
-\hline 
-acm-at & 73.6273 \textpm{} 0.905 & 76.7040\textpm{}1.079, 4.18 & \triangOK & 57.2581 \textpm{} 0.932 & 61.8177\textpm{}1.382, 7.96 & \triangOK \tabularnewline
-\hline 
-acm-ct & 73.6273 \textpm{} 0.905 & 75.6275\textpm{}1.033, 2.72 & \triangOK & 57.2581 \textpm{} 0.932 & 60.6837\textpm{}1.300, 5.98 & \triangOK \tabularnewline
-\hline 
-acm-act & 73.6273 \textpm{} 0.905 & 77.0132\textpm{}0.978, 4.60 & \triangOK & 57.2581 \textpm{} 0.932 & 62.2394\textpm{}1.012, 8.70 & \triangOK \tabularnewline
-\hline 
-\end{tabular}
-\end{footnotesize}
-\end{table}
+%%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
+
+\section{Explorando multiplos fatores.}
 
 
 \begin{table}
 \centering
+\caption{Resultados do uso de credibilidade na base da \textsc{ACM} explorando a credibilidade de termos, autoria e citação.}
+\label{tab::fatores}
 \begin{footnotesize}
 \begin{tabular}{|c|c|c|c|c|}
 \toprule
 \textbf{Termos} & \textbf{Autoria} & \textbf{Citação} & \textbf{Micro$F_1$} & \textbf{Macro$F_1$}\tabularnewline
 \midrule
-\multicolumn{3}{|c|}{Baseline} & 73.673 \textpm{} 0.905 & 57.26 \textpm{} 0.93\tabularnewline
+\multicolumn{3}{|c|}{Baseline} & 73.67 \textpm{} 0.905 & 57.26 \textpm{} 0.93\tabularnewline
 \hline 
 X &  &  & 74.33 \textpm{} 0.72 (0.95 \ball) & 59.72 \textpm{} 1.26 (4.30 \triangOK)\tabularnewline
 \hline 
@@ -188,114 +176,68 @@ X &  & X & 75.63 \textpm{} 1.03 (2.72 \triangOK) & 60.69 \textpm{} 1.30 (5.98 \t
 X & X & X & 77.01 \textpm{} 0.98 (4.60 \triangOK) & 62.24 \textpm{} 1.01 (8.70 \triangOK)\tabularnewline
 \bottomrule
 \end{tabular}
-\caption{ASDF}
-\label{tab::}
 \end{footnotesize}
 \end{table}
 
+%%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
+
+\section{Bases de Categorias.}
 
 \begin{table}
 \centering
+\caption{Resultados da Micro$F_1$ para as bases de atributos categóricos}
+\label{tab::cat-micro}
 \begin{footnotesize}
-\begin{tabular}{|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|}
 \toprule
-\textbf{Termos} & \textbf{Autoria} & \textbf{Citação} & \textbf{Micro$F_1$} & \textbf{Ganho(\%)} & \textbf{Macro$F_1$} & \textbf{Ganho(\%)} \tabularnewline
+\multirow{2}{*}{\textbf{Bases}} & \multicolumn{2}{c|}{\textbf{Naïve Bayes}} & \multicolumn{2}{c|}{\textbf{KNN}}\tabularnewline
+\cline{2-5} 
+ & \textbf{\textit{Baselines}} & \textbf{Macro$F_1$} & \textbf{\textit{Baselines}} & \textbf{Macro$F_1$}\tabularnewline
 \midrule
-\multicolumn{3}{|c|}{Baseline} & 73.67 \textpm{} 0.91 & - & 57.26 \textpm{} 0.93 & -\tabularnewline
+Cars & 67.74 \textpm{} 3.08 & 76.85 \textpm{} 5.65 (13.44 \triangOK) & 75.36 \textpm{} 3.44 & 81.77 \textpm{} 3.90 (8.51 \triangOK)\tabularnewline
 \hline 
-X &  &  & 74.33 \textpm{} 0.72 & 0.95 \ball & 59.72 \textpm{} 1.26 & 4.30 \triangOK \tabularnewline
+TicTacToe & 64.48 \textpm{} 2.12 & 64.10 \textpm{} 1.96 (-0.59 \ball) & 95.99 \textpm{} 0.98 & 97.12 \textpm{} 1.10 (1.18 \ball)\tabularnewline
 \hline 
- & X &  & 76.19 \textpm{} 0.82 & 3.48 \triangOK & 60.37 \textpm{} 0.70 & 5.43 \triangOK \tabularnewline
+Nusery & 66.19 \textpm{} 7.41 & 77.19 \textpm{} 12.80 (16.62 \triangOK) & 95.84 \textpm{} 0.73 & 96.00 \textpm{} 0.69 (0.17 \ball) \tabularnewline
 \hline 
- &  & X & 75.58 \textpm{} 0.85 & 2.65 \triangOK & 59.00 \textpm{} 0.90 & 3.04 \triangOK \tabularnewline
-\hline 
-X & X &  & 76.70 \textpm{} 1.08 & 4.18 \triangOK & 61.82 \textpm{} 1.38 & 7.96 \triangOK \tabularnewline
-\hline  
-X &  & X & 75.63 \textpm{} 1.03 & 2.72 \triangOK & 60.69 \textpm{} 1.30 & 5.98 \triangOK \tabularnewline
-\hline 
- & X & X & 77.29 \textpm{} 0.79 & 4.98 \triangOK & 61.41 \textpm{} 0.65 & 7.25 \triangOK \tabularnewline
+Chess & 87.81 \textpm{} 0.68 & 88.03 \textpm{} 0.75 (0.25 \ball) & 94.75 \textpm{} 0.40  & 95.98 \textpm{} 0.61 (1.30 \triangOK)\tabularnewline
 \bottomrule
 \end{tabular}
-\caption{ASDF}
-\label{tab::}
 \end{footnotesize}
 \end{table}
 
 
-
+ 	
 \begin{table}
 \centering
-\begin{scriptsize}
-\begin{tabular}{|c||c|c|c|c|}
+\caption{Resultados da Macro$F_1$ para as bases de atributos categóricos}
+\label{tab::cat-macro}
+\begin{footnotesize}
+\begin{tabular}{|c|c|c|c|c|}
 \toprule
-\textbf{Funções evoluídas} & \textbf{ACM} & \textbf{Reuters} & \textbf{Ohsumed} & \textbf{20NG}\tabularnewline
+\multirow{2}{*}{\textbf{Bases}} & \multicolumn{2}{c|}{\textbf{Naïve Bayes}} & \multicolumn{2}{c|}{\textbf{KNN}}\tabularnewline
+\cline{2-5} 
+ & \textbf{\textit{Baselines}} & \textbf{Micro$F_1$} & \textbf{\textit{Baselines}} & \textbf{Micro$F_1$}\tabularnewline
 \midrule
-Baseline & 73.63 \textpm{} 0.90 & 93.13 \textpm{} 0.29 & 66.56 \textpm{} 0.66 & 84.86 \textpm{} 0.54\tabularnewline
+Cars & 86.32 \textpm{} 1.85 & 87.64 \textpm{} 2.53 (1.52 \triangOK) & 91.84 \textpm{} 1.95 & 92.43 \textpm{} 1.68 (0.64 \ball)\tabularnewline
 \hline 
-$F_{ACM}$ & 75.04 \textpm{} 0.88 (1.91 \triangOK) & 92.68 \textpm{} 0.45 (-0.48 \triangBAD) & 66.06 \textpm{} 0.59 (-0.75 \ball) & 84.45 \textpm{} 0.35 (-0.49 \triangBAD)\tabularnewline
+TicTacToe & 70.63 \textpm{} 2.10 & 71.74 \textpm{} 2.02 (1.58 \triangOK) & 96.45 \textpm{} 0.85  & 97.42 \textpm{} 0.94 (1.00 \ball)\tabularnewline
 \hline 
-$F_{20ng}$ & 66.69 \textpm{} 0.65 (-9.42 \triangBAD) & 94.01 \textpm{} 0.53 (0.94 \triangOK) & 67.94 \textpm{} 0.62 (2.08 \triangOK)  & 88.97 \textpm{} 0.17 (4.84 \triangOK)\tabularnewline
+Nusery & 90.29 \textpm{} 0.56 & 91.21 \textpm{} 0.92 (1.01 \ball) & 80.83 \textpm{} 9.06  &	84.46 \textpm{} 9.22 (4.50 \triangOK) \tabularnewline
 \hline 
-$F_{Ohsumed}$ & 70.09 \textpm{} 0.82 (-4.81 \triangBAD) & 93.45 \textpm{} 0.57 (0.34 \ball) & 69.54 \textpm{} 0.69 (4.49 \triangOK) & 85.60 \textpm{} 0.27 (0.87 \triangOK)\tabularnewline
-\hline 
-$F_{Reuters}$ & 66.55 \textpm{} 0.89 (-9.61 \triangBAD) & 94.87 \textpm{} 0.25 (1.86 \triangOK) & 63.32 \textpm{} 0.82 (-4.86 \triangBAD) & 87.04 \textpm{} 0.41 (2.57 \triangOK)\tabularnewline
+Chess & 87.85 \textpm{} 0.69 & 88.04 \textpm{} 0.75 (0.21 \ball) & 94.77 \textpm{} 0.41  & 96.00 \textpm{} 0.60 (1.29 \triangOK)\tabularnewline
 \bottomrule
 \end{tabular}
-\caption{MICRO}
-\label{tab::}
-\end{scriptsize}
+\end{footnotesize}
 \end{table}
 
 
-
-\begin{table}
-\centering
-\begin{scriptsize}
-\begin{tabular}{|c||c|c|c|c|}
-\toprule
-\textbf{Funções evoluídas} & \textbf{ACM} & \textbf{Reuters} & \textbf{Ohsumed} & \textbf{20NG}\tabularnewline
-\midrule
-Baseline & 57.26 \textpm{} 0.93 & 81.96 \textpm{} 1.44 & 54.76 \textpm{} 1.27 & 83.62 \textpm{} 0.74\tabularnewline
-\hline 
-$F_{ACM}$ & 60.13 \textpm{} 1.44 (5.02 \triangOK) & 85.49 \textpm{} 0.94 (4.31 \triangOK) & 56.41 \textpm{}  0.92 (3.00 \triangOK) & 82.88 \textpm{} 0.51 (-0.89 \triangBAD)\tabularnewline
-\hline 
-$F_{20NG}$ & 55.83 \textpm{} 0.66 (-2.50 \triangBAD) & 88.64 \textpm{} 1.03 (8.16 \triangOK) & 62.12 \textpm{} 1.41 (13.43 \triangOK) & 88.63 \textpm{} 0.18 (5.99 \triangOK)\tabularnewline
-\hline 
-$F_{Ohsumed}$ & 57.59 \textpm{} 0.56 (0.58 \ball) & 87.41 \textpm{} 0.64 (6.65 \triangOK) & 64.35 \textpm{} 1.17 (17.51 \triangOK) & 84.26 \textpm{}  0.49 (0.77 \triangOK)\tabularnewline
-\hline 
-$F_{Reuters}$ & 54.84 \textpm{} 1.44 (-4.23\triangBAD) & 89.45 \textpm{}  0.74 (9.14 \triangOK) & 57.97 \textpm{} 1.59 (5.85 \triangOK) & 83.15 \textpm{} 2.04 (-0.56 \ball)\tabularnewline
-\bottomrule
-\end{tabular}
-\caption{MACRO}
-\label{tab::}
-\end{scriptsize}
-\end{table}
+%%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 
 
-
-\begin{table}
-\renewcommand{\arraystretch}{1.3}
-\centering
-\begin{scriptsize}
-\begin{tabular}{|c|c|}
-\toprule
-\textbf{Base} & \textbf{Função de Credibilidade}\tabularnewline
-\midrule
-ACM   & $ DOM^{(GSS)^{(CE + TF)}} $\tabularnewline
-\hline 
-20NG & $ DF + MaxAM + (\dfrac{ CHI } { TFIDF^{(MaxTFIDF)} }) $\tabularnewline
-\hline 
-Ohsumed  & $(\dfrac{AM}{MaxIG \times CC^{(sumDF)}} )^{(TFICF)^{(TFICF)}} $\tabularnewline
-\hline 
-Reuters & $IG^{(MaxIG \times GINI)}$\tabularnewline
-\bottomrule
-\end{tabular}
-\caption{Funcoes de credibilidade}
-\label{tab::}
-\end{scriptsize}
-\end{table}
-
-
-
-
+\section{Bases de BioInformática.}
 

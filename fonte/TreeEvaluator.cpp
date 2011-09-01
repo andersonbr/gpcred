@@ -58,7 +58,7 @@ void TreeEvaluator::evaluateFromFile(string fileName){
             std::map<string, double> credibilityMap;
             std::vector< std::map<string, double> > graphsCredibility(stats->getNumberOfGraphs());
             
-            if(stats->getUsingTermCredibility() || stats->getUsingCategoricalCredibility()){
+            if((stats->getUsingTermCredibility() || stats->getUsingCategoricalCredibility())  && (stats->getNumberOfGraphs() == 0)){
 
                for( set<string>::iterator vocIt = (stats->getVocabulary()).begin(); vocIt != (stats->getVocabulary()).end(); vocIt++) {
                     for(set<string>::iterator clIt = (stats->getClasses()).begin();clIt != (stats->getClasses()).end(); clIt++) {
@@ -91,7 +91,7 @@ void TreeEvaluator::evaluateFromFile(string fileName){
                 }
             }
 
-            if(stats->getUsingCategoricalCredibility()){
+            if(stats->getUsingCategoricalCredibility() && (stats->getNumberOfGraphs() == 0)){
                 for(int i = 0; i < stats-> getNumberOfCategoricalAttibutes(); i++){
                     
                     set<string> tokenSet = stats->getCategoricalSet(i);
@@ -130,7 +130,6 @@ void TreeEvaluator::evaluateFromFile(string fileName){
                     } 
                 }
             }
-
 
             if(stats->getNumberOfGraphs()){
                 cout<<"Using Graph credibility"<<endl;

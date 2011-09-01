@@ -1,5 +1,5 @@
 
-\section{Credibilidade Baseada nos Atributos}
+\subsection{Credibilidade Baseada nos Atributos}
 \label{sec::pg_cred_baseada_conteudo}
 
 Nessa seção apresentamos várias métricas utilizadas como terminais na construção dos indivíduos usados pelo Programa Genético. Elas foram modeladas diferentemente para os casos nos quais os atributos são textuais ou categóricos, sendo que a modelagem para atributos numéricos foi deixada como trabalho futuro. 
@@ -8,7 +8,7 @@ Em suma, algumas métricas estão muito atreladas a classificação de documento
 Entretanto, muitas são genéricas o suficiente para serem utilizadas em qualquer contexto de classificação baseada em atributos.
 Dessa forma, na Seção~\ref{subsec::pg_metricas_conteudo_textual} mostramos as métricas que foram modeladas única e exclusivamente para serem utilizadas na tarefa de classificação de documentos  e na Seção~\ref{subsec::pg_metricas_conteudo} temos as métricas que foram estendidas e estão sendo usadas também para a classificação categórica.
 
-\subsection{Métricas Modeladas Exclusivamente Para Atributos Textuais.}
+\subsubsection{Métricas Modeladas Exclusivamente Para Atributos Textuais.}
 \label{subsec::pg_metricas_conteudo_textual}
 
 As métricas usadas para atributos textuais consistem em algumas variantes do \textsc{TFIDF} (\cite{Salton88}), métrica mais difundida entre as apresentadas. A Tabela~\ref{table::metricas_textuais} apresenta a nomeclatura utilizadas pelas métricas aqui listadas.
@@ -165,7 +165,7 @@ A máxima dominância é uma métrica extrapolada da Dominância (Seção~\ref{i
 
 %
 
-\subsection{Métricas Modeladas Para Atributos Textuais e Categóricos.}
+\subsubsection{Métricas Modeladas Para Atributos Textuais e Categóricos.}
 \label{subsec::pg_metricas_conteudo}
 
 
