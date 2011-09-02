@@ -221,7 +221,13 @@ void Statistics::retrieveGraphMetrics(Examples& test) {
 }
 
 double Statistics::getGraphValue(int metric, int graph, string id, string classId){
-    
+
+//**
+// Bug detected: this doesnt work well when using authorith, hubscore and eigenvector because we dont have pre-calculated the values yet 
+//
+//**//
+
+
     double returnValue = 0.0;
     
 //    cout<<"metric =  " << metric << "  graph = " << graph << " id =  " <<  id << "  classId " << classId <<endl;
