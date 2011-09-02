@@ -2,40 +2,38 @@
 \subsection{Credibilidade baseada em Relacionamentos}
 \label{sec::pg_cred_baseada_grafos}
 
-Abordamos durante essa seção as métricas utilizadas como terminais dos indivíduos evoluídos para credibilidade baseada em relacionamentos, assim como descrito na Seção~\ref{subsec::individuos}. Todas as métricas contidas aqui são amplamente utilizadas em Redes Complexas (citacao), pois são medidas que conseguem explorar bem as propriedades estruturais dos grafos modelados.
+Abordamos durante essa seção as métricas utilizadas como terminais dos indivíduos evoluídos para credibilidade baseada em relacionamentos, assim como descrito na Seção~\ref{subsec::individuos}. Todas as métricas contidas aqui são amplamente utilizadas em Redes Complexas (\cite{Newman03}), pois são medidas que conseguem explorar bem as propriedades estruturais dos grafos modelados.
 
-Lembramos que o primeiro passo é a construção dos grafos representando o relacionamento modelado do ponto das várias classes. 
-Como já dito, construímos um grafo para cada classe, de forma a efetivamente isolar um classe da outra.
+Lembramos que o primeiro passo é a construção dos grafos representando o relacionamento modelado. 
+Como já dito, construímos um grafo para cada classe, de forma a isolar uma classe da outra.
 Logo depois, introduzimos o exemplo de teste e todas suas arestas para os exemplos de treinamento. Assim, de forma geral, calculamos para cada uma das classe o valor da métrica, $\textsc{Métrica}(teste, classe)$, que modela a credibilidade de determinada classe em relação ao exemplo de teste. 
 
-Várias métricas não relacionam diretamente o teste a uma classe, mas o teste a cada um dos exemplos de treinamento de uma classe. Esse é o caso das métricas de similaridade, como veremos a seguir. Para essas situações, calculamos o valor da mesma para todos os exemplos de uma mesma classe e somamos os resultados obtidos. Logo,
+Várias métricas não relacionam diretamente exemplo de teste a uma classe, mas a um exemplos de treinamento. 
+Poderíamos usar diretamente essa relação com uma função de credibilidade para o \textsc{KNN}, porém teríamos mais dificuldade com o \textit{Naïve Bayes}. Para deixarmos todos os algoritmos modelados de forma idêntica, optamos por considerar calcular a credibilidade de toda um conjunto de treinamento da mesma classe. Assim, temos as mesmas métricas para o \textsc{KNN} e o \textit{Naïve Bayes}, pois em nenhum momento o \textit{Naïve Bayes} compara dois exemplos diretamente.
+Portanto para as situações onde a métrica calcula algum valor entre um exemplo de teste e o do treino, agregamos esse cálculo para todos os exemplos de uma mesma classe. Logo,
 \begin{equation}
          \textsc{Métrica}(teste, c_j) =  \sum\limits_{treino \in c_j} \textsc{Métrica}(teste, treino),
 \end{equation}
-resultando em somente um valor para a credibilidade de uma classe em relação ao exemplo de teste.
+resultamos em somente um valor para a credibilidade dos exemplos de treino de uma classe em relação ao exemplo de teste.
+Exibimos na tabela~\ref{table::metricas_rel} as duas principais expressões utilizadas ao longo da descrição das métricas de credibilidade baseada em relacionamentos.
 
-\subsubsection{Métricas modeladas.}
-\label{subsec::pg_metricas_grafos}
+\begin{table}[ht*]
+\centering
+\caption{Explicação das principais expressões utilizadas para definição das métricas para relacionamentos.}
+\label{table::metricas_rel}
+\begin{tabular}{|c|c|}
+\toprule
+    \textbf{Expressão} & \textbf{Explicação} \\
+\midrule
+    $adj(a)$           & Conjunto de vértices conectados ao vértice $a$. \tabularnewline \hline
+    $dg(a)$            & Número de vértices ligados ao vértice $a$.\tabularnewline \hline
+    $out(a)$           & Número de vértices alcançáveis a partir do vértice $a$ (grau de saída).\tabularnewline \hline
+\bottomrule
+\end{tabular}
+\end{table}
 
-Se eu seguir o padrao das ultimas secoes, aqui devo colocar uma tabela mostrando as metricas que vao ser usadas, como Adj(x). Faco isso mesmo?! Acho que sim. Esperando apenas confirmacao.
-
-
-%As métricas usadas para atributos textuais consistem em algumas variantes do \textsc{TFIDF}, métrica mais difundida entre as apresentadas. Na tabela~\ref{table::metricas_textuais} estão concentradas algumas expressões amplamente utilizadas nas métricas aqui listadas.
-
-%\begin{table}[ht*]
-%\centering
-%\begin{tabular}{|c|c|}
-%\toprule
-%    \textbf{Expressão} & \textbf{Explicação} \\
-%\midrule
-%    $N$           & Número de documentos na base de treinamento. \tabularnewline \hline
-%    $M$           & Número de classes da coleção. \tabularnewline \hline
-%    $D$           & Número de termos da coleção. \tabularnewline \hline
-%\bottomrule
-%\end{tabular}
-%\caption{Explicação das principais expressões utilizadas para definição das métricas para atributos textuais.}
-%\label{table::metricas_textuais}
-%\end{table}
+%\subsubsection{Métricas modeladas.}
+%\label{subsec::pg_metricas_grafos}
 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -94,7 +92,7 @@ Que pode ser reescrita utilizando vetores como:
 \begin{equation}\label{eqn::eigenvector2}
    X = \frac{1}{\lambda} AX  \;\; \Longleftrightarrow\;\;  AX = \lambda X
 \end{equation}
-Onde $X$ é dito ser o \textit{autovetor} formado pelos valores de $x_i$ com $0 \leq i \leq N$ e associado ao \textit{autovalor} $\lambda$.  Podem existir muitos valores para $\lambda$ para os quais a Equação~\ref{eqn::eigenvector2} possui solução. Entretanto, se utilizarmos todos os valores do \textit{autovetor} como positivos, teremos o único e maior valor possível para o \textit{autovalor} (\cite{Newman10}). 
+Onde $X$ é dito ser o \textit{autovetor} formado pelos valores de $x_i$ com $0 \leq i \leq N$ e associado ao \textit{autovalor} $\lambda$. Podem existir muitos valores para $\lambda$ para os quais a Equação~\ref{eqn::eigenvector2} possui solução. Entretanto, se utilizarmos todos os valores do \textit{autovetor} como positivos, teremos o único e maior valor possível para o \textit{autovalor} (\cite{Newman10}). 
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item{\textbf{\textit{Hub} e Autoridade de Kleinberg}}
@@ -110,9 +108,8 @@ Em suma, a ideia aqui modelada se baseia no fato de que na \textit{Web}, algumas
 
 O algoritmo \textit{PageRank} tem seu nome proveniente do seu criador Lawrence Page (\cite{Page98}). Assim como o algoritmo \textit{HITS}, Seção~\ref{item::hub}, o \textit{PageRank} se baseia na ideia de ordenar os vértices de um grafo baseado-se nas relações entre eles, sendo que quando mais ``popular'' um vértice é, maior é o seu \textit{PageRank}. Em resumo, temos que
 \begin{equation}\label{eqn::pagerank}
-PR(teste, classe) = \sum_{v \in Adj(a)} \frac{PR(v, classe)}{L(v)},
+PR(teste, classe) = \sum_{v \in Adj(a)} \frac{PR(v, classe)}{out(v)}.
 \end{equation}
-onde $Adj(x)$ é o conjunto dos vizinhos do vértice $x$ e $L(x)$ é o grau de saída de $x$, ou seja, o número de vértices alcançáveis a partir de $x$.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item{\textbf{\textit{Burt's Constraint}}}
@@ -129,9 +126,9 @@ Outro conceito importante são os buracos estruturais, que podem ser definidos c
 %http://igraph.sourceforge.net/doc/html/igraph_bibcoupling.html
 \textit{Bibliographic Coupling} é uma métrica introduzida em~\cite{Kessler63} que calcula, para dois trabalhos científicos, o número de referências em comum que ambos possuem. A ideia dessa métrica é que se dois trabalhos apresentam muitas referências em comum, então provavelmente eles abordam o mesmo assunto. Em geral, podemos definir que:
 \begin{equation}
-\textsc{Bib}(a, b) =  |Adj(a) \cap Adj(b)|,
+\textsc{Bib}(a, b) =  |Adj(a) \cap Adj(b)|.
 \end{equation}
-onde $Adj(x)$ é o conjunto de vizinhos que o vértice $x$ está conectado. Como estamos interessados em calcular a similaridade de um vértice (exemplo de teste) com uma classe, necessitamos apenas de um valor que defina o quanto aquele vértice se assemelha aos demais. Logo, calculamos o valor do \textit{bibliographic coupling} do exemplo de teste com todos os vértices que ele se conecta:
+Como estamos interessados em calcular a similaridade de um vértice (exemplo de teste) com uma classe, necessitamos apenas de um valor que defina o quanto aquele vértice se assemelha aos demais. Logo, calculamos o valor do \textit{bibliographic coupling} do exemplo de teste com todos os vértices que ele se conecta:
 \begin{equation}
 \textsc{BibCoup}(teste, c_j) =  \sum\limits_{v' \in c_j} Bib(teste, v').
 \end{equation}
@@ -160,9 +157,9 @@ e da mesma forma que já realizado anteriormente, calculamos o somatório dessa 
 
 O coeficiente de similaridade de Dice de dois vértices é duas vezes o número de vizinhos em comum dividido pela soma de graus dos dois vértices, ver~\cite{Dice45}. Matematicamente temos:
 \begin{equation}
-\textsc{Dice(a,b)} = \frac{2 \cdot | adj(a) \cap adj(b) | }{| a | + | b |},
+\textsc{Dice(a,b)} = \frac{2 \cdot | adj(a) \cap adj(b) | }{| a | + | b |}.
 \end{equation}
-onde $adj(x)$ é o conjunto de vértices adjacentes ao vértice $x$. Novamente, calculamos a similaridade de Dice entre o exemplo de teste e todos os vértices do grafo, a fim de termos um único valor que represente a credibilidade do ponto de vista dessa métrica.
+Novamente, calculamos a similaridade de Dice entre o exemplo de teste e todos os vértices do grafo, a fim de termos um único valor que represente a credibilidade do ponto de vista dessa métrica.
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item{ \textbf{Similaridade de Adamic e Adar}}
@@ -171,9 +168,9 @@ onde $adj(x)$ é o conjunto de vértices adjacentes ao vértice $x$. Novamente, 
 As similaridades de Jaccard e Dice se baseiam no princípio que todos os vértices adjacentes ao vértice que analisamos são igualmente importantes. Entretanto, esse não é sempre o caso.
 Inspirados em uma ideia similar ao TDIDF, Seção~\ref{item::tfidf}, Adamic e Adar propuseram atribuir pesos aos vértices de maneira que um vértice com menos conexões possa ter maior poder discriminativo, ver~\cite{Adamic03}. Dessa forma, a similaridade de Adamic e Adar entre dois vértices é o número de vizinhos que ambos têm em comum, balanceados pelo inverso do logaritmo de seus graus. Ou seja,
 \begin{equation}
-\textsc{Ad\&Ad(a,b)} =  \sum\limits_{v \in (adj(a)\ \cap\ adj(b))} \frac{1}{ \log(dg(v))},
+\textsc{Ad\&Ad(a,b)} =  \sum\limits_{v \in (adj(a)\ \cap\ adj(b))} \frac{1}{ \log(dg(v))}.
 \end{equation}
-onde $dg(g)$ é grau do vértice $v$ e $adj(x)$ é o conjunto de todos os vértices adjacentes de $x$. Como já dito, por fim necessitamos calcular o valor de \textsc{Ad\&Ad(teste, classe)} realizando o somatório da similaridade entre o teste e todos os vértices do grafo da classe em questão.
+Como já dito, por fim necessitamos calcular o valor de \textsc{Ad\&Ad(teste, classe)} realizando o somatório da similaridade entre o teste e todos os vértices do grafo da classe em questão.
 
 \end{description}
 

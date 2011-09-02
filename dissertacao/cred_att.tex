@@ -2,36 +2,66 @@
 \subsection{Credibilidade Baseada nos Atributos}
 \label{sec::pg_cred_baseada_conteudo}
 
-Nessa seção apresentamos várias métricas utilizadas como terminais na construção dos indivíduos usados pelo Programa Genético. Elas foram modeladas diferentemente para os casos nos quais os atributos são textuais ou categóricos, sendo que a modelagem para atributos numéricos foi deixada como trabalho futuro. 
+Nessa seção apresentamos várias métricas utilizadas como terminais na construção dos indivíduos usados pelo Programa Genético. 
+Elas são o resultado de um extensivo estudo na literatura por métricas que possam ajudar o classificador a capturar a credibilidade de um dado exemplo de treinamento, ao tentar classificar o exemplo de teste em uma classe.
+Elas foram modeladas de maneira sutilmente diferente para os casos nos quais os atributos são textuais ou categóricos, sendo que a modelagem para atributos numéricos foi deixada como trabalho futuro. 
 
 Em suma, algumas métricas estão muito atreladas a classificação de documentos, em especial aquelas que realizam cálculos baseados na frequência de termos e documentos. 
 Entretanto, muitas são genéricas o suficiente para serem utilizadas em qualquer contexto de classificação baseada em atributos.
 Dessa forma, na Seção~\ref{subsec::pg_metricas_conteudo_textual} mostramos as métricas que foram modeladas única e exclusivamente para serem utilizadas na tarefa de classificação de documentos  e na Seção~\ref{subsec::pg_metricas_conteudo} temos as métricas que foram estendidas e estão sendo usadas também para a classificação categórica.
-
-\subsubsection{Métricas Modeladas Exclusivamente Para Atributos Textuais.}
-\label{subsec::pg_metricas_conteudo_textual}
-
-As métricas usadas para atributos textuais consistem em algumas variantes do \textsc{TFIDF} (\cite{Salton88}), métrica mais difundida entre as apresentadas. A Tabela~\ref{table::metricas_textuais} apresenta a nomeclatura utilizadas pelas métricas aqui listadas.
+Ao todo são quatorze métricas para uso exclusivo de classificadores de documentos e dezesseis que podem ser usadas para textos e categorias. Por fim, na Tabela~\ref{table::metricas_attr} apresentamos a nomenclatura utilizada pelas métricas aqui listadas.
 
 \begin{table}[ht*]
 \centering
+\caption{Explicação das principais variáveis utilizadas para definição das métricas de atributos textuais.}
+\label{table::metricas_attr}
 \begin{tabular}{|c|c|}
+
 \toprule
-    \textbf{Variável} & \textbf{Significado} \\
+\multicolumn{2}{c}{Usadas na classificação de atributos textuais. }\tabularnewline
 \midrule
-    $N$           & Número de documentos na base de treinamento. \tabularnewline \hline
-    $M$           & Número de classes da base de dados. \tabularnewline \hline
+
+\toprule
+\textbf{Variável} & \textbf{Significado} \\
+\midrule
     $D$           & Número de termos da base de dados. \tabularnewline \hline
     $DF_{t_i} $   & Número de documentos do conjunto do treino que contém o termo $t_i$. \tabularnewline \hline
     $DF_{t_ic_j}$ & Número de documentos do treino com o termo $t_i$ e pertencentes a classe $c_j$. \tabularnewline \hline
     $CF_{t_i}$    & Número de classes em que o termo $t_i$ ocorre. \tabularnewline \hline 
     $F_{t_i}$     & Número de vezes que o termo $t_i$ aparece nos documentos de treinamento. \tabularnewline \hline
-    $F_{t_ic_j}$  & Número de vezes que o termo $t_i$ aparece em documentos da classe $c_j$ no treino. \tabularnewline 
+    $F_{t_ic_j}$  & Número de vezes que o termo $t_i$ aparece em documentos da classe $c_j$ no treino. \tabularnewline
 \bottomrule
+
+\midrule
+\multicolumn{2}{c}{Usadas na classificação de atributos categóricos. }\tabularnewline
+\midrule
+
+\toprule
+\textbf{Variável} & \textbf{Significado} \\
+\midrule
+    $D$           & Número de atributos da coleção. \tabularnewline \hline
+    $F_{x_ic_j}$  & Número de exemplos de treino da classe $c_j$ e com o atributo $A_i$ valendo $x_i$. \tabularnewline \hline
+    $F_{c_j}$     & Número de exemplos de treino da classe $c_j$. \tabularnewline 
+\bottomrule
+
+\midrule
+\multicolumn{2}{c}{Usadas em ambos os tipos de classificação. }\tabularnewline
+\midrule
+
+\toprule
+\textbf{Variável} & \textbf{Significado} \\
+\midrule
+    $N$           & Número de documentos na base de treinamento. \tabularnewline \hline
+    $M$           & Número de classes da base de dados. \tabularnewline
+\bottomrule
+
 \end{tabular}
-\caption{Explicação das principais variáveis utilizadas para definição das métricas de atributos textuais.}
-\label{table::metricas_textuais}
 \end{table}
+
+\subsubsection{Métricas Modeladas Exclusivamente Para Atributos Textuais.}
+\label{subsec::pg_metricas_conteudo_textual}
+
+As métricas usadas para atributos textuais consistem em algumas variantes do \textsc{TFIDF} (\cite{Salton88}), métrica mais difundida entre as apresentadas.
 
 \begin{description}
 
@@ -108,6 +138,17 @@ Uma das métricas de pesos para atributos em classificação de documentos mais 
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item{\textbf{Máxima Frequência do Termo Inverso da Frequência de Documentos}}% (\textsc{maxTFIDF})}
+\label{item::maxtfidf}
+
+Calculamos o valor máximo de \textsc{TFIDF} para todas as classes e utilizamos esse valor como uma métrica discriminatória global que relacionará mais fortemente os termos com as classes nas quais o \textsc{TFIDF} é máximo. Logo, usamos:
+
+\begin{equation}\label{eqn::maxdom}
+ \textsc{MaxTFIDF}(t_i) = \textsc{TFIDF}(t_i,c_j) \; \; | \;\; \textsc{TFIDF}(t_i, c_j) > \textsc{TFIDF}(t_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item{\textbf{Frequência do Termo Inverso da Frequência da Classe}}% (TFICF)}
 \label{item::tficf}
 
@@ -119,6 +160,19 @@ Como mostrado por~\cite{ChihHow04}, a fórmula para \textsc{TFICF} é:
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item{\textbf{Máxima Frequência do Termo Inverso da Frequência da Classe}}% (\textsc{maxTFICF})}
+\label{item::maxtfidf}
+
+Calculamos o valor máximo de \textsc{TFICF} para todas as classes e utilizamos esse valor como uma métrica discriminatória global que relacionará mais fortemente os termos com as classes nas quais o \textsc{TFICF} é máximo. Logo, usamos:
+
+\begin{equation}\label{eqn::maxdom}
+ \textsc{MaxTFICF}(t_i) = \textsc{TFICF}(t_i,c_j) \; \; | \;\; \textsc{TFICF}(t_i, c_j) > \textsc{TFICF}(t_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \item{\textbf{\textit{Category Term Description}}}
 \label{item::ctd}
 
@@ -173,25 +227,24 @@ Todas as métricas apresentadas nessa seção foram utilizadas para geração de
 Elas são inspiradas em probabilidades que podem ser facilmente calculadas dos exemplos contidos no conjunto de treinamento. 
 Destacamos que a probabilidade condicional $P(x_i|c_j)$ como a principal métrica, pois as demais, complexas ou não, são derivações dessa.
 
-Pretendemos através da Tabela~\ref{table::metricas_textuais_categoricos} mostrar as definições utilizadas para definição dos atributos categórico, lembrando que quando se trata de um problema de classificação de texto deve-se recorrer a Tabela~\ref{table::metricas_textuais}.
+Na Tabela~\ref{table::metricas_attr} está a referência quanto às variáveis usadas nessa seção.
 
-
-\begin{table}[ht*]
-\centering
-\begin{tabular}{|c|c|}
-\toprule
-    \textbf{Métrica} & \textbf{Explicação} \\
-\midrule
-    $N$           & Número de exemplos na base de treinamento. \tabularnewline \hline
-    $M$           & Número de classes da coleção. \tabularnewline \hline
-    $D$           & Número de atributos da coleção. \tabularnewline \hline
-    $F_{x_ic_j}$  & Número de exemplos de treino da classe $c_j$ e com o atributo $A_i$ valendo $x_i$. \tabularnewline \hline
-    $F_{c_j}$     & Número de exemplos de treino da classe $c_j$. \tabularnewline 
-\bottomrule
-\end{tabular}
-\caption{Explicação das principais expressões utilizadas para definição das métricas para atributos categóricos.}
-\label{table::metricas_textuais_categoricos}
-\end{table}
+%\begin{table}[ht*]
+%\centering
+%\begin{tabular}{|c|c|}
+%\toprule
+%    \textbf{Métrica} & \textbf{Explicação} \\
+%\midrule
+%    $N$           & Número de exemplos na base de treinamento. \tabularnewline \hline
+%    $M$           & Número de classes da coleção. \tabularnewline \hline
+%    $D$           & Número de atributos da coleção. \tabularnewline \hline
+%    $F_{x_ic_j}$  & Número de exemplos de treino da classe $c_j$ e com o atributo $A_i$ valendo $x_i$. \tabularnewline \hline
+%    $F_{c_j}$     & Número de exemplos de treino da classe $c_j$. \tabularnewline 
+%\bottomrule
+%\end{tabular}
+%\caption{Explicação das principais expressões utilizadas para definição das métricas para atributos categóricos.}
+%\label{table::metricas_textuais_categoricos}
+%\end{table}
 
 \begin{description}
 
