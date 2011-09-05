@@ -108,10 +108,11 @@ Tanto a divisão por zero, quanto o logaritmo de números negativos não são ma
 \begin{table}[ht*]
 \centering
 \caption{Funções do \textsc{PG}, são usadas como vértices internos no \textsc{PG}}
-\begin{tabular}{|c|c|}
+\begin{tabular}{|c||c|}
 \toprule
     \textbf{Função Interna} & \textbf{Explicação} \\
 \midrule
+\hline
     +$(a,b)$           & Soma $a$ com $b$. \tabularnewline \hline
     -$(a,b)$           & Subtrai $b$ de $a$, porém retorna 0 se $b$ for maior que $a$.\tabularnewline \hline
     $\times(a,b)$       & Multiplica $a$ com $b$. \tabularnewline \hline
@@ -126,8 +127,8 @@ Tanto a divisão por zero, quanto o logaritmo de números negativos não são ma
 %Pelo fato de termos um grande número de terminais definidos, reservamos as Seções~\ref{sec::pg_cred_baseada_conteudo} e~\ref{sec::pg_cred_baseada_grafos} exclusivamente para descrevermos aqueles relacionados aos atributos e aos relacionamentos, respectivamente. 
 Pelo fato de termos um grande número de terminais definidos, subdividimos essa seção nas Seções~\ref{sec::pg_cred_baseada_conteudo} e~\ref{sec::pg_cred_baseada_grafos} exclusivamente para descrevermos as métricas relacionados ao atributos e aos relacionamentos entre os exemplos, respectivamente. 
 
-\input{cred_att.tex}
-\input{cred_rel.tex}
+\input{04_cred_att.tex}
+\input{04_cred_rel.tex}
 
 %Na Figuras~\ref{fig::gps1} e~\ref{fig::gps2} temos ao todo cinco exemplos de funções de credibilidades que poderiam ser geradas pelo \textsc{PG}, as três da primeira figura ilustram funções de credibilidade baseadas em atributos e as demais são baseadas em relacionamentos entre os exemplos. As cores nas mesmas são usadas apenas para auxiliar na explicação das operações genéticas de mutação e cruzamento na seção a seguir.
 
@@ -281,10 +282,11 @@ Para explicar a métrica $F_1$, utilizamos a Tabela~\ref{table::confusao}. Nela,
 \begin{table}[ht*]
 \centering
 \caption{Matriz de confusão usada para exemplificar as métricas de precisão e revocação.}
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c||c|c|}
 \toprule
        &    \textbf{Pertence a classe +} & \textbf{Pertence a classe -} \\
 \midrule
+\hline
     \textbf{Classificado como +}  & VP & FP \tabularnewline \hline
     \textbf{Classificado como -}  & FN & VN \tabularnewline
 \bottomrule

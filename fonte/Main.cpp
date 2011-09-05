@@ -113,6 +113,7 @@ int main(int argc, char **argv)
     	    classifier = new KNN(&stats, KNNK, usingKNNOptimize); 
     	else
             classifier = new NaiveBayes(&stats); 
+	    classifier->showConfusionMatrix();
 	    classifier->train(io.getTrain());
         classifier->test(io.getTest());
         classifier->printFinalOutFile(io.getFinalOutFile(), "TrainBaseline");
@@ -222,7 +223,7 @@ int main(int argc, char **argv)
 	classifier->cleanStaticFields();
     classifier->train(io.getTrain());
 	classifier->test(io.getTest());
-//	classifier->showConfusionMatrix();
+	classifier->showConfusionMatrix();
     classifier->printFinalOutFile(io.getFinalOutFile(), "TestBaseline");
     cout<<"[OK]"<<endl;
 

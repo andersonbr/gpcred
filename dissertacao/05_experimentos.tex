@@ -1,7 +1,10 @@
 \newcommand{\triangOK}{\textcolor[rgb]{00,0.45,0.10}{$\blacktriangle$}}
 \newcommand{\triangBAD}{\textcolor[rgb]{0.7,00,00}{$\blacktriangledown$}}
 \newcommand{\ball}{\textcolor[rgb]{0.7,0.70,0.0}{$\bullet$}}
- 	
+
+\definecolor{Gray}{gray}{0.9}
+\definecolor{LightCyan}{rgb}{0.90,0.9,1}
+
 %\begin{table}
 %\centering
 %\caption{}
@@ -19,26 +22,43 @@
 
 
 Nesse capítulo relataremos os diversos experimentos efetuados e seus resultados.
-Decidimos por realizar a seguinte divisão: 
-na Seção~\ref{sec::preliminares} abordamos os pontos em comum de todos os experimentos e mostramos as bases de dados usadas,
-%já na Seção~\ref{sec::fitness} avaliamos três possibilidades para a função de \textit{fitness} do Programa Genético,
-enquanto, nas Seções~\ref{sec::documentos}, \ref{sec::categorias} e \ref{sec::bioinfo} abordamos a classificação de atributos textuais, categóricos e numéricos, respectivamente.
+Decidimos por realizar a divisão desse capítulo em quatro partes.
+Na primeira, a Seção~\ref{sec::preliminares}, abordamos alguns pontos em comum de todos os experimentos, como a metodologia da Validação Cruzada, os parâmetros do \textsc{PG} e a função de \textit{fitness} empregada, além de mostramos as bases de dados trabalhadas.
+Nas Seções~\ref{sec::documentos}, \ref{sec::categorias}, abordamos a classificação com a utilização de funções credibilidade em atributos textuais e categóricos, respectivamente.
+Os atributos textuais provêm de bases de documentos muito utilizadas na literatura, em especial a base da \textsc{ACM-DL} contém também informações usadas para credibilidade de relacionamentos.
+Por sua vez, os atributos categóricos vêm de bases do \textsc{UCI}.
+Finalmente, na Seção~\ref{sec::bioinfo}, apresentamos os resultados ao utlizar classificação de atributos númericos e funções de credibilidade referentes aos relacionamentos das proteínas em uma base de bioinformática. (é relacionamento de proteinas mesmo?!)
+
+
+
 
 \section{Preliminares}
 \label{sec::preliminares}
 
-TODO: falar das subsecoes.
+Nessa seção, descrevemos aspectos fundamentais que serão usados nos experimentos efetuados nas próximas seções desse capítulo. 
+Iniciamos com a Seção~\ref{subsec::base}, que mostra todas as bases usadas, assim como um estudo de suas características.
+Depois, na Seção~\ref{subsec::config}, abordamos a metodologia da Validação Cruzada e as configurações do \textsc{PG}.
+Finalmente na Seção~\ref{subsec::ganhosgp}, mostramos experimentos preliminares que apontam os ganhos da utilização de \textsc{PG} para evoluir funções de credibilidade.
 
-\subsection{Bases de dados}
 
-Nosso trabalho se divide em três conjuntos de bases de dados: as bases de documentos, as bases do UCI (citar) e uma base de bioinformática.
+\subsection{Bases de Dados}
+\label{subsec::base}
+
+Nosso trabalho se divide em três conjuntos de bases de dados: as bases de documentos, as bases do \textsc{UCI} (\cite{UCI98}) e uma base de bioinformática SCOP?? come que poe isso? (\cite{SCOP95}).
 
 Iniciamos por mostrar a Figura \ref{fig::basesdoc}, contendo as distribuições dos exemplos das quatro bases de documentos que estamos usando. Todas as bases foram pré-processadas, com remoção de \textit{stop words}, assim como foi atribuída somente uma única classe para todos os documentos que originalmente poderiam pertencer a mais de uma.
-A base de documentos digitais da \textsc{ACM}, chamada \textsc{ACM-DL} (\textit{Association for Computing Machinery Digital Library}), é um rico acerto de artigos acadêmicos da área da Ciência da Computação e mostrada na Figura \ref{fig::acm}. Utilizamos somente um subconjunto formado por 56.450 termos diferentes em 24.897 artigos divididos em 11 classes. (falar dos grafos).
-A base \textit{Reuters} contém 8.184 documentos divididos em 8 classes, contendo 24.986 termos distintos. Eles são provenientes da agência de notícias com o mesmo nome da base. 
+
+A base de documentos digitais da \textsc{ACM}, chamada \textsc{ACM-DL} (\textit{Association for Computing Machinery Digital Library}), é um rico acerto de artigos acadêmicos da área da Ciência da Computação e mostrada na Figura \ref{fig::acm}. Utilizamos somente um subconjunto formado por 56.450 termos diferentes em 24.897 artigos divididos em 11 classes. 
+A base da \textsc{ACM} ainda é a única que apresenta informações sobre os autores e citações contidas nos seus documentos. 
+Podemos com formar dois grafos com essa informação, um para os autores e outro para as citações.
+Ao todo o grafo de autoria tem 16.005 vértices (documentos) e 72.645 arestas, sendo que cada aresta representa o número de autores entre dois documentos.
+Já o grafo de citações tem 31.482 vértices e 95.812 arestas, onde os vértices são documentos e as arestas são direcionadas e significam que um documento cita o outro. 
+Repare que o número de de documentos no grafo de citações é maior que o número de artigos existentes no subconjunto da \textsc{ACM-DL} que utilizamos. Isso é possível pelo fato de estarmos usando um subconjunto dos documentos da \textsc{ACM-DL} e ele contém informações sobre artigos que estão fora do subconjunto que usamos. Para ser mais exato, apenas 5.305 artigos do grafo de citação estão presentes na base que usamos, enquanto os outros 26.176 não estão.
+
+Por sua vez, a base \textit{Reuters} contém 8.184 documentos divididos em 8 classes, contendo 24.986 termos distintos. Eles são provenientes da agência de notícias com o mesmo nome da base. 
 Por sua vez, a base \textit{Ohsumed} apresenta 18.302 documentos médicos, em 23 classes e 45.991 termos.
-Finalmente, a base 20-\textit{newgroup} (\textsc{20ng}) contém 18.827 mensagens de texto com 110.502 termos único, enviadas para grupos de notícia de diversos assuntos como ciência, religião, entre outros, totalizando 20 classes.
-Todos os pontos mostrados na Figura \ref{fig::basesdoc} são referentes à quantidade de exemplos de cada classe, ordenados de maneira crescente, da classe de menor popularidade para a de maior. Verificamos que a base \textit{20-newsgroup} é a que apresenta a distribuição mais equilibrada de exemplos por classe, enquanto a \textit{ohsumed} apresenta a pior, com 17 das 23 classes contendo menos que 1.000 exemplos por classe e com duas classes contendo mais de 2.500.
+Finalmente, a base 20-\textit{newgroup} (\textit{20ng}) contém 18.827 mensagens de texto com 110.502 termos único, enviadas para grupos de notícia de diversos assuntos como ciência, religião, entre outros, totalizando 20 classes.
+Todos os pontos mostrados na Figura \ref{fig::basesdoc} são referentes à quantidade de exemplos de cada classe, ordenados de maneira crescente, da classe de menor popularidade para a de maior. Verificamos que a base \textit{20-newsgroup} é a que apresenta a distribuição mais equilibrada de exemplos por classe, enquanto a \textit{Ohsumed} apresenta a pior, com 17 das 23 classes contendo menos que 1.000 exemplos por classe e com duas classes contendo mais de 2.500.
 
 \begin{figure}[!h]
   \centering
@@ -52,7 +72,7 @@ Todos os pontos mostrados na Figura \ref{fig::basesdoc} são referentes à quant
 \label{fig::basesdoc}
 \end{figure}
 
-Na Figura \ref{fig::basesdoc}, mostramos o perfil de quatro bases do repositório de bases para aprendizagem de máquina do campos de Irvine da Univeridade da California (\textsc{UCI}) (\cite{UCI98}). Todas as bases são compostas por poucos atributos, todos categóricos, e poucas classes. A base \textit{Cars} contém 1.728 exemplos com 6 atributos cada, apresentando características importantes para decidir a condição de um carro usado entre não aceitável, aceitável, bom e muito bom. A base \textit{chess} utiliza de 36 atributos e apresenta 3.196 instâncias para decidir se a partir de alguns movimentos finais do jogo de xadrez, o jogador que joga com as peças brancas pode ganhar ou não. \textit{Nursery} é uma base formada por candidaturas para as escolas de enfermaria de Liubliana, Eslovênia. Ela é composta de 12.960 exemplos de 8 atributos que descrevem aspectos de um(a) candidato(a) para a escola de enfermaria. Cada exemplo pode ser classificado em cinco classes que vão desde não recomendado até muito recomendado, com a classe recomendado apresentando apenas dois exemplos. Por último a base \textit{tictactoe}, mostra as 958 combinações possíveis das 9 casas do jogo da velha, sendo as classes possíveis a vitória do jogador \textsc{x} ou não.
+Na Figura \ref{fig::basesdoc}, mostramos o perfil de quatro bases do repositório de bases para aprendizagem de máquina do campos de Irvine da Univeridade da California (\textsc{UCI}). Todas as bases são compostas por poucos atributos, todos categóricos, e poucas classes. A base \textit{Cars} contém 1.728 exemplos com 6 atributos cada, apresentando características importantes para decidir a condição de um carro usado entre não aceitável, aceitável, bom e muito bom. A base \textit{chess} utiliza de 36 atributos e apresenta 3.196 instâncias para decidir se a partir de alguns movimentos finais do jogo de xadrez, o jogador que joga com as peças brancas pode ganhar ou não. \textit{Nursery} é uma base formada por candidaturas para as escolas de enfermaria de Liubliana, Eslovênia. Ela é composta de 12.960 exemplos de 8 atributos que descrevem aspectos de um(a) candidato(a) para a escola de enfermaria. Cada exemplo pode ser classificado em cinco classes que vão desde não recomendado até muito recomendado, com a classe recomendado apresentando apenas dois exemplos. Por último a base \textit{tictactoe}, mostra as 958 combinações possíveis das 9 casas do jogo da velha, sendo as classes possíveis a vitória do jogador \textsc{x} ou não.
 
 \begin{figure}[h]
   \centering
@@ -66,7 +86,12 @@ Na Figura \ref{fig::basesdoc}, mostramos o perfil de quatro bases do repositóri
 \label{fig::basescategorias}
 \end{figure}
 
-Consultar o paper do douglas para falar sobre a astral.
+
+Finalmente, a base de bioinformática
+
+base: (4193 classes, 110.799 exemplos diferentes, usando SVD para diminuir as dimensoes, 15 Dimensoes)
+grafo: (11461022 arestas 
+
 
 \begin{figure}[h]
   \centering
@@ -82,101 +107,109 @@ Consultar o paper do douglas para falar sobre a astral.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Parâmetros do Programa Genético}
+\subsection{Configurações dos Experimentos}
+\label{subsec::config}
 
+Abordamos nessa seção três aspectos importantes de todos os experimentos: a metodologia usada na execução dos mesmos, os parâmetros empregados no Programa Genético e 
+a avaliação de algumas funções de \textit{fitness}.
 
-\begin{table}[h]
+\subsubsection{Metodologia com Validação Cruzada}
+\label{subsubsec::cv}
+
+Empregamos a técnica de Validação Cruzada (\cite{Refaeilzadeh00}) com 5 partições em todos os nossos experimentos, com exceção dos testes na base de bioinformática, onde usamos 10 partições.
+A validação cruzada é bem utilizada e aceita na literatura pelo seu poder se avaliação da generalização de um modelo. Ela consiste em dividir a base de dados em $k$ partições de tamanho igual, onde utilizamos $k-2$ para treinar um modelo, uma para a validação e uma para o teste final. 
+Combinamos a validação cruzada com nosso algoritmo de Programação Genética da seguinte forma: usamos o conjunto de treino para poder gera o modelo de classificação, a validação para testar a \textit{fitness} dos indivíduos e reservamos o teste final para ser usado somente depois que já chegamos a um indivíduo evoluído. 
+
+Além disso, uma validação cruzada de $k$ partições dá origem a $k$ experimentos diferentes, onde cada um possui um conjunto diferente de treino, validação e testes, resultado da rotação das partições. A Figura~\ref{fig::cv} ilustra bem o processo de rotação para 5 partições, onde a partir de uma divisão inicial da base por 5 partições, podemos gerar os 5 experimentos mostrados.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.40\textwidth]{figures/cv.png}
+ \caption{Modelo de Validação Cruzada com 5 partições.}
+\label{fig::cv}
+\end{figure}
+
+Como dito, pelo fato da base de bioinformática ser muito grande, tivemos que mudar a forma como os experimentos estavam sendo executados. Logo, ela foi dividida em 10 partições, sendo que usamos uma partição para treino, uma para validação e as outras 8 para teste. Dessa forma, evoluímos as funções de credibilidade em apenas dois décimos da base e utilizamos a função evoluída nos outros oito décimos.
+
+\subsubsection{Parâmetros do Programa Genético}
+\label{subsec::gpparam}
+
+A configuração de parâmetros em um Programa Genético é um dos muitos desafios encontrados nesse trabalho. Procuramos utilizar uma combinação que seja boa o suficiente para todos testes aqui exibidos. Isso quer dizer que poderíamos obter resultados ainda melhores se ajustássemos os parâmetros focando em cada teste, porém iríamos ter dezenas de tabelas de configurações, o que definitivamente não é desejado. Portanto, efetuamos vários testes prévios em quase todas as bases estudadas para, finalmente, chegarmos aos parâmetros mostrados na Tabela~\ref{tab::parametros}.   
+Destacamos o uso do programa de visualização chamado Galapagos (\cite{galapagos}), que nesse ano ganhou o prêmio de melhor ferramenta para visualização de algoritmos evolucionários da conferência ACM-Gecco 2011 (Genetics and Evolutionary Computation Conference). 
+
+\begin{table}[!h]
 \centering
 \caption{Principais parâmetros utilizados no \textsc{PG}.}
 \label{tab::parametros}
-%\begin{footnotesize}
-\begin{tabular}{|c|c|}
+\begin{tabular}{|c||c|}
 \toprule 
 \textbf{Parâmetro} & \textbf{Valor}\tabularnewline
 \midrule
-Tamanho da Populacão & 100\tabularnewline
+\hline
+Tamanho da População & 100\tabularnewline
 \hline 
-Número de Geracões & 100\tabularnewline
+Número de Gerações & 100\tabularnewline
 \hline 
-Probabilidade de Cruzamento & 90\tabularnewline
+Tipo de Seleção & Torneio\tabularnewline
 \hline 
-Probabilidade de Reproducão & 5\tabularnewline
+Tamanho do Torneio & 2\tabularnewline
 \hline 
-Probabilidade de Cria\'{c}ão & 5\tabularnewline
+Probabilidade de Reprodução & 10\%\tabularnewline
 \hline 
-Probabilidade de Mutacão & 10\tabularnewline
+Probabilidade de Cruzamento & 90\%\tabularnewline
+\hline 
+Probabilidade de Mutação & 10\%\tabularnewline
 \hline 
 Tamanho Máximo da Árvore & 6\tabularnewline
-\hline 
-Tipo de Selecão & Torneio\tabularnewline
 \hline 
 Elitismo & Sim\tabularnewline
 \bottomrule
 \end{tabular}
-%\end{footnotesize}
-\end{table}[h]
+\end{table}
+
+Como mostrado no Capítulo~\ref{cap::programacao_genetica}, o parâmetro ``tamanho da população'' controla quantos indivíduos teremos em cada uma das gerações e o ``número de gerações'' define até quando o \textsc{PG} evoluirá. Como já falamos também, utilizamos a seleção por torneio formados por apenas dois indivíduos, evitando assim convergir rapidamente. 
+Temos também exibidos os diversos valores de probabilidade para a criação da população da próxima geração. Finalmente, estamos usando a técnica chamada elitismo, na qual o melhor indivíduo de cada geração é automaticamente reproduzido na próxima geração.
 
 
-
-\subsection{Efeito da função de \textit{fitness}}
+\subsubsection{Efeito da Função de \textit{Fitness}}
 \label{sec::fitness}
 
 
-Como foi apontado na Seção~\ref{subsec::fitness}, a \textit{fitness} desempenha importante papel em um Programa Genético, pois define quem são os melhores indivíduos, sendo um importante meio de compará-los.
-Usualmente, os trabalhos presentes na literatura reportam a Micro e Macro-$F_1$, pelo papel que apresentam em tentar balancear a taxa de acerto com uma boa cobertura, medindo a capacidade do classificador prever corretamente indivíduos em todas as classes.
-Em nosso trabalhos passados, sempre utilizamos a Micro-$F_1$ como função de \textit{fitness} (), pelo fato de ser mais comum ver trabalhos reportando a Micro-$F_1$ do que a Macro-$F_1$. Aqui, resolvemos investigar quais são as alterações provocadas pela mudança da função de \textit{fitness} e propomos substituir a Micro-$F_1$ pela Macro-$F_1$ e pela soma das duas, tendendo a dar importância para ambas simultâneamente no processo de evolução.
-Nas Tabelas~\ref{tab::fitness-micro} \ref{tab::fitness-macro}... 
+Como foi apontado na Seção~\ref{subsec::fitness}, a \textit{fitness} desempenha importante papel em um Programa Genético, pois define quem são os melhores indivíduos, sendo um importante meio para compará-los.
+Usualmente, os trabalhos de classificação presentes na literatura reportam a Micro e Macro-$F_1$, pelo papel que apresentam em tentar balancear a taxa de acerto com uma boa cobertura, medindo a capacidade do classificador prever corretamente indivíduos em todas as classes.
+Em nosso trabalhos passados (\cite{Palotti10,Palotti11})
+e nos experimentos aqui presentes, utilizamos a Micro-$F_1$ como função de \textit{fitness}, pois é mais comum encontrar trabalhos na literatura reportando a Micro-$F_1$ do que a Macro-$F_1$. Entretanto, é interessante investigar quais são os resultados obtidos por alterar a função de \textit{fitness}, substituindo a Micro-$F_1$ pela (i) Macro-$F_1$ e (ii) pela soma das duas.
 
-\begin{table}[h]
-\centering
-\caption{Experimentos mostrando a micro$F_1$ variando a função de fitness.}
-\label{tab::fitness-micro}
-\begin{footnotesize}
-\begin{tabular}{|c|c|c|c|c|}
-\toprule
-\multirow{2}{*}{\textbf{Bases}} & \multirow{2}{*}{\textbf{\textit{Baselines}}} & \multicolumn{3}{c|}{\textbf{Funcão de Fitness}}\tabularnewline
-\cline{3-5} 
- &  & \textbf{Micro$F_1$} & \textbf{Macro$F_1$} & \textbf{Macro$F_1$ + Micro$F_1$}\tabularnewline
-\midrule
-ACM & 73.63 \textpm{} 0.91 & 74.33 \textpm{} 0.72 (0.95 \ball) & 72.96 \textpm{} 0.98 (-0.91 \ball) & 73.99 \textpm{} 0.80 (0.49 \ball)\tabularnewline
-\hline 
-20NG & 84.94 \textpm{} 0.58 & 89.06 \textpm{} 0.15 (4.85 \triangOK) & 87.92 \textpm{} 1.59 (3.61 \triangOK) & 88.71 \textpm{} 0.14 (4.43 \triangOK)\tabularnewline
-\hline 
-Ohsumed & 66.56 \textpm{} 0.66 & 69.34 \textpm{} 0.55 (4.19 \triangOK) & 68.83 \textpm{} 1.47 (3.42 \triangOK) & 69.76 \textpm{} 1.19 (4.81 \triangOK)\tabularnewline
-\hline 
-Reuters & 93.13 \textpm{} 0.29 & 94.60 \textpm{} 0.44 (1.57 \triangOK) & 93.96 \textpm{} 0.78 (0.89 \triangOK) & 94.59 \textpm{} 0.50 (1.56 \triangOK)\tabularnewline
-\bottomrule
-\end{tabular}
-\end{footnotesize}
-\end{table}
+Nas Tabelas~\ref{tab::fitness-micro} e \ref{tab::fitness-macro}, mostramos os resultados da Micro e Macro$F_1$, respectivamente, ao aplicar as três funções de \textit{fitness} propostas.
+A utilização da \textit{fitness} = Micro$F_1$ serve como linha de base e informarmos os ganhos nas duas últimas colunas relativos a ela. 
+Assim como em várias da tabelas presentes nesse capítulo, usamos 3 símbolos: \triangOK, \triangBAD, \ball, para dizer, respectivamente, que temos uma comparação significativamente melhor, pior ou igual.  
+
+\input{05_fitness}
+
+Comparando a \textit{fitness} = Micro$F_1$ com \textit{fitness} = Macro$F_1$, percebemos que usar a \textit{fitness} = Macro$F_1$ obtém resultados piores (somente na base \textsc{ACM-DL} a piora foi significativa) para a Micro$F_1$ e não consistentes para Macro$F_1$, apresentando ganhos não significativos duas vezes e uma piora significativa para base \textit{Reuters}. Esperávamos obter um melhor resultado para a Macro$F_1$ ao usá-la como função de \textit{fitness}, mas não foi o que aconteceu.
+Já a utilização de uma função um pouco mais complexa, como \textit{fitness} = Micro$F_1$ + Macro$F_1$, mostra alguns ganhos e perdas, todos não significativos. 
+
+Optamos por continuar usando a \textit{fitness} = Micro$F_1$ 
+por obter melhores resultados que a \textit{fitness} = Macro$F_1$ e
+ser mais simples que a \textit{fitness} = Micro$F_1$ + Macro$F_1$. A última decisão foi tomada à luz do princípio da Navalha de Occam (\cite{Blumer87}), que diz que entre um sistema mais complexo e um mais simples que obtém os mesmos resultados, devemos usar o mais simples.
 
 
+\subsection{O Porquê do Uso de Programação Genética}
+\label{subsec::ganhosgp}
 
-\begin{table}[h]
-\centering
-\caption{Experimentos mostrando a macro$F_1$ variando a função de fitness.}
-\label{tab::fitness-macro}
-\begin{footnotesize}
-\begin{tabular}{|c|c|c|c|c|}
-\toprule
-\multirow{2}{*}{\textbf{Bases}} & \multirow{2}{*}{\textbf{\textit{Baseline}}} & \multicolumn{3}{c|}{\textbf{Funcão de Fitness}}\tabularnewline
-\cline{3-5} 
- &  & \textbf{Micro$F_1$} & \textbf{Macro$F_1$} & \textbf{Macro$F_1$ + Micro$F_1$}\tabularnewline
-\midrule
-ACM & 57.26 \textpm{} 0.93 & 59.72 \textpm{} 1.26 (4.30 \triangOK) & 60.03 \textpm{} 1.45 (4.84 \triangOK) & 60.21 \textpm{} 1.54 (5.15 \triangOK)\tabularnewline
-\hline 
-20NG & 83.68 \textpm{} 0.82 & 88.69 \textpm{} 0.22 (5.99 \triangOK) & 86.46 \textpm{} 3.80 (3.39 \triangOK) & 88.34 \textpm{} 0.06 (5.57 \triangOK)\tabularnewline
-\hline 
-Ohsumed & 54.76 \textpm{} 1.27 & 63.56 \textpm{} 0.90 (16.06 \triangOK) &  63.62 \textpm{} 1.88 (16.18 \triangOK) & 64.38 \textpm{} 1.90 (17.57 \triangOK)\tabularnewline
-\hline 
-Reuters & 81.96 \textpm{} 1.44 & 89.33 \textpm{} 0.90 (8.99 \triangOK) & 88.04 \textpm{} 0.73 (7.42 \triangOK) & 89.08 \textpm{} 0.83 (8.69 \triangOK)\tabularnewline
-\bottomrule
-\end{tabular}
-\end{footnotesize}
-\end{table}
+Na literatura, encontramos muitos trabalhos, conforme abordamos na Seção~\ref{sec::supervised}, que empregam várias das métricas de credibilidade de atributos utilizadas aqui, porém sem nenhuma combinação mais elaborada das mesmas. 
+Assim como previamente mencionamos na Seção~\ref{subsubsec::nbcredatributos} essas métricas sozinhas já poderiam ser funções de credibilidade de atributos, caso não usássemos o \textsc{PG}. Porém, não saberíamos dizer exatamente qual é a melhor métrica para usar em uma dada situação específica, e nem qual combinação, dentre as milhares existentes, é a melhor. 
 
+Com o intuito de mostrarmos que a combinação das métricas durante e evolução do \textsc{PG} é benéfica para a criação de uma função de credibilidade mais robusta, construímos as Tabelas~\ref{tab::imensamicro} e \ref{tab::imensamacro}. 
+Nelas, visualizamos a aplicação das diversas métricas de credibilidade nas quatro bases de texto que estudamos, além de mostrarmos a linha de base, que trata do algoritmo \textit{Naïve Bayes} sem modificação, e as funções evoluídas pelo \textsc{PG}. Entre parêntesis, temos a diferença da aplicação de uma métrica (ou \textsc{PG}) para a linha de base.
+Vemos que usar o \textsc{PG} fornece uma solução bem mais robusta que usar qualquer um das outras métricas em separado. O resultado do \textsc{PG} da Micro$F_1$ da base \textsc{ACM-DL} foi o único que não trouxe resultados significativamente melhores, porém também não foram piores, como todas as outras métricas.
 
+Em geral, as métricas apresentaram resultados positivos em alguns cenários, mas negativos em outros, como a métrica \textsc{IDF} ou \textsc{GSS}. Mesmo as métricas que apresentaram resultados negativos em todos os experimentos, como \textsc{MaxTFIDF}, \textsc{MaxCTD}, foram mantidas por duas razões: (i) não temos certeza se existe um cenário no qual elas possam trazer benefícios, como usar uma outra base ou mesmo usar o inverso da métrica ($\frac{1}{MaxTFIDF}$), (ii) o \textsc{PG} naturalmente vai eliminar métricas que não trazem benefício ao longo das gerações. 
 
+Por fim, realizamos experimentos semelhantes para funções de credibilidade de relacionamentos na base da \textsc{ACM-DL}, obtendo o mesmo tipo de resultados que mostramos aqui, onde a função evoluída pelo \textsc{GP} é sempre melhor ou igual à aplicação das métricas em separado.
+
+\input{05_tabelaImensaMicro}
+\input{05_tabelaImensaMacro}
 
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
@@ -184,19 +217,32 @@ Reuters & 81.96 \textpm{} 1.44 & 89.33 \textpm{} 0.90 (8.99 \triangOK) & 88.04 \
 \section{Bases de Documentos}
 \label{sec::documentos}
 
-\begin{table}[h]
+Já mostramos alguns resultados da aplicação das funções de credibilidade em bases de documentos nas seções anteriores, porém ainda gostaríamos de exibir outros experimentos interessantes em relação a generalidade das funções e ao uso de mais de um fator simultâneamente, nas Seções~\ref{subsec::generalidade} e \ref{subsec::fatores}, respectivamente.
+
+\subsection{Generalidade}
+\label{subsec::generalidade}
+
+Na Seção~\ref{subsec::ganhosgp}, estudamos os resultados de aplicar todas as métricas de credibilidade de atributos em separado e através do uso de \textsc{PG}.
+Como mencionamos na Seção~\ref{subsubsec::cv}, usamos validação cruzada com 5 partições para o obter os resultados mostrados na Tabelas~\ref{tab::imensamicro} e \ref{tab::imensamacro}.
+Logo, para cada uma das bases, tivemos cinco funções evoluídas pelo uso do \textsc{PG}, uma para cada rotação, como mostrado na Figura~\ref{fig::cv}. 
+Cada uma dessas funções obteve um resultado em seu experimento e exibimos, ao final, os resultados médios das cinco funções e desvio padrão.
+Decidimos por escolher a função que obteve o melhor resultado em seu experimento como representante da base de dados e mostramos essas funções na Tabela~\ref{tab::representantes}.
+Assim, por exemplo, a $F_{ACM-DL}$ mostrada foi a função escolhida para a base \textsc{ACM-DL} por ter tido mais ganhos em seu experimento que as outras quatro funções evoluídas nos delas.
+
+\begin{table}[!h]
 \renewcommand{\arraystretch}{1.3}
 \centering
 \caption{Funções de credibilidade geradas para cada uma das bases.}
-\label{tab::}
+\label{tab::representantes}
 \begin{scriptsize}
-\begin{tabular}{|c|c|}
+\begin{tabular}{|c||c|}
 \toprule
 \textbf{Base} & \textbf{Função de Credibilidade}\tabularnewline
 \midrule
-ACM   & $F_{ACM} =  DOM^{(GSS)^{(CE + TF)}} $\tabularnewline
+\hline
+ACM-DL   & $F_{ACM-DL} =  DOM^{(GSS)^{(CE + TF)}} $\tabularnewline
 \hline 
-20NG & $F_{20NG} = DF + MaxAM + (\dfrac{ CHI } { TFIDF^{(MaxTFIDF)} }) $\tabularnewline
+20ng & $F_{20ng} = DF + MaxAM + (\dfrac{ CHI } { TFIDF^{(MaxTFIDF)} }) $\tabularnewline
 \hline 
 Ohsumed  & $ F_{Ohsumed} = (\dfrac{AM}{MaxIG \times CC^{(sumDF)}} )^{(TFICF)^{(TFICF)}} $\tabularnewline
 \hline 
@@ -206,69 +252,91 @@ Reuters & $ F_{Reuters} = IG^{(MaxIG \times GINI)}$\tabularnewline
 \end{scriptsize}
 \end{table}
 
-\begin{table}[h]
+Resolvemos então aplicar as melhores funções de cada uma das bases nas demais bases (e nos outros experimentos de uma mesma base também). Assim podemos testar o quanto que uma função de credibilidade evoluída para uma determinada base é geral e pode ser usada em outro contexto. Nas Tabelas~\ref{tab::generalizacao-Micro} e \ref{tab::generalizacao-Macro}, observamos os resultados do estudo da generalização das funções. Se analisarmos as tabelas na linha diagonal central, veremos a aplicação das funções da Tabela~\ref{tab::representantes} em toda a base, não mais em apenas um dos cinco experimentos da validação cruzada. Observe que todos os resultados são tão bons ou melhores que os reportados anteriormente na Seção~\ref{subsec::ganhosgp}, em especial, foi o único resultado que conseguimos ganhos significativos na base da \textsc{ACM-DL}.
+
+Ao observarmos as Tabelas~\ref{tab::generalizacao-Micro} e \ref{tab::generalizacao-Macro} coluna a coluna, vemos o comportamento de cada uma das funções em cada uma das bases. É nítido que nenhuma das funções evoluídas das outras bases foram boas para a base da \textsc{ACM-DL} e nem que a função evoluída pela \textsc{ACM-DL} obteve resultados bons para as outras bases. Mesmo quando os resultados foram significativamente melhores, i.e., na Macro$F_1$ da \textit{Ohsumed} e \textit{Reuters}, eles foram piores que os outros obtidos pelas outras funções.
+Observamos que todas funções tiveram êxito na melhora da Macro$F_1$ das bases \textit{Ohsumed} e \textit{Reuters}, mas o mesmo não ocorreu na Micro$F_1$.
+Finalmente, destacamos que a única função que obteve resultados bons nas demais bases (exceto na Micro$F_1$ da \textsc{ACM}) foi a função evoluída para a base \textit{20ng}.
+Sendo assim, concluímos que usar as funções evoluídas pelo \textsc{PG} se comportam muito bem na própria base, mas não podemos dizer o mesmo para as demais bases.
+
+\begin{table}[!h]
 \centering
 \caption{Micro$F_1$ obtida pelo \textit{Naïve Bayes} quando usando a função de credibilidade $F_base$ gerada uma dada base nas demais bases.}
 \label{tab::generalizacao-Micro}
 \begin{scriptsize}
-\begin{tabular}{|c||c|c|c|c|}
+\begin{adjustwidth}{-1cm}{-1cm}% adjust the L and R margins by 1 inch
+\begin{tabular}{|c|c|c|c|c|}
 \toprule
-\textbf{Funções evoluídas} & \textbf{ACM} & \textbf{Reuters} & \textbf{Ohsumed} & \textbf{20NG}\tabularnewline
+ & \textbf{ACM-DL} & \textbf{20ng} & \textbf{Ohsumed} & \textbf{Reuters}\tabularnewline
 \midrule
-\textit{Baselines} & 73.63 \textpm{} 0.91 & 93.13 \textpm{} 0.29 & 66.56 \textpm{} 0.66 & 84.86 \textpm{} 0.54\tabularnewline
+\hline
+Linha de Base & 73.63 \textpm{} 0.90 & 84.86 \textpm{} 0.54 & 66.56 \textpm{} 0.66 & 93.13 \textpm{} 0.29\tabularnewline
 \hline 
-$F_{ACM}$ & 75.04 \textpm{} 0.88 (1.91 \triangOK) & 92.68 \textpm{} 0.45 (-0.48 \triangBAD) & 66.06 \textpm{} 0.59 (-0.75 \ball) & 84.45 \textpm{} 0.35 (-0.49 \triangBAD)\tabularnewline
+$F_{ACM-DL}$ & 75.04 \textpm{} 0.88 (1.91 \triangOK) & 84.45 \textpm{} 0.35 (-0.49 \triangBAD) & 66.06 \textpm{} 0.59 (-0.75 \ball) & 92.68 \textpm{} 0.45 (-0.48 \triangBAD)\tabularnewline
 \hline 
-$F_{20ng}$ & 66.69 \textpm{} 0.65 (-9.42 \triangBAD) & 94.01 \textpm{} 0.53 (0.94 \triangOK) & 67.94 \textpm{} 0.62 (2.08 \triangOK)  & 88.97 \textpm{} 0.17 (4.84 \triangOK)\tabularnewline
+$F_{20ng}$ & 66.69 \textpm{} 0.65 (-9.42 \triangBAD) & 88.97 \textpm{} 0.17 (4.84 \triangOK) & 67.94 \textpm{} 0.62 (2.08 \triangOK)  & 94.01 \textpm{} 0.53 (0.94 \triangOK)\tabularnewline
 \hline 
-$F_{Ohsumed}$ & 70.09 \textpm{} 0.82 (-4.81 \triangBAD) & 93.45 \textpm{} 0.57 (0.34 \ball) & 69.54 \textpm{} 0.69 (4.49 \triangOK) & 85.60 \textpm{} 0.27 (0.87 \triangOK)\tabularnewline
+$F_{Ohsumed}$ & 70.09 \textpm{} 0.82 (-4.81 \triangBAD) & 85.60 \textpm{} 0.27 (0.87 \triangOK) & 69.54 \textpm{} 0.69 (4.49 \triangOK) & 93.45 \textpm{} 0.57 (0.34 \ball)\tabularnewline
 \hline 
-$F_{Reuters}$ & 66.55 \textpm{} 0.89 (-9.61 \triangBAD) & 94.87 \textpm{} 0.25 (1.86 \triangOK) & 63.32 \textpm{} 0.82 (-4.86 \triangBAD) & 87.04 \textpm{} 0.41 (2.57 \triangOK)\tabularnewline
+$F_{Reuters}$ & 66.55 \textpm{} 0.89 (-9.61 \triangBAD) & 87.04 \textpm{} 0.41 (2.57 \triangOK) & 63.32 \textpm{} 0.82 (-4.86 \triangBAD) & 94.87 \textpm{} 0.25 (1.86 \triangOK)\tabularnewline
 \bottomrule
 \end{tabular}
+\end{adjustwidth}
 \end{scriptsize}
 \end{table}
 
 
-\begin{table}[h]
+\begin{table}[!h]
 \centering
 \caption{Macro$F_1$ obtida pelo \textit{Naïve Bayes} quando usando a função de credibilidade $F_base$ gerada uma dada base nas demais bases.}
 \label{tab::generalizacao-Macro}
 \begin{scriptsize}
-\begin{tabular}{|c||c|c|c|c|}
+\begin{adjustwidth}{-1cm}{-1cm}% adjust the L and R margins by 1 inch
+\begin{tabular}{|c|c|c|c|c|}
 \toprule
-\textbf{Funções evoluídas} & \textbf{ACM} & \textbf{Reuters} & \textbf{Ohsumed} & \textbf{20NG}\tabularnewline
+ & \textbf{ACM-DL} & \textbf{20ng} & \textbf{Ohsumed} & \textbf{Reuters}\tabularnewline
 \midrule
-\textit{Baselines} & 57.26 \textpm{} 0.93 & 81.96 \textpm{} 1.44 & 54.76 \textpm{} 1.27 & 83.62 \textpm{} 0.74\tabularnewline
+\hline
+Linha de Base & 57.26 \textpm{} 0.93 & 83.62 \textpm{} 0.74 & 54.76 \textpm{} 1.27 & 81.96 \textpm{} 1.44\tabularnewline
 \hline 
-$F_{ACM}$ & 60.13 \textpm{} 1.44 (5.02 \triangOK) & 85.49 \textpm{} 0.94 (4.31 \triangOK) & 56.41 \textpm{}  0.92 (3.00 \triangOK) & 82.88 \textpm{} 0.51 (-0.89 \triangBAD)\tabularnewline
+$F_{ACM-DL}$ & 60.13 \textpm{} 1.44 (5.02 \triangOK) & 82.88 \textpm{} 0.51 (-0.89 \triangBAD) & 56.41 \textpm{}  0.92 (3.00 \triangOK) & 85.49 \textpm{} 0.94 (4.31 \triangOK)\tabularnewline
 \hline 
-$F_{20NG}$ & 55.83 \textpm{} 0.66 (-2.50 \triangBAD) & 88.64 \textpm{} 1.03 (8.16 \triangOK) & 62.12 \textpm{} 1.41 (13.43 \triangOK) & 88.63 \textpm{} 0.18 (5.99 \triangOK)\tabularnewline
+$F_{20ng}$ & 55.83 \textpm{} 0.66 (-2.50 \triangBAD) & 88.63 \textpm{} 0.18 (5.99 \triangOK) & 62.12 \textpm{} 1.41 (13.43 \triangOK) & 88.64 \textpm{} 1.03 (8.16 \triangOK)\tabularnewline
 \hline 
-$F_{Ohsumed}$ & 57.59 \textpm{} 0.56 (0.58 \ball) & 87.41 \textpm{} 0.64 (6.65 \triangOK) & 64.35 \textpm{} 1.17 (17.51 \triangOK) & 84.26 \textpm{}  0.49 (0.77 \triangOK)\tabularnewline
+$F_{Ohsumed}$ & 57.59 \textpm{} 0.56 (0.58 \ball) & 84.26 \textpm{}  0.49 (0.77 \triangOK) & 64.35 \textpm{} 1.17 (17.51 \triangOK) & 87.41 \textpm{} 0.64 (6.65 \triangOK)\tabularnewline
 \hline 
-$F_{Reuters}$ & 54.84 \textpm{} 1.44 (-4.23\triangBAD) & 89.45 \textpm{}  0.74 (9.14 \triangOK) & 57.97 \textpm{} 1.59 (5.85 \triangOK) & 83.15 \textpm{} 2.04 (-0.56 \ball)\tabularnewline
-\bottomrule
+$F_{Reuters}$ & 54.84 \textpm{} 1.44 (-4.23 \triangBAD) & 83.15 \textpm{} 2.04 (-0.56 \ball) & 57.97 \textpm{} 1.59 (5.85 \triangOK) & 89.45 \textpm{}  0.74 (9.14 \triangOK)\tabularnewline
+\bottomrule 
 \end{tabular}
+\end{adjustwidth}
 \end{scriptsize}
 \end{table}
 
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 
-\subsection{Explorando múltiplos fatores.}
+\subsection{Explorando Múltiplos Fatores}
 \label{subsec::fatores}
 
-\begin{table}[h]
+Nessa seção avaliamos como o uso de mais de um fator pode tornar o cálculo da credibilidade mais preciso. Somente a base da \textsc{ACM} apresenta informações disponíveis sobre os autores e as citações contidas em seus documentos, portanto, essa foi a única base que pudemos realizar experimentos com mais de um fator.
+
+Na tabela~\ref{tab::fatores}, mostramos a aplicação de um por um dos fatores e a combinação dos mesmos. A primeira coluna, termos, se refere a credibilidade dos atributos e as segunda e terceira linha, à credibilidade dos relacionamentos. Vemos que simplesmente usar a rede de autoria ou citações provê benefícios imediatos que não foram alcançados ao explorarmos os atributos.
+
+Esse fato evidência o poder da classificação relacional e que podemos obter ganhos acentuados ao explorar a credibilidade do relacionamentos. Com única exceção da Micro$F_1$ ao aplicar os três fatores, observamos que quanto mais fatores envolvemos melhores são os resultados. Por exemplo, ao usar somente a citação, temos ganhos de 3.4\% na Micro$F_1$ e 5.43\% na Macro$F_1$, ao combinar a citação com os termos, os ganhos vão para 4.18\% e 7.96\%. Acreditamos que não obtemos um resultado ainda mais expressivo para a combinação dos três fatores pelo fato que o número de métricas é muito elevado (30 dos atributos e 16 para cada um dos relacionamentos) e os parâmetros usados no \textsc{PG} não foram alterados.
+
+
+\begin{table}[!h]
 \centering
-\caption{Resultados do uso de credibilidade na base da \textsc{ACM} explorando a credibilidade de termos, autoria e citação.}
+\caption{Resultados do uso de credibilidade na base da \textsc{ACM-DL} explorando a credibilidade de termos, autoria e citação.}
 \label{tab::fatores}
 \begin{footnotesize}
-\begin{tabular}{|c|c|c|c|c|}
+\begin{tabular}{|c|c|c||c|c|}
 \toprule
-\textbf{Termos} & \textbf{Autoria} & \textbf{Citação} & \textbf{Micro$F_1$} & \textbf{Macro$F_1$}\tabularnewline
+\multicolumn{3}{|c||}{\textbf{Fatores}} & \multirow{2}{*}{\textbf{Micro$F_1$}} & \multirow{2}{*}{\textbf{Macro$F_1$}} \tabularnewline \cline{1-3}
+\textbf{Termos} & \textbf{Autoria} & \textbf{Citação} & & \multicolumn{1}{c|}{}  \tabularnewline % & \textbf{Micro$F_1$} & \textbf{Macro$F_1$}\tabularnewline
 \midrule
-\multicolumn{3}{|c|}{Baseline} & 73.63 \textpm{} 0.91 & 57.26 \textpm{} 0.93\tabularnewline
+\hline
+\multicolumn{3}{|c||}{Linha de Base} & 73.63 \textpm{} 0.91 & 57.26 \textpm{} 0.93\tabularnewline
 \hline 
 X &  &  & 74.33 \textpm{} 0.72 (0.95 \ball) & 59.72 \textpm{} 1.26 (4.30 \triangOK)\tabularnewline
 \hline 
@@ -292,144 +360,101 @@ X & X & X & 77.01 \textpm{} 0.98 (4.60 \triangOK) & 62.24 \textpm{} 1.01 (8.70 \
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 
-\section{Bases de Categorias.}
+\section{Bases de Atributos Categóricos}
 \label{sec::categorias}
 
 
-\begin{table}[h]
+Na Seção~\ref{sec::supervised}, vimos que vários trabalhos lidam com o uso de diversas das métricas que utilizamos para gerar funções de credibilidade de atributos. Um ponto comum a todos
+é que somente se preocupam com classificação de documentos, ou seja, os atributos são sempre textuais. Expandimos essa abordagem ao lidar também com atributos categóricos.
+
+Nas Tabelas~\ref{tab::cat-micro} e \ref{tab::cat-macro}, mostramos os resultados de evoluir funções de credibilidade para as bases usando tanto o algoritmo de classificação \textit{Naïve Bayes} quanto o \textsc{KNN}. Dessa vez, mostramos os resultados com o \textsc{KNN} pelo fato de sua linha de base ser muito superior à do \textit{Naïve Bayes} (excepto para a Micro$F_1$ da base \textit{Nursery}). A título de informação, utilizamos $K$ = 6,9,10,8 para as bases \textit{Cars}, \textit{Tictac}, \textit{Nursery} e \textit{Chess}, respectivamente.
+
+Destacamos os ganhos mais interessantes na Macro$F_1$ da base \textit{Cars}, essa fato evidência que os exemplos de maior dificuldade, por serem de classes menos populares, foram corretamente classificados. Isso alterou muito pouco a Micro$F_1$, pois, em quantidade, os exemplos difíceis são poucos, e muito a Macro$F_1$, pois houveram aumentos substanciais na métrica $F_1$ das classes com menos exemplos. O mesmo ocorre na base \textit{Nursery} quando usamos o \textit{Naïve Bayes}. Já as bases \textit{TicTacToe} e \textit{Chess} apresentaram ganhos pequenos de menos de 2\%.
+%(talvez mostrando que funções de crediblidade nao sao boas para jogos!)
+
+\begin{table}[h!]
 \centering
 \caption{Resultados da Micro$F_1$ para as bases de atributos categóricos}
 \label{tab::cat-micro}
 \begin{footnotesize}
-\begin{tabular}{|c|c|c|c|c|}
+\begin{tabular}{|c||c|c|c|c|}
 \toprule
 \multirow{2}{*}{\textbf{Bases}} & \multicolumn{2}{c|}{\textbf{Naïve Bayes}} & \multicolumn{2}{c|}{\textbf{KNN}}\tabularnewline
 \cline{2-5} 
- & \textbf{\textit{Baselines}} & \textbf{Macro$F_1$} & \textbf{\textit{Baselines}} & \textbf{Macro$F_1$}\tabularnewline
+ & \textbf{Linha de Base} & \textbf{Micro$F_1$} & \textbf{Linha de Base} & \textbf{Micro$F_1$}\tabularnewline
 \midrule
-Cars & 67.74 \textpm{} 3.08 & 76.85 \textpm{} 5.65 (13.44 \triangOK) & 75.36 \textpm{} 3.44 & 81.77 \textpm{} 3.90 (8.51 \triangOK)\tabularnewline
+\hline
+\textit{Cars} & 86.32 \textpm{} 1.85 & 87.64 \textpm{} 2.53 (1.52 \triangOK) & 91.84 \textpm{} 1.95 & 92.43 \textpm{} 1.68 (0.64 \ball)\tabularnewline
 \hline 
-TicTacToe & 64.48 \textpm{} 2.12 & 64.10 \textpm{} 1.96 (-0.59 \ball) & 95.99 \textpm{} 0.98 & 97.12 \textpm{} 1.10 (1.18 \ball)\tabularnewline
+\textit{TicTacToe} & 70.63 \textpm{} 2.10 & 71.74 \textpm{} 2.02 (1.58 \triangOK) & 96.45 \textpm{} 0.85  & 97.42 \textpm{} 0.94 (1.00 \ball)\tabularnewline
 \hline 
-Nusery & 66.19 \textpm{} 7.41 & 77.19 \textpm{} 12.80 (16.62 \triangOK) & 95.84 \textpm{} 0.73 & 96.00 \textpm{} 0.69 (0.17 \ball) \tabularnewline
+\textit{Nursery} & 90.29 \textpm{} 0.56 & 91.21 \textpm{} 0.92 (1.01 \ball) & 95.84 \textpm{} 0.73 & 96.00 \textpm{} 0.69 (0.17 \ball) \tabularnewline
 \hline 
-Chess & 87.81 \textpm{} 0.68 & 88.03 \textpm{} 0.75 (0.25 \ball) & 94.75 \textpm{} 0.40  & 95.98 \textpm{} 0.61 (1.30 \triangOK)\tabularnewline
+\textit{Chess} & 87.85 \textpm{} 0.69 & 88.04 \textpm{} 0.75 (0.21 \ball) & 94.77 \textpm{} 0.41  & 96.00 \textpm{} 0.60 (1.29 \triangOK)\tabularnewline
 \bottomrule
 \end{tabular}
 \end{footnotesize}
 \end{table}
 
-
- 	
-\begin{table}[h]
+\begin{table}[h!]
 \centering
 \caption{Resultados da Macro$F_1$ para as bases de atributos categóricos}
 \label{tab::cat-macro}
 \begin{footnotesize}
-\begin{tabular}{|c|c|c|c|c|}
+\begin{tabular}{|c||c|c|c|c|}
 \toprule
 \multirow{2}{*}{\textbf{Bases}} & \multicolumn{2}{c|}{\textbf{Naïve Bayes}} & \multicolumn{2}{c|}{\textbf{KNN}}\tabularnewline
 \cline{2-5} 
- & \textbf{\textit{Baselines}} & \textbf{Micro$F_1$} & \textbf{\textit{Baselines}} & \textbf{Micro$F_1$}\tabularnewline
+ & \textbf{Linha de Base} & \textbf{Macro$F_1$} & \textbf{Linha de Base} & \textbf{Macro$F_1$}\tabularnewline
 \midrule
-Cars & 86.32 \textpm{} 1.85 & 87.64 \textpm{} 2.53 (1.52 \triangOK) & 91.84 \textpm{} 1.95 & 92.43 \textpm{} 1.68 (0.64 \ball)\tabularnewline
+\hline
+\textit{Cars} & 67.74 \textpm{} 3.08 & 76.85 \textpm{} 5.65 (13.44 \triangOK) & 75.36 \textpm{} 3.44 & 81.77 \textpm{} 3.90 (8.51 \triangOK)\tabularnewline
 \hline 
-TicTacToe & 70.63 \textpm{} 2.10 & 71.74 \textpm{} 2.02 (1.58 \triangOK) & 96.45 \textpm{} 0.85  & 97.42 \textpm{} 0.94 (1.00 \ball)\tabularnewline
+\textit{TicTacToe} & 64.48 \textpm{} 2.12 & 64.10 \textpm{} 1.96 (-0.59 \ball) & 95.99 \textpm{} 0.98 & 97.12 \textpm{} 1.10 (1.18 \ball)\tabularnewline
 \hline 
-Nusery & 90.29 \textpm{} 0.56 & 91.21 \textpm{} 0.92 (1.01 \ball) & 80.83 \textpm{} 9.06  &	84.46 \textpm{} 9.22 (4.50 \triangOK) \tabularnewline
+\textit{Nursery} & 66.19 \textpm{} 7.41 & 77.19 \textpm{} 12.80 (16.62 \triangOK) & 80.83 \textpm{} 9.06  &	84.46 \textpm{} 9.22 (4.50 \triangOK) \tabularnewline
 \hline 
-Chess & 87.85 \textpm{} 0.69 & 88.04 \textpm{} 0.75 (0.21 \ball) & 94.77 \textpm{} 0.41  & 96.00 \textpm{} 0.60 (1.29 \triangOK)\tabularnewline
+\textit{Chess} & 87.81 \textpm{} 0.68 & 88.03 \textpm{} 0.75 (0.25 \ball) & 94.75 \textpm{} 0.40  & 95.98 \textpm{} 0.61 (1.30 \triangOK)\tabularnewline
 \bottomrule
 \end{tabular}
 \end{footnotesize}
 \end{table}
 
-
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 
-
-\section{Bases de BioInformática.}
+\section{Base de BioInformática.}
+%\section{Base com Atributos Numéricos} %de BioInformática.}
 \label{sec::bioinfo}
 
-\begin{table}
-\centering
-\caption{asdfsa}
-\label{tab::}
-\begin{scriptsize}
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-\toprule & ACM - micro & ACM - macro &  & Reuters - micro & Reuters - macro &  &  &  & \tabularnewline
-\midrule
-Baseline & 73.6274, 2.023 & 57.2580, 2.083 &  & 93.13 \textpm{} 0.29 & 81.96 \textpm{} 1.44 &  &  &  & \tabularnewline
-\hline 
-GP & 74.33 \textpm{} 0.72 (0.95 \ball) & 59.72 \textpm{} 1.26 (4.30 \triangOK) &  & 94.60 \textpm{} 0.44 (1.57 \triangOK) & 89.33 \textpm{} 0.90 (8.99 \triangOK) &  &  &  & \tabularnewline
-\hline 
-AM & 73.13, 1.05 (-0.68 \triangBAD) & 58.02, 1.73 (1.33 \ball) &  & 93.43, 0.38 (0.31 \ball) & 85.28, 0.87 (4.06 \triangOK) &  &  &  & \tabularnewline
-\hline 
-CC & 69.69, 0.70 (-5.35 \triangBAD) & 56.93, 0.90 (-0.57 \ball) &  & 93.58, 0.55 (0.66 \ball) & 88.56, 0.02 (7.31 \triangOK)  &  &  &  & \tabularnewline
-\hline 
-CE & 44.65, 0.34 (-39.35 \triangBAD) & 22.94, 0.41 (-59.93 \triangBAD) &  & 76.72, 0.44 (-17.67 \triangBAD) & 31.55, 1.48 (-61.73 \triangBAD) &  &  &  & \tabularnewline
-\hline 
-CHI & 69.86, 0.74 (-5.12 \triangBAD) & 56.81, 1.00 (-0.78 \ball) &  & 93.76, 0.54 (0.67 \triangOK) & 88.31, 0.95 (7.75 \triangOK) &  &  &  & \tabularnewline
-\hline 
-CTD & 58.75, 1.83 (-20.20 \triangBAD) & 50.63, 0.97 (-11.58 \triangBAD) &  & 72.41, 1.73 (-22.25 \triangBAD) & 66.44, 1.50 (-18.93 \triangBAD) &  &  &  & \tabularnewline
-\hline 
-DF & 66.81, 0.64 (-9.26 \triangBAD) & 55.83, 0.57 (-2.50 \triangBAD) &  & 92.79, 0.77 (-0.37 \ball) & 87.24, 0.98 (6.44 \triangOK) &  &  &  & \tabularnewline
-\hline 
-DOM & 73.38, 0.97 (-0.33 \triangBAD) & 58.34, 1.62 (1.89 \ball) &  & 93.43, 0.38 (0.31 \ball) & 85.28, 0.87 (4.06 \triangOK) &  &  &  & \tabularnewline
-\hline 
-GINI & 71.35, 0.77 (-3.10 \triangBAD) & 58.11, 1.00 (1.49 \triangOK) &  & 92.45, 0.60 (-0.73 \ball)  & 86.58, 0.95 (5.63 \triangOK) &  &  &  & \tabularnewline
-\hline 
-GSS & 69.65, 0.71 (-5.40 \triangBAD) & 56.90, 0.91 (-0.62 \ball) &  & 93.77, 0.54 (0.68 \triangOK) & 88.43, 0.91 (7.90 \triangOK) &  &  &  & \tabularnewline
-\hline 
-IDF & 58.75, 1.83 (-20.20 \triangBAD) & 50.63, 0.97 (-11.58 \triangBAD) &  & 72.41, 1.73 (-22.25 \triangBAD) & 66.44, 1.50 (-18.93 \triangBAD) &  &  &  & \tabularnewline
-\hline 
-IG & 71.31, 0.65 (-3.15 \triangBAD) & 58.06, 1.04 (1.41 \triangOK) &  & 94.04, 0.46 (0.97 \triangOK) & 88.88, 0.93 (8.44 \triangOK) &  &  &  & \tabularnewline
-\hline 
-MaxAM & 72.17, 0.67 (-1.97 \triangBAD) & 58.64, 1.20 (2.41 \triangOK) &  & 92.73, 0.64 (-0.43 \ball) & 87.07, 0.95 (6.23 \triangOK) &  &  &  & \tabularnewline
-\hline 
-MaxCC & 1.49, 0.05 (-97.98 \triangBAD) & 0.27, 0.01 (-99.52 \triangBAD) &  & 5.22, 0.05 (-94.40 \triangBAD) & 1.32, 0.18 (-98.39 \triangBAD) &  &  &  & \tabularnewline
-\hline 
-MaxCHI & 68.41, 0.58 (-7.09 \triangBAD) & 56.22, 0.64 (-1.8 \triangBAD) &  & 93.22, 0.81 (0.09 \ball) & 87.43, 1.22 (6.68 \triangOK) &  &  &  & \tabularnewline
-\hline 
-MaxCTD & 37.69, 2.08 (-48.81 \triangBAD) & 38.29, 1.43 (-33.13 \triangBAD) &  & 61.78, 1.59 (-33.67 \triangBAD) & 54.09, 0.96 (-34.01 \triangBAD) &  &  &  & \tabularnewline
-\hline 
-MaxDom & 72.25, 0.70 (-1.87 \triangBAD) & 58.74, 1.27 (2.58 \triangOK) &  & 92.73, 0.64 (-0.43 \ball) & 87.07, 0.95 (6.23 \triangOK) &  &  &  & \tabularnewline
-\hline 
-MaxGSS & 1.48, 0.06 (-97.99 \triangBAD) & 0.26, 0.01 (-99.54 \triangBAD) &  & 5.19, 0.04 (-94.42 \triangBAD) & 1.23, 0.01 (-98.49 \triangBAD) &  &  &  & \tabularnewline
-\hline 
-MaxIG & 68.49, 0.60 (-6.98 \triangBAD) & 56.42, 0.63 (-1.47 \ball) &  & 93.61, 0.70 (0.51 \ball) & 88.05, 1.01 (7.43 \triangOK) &  &  &  & \tabularnewline
-\hline 
-MaxOR & 48.15, 0.43 (-34.60 \triangBAD) & 28.15, 0.74 (-50.83 \triangBAD) &  & 79.99, 0.27 (-14.12 \triangBAD) & 40.94, 1.06 (-50.04 \triangBAD) &  &  &  & \tabularnewline
-\hline 
-OR & 68.54, 0.95 (-6.91 \triangBAD) & 56.80, 1.22 (-0.80 \ball) &  & 92.42, 0.59 (-0.76 \triangBAD) & 86.67, 0.56 (5.75 \triangOK) &  &  &  & \tabularnewline
-\hline 
-P & 72.96, 1.06 (-0.90 \triangBAD) & 57.51, 1.54 (0.44 \ball) &  & 93.32, 0.38 (0.20 \ball) & 84.92, 0.81 (3.61 \triangOK) &  &  &  & \tabularnewline
-\hline 
-TF & 66.16, 5.91 (-10.14 \triangBAD) & 54.89, 3.33 (-4.14 \ball) &  & 86.32, 9.91 (-7.31 \ball) & 79.64, 9.43 (-2.83 \ball) &  &  &  & \tabularnewline
-\hline 
-TFICF & 58.75, 1.83 (-20.20 \triangBAD) & 50.63, 0.97 (-11.58 \triangBAD) &  & 72.41, 1.73 (-22.25 \triangBAD) & 66.44, 1.50 (-18.93 \triangBAD) &  &  &  & \tabularnewline
-\hline 
-TFIDF & 72.84, 1.05 (-1.06 \triangBAD) & 58.33, 1.08 (1.87 \triangOK) &  & 93.77, 0.36, (0.68 \triangOK) & 85.25, 0.64 (4.01 \triangOK) &  &  &  & \tabularnewline
-\hline 
-sumTF & 66.93, 0.85 (-9.09 \triangBAD) & 55.57, 0.72 (-2.95 \triangBAD) &  & 92.80, 0.75 (-0.35 \ball) & 87.56, 1.55 (6.84 \triangOK) &  &  &  & \tabularnewline
-\hline 
-sumDF & 66.99, 0.82 (-9.02 \triangBAD) & 55.60, 0.70 (-2.89 \triangBAD)  &  & 92.80, 0.75 (-0.35 \ball) & 87.56, 1.55 (6.84 \triangOK)  &  &  &  & \tabularnewline
-\hline 
- &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
- &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
- &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
- &  &  &  &  &  &  &  &  & \tabularnewline
-\bottomrule
+A base de bioinformática, como era de se esperar, é grande e chata. 
+(Falar que sao atributos numéticos)
 
+
+\begin{table}[h!]
+\centering
+\caption{Resultados da Micro$F_1$ e Macro$F_1$ para a bases de bioinformática.}
+\label{tab::bioinformatica}
+%\begin{footnotesize}
+\begin{tabular}{|c||c|c|}
+\toprule
+\textbf{Algoritmo} & \textbf{Micro$F_1$} & \textbf{Macro$F_1$}\tabularnewline
+\midrule
+\hline 
+Linha de Base & 70.23 \textpm{} 1.402 & 50.28 \textpm{} 1.44\tabularnewline
+\hline 
+PG - KNN - K = 1& 88.98 \textpm{} 4.87 (26.58 \triangOK) & 75.81 \textpm{} 4.51 (50.78 \triangOK)\tabularnewline
+\hline 
+Vizinhos Peso Unitário & 80.37 \textpm{} 0.24 (14.33 \triangOK) & 40.28 \textpm{} 0.39 (-19.89 \triangBAD)\tabularnewline
+\hline 
+Vizinhos Peso Aresta & 82.59 \textpm{} 0.26 (17.49 \triangOK)  &  43.53 \textpm{} 0.47 (-13.43 \triangBAD)\tabularnewline
+\bottomrule
 \end{tabular}
-\end{scriptsize}
+%\end{footnotesize}
 \end{table}
 
 
- 	
+
+
 

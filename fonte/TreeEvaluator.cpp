@@ -306,8 +306,11 @@ double TreeEvaluator::getOperandValue(string operand, string id, string classNam
     else if(operand == "CTD"){
         return stats->getCTD(id, className);
     }
-    else if(operand == "IDF"){
-        return stats->getCTD(id, className);
+    else if(operand == "IDFc"){
+        return stats->getIDFclass(id, className);
+    }
+     else if(operand == "IDF"){
+        return stats->getIDF(id);
     }
     else if(operand == "TFICF"){
         return stats->getTFICF(id, className);

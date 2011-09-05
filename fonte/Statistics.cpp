@@ -605,7 +605,7 @@ void Statistics::retrieveContentMetrics() {
 
 
             double idfclass = log10(  my_div( ((double) (getValue(sumDFperClass, *classIt) + 1.0)) , ((double) (getValue(DFperClass, idx) + 1.0 ))));
-            //IDFc[idx] = idfclass;
+            IDFc[idx] = idfclass;
 
             /// TFIDF
             double tfidfVal = (double)getValue(TFperClass, idx) * idf;

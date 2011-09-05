@@ -21,7 +21,7 @@ double NaiveBayes::getContentCredibility(string term, string docClass){
 	
     string idx = getCompIndex(term,docClass);
     if(contentCredibility.find(idx) != contentCredibility.end()) return  0.5 +  contentCredibility[idx] * Normalizer;
-    //if(contentCredibility.find(idx) != contentCredibility.end()) return  contentCredibility[idx] * Normalizer;
+    // -> worst, but used in my msc. if(contentCredibility.find(idx) != contentCredibility.end()) return  contentCredibility[idx] * Normalizer;
 
 	return 1.0;
 }
