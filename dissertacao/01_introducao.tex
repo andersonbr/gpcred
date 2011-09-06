@@ -1,0 +1,111 @@
+\chapter{Introdução}
+\label{cap::introducao}
+
+
+É inegável que vivemos em uma época na qual temos uma capacidade nunca antes vista de gerar informação.
+A possibilidade de interagir com outros pessoas através da \textit{Web} usando redes sociais com milhões de usuários (\cite{Thom11}), criar \textit{blogs} com textos, vídeos e músicas (\cite{Baxter10}), extrair informações a respeito de todos os genes que formam organismos complexos como os nossos (\cite{Williams01}), obter informações sobre as condições climáticas de um região com sensores que captam centenas de variáveis simultâneamente (\cite{Rotach09}), são alguns entre os diversos exemplos de nossa capacidade de produzir informação.
+Entretanto, proporcionalmente ao aumento da disponibilidade desses dados, vemos também o aumento da dificuldade em analisar, compreender e classificar essas informações.
+
+Organizar e recuperar grandes quantidades de informação tornaram-se tarefas de extrema importância, principalmente nas áreas de Mineração de Dados e Recuperação de Informação, responsáveis por estudar uma maneira de lidar com essa explosão de dados. Dentre as diversas tarefas estudadas por essas duas áreas destacamos a \textbf{Classificação Automática} de dados. 
+
+Nessa dissertação, tratamos o problema de classificar automaticamente a informação disponível, ou seja, sem a intervenção humana. 
+Substituir humanos por máquinas na tarefa de classificação não somente é útil, como necessário. 
+Seria entediante e, muito provavelmente, impraticável para um humano classificar uma grande quantidade de dados.
+
+De maneira simplificada, classificar consiste em estipular a qual classe, dentre as disponíveis, um certo exemplo 
+%\footnote{A palavra exemplo provém do vocabulário de mineração de dados. Um exemplo também pode ser chamado de instância ou de objeto presente em uma base de dados.}
+pertence, partindo da premissa que dois exemplos estão em uma mesma classe se eles possuem um valor semântico próximo. 
+Em geral, temos um conjunto de exemplos conhecidos, dos quais sabemos a que classe cada exemplo pertence, e um conjunto de exemplos com classe desconhecida, para os quais queremos prever a classe. O primeiro conjunto é chamado de treinamento, e o segundo de teste. 
+
+De forma geral, humanos e computadores conseguem construir um modelo de classificação a partir dos exemplos presentes no treinamento. 
+Analisando os atributos, as semelhanças e as diferenças que fazem com que um exemplo pertença a uma classe ou a outra, um classificador, humano ou não, pode aprender, através de observações, uma maneira de classificar os exemplos de teste.
+Porém, existe uma diferença entre um humano e um algoritmo de classificação automática tradicional. 
+Um humano é capaz de ponderar se um dado exemplo do conjunto de treinamento pode contribuir mais ou menos para a geração de um modelo de classificação.
+Isso significa que, em uma situação em que temos um exemplo difícil de classificar, dada a sua semelhança com exemplos existentes em mais de uma classe, o classificador humano pode escolher dar maior credibilidade para alguns exemplos de treino, confiando que determinados exemplos podem se assemelhar mais ao teste.
+
+O estudo da capacidade humana de atribuir diferentes valores de credibilidade para as informações apresentadas impulsionou as pesquisas na área de credibilidade. 
+Em geral, os pesquisadores estudam como alguns fatores (também chamados de dimensões) afetam na percepção humana de credibilidade.
+Eles tentam obter respostas para questões como: o que pode levar um humano a dizer que a informação A tem maior credibilidade que a informação B?
+Entretanto, o conceito de credibilidade nunca foi empregado do ponto de vista de um classificador automático. Dado que algumas informações são mais pertinentes que outras, buscamos nesse trabalho avaliar como explorar esse conhecimento para melhorar algoritmos de classificação automática.
+
+Portanto, buscamos uma maneira de criar modelos de classificação que levem em conta o fato que os exemplos de treinamento não são todos igualmente significativos, assim como um humano faz.
+Logo, procuramos avaliar de forma automática a credibilidade dos exemplos de treinamento a fim de que aqueles exemplos com maior credibilidade possam ter maior relevância para classificar um exemplo de teste desconhecido.
+
+Um fato importante observado na literatura é que a credibilidade não é uma propriedade fixa de um exemplo, podendo ser diferente dependendo de quem a estipula. Dessa forma, para se obter uma medida menos subjetiva, é necessário definir bem os fatores que influenciam na credibilidade de um exemplo. Nesse trabalho, abordamos dois fatores que jugamos ser cruciais: (i) os atributos que compõem um exemplo e (ii) os relacionamentos mantidos entre os exemplos de treino e teste.
+
+Para explorar a credibilidade de um exemplo usando os seus atributos, procuramos medir diretamente a relevância dos atributo na classificação. Assim, utilizamos métricas conhecidas de seleção de atributos para modelarmos a relação atributo-classe. Essa modelagem tem por objetivo prover indícios da separação entre as classes, capturando assim, a importância e a confiança de um exemplo de treinamento para uma classe.
+% dado que elas provêm indícios de separações entre as classes.
+%sendo que ele apresenta um conjunto de atributos que contribuem (positiva ou negativamente) para dizermos que o exemplo de teste pertence a determinada classe.
+
+Podemos imaginar diversos exemplos práticos na tarefa de Classificação Automática de Documentos (\textsc{CAD}), que é especialização da classificação automática voltada para definir classes a documentos. Cada documento é composto por um conjunto de termos que são os seus atributos. Nesse caso, se um portal de notícias decidisse incorporar a credibilidade de atributos em seu classificador, provavelmente, ao avaliar a credibilidade baseada nos atributos, veríamos que o termo ``Metallica'' teria maior credibilidade que o termo ``Anthrax'' para prevermos que um documento é da classe Música. Isso acontece porque ``Metallica'' tradicionalmente se refere a uma banda de metal e seria um termo usado para definirmos exclusivamente a classe ``Música'', enquanto ``Anthax'' além de ser o nome de uma banda, também é uma doença bacteriana. Logo, ele não é tão confiável para distinguir entre ``Música'' e ``Saúde''.
+Concluindo, analisando esses termos isoladamente, documentos de treino contendo o termo ``Metallica'' devem ter uma credibilidade maior que documentos contendo o termo ``Anthax'' do ponto de vista de um classificador que pretende calcular se um documento de teste pertence a classe ``Música''.
+
+Por sua vez, para explorar a credibilidade de um exemplo usando os seus relacionamentos, temos que primeiro definir quais são esses relacionamentos, se eles existirem. 
+%Chamamos de relacionamentos as características que conseguimos utilizar para definir uma relação entre os exemplos. 
+Vários relacionamentos podem ser definidos dependendo do contexto que estamos abordando. Por exemplo, pessoas mantêm relacionamentos de amizade ou parentesco, livros e músicas têm relacionamentos de autorias, um país se relacionam com outro definindo estados como guerra ou paz, e assim por diante. Utilizamos a mesma linha de pensamento proposta para analisar a credibilidade de atributos, ou seja, se tivermos ao menos um relacionamento existente no problema que estamos tratando, explorá-lo tende a trazer benefícios, assim como reportado em ~\cite{Macskassy04}.
+%temos então que um exemplo pode contribuir mais ou menos para classificar um outro quando levamos em consideração uma relação que envolva aqueles exemplos. 
+
+Sendo assim, suponha que estivéssemos lidando com uma base de dados de livros, em que o objetivo é classificá-los de acordo com o tema, e modelássemos o relacionamento de autoria entre eles. Assim, utilizar um livro do treino que tenha pelo menos um autor em comum com o do teste poderia ser mais útil que utilizar um livro que não tem nenhum autor em comum. Indo mais além, um livro de treino que tivesse todos os autores em comum com o livro do teste poderia ter uma credibilidade ainda maior do ponto de vista do classificador. Como veremos com maiores detalhes ao longo dessa dissertação, decidimos por modelar os relacionamentos, quando existentes, com grafos e utilizar algumas métricas da área de Redes Complexas para extrair informações da relação relacionamento-classe, usada para definir a credibilidade do ponto de vista dos relacionamentos entre os exemplos de treinamento e o teste. 
+
+
+%Como já se pode notar, em alguns cenários e problemas reais, não é tão simples modelar um relacionamento, ou até mesmo podemos não ter um relacionamento....falar do GP tb!
+Tanto para a credibilidade definida pelo atributos quanto para a definida para os relacionamentos, temos uma quantidade elevada de métricas que podem ser usadas para estimá-la. Logo, surgem as perguntas: 
+\begin{itemize}
+\item ``Qual a melhor métrica?''
+\item ``E se utilizássemos mais de uma métrica?''
+\end{itemize}
+O ponto importante é que a credibilidade é uma propriedade definida dependente do contexto que está inserida e, portanto, uma métrica ou uma combinações das métricas que define bem a credibilidade em um cenário pode não ser a melhor para outro. Logo, necessitamos de uma maneira de testar e avaliar as métricas disponíveis, assim como as suas combinações. Para tanto, empregamos o uso de Programação Genética (\textsc{PG}) (\cite{Koza92}).
+
+\textsc{PG} é um método baseado no principio da evolução de Darwin de que indivíduos mais bem adaptados tendem a sobreviver e gerarem indivíduos tão capazes ou mais aprimorados que os pais. 
+Utilizamos essa técnica por possuir um mecanismo simples, porém eficaz, de representação de funções e por explorar de maneira inteligente o espaço de busca por uma função de credibilidade, 
+a partir das métricas básicas que definem a credibilidade de atributos e relacionamentos. Além disso, \textsc{PG} já foi utilizada em vários contextos para selecionar/construir funções com sucesso (\cite{Golubski02}, \cite{Freitas10}), dado seu poderoso mecanismo de busca global e tolerância a ruído (\cite{Back00}).
+
+
+Tendo definidos os métodos para estimar funções de credibilidade baseada em atributos e em relações, necessitamos incorporar essas funções nos classificadores, de maneira que os modelos de classificação criados levem em consideração a confiança dos exemplos. Nesse trabalho, avaliamos os classificadores \textit{Naïve Bayes} e \textsc{KNN} em diversas bases de dados: desde simples bases da \textsc{UCI} (\cite{UCI98}), passando por grandes bases de texto como a de artigos científicos da \textsc{ACM} e por um grande base de bioinformática (\cite{dpires_bmc_2011}).
+Nossos resultados mostram significativos ganhos em praticamente todos os cenários, principalmente na métrica macro-$F_1$, usada para capturar a dificuldade de classificar bases onde a distribuição dos exemplos é desbalanceada.
+
+
+%Exploramos credi atributos....credi de graphs....gp....morreu bahia!
+
+%Usualmente, os classificadores utilizam apenas os atributos dos exemplos de treinamento para construção de um modelo de classificação, além de assumir que todos os atributos e todos os exemplos têm a mesma significância.
+%Entretanto, nem sempre esse é o caso, pois alguns atributos e até mesmo alguns exemplos podem ser mais úteis que outros.
+
+%Acreditamos que as informações de que o valor de um atributo do exemplo de teste está atrelado a uma determinada classe ou de que o exemplo de teste tem algum tipo de relação forte com os exemplos de treinamento de certa classe,
+%podem ser usadas para criação de melhores algoritmos de classificação. 
+%Porém, temos que avaliar a credibilidade dessas informações, ou seja, definir a credibilidade de que um exemplo de teste pertença a uma classe, dados os seus atributos e os seus relacionamentos.
+
+
+%Na literatura, a credibilidade é dada como uma característica dependente do observador. Ou seja, observadores diferentes podem atribuir valores diferentes de credibilidade para uma mesma informação. O cálculo da credibilidade varia de acordo com os fatores relevantes para o problema no qual ela é empregada.
+%Em nosso caso, tratamos a credibilidade do ponto de vista de um classificador, que usa os conhecimentos a respeito dos atributos e relacionamentos existentes entre os exemplos para decidir se a credibilidade da informação de pertinência de um exemplo a uma classe é elevada ou não.
+
+%Utilizamos métricas de seleção de atributos e métricas de redes complexas para nos auxiliar no cálculo da credibilidade baseada em atributos e em relacionamentos, respectivamente.
+%Devido ao grande número de métricas cabíveis para cada caso, empregamos Programação Genética para a criação de funções de credibilidade 
+%baseadas em atributos e relacionamentos.
+%que estimam a credibilidade da informação que o teste pertence a uma determinada classe, dados os seus atributos e seus relacionamentos. 
+%Essas funções foram incorporadas nos algoritmos de classificação Naïve Bayes e KNN, auxiliando-os a criarem modelos mais eficazes. 
+%(valores)
+
+\section{Objetivos}
+
+Destacamos os seguintes objetivos dessa dissertação:
+
+\begin{itemize}
+ 
+\item Definir a credibilidade de forma que lea possa ser utilizada em aplicações genéricas, e instanciá-la nos contextos de classificação automática e bioinformática.
+%\item Definir os principais fatores que impactam no cálculo da credibilidade do ponto de vista de um classificador em alguns cenários específicos.
+\item Incorporar a credibilidade a classificadores, para que esses criem modelos de classificação mais robustos, que levem em consideração o fato que os exemplos de treinamento não são todos igualmente significativos, e que o classificador não deveria confiar da mesma forma em todos eles. 
+\item Testar e analisar o impacto da credibilidade nos classificadores automáticos tradicionais.
+
+\end{itemize}
+%\section{Contribuição Desse Trabalho}
+
+\section{Organização da Dissertação}
+
+Esse trabalho é composto de outros cinco capítulos, apresentamos aqui, em alto nível.
+Buscamos, usando \textbf{Programação Genética}, representar a \textbf{credibilidade} dos exemplos através de dois fatores: seus \textbf{atributos} e seus \textbf{relacionamentos}.
+Esses quatros assuntos destacados são abordados na revisão da literatura apresentada no Capítulo~\ref{cap::related}.
+No Capítulo~\ref{cap::metodo}, explicamos os classificadores \textit{Naïve Bayes} e \textsc{KNN}, e como incorporamos a credibilidade neles.
+Já o Capítulo~\ref{cap::programacao_genetica} aborda como empregamos Programação Genética para evoluir funções de credibilidade.
+As bases usadas nos experimentos e os resultados obtidos são descritos no Capítulo~\ref{cap::experimentos}. Por fim, concluímos e apontamos direções futuras no Capítulo~\ref{cap::conclusoes}.
+
+
