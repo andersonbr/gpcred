@@ -1,8 +1,28 @@
-The concept of example credibility evaluates how much a classifier can trust an example when building a classification model.
-It is given by a credibility function, which is application dependent and estimated according to a series of factors that influence the credibility of the examples.
-In this work, we deal with automatic classification and study the credibility of an example according to two factors: its attributes and relationships. 
-We propose a genetic programming algorithm to estimate the credibility of examples, and then add this estimation to a credibility-aware classifier. 
-For that, we model the relationship credibility as a complex network and the attribute credibility using a set of feature selection metrics. These metrics are used as terminals for the GP. The GP was tested in a large number of databases and results showed that the credibility-aware classifier obtained significant improvements of micro and macroF$_1$ compared to the traditional classifiers.
+In this work, we face the fact that not all examples in a training set should
+contribute equally for the construction of a classification model, and
+therefore, we believe that considering some examples more relevant than others
+can increase the effectiveness of a classifier.
+In order to achieve that, \textbf{credibility functions} are used, which can
+capture how much a classifier should trust an example when generating a model.
 
+Credibility in the literature is considered as context dependent and also dependent on who is estimating it.
+To make its evaluation more objective, it is recommended that the factors used
+for its calculation are defined. 
+From the point of view of a classifier, we defined as important factors the
+attributes of the examples and the relationships among them.
+
+We have built 30 metrics to explore the credibility of the attributes and 16 for
+the relationships. They were inspired in metrics that occur on the literature,
+and indicate the separation among the classes and investigate characteristics
+of the relationship between the examples. Since we have a great number of
+metrics, Genetic Programming was used, a mechanism based on Darwin's theory of
+evolution and that can traverse the search space in a robust and effective way.
+
+Several experiments have been run using three different kinds of databases: document databases, \textsc{UCI} databases of categorical attributes and a protein signature database.
+The results show
+considerable improvement of the classification in all cases. In particular, for
+the database \textit{Oshmed}, Macro$F_1$ was improved by 17.51\%, and for the
+protein signature database, Micro$F_1$ and Macro$F_1$ were improved by 26.58\%
+and 50.78\% respectively.
 
 \keywords{Automatic classification, Genetic Programming, Credibility}

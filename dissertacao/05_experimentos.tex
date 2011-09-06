@@ -21,52 +21,51 @@
 \label{cap::experimentos}
 
 
-Nesse capítulo relataremos os diversos experimentos efetuados e seus resultados.
-Decidimos por realizar a divisão desse capítulo em quatro partes.
-Na primeira, a Seção~\ref{sec::preliminares}, abordamos alguns pontos em comum de todos os experimentos, como a metodologia da Validação Cruzada, os parâmetros do \textsc{PG} e a função de \textit{fitness} empregada, além de mostramos as bases de dados trabalhadas.
-Nas Seções~\ref{sec::documentos}, \ref{sec::categorias}, abordamos a classificação com a utilização de funções credibilidade em atributos textuais e categóricos, respectivamente.
-Os atributos textuais provêm de bases de documentos muito utilizadas na literatura, em especial a base da \textsc{ACM-DL} contém também informações usadas para credibilidade de relacionamentos.
+Nesse capítulo relatamos os diversos experimentos efetuados para testar a eficácia dos métodos para estimar a credibilidade de exemplos. % e seus resultados.
+Decidimos por realizar a divisão desse capítulo em seis partes.
+Na primeira, a Seção~\ref{subsec::base}, mostramos as várias bases de dados que usamos em nossos experimentos.
+Depois, mostramos na Seção~\ref{subsec::gpparam} os diversos parâmetros utilizados pelo \textsc{PG}, incluindo sua funcão de \textit{fitness}.
+Já a Seção~\ref{subsubsec::cv} aborda a metodologia usada para realização dos testes.
+%Por fim, nas três últimas seções exibimos os resultados dos três tipos de base usadas, documentos (Seção~\ref{sec::documentos}), categorias (Seção~\ref{sec::categorias}) e bioinformática (Seção~\ref{sec::bioinfo}).
+%
+%abordamos alguns pontos em comum de todos os experimentos, como a metodologia da Validação Cruzada, os parâmetros do \textsc{PG} e a função de \textit{fitness} empregada, além de.
+Nas Seções~\ref{sec::documentos} e \ref{sec::categorias}, abordamos a classificação com a utilização de funções credibilidade em atributos textuais e categóricos, respectivamente.
+Os atributos textuais provêm de bases de documentos muito utilizadas na literatura, em especial a base da \textsc{ACM-DL}, que contém também informações usadas para credibilidade de relacionamentos.
 Por sua vez, os atributos categóricos vêm de bases do \textsc{UCI}.
-Finalmente, na Seção~\ref{sec::bioinfo}, apresentamos os resultados ao utilizar classificação de atributos numéricos e funções de credibilidade referentes aos relacionamentos em uma base de assinaturas estruturais proteicas. 
+Finalmente, na Seção~\ref{sec::bioinfo}, apresentamos os resultados provenientes de utilizar a classificação de atributos numéricos e as funções de credibilidade de relacionamentos em uma base de assinaturas estruturais proteicas. 
 
 
-%Assinaturas estruturais proteicas derivadas (geradas) pelo método CSM
-
-%Base:
-%tarefa de classificacao estrutural
-%classifiquei no familia SCOP nivel familia.
-%SCOP 1.75 da proteinas e assinaturas sao geradas....pelo CSM...
-
-%Grafo:
-%para gerar o grafo foi feito um alinhamento par a par das sequencias utilizando o metodo BLAST  , gerando um score de similaridades nas comparacoes entre todos os pares de sequencias proteicas.(ver corte...)
 
 
-\section{Preliminares}
-\label{sec::preliminares}
 
-Nessa seção, descrevemos aspectos fundamentais que serão usados nos experimentos efetuados nas próximas seções desse capítulo. 
-Iniciamos com a Seção~\ref{subsec::base}, que mostra todas as bases usadas, assim como um estudo de suas características.
-Depois, na Seção~\ref{subsec::config}, abordamos a metodologia da Validação Cruzada e as configurações do \textsc{PG}.
-Finalmente na Seção~\ref{subsec::ganhosgp}, mostramos experimentos preliminares que apontam os ganhos da utilização de \textsc{PG} para evoluir funções de credibilidade.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--------------        5.1          ----------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{Bases de Dados}
+\section{Bases de Dados}
 \label{subsec::base}
 
-Nosso trabalho se divide em três conjuntos de bases de dados: as bases de documentos, as bases do \textsc{UCI} (\cite{UCI98}) e uma base de bioinformática.
+Nosso trabalho se divide em três tipos de bases de dados: as bases de documentos, as bases do \textsc{UCI} (\cite{UCI98}) e uma base de bioinformática.
 
-Iniciamos por mostrar a Figura \ref{fig::basesdoc}, contendo as distribuições dos exemplos das quatro bases de documentos que estamos usando. Todas as bases foram pré-processadas, com remoção de \textit{stop words}, assim como foi atribuída somente uma única classe para todos os documentos que originalmente poderiam pertencer a mais de uma.
+Iniciamos descrevendo as quatro bases de documentos: \textsc{ACM-DL}, \textit{Reuters}, \textit{Ohsumed} e \textit{20-newsgroup}. 
+%mostrar a Figura \ref{fig::basesdoc}, contendo as distribuições dos exemplos das quatro bases de documentos que estamos usando.
+ Todas elas foram pré-processadas, com remoção de \textit{stop words} e \textit{steming}, assim como foi atribuída somente uma única classe para todos os documentos que originalmente poderiam pertencer a mais de uma.
 
-A base de documentos digitais da \textsc{ACM}, chamada \textsc{ACM-DL} (\textit{Association for Computing Machinery Digital Library}), é um rico acerto de artigos acadêmicos da área da Ciência da Computação e mostrada na Figura \ref{fig::acm}. Utilizamos somente um subconjunto formado por 56.450 termos diferentes em 24.897 artigos divididos em 11 classes. 
-A base da \textsc{ACM} ainda é a única que apresenta informações sobre os autores e citações contidas nos seus documentos. 
-Podemos com formar dois grafos com essa informação, um para os autores e outro para as citações.
-Ao todo o grafo de autoria tem 16.005 vértices (documentos) e 72.645 arestas, sendo que cada aresta representa o número de autores entre dois documentos.
+A base de documentos digitais da \textsc{ACM}, chamada \textsc{ACM-DL} (\textit{Association for Computing Machinery Digital Library}), é um rico acervo de artigos acadêmicos da área da Ciência da Computação. Utilizamos somente um subconjunto da base, formado por 56.450 termos encontrados em 24.897 artigos divididos em 11 classes. 
+A base da \textsc{ACM} é a única que apresenta informações sobre os autores e citações contidas nos seus documentos. 
+Podemos criar dois grafos de relacionamentos com essas informações: um para os autores e outro para as citações.
+Ao todo o grafo de autoria tem 16.005 vértices (documentos) e 72.645 arestas, sendo que cada aresta representa o número de autores em comum dois documentos possuem.
 Já o grafo de citações tem 31.482 vértices e 95.812 arestas, onde os vértices são documentos e as arestas são direcionadas e significam que um documento cita o outro. 
-Repare que o número de de documentos no grafo de citações é maior que o número de artigos existentes no subconjunto da \textsc{ACM-DL} que utilizamos. Isso é possível pelo fato de estarmos usando um subconjunto dos documentos da \textsc{ACM-DL} e ele contém informações sobre artigos que estão fora do subconjunto que usamos. Para ser mais exato, apenas 5.305 artigos do grafo de citação estão presentes na base que usamos, enquanto os outros 26.176 não estão.
+Observe que o número de documentos no grafo de citações é maior que o número de artigos existentes no subconjunto da \textsc{ACM-DL}. Isso acontece porque estamos usando um subconjunto dos documentos da \textsc{ACM-DL} e ele contém informações sobre artigos que estão fora desse subconjunto. Para ser mais exato, apenas 5.305 artigos do grafo de citação estão presentes na base que usamos, enquanto os outros 26.176 não estão.
 
-Por sua vez, a base \textit{Reuters} contém 8.184 documentos divididos em 8 classes, contendo 24.986 termos distintos. Eles são provenientes da agência de notícias com o mesmo nome da base. 
-Já a base \textit{Ohsumed} apresenta 18.302 documentos médicos, em 23 classes e 45.991 termos.
-Finalmente, a base 20-\textit{newgroup} (\textit{20ng}) contém 18.827 mensagens de texto com 110.502 termos único, enviadas para grupos de notícia de diversos assuntos como ciência, religião, entre outros, totalizando 20 classes.
+A base \textit{Reuters}, por sua vez, contém 8.184 documentos divididos em 8 classes, e 24.986 termos distintos. Os documentos são provenientes da agência de notícias com o mesmo nome da base. 
+Já a base \textit{Ohsumed} apresenta 18.302 documentos médicos divididos em 23 classes e 45.991 termos.
+Finalmente, a base 20-\textit{newgroup} (\textit{20ng}) contém 18.827 mensagens de texto com 110.502 termos únicos, enviadas para grupos de notícia de diversos assuntos como ciência, religião, entre outros, totalizando 20 classes.
+
+A Figura~\ref{fig::basesdoc} mostra a distribuição exemplos/classe das bases citadas acima. 
 Todos os pontos mostrados na Figura \ref{fig::basesdoc} são referentes à quantidade de exemplos de cada classe, ordenados de maneira crescente, da classe de menor popularidade para a de maior. Verificamos que a base \textit{20-newsgroup} é a que apresenta a distribuição mais equilibrada de exemplos por classe, enquanto a \textit{Ohsumed} apresenta a pior, com 17 das 23 classes contendo menos que 1.000 exemplos por classe e com duas classes contendo mais de 2.500.
 
 \begin{figure}[!h]
@@ -81,7 +80,9 @@ Todos os pontos mostrados na Figura \ref{fig::basesdoc} são referentes à quant
 \label{fig::basesdoc}
 \end{figure}
 
-Na Figura \ref{fig::basesdoc}, mostramos o perfil de quatro bases do repositório de bases para aprendizagem de máquina do campos de Irvine da Univeridade da California (\textsc{UCI}). Todas as bases são compostas por poucos atributos, todos categóricos, e poucas classes. A base \textit{Cars} contém 1.728 exemplos com 6 atributos cada, apresentando características importantes para decidir a condição de um carro usado entre não aceitável, aceitável, bom e muito bom. A base \textit{chess} utiliza de 36 atributos e apresenta 3.196 instâncias para decidir se a partir de alguns movimentos finais do jogo de xadrez, o jogador que joga com as peças brancas pode ganhar ou não. \textit{Nursery} é uma base formada por candidaturas para as escolas de enfermaria de Liubliana, Eslovênia. Ela é composta de 12.960 exemplos de 8 atributos que descrevem aspectos de um(a) candidato(a) para a escola de enfermaria. Cada exemplo pode ser classificado em cinco classes que vão desde não recomendado até muito recomendado, com a classe recomendado apresentando apenas dois exemplos. Por último a base \textit{tictactoe}, mostra as 958 combinações possíveis das 9 casas do jogo da velha, sendo as classes possíveis a vitória do jogador \textsc{x} ou não.
+Já a Figura \ref{fig::basescategorias}, mostra o perfil de quatro bases do repositório de bases para aprendizado de máquina da Universidade da Califórnia em Irvine (\textsc{UCI}). Todas as bases são compostas por poucos atributos, todos categóricos, e poucas classes. 
+A base \textit{Cars} contém 1.728 exemplos com 6 atributos cada, apresentando características importantes para decidir a condição de um carro usado entre não aceitável, aceitável, bom e muito bom. A base \textit{chess} utiliza 36 atributos e 3.196 instâncias para decidir se a partir de alguns movimentos finais do jogo de xadrez, o jogador que joga com as peças brancas pode ganhar ou não. \textit{Nursery} é uma base formada por candidaturas para as escolas de enfermaria de Liubliana, Eslovênia. Ela é composta de 12.960 exemplos com 8 atributos que descrevem aspectos de um(a) candidato(a) para a escola de enfermaria. Cada exemplo pode ser classificado em cinco classes que vão desde não recomendado até fortemente recomendado, com a classe recomendado apresentando apenas dois exemplos. 
+Por último, a base \textit{tictactoe} mostra as 958 combinações possíveis das 9 casas do jogo da velha, sendo as classes possíveis a vitória do jogador \textsc{x} ou não.
 
 \begin{figure}[h]
   \centering
@@ -95,15 +96,10 @@ Na Figura \ref{fig::basesdoc}, mostramos o perfil de quatro bases do repositóri
 \label{fig::basescategorias}
 \end{figure}
 
-Por último, utilizamos uma base de assinaturas estruturais proteicas, geradas pelo método \textsc{CSM} (\cite{dpires_bmc_2011}) a partir do repositório de domínios proteicos ASTRAL (\cite{Brenner00}).
-Ela é utilizada para a tarefa de classificação estrutural de proteínas e usa o nível de família da classificação SCOP (\cite{SCOP95}), que classifica proteínas nos níveis hierárquicos de classe, enovelamento, super família e família, sendo família o nível mais específico e muitas vezes o mais difícil de classificar. Assim como feito em \cite{dpires_bmc_2011}, foi utilizado o método de decomposição por valor singular (\textsc{SVD}) (\cite{SVD}) para reduzir a dimensionalidade e ruídos da base para apenas 15 atributos, tornando a execução dos algoritmos de classificação mais rápida sem grande degradação dos resultados. 
-Na Figura~\ref{fig::basesbio}, vemos como são distribuídos os 110.799 exemplos nas 4.193 classes existentes, sendo que todas as classes têm ao menos dez exemplos.
-Por último, utilizamos o método \textsc{BLAST} (\cite{altschul90}) para gerar um valor referente à similaridade entre duas sequências proteicas. Dessa forma, definimos uma relação entre todos os pares de estruturas presentes nessa base. Com o intuito de utilizarmos somente as informações mais relevantes e diminuir o tamanho do grafo gerado, estipulamos um limite inferior de corte de 40\% de similaridade, ainda assim restaram 11.461.022 ligações os exemplos da base.
-
-%base: (4193 classes, 110.799 exemplos diferentes, usando SVD para diminuir as dimensoes, 15 Dimensoes)
-%grafo: (11461022 arestas 
-
-
+Finalmente, utilizamos uma base de assinaturas estruturais proteicas, geradas pelo método \textsc{CSM} (\cite{dpires_bmc_2011}) a partir do repositório de domínios proteicos ASTRAL (\cite{Brenner00}).
+Ela é utilizada para a tarefa de classificação estrutural de proteínas e usa o nível de família da classificação \textsc{SCOP} (\cite{SCOP95}), que classifica proteínas nos níveis hierárquicos de classe, enovelamento, super família e família, sendo família o nível mais específico e muitas vezes o mais difícil de classificar. Assim como feito em \cite{dpires_bmc_2011}, foi utilizado o método de decomposição por valor singular (\textsc{SVD}) (\cite{SVD}) para reduzir a dimensionalidade e ruídos da base para apenas 15 atributos, tornando a execução dos algoritmos de classificação mais rápida sem grande degradação dos resultados. 
+Na Figura~\ref{fig::basesbio} vemos como as 110.799 proteínas são distribuídas nas 4.193 classes existentes, sendo que todas as classes têm ao menos dez exemplos.
+Nesse domínio exploramos a credibilidade de relacionamentos, onde o relacionamento corresponde a similaridade entre duas sequências proteicas. Essa similaridade é gerada utilizando o método \textsc{BLAST} (\cite{altschul90}). Dessa forma, definimos uma relação entre todos os pares de estruturas presentes na base. Com o intuito de utilizar somente as informações mais relevantes e diminuir o tamanho do grafo gerado, estipulamos um limite inferior de corte de 40\% de similaridade. Ainda assim restaram 11.461.022 ligações entre os exemplos da base.
 
 %Assinaturas estruturais proteicas derivadas (geradas) pelo método CSM
 
@@ -115,7 +111,6 @@ Por último, utilizamos o método \textsc{BLAST} (\cite{altschul90}) para gerar 
 %Grafo:
 %para gerar o grafo foi feito um alinhamento par a par das sequencias utilizando o metodo BLAST  , gerando um score de similaridades nas comparacoes entre todos os pares de sequencias proteicas.(ver corte...)
 
-
 \begin{figure}[!h]
   \centering
 %  \subfloat[][Astral]{\label{fig:astral}\includegraphics[angle=270, width=0.40\textwidth]{figures/perfil/astral.png}}
@@ -125,42 +120,18 @@ Por último, utilizamos o método \textsc{BLAST} (\cite{altschul90}) para gerar 
 \label{fig::basesbio}
 \end{figure}
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--------------        5.2          ----------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Configurações dos Experimentos}
-\label{subsec::config}
 
-Abordamos nessa seção três aspectos importantes de todos os experimentos: a metodologia usada na execução dos mesmos, os parâmetros empregados no Programa Genético e 
-a avaliação de algumas funções de \textit{fitness}.
-
-\subsubsection{Metodologia com Validação Cruzada}
-\label{subsubsec::cv}
-
-Empregamos a técnica de Validação Cruzada (\cite{Refaeilzadeh00}) com 5 partições em todos os nossos experimentos, com exceção dos testes na base de bioinformática, onde usamos 10 partições.
-A validação cruzada é bem utilizada e aceita na literatura pelo seu poder se avaliação da generalização de um modelo. Ela consiste em dividir a base de dados em $k$ partições de tamanho igual, onde utilizamos $k-2$ para treinar um modelo, uma para a validação e uma para o teste final. 
-Combinamos a validação cruzada com nosso algoritmo de Programação Genética da seguinte forma: usamos o conjunto de treino para poder gera o modelo de classificação, a validação para testar a \textit{fitness} dos indivíduos e reservamos o teste final para ser usado somente depois que já chegamos a um indivíduo evoluído. 
-
-Além disso, uma validação cruzada de $k$ partições dá origem a $k$ experimentos diferentes, onde cada um possui um conjunto diferente de treino, validação e testes, resultado da rotação das partições. A Figura~\ref{fig::cv} ilustra bem o processo de rotação para 5 partições, onde a partir de uma divisão inicial da base por 5 partições, podemos gerar os 5 experimentos mostrados.
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.40\textwidth]{figures/cv.png}
- \caption{Modelo de Validação Cruzada com 5 partições.}
-\label{fig::cv}
-\end{figure}
-
-Como dito, pelo fato da base de bioinformática ser muito grande, tivemos que mudar a forma como os experimentos estavam sendo executados. Logo, ela foi dividida em 10 partições, sendo que usamos uma partição para treino, uma para validação e as outras 8 para teste. Dessa forma, evoluímos as funções de credibilidade em apenas dois décimos da base e utilizamos a função evoluída nos outros oito décimos.
-
-\subsubsection{Parâmetros do Programa Genético}
+\section{Configuração de Parâmetros}
 \label{subsec::gpparam}
 
-A configuração de parâmetros em um Programa Genético é um dos muitos desafios encontrados nesse trabalho. Procuramos utilizar uma combinação que seja boa o suficiente para todos testes aqui exibidos. Isso quer dizer que poderíamos obter resultados ainda melhores se ajustássemos os parâmetros focando em cada teste, porém iríamos ter dezenas de tabelas de configurações, o que definitivamente não é desejado. Portanto, efetuamos vários testes prévios em quase todas as bases estudadas para, finalmente, chegarmos aos parâmetros mostrados na Tabela~\ref{tab::parametros}.   
-Destacamos o uso do programa de visualização chamado Galapagos (\cite{galapagos}), que nesse ano ganhou o prêmio de melhor ferramenta para visualização de algoritmos evolucionários da conferência ACM-Gecco 2011 (Genetics and Evolutionary Computation Conference). 
+A configuração de parâmetros em um algoritmo de Programação Genética é um dos muitos desafios encontrados nesse trabalho. Procuramos utilizar uma combinação que seja boa o suficiente para todos testes aqui exibidos. Isso quer dizer que poderíamos obter resultados ainda melhores se ajustássemos os parâmetros focando em cada teste, porém iríamos ter dezenas de tabelas de configurações, o que definitivamente não é desejado. Portanto, efetuamos vários testes prévios em todas as bases estudadas para, finalmente, chegarmos aos parâmetros mostrados na Tabela~\ref{tab::parametros}.   
+Destacamos o uso do programa de visualização chamado Galapagos (\cite{galapagos}), que nesse ano ganhou o prêmio de melhor ferramenta para visualização de algoritmos evolucionários da conferência ACM-Gecco 2011 (\textit{Genetics and Evolutionary Computation Conference}). 
 
 \begin{table}[!h]
 \centering
@@ -192,44 +163,88 @@ Elitismo & Sim\tabularnewline
 \end{tabular}
 \end{table}
 
-Como mostrado no Capítulo~\ref{cap::programacao_genetica}, o parâmetro ``tamanho da população'' controla quantos indivíduos teremos em cada uma das gerações e o ``número de gerações'' define até quando o \textsc{PG} evoluirá. Como já falamos também, utilizamos a seleção por torneio formados por apenas dois indivíduos, evitando assim convergir rapidamente. 
+Como mostrado no Capítulo~\ref{cap::programacao_genetica}, o parâmetro ``tamanho da população'' controla quantos indivíduos teremos em cada uma das gerações e o ``número de gerações'' define até quando o \textsc{PG} evoluirá. Como já falamos também, utilizamos a seleção por torneio formados por apenas dois indivíduos, evitando assim a convergência prematura do algoritmo. 
 Temos também exibidos os diversos valores de probabilidade para a criação da população da próxima geração. Finalmente, estamos usando a técnica chamada elitismo, na qual o melhor indivíduo de cada geração é automaticamente reproduzido na próxima geração.
 
-
-\subsubsection{Efeito da Função de \textit{Fitness}}
-\label{sec::fitness}
+Além dos parâmetros convencionais apresentamos também resultados de experimentos preliminares que determinam a \textit{fitness} do algoritmo. 
 
 
-Como foi apontado na Seção~\ref{subsec::fitness}, a \textit{fitness} desempenha importante papel em um Programa Genético, pois define quem são os melhores indivíduos, sendo um importante meio para compará-los.
+Como apontado na Seção~\ref{subsec::fitness}, a \textit{fitness} desempenha importante papel em um algoritmo de Programação Genética, pois define quem são os melhores indivíduos, sendo um importante meio para compará-los.
 Usualmente, os trabalhos de classificação presentes na literatura reportam a Micro e Macro-$F_1$, pelo papel que apresentam em tentar balancear a taxa de acerto com uma boa cobertura, medindo a capacidade do classificador prever corretamente indivíduos em todas as classes.
 Em nosso trabalhos passados (\cite{Palotti10,Palotti11})
 e nos experimentos aqui presentes, utilizamos a Micro-$F_1$ como função de \textit{fitness}, pois é mais comum encontrar trabalhos na literatura reportando a Micro-$F_1$ do que a Macro-$F_1$. Entretanto, é interessante investigar quais são os resultados obtidos por alterar a função de \textit{fitness}, substituindo a Micro-$F_1$ pela (i) Macro-$F_1$ e (ii) pela soma das duas.
 
-Nas Tabelas~\ref{tab::fitness-micro} e \ref{tab::fitness-macro}, mostramos os resultados da Micro e Macro$F_1$, respectivamente, ao aplicar as três funções de \textit{fitness} propostas.
+Nas Tabelas~\ref{tab::fitness-micro} e \ref{tab::fitness-macro}, mostramos os resultados da Micro$F_1$ e Macro$F_1$, respectivamente, ao aplicar as três funções de \textit{fitness} propostas.
 A utilização da \textit{fitness} = Micro$F_1$ serve como linha de base e informarmos os ganhos nas duas últimas colunas relativos a ela. 
-Assim como em várias da tabelas presentes nesse capítulo, usamos 3 símbolos: \triangOK, \triangBAD, \ball, para dizer, respectivamente, que temos uma comparação significativamente melhor, pior ou igual.  
+Assim como em várias da tabelas presentes nesse capítulo, usamos 3 símbolos: \triangOK, \triangBAD, \ball, para dizer, respectivamente, que temos uma comparação significativamente melhor, pior ou impossível de se afirmar de acordo com um teste de hipóteses (\textit{test-t}) com nível de confiança de 99\%.  
 
 \input{05_fitness}
 
-Comparando a \textit{fitness} = Micro$F_1$ com \textit{fitness} = Macro$F_1$, percebemos que usar a \textit{fitness} = Macro$F_1$ obtém resultados piores (somente na base \textsc{ACM-DL} a piora foi significativa) para a Micro$F_1$ e não consistentes para Macro$F_1$, apresentando ganhos não significativos duas vezes e uma piora significativa para base \textit{Reuters}. Esperávamos obter um melhor resultado para a Macro$F_1$ ao usá-la como função de \textit{fitness}, mas não foi o que aconteceu.
-Já a utilização de uma função um pouco mais complexa, como \textit{fitness} = Micro$F_1$ + Macro$F_1$, mostra alguns ganhos e perdas, todos não significativos. 
+Comparando a \textit{fitness} = Micro$F_1$ com \textit{fitness} = Macro$F_1$, percebemos que usar a \textit{fitness} = Macro$F_1$ obtém resultados um pouco piores (porém, somente na base \textsc{ACM-DL} a piora foi estatisticamente significativa) para a Micro$F_1$ e não consistentes para Macro$F_1$, apresentando uma piora significativa apenas para base \textit{Reuters}. Esperávamos obter um melhor resultado para a Macro$F_1$ ao usá-la como função de \textit{fitness}, mas não foi o que aconteceu.
+Já a utilização de uma função um pouco mais complexa, como \textit{fitness} = Micro$F_1$ + Macro$F_1$, mostra alguns ganhos e perdas, mas nada que possa ser considerado estatisticamente significativo.
 
-Optamos por continuar usando a \textit{fitness} = Micro$F_1$ 
-por obter melhores resultados que a \textit{fitness} = Macro$F_1$ e
+
+Optamos por continuar usando a \textit{fitness} = Micro$F_1$  
+por obter resultados um pouco melhores que a \textit{fitness} = Macro$F_1$ e
 ser mais simples que a \textit{fitness} = Micro$F_1$ + Macro$F_1$. A última decisão foi tomada à luz do princípio da Navalha de Occam (\cite{Blumer87}), que diz que entre um sistema mais complexo e um mais simples que obtém os mesmos resultados, devemos usar o mais simples.
 
 
-\subsection{Motivação Experimental para o Uso de Programação Genética}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--------------        5.3          ----------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Metodologia Experimental}
+\label{subsubsec::cv}
+
+Para todos os experimentos, empregamos a técnica de Validação Cruzada (\cite{Refaeilzadeh00}) com 5 partições, com exceção dos testes na base de bioinformática, onde usamos 10 partições.
+A validação cruzada é bem utilizada e aceita na literatura pelo seu poder se avaliação da generalização de um modelo. Ela consiste em dividir a base de dados em $k$ partições de tamanho igual, onde utilizamos $k-2$ para treinar um modelo, uma para a validação e uma para o teste final. 
+Combinamos a validação cruzada com nosso algoritmo de Programação Genética da seguinte forma: usamos o conjunto de treino para poder gera o modelo de classificação, a validação para testar a \textit{fitness} dos indivíduos e reservamos o teste final para ser usado somente depois que já chegamos a um indivíduo evoluído. 
+
+Além disso, uma validação cruzada de $k$ partições dá origem a $k$ experimentos diferentes, onde cada um possui um conjunto diferente de treino, validação e testes, resultado da rotação das partições. A Figura~\ref{fig::cv} ilustra bem o processo de rotação para 5 partições, onde a partir de uma divisão inicial da base por 5 partições, podemos gerar os 5 experimentos mostrados.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.40\textwidth]{figures/cv.png}
+ \caption{Modelo de Validação Cruzada com 5 partições.}
+\label{fig::cv}
+\end{figure}
+
+Como dito, pelo fato da base de bioinformática ser muito grande, tivemos que mudar a forma como os experimentos estavam sendo executados. Logo, ela foi dividida em 10 partições, sendo que usamos uma partição para treino, uma para validação e as outras 8 para teste. Dessa forma, evoluímos as funções de credibilidade em apenas dois décimos da base e utilizamos a função evoluída nos outros oito décimos.
+
+Por fim, destacamos que todos os nossos resultados apresentados são analisados através do \textit{test-t} com nível de confiança de 99\%.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--------------        5.4          ----------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Credibilidade para Bases de Documentos}
+\label{sec::documentos}
+
+Nessa seção realizamos diferentes testes com as bases de documentos.
+Iniciamos por mostrar na Seção~\ref{subsec::ganhosgp} como o uso de Programação Genética trouxe benefícios para que conseguíssemos obter funções de credibilidade mais eficazes. Esses 
+resultados que são válidos também para os demais experimentos mostrados nesse trabalho. 
+Já na Seção~\ref{subsec::generalidade} estudos os efeitos de aplicarmos uma função de credibilidade evoluída para uma determinada base em outras bases.
+Por último, na Seção~\ref{subsec::fatores} trabalhamos com as redes de citação e autoria somadas aos atributos textuais, disponíveis somente para a base \textsc{ACM-DL}.
+
+\subsection{Credibilidade de atributos}
 \label{subsec::ganhosgp}
 
 Na literatura, encontramos muitos trabalhos, conforme abordamos na Seção~\ref{sec::supervised}, que empregam várias das métricas de credibilidade de atributos utilizadas aqui, porém sem nenhuma combinação mais elaborada das mesmas. 
 Assim como previamente mencionamos na Seção~\ref{subsubsec::nbcredatributos} essas métricas sozinhas já poderiam ser funções de credibilidade de atributos, caso não usássemos o \textsc{PG}. Porém, não saberíamos dizer exatamente qual é a melhor métrica para usar em uma dada situação específica, e nem qual combinação, dentre as milhares existentes, é a melhor. 
 
-Com o intuito de mostrarmos que a combinação das métricas durante e evolução do \textsc{PG} é benéfica para a criação de uma função de credibilidade mais robusta, construímos as Tabelas~\ref{tab::imensamicro} e \ref{tab::imensamacro}. 
+Com o intuito de mostrarmos que a combinação das métricas durante e evolução do \textsc{PG} é benéfica para a criação de uma função de credibilidade mais robusta e evitarmos a escolha de uma linha de base sem nenhuma informação adicional sobre as métricas, construímos as Tabelas~\ref{tab::imensamicro} e \ref{tab::imensamacro}. 
 Nelas, visualizamos a aplicação das diversas métricas de credibilidade nas quatro bases de texto que estudamos, além de mostrarmos a linha de base, que trata do algoritmo \textit{Naïve Bayes} sem modificação, e as funções evoluídas pelo \textsc{PG}. Entre parêntesis, temos a diferença da aplicação de uma métrica (ou \textsc{PG}) para a linha de base.
 Vemos que usar o \textsc{PG} fornece uma solução bem mais robusta que usar qualquer um das outras métricas em separado. O resultado do \textsc{PG} da Micro$F_1$ da base \textsc{ACM-DL} foi o único que não trouxe resultados significativamente melhores, porém também não foram piores, como todas as outras métricas.
+Observe que, nesse caso, o \textsc{PG} utilizou como terminais as trinta métricas para evolução dos atributos.
 
-Em geral, as métricas apresentaram resultados positivos em alguns cenários, mas negativos em outros, como a métrica \textsc{IDF} ou \textsc{GSS}. Mesmo as métricas que apresentaram resultados negativos em todos os experimentos, como \textsc{MaxTFIDF}, \textsc{MaxCTD}, foram mantidas por duas razões: (i) não temos certeza se existe um cenário no qual elas possam trazer benefícios, como usar uma outra base ou mesmo usar o inverso da métrica ($\frac{1}{MaxTFIDF}$), (ii) o \textsc{PG} naturalmente vai eliminar métricas que não trazem benefício ao longo das gerações. 
+Em geral, as métricas apresentaram resultados positivos em alguns cenários, mas negativos em outros, como a métrica \textsc{IDF} ou \textsc{GSS}. Mesmo as métricas que apresentaram resultados negativos em todos os experimentos, como \textsc{MaxTFIDF}, \textsc{MaxCTD}, foram mantidas como terminais para o algoritmo do \textsc{PG} por duas razões: (i) não temos certeza se existe um cenário no qual elas possam trazer benefícios, como usar uma outra base ou mesmo usar o inverso da métrica ($\frac{1}{MaxTFIDF}$), (ii) o \textsc{PG} naturalmente vai eliminar métricas que não trazem benefício ao longo das gerações. 
 
 Por fim, realizamos experimentos semelhantes para funções de credibilidade de relacionamentos na base da \textsc{ACM-DL}, obtendo o mesmo tipo de resultados que mostramos aqui, onde a função evoluída pelo \textsc{GP} é sempre melhor ou igual à aplicação das métricas em separado.
 
@@ -239,20 +254,15 @@ Por fim, realizamos experimentos semelhantes para funções de credibilidade de 
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 
-\section{Bases de Documentos}
-\label{sec::documentos}
-
-Já mostramos alguns resultados da aplicação das funções de credibilidade em bases de documentos nas seções anteriores, porém ainda gostaríamos de exibir outros experimentos interessantes em relação a generalidade das funções e ao uso de mais de um fator simultâneamente, nas Seções~\ref{subsec::generalidade} e \ref{subsec::fatores}, respectivamente.
-
 \subsection{Generalidade}
 \label{subsec::generalidade}
 
-Na Seção~\ref{subsec::ganhosgp}, estudamos os resultados de aplicar todas as métricas de credibilidade de atributos em separado e através do uso de \textsc{PG}.
+Na Seção~\ref{subsec::ganhosgp}, analisamos os resultados obtidos ao aplicar todas as métricas de credibilidade de atributos em separado e através do uso de \textsc{PG}.
 Como mencionamos na Seção~\ref{subsubsec::cv}, usamos validação cruzada com 5 partições para o obter os resultados mostrados na Tabelas~\ref{tab::imensamicro} e \ref{tab::imensamacro}.
 Logo, para cada uma das bases, tivemos cinco funções evoluídas pelo uso do \textsc{PG}, uma para cada rotação, como mostrado na Figura~\ref{fig::cv}. 
 Cada uma dessas funções obteve um resultado em seu experimento e exibimos, ao final, os resultados médios das cinco funções e desvio padrão.
 Decidimos por escolher a função que obteve o melhor resultado em seu experimento como representante da base de dados e mostramos essas funções na Tabela~\ref{tab::representantes}.
-Assim, por exemplo, a $F_{ACM-DL}$ mostrada foi a função escolhida para a base \textsc{ACM-DL} por ter tido mais ganhos em seu experimento que as outras quatro funções evoluídas nos delas.
+Assim, por exemplo, a $F_{ACM-DL}$ mostrada foi a função escolhida para a base \textsc{ACM-DL} por ter obtido maiores ganhos que as outras quatro funções evoluídas.
 
 \begin{table}[!h]
 \renewcommand{\arraystretch}{1.3}
@@ -277,16 +287,16 @@ Reuters & $ F_{Reuters} = IG^{(MaxIG \times GINI)}$\tabularnewline
 \end{scriptsize}
 \end{table}
 
-Resolvemos então aplicar as melhores funções de cada uma das bases nas demais bases (e nos outros experimentos de uma mesma base também). Assim podemos testar o quanto que uma função de credibilidade evoluída para uma determinada base é geral e pode ser usada em outro contexto. Nas Tabelas~\ref{tab::generalizacao-Micro} e \ref{tab::generalizacao-Macro}, observamos os resultados do estudo da generalização das funções. Se analisarmos as tabelas na linha diagonal central, veremos a aplicação das funções da Tabela~\ref{tab::representantes} em toda a base, não mais em apenas um dos cinco experimentos da validação cruzada. Observe que todos os resultados são tão bons ou melhores que os reportados anteriormente na Seção~\ref{subsec::ganhosgp}, em especial, foi o único resultado que conseguimos ganhos significativos na base da \textsc{ACM-DL}.
+Resolvemos então aplicar as melhores funções evoluídas para cada base nas demais bases (e nos outros experimentos de uma mesma base também). Assim podemos testar o quanto uma função de credibilidade evoluída para uma determinada base é geral e pode ser usada em outro contexto. Nas Tabelas~\ref{tab::generalizacao-Micro} e \ref{tab::generalizacao-Macro}, observamos os resultados do estudo da generalização das funções. Se analisarmos as tabelas na linha diagonal central, veremos a aplicação das funções da Tabela~\ref{tab::representantes} em toda a base, não mais em apenas um dos cinco experimentos da validação cruzada. Observe que todos os resultados são tão bons ou melhores que os reportados anteriormente na Seção~\ref{subsec::ganhosgp}. Em especial, esse foi o único resultado que apresentou ganhos significativos para base da \textsc{ACM-DL}.
 
-Ao observarmos as Tabelas~\ref{tab::generalizacao-Micro} e \ref{tab::generalizacao-Macro} coluna a coluna, vemos o comportamento de cada uma das funções em cada uma das bases. É nítido que nenhuma das funções evoluídas das outras bases foram boas para a base da \textsc{ACM-DL} e nem que a função evoluída pela \textsc{ACM-DL} obteve resultados bons para as outras bases. Mesmo quando os resultados foram significativamente melhores, i.e., na Macro$F_1$ da \textit{Ohsumed} e \textit{Reuters}, eles foram piores que os outros obtidos pelas outras funções.
+Ao observarmos as Tabelas~\ref{tab::generalizacao-Micro} e \ref{tab::generalizacao-Macro} coluna a coluna, vemos o comportamento de cada uma das funções em cada uma das bases. É nítido que nenhuma das funções evoluídas nas outras bases foi boa para a base da \textsc{ACM-DL}, e nem a função evoluída pela \textsc{ACM-DL} obteve resultados bons para as outras bases. Mesmo quando os resultados foram significativamente melhores, i.e., na Macro$F_1$ da \textit{Ohsumed} e \textit{Reuters}, eles foram piores que os outros obtidos pelas outras funções.
 Observamos que todas funções tiveram êxito na melhora da Macro$F_1$ das bases \textit{Ohsumed} e \textit{Reuters}, mas o mesmo não ocorreu na Micro$F_1$.
 Finalmente, destacamos que a única função que obteve resultados bons nas demais bases (exceto na Micro$F_1$ da \textsc{ACM}) foi a função evoluída para a base \textit{20ng}.
 Sendo assim, concluímos que usar as funções evoluídas pelo \textsc{PG} se comportam muito bem na própria base, mas não podemos dizer o mesmo para as demais bases.
 
 \begin{table}[!h]
 \centering
-\caption{Micro$F_1$ obtida pelo \textit{Naïve Bayes} quando usando a função de credibilidade $F_base$ gerada uma dada base nas demais bases.}
+\caption{Micro$F_1$ obtida pelo \textit{Naïve Bayes} quando usando a função de credibilidade $F_{base}$ gerada uma dada base nas demais bases.}
 \label{tab::generalizacao-Micro}
 \begin{scriptsize}
 \begin{adjustwidth}{-1cm}{-1cm}% adjust the L and R margins by 1 inch
@@ -313,7 +323,7 @@ $F_{Reuters}$ & 66.55 \textpm{} 0.89 (-9.61 \triangBAD) & 87.04 \textpm{} 0.41 (
 
 \begin{table}[!h]
 \centering
-\caption{Macro$F_1$ obtida pelo \textit{Naïve Bayes} quando usando a função de credibilidade $F_base$ gerada uma dada base nas demais bases.}
+\caption{Macro$F_1$ obtida pelo \textit{Naïve Bayes} quando usando a função de credibilidade $F_{base}$ gerada uma dada base nas demais bases.}
 \label{tab::generalizacao-Macro}
 \begin{scriptsize}
 \begin{adjustwidth}{-1cm}{-1cm}% adjust the L and R margins by 1 inch
@@ -340,14 +350,14 @@ $F_{Reuters}$ & 54.84 \textpm{} 1.44 (-4.23 \triangBAD) & 83.15 \textpm{} 2.04 (
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 
-\subsection{Explorando Múltiplos Fatores}
+\subsection{Explorando Relacionamentos e Múltiplos Fatores}
 \label{subsec::fatores}
 
-Nessa seção avaliamos como o uso de mais de um fator pode tornar o cálculo da credibilidade mais preciso. Somente a base da \textsc{ACM} apresenta informações disponíveis sobre os autores e as citações contidas em seus documentos, portanto, essa foi a única base que pudemos realizar experimentos com mais de um fator.
+Nessa seção avaliamos como o uso de mais de um fator pode tornar o cálculo da credibilidade mais preciso. Somente a base da \textsc{ACM} apresenta informações disponíveis sobre os autores e as citações contidas em seus documentos. Portanto, essa foi a única base que pudemos realizar experimentos com mais de um fator.
 
-Na tabela~\ref{tab::fatores}, mostramos a aplicação de um por um dos fatores e a combinação dos mesmos. A primeira coluna, termos, se refere a credibilidade dos atributos e as segunda e terceira linha, à credibilidade dos relacionamentos. Vemos que simplesmente usar a rede de autoria ou citações provê benefícios imediatos que não foram alcançados ao explorarmos os atributos.
+Na Tabela~\ref{tab::fatores}, mostramos a aplicação dos fatores isoladamente e a combinação dos mesmos. A primeira coluna, termos, se refere a credibilidade dos atributos e as segunda e terceira colunas, à credibilidade dos relacionamentos. Vemos que simplesmente usar a rede de autoria ou citações provê benefícios imediatos que não foram alcançados ao explorarmos os atributos.
 
-Esse fato evidência o poder da classificação relacional e que podemos obter ganhos acentuados ao explorar a credibilidade do relacionamentos. Com única exceção da Micro$F_1$ ao aplicar os três fatores, observamos que quanto mais fatores envolvemos melhores são os resultados. Por exemplo, ao usar somente a citação, temos ganhos de 3.4\% na Micro$F_1$ e 5.43\% na Macro$F_1$, ao combinar a citação com os termos, os ganhos vão para 4.18\% e 7.96\%. Acreditamos que não obtemos um resultado ainda mais expressivo para a combinação dos três fatores pelo fato que o número de métricas é muito elevado (30 dos atributos e 16 para cada um dos relacionamentos) e os parâmetros usados no \textsc{PG} não foram alterados.
+Esse fato evidencia o poder da classificação relacional, e que podemos obter ganhos acentuados ao explorar a credibilidade do relacionamentos. Com única exceção da Micro$F_1$ ao aplicar os três fatores, observamos que quanto mais fatores envolvemos na credibilidade, melhores são os resultados. Por exemplo, ao usar somente a citação, temos ganhos de 3.4\% na Micro$F_1$ e 5.43\% na Macro$F_1$, ao combinar a citação com os termos, os ganhos vão para 4.18\% e 7.96\%. Acreditamos que não obtemos um resultado ainda mais expressivo para a combinação dos três fatores pelo fato que o número de métricas é muito elevado (30 dos atributos e 16 para cada um dos relacionamentos) e os parâmetros usados no \textsc{PG} não foram otimizados para esse caso.
 
 
 \begin{table}[!h]
@@ -385,16 +395,23 @@ X & X & X & 77.01 \textpm{} 0.98 (4.60 \triangOK) & 62.24 \textpm{} 1.01 (8.70 \
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 
-\section{Bases de Atributos Categóricos}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--------------        5.5          ----------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Credibilidade em Bases de Atributos Categóricos}
 \label{sec::categorias}
 
 
 Na Seção~\ref{sec::supervised}, vimos que vários trabalhos lidam com o uso de diversas das métricas que utilizamos para gerar funções de credibilidade de atributos. Um ponto comum a todos
-é que somente se preocupam com classificação de documentos, ou seja, os atributos são sempre textuais. Expandimos essa abordagem ao lidar também com atributos categóricos.
+é que se preocupam somente com classificação de documentos, ou seja, os atributos são sempre textuais. Expandimos essa abordagem ao lidar também com atributos categóricos.
 
-Nas Tabelas~\ref{tab::cat-micro} e \ref{tab::cat-macro}, mostramos os resultados de evoluir funções de credibilidade para as bases usando tanto o algoritmo de classificação \textit{Naïve Bayes} quanto o \textsc{KNN}. Dessa vez, mostramos os resultados com o \textsc{KNN} pelo fato de sua linha de base ser muito superior à do \textit{Naïve Bayes} (excepto para a Micro$F_1$ da base \textit{Nursery}). A título de informação, utilizamos $K$ = 6,9,10,8 para as bases \textit{Cars}, \textit{Tictac}, \textit{Nursery} e \textit{Chess}, respectivamente.
+Nas Tabelas~\ref{tab::cat-micro} e \ref{tab::cat-macro}, mostramos os resultados de evoluir funções de credibilidade para as bases usando tanto o algoritmo de classificação \textit{Naïve Bayes} quanto o \textsc{KNN}. Dessa vez, mostramos os resultados com o \textsc{KNN} pelo fato de sua linha de base ser muito superior à do \textit{Naïve Bayes} (excepto para a Micro$F_1$ da base \textit{Nursery}). A título de informação, utilizamos $K$ = 6, 9, 10, 8 para as bases \textit{Cars}, \textit{Tictac}, \textit{Nursery} e \textit{Chess}, respectivamente. Esses valores foram definidos em experimentos preliminares.
 
-Destacamos os ganhos mais interessantes na Macro$F_1$ da base \textit{Cars}, essa fato evidência que os exemplos de maior dificuldade, por serem de classes menos populares, foram corretamente classificados. Isso alterou muito pouco a Micro$F_1$, pois, em quantidade, os exemplos difíceis são poucos, e muito a Macro$F_1$, pois houveram aumentos substanciais na métrica $F_1$ das classes com menos exemplos. O mesmo ocorre na base \textit{Nursery} quando usamos o \textit{Naïve Bayes}. Já as bases \textit{TicTacToe} e \textit{Chess} apresentaram ganhos pequenos de menos de 2\%.
+Destacamos os ganhos mais interessantes na Macro$F_1$ da base \textit{Cars}. Essa fato evidencia que os exemplos de maior dificuldade, por serem de classes menos populares, foram corretamente classificados. Isso alterou muito pouco a Micro$F_1$, pois, em quantidade, os exemplos difíceis são poucos, mas alterou muito a Macro$F_1$, pois houveram aumentos substanciais na métrica $F_1$ das classes com menos exemplos. O mesmo ocorre na base \textit{Nursery} quando usamos o \textit{Naïve Bayes}. Já as bases \textit{TicTacToe} e \textit{Chess} apresentaram ganhos pequenos, inferiores a 2\%.
 %(talvez mostrando que funções de crediblidade nao sao boas para jogos!)
 
 \begin{table}[h!]
@@ -449,19 +466,27 @@ Destacamos os ganhos mais interessantes na Macro$F_1$ da base \textit{Cars}, ess
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--------------        5.6          ----------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \section{Base de Bioinformática.}
 \label{sec::bioinfo}
 
 Realizamos experimentos também com a base de assinaturas estruturais proteicas, geradas pelo método \textsc{CSM}.
 Ela é composta de quinze atributos numéricos, resultantes do uso do \textsc{SVD} para diminuir sua dimensionalidade.
-Não temos uma função de credibilidade para atributos numéricos, porém geramos uma rede de similaridade entre os exemplos. 
-Essa rede mede o quanto dois exemplos da base são similares através da distância das sequencias das estruturas proteicas, utilizando o método \textsc{BLAST}.
+%Não temos uma função de credibilidade para atributos numéricos, porém geramos uma rede de similaridade entre os exemplos. 
+Nessa base, exploramos os relacionamento das proteínas baseado em uma rede de similaridade.
+Essa rede mede o quanto duas proteínas da base são similares através da distância das sequencias das estruturas proteicas, utilizando o método \textsc{BLAST}.
 
 Lembramos que, como dito na Seção~\ref{subsubsec::cv} por se tratar de uma base muito grande, utilizamos uma validação cruzada de 10 partições, com uma partição sendo treino, uma servindo de validação e oito como teste. Na Tabela~\ref{tab::bioinformatica}, mostramos três experimentos que realizamos, um por linha. A primeira linha exibe a utilização do \textsc{KNN} com $k = 1$, que foi o melhor resultado obtido para essa base, em comparação a outros valores para $k$ e ao \textit{Naïve Bayes}. 
 A próxima linha exibe o uso do \textsc{KNN} baseado somente na rede de similaridades gerada, sem usar os atributos, servido de segunda linha de base para o uso do \textsc{PG}.
 Vemos que a Micro$F_1$ obtém grande melhora, em detrimento da Macro$F_1$. 
 Por fim, mostramos os resultados ao evoluir com \textsc{PG} uma função de credibilidade para o relacionamento criado com a rede de similaridades.
-Destacamos que mesmo com a utilização de apenas uma pequena parte da base para treinamento, conseguimos ganhos de 26.58\% e 50.78\%, respectivamente ao uso do \textsc{KNN} que considera apenas os atributos. Em relação ao uso do \textsc{KNN} que considera apenas os relacionamentos, o \textsc{PG} obteve ganhos de 7.74\% e 74.18\%, para Micro$F_1$ e Macro$F_1$, respectivamente.
+Destacamos que, mesmo com a utilização de apenas uma pequena parte da base para treinamento, conseguimos ganhos de 26.58\% e 50.78\%, respectivamente ao uso do \textsc{KNN} que considera apenas os atributos. Em relação ao uso do \textsc{KNN} que considera apenas os relacionamentos, o \textsc{PG} obteve ganhos de 7.74\% e 74.18\%, para Micro$F_1$ e Macro$F_1$, respectivamente.
 
 \begin{table}[h!]
 \centering

@@ -116,23 +116,43 @@ Além disso, procuramos resolver com Programação Genética uma das limitaçõe
 \label{sec::classificacaografos}
 
 Além dos atributos, exploramos também os relacionamentos existentes entre os exemplos para obtermos um cálculo da credibilidade mais aprimorado.
-Estudar os relacionamentos entre entidades de um determinado sistema sempre foi uma tarefa que despertou o interesse de várias áreas do conhecimento (\cite{Onody04}, \cite{Shen05}, \cite{Rubinov10}) e a principal motivação para criação da área de Redes Complexas (\cite{Newman03}). Em especial, interessa-nos estudarmos a classificação relacional, que trata-se da utilização dos conceitos e métricas dessa nova área para a tarefa de classificação automática.
+Ao tomarmos uma característica existente entre duas entidades, podemos traçar um relacionamento entre as mesmas.
+Existem milhares de situações práticas nas quais podemos inferir algum relacionamento. Por exemplo, em uma empresa podemos traçar entre as pessoas o relacionamento de chefe/empregado, assim como dentro de uma universidade temos o relacionamento professor/aluno. 
+%Há alguns anos atrás, podiamos traçar também o relacionamento carrasco/escravo.
+
+Enfim, estudar os relacionamentos entre entidades de um determinado sistema sempre foi uma tarefa que despertou o interesse de várias áreas do conhecimento (\cite{Onody04}, \cite{Shen05}, \cite{Rubinov10}) e a principal motivação para criação da área de Redes Complexas (\cite{Newman03}).
+Uma área que também utiliza relacionamentos para a tarefa de classificação é chamada classificação relacional. %, que trata da utilização dos conceitos e métricas dessa área para a tarefa de classificação automática.
 
 Em suma, os algoritmos de classificação relacional se baseiam no conceito chamado homofilia (\cite{Blau77}, \cite{Mcpherson01})
 que diz que 
 exemplos similares tendem a se relacionar mais frequentemente e se comportar de maneira semelhante.
 Diversos trabalhos são inspirados nessa premissa. Por exemplo, em~\cite{Macskassy04}, temos descrito o método relacional de vizinhança, o qual avalia-se 
 a classe de um dado exemplo levando em conta um certo número de vizinhos que ele possui. Mesmo sendo um método simples, ele se destaca com bons resultados.
+Existem várias métricas na literatura modeladas para calcular se duas entidades em um relacionamento são semelhantes, por exemplo, a similaridade de Adamic e Adar (\cite{Adamic03}) ou a de Jaccard (\cite{Jaccard01}).
 
-Recentemente, métodos mais complexos para tratar a classificação relacional foram propostos (\cite{Zhang08}, \cite{Lu03}).
-Em \cite{Zhang08} temos a criação de um método baseado em otimizações lineares e funções de \textit{kernel} que pretendem explorar o grau de distribuição dos vértices em uma rede. Apontamos \cite{Lu03} como um estudo comparativo dos vários modelos de classificação relacional existentes na literatura.
+Entretanto, alguns trabalhos se dedicaram exclusivamente a certos relacionamentos específicos.
+%Em um contexto mais específico ao que tratamos aqui, 
+Um relacionamento que é extremamente estudado na literatura por seus benefícios na área de Recuperação de Informação é o de citações.
+%Ele pode ser construído em entre os exemplos os contidos em uma base de dados, apenas relacionane um exemplo referência ou é referenciado por outro. 
+Métricas como o \textit{hubs} e \textit{authority} de Klienberg (\cite{Kleinberg99}) ou o PageRank (\cite{Page98}) se tornaram populares e amplamente usadas em máquinas de busca por explorarem esse relacionamento para construção de \textit{rankings} entre as entidades, considerando algumas mais confiáveis que outras.
+%Trabalhos como os de \cite{Guha04}, constroem redes de confiança entre as entidades baseado nas citações existentes entre elas.
 
-Como já mencionado, nosso trabalho busca capturar a credibilidade depositada em um exemplo do treinamento. Acreditamos que utilizar as relações entre os exemplos pode nos fornecer fortes indícios que sustentem se podemos ou não confiar em um exemplo. É bastante intuitivo pensar que se um exemplo de teste está fortemente relacionado a um exemplo de treino, então esse exemplo de treino deve contribuir mais do que um exemplo sem nenhuma relação ao teste.
-Portanto, para a avaliarmos a credibilidade de um exemplo baseado em seus relacionamentos, empregamos muitas das métricas provenientes da área de Redes Complexas. 
-Algumas dessas métricas não são tão famosas para a tarefa de classificação, mas são muito usadas para a recuperação de informação, como PageRank (\cite{Page98}) e \textit{hubs} e \textit{authority} (\cite{Kleinberg99}). Outras procuram capturar a similaridade entre duas entidades em uma rede (\cite{Jaccard01}, \cite{Adamic03}).
-Informações mais detalhadas de cada uma das métricas que utilizamos são encontradas na Seção~\ref{subsec::pg_metricas_grafos}.
+Além das métricas citadas acima, diversas outras podem ser usadas para mensurar o quão forte o relacionamento entre um exemplo de teste e os de treinamento é, auxiliando assim diretamente para capturarmos a credibilidade dos exemplos presentes no treino. Realizamos um estudo detalhado dessas e apresentamos na Seção~\ref{sec::pg_cred_baseada_grafos}.
 Destacamos que, novamente, temos o problema de apresentarmos um número muito grande de métricas e querermos combiná-las a fim de alcançarmos relações que a princípio não são diretas.
 Para tanto, mais uma vez, recorremos ao uso da Programação Genética, pelos mesmo motivos já apontados.
+
+%Recentemente, métodos mais complexos para tratar a classificação relacional foram propostos (\cite{Zhang08}, \cite{Lu03}).
+%Em \cite{Zhang08} temos a criação de um método baseado em otimizações lineares e funções de \textit{kernel} para explorar o grau de distribuição dos vértices em uma rede. Apontamos \cite{Lu03} como um estudo comparativo dos vários modelos de classificação relacional existentes na literatura.
+
+%Como já mencionado, nosso trabalho busca capturar a credibilidade depositada em um exemplo do treinamento. 
+%Acreditamos que utilizar as relações entre os exemplos pode nos fornecer fortes indícios que sustentem se podemos ou não confiar em um exemplo. É bastante intuitivo pensar que se um exemplo de teste está fortemente relacionado a um exemplo de treino, então esse exemplo de treino deve contribuir mais do que um exemplo sem nenhuma relação ao teste.
+%Portanto, para a avaliarmos a credibilidade de um exemplo baseado em seus relacionamentos, empregamos muitas das métricas provenientes da área de Redes Complexas. 
+%Algumas dessas métricas não são tão famosas para a tarefa de classificação, mas são muito usadas para a recuperação de informação, como PageRank (\cite{Page98}) e 
+%\textit{hubs} e \textit{authority} (\cite{Kleinberg99}). Outras procuram capturar a similaridade entre duas entidades em uma rede (\cite{Jaccard01}, \cite{Adamic03}).
+%Informações mais detalhadas de cada uma das métricas que utilizamos são encontradas na 
+%Seção~\ref{sec::pg_cred_baseada_grafos}.
+%Destacamos que, novamente, temos o problema de apresentarmos um número muito grande de métricas e querermos combiná-las a fim de alcançarmos relações que a princípio não são diretas.
+%Para tanto, mais uma vez, recorremos ao uso da Programação Genética, pelos mesmo motivos já apontados.
 
 
 \section{Programação Genética}
