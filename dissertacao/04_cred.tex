@@ -3,12 +3,12 @@
 \label{cap::programacao_genetica}
 
 No Capítulo~\ref{cap::metodo},
-além de mostrarmos os algoritmos de classificação \textit{Naïve Bayes} e \textsc{KNN}, vimos como podemos incorporar a credibilidade nos mesmos.
+além de mostrarmos os algoritmos de classificação \textit{Naïve Bayes} e \textsc{KNN}, vimos como podemos incorporar a credibilidade aos mesmos.
 Discutimos também que existem várias métricas que podem ser utilizadas para mensurar a credibilidade de um exemplo, 
 embora não detalhamos essas métricas.
 
 Nessa dissertação, modelamos a credibilidade em duas abordagens diferentes, uma levando em consideração os atributos dos exemplos e outra utilizando os seus relacionamentos. 
-Em ambas, somos capazes de gerar uma grande gama de métricas que conseguem capturar a relação entre os exemplos e uma determinada classe, medindo a credibilidade que os exemplos de treino têm para cada classe.
+Em ambas somos capazes de gerar uma grande gama de métricas que conseguem capturar a relação entre os exemplos e uma determinada classe, medindo a credibilidade que os exemplos de treino têm para cada classe.
 Entretanto, necessitamos de uma forma de selecionar e combinar essas métricas de uma maneira robusta. Para solucionar esse problema, recorremos ao uso de Programação Genética (\textsc{PG}) (\cite{Koza92}).
 
 Segundo a Teoria da Evolução de Darwin, indivíduos mais adaptados ao ambiente em que se encontram têm uma chance maior de sobreviverem e se reproduzirem, passando seu material genético às gerações posteriores. Baseado nessa teoria, o método de Programação Genética é adequado para evoluir uma função de credibilidade, pois possui mecanismos de busca que o torna capaz de explorar bem o imenso espaço de soluções formado pelo grande número de métricas disponíveis (\cite{Fogel00}). Além disso, \textsc{PG} é flexível o bastante para ser capaz de representar as funções que desejamos, sendo também tolerante a ruído.
@@ -31,7 +31,7 @@ Cada indivíduo da população é então avaliado por uma função de \textit{fi
 \label{fig::gpwf}
 \end{figure}
 
-Após avaliarmos a \textit{fitness} dos indivíduos, os melhores são selecionados e submetidos às operações genéticas de cruzamento, reprodução e mutação, com probabilidade $P_c$, $P_r$ e $P_m$, respectivamente definidas pelo usuário.
+Após avaliarmos a \textit{fitness} dos indivíduos, os melhores são selecionados e submetidos às operações genéticas de cruzamento, reprodução e mutação, com probabilidade $P_c$, $P_r$ e $P_m$, respectivamente, definidas pelo usuário.
 Uma forma muito usada de selecionar os indivíduos é através de torneios, nos quais tomamos aleatoriamente um número pré-definido de indivíduos da população e selecionamos aquele com maior valor da função de \textit{fitness}. Existem diversas outras variações do método de seleção (\cite{Koza92}), sendo que o importante é utilizar a função \textit{fitness} dos indivíduos de forma a criamos uma próxima geração mais bem preparada para resolução do problema. 
 
 Depois de serem selecionados, os indivíduos podem passar por reprodução ou cruzamento, com probabilidades $P_r$ e $P_c$, respectivamente. 
@@ -42,8 +42,8 @@ Em geral, a mutação é uma pequena alteração em alguma parte especifica do i
 Variações nas quais a operação de mutação ocorre em paralelo a de reprodução ou cruzamento também são comuns na literatura.
 
 Esse processo de criação de indivíduos é repetido até atingirmos o tamanho limite para a população. Após chegarmos a esse limite, uma nova geração é iniciada. 
-O processo então é repetido, geração a geração, até que um limite de gerações seja alcançado e, então, terminamos a execução do \textsc{PG}. 
-Outras formas de parar o funcionamento do \textsc{PG} seriam chegar à um variação arbitrariamente pequena de melhoria de uma geração para outra ou conseguir algum indivíduo que alcance um valor de \textit{fitness} pré-definido. Por fim, o \textsc{PG} retorna o melhor indivíduo evoluído.
+O processo então é repetido, geração a geração, até que um limite de gerações seja alcançado. 
+Outras condições de parada do \textsc{PG} seriam chegar à um variação arbitrariamente pequena de melhoria de uma geração para outra ou conseguir algum indivíduo com um valor de \textit{fitness} pré-definido. Por fim, o \textsc{PG} retorna o melhor indivíduo evoluído.
 
 %Depois de serem selecionados, os indivíduos podem sofrer alguma alteração genética através das operações de mutação e cruzamento ou podem ser transferidos diretamente para a próxima geração, através da reprodução. 
 %a operação de mutação, uma parte do indivíduo selecionado é aleatoriamente alterada, buscando obter uma melhoria da \textit{fitness} na próxima geração.
@@ -73,22 +73,53 @@ Por exemplo, em uma base de dados de documentos, os termos dos documentos seriam
 Como inicialmente discutido no Capítulo~\ref{cap::metodo}, criamos uma função de credibilidade referente a cada dimensão que trabalhamos, ou seja, uma função para os atributos e uma para cada relacionamento utilizado. Dessa forma, um indivíduo é composto por um \textbf{conjunto} de funções de credibilidade que são usadas para melhorarmos os algoritmos de classificação empregados.
 %Na Figura~\ref{fig::gps1} temos mostrados alguns exemplos de funções de credibilidade para atributos e
 As Figuras~\ref{fig::gps1} e~\ref{fig::gps2} mostram cinco exemplos de funções de credibilidade que podem ser geradas pelo \textsc{PG}. As três contidas na primeira figura ilustram funções de credibilidade baseadas em atributos e as demais são baseadas em relacionamentos entre os exemplos\footnote{As cores são usadas apenas para auxiliar na explicação das operações genéticas de mutação e cruzamento na Seção~\ref{subsec::operadoresgeneticos}}.
-Exemplificando, se o problema apresentar a possibilidade de explorarmos a credibilidade de atributos e de dois relacionamentos, então um possível indivíduo do \textsc{PG} poderia ser formado por uma das funções de credibilidade mostradas na figura~\ref{fig::gps1} e das duas funções da figura~\ref{fig::gps2}, uma para cada relacionamento.
+Exemplificando, se o problema apresentar a possibilidade de explorarmos a credibilidade de atributos e de dois relacionamentos, então um possível indivíduo do \textsc{PG} poderia ser formado por uma das funções de credibilidade mostradas na Figura~\ref{fig::gps1} e das duas funções da Figura~\ref{fig::gps2}, uma para cada relacionamento.
 
 %e~\ref{fig::gps2}
 %Nesse trabalho, um indivíduo é modelado para representar funções de credibilidade para os relacionamentos e atributos, como discutido nas Seções~\ref{subsubsec::nbcredatributos} e \ref{subsubsec::nbcredgrafos} para o \textit{Naïve Bayes} e Seções~\ref{subsubsec::knncredatributos} e \ref{subsubsec::knncredgrafos} para o \textsc{KNN}. 
 
 Como vemos nas Figuras~\ref{fig::gps1} e \ref{fig::gps2}, as funções de credibilidade apresentam a estrutura de árvore, comuns em trabalhos com \textsc{PG} (\cite{Koza92}). 
 Árvores, em suma, são estruturas de dados semelhantes aos grafos, porém sem ciclos, ou seja, ao se percorrer as arestas a partir de um determinado vértice, não podemos voltar àquele vértice
-\footnote{
-Recomendamos para maior entendimento a respeito de árvores, a leitura do Capítulo 2.3 de~\cite{Knuth97}.
-}
+%\footnote{Recomendamos para maior entendimento a respeito de árvores, a leitura do Capítulo 2.3 de~\cite{Knuth97}.}
 .
-O nome ``árvore'' vem do fato que essa estrutura de dados se assemelhar a uma árvore, encontrada em qualquer jardim, quando vista de cabeça para baixo. 
-Mesmo não sendo uma analogia tão boa, essa estrutura de dados é muito comum na área de Ciência da Computação, sendo excelente para a representação de funções, entre outras tarefas.
+%O nome ``árvore'' vem do fato que essa estrutura de dados se assemelhar a uma árvore, encontrada em qualquer jardim, quando vista de cabeça para baixo. 
+%Mesmo não sendo uma analogia tão boa, essa estrutura de dados é muito comum na área de Ciência da Computação, sendo excelente para a representação de funções, entre outras tarefas.
 Pedimos a atenção do leitor para o fato que em qualquer árvore existem dois tipos diferentes de vértices, os internos e os externos.
 Os vértices externos recebem o nome especial de folha e em nossas árvores representam as métricas de credibilidade usadas.
-Já os vértices internos são aqueles usados para interconectarmos as folhas da árvore. Se observarmos a função 2 na Figura~\ref{fig::gps1}, os vértices internos são o ``+'' e o ``\%'', enquanto os externos são \textsc{AM(x,c)}, \textsc{P(x|c)} e \textsc{IG(x,c)}, métricas usadas para credibilidade de atributos.
+Já os vértices internos são operadores usados para interconectar as folhas da árvore. Se observarmos a função 2 na Figura~\ref{fig::gps1}, os vértices internos são o ``+'' e o ``\%'', enquanto os externos são \textsc{AM(x,c)}, \textsc{P(x|c)} e \textsc{IG(x,c)}, métricas usadas para estimar a credibilidade de atributos.
+
+\begin{figure}[!ht]
+\centering
+%\subfloat[Individuo 1:\newline \hspace*{6mm}$\textsc{GINI}(x)^{\textsc{CC}(x,c)}$]{
+\subfloat[Função 1:\newline \hspace*{6mm}$\textsc{GINI}(x)^{\textsc{CC}(x,c)}$]{
+    \includegraphics[width=0.25\textwidth]{figures/gp1c.png}
+}
+\subfloat[Função 2:\newline \hspace*{4mm} $(\textsc{AM}(x,c) + \textsc{P}(x|c)) \% (\textsc{IG}(x,c))$]{
+    \includegraphics[width=0.33\textwidth]{figures/gp2c.png}
+}
+\subfloat[Função 3:\newline \hspace*{4mm} $\textsc{GINI}(x)^{(\textsc{AM}(x,c)\ + \ \textsc{P}(x|c))}$]{
+    \includegraphics[width=0.33\textwidth]{figures/gp3c.png}
+}
+\caption{Três possíveis funções de credibilidade de atributos.}
+\label{fig::gps1}
+\end{figure}
+
+
+\begin{figure}[!ht]
+\centering
+\subfloat[Função 1:\newline \hspace*{6mm}$\textsc{Bib}(X,c) - {\textsc{Hub}(x,c)}$]{
+%\subfloat[Individuo 1:$\textsc{Bib}(X,c) - {\textsc{Hub}(x,c)}$]{
+    \includegraphics[width=0.30\textwidth]{figures/gp1c_grafos.png}
+}
+\subfloat[Função 2:\newline \hspace*{5mm} $\textsc{Bib}(X,c) - \textsc{PR}(X,c) $]{
+    \includegraphics[width=0.30\textwidth]{figures/gp2c_grafos.png}
+}
+%\caption{Dois possíveis indivíduos gerados para representar uma função de credibilidade para relacionamentos.}
+\caption{Duas possíveis funções de credibilidade para relacionamentos.}
+\label{fig::gps2}
+\end{figure}
+
+
 
 %Por questão de espaço e para não tornar esse texto enfadonho, não iremos entrar em detalhes de como podemos ler as funções representadas nas árvores. 
 %Logo, com exceção das Figuras~\ref{fig::gps1} e \ref{fig::gps2}, optamos por mostrar as funções de credibilidade diretamente em notação matemática.
@@ -96,8 +127,10 @@ Já os vértices internos são aqueles usados para interconectarmos as folhas da
 
 %Modelamos duas funções de credibilidade diferentes, uma baseada nos atributos dos exemplos e outra baseada nos relacionamentos dos mesmos.
 Na Tabela~\ref{table::funcoespg}, mostramos a lista completa de funções do \textsc{PG} usadas. 
-Como usual para um \textsc{PG} que evolui uma função matemática numérica, as funções \textsc{PG} se consistem de funções matemáticas conhecidas, como a multiplicação, divisão, soma, entre outros. Observe que modificamos as funções de subtração, divisão e logaritmo.
-Tanto a divisão por zero, quanto o logaritmo de números negativos não são matematicamente definidos. Portanto, tratamos esses casos explicitamente  retornando zero. Além disso, não queremos ter uma função de credibilidade negativa, e por isso evitamos que a subtração e o logaritmo retornem números negativos.
+Como usual para um \textsc{PG} que evolui uma função matemática numérica, as funções \textsc{PG} se consistem de operações matemáticas conhecidas, como a multiplicação, divisão, soma, entre outros. Observe que modificamos as funções de subtração, divisão e logaritmo.
+Tanto a divisão por zero, quanto o logaritmo de números negativos não são matematicamente definidos. 
+Além disso, não queremos ter uma função de credibilidade negativa, e por isso evitamos que a subtração e o logaritmo retornem números negativos.
+Portanto, tratamos todos esses casos explicitamente retornando zero. 
 
 %Ambas, entretanto, compartilham o mesmo conjunto de funções internas, porém os terminais utilizados são diferentes para cada caso. As funções internas são utilizadas para que haja uma interação entre os terminais.
 %Como usual para um \textsc{PG} que evolui uma função matemática numérica, as funções internas do \textsc{PG} consistem de funções matemáticas conhecidas, como a multiplicação, divisão, soma, entre outros que estão mostradas na Tabela
@@ -108,7 +141,7 @@ Tanto a divisão por zero, quanto o logaritmo de números negativos não são ma
 \begin{table}[ht*]
 \centering
 \caption{Funções do \textsc{PG}, são usadas como vértices internos no \textsc{PG}}
-\begin{tabular}{|c||c|}
+\begin{tabular}{|c||l|}
 \toprule
     \textbf{Função Interna} & \textbf{Explicação} \\
 \midrule
@@ -132,37 +165,6 @@ Pelo fato de termos um grande número de terminais definidos, subdividimos essa 
 
 %Na Figuras~\ref{fig::gps1} e~\ref{fig::gps2} temos ao todo cinco exemplos de funções de credibilidades que poderiam ser geradas pelo \textsc{PG}, as três da primeira figura ilustram funções de credibilidade baseadas em atributos e as demais são baseadas em relacionamentos entre os exemplos. As cores nas mesmas são usadas apenas para auxiliar na explicação das operações genéticas de mutação e cruzamento na seção a seguir.
 
-\begin{figure}[ht]
-\centering
-%\subfloat[Individuo 1:\newline \hspace*{6mm}$\textsc{GINI}(x)^{\textsc{CC}(x,c)}$]{
-\subfloat[Função 1:\newline \hspace*{6mm}$\textsc{GINI}(x)^{\textsc{CC}(x,c)}$]{
-    \includegraphics[width=0.25\textwidth]{figures/gp1c.png}
-}
-\subfloat[Função 2:\newline \hspace*{4mm} $(\textsc{AM}(x,c) + \textsc{P}(x|c)) \% (\textsc{IG}(x,c))$]{
-    \includegraphics[width=0.33\textwidth]{figures/gp2c.png}
-}
-\subfloat[Função 3:\newline \hspace*{4mm} $\textsc{GINI}(x)^{(\textsc{AM}(x,c)\ + \ \textsc{P}(x|c))}$]{
-    \includegraphics[width=0.33\textwidth]{figures/gp3c.png}
-}
-\caption{Três possíveis funções de credibilidade de atributos.}
-\label{fig::gps1}
-\end{figure}
-
-
-\begin{figure}[ht]
-\centering
-\subfloat[Função 1:\newline \hspace*{6mm}$\textsc{Bib}(X,c) - {\textsc{Hub}(x,c)}$]{
-%\subfloat[Individuo 1:$\textsc{Bib}(X,c) - {\textsc{Hub}(x,c)}$]{
-    \includegraphics[width=0.30\textwidth]{figures/gp1c_grafos.png}
-}
-\subfloat[Função 2:\newline \hspace*{5mm} $\textsc{Bib}(X,c) - \textsc{PR}(X,c) $]{
-    \includegraphics[width=0.30\textwidth]{figures/gp2c_grafos.png}
-}
-%\caption{Dois possíveis indivíduos gerados para representar uma função de credibilidade para relacionamentos.}
-\caption{Duas possíveis funções de credibilidade para relacionamentos.}
-\label{fig::gps2}
-\end{figure}
-
 %%%%%%%%%%%%%%%%-------------------------------------------------------------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%-------------------------------------------------------------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%-------------------------------------------------------------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -171,7 +173,7 @@ Pelo fato de termos um grande número de terminais definidos, subdividimos essa 
 \label{subsec::operadoresgeneticos}
 
 Em nosso trabalho, utilizamos três operadores genéticos na geração dos indivíduos: cruzamento, reprodução e mutação.
-Antes de discutirmos cada um desses, lembramos o leitor que cada um dos indivíduos pode ter mais de uma função de credibilidade, uma para cada relacionamento e uma para os atributos. Sem perda de generalidade, a seguir vamos relatar como seriam aplicadas as operações genéticas em um problema em que cada indivíduo representasse apenas uma função de credibilidade, para facilitar o entendimento do leitor.
+Antes de discutirmos cada um desses, lembramos o leitor que cada um dos indivíduos pode representar mais de uma função de credibilidade, uma para cada relacionamento e uma para os atributos. Sem perda de generalidade, a seguir vamos relatar como seriam aplicadas as operações genéticas em um problema em que cada indivíduo representasse apenas uma função de credibilidade, para facilitar o entendimento do leitor.
 
 Como mostrado na Figura~\ref{fig::gpwf}, os indivíduos podem ser submetidos primeiramente às operações de cruzamento ou reprodução. 
 %Para o primeiro caso, sorteamos dois indivíduos, para reprodução, somente um. 
@@ -180,7 +182,7 @@ Os indivíduos usados nessas operações são selecionados por meio de um tornei
 %Para o primeiro caso, sorteamos dois indivíduos, para mutação ou reprodução, somente um. 
 %Os indivíduos são selecionados por meio de um torneio, onde escolhemos aleatoriamente $T$ indivíduos da população atual e dizemos que aquele com maior \textit{fitness} é o ganhador do torneio.
 
-A operação de reprodução é a mais simples, e insere o indivíduo ganhador do torneio na próxima geração sem realizar nenhuma modificação na sua função de credibilidade. Já na operação de cruzamento, realizarmos dois torneios, selecionando dois indivíduos. 
+A operação de reprodução é a mais simples, e insere o indivíduo ganhador do torneio na próxima geração sem realizar nenhuma modificação na sua função de credibilidade, exceto quando ele é selecionado para sofrer mutação, como veremos abaixo. Já na operação de cruzamento, realizarmos dois torneios, selecionando dois indivíduos. 
 Depois disso, escolhemos aleatoriamente um ponto na função de credibilidade de cada um dos dois indivíduos selecionados e geramos dois novos indivíduos contendo funções com partes de ambos os pais. A Figura~\ref{fig::gps1} ilustra esse processo para as funções de credibilidade de atributos. 
 Os indivíduos 1 e 2 são selecionados utilizando dois torneios distintos, e em suas funções são escolhidos dois pontos para que ocorra a operação de cruzamento genético. 
 No indivíduo 1, o ponto de troca escolhido foi a métrica 
@@ -202,15 +204,14 @@ Quando aplicamos qualquer uma dessas operações, aplicamos para cada uma das fu
 \section{\textit{Fitness}}
 \label{subsec::fitness}
 
-Necessitamos de um modo de avaliar os indivíduos da população a fim de sabermos quais são aqueles mais aptos a sobreviverem para a próxima geração. 
+Necessitamos de um modo de avaliar os indivíduos da população a fim de sabermos quais são aqueles mais aptos a sobreviverem para a próxima geração, ou seja, os que melhor estimam a credibilidade de um exemplo.
 Para tanto, utilizamos a chamada função de \textit{fitness}. 
 
 Em nosso caso, estamos criando funções de credibilidade que serão usadas para que um classificador possa criar modelos de classificação mais aprimorados.
 Dessa forma, nossa função de \textit{fitness} necessita estar atrelada a uma maneira de avaliar um classificador automático.
-Na literatura, uma métrica muito utilizada para avaliação do desempenho de classificadores é a $F_1$ e, por isso, decidimos por utilizá-la.
+Na literatura, uma métrica muito utilizada para avaliação do desempenho de classificadores é a $F_1$ e, por isso, decidimos utilizá-la.
 
-Antes de falarmos sobre a $F_1$, vamos ver o funcionamento da função de \textit{fitness}, descrita no Algoritmo~\ref{alg::fitness}. 
-Nele, descrevemos o processo usado para calcular a \textit{fitness} de um individuo levando em consideração funções evoluídas tanto para atributos quanto para relacionamentos.
+Antes de falarmos sobre a $F_1$, vamos descrever o funcionamento da função de \textit{fitness}, mostrada no Algoritmo~\ref{alg::fitness}, que leva em consideração funções evoluídas tanto para atributos quanto para relacionamentos.
 
 \algrenewcommand\algorithmicforall{\textbf{Para Cada}}
 \algrenewcommand\algorithmicdo{\textbf{Faça}}
@@ -312,7 +313,7 @@ Existem ainda duas formas derivadas da $F_1$, nomeadas \textit{micro-$F_1$} e \t
 Portanto, o componente VP da Tabela~\ref{table::confusao} usado na \textit{micro-$F_1$} é representado pelo número de exemplos corretamente classificados, independente de qual classe eles pertencem.
 Por sua vez, a \textit{macro-$F_1$} realiza a média da $F_1$ calculada individualmente para cada uma das classes. 
 
-Dada a forma como são enunciadas, a \textit{macro-$F_1$} e \textit{micro-$F_1$} tendem a se diferenciar se a base de dados tiver classes desbalanceadas. Em geral, uma exemplo pertencente a uma classe pouco popular é mais difícil de ser classificado que um outro pertencente a uma classe muito popular. Portanto, se estivermos analisando uma base de dados desbalanceada, a \textit{macro-$F_1$} tenderá a ter um valor menor que a \textit{micro-$F_1$}, pois a primeira é prejudicada pelas classes mais raras. 
+Dada a forma como são enunciadas, a \textit{macro-$F_1$} e \textit{micro-$F_1$} tendem a se diferenciar se a base de dados tem classes desbalanceadas. Em geral, uma exemplo pertencente a uma classe pouco popular é mais difícil de ser classificado que um outro pertencente a uma classe muito popular. Portanto, se estivermos analisando uma base de dados desbalanceada, a \textit{macro-$F_1$} tenderá a ter um valor menor que a \textit{micro-$F_1$}, pois a primeira é prejudicada pelas classes mais raras. 
 
 %A \textit{$F_1$} é uma métrica amplamente utilizada por representar um compromisso interessante entre a precisão e a revocação, outras duas importante métricas. 
 %A precisão ($\textsc{P}$) calcula, para uma classe específica, o quanto o classificador acerta entre todos os exemplos que ele classificou para aquela classe: 
