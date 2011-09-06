@@ -8,21 +8,26 @@ Para avaliar o quanto um classificador pode confiar em um exemplo de treinamento
 
 A credibilidade é vista na literatura como uma característica dependente do contexto e de quem a avalia. Ou seja, um mesmo objeto pode ser confiável para um observador e não para outro.
 Uma maneira de ter uma medida mais objetiva da credibilidade é definindo fatores que influenciam na mesma.
-Aqui focamos nos atributos e nos relacionamentos que os exemplos mantêm, dois importantes fatores que podem exprimir bem a credibilidade de um exemplo qualquer.
+Aqui focamos nos atributos e nos relacionamentos que os exemplos mantêm, dois importantes fatores que podem exprimir bem a credibilidade de um exemplo na tarefa de classificação.
 Usamos de métricas que provêm indícios de separações entre as classes para avaliarmos a credibilidade baseada em atributos e métricas de Redes Complexas para extrair a credibilidade dos relacionamentos. Ao total, trinta métricas de atributos e dezesseis métricas de relacionamentos foram modeladas.
 
 Devido ao grande número de métricas, combiná-las a fim de capturar relações entre elas se tornou uma tarefa muito complexa.
-Para resolver esse empasse, utilizamos a Programação Genética. \textsc{PG}, com seu mecanismo de busca baseado no princípio evolutivo de Darwin, nos fornece uma solução robusta, elegante e eficaz de criar uma função de credibilidade adaptada para o uso em um determinado contexto.
+Para resolver esse empasse, utilizamos a Programação Genética. Ela, com seu mecanismo de busca baseado no princípio evolutivo de Darwin, nos fornece uma solução robusta, elegante e eficaz de criar uma função de credibilidade adaptada para o uso em um determinado contexto.
 
-Dada a posse de uma função de credibilidade, um importante passo é incorporar essa função nos algoritmos de classificação. Utilizamos nesse trabalho o \textit{Naïve Bayes} e o \textsc{KNN}, uma direção futura é estender a credibilidade para os demais classificadores existentes na literatura.
+Dada a posse de uma função de credibilidade, um importante passo é incorporar essa função nos algoritmos de classificação. Utilizamos nesse trabalho o \textit{Naïve Bayes} e o \textsc{KNN}. Uma direção futura é estender a credibilidade para os demais classificadores existentes na literatura.
 
 Na última parte dessa dissertação, realizamos diversos experimentos com bases textuais, categóricas e de bioinformática. Em nossos experimentos preliminares, mostramos os bons resultados da utilização de \textsc{PG} em relação à aplicação das métricas em separado. Pudemos verificamos, dessa forma, o poder de adaptação do \textsc{PG}.
-Em um segundo grupo de experimentos com as bases de documentos, investigamos o poder de generalização das funções de credibilidade. Concluímos que as funções obtém resultados expressivamente melhores quando aplicadas na própria base que foram evoluídas, mas não são tão bons os resultados ao aplicarmos em outras bases, tendo algumas perdas, em especial na base da \textsc{ACM-DL}.
-Destacamos a melhoria de \textbf{17.51\%} na Macro$F_1$ da base \textit{Ohsumed}.
-Os últimos experimentos com bases textuais foram feitos com a base da \textsc{ACM} em foco, pelo fato dela ser a única com a presença de redes de autoria e citação. Verificamos que utilizar mais fatores para definir a credibilidade de um exemplo é benéfica culminando em ganhos de \textbf{4.60\%} e \textbf{8.70\%} da Micro$F_1$ e Macro$F_1$, respectivamente.
+Em um segundo grupo de experimentos com as bases de documentos, investigamos o poder de generalização das funções de credibilidade. Concluímos que as funções obtém resultados expressivamente melhores quando aplicadas na própria base que foram evoluídas. Entretanto, os resultados não são tão bons ao aplicarmos em outras bases, tendo algumas perdas, em especial na base da \textsc{ACM-DL}.
+Destacamos a melhoria de \textbf{16.06\%} na Macro$F_1$ da base \textit{Ohsumed} ao evoluir funções de credibilidades para os experimentos com validação cruzada de cinco partições, e de
+\textbf{17.51\%} ao utilizar a melhor dessas funções de credibilidade para classificar toda a base.
+
+
+Os últimos experimentos com bases textuais foram feitos com a base da \textsc{ACM} em foco, pelo fato dela ser a única com a presença de redes de autoria e citação. Verificamos que utilizar mais fatores para definir a credibilidade de um exemplo é uma técnica benéfica, culminando em ganhos de \textbf{4.60\%} e \textbf{8.70\%} da Micro$F_1$ e Macro$F_1$, respectivamente.
 
 Realizamos experimentos também com bases de atributos categóricos, onde os resultados da métrica Macro$F_1$ novamente foram de maior destaque. Enquanto que para as \textit{TicTacToe} e \textit{Chess}, o uso da credibilidade não surtiu tanto efeito, para as base \textit{Cars} e \textit{Nursery}, obtivemos ganhos na Macro$F_1$ de \textbf{13.44\%} e \textbf{16.62\%}, respectivamente.
 
-Finalmente, os experimentos com a base de bioinformática mostram que...
+Finalmente, os experimentos com a base de bioinformática mostram que utilizar o conhecimento dos relacionamentos obteve resultados expressivos, com \textbf{26.58\%} e \textbf{50.78\%} de ganhos na Micro$F_1$ e Macro$F_1$,
+respectivamente, 
+em relação ao \textsc{KNN} sem credibilidade.
 
 

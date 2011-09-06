@@ -27,9 +27,18 @@ Na primeira, a Seção~\ref{sec::preliminares}, abordamos alguns pontos em comum
 Nas Seções~\ref{sec::documentos}, \ref{sec::categorias}, abordamos a classificação com a utilização de funções credibilidade em atributos textuais e categóricos, respectivamente.
 Os atributos textuais provêm de bases de documentos muito utilizadas na literatura, em especial a base da \textsc{ACM-DL} contém também informações usadas para credibilidade de relacionamentos.
 Por sua vez, os atributos categóricos vêm de bases do \textsc{UCI}.
-Finalmente, na Seção~\ref{sec::bioinfo}, apresentamos os resultados ao utlizar classificação de atributos númericos e funções de credibilidade referentes aos relacionamentos das proteínas em uma base de bioinformática. (é relacionamento de proteinas mesmo?!)
+Finalmente, na Seção~\ref{sec::bioinfo}, apresentamos os resultados ao utilizar classificação de atributos numéricos e funções de credibilidade referentes aos relacionamentos em uma base de assinaturas estruturais proteicas. 
 
 
+%Assinaturas estruturais proteicas derivadas (geradas) pelo método CSM
+
+%Base:
+%tarefa de classificacao estrutural
+%classifiquei no familia SCOP nivel familia.
+%SCOP 1.75 da proteinas e assinaturas sao geradas....pelo CSM...
+
+%Grafo:
+%para gerar o grafo foi feito um alinhamento par a par das sequencias utilizando o metodo BLAST  , gerando um score de similaridades nas comparacoes entre todos os pares de sequencias proteicas.(ver corte...)
 
 
 \section{Preliminares}
@@ -44,7 +53,7 @@ Finalmente na Seção~\ref{subsec::ganhosgp}, mostramos experimentos preliminare
 \subsection{Bases de Dados}
 \label{subsec::base}
 
-Nosso trabalho se divide em três conjuntos de bases de dados: as bases de documentos, as bases do \textsc{UCI} (\cite{UCI98}) e uma base de bioinformática SCOP?? come que poe isso? (\cite{SCOP95}).
+Nosso trabalho se divide em três conjuntos de bases de dados: as bases de documentos, as bases do \textsc{UCI} (\cite{UCI98}) e uma base de bioinformática.
 
 Iniciamos por mostrar a Figura \ref{fig::basesdoc}, contendo as distribuições dos exemplos das quatro bases de documentos que estamos usando. Todas as bases foram pré-processadas, com remoção de \textit{stop words}, assim como foi atribuída somente uma única classe para todos os documentos que originalmente poderiam pertencer a mais de uma.
 
@@ -56,7 +65,7 @@ Já o grafo de citações tem 31.482 vértices e 95.812 arestas, onde os vértic
 Repare que o número de de documentos no grafo de citações é maior que o número de artigos existentes no subconjunto da \textsc{ACM-DL} que utilizamos. Isso é possível pelo fato de estarmos usando um subconjunto dos documentos da \textsc{ACM-DL} e ele contém informações sobre artigos que estão fora do subconjunto que usamos. Para ser mais exato, apenas 5.305 artigos do grafo de citação estão presentes na base que usamos, enquanto os outros 26.176 não estão.
 
 Por sua vez, a base \textit{Reuters} contém 8.184 documentos divididos em 8 classes, contendo 24.986 termos distintos. Eles são provenientes da agência de notícias com o mesmo nome da base. 
-Por sua vez, a base \textit{Ohsumed} apresenta 18.302 documentos médicos, em 23 classes e 45.991 termos.
+Já a base \textit{Ohsumed} apresenta 18.302 documentos médicos, em 23 classes e 45.991 termos.
 Finalmente, a base 20-\textit{newgroup} (\textit{20ng}) contém 18.827 mensagens de texto com 110.502 termos único, enviadas para grupos de notícia de diversos assuntos como ciência, religião, entre outros, totalizando 20 classes.
 Todos os pontos mostrados na Figura \ref{fig::basesdoc} são referentes à quantidade de exemplos de cada classe, ordenados de maneira crescente, da classe de menor popularidade para a de maior. Verificamos que a base \textit{20-newsgroup} é a que apresenta a distribuição mais equilibrada de exemplos por classe, enquanto a \textit{Ohsumed} apresenta a pior, com 17 das 23 classes contendo menos que 1.000 exemplos por classe e com duas classes contendo mais de 2.500.
 
@@ -68,7 +77,7 @@ Todos os pontos mostrados na Figura \ref{fig::basesdoc} são referentes à quant
   \subfloat[][Ohsumed]{\label{fig::ohsumed}\includegraphics[angle=270, width=0.40\textwidth]{figures/perfil/ohsumed.png}}
   \subfloat[][20-NewsGroup]{\label{fig::20ng}\includegraphics[angle=270, width=0.40\textwidth]{figures/perfil/20ng.png}}
 
-\caption{Distribuição de classes nas bases de documentos.}
+\caption{Distribuição dos exemplos nas classes das bases de documentos.}
 \label{fig::basesdoc}
 \end{figure}
 
@@ -82,25 +91,41 @@ Na Figura \ref{fig::basesdoc}, mostramos o perfil de quatro bases do repositóri
   \subfloat[][nursery]{\label{fig::nursery}\includegraphics[angle=270, width=0.40\textwidth]{figures/perfil/nursery.png}}
   \subfloat[][tictactoe]{\label{fig::tictactoe}\includegraphics[angle=270, width=0.40\textwidth]{figures/perfil/tictactoe.png}}
 
-\caption{Distribuição de classes nas bases de atributos categóricos.}
+\caption{Distribuição dos exemplos nas classes das bases de atributos categóricos.}
 \label{fig::basescategorias}
 \end{figure}
 
+Por último, utilizamos uma base de assinaturas estruturais proteicas, geradas pelo método \textsc{CSM} (\cite{dpires_bmc_2011}) a partir do repositório de domínios proteicos ASTRAL (\cite{Brenner00}).
+Ela é utilizada para a tarefa de classificação estrutural de proteínas e usa o nível de família da classificação SCOP (\cite{SCOP95}), que classifica proteínas nos níveis hierárquicos de classe, enovelamento, super família e família, sendo família o nível mais específico e muitas vezes o mais difícil de classificar. Assim como feito em \cite{dpires_bmc_2011}, foi utilizado o método de decomposição por valor singular (\textsc{SVD}) (\cite{SVD}) para reduzir a dimensionalidade e ruídos da base para apenas 15 atributos, tornando a execução dos algoritmos de classificação mais rápida sem grande degradação dos resultados. 
+Na Figura~\ref{fig::basesbio}, vemos como são distribuídos os 110.799 exemplos nas 4.193 classes existentes, sendo que todas as classes têm ao menos dez exemplos.
+Por último, utilizamos o método \textsc{BLAST} (\cite{altschul90}) para gerar um valor referente à similaridade entre duas sequências proteicas. Dessa forma, definimos uma relação entre todos os pares de estruturas presentes nessa base. Com o intuito de utilizarmos somente as informações mais relevantes e diminuir o tamanho do grafo gerado, estipulamos um limite inferior de corte de 40\% de similaridade, ainda assim restaram 11.461.022 ligações os exemplos da base.
 
-Finalmente, a base de bioinformática
-
-base: (4193 classes, 110.799 exemplos diferentes, usando SVD para diminuir as dimensoes, 15 Dimensoes)
-grafo: (11461022 arestas 
+%base: (4193 classes, 110.799 exemplos diferentes, usando SVD para diminuir as dimensoes, 15 Dimensoes)
+%grafo: (11461022 arestas 
 
 
-\begin{figure}[h]
+
+%Assinaturas estruturais proteicas derivadas (geradas) pelo método CSM
+
+%Base:
+%tarefa de classificacao estrutural
+%classifiquei no familia SCOP nivel familia.
+%SCOP 1.75 da proteinas e assinaturas sao geradas....pelo CSM...
+
+%Grafo:
+%para gerar o grafo foi feito um alinhamento par a par das sequencias utilizando o metodo BLAST  , gerando um score de similaridades nas comparacoes entre todos os pares de sequencias proteicas.(ver corte...)
+
+
+\begin{figure}[!h]
   \centering
 %  \subfloat[][Astral]{\label{fig:astral}\includegraphics[angle=270, width=0.40\textwidth]{figures/perfil/astral.png}}
 %  \subfloat[][Douglas]{\label{fig:douglas}\includegraphics[angle=270, width=0.40\textwidth]{figures/perfil/douglas.png}}
   \includegraphics[angle=270, width=0.40\textwidth]{figures/perfil/astral.png}
- \caption{Distribuição de classes na base Astral de bioinformática.}
+ \caption{Distribuição dos exemplos nas classes na base de assinaturas estruturais proteicas.}
 \label{fig::basesbio}
 \end{figure}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%---------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -194,7 +219,7 @@ por obter melhores resultados que a \textit{fitness} = Macro$F_1$ e
 ser mais simples que a \textit{fitness} = Micro$F_1$ + Macro$F_1$. A última decisão foi tomada à luz do princípio da Navalha de Occam (\cite{Blumer87}), que diz que entre um sistema mais complexo e um mais simples que obtém os mesmos resultados, devemos usar o mais simples.
 
 
-\subsection{O Porquê do Uso de Programação Genética}
+\subsection{Motivação Experimental para o Uso de Programação Genética}
 \label{subsec::ganhosgp}
 
 Na literatura, encontramos muitos trabalhos, conforme abordamos na Seção~\ref{sec::supervised}, que empregam várias das métricas de credibilidade de atributos utilizadas aqui, porém sem nenhuma combinação mais elaborada das mesmas. 
@@ -424,17 +449,23 @@ Destacamos os ganhos mais interessantes na Macro$F_1$ da base \textit{Cars}, ess
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%-------%%%%%%%%%%%%%%%
 
-\section{Base de BioInformática.}
-%\section{Base com Atributos Numéricos} %de BioInformática.}
+\section{Base de Bioinformática.}
 \label{sec::bioinfo}
 
-A base de bioinformática, como era de se esperar, é grande e chata. 
-(Falar que sao atributos numéticos)
+Realizamos experimentos também com a base de assinaturas estruturais proteicas, geradas pelo método \textsc{CSM}.
+Ela é composta de quinze atributos numéricos, resultantes do uso do \textsc{SVD} para diminuir sua dimensionalidade.
+Não temos uma função de credibilidade para atributos numéricos, porém geramos uma rede de similaridade entre os exemplos. 
+Essa rede mede o quanto dois exemplos da base são similares através da distância das sequencias das estruturas proteicas, utilizando o método \textsc{BLAST}.
 
+Lembramos que, como dito na Seção~\ref{subsubsec::cv} por se tratar de uma base muito grande, utilizamos uma validação cruzada de 10 partições, com uma partição sendo treino, uma servindo de validação e oito como teste. Na Tabela~\ref{tab::bioinformatica}, mostramos três experimentos que realizamos, um por linha. A primeira linha exibe a utilização do \textsc{KNN} com $k = 1$, que foi o melhor resultado obtido para essa base, em comparação a outros valores para $k$ e ao \textit{Naïve Bayes}. 
+A próxima linha exibe o uso do \textsc{KNN} baseado somente na rede de similaridades gerada, sem usar os atributos, servido de segunda linha de base para o uso do \textsc{PG}.
+Vemos que a Micro$F_1$ obtém grande melhora, em detrimento da Macro$F_1$. 
+Por fim, mostramos os resultados ao evoluir com \textsc{PG} uma função de credibilidade para o relacionamento criado com a rede de similaridades.
+Destacamos que mesmo com a utilização de apenas uma pequena parte da base para treinamento, conseguimos ganhos de 26.58\% e 50.78\%, respectivamente ao uso do \textsc{KNN} que considera apenas os atributos. Em relação ao uso do \textsc{KNN} que considera apenas os relacionamentos, o \textsc{PG} obteve ganhos de 7.74\% e 74.18\%, para Micro$F_1$ e Macro$F_1$, respectivamente.
 
 \begin{table}[h!]
 \centering
-\caption{Resultados da Micro$F_1$ e Macro$F_1$ para a bases de bioinformática.}
+\caption{Resultados da Micro$F_1$ e Macro$F_1$ para a base de bioinformática.}
 \label{tab::bioinformatica}
 %\begin{footnotesize}
 \begin{tabular}{|c||c|c|}
@@ -444,17 +475,15 @@ A base de bioinformática, como era de se esperar, é grande e chata.
 \hline 
 Linha de Base & 70.23 \textpm{} 1.402 & 50.28 \textpm{} 1.44\tabularnewline
 \hline 
-PG - KNN - K = 1& 88.98 \textpm{} 4.87 (26.58 \triangOK) & 75.81 \textpm{} 4.51 (50.78 \triangOK)\tabularnewline
-\hline 
-Vizinhos Peso Unitário & 80.37 \textpm{} 0.24 (14.33 \triangOK) & 40.28 \textpm{} 0.39 (-19.89 \triangBAD)\tabularnewline
-\hline 
+%Vizinhos Peso Unitário & 80.37 \textpm{} 0.24 (14.33 \triangOK) & 40.28 \textpm{} 0.39 (-19.89 \triangBAD)\tabularnewline
+%\hline 
 Vizinhos Peso Aresta & 82.59 \textpm{} 0.26 (17.49 \triangOK)  &  43.53 \textpm{} 0.47 (-13.43 \triangBAD)\tabularnewline
+\hline 
+\textsc{PG}& 88.98 \textpm{} 4.87 (26.58 \triangOK) & 75.81 \textpm{} 4.51 (50.78 \triangOK)\tabularnewline
 \bottomrule
 \end{tabular}
 %\end{footnotesize}
 \end{table}
-
-
 
 
 

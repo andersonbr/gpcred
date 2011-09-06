@@ -1,9 +1,19 @@
+Nesse trabalho, encaramos o fato que nem todos os exemplos de treinamento são iguais, e, portanto, não deveriam contribuir da mesma forma para a criação de um modelo de classificação.
+Propomos o emprego de \textbf{funções de credibilidade} que sejam capazes de capturar o quanto um classificador pode confiar em um exemplo ao gerar o modelo.
 
-O conceito de credibilidade de um exemplo avalia o quanto um classificador pode confiar no exemplo quando constrói um modelo de classificação.
-Isto é dado por uma função de credibilidade, que é dependente da aplicação e é estimada de acordo com uma série de fatores que influenciam a credibilidade dos exemplos.
-Nesse trabalho, lidamos com classificação automática e estudamos a credibilidade de um exemplo de acordo com dois fatores: o seus atributos e relações.
-Nos propomos um algoritmo baseado em Programação Genética (PG) para estimar a credibilidade dos exemplos, e então adicionamos esta estimativa aos classificadores.
-Para tanto, modelamos a credibilidade baseada em relacionamentos como uma rede complexa e a credibilidade dos atributos usando um conjunto de métricas de seleção de atributos.
-O PG foi testado em um grande número de bases de dados e os resultados mostram que um classificador que leva em conta a credibilidade obtém resultados de micro e macro$F_1$ significativamente melhores quando comparados a classificadores tradicionais.
+O conceito de credibilidade é abordado na literatura como dependente do contexto e por possuir múltiplas avaliações, que dependem de quem calcula a credibilidade do objeto analisado.
+Para tornar mais objetiva a avaliação da credibilidade, recomenda-se que se defina os fatores que influenciam no seu calculo.
+Definimos que, do ponto de vista de um classificador, dois fatores cruciais são os atributos e relacionamentos apresentados pelos exemplos.
+
+Construímos 30 métricas para explorar a credibilidade dos atributos e 16 para os relacionamentos, inspirados por métricas que indiquem a separação entre as classes e as características dos relacionamentos entre os exemplos. Pelo fato de possuirmos um grande número de métricas para cada fator, empregamos o uso da Programação Genética, um mecanismo inspirado na princípio de evolução de Darwin, capaz de percorrer, de forma robusta e eficaz, o grande espaço de busca criado.
+
+Realizamos diversos experimentos com bases de documentos, de atributos exclusivamente categóricos e uma grande base de proteínas. Os resultados mostram ganhos consideráveis em todos os cenários, culminando em melhorias de até 17.51\% na Macro$F_1$ da base \textit{Ohsumed} e de 26.58\% e 50.78\% na Micro$F_1$ e Macro$F_1$ da uma base de  assinaturas estruturais proteicas.
+
+%O conceito de credibilidade de um exemplo avalia o quanto um classificador pode confiar no exemplo quando constrói um modelo de classificação.
+%Isto é dado por uma função de credibilidade, que é dependente da aplicação e é estimada de acordo com uma série de fatores que influenciam a credibilidade dos exemplos.
+%Nesse trabalho, lidamos com classificação automática e estudamos a credibilidade de um exemplo de acordo com dois fatores: o seus atributos e relações.
+%Nos propomos um algoritmo baseado em Programação Genética (PG) para estimar a credibilidade dos exemplos, e então adicionamos esta estimativa aos classificadores.
+%Para tanto, modelamos a credibilidade baseada em relacionamentos como uma rede complexa e a credibilidade dos atributos usando um conjunto de métricas de seleção de atributos.
+%O PG foi testado em um grande número de bases de dados e os resultados mostram que um classificador que leva em conta a credibilidade obtém resultados de micro e macro$F_1$ significativamente melhores quando comparados a classificadores tradicionais.
 
 \keywords{Classificação automática, Programação Genética, Credibilidade}
