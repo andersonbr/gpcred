@@ -1,12 +1,22 @@
-Nesse trabalho, encaramos o fato que nem todos os exemplos de treinamento devem contribuir igualmente para a construção do modelo de classificação, e, portanto, considerar que alguns exemplos são mais confiáveis que outros pode aumentar a eficácia do classificador. 
-Para isso, propomos o emprego de \textbf{funções de credibilidade} que são capazes de capturar o quanto um classificador pode confiar em um exemplo ao gerar o modelo.
+Organizar e recuperar grandes quantidades de informação tornaram-se tarefas de extrema importância, principalmente nas áreas de Mineração de Dados e Recuperação de Informação, responsáveis por estudar uma maneira de lidar com essa explosão de dados. Dentre as diversas tarefas estudadas por essas duas áreas destacamos a \textbf{Classificação Automática} de dados.
+
+Nessa dissertação, tratamos o problema de classificar automaticamente a informação disponível, ou seja, sem a intervenção humana.
+Em especial, esse trabalho foi desenvolvido em cima da ideia de que nem todos os exemplos de uma base de treinamento devem contribuir igualmente para a construção do modelo de classificação e, portanto, considerar que alguns exemplos são mais confiáveis que outros pode aumentar a eficácia do classificador.
+Para lidar com esse problema, propomos estimar e empregar \textbf{funções de credibilidade} capazes de capturar o quanto um classificador pode confiar em um exemplo ao gerar o modelo.
 
 A credibilidade é considerada na literatura como dependente do contexto no qual está inserida, além de ser também dependente de quem a estima.
 Para tornar mais objetiva sua avaliação, recomenda-se que sejam definidos os fatores que influenciam no seu cálculo.
-Definimos que, do ponto de vista de um classificador, dois fatores cruciais são os atributos e relacionamentos apresentados pelos exemplos.
+Definimos que, do ponto de vista de um classificador, dois fatores são cruciais: as relações atributos/classe e relacionamentos entre exemplos. Relações atributos/classe podem ser facilmente extraídas utilizando um grande conjunto de métricas previamente propostas na literatura, principalmente para a tarefa de seleção de atributos. Relacionamentos entre exemplos podem ser criados a partir de um atributo na base. Por exemplo, no contexto de classificação de documentos, já foi mostrado que redes de citações e autorias (que relacionam dois documentos de acordo com seus autores ou artigos citados) provêem grande fonte de informação para classificação. Diversas métricas da literatura de redes complexas podem ser utilizadas para quantificar esses relacionamentos.
 
-Construímos 30 métricas para explorar a credibilidade dos atributos e 16 para os relacionamentos. Elas foram inspiradas em métricas presentes na literatura que indicam a separação entre as classes e investigam as características dos relacionamentos entre os exemplos. Pelo fato de possuirmos um grande número de métricas para cada fator, empregamos o uso da Programação Genética, um mecanismo baseado no princípio de evolução de Darwin, capaz de percorrer, de forma robusta e eficaz, o grande espaço de busca criado.
+Baseados nesses dois fatores, selecionamos 30 métricas para explorar a
+credibilidade dos atributos e 16 para os relacionamentos. Elas foram inspiradas
+em métricas presentes na literatura que indicam a separação entre as classes e
+investigam as características dos relacionamentos entre os exemplos. Porém, fica
+difícil dizer qual dessas métricas seria mais apropriada para estimar a
+credibilidade de um exemplo. Assim, por possuirmos um grande número de métricas
+para cada fator, após experimentos com métricas isoladas, criamos um algoritmo de \textbf{Programação Genética} para melhor explorar esse espaço de métricas, gerando funções de credibilidade capazes de melhorar a eficácia de classificadores se associadas a eles.
 
-Realizamos diversos experimentos com três tipos de bases de dados: bases de documentos, bases da \textsc{UCI} com atributos exclusivamente categóricos e uma grande base de assinaturas proteicas. Os resultados mostram ganhos consideráveis em todos os cenários, culminando em melhorias de até 17.51\% na Macro$F_1$ da base \textit{Ohsumed} e de 26.58\% e 50.78\% na Micro$F_1$ e Macro$F_1$ da base de assinaturas estruturais proteicas.
+A programação genética é um algoritmo baseado nos princípios de evolução de Darwin, capaz de percorrer, de forma robusta e eficaz, o grande espaço de busca com que estamos trabalhando. As funções evoluídas foram então incorporadas a dois algoritmos de classificação: o \textit{Naïve Bayes} e o \textsc{KNN}.
+Experimentos foram realizados com três tipos de bases de dados: bases de documentos, bases da \textsc{UCI} com atributos exclusivamente categóricos e uma grande base de assinaturas proteicas. Os resultados mostram ganhos consideráveis em todos os cenários, culminando em melhorias de até 17.51\% na Macro$F_1$ da base \textit{Ohsumed} e de 26.58\% e 50.78\% na Micro$F_1$ e Macro$F_1$ da base de assinaturas estruturais proteicas.
 
 \keywords{Classificação automática, Programação Genética, Credibilidade}

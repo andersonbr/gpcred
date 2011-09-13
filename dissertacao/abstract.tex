@@ -1,24 +1,48 @@
-In this work, we face the fact that not all examples in a training set should
-contribute equally for the construction of a classification model, and
-therefore, we believe that considering some examples more relevant than others
-can increase the effectiveness of a classifier.
-In order to achieve that, \textbf{credibility functions} are used, which can
-capture how much a classifier should trust an example when generating a model.
+Organization and recovery of large amounts of information became tasks of
+extreme importance, especially on the areas of Data Mining and Information
+Recovery, which are responsible for finding a way to deal with this data
+explosion. Among the topics studied in these two areas, there is the
+\textbf{Automatic Classification} of data.
+
+In this thesis, we treat the problem of automatically classifying the available
+information, i.e., without human intervention. In particular, this work was
+developed on the consideration that not all examples in a training set
+contribute equally to the construction of a classification model, so, assuming
+that some examples are more trustworthy than others can increase the
+effectiveness of the classifier. To deal with this problem, we propose the use of
+\textbf{credibility functions} capable of capturing how much a classifier should
+trust an example while generating the model.
 
 Credibility in the literature is considered as context dependent and also dependent on who is estimating it.
 To make its evaluation more objective, it is recommended that the factors used
-for its calculation are defined. 
-From the point of view of a classifier, we defined as important factors the
-attributes of the examples and the relationships among them.
+for its calculation are defined.
+We defined that, from the classifier's view, there are two crucial factors: the
+attribute/class relations and relationships among examples. The attribute/class
+relation can be easily extracted using lots of metrics already proposed in the
+literature, especially for the task of selecting the attributes. The
+relationships among the examples can be deduced from a database attribute. For
+example, in the context of document classification, it is shown that the
+networks of citations and authorship (which relate two documents based on its
+authors or citations) are a big source of information for the classification.
+Several metrics of complex networks can be used to quantify these relationships.
 
-We have built 30 metrics to explore the credibility of the attributes and 16 for
-the relationships. They were inspired in metrics that occur on the literature,
-and indicate the separation among the classes and investigate characteristics
-of the relationship between the examples. Since we have a great number of
-metrics, Genetic Programming was used, a mechanism based on Darwin's theory of
-evolution and that can traverse the search space in a robust and effective way.
+Given these two factors, we selected 30 and 16 metrics to explore the 
+attributes' and relationships' credibility respectively. They were inspired in
+metrics that occur in the literature, and indicate the separation among the
+classes and investigate characteristics of the relationship between the
+examples. Nevertheless, it is hard to tell which of these metrics is more
+appropriate to estimate the credibility of an example. So, since there is a big
+number of metrics for each factor, after some experiments with isolated metrics,
+we developed a \textbf{Genetic Programming} algorithm to better explore this
+search space, generating credibility functions capable of improving the
+effectiveness of classifiers associated with it.
 
-Several experiments have been run using three different kinds of databases: document databases, \textsc{UCI} databases of categorical attributes and a protein signature database.
+Genetic programming is an algorithm based on Darwin's theory of evolution,
+capable of traversing the search space of functions in a robust and effective
+way. The evolved functions were then incorporated to two classification
+algorithms: Naive Bayes and \textsc{KNN}. Experiments have been run using three 
+different kinds of databases: document databases, \textsc{UCI} databases 
+of categorical attributes and a protein signature database.
 The results show
 considerable improvement of the classification in all cases. In particular, for
 the database \textit{Oshmed}, Macro$F_1$ was improved by 17.51\%, and for the

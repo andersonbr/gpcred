@@ -2,7 +2,7 @@
 \label{cap::conclusoes}
 
 Este trabalho propôs um método baseado no conceito de credibilidade para melhorar classificadores automáticos.
-Sabemos que nem sempre os exemplos de treinamento devem contribuir igualmente para um modelo de classificação e, portanto, estimar a credibilidade de um conjunto de exemplos e considerá-la na construção do modelo pode aumentar sua eficácia. 
+Sabemos que nem sempre os exemplos de treinamento devem contribuir igualmente para um modelo de classificação e, portanto, estimar a credibilidade de um conjunto de exemplos e considerá-la na construção do modelo pode aumentar sua eficácia.
 Para avaliar o quanto um classificador pode confiar em um exemplo de treinamento, propomos a utilização do que chamamos de \textbf{função de credibilidade}.
 
 A credibilidade é vista na literatura como uma característica dependente do contexto e de quem a avalia. Ou seja, um mesmo objeto pode ser confiável para um observador e não para outro.
@@ -25,10 +25,11 @@ Os últimos experimentos com bases textuais foram feitos com a base da \textsc{A
 Realizamos experimentos também com bases de atributos categóricos, onde os resultados da métrica Macro$F_1$ novamente foram de maior destaque. Enquanto que para as \textit{TicTacToe} e \textit{Chess}, o uso da credibilidade não surtiu tanto efeito, para as base \textit{Cars} e \textit{Nursery}, obtivemos ganhos na Macro$F_1$ de \textbf{13.44\%} e \textbf{16.62\%}, respectivamente.
 
 Finalmente, os experimentos com a base de bioinformática mostram que utilizar o conhecimento dos relacionamentos obteve resultados expressivos, com \textbf{26.58\%} e \textbf{50.78\%} de ganhos na Micro$F_1$ e Macro$F_1$,
-respectivamente, 
+respectivamente,
 em relação ao \textsc{KNN} sem credibilidade.
 
-Como trabalho futuro, além de ampliar o número de classificadores usados, planejamos explorar melhor as relações entre os fatores que impactam na credibilidade de um exemplo. Por exemplo, nas situações nas quais modelamos mais de um relacionamento, como feito para a base \textsc{ACM-DL}, apenas multiplicamos os valores de credibilidade de cada relacionamento (ver Equação~\ref{eqn::nbcredgrafomulti}). Acreditamos que explorar outros tipos de combinações pode ser benéfico.
-Além disso, gostaríamos de investigar a relação da credibilidade dos exemplos com o passar do tempo. Por exemplo, gostaríamos de poder responder questões como: (i) o que aconteceria se tentássemos utilizar a credibilidade em tempo real? (ii) As funções evoluídas em um dado instante ainda seriam boas em outro instante? Finalmente, uma outra direção de trabalhos é buscar soluções para diminuir a quantidade de treinamento, ainda assim obtendo funções de credibilidade representativas para as bases nas quais elas são evoluídas.
+Como trabalhos futuros, além de ampliar o número de classificadores utilizados, planejamos explorar melhor as relações entre os fatores que impactam na credibilidade de um exemplo. Por exemplo, nas situações nas quais modelamos mais de um relacionamento, como feito para a base \textsc{ACM-DL}, apenas multiplicamos os valores de credibilidade de cada relacionamento (ver Equação~\ref{eqn::nbcredgrafomulti}). Acreditamos que explorar outros tipos de combinações pode ser benéfico.
+
+Além disso, gostaríamos de investigar a relação da credibilidade dos exemplos com o passar do tempo. Nesse caso, gostaríamos de poder responder questões como: (i) o que aconteceria se tentássemos utilizar a credibilidade em tempo real? (ii) As funções evoluídas em um dado instante ainda seriam boas em outro instante? Uma outra direção de trabalhos é buscar soluções para diminuir a quantidade de treinamento, ainda assim obtendo funções de credibilidade representativas para as bases nas quais elas são evoluídas.
 
 

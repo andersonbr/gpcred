@@ -28,11 +28,8 @@ Inspirados por outros trabalhos que já haviam buscado no \textit{layout} de uma
  (\cite{Palmer00}, \cite{Fogg01}), \cite{Flanagin07} definiram a credibilidade de uma página como um valor composto de dimensões: o conteúdo, o \textit{design} e os patrocinadores da página. Um resultado interessante foi mostrar como propagandas comerciais podem afetar negativamente a credibilidade da informação contida na página e que, de forma geral, páginas conhecidas de notícias têm maior credibilidade que páginas de comércio eletrônico e que essas, por sua vez, têm maior credibilidade que páginas pessoais.
 
 Os fatores que afetam a credibilidade dependem fortemente do contexto da utilização e muitos trabalhos abordam domínios específicos.
-%. Existem diversos trabalhos que procuram mostrar quais são as dimensões mais importantes para definir a credibilidade em um certo domínio. Por exemplo, 
 Destacamos os estudos que avaliam como usuários veem a informação contida na enciclopédia \textit{online} Wikipédia (\cite{Chesney06}, \cite{Lopes08}, \cite{Kubiszewski11}) e em páginas de saúde e medicina (\cite{Linderg98}, \cite{Eastin01}, \cite{Eysenbach02}, \cite{Rains09}). Por exemplo, em \cite{Eysenbach02} 
 identificou-se que, para que um usuário confie no conteúdo de uma página relacionada a saúde, ele analisa fatores como \textit{emails} informados, as credenciais e as qualificações dos médicos encontradas na página.
-%os objetivos foram descrever técnicas de recuperação usadas por usuários quando eles buscavam por ajuda sobre saúde na \textit{Web}. 
-%Foram identificadas alguns fatores importantes para determinar a credibilidade de uma página, entre eles \textit{emails}, credenciais e qualificações encontradas na página.
 
 O trabalho proposto aqui, em contraste com todos acima citados, considera a credibilidade do ponto de vista de um classificador ao invés do usuário. Ao construir um modelo de classificação, o classificador, da mesma forma que um usuário dos sistemas citados acima, pode considerar um exemplo mais crível que outros. Procuramos construir uma função matemática que seja capaz de capturar em um valor real a credibilidade de um exemplo contido no treinamento, de forma que exemplos com baixa credibilidade sejam menos influentes que exemplos com alta credibilidade.
 
@@ -109,8 +106,6 @@ Além disso, procuramos resolver com Programação Genética uma das limitaçõe
 %A diferença entre essas duas categorias é que a primeira utliza o conhecimento de pertinência a uma classe para os documentos de treino, enquanto o segundo não considera essa informação. 
 %Métodos \textsc{UTW} típicos se baseiam primordialmente em informações sobre frequência de termos e de documentos, utilizando métricas como \textsc{TFIDF} e suas variantes. Em~\cite{Salton88}.
 
-%% \TODO: trocar a parte do F1 para o que ta no artigo Salton88
-
 %\section{Classificação Relacional}
 \section{Credibilidade dos Relacionamentos}
 \label{sec::classificacaografos}
@@ -118,7 +113,7 @@ Além disso, procuramos resolver com Programação Genética uma das limitaçõe
 Além dos atributos, exploramos também os relacionamentos existentes entre os exemplos para obtermos um cálculo da credibilidade mais aprimorado.
 Ao tomarmos uma característica existente entre duas entidades, podemos traçar um relacionamento entre as mesmas.
 Existem milhares de situações práticas nas quais podemos inferir algum relacionamento. Por exemplo, em uma empresa podemos traçar entre as pessoas o relacionamento de chefe/empregado, assim como dentro de uma universidade temos o relacionamento professor/aluno. 
-%Há alguns anos atrás, podiamos traçar também o relacionamento carrasco/escravo.
+%Há alguns anos atrás, podiamos traçar também o relacionamento carrasco/escravo. -> pode colocar isso Gisele?
 
 Enfim, estudar os relacionamentos entre entidades de um determinado sistema sempre foi uma tarefa que despertou o interesse de várias áreas do conhecimento (\cite{Onody04}, \cite{Shen05}, \cite{Rubinov10}) e a principal motivação para criação da área de Redes Complexas (\cite{Newman03}).
 Uma área que também utiliza relacionamentos para a tarefa de classificação é chamada classificação relacional. %, que trata da utilização dos conceitos e métricas dessa área para a tarefa de classificação automática.

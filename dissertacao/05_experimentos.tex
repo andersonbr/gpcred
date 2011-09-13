@@ -24,7 +24,7 @@
 Nesse capítulo relatamos os diversos experimentos efetuados para testar a eficácia dos métodos para estimar a credibilidade de exemplos. % e seus resultados.
 Decidimos por realizar a divisão desse capítulo em seis partes.
 Na primeira, a Seção~\ref{subsec::base}, mostramos as várias bases de dados que usamos em nossos experimentos.
-Depois, mostramos na Seção~\ref{subsec::gpparam} os diversos parâmetros utilizados pelo \textsc{PG}, incluindo sua funcão de \textit{fitness}.
+Depois, mostramos na Seção~\ref{subsec::gpparam} os diversos parâmetros utilizados pelo \textsc{PG}, incluindo sua função de \textit{fitness}.
 Já a Seção~\ref{subsubsec::cv} aborda a metodologia usada para realização dos testes.
 %Por fim, nas três últimas seções exibimos os resultados dos três tipos de base usadas, documentos (Seção~\ref{sec::documentos}), categorias (Seção~\ref{sec::categorias}) e bioinformática (Seção~\ref{sec::bioinfo}).
 %
@@ -294,6 +294,8 @@ Observamos que todas funções tiveram êxito na melhora da Macro$F_1$ das bases
 Finalmente, destacamos que a única função que obteve resultados bons nas demais bases (exceto na Micro$F_1$ da \textsc{ACM}) foi a função evoluída para a base \textit{20ng}.
 Sendo assim, concluímos que usar as funções evoluídas pelo \textsc{PG} se comportam muito bem na própria base, mas não podemos dizer o mesmo para as demais bases.
 
+Por fim, uma análise interessante pode ser feita usando as funções mostradas na Tabela~\ref{tab::representantes} e verificando os resultados obtidos por utilizar cada uma delas individualmente como feito nas Tabelas~\ref{tab::imensamicro} e~\ref{tab::imensamacro}. Por exemplo para a base \textsc{ACM-DL}, as métricas \textsc{DOM}, \textsc{GSS}, \textsc{CE} e \textsc{TF} foram combinadas usando as operações de potência e soma resultado em um ganho estatisticamente significativo de 1.91\% para a Micro$F_1$, enquanto essas métricas isoladas obtiveram perdas significativas em relação à linha de base, com um máximo de -39.35\% da métrica \textsc{CE}. 
+
 \begin{table}[!h]
 \centering
 \caption{Micro$F_1$ obtida pelo \textit{Naïve Bayes} quando usando a função de credibilidade $F_{base}$ gerada uma dada base nas demais bases.}
@@ -414,6 +416,9 @@ Nas Tabelas~\ref{tab::cat-micro} e \ref{tab::cat-macro}, mostramos os resultados
 Destacamos os ganhos mais interessantes na Macro$F_1$ da base \textit{Cars}. Essa fato evidencia que os exemplos de maior dificuldade, por serem de classes menos populares, foram corretamente classificados. Isso alterou muito pouco a Micro$F_1$, pois, em quantidade, os exemplos difíceis são poucos, mas alterou muito a Macro$F_1$, pois houveram aumentos substanciais na métrica $F_1$ das classes com menos exemplos. O mesmo ocorre na base \textit{Nursery} quando usamos o \textit{Naïve Bayes}. Já as bases \textit{TicTacToe} e \textit{Chess} apresentaram ganhos pequenos, inferiores a 2\%.
 %(talvez mostrando que funções de crediblidade nao sao boas para jogos!)
 
+Uma análise das funções evoluídas em todas as bases (não mostramos as funções pelo fato delas serem 40 distintas (5 por base, 4 bases, 2 algoritmos)), mostra que as métricas \textsc{AM}, \textsc{CHI}, \textsc{Gini} e \textsc{IG} são as mais frequentes, sendo que ao menos uma delas aparece em todas as funções. Por outro lado, as métricas que calculam máximos, \textsc{MaxAM}, \textsc{MaxCC}, entre outras, não apareceram. Isso pode mostrar que métricas globais são menos efetivas para métrica de credibilidade de atributos categóricos.
+
+
 \begin{table}[h!]
 \centering
 \caption{Resultados da Micro$F_1$ para as bases de atributos categóricos}
@@ -487,6 +492,8 @@ A próxima linha exibe o uso do \textsc{KNN} baseado somente na rede de similari
 Vemos que a Micro$F_1$ obtém grande melhora, em detrimento da Macro$F_1$. 
 Por fim, mostramos os resultados ao evoluir com \textsc{PG} uma função de credibilidade para o relacionamento criado com a rede de similaridades.
 Destacamos que, mesmo com a utilização de apenas uma pequena parte da base para treinamento, conseguimos ganhos de 26.58\% e 50.78\%, respectivamente ao uso do \textsc{KNN} que considera apenas os atributos. Em relação ao uso do \textsc{KNN} que considera apenas os relacionamentos, o \textsc{PG} obteve ganhos de 7.74\% e 74.18\%, para Micro$F_1$ e Macro$F_1$, respectivamente.
+
+Finalmente, uma análise das dez funções evoluídas pelo \textsc{PG} revela que a métrica \textsc{Força} foi a mais utilizada, sendo ela sozinha a função de credibilidade de cinco dessas funções
 
 \begin{table}[h!]
 \centering
