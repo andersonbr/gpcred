@@ -29,7 +29,7 @@ onde $P(A|B)$ é um valor real entre 0.0 e 1.0 que define a probabilidade do eve
     de que os valores dos atributos de um exemplo $X$ são condicionalmente independentes um dos outros, dada uma certa classe. Logo,
 
 \begin{equation}\label{eqn::classindependence}
-   P(X|c_{j}) = \prod^{n}_{i=1}{P(x_i|c_j) }
+   P(X|c_{j}) = \prod^{D}_{i=1}{P(x_i|c_j) }
 \end{equation}
 
 \item O valor de cada termo $P(x_i|c_j)$ da Equação~\ref{eqn::classindependence} é usualmente calculado de forma diferente caso o atributo $A_i$ seja categórico, textual ou numérico. A seguir mostramos as formas mais comuns vistas na literatura:

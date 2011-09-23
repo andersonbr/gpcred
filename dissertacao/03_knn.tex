@@ -124,7 +124,7 @@ Adicionamos um termo relacionado a credibilidade na Equação~\ref{eqn::distanci
 Assim como feito na incorporação da credibilidade nos atributos categóricos, utilizamos a informação da classe do exemplo de treino para aferir a credibilidade daquele exemplo em relação àquela classe. Sendo $t_i$ o termo referente ao atributo $A_i$, $x_i$ a frequência do mesmo e $w_i$ o seu peso (como já explicado, usamos a métrica \textsc{IDF}), adaptamos a Equação~\ref{eqn::distancia_texto}, como:
 
 \begin{equation}\label{eqn::distancia_texto_cat}
-    dist(X_1, X_2) = \sum\limits_{1 < i < D}\frac{  Cr_{atr}(t_{i1}, c_{X_2}) \cdot x_{i1} \cdot w_{i1} \cdot x_{i2} \cdot w_{i2} }{ ||X'_1|| \cdot ||X_2|| }
+    dist(X_1, X_2) = \sum\limits_{1 < i < D}\frac{  Cr_{atr}(x_{i1}, c_{X_2}) \cdot x_{i1} \cdot w_{i1} \cdot x_{i2} \cdot w_{i2} }{ ||X'_1|| \cdot ||X_2|| }
 \end{equation}
 
 Repare que utilizamos $||X'_1||$ como a norma do vetor $X_1$, levando em conta a credibilidade em relação à classe do exemplo de treino $X_2$, logo temos que $||X'_1|| = \sqrt{ ( Cr_{atr}(x_{11}, c_{X_2}) \cdot x_{11} \cdot w_{11} )^2 + ... +  ( Cr_{atr}(x_{D1}, c_{X_2}) \cdot x_{D1} \cdot w_{D1} )^2}$.
