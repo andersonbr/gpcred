@@ -1,0 +1,79 @@
+\documentclass[phd]{ppgccufmg}
+
+\usepackage[brazil]{babel}      % se o documento for em português, OU
+%\usepackage[english]{babel}    % se o documento for em inglês
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{type1ec}
+\usepackage{graphicx}
+\usepackage[a4paper,
+  portuguese,
+  bookmarks=true,
+  bookmarksnumbered=true,
+  linktocpage,
+  colorlinks,
+  citecolor=black,
+  urlcolor=black,
+  linkcolor=black,
+  filecolor=black,
+  ]{hyperref}
+\usepackage[square]{natbib}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+% \usepackage[Algoritmo]{algorithm}
+% \usepackage[noend]{algpseudocode}
+\usepackage{ae}
+\usepackage[square]{natbib}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\bibpunct{[}{]}{;}{a}{,}{,}
+
+
+\begin{document}
+
+% O comando a seguir, \ppgccufmg, provê todas as informações relevantes para a
+% classe ppgccufmg. Por favor, consulte a documentação para a descrição de
+% cada chave.
+
+% Um exemplo para documentos em português é apresentado a seguir:
+\ppgccufmg{
+  title={TITULO DO MEU TRABALHO},
+  authorrev={Palotti, João Rafael de Moura},
+  cutter={D1234p},
+  cdu={519.6*82.10},
+  university={Universidade Federal de Minas Gerais},
+  course={Ciência da Computação},
+  address={Belo Horizonte},
+  date={2010-10},
+  keywords={Classificação, Mineração de Dados, Computação Evolucionária, Programação Genética},
+  advisor={Gisele Lobo Pappa},
+%  approval={img/approvalsheet.eps},
+  abstract={Resumo}{resumo},
+  abstract=[english]{Abstract}{abstract},
+  abstract={Resumo Estendido}{resumoest},
+  dedication={dedicatoria},
+  ack={agradecimentos},
+%  ack=[Acknowledgments]{ack},
+  epigraphtext={A verdade é o contrário da mentira, \\
+    e a mentira é o oposto da verdade.}{Autor desconhecido},
+}
+
+
+%-------------------------------------------------------------
+\chapter{Introdução}
+\label{cap:01_introducao}
+\input{01_introducao.tex}
+
+%-------------------------------------------------------------
+\chapter{Trabalhos relacionados}
+\label{cap:02_background}
+%\input{02_background.tex}
+
+%-------------------------------------------------------------
+
+% Aqui vem a parte da bibliografia: use o comando \ufmgbibliography indicando
+% apenas o nome do arquivo .bib (sem a extensao).
+%\ppgccbibliography{references}
+\ppgccbibliography{references}
+
+\end{document}

@@ -1,0 +1,180 @@
+
+\subsection{Credibilidade baseada em Relacionamentos}
+\label{sec::pg_cred_baseada_grafos}
+
+Abordamos durante essa seção as métricas utilizadas como terminais dos indivíduos evoluídos para credibilidade baseada em relacionamentos, assim como descrito na Seção~\ref{subsec::individuos}. Todas as métricas contidas aqui são amplamente utilizadas em Redes Complexas (\cite{Newman03}), pois são medidas que conseguem explorar bem as propriedades estruturais dos grafos modelados.
+
+Lembramos que o primeiro passo é a construção dos grafos representando o relacionamento modelado.
+Como já dito, construímos um grafo para cada classe, de forma a isolar uma classe da outra.
+Logo depois, introduzimos o exemplo de teste, e criamos arestas dele para os exemplos de treinamento. Assim, de forma geral, calculamos para cada uma das classes o valor da métrica, $\textsc{Métrica}(teste, classe)$, que modela a credibilidade de determinada classe em relação ao exemplo de teste (estratégia \emph{lazy}).
+
+Várias métricas não relacionam diretamente o exemplo de teste a uma classe, mas a um exemplo de treinamento.
+Poderíamos usar diretamente essa relação com uma função de credibilidade para o \textsc{KNN}, porém teríamos mais dificuldade com o \textit{Naïve Bayes}. Para modelarmos todos os algoritmos de forma idêntica, optamos por considerar a credibilidade de todo um conjunto de treinamento da mesma classe. Assim, temos as mesmas métricas para o \textsc{KNN} e o \textit{Naïve Bayes}, pois em nenhum momento o \textit{Naïve Bayes} compara dois exemplos diretamente.
+Portanto, para as situações onde a métrica calcula algum valor entre um exemplo de teste e o do treino, agregamos esse cálculo para todos os exemplos de uma mesma classe. Logo,
+\begin{equation}
+         \textsc{Métrica}(teste, c_j) =  \sum\limits_{treino \in c_j} \textsc{Métrica}(teste, treino),
+\end{equation}
+resultando em somente um valor para a credibilidade dos exemplos de treino de uma classe em relação ao exemplo de teste.
+Por fim, mostramos a seguir as 16 métricas modeladas e exibimos na Tabela~\ref{table::metricas_rel} as duas principais expressões utilizadas ao longo da descrição das métricas de credibilidade baseada em relacionamentos.
+
+\begin{table}[ht*]
+\centering
+\caption{Explicação das principais expressões utilizadas para definição das métricas para relacionamentos.}
+\label{table::metricas_rel}
+\begin{tabular}{|c|c|}
+\toprule
+    \textbf{Expressão} & \textbf{Explicação} \\
+\midrule
+    $adj(a)$           & Conjunto de vértices conectados ao vértice $a$. \tabularnewline \hline
+    $dg(a)$            & Número de vértices ligados ao vértice $a$.\tabularnewline \hline
+    $out(a)$           & Número de vértices alcançáveis a partir do vértice $a$ (grau de saída).\tabularnewline
+\bottomrule
+\end{tabular}
+\end{table}
+
+%\subsubsection{Métricas modeladas.}
+%\label{subsec::pg_metricas_grafos}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{description}
+
+\item{\textbf{Tamanho da Vizinhança}}
+\label{item::neighborhoodsize}
+
+Um vértice adjacente, ou seja, conectado por uma aresta é dito ser um vértice vizinho de primeira ordem. Na Figura~\ref{fig::vizinhos}, temos que os vértices 2, 3, 4 e 5 são vizinhos de primeira ordem do vértice 1. Seguindo esse raciocínio, o vértice 6 é vizinho de segunda ordem do vértice 1 e de terceira ordem do vértice 2 e 3.
+Simplesmente contar o número de vizinhos existentes, dada uma ordem de vizinhança, consiste na métrica mais simples que podemos utilizar para relacionar um vértice a um grafo. Um exemplo de teste com muitas ligações ao grafo de uma determinada classe tem mais chances de pertencer àquela classe do que outro exemplo que tem pouca ou nenhuma aresta que o conecta àquele grafo.
+
+Repare que decidimos não levar em consideração a direção das arestas quando temos um grafo direcionado. Somente nos importamos com o número de conexões totais do teste ao grafo de uma determinada classe, independente de serem arestas de entrada ou de saída do vértice que representa o teste. Baseado nessa teoria, criamos 3 métricas relacionadas a vizinhança, denominadas \textsc{VizN(teste, classe)}, onde $N$ representa a ordem de vizinhaça do teste em determinada classe.
+
+%Em um grafo direcionado, temos ainda a noção de direção de uma aresta, logo podemos ter uma aresta que aponta de um vértice A para um vértice B, mas não o contrário. Em um grafo de citações por exemplo, um documento A que cita um outro documento B, é representando como uma aresta de aponta do vértice A para vértice B. O número de vizinhos que um vértice tem é chamado grau do vértice. Temos ainda os conceitos de grau de entrada e de saída, representando o número de arestas que chegam e saem de um vértice, respectivamente.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.4\textwidth]{figures/vizinhos.png}
+\caption{A instância de teste triângulo está ligada ao grafo formado pela classe dos círculos e dos losangos, porém não apresenta ligações com os quadrados.}
+\label{fig::vizinhos}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{\textbf{Força}}
+\label{item::strength}
+
+A métrica \textsc{força(teste,classe)} é uma variação do tamanho da vizinhança de primeira ordem. Quando temos um grafo no qual as arestas têm peso, essa métrica realiza a soma dos pesos das arestas vizinhas ao invés de contar o número das mesmas. O peso de uma aresta, como já dito, é uma forma de representarmos informações importantes em relação aos vértices ligados pela aresta. Em um grafo em que os vértices representam cidades e as arestas representam ligações entre essas cidades, o peso de uma aresta pode significar a distância entre duas cidades, por exemplo. Dessa forma, pode ser mais significativo saber o quão longe (ou perto) uma cidade esta de suas vizinhas do que simplesmente saber o número de vizinhas que a mesma possui.
+Destacamos que quando um grafo não possuí pesos nas arestas, atribuímos um peso unitário para todas as arestas, logo a \textsc{força} de um vértice seria igual ao grau de primeira ordem dele.
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{\textbf{Proximidade}}
+\label{item::closeness}
+
+De maneira intuitiva, dizemos que dois objetos estão próximos se eles estão a uma distância arbitrariamente pequena um do outro. Muitas vezes, entretanto, não é fácil estipular o que vem a ser uma distância pequena.
+
+Em teoria dos grafos, medimos a distância entre os vértices utilizando o algoritmo conhecido como \textit{caminho mínimo}, que caso não leve em consideração o peso das arestas, conta o número mínimo de vértices que necessitamos atravessar para ligar conectar vértices escolhidos em um grafo. A \textsc{Proximidade(teste, classe)} (do inglês, \textit{Closeness}) é uma métrica que estima o quão próximo um vértice $v$ está em relação a todo o grafo usando a média dos caminhos mínimos de $v$ para todos os outros vértices alcançáveis a partir de $v$ (\cite{Beauchamp65}). Dessa forma, podemos medir a importância de um vértice calculando quanto tempo em média é gasto para uma informação se espalhar a partir de um vértice $v$ para todo o resto do grafo. Por fim, são considerados vértices mais ``próximos'' aqueles que minimizam esse tempo.
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{\textbf{Centralidade}}
+\label{item::constraint}
+
+A métrica de centralidade (em inglês, \textit{Betweenness}) \textsc{Centralidade(teste, classe)} se baseia no fato que um vértice é importante em um grafo se ele está no percurso de outros vértices, sendo obrigatoriamente muito visitado. Sendo assim, um vértice tem maior credibilidade se for usado para conectar os vários vértices em um grafo, pertencendo a vários caminhos mínimos.
+%Como já dito, o algoritmo do caminho mínimo é o que se utiliza para percorrer da melhor maneira possível uma dada distância em um grafo.
+A métrica \textsc{Centralidade} calcula a importância de um vértice contando quantas vezes aquele vértice participa do caminho mínimo entre quaisquer dois outros vértices do grafo em questão (\cite{Sabidussi66}). Obviamente, um vértice central que está no caminho mínimo de vários outros tem mais acesso a informação que circula pelo grafo que um vértice periférico com poucas ligações.
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{\textbf{Centralidade do Autovetor.}}
+\label{item::eigenvector}
+
+A centralidade do Autovetor (\textsc{Eigen}(teste, classe), do inglês \textit{Eigenvector Centrality}) é uma medida de centralidade que avalia a importância de um vértice em todo o grafo. Ela atribui valores aos vértices baseados nas conexões que os mesmos têm, sendo que um vértice ganhará uma credibilidade maior se estiver conectado a vértices de maior credibilidade. Formalmente, dado que $x_i$ é o valor atribuído ao vértice $i$ e que podemos montar a matriz de adjacência $A$ com os $N$ vértices do grafo, na qual $A_{ij} = 1$ se existe uma aresta entre $i$ e $j$ e $A_{ij}=0$, caso contrário, temos:
+\begin{equation}\label{eqn::eigenvector1}
+   x_i = \frac{1}{\lambda} \cdot \sum\limits_{j=1}^{N} A_{ij} \cdot x_j.
+\end{equation}
+Que pode ser reescrita utilizando vetores como:
+\begin{equation}\label{eqn::eigenvector2}
+   X = \frac{1}{\lambda} AX  \;\; \Longleftrightarrow\;\;  AX = \lambda X,
+\end{equation}
+onde $X$ é o \textit{autovetor} formado pelos valores de $x_i$ com $0 \leq i \leq N$ e associado ao \textit{autovalor} $\lambda$. Podem existir muitos valores para $\lambda$ para os quais a Equação~\ref{eqn::eigenvector2} possui solução. Entretanto, se utilizarmos todos os valores do \textit{autovetor} como positivos, teremos o único e maior valor possível para o \textit{autovalor} (\cite{Newman10}).
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{\textbf{\textit{Hub} e Autoridade de Kleinberg}}
+\label{item::hub}
+
+As métricas conhecidas como \textsc{Hub(teste, classe)} e \textsc{Autoridade(teste, classe)} de Kleinberg são provenientes do trabalho de~\cite{Kleinberg99}. Elas também podem ser apresentadas em conjunto pelo nome de Algoritmo \textit{Hyperlink-Induced Topic Search} (HITS) e por serem predecessoras do \textit{PageRank}.
+
+Em suma, a ideia aqui modelada se baseia no fato de que na \textit{Web}, algumas páginas são conhecidas como \textit{hubs} por não serem especialistas em nenhum assunto específico, mas possuírem ligações para vários outras páginas que são especialistas em seus respectivos assuntos, sendo, portanto, \textit{autoridades} no assunto tratado. Logo, o que temos é que um bom \textit{hub} é representado por uma página (vértice, no grafo que a \textit{Web} representa) que aponta para várias autoridades e uma boa autoridade é aquela apontada por vários \textit{hubs}. Uma página com poucas ligações e com poucas referências não é nem um bom \textit{hub} e nem uma boa autoridade.
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{\textbf{PageRank}}
+\label{item::pagerank}
+
+O algoritmo \textit{PageRank} tem seu nome proveniente do seu criador Lawrence Page (\cite{Page98}). Assim como o algoritmo \textit{HITS}, Seção~\ref{item::hub}, o \textit{PageRank} se baseia na ideia de ordenar os vértices de um grafo baseado-se nas relações entre eles, sendo que quando mais ``popular'' um vértice é, maior é o seu \textit{PageRank}. Em resumo, temos que
+\begin{equation}\label{eqn::pagerank}
+PR(teste, classe) = \sum_{v \in Adj(a)} \frac{PR(v, classe)}{out(v)}.
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{\textbf{\textit{Burt's Constraint}}}
+\label{item::constraint}
+
+O termo capital social é um conceito sociológico abrangente, mas em geral pode-se dizer que está relacionado a relações sociais e consiste na expectativa de benefícios derivados de relações e cooperações entre indivíduos de um grupo e entre os vários grupos existentes na sociedade modelada. Ronald Burt é um sociologista que estudou alguns benefícios que indivíduos podem ter no mercado de trabalho proveniente das relações sociais que mantêm (\cite{Burt92}). Investigando as estruturas de rede do capital social, focando em indivíduos chaves em distintas organizações, ele chegou a conclusão que quem tem boas e diversificadas relações sociais consegue, entre outras coisas, melhores cargos, promoções e salários.
+
+Outro conceito importante são os buracos estruturais, que podem ser definidos como a falta de acesso entre sub-grafos distintos que compões um mesmo grafo. Burt propôs que vértices que conseguem preencher esses buracos estruturais, unindo vários sub-grafos, são mais importantes que aqueles vértices que estão unidos somente a um mesmo grafo ou os que estão isolados. Esse conceito é usado diretamente para calcular o~\textit{Burt's Constraint} de um vértice. Logo, \textsc{Burt}(teste, classe) é maior se o vértice de teste é capaz de se conectar a mais indivíduos que pertencem a partes não conectadas entre si do grafo modelado pela classe em questão.
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{\textbf{\textit{Bibliographic Coupling}}}
+\label{item::bibcoup}
+
+%http://igraph.sourceforge.net/doc/html/igraph_bibcoupling.html
+\textit{Bibliographic Coupling} é uma métrica introduzida em~\cite{Kessler63} que calcula, para dois trabalhos científicos, o número de referências em comum que ambos possuem. A ideia dessa métrica é que se dois trabalhos apresentam muitas referências em comum, então provavelmente eles abordam o mesmo assunto. Em geral, podemos definir que:
+\begin{equation}
+\textsc{Bib}(a, b) =  |Adj(a) \cap Adj(b)|.
+\end{equation}
+Como estamos interessados em calcular a similaridade de um vértice (exemplo de teste) com uma classe, necessitamos apenas de um valor que defina o quanto aquele vértice se assemelha aos demais. Logo, calculamos o valor do \textit{bibliographic coupling} do exemplo de teste com todos os vértices que ele se conecta:
+\begin{equation}
+\textsc{BibCoup}(teste, c_j) =  \sum\limits_{v' \in c_j} Bib(teste, v').
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{\textbf{Co-Citação}}
+\label{item::cocitation}
+
+A métrica co-citação mede, para dois vértices, o número de outros vértices que citam ambos (\cite{Small73}). Assim como a métrica \textit{Bibliographic Coupling}, procuramos atribuir um valor único para um exemplo de teste e, portanto, calculamos o somatório da co-citação entre o teste e todos os vértices presentes no grafo.
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{\textbf{Similaridade de Jaccard}}
+\label{item::jaccard}
+
+A similaridade de Jaccard, ver~\cite{Jaccard01}, é uma métrica muito antiga que pode ser definida como o tamanho da interseção de dois conjuntos divididos pela união dos mesmos. Podemos definir a similaridade de Jaccard matematicamente como:
+\begin{equation}
+\textsc{Jac}(a, b) =  \frac{|Adj(a) \cap Adj(b)|}{|Adj(a) \cup Adj(b)|},
+\end{equation}
+e da mesma forma que já realizado anteriormente, calculamos o somatório dessa métrica entre o exemplo de teste e todos os vértices do grafo.
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{\textbf{Similaridade de Dice}}
+\label{item::dice}
+
+O coeficiente de similaridade de Dice de dois vértices é duas vezes o número de vizinhos em comum dividido pela soma de graus dos dois vértices, ver~\cite{Dice45}. Matematicamente temos:
+\begin{equation}
+\textsc{Dice(a,b)} = \frac{2 \cdot | adj(a) \cap adj(b) | }{| a | + | b |}.
+\end{equation}
+Novamente, calculamos a similaridade de Dice entre o exemplo de teste e todos os vértices do grafo, a fim de termos um único valor que represente a credibilidade do ponto de vista dessa métrica.
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item{ \textbf{Similaridade de Adamic e Adar}}
+\label{item::inverselog}
+
+As similaridades de Jaccard e Dice se baseiam no princípio que todos os vértices adjacentes ao vértice que analisamos são igualmente importantes. Entretanto, esse não é sempre o caso.
+Inspirados em uma ideia similar ao TDIDF, Adamic e Adar propuseram atribuir pesos aos vértices de maneira que um vértice com menos conexões possa ter maior poder discriminativo, ver~\cite{Adamic03}. Dessa forma, a similaridade de Adamic e Adar entre dois vértices é o número de vizinhos que ambos têm em comum, balanceados pelo inverso do logaritmo de seus graus. Ou seja,
+\begin{equation}
+\textsc{Ad\&Ad(a,b)} =  \sum\limits_{v \in (adj(a)\ \cap\ adj(b))} \frac{1}{ \log(dg(v))}.
+\end{equation}
+Como já dito, por fim necessitamos calcular o valor de \textsc{Ad\&Ad(teste, classe)} realizando o somatório da similaridade entre o teste e todos os vértices do grafo da classe em questão.
+
+\end{description}
+
+%\item{getAvgNearstNeighborDegree(id, className, graphId)}
+%\label{item::avgnearst}
+%acho que nao to uando
+
+

@@ -1,0 +1,362 @@
+
+\section{Credibilidade Baseada nos Atributos}
+\label{sec::pg_cred_baseada_conteudo}
+
+Nessa seção apresentamos várias métricas utilizadas na construção dos indivíduos usados pelo Programa Genético. Elas foram modeladas diferentemente para os casos nos quais os atributos são textuais ou categóricos, sendo que a modelagem para atributos numéricos foi deixada como trabalho futuro. 
+
+Em suma, algumas métricas são muito atreladas a classificação de documentos, em especial aquelas que realizam cálculos baseados na frequência de termos e documentos. 
+Entretanto, muitas são genéricas o suficiente para serem utilizadas em qualquer contexto de classificação baseada em atributos.
+Dessa forma, na Seção~\ref{subsec::pg_metricas_conteudo_textual} mostramos as métricas que foram modeladas única e exclusivamente para serem utilizadas na tarefa de classificação de documentos  e na Seção~\ref{subsec::pg_metricas_conteudo} temos as métricas que foram estendidas e estão sendo usadas também para a classificação categórica.
+
+\subsection{Métricas Modeladas Exclusivamente Para Atributos Textuais.}
+\label{subsec::pg_metricas_conteudo_textual}
+
+As métricas usadas para atributos textuais consistem em algumas variantes do \textsc{TFIDF}, métrica mais difundida entre as apresentadas. Na tabela~\ref{table::metricas_textuais} estão concentradas algumas expressões amplamente utilizadas nas métricas aqui listadas.
+
+\begin{table}[ht*]
+\centering
+\begin{tabular}{|c|c|}
+\toprule
+    \textbf{Expressão} & \textbf{Explicação} \\
+\midrule
+    $N$           & Número de documentos na base de treinamento. \tabularnewline \hline
+    $M$           & Número de classes da coleção. \tabularnewline \hline
+    $D$           & Número de termos da coleção. \tabularnewline \hline
+    $DF_{t_i} $   & Número de documentos do conjunto do treino que contém o termo $t_i$. \tabularnewline \hline
+    $DF_{t_ic_j}$ & Número de documentos do treino com o termo $t_i$ e pertencentes a classe $c_j$. \tabularnewline \hline
+    $CF_{t_i}$    & Número de classes em que o termo $t_i$ ocorre. \tabularnewline \hline 
+    $F_{t_i}$     & Número de vezes que o termo $t_i$ aparece nos documentos de treinamento. \tabularnewline \hline
+    $F_{t_ic_j}$  & Número de vezes que o termo $t_i$ aparece em documentos da classe $c_j$ no treino. \tabularnewline 
+\bottomrule
+\end{tabular}
+\caption{Explicação das principais expressões utilizadas para definição das métricas para atributos textuais.}
+\label{table::metricas_textuais}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Frequência do Termo} %(TF)}
+\label{subsubsection::sumtf}
+
+A frequência de um termo (\textsc{TF} da expressão em inglês, \textit{Term Frequency}) é simplesmente o número de vezes que um termo aparece na coleção de treinamento. Utilizamos o logaritmo desse valor como um fator normalizador, para evitar que termos muito frequentes dominem a função de credibilidade:
+\begin{equation}\label{eqn::sumtf}
+   \textsc{TF}(t_i) = 1.0 + \log{ ( F_{t_i} ) }.
+\end{equation}
+
+Temos que $TF(t_i)$ é a primeira e uma das muitas métricas que são chamadas de métricas globais. Essa denominação provêm de trabalhos como o de \cite{Lan05} ou \cite{Liu09}, nos quais métricas que não utilizam a informação da classe são vistas como globais por terem o mesmo valor para todas as possíveis classes. Em geral, métricas que calculam máximo são globais, ver Seções~\ref{subsubsection::maxctd},~\ref{subsubsection::maxdom}, entre outras muitas.
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Frequência do Termo por Classe} % (\textsc{TFClasse})}
+\label{subsubsection::tf}
+
+A frequência de um termo em uma classe, \textsc{TFClasse}, segue o mesmo padrão utilizado pela métrica \textsc{TF}, porém dessa vez contamos apenas os termos que aparecem em uma dada classe $c_j$:
+\begin{equation}\label{eqn::tf}
+  \textsc{TFClasse}(t_i, c_j) = 1.0 + \log{ ( F_{t_ic_j} ) }.
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Frequência dos Documentos por Termo}% (DF)}
+\label{subsubsection::df}
+
+A métrica \textsc{DF}, do inglês, \textit{Document Frequency}, procura analisar a importância de um termo em relação ao número de documentos em que o mesmo aparece:
+\begin{equation}\label{eqn::df}
+  \textsc{DF}(t_i) = 1.0 + \log{ ( DF_{t_i} ) }.
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Frequência de Documentos por Termo-Classe}% (DFClasse)}
+\label{subsubsection::sumdf}
+
+A métrica \textsc{DFClasse} avalia o número de documentos que um termo aparece em relação a uma classe específica, tentando capturar a importância de um termo para uma classe em relação ao número de documentos onde aquele termo está presente:
+\begin{equation}\label{eqn::sumtf}
+ \textsc{DFClasse}(t_i,c_j) = 1.0 + \log{ ( DF_{t_ic_j} ) }.
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Inverso da Frequência de Documentos}% (\textsc{IDF})}
+\label{subsubsection::idf}
+
+O Inverso da Frequência de Documentos, \textsc{IDF} do inglês \textit{Inverse Document Frequency}, é uma métrica que avalia a popularidade de um determinado termo em um conjunto de documentos. Temos que quanto mais popular é um termo ao longo dos documentos de uma coleção, pior é sua capacidade de discriminação, logo:
+\begin{equation}\label{eqn::tficf}
+ \textsc{IDF}(t_i) = \log( \frac{|N|} {DF_{t_i}} ).
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Inverso da Frequência de Documentos por Classe}% (\textsc{IDFClasse})}
+\label{subsubsection::idf}
+
+O Inverso da Frequência de Documentos por classe, \textsc{IDFClasse} é uma versão do \textsc{IDF} em que selecionamos somente documentos de uma dada classe:
+\begin{equation}\label{eqn::tficf}
+ \textsc{IDFClasse}(t_i,c_j) = \log( \frac{DF_{c_j}} {DF_{t_ic_j} }).
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Frequência do Termo Inverso da Frequência de Documentos}% (\textsc{TFIDF})}
+\label{subsubsection::tfidf}
+
+Uma das métricas de pesos para atributos em classificação de documentos mais populares na literatura é o \textsc{TFIDF} (do inglês, \textit{Term Frequency Inversed Document Frequency} (\cite{Salton88}). O \textsc{TFIDF} combina a frequência de um termo (\textit{Term Frequency}) que assume que múltiplas aparições de um termo em um documento são mais importantes que aparições únicas com o inverso da frequência de um documento (\textit{Inverded Document Frequency}) que diz que termos raros são de maior poder discriminativo que termos muito frequentes. Em síntese, a fórmula de \textsc{TFIDF} é:
+\begin{equation}\label{eqn::tficf}
+ \textsc{TFIDF}(t_i, c_j) =  F_{t_ic_j} \cdot \log( \frac{|N|} {DF_{t_i}} ).
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Frequência do Termo Inverso da Frequência da Classe}% (TFICF)}
+\label{subsubsection::tficf}
+
+O \textsc{TFICF} (do inglês, \textit{Term Frequency Inversed Class Frequency}) é uma variação do \textsc{TFIDF}. Novamente, \textsc{TF} se refere a quanto importante é um termo em uma classe, pois trata-se de sua frequência. Por sua vez, \textsc{ICF} é usado para que termos que aparecem em poucas classes tenham maior importância.
+Como é possível observar, uma desvantagem do \textsc{ICF} é que um termo que aparecesse em todos os documentos de uma determinada classe e em um único documento de cada uma das outras teria um o mesmo peso que um outro que fosse igualmente distribuído entre todas as classes. 
+Como mostrado por~\cite{ChihHow04}, a fórmula para \textsc{TFICF} é:
+\begin{equation}\label{eqn::tficf}
+ \textsc{TFICF}(t_i, c_j) = N_{t_ic_j} \cdot \log( \frac{M}{CF_{t_i}} ).
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{\textit{Category Term Description}}
+\label{subsubsection::ctd}
+
+Definido por~\cite{ChihHow04}, \textit{Category Term Description} é uma métrica de seleção de atributos para classificação textual baseada em \textsc{TFIDF} (Seção~\ref{subsubsection::tfidf}) e \textsc{TFICF} (Seção~\ref{subsubsection::tficf}). How et al. propõe uma melhoria ao TDICF, tentando adicionar o fato que termos que aparecem em poucos documentos devem ter maior importância que os termos mais populares, pois tem maior poder discriminativo, logo:
+
+\begin{equation}\label{eqn::cdt}
+ \textsc{CDT}(t_i, c_j) = \textsc{TFClass}(t_i, c_j) \cdot \textsc{ICF}(t_i, c_j) \cdot \textsc{IDF}(t_i)
+\end{equation}
+
+\subsubsection{Máximo \textit{Category Term Description}}
+\label{subsubsection::maxctd}
+Calculamos o valor máximo de \textsc{CTD} para todas as classes e utilizamos esse valor como uma métrica discriminatória global que relacionará mais fortemente os termos com as classes nas quais o \textsc{CTD} é máximo. Logo, usamos:
+
+\begin{equation}\label{eqn::maxdom}
+ \textsc{MaxCTD}(t_i) = \textsc{CTD}(t_i,c_j) \; \; | \;\; \textsc{CTD}(t_i, c_j) > \textsc{CTD}(t_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Dominância}
+\label{subsubsection::dom}
+
+Dominância é uma métrica originalmente proposta em~\cite{Zaiane02}.
+%e utilizada mais recentemente no trabalho de~\cite{Rocha08} para criação do que foi chamado de janela temporal de um documento. Em suma,
+Utilizado exclusivamente em classificação textual, o método normaliza a frequência de um documento em uma classe por todas as classes existentes, logo:
+\begin{equation}\label{eqn::dom}
+ \textsc{Dom}(t_i, c_j) = \frac{ DF_{t_ic_j} } { \sum\limits_{c_k \in \mathbb{C}} DF_{t_ic_k} } 
+\end{equation}
+
+%\subsubsection{MaxTFIDF}
+%\label{subsubsection::maxtfidf}
+%\subsubsection{MaxTFICF} 
+%\label{subsubsection::maxtficf}
+
+\subsubsection{Máxima Dominância}
+\label{subsubsection::maxdom}
+A máxima dominância é uma métrica extrapolada da Dominância (Seção~\ref{subsubsection::dom}). Aqui trabalhamos somente em estipular a dominância global de um termo e consideramos que ela é o valor máximo entre todas as possíveis classes. Logo,
+
+\begin{equation}\label{eqn::maxdom}
+ \textsc{MaxDom}(t_i) = \textsc{Dom}(t_i,c_j) \; \; | \;\; \textsc{Dom}(t_i, c_j) > \textsc{Dom}(t_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}
+\end{equation}
+
+%
+
+\subsection{Métricas Modeladas Para Atributos Textuais e Categóricos.}
+\label{subsec::pg_metricas_conteudo}
+
+
+Todas as métricas apresentadas nessa seção foram utilizadas para geração de funções de credibilidade que tratam tanto atributos textuais quanto categóricos. 
+Elas são inspiradas em probabilidades que podem ser facilmente calculadas dos exemplos contidos no conjunto de treinamento. 
+Destacamos que a probabilidade condicional $P(x_i|c_j)$ como a principal métrica, pois as demais, complexas ou não, são derivações dessa.
+
+Pretendemos através da Tabela~\ref{table::metricas_textuais_categoricos} mostrar as definições utilizadas para definição dos atributos categórico, lembrando que quando se trata de um problema de classificação de texto deve-se recorrer a Tabela~\ref{table::metricas_textuais}.
+
+
+\begin{table}[ht*]
+\centering
+\begin{tabular}{|c|c|}
+\toprule
+    \textbf{Métrica} & \textbf{Explicação} \\
+\midrule
+    $N$           & Número de exemplos na base de treinamento. \tabularnewline \hline
+    $M$           & Número de classes da coleção. \tabularnewline \hline
+    $D$           & Número de atributos da coleção. \tabularnewline \hline
+    $F_{x_ic_j}$  & Número de exemplos de treino da classe $c_j$ e com o atributo $A_i$ valendo $x_i$. \tabularnewline \hline
+    $F_{c_j}$     & Número de exemplos de treino da classe $c_j$. \tabularnewline 
+\bottomrule
+\end{tabular}
+\caption{Explicação das principais expressões utilizadas para definição das métricas para atributos categóricos.}
+\label{table::metricas_textuais_categoricos}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Medida de Ambiguidade} % (AM)}
+\label{subsubsection::am}
+
+A medida de ambiguidade (\textsc{AM} de \textit{Ambiguity Measure}) foi definida por~\cite{Mengle08} e utilizada como um método de seleção de atributos. Ela atribui valores maiores para os atributos considerados menos ambíguos. Assim, ela considera que um atributo é não ambíguo quando sua presença indica, com um alto grau de confiança, que o exemplo de teste pertence a uma classe específica. Podemos calcular $AM(x_i, c_j)$ como:
+\begin{equation}\label{eqn::am}
+ \textsc{AM}(x_i, c_j) = \frac{ F_{x_{i}c_{j}}}{\sum\limits_{c_k \in \mathbb{C}} F_{x_{i}c_{k}}}.
+\end{equation}
+
+Como explicado, podemos usar essa métrica (e todas as demais dessa seção) com $F_{x_{i}c_{k}}$ significando o número de exemplos da classe $c_k$ com o atributo $A_i$ valendo $x_i$ para problemas de classificação categórica ou a sua versão equivalente $F_{t_{i}c_{k}}$, que significa a frequência do termo $t_i$ nos documentos da classe $c_k$ para problemas de classificação de documentos.
+
+\subsubsection{Máxima Medida de Ambiguidade}
+\label{subsubsection::maxam}
+
+Também sugerido por~\cite{Mengle08}, o maior valor para a métrica \textsc{AM} dentre todas as classes pode ser utilizado como valor global discriminativo usando:
+ 
+ \begin{equation}\label{eqn::maxdom}
+ \textsc{MaxAM}(x_i) = \textsc{AM}(x_i,c_j) \; \; | \;\; \textsc{AM}(x_i, c_j) > \textsc{AM}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Probabilidade Condicional} % ($P(x_i|c_j)$)}
+\label{subsubsection::pc}
+
+A probabilidade condicional $P(x_i|c_j)$ advém do algoritmo \textit{Naïve Bayes} como foi discutido na Seção~\ref{subsec::cred_nb}.
+Temos dois modos de calcular $P(x_i|c_j)$, um para quando temos $A_i$ categórico e outro para quando estamos realizando classificação textual.
+A ideia principal de ambos é a mesma, queremos saber a probabilidade de um atributo $A_i$ ter o valor $x_i$ (ou um termo $t_i$ estar presente), dado que estamos analisando um exemplo pertencente a classe $c_j$.
+
+Para classificação categórica, basta apenas contar quantas vezes $A_i$ vale $x_i$ para uma dada classe $c_j$:
+    \begin{equation}\label{eqn::nbcattexto}
+        \textsc{P}(x_i|c_j) = \frac{ F_{x_{i}c_{j}} }{ F_{c_{j}} } 
+    \end{equation}
+        
+Para classificação textual, contamos quantas vezes um termo $t_i$ aparece em uma classe em comparação a todos os termos possíveis:
+    \begin{equation}\label{eqn::nbcattexto}
+       \textsc{P}(t_i|c_j) = \frac{ F_{t_{i}c_{j}} }{ \sum\limits^{D}_{k = 1} {  F_{t_{k}c_{j}}} } 
+    \end{equation}
+
+Todas as demais métricas dessa seção estão diretamente ligadas a probabilidade condicional, e evitaremos diferenciar entre a classificação categórica e textual utilizando somente a notação $P(x_i|c_j)$, tanto para categorias quanto para textos.
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Inverso da Probabilidade Condicional}% ($P(x_i|c_j)$)}
+\label{subsubsection::pc'}
+Com o inverso da probabilidade condicional, calculamos a probabilidade de um atributo $A_i$ não valer $x_i$ para uma classe $c_j$. Podemos realizar esse cálculo com a seguinte fórmula:
+\begin{equation}\label{eqn::plinhattalquec}
+ \textsc{P}(\overline{x_i}|c_j) = 1.0 - \textsc{P}(x_i|c_j)
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Índice de Gini Melhorado} % (GINI)}
+\label{subsubsection::gini}
+
+O índice de Gini é uma métrica baseada na curva de Lorenz que mostra a função de distribuição acumulada de uma variável (\cite{Shang07}). Esse índice é amplamente utilizado nas Ciências Econômicas como uma métrica para avaliação da distribuição de renda pela população de um certo país ou região. Infelizmente por essa métrica, o Brasil é um dos países mais desiguais do mundo (ver \cite{cia-gini}). 
+Baseado na ideia de desigualdade, podemos pensar na distribuição de um atributo nas M classes possíveis. Um atributo que seja desigualmente distribuído é certamente um atributo com um maior poder de discriminação, e portanto, um atributo mais importante. O trabalho de~\cite{Shang07} criou um método de seleção de atributos para classificadores textuais baseando-se no Índice de Gini, chamado Índice de Gini Melhorado. Ao contrário da maioria das métricas expostas nessa seção, o Índice de Gini melhorado tem apenas um parâmetro: o valor do $i$-ésimo atributo, não levando em consideração nenhuma classe específica. Ele é considerado melhorado por algumas pequenas diferenças com o método tradicional de Gini, entre elas o fato de um maior valor se referir a um melhor atributo e não ao contrário como é feito no método original. A fórmula sugerida por \cite{Shang07} é dada por:
+\begin{equation}\label{eqn::gini}
+ \textsc{Gini}(x_i) = \sum\limits_{c_k \in \mathbb{C}} \textsc{P}(x_i|c_k)^2 \cdot \textsc{P}(c_k|x_i)^2
+\end{equation}
+Shang et al. destaca o fato da não utilização do fator $P(x_i)$, fazendo com que o Índice de Gini melhorado sofra menos influência de atributos frequentes, conseguindo capturar a capacidade de um atributo ser importante para distinguir uma classe, independente de qual classe. Destacamos que $P(c|x_i)$ é justamente a probabilidade que o algoritmo Bayesiano pretende calcular, logo aproximamos esse fator como:
+\begin{equation}\label{eqn::gini}
+ \textsc{P}(c_j|x_i) = \frac{ \textsc{P}(c_j \wedge x_i) } {\textsc{P}(x_i) } = \frac{ \frac{ F_{x_ic_j}}{  \sum\limits_{c \in \mathbb{C}} \sum\limits_{k=1}^{D} {Fx_kc}  } } { \frac{\sum\limits_{c \in \mathbb{C}} F_{x_ic}}{ \sum\limits_{c \in \mathbb{C}} \sum\limits_{k=1}^{D} {Fx_kc}}} = \frac{ F_{x_{i}c_{j}}}{\sum\limits_{c_k \in \mathbb{C}} F_{x_{i}c_{k}}},
+\end{equation}
+que é o mesmo valor definido por~\cite{Mengle08} para a métrica Medida da Ambiguidade mostrada anteriormente. Entretanto, Mengle et. al não explicita ou mostra nenhum cálculo de como foi feito para alcançar a fórmula da métrica \textsc{AM}. 
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Ganho de Informação}
+\label{subsubsection::ig}
+
+O Ganho de Informação (\textit{Information Gain}, \textsc{IG}) mede a diminuição da entropia quando um atributo é usado ou não (\cite{Yang97}). A entropia é uma medida utilizada no campo da Ciência da Informação que tenta quantificar a desordem, a imprevisibilidade. Quanto maior a entropia, mais difícil é prever um resultado, portanto a métrica \textsc{IG} atribui valores mais elevados para os atributos que diminuam o valor da entropia, facilitando descobrir a qual classe um exemplo pertence. O Ganho da Informação pode ser calculado da seguinte forma:
+\begin{equation}\label{eqn::ig}
+ \textsc{IG}(x_i, c_j) = \sum_{c \in \{c_j, \overline{c_j}\}}\sum_{x \in \{x_i, \overline{x_i}\}} \textsc{P}(x|c) \cdot \log_2\frac{\textsc{P}(x|c)}{ \textsc{P}(x) \cdot \textsc{P}(c)}.
+\end{equation}
+
+\subsubsection{Máximo Ganho de Informação}
+\label{subsubsection::maxig}
+
+Assim como feito por outras métricas globais, definimos:
+
+\begin{equation}\label{eqn::maxdom}
+\textsc{MaxIG}(x_i) = \textsc{IG}(x_i,c_j) \; \; | \;\; \textsc{IG}(x_i, c_j) > \textsc{IG}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{\textit{Cross Entropy}}
+\label{subsubsection::}
+
+\textit{Cross Entropy} (\textsc{CE}), assim como o Índice de Gini Melhorado, Seção~\ref{subsubsection::gini}, apresenta um atributo como parâmetro. Novamente, necessitamos aproximar o calculamos $P(c|x_i)$, pois esse já é o resultado do algoritmo \textit{Naïve Bayes} e, portanto, não o teríamos enquanto estamos calculando a credibilidade de um atributo em relação a uma classe. Assim como enunciado por~\cite{Koller97} e adaptado para seleção de atributos em~\cite{Mladenic98}, essa métrica pode mensurar a credibilidade de um atributo $x_i$ pela seguinte fórmula:
+\begin{equation}\label{eqn::ce}
+ \textsc{CE}(x_i) =  \textsc{P}(x_i) \cdot \sum_{c \in \mathbb{C}} \textsc{P}(c|x_i) \cdot \log_2 \frac{ \textsc{P}(c|x_i) } {\textsc{P}(c) }
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{CHI-Quadrado}
+\label{subsubsection::chi}
+
+O teste \textit{CHI-quadrado} (ou $\chi^2$) é utilizado no campo da Estatística para testar a independência entre duas variáveis aleatórias. Quando usado para seleção de atributos, tipicamente temos que as duas variáveis aleatórias são a a ocorrência de um atributo $A_i$ com valor $x_i$ e a ocorrência de uma classe $c_j$, ver~\cite{Zheng03}. Logo,
+\begin{equation}\label{eqn::chi}
+  \textsc{CHI}(x_i, c_j) = N \cdot \frac{ [ \textsc{P}(x_i|c_j) \cdot \textsc{P}(\overline{x_i}|\overline{c_j}) - \textsc{P}(x_i|\overline{c_j}) \cdot \textsc{P}(\overline{x_i}|c_j) ]^2 } {\textsc{P}(x_i) \cdot \textsc{P}(\overline{x_i}) \cdot \textsc{P}(c_j) \ \cdot \textsc{P}(\overline{c_j}) }.
+\end{equation}
+Valores próximos de zero indicam a falta de relação entre $x_i$ e $c_j$, enquanto valores próximos a um indicam tanto uma correlação positiva (quando ambas variáveis aumentam ou diminuem seus valores juntas), quanto uma correlação negativa (significando que uma variável aumenta seu valor enquanto a outra diminui).
+
+\subsubsection{Máximo CHI-Quadrado}
+\label{subsubsection::maxchi}
+
+Assim como feito por outras métricas globais, definimos:
+\begin{equation}\label{eqn::maxchi}
+\textsc{MaxCHI}(x_i) = \textsc{CHI}(x_i,c_j) \; \; | \;\; \textsc{CHI}(x_i, c_j) > \textsc{CHI}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Coeficiente de Correlação}
+\label{subsubsection::cc}
+
+O Coeficiente de Correlação (do inglês, \textit{Correlation Coefficient}, \textsc{CC}) é uma métrica de seleção de atributos, variante da métrica \textit{CHI-Quadrada}, Seção~\ref{subsubsection::chi}. Definida por~\cite{Ng97}, temos que $(CC)^2 = \chi^2$, logo:
+\begin{equation}\label{eqn::ce}
+   \textsc{CC}(x_i, c_j) = \sqrt{N} \cdot \frac{ \textsc{P}(x_i|c_j) \cdot \textsc{P}(\overline{x_i}|\overline{c_j}) - \textsc{P}(x_i|\overline{c_j}) \cdot \textsc{P}(\overline{x_i}|c_j) } {\sqrt{ \textsc{P}(x_i) \cdot \textsc{P}(\overline{x_i}) \cdot \textsc{P}(c_j) \ \cdot \textsc{P}(\overline{c_j}) } }.
+\end{equation}
+Os valores positivos para CC correspondem a pertinência do valor de um atributo a uma classe, enquanto valores negativos indicam a não pertinência. Quanto mais positivo (negativo) são os valores de CC, mais fortemente o atributo é relacionado (não relacionado) a uma classe. Para fins de seleção de atributo, valores mais elevados de CC são os mais interessantes, pois mostram uma correlação positiva entre um atributo e uma classe. Em contraste com CC, $\chi^2$ também considera importantes correlações negativas entre atributos e classes, o que acaba resultando que atributos que fortemente indicam a pertinência a uma classe são tão importantes quanto os que fortemente indicam a não pertinência.
+
+\subsubsection{Máximo Coeficiente de Correlação}
+\label{subsubsection::maxcc}
+
+Assim como feito por outras métricas globais, definimos:
+\begin{equation}\label{eqn::maxcc}
+\textsc{MaxCC}(x_i) = \textsc{CC}(x_i,c_j) \; \; | \;\; \textsc{CC}(x_i, c_j) > \textsc{CC}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
+\end{equation}
+
+
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Coeficiente GSS}
+\label{subsubsection::gss}
+O coeficiente Galavotti–Sebastiani–Simi (GSS), introduzido por~\cite{Galavotti00}, é bastante similar a $\chi^2$ e pode ser definido como:
+\begin{equation}\label{eqn::gss}
+   \textsc{GSS}(x_i, c_j) = \textsc{P}(x_i|c_j) \cdot \textsc{P}(\overline{x_i}|\overline{c_j}) - \textsc{P}(x_i|\overline{c_j}) \cdot \textsc{P}(\overline{x_i}|c_j).
+\end{equation}
+Ele se mostra uma forma bastante simplificada do $\chi^2$, levando em consideração somente parte do denominador e não utilizando fator $N$, dito ser dispensável pelos autores dessa métrica. Novamente temos que valores positivos correspondem à correlação de um atributo a uma categoria e, negativos, à falta de correlação. 
+
+\subsubsection{Máximo Coeficiente GSS}
+\label{subsubsection::maxgss}
+
+Assim como feito por outras métricas globais, definimos:
+\begin{equation}\label{eqn::maxgss}
+\textsc{MaxGSS}(x_i) = \textsc{GSS}(x_i,c_j) \; \; | \;\; \textsc{GSS}(x_i, c_j) > \textsc{GSS}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%-------------------------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{\textit{Odds Ratio}}
+\label{subsubsection::or}
+
+Proposta originalmente por~\cite{Rijsbergen79}, a métrica \textit{Odds Ratio} (\textsc{OR}), também é uma métrica amplamente utilizada para seleção de atributos. A ideia básica é que a distribuição de atributos em exemplos relevantes é diferente da distribuição de atributos em exemplos não relevantes. Isso quer dizer que podemos definir dois eventos A e B e calculamos a probabilidade da ocorrência de A dividida pela probabilidade da não ocorrência de A e a comparamos com a probabilidade da ocorrência de B dividida pela probabilidade da não ocorrência de B:
+\begin{equation}\label{eqn::or}
+   \textsc{OR}(A, B) = \frac{\frac{A}{1-A}} {\frac{B}{1-B}} = \frac{ A \cdot ( 1 - B )} { B \cdot ( 1 - A ) } .
+\end{equation}
+Uma razão de chances de 1.0 indica que ocorrer A ou B é igualmente provável, uma razão maior do que um indica que ocorrer A é mais provável, enquanto que uma razão de chances menor do que 1 indica que o evento B tem uma probabilidade maior de ocorrer.
+
+A razão de chances tem sido utilizada para selecionamento de atributos por \cite{Mladenic98} fazendo com que A seja $P(x_i|c_j)$ e B seja $P(x_i|\overline{c_j})$. Logo,
+\begin{equation}\label{eqn::or}
+   \textsc{OR}(x_i, c_j) = \frac{ \textsc{P}(x_i|c_j) \cdot [ 1.0 - \textsc{P}(x_i|\overline{c_j}) ] }{ [ 1.0 - \textsc{P}(x_i|c_j) ] \cdot \textsc{P}(x_i|\overline{c_j})}.
+\end{equation}
+Logo valores maiores que um \textsc{OR} indicam que uma maior chance de $x_i$ estar relacionado com $c_j$, enquanto valores menores que um indicam que justamente o contrário.
+
+\subsubsection{MaxOR}
+\label{subsubsection::maxor}
+Assim como feito por outras métricas globais, definimos:
+\begin{equation}\label{eqn::maxor}
+\textsc{MaxOR}(x_i) = \textsc{OR}(x_i,c_j) \; \; | \;\; \textsc{OR}(x_i, c_j) > \textsc{OR}(x_i, c_k), \; \forall\ c_k\ \in\ \mathbb{C}.
+\end{equation}
+
+

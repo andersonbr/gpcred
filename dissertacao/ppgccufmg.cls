@@ -837,13 +837,13 @@
         ao comando \texttt{\textbackslash ppgccufmg}.\par
       }
     \else
-      \begingroup
-        \setlength{\TPHorizModule}{\ppgcc@approvalwidth}%
-        \begin{textblock}{1}(0,0)
-          \vspace*{\ppgcc@approvalvertadjust}%
+      %\begingroup
+      %  \setlength{\TPHorizModule}{\ppgcc@approvalwidth}%
+      %  \begin{textblock}{1}(0,0)
+      %    \vspace*{\ppgcc@approvalvertadjust}%
           \noindent\includegraphics[width=\ppgcc@approvalwidth]{\ppgcc@approval}
-        \end{textblock}
-      \endgroup
+      %  \end{textblock}
+      %\endgroup
     \fi
 
     \end{singlespace}

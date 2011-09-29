@@ -1,0 +1,97 @@
+
+\begin{table}[h]
+\centering
+\caption{Experimentos mostrando a micro$F_1$ ao variar a função de \textit{fitness}.}
+\label{tab::fitness-micro}
+\begin{footnotesize}
+\begin{tabular}{|c||c|c|c|}
+\toprule
+\multirow{2}{*}{\textbf{Bases}} & \multicolumn{3}{c|}{\textbf{Função de Fitness}}\tabularnewline
+\cline{2-4} 
+ & \textbf{Micro$F_1$} & \textbf{Macro$F_1$} & \textbf{Micro$F_1$ + Macro$F_1$}\tabularnewline
+\midrule
+\hline
+ACM & 74.33 \textpm{} 0.72 & 72.96 \textpm{} 0.98 (-1.84 \triangBAD) & 73.99 \textpm{} 0.80 (-0.45 \ball)\tabularnewline
+\hline 
+20ng & 89.06 \textpm{} 0.15 & 87.92 \textpm{} 1.59 (-0.01 \ball) & 87.65 \textpm{} 2.12 (-0.32 \ball)\tabularnewline
+\hline 
+Ohsumed & 69.34 \textpm{} 0.55 & 68.83 \textpm{} 1.47 (-0.73 \ball) & 69.76 \textpm{} 1.19 (0.60 \ball)\tabularnewline
+\hline 
+Reuters & 94.60 \textpm{} 0.44 & 93.96 \textpm{} 0.75 (-0.67 \ball) & 94.59 \textpm{} 0.50 (-0.01 \ball)\tabularnewline
+\bottomrule
+\end{tabular}
+\end{footnotesize}
+\end{table}
+
+
+\begin{table}[h]
+\centering
+\caption{Experimentos mostrando a macro$F_1$ ao variar a função de \textit{fitness}.}
+\label{tab::fitness-macro}
+\begin{footnotesize}
+\begin{tabular}{|c||c|c|c|}
+\toprule
+\multirow{2}{*}{\textbf{Bases}} & \multicolumn{3}{c|}{\textbf{Função de Fitness}}\tabularnewline
+\cline{2-4} 
+ & \textbf{Micro$F_1$} & \textbf{Macro$F_1$} & \textbf{Micro$F_1$ + Macro$F_1$}\tabularnewline
+\midrule
+\hline
+ACM & 59.72 \textpm{} 1.26 & 60.03 \textpm{} 1.45 (0.52 \ball) & 60.20 \textpm{} 1.54 (0.81 \ball)\tabularnewline
+\hline 
+20ng & 88.69 \textpm{} 0.22 & 86.46 \textpm{} 3.80 (-1.06 \ball) & 87.11 \textpm{} 2.47 (-0.32 \ball)\tabularnewline
+\hline 
+Ohsumed & 63.56 \textpm{} 0.89 & 63.62 \textpm{} 1.88 (0.10 \ball) & 64.38 \textpm{} 1.91 (1.30 \ball)\tabularnewline
+\hline 
+Reuters & 89.33 \textpm{} 0.90 & 88.04 \textpm{} 0.73 (-1.44 \triangBAD) & 89.08 \textpm{} 0.83 (-0.28 \ball)\tabularnewline
+\bottomrule
+\end{tabular}
+\end{footnotesize}
+\end{table}
+
+%\begin{table}[h]
+%\centering
+%\caption{Experimentos mostrando a micro$F_1$ variando a função de \textit{fitness}.}
+%\label{tab::fitness-micro}
+%\begin{footnotesize}
+%\begin{tabular}{|c|c|c|c|c|}
+%\toprule
+%\multirow{2}{*}{\textbf{Bases}} & \multirow{2}{*}{\textbf{Linha de Base}} & \multicolumn{3}{c|}{\textbf{Funcão de Fitness}}\tabularnewline
+%\cline{3-5} 
+% &  & \textbf{Micro$F_1$} & \textbf{Macro$F_1$} & \textbf{Macro$F_1$ + Micro$F_1$}\tabularnewline
+%\midrule
+%ACM & 73.63 \textpm{} 0.91 & 74.33 \textpm{} 0.72 (0.95 \ball) & 72.96 \textpm{} 0.98 (-0.91 \ball) & 73.99 \textpm{} 0.80 (0.49 \ball)\tabularnewline
+%\hline 
+%20NG & 84.94 \textpm{} 0.58 & 89.06 \textpm{} 0.15 (4.85 \triangOK) & 87.92 \textpm{} 1.59 (3.61 \triangOK) & 88.71 \textpm{} 0.14 (4.43 \triangOK)\tabularnewline
+%\hline 
+%Ohsumed & 66.56 \textpm{} 0.66 & 69.34 \textpm{} 0.55 (4.19 \triangOK) & 68.83 \textpm{} 1.47 (3.42 \triangOK) & 69.76 \textpm{} 1.19 (4.81 \triangOK)\tabularnewline
+%\hline 
+%Reuters & 93.13 \textpm{} 0.29 & 94.60 \textpm{} 0.44 (1.57 \triangOK) & 93.96 \textpm{} 0.78 (0.89 \triangOK) & 94.59 \textpm{} 0.50 (1.56 \triangOK)\tabularnewline
+%\bottomrule
+%\end{tabular}
+%\end{footnotesize}
+%\end{table}
+
+%\begin{table}[h]
+%\centering
+%\caption{Experimentos mostrando a macro$F_1$ variando a função de \textit{fitness}.}
+%\label{tab::fitness-macro}
+%\begin{footnotesize}
+%\begin{tabular}{|c|c|c|c|c|}
+%\toprule
+%\multirow{2}{*}{\textbf{Bases}} & \multirow{2}{*}{\textbf{Linha de Base}} & \multicolumn{3}{c|}{\textbf{Funcão de Fitness}}\tabularnewline
+%\cline{3-5} 
+% &  & \textbf{Micro$F_1$} & \textbf{Macro$F_1$} & \textbf{Macro$F_1$ + Micro$F_1$}\tabularnewline
+%\midrule
+%ACM & 57.26 \textpm{} 0.93 & 59.72 \textpm{} 1.26 (4.30 \triangOK) & 60.03 \textpm{} 1.45 (4.84 \triangOK) & 60.21 \textpm{} 1.54 (5.15 \triangOK)\tabularnewline
+%\hline 
+%20NG & 83.68 \textpm{} 0.82 & 88.69 \textpm{} 0.22 (5.99 \triangOK) & 86.46 \textpm{} 3.80 (3.39 \triangOK) & 88.34 \textpm{} 0.06 (5.57 \triangOK)\tabularnewline
+%\hline 
+%Ohsumed & 54.76 \textpm{} 1.27 & 63.56 \textpm{} 0.90 (16.06 \triangOK) &  63.62 \textpm{} 1.88 (16.18 \triangOK) & 64.38 \textpm{} 1.90 (17.57 \triangOK)\tabularnewline
+%\hline 
+%Reuters & 81.96 \textpm{} 1.44 & 89.33 \textpm{} 0.90 (8.99 \triangOK) & 88.04 \textpm{} 0.73 (7.42 \triangOK) & 89.08 \textpm{} 0.83 (8.69 \triangOK)\tabularnewline
+%\bottomrule
+%\end{tabular}
+%\end{footnotesize}
+%\end{table}
+
+

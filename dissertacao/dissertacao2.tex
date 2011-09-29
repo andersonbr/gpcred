@@ -1,0 +1,97 @@
+\documentclass[msc]{ppgccufmg}
+
+\usepackage[brazil]{babel}     
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{type1ec}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage[a4paper,
+  portuguese,
+  bookmarks=true,
+  bookmarksnumbered=true,
+  linktocpage,
+  colorlinks,
+  citecolor=black,
+  urlcolor=black,
+  linkcolor=black,
+  filecolor=black,
+  ]{hyperref}
+\usepackage{algorithm}
+%\usepackage{algorithmic}
+\usepackage[noend]{algpseudocode}
+% \usepackage[Algoritmo]{algorithm}
+% \usepackage[noend]{algpseudocode}
+\usepackage{ae}
+\usepackage[square]{natbib}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\bibpunct{[}{]}{;}{a}{,}{,}
+\usepackage{url}
+
+\usepackage{natbib}
+\begin{document}
+
+% O comando a seguir, \ppgccufmg, prove todas as informações relevantes para a
+% classe ppgccufmg. Por favor, consulte a documentação para a descrição de
+% cada chave.
+
+\ppgccufmg{
+  title={TITULO DO MEU TRABALHO},
+  authorrev={Palotti, João Rafael de Moura},
+  cutter={D1234p},
+  cdu={519.6*82.10},
+  university={Universidade Federal de Minas Gerais},
+  course={Ciência da Computação},
+  address={Belo Horizonte},
+  date={2010-10},
+  keywords={Classificação, Mineração de Dados, Computação Evolucionária, Programação Genética},
+  advisor={Gisele Lobo Pappa},
+  abstract={Resumo}{resumo},
+  abstract=[english]{Abstract}{abstract},
+%  ack={agradecimentos},
+  epigraphtext={Veni, Vidi, Vici}{Julius Caesar},
+}
+
+%-------------------------------------------------------------
+\chapter{Introdução}
+\label{cap::introducao}
+\input{01_introducao.tex}
+\section{Objetivos}
+\section{Contribuição Desse Trabalho}
+\section{Organização da Dissertação}
+
+%-------------------------------------------------------------
+\chapter{Trabalhos Relacionados}
+\label{cap::related}
+\input{02_related.tex}
+
+%-------------------------------------------------------------
+\input{03_metodo.tex}
+
+%-------------------------------------------------------------
+
+\input{04_cred.tex}
+
+%-------------------------------------------------------------
+\input{05_experimentos.tex}
+
+%-------------------------------------------------------------
+\chapter{Conclusões}
+\label{cap::conclusoes}
+%\input{06_conclusoes.tex}
+
+%-------------------------------------------------------------
+% Aqui vem a parte da bibliografia: use o comando \ufmgbibliography indicando
+% apenas o nome do arquivo .bib (sem a extensao).
+%\ppgccbibliography{references}
+\ppgccbibliography{references}
+
+\end{document}
+

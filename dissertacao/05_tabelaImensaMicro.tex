@@ -1,0 +1,91 @@
+
+\begin{table}[h]
+\centering
+\caption{Avaliação da Micro$F_1$ com a aplicação de diversas métricas estudadas e o \textsc{PG}.}
+\label{tab::imensamicro}
+\begin{scriptsize}
+\begin{adjustwidth}{-1cm}{-1cm}% adjust the L and R margins by 1 inch
+\begin{tabular}{|c||c|c|c|c|}
+%\begin{tabular*}{|c|c|c|c|c|}{@{\extracolsep{\fill}}lllr}
+
+\toprule
+\textbf{Métrica} & \textbf{ACM-DL} & \textbf{20ng} & \textbf{Ohsumed} & \textbf{Reuters}\tabularnewline
+\midrule
+\hline
+Linha de Base & 73.63 \textpm{} 2.02 & 84.94 \textpm{} 0.58 & 66.56 \textpm{} 0.66 & 93.13 \textpm{} 0.29\tabularnewline
+\hline 
+\textbf{SVM} &
+71.02 \textpm{} 0.77 &
+80.03 \textpm{} 0.33 & 
+70.39 \textpm{} 1.08 &
+96.19 \textpm{} 0.33\tabularnewline
+\hline 
+\hline 
+\rowcolor{LightCyan}
+\textsc{PG} & 74.33 \textpm{} 0.72 (0.95 \ball) & 89.06 \textpm{} 0.15 (4.85 \triangOK) & 69.34 \textpm{} 0.55 (4.19 \triangOK) & 94.60 \textpm{} 0.44 (1.57 \triangOK)\tabularnewline
+\hline 
+TF(t) & 66.16 \textpm{} 5.91 (-10.14 \triangBAD) & 85.44 \textpm{} 0.69 (0.68 \ball) & 64.73 \textpm{} 3.16 (-2.74 \ball) & 86.32 \textpm{} 9.91 (-7.31 \ball)\tabularnewline
+\hline 
+TFClasse(t,c) & 66.93 \textpm{} 0.85 (-9.09 \triangBAD) & 86.74 \textpm{} 0.39 (2.21 \triangOK) & 67.06 \textpm{} 0.55 (0.76 \ball) & 92.80 \textpm{} 0.75 (-0.35 \ball)\tabularnewline
+\hline 
+DF(t) & 66.81 \textpm{} 0.64 (-9.26 \triangBAD) & 87.53 \textpm{} 0.28 (3.15 \triangOK) & 67.05 \textpm{} 0.71 (0.75 \ball) & 92.79 \textpm{} 0.77 (-0.37 \ball)\tabularnewline
+\hline 
+DFClasse(t,c) & 66.99 \textpm{} 0.82 (-9.02 \triangBAD) & 87.80 \textpm{} 0.31 (3.47 \triangOK) & 67.07 \textpm{} 0.55 (0.78 \ball) & 92.80 \textpm{} 0.75 (-0.35 \ball)\tabularnewline
+\hline 
+IDF(t) & 69.60 \textpm{} 0.79 (-5.47 \triangBAD) & 86.64 \textpm{} 0.43 (2.10 \triangOK) & 60.43 \textpm{} 0.72 (-9.21 \triangBAD) & 94.29 \textpm{} 0.35 (1.25 \triangOK)\tabularnewline
+\hline 
+IDFClasse(t,c) & 67.07 \textpm{} 0.77 (-8.91 \triangBAD) & 21.44 \textpm{} 32.33 (-74.73 \triangBAD) & 67.28 \textpm{} 0.42 (1.09 \triangOK) & 92.74 \textpm{} 0.46 (-0.42 \ball)\tabularnewline
+\hline 
+TFIDF(t,c) & 72.84 \textpm{} 1.05 (-1.06 \triangBAD) & 85.04 \textpm{} 0.30 (0.21 \ball) & 66.38 \textpm{} 0.70 (-0.27 \ball) & 93.77 \textpm{} 0.36 (0.68 \triangOK)\tabularnewline
+\hline 
+MaxTFIDF(t) & 65.40 \textpm{} 0.51 (-11.18 \triangBAD) & 81.25 \textpm{} 1.97 (-4.26 \triangBAD) & 62.56 \textpm{} 0.49 (-6.00 \triangBAD) & 87.60 \textpm{} 1.07 ( -5.94 \ball)\tabularnewline
+\hline 
+TFICF(t,c) & 58.75 \textpm{} 1.83 (-20.20 \triangBAD) & 84.99 \textpm{} 0.31 (0.16 \ball) & 60.43 \textpm{} 0.72 (-9.21 \triangBAD) & 72.41 \textpm{} 1.73 (-22.25 \triangBAD)\tabularnewline
+\hline 
+MaxTFICF(t) & 23.81 \textpm{} 1.29 (-67.66 \triangBAD) & 80.23 \textpm{} 1.62 (-5.45 \triangBAD) & 34.37 \textpm{} 0.40 (-48.35 \triangBAD) & 24.28 \textpm{} 1.02 (-73.93 \ball)\tabularnewline
+\hline 
+CTD(t,c) & 58.75 \textpm{} 1.83 (-20.20 \triangBAD) & 84.99 \textpm{} 0.31 (0.16 \ball) & 60.43 \textpm{} 0.72 (-9.21 \triangBAD) & 72.41 \textpm{} 1.73 (-22.25 \triangBAD)\tabularnewline
+\hline 
+MaxCTD(t) & 37.69 \textpm{} 2.08 (-48.81 \triangBAD) & 80.14 \textpm{} 0.45 (-5.56 \triangBAD) & 48.34 \textpm{} 0.80 (-27.36 \triangBAD) & 61.78 \textpm{} 1.59 (-33.67 \triangBAD)\tabularnewline
+\hline 
+DOM(t,c) & 73.38 \textpm{} 0.97 (-0.33 \triangBAD) & 84.65 \textpm{} 0.37 (-0.24 \ball) & 64.15 \textpm{} 0.59 (-3.62 \triangBAD) & 93.43 \textpm{} 0.38 (0.31 \ball)\tabularnewline
+\hline 
+MaxDom(t) & 72.25 \textpm{} 0.70 (-1.87 \triangBAD) & 85.66 \textpm{} 0.31 (0.94 \triangOK) & 67.99 \textpm{} 0.58 (2.15 \triangOK) & 92.73 \textpm{} 0.64 (-0.43 \ball)\tabularnewline
+\hline 
+AM(t,c) & 73.13 \textpm{} 1.05 (-0.68 \triangBAD) & 81.98 \textpm{} 0.48 (-1.96 \triangBAD) & 64.21 \textpm{} 0.60 (-3.52 \triangBAD) & 93.43 \textpm{} 0.38 (0.31 \ball)\tabularnewline
+\hline 
+MaxAM(t) & 72.17 \textpm{} 0.67 (-1.97 \triangBAD) & 85.36 \textpm{} 0.18 (0.59 \ball) & 67.97 \textpm{} 0.61 (2.12 \triangOK) & 92.73 \textpm{} 0.64 (-0.43 \ball)\tabularnewline
+\hline 
+P(t|c) & 72.96 \textpm{} 1.06 (-0.90 \triangBAD) & 84.93 \textpm{} 1.32 (0.08 \ball) & 63.33 \textpm{} 1.09 (-4.84 \triangBAD) & 93.32 \textpm{} 0.38 (0.20 \ball)\tabularnewline
+\hline 
+P($\overline{t}$|c) & 63.43 \textpm{} 0.90 (-13.85 \triangBAD) & 86.22 \textpm{} 0.29 (1.60 \triangOK) & 62.51 \textpm{} 0.79 (-6.08 \triangBAD) & 92.84 \textpm{} 0.43 (-0.32 \ball)\tabularnewline
+\hline 
+%\rowcolor{LightCyan}
+GINI(t) & 71.35 \textpm{} 0.77 (-3.10 \triangBAD) & 84.81 \textpm{} 0.15 (-0.06 \ball) & 68.82 \textpm{} 0.47 (3.41 \triangOK) & 92.45 \textpm{} 0.60 (-0.73 \ball) \tabularnewline
+\hline 
+IG(t,c) & 71.31 \textpm{} 0.65 (-3.15 \triangBAD) & 86.85 \textpm{} 0.34 (2.34 \triangOK) & 68.18 \textpm{} 0.58 (2.45 \triangOK) & 94.04 \textpm{} 0.46 (0.97 \triangOK)\tabularnewline
+\hline 
+MaxIG(t) & 68.49 \textpm{} 0.60 (-6.98 \triangBAD) & 87.62 \textpm{} 0.34 (3.25 \triangOK) & 67.74 \textpm{} 0.66 (1.77 \triangOK) & 93.61 \textpm{} 0.70 (0.51 \ball)\tabularnewline
+\hline 
+CE(t) & 44.65 \textpm{} 0.34 (-39.35 \triangBAD) & 54.16 \textpm{} 1.48 (-36.17 \triangBAD) & 31.86 \textpm{} 0.13 (-52.13 \triangBAD) & 76.72 \textpm{} 0.44 (-17.67 \triangBAD)\tabularnewline
+\hline 
+CHI(t,c) & 69.86 \textpm{} 0.74 (-5.12 \triangBAD) & 87.23 \textpm{} 0.39 (2.79 \triangOK) & 67.99 \textpm{} 0.54 (2.16 \triangOK) & 93.76 \textpm{} 0.54 (0.67 \triangOK)\tabularnewline
+\hline 
+MaxCHI(t) & 68.41 \textpm{} 0.58 (-7.09 \triangBAD) & 87.55 \textpm{} 0.29 (3.17 \triangOK) & 67.35 \textpm{} 0.64 (1.19 \triangOK) & 93.22 \textpm{} 0.81 (0.09 \ball)\tabularnewline
+\hline 
+CC(t,c) & 69.69 \textpm{} 0.70 (-5.35 \triangBAD) & 72.19 \textpm{} 7.43 (-14.93 \triangBAD) & 67.96 \textpm{} 0.54 (2.11 \triangOK) & 93.58 \textpm{} 0.55 (0.66 \ball)\tabularnewline
+\hline 
+MaxCC(t) & 1.49 \textpm{} 0.05 (-97.98 \triangBAD) & 5.29 \textpm{} 0.02 (-93.77 \triangBAD) & 7.26 \textpm{} 0.01 (-89.10 \triangBAD) & 5.22 \textpm{} 0.05 (-94.40 \triangBAD)\tabularnewline
+\hline 
+GSS(t,c) & 69.65 \textpm{} 0.71 (-5.40 \triangBAD) & 72.19 \textpm{} 7.43 (-14.93 \triangBAD) & 67.95 \textpm{} 0.56 (2.10 \triangOK) & 93.77 \textpm{} 0.54 (0.68 \triangOK)\tabularnewline
+\hline 
+MaxGSS(t) & 1.48 \textpm{} 0.06 (-97.99 \triangBAD) & 5.29 \textpm{} 0.02 (-93.77 \triangBAD) & 7.26 \textpm{} 0.01 (-89.10 \triangBAD) & 5.19 \textpm{} 0.04 (-94.42 \triangBAD)\tabularnewline
+\hline 
+OR(t,c) & 68.54 \textpm{} 0.95 (-6.91 \triangBAD) & 84.77 \textpm{} 0.19 (-0.11 \ball) & 65.59 \textpm{} 0.84 (-1.45 \ball) & 92.42 \textpm{} 0.59 (-0.76 \triangBAD)\tabularnewline
+\hline 
+MaxOR(t) & 48.15 \textpm{} 0.43 (-34.60 \triangBAD) & 65.20 \textpm{} 0.71 (-23.17 \triangBAD) & 34.75 \textpm{} 0.14 (-47.79 \triangBAD) & 79.99 \textpm{} 0.27 (-14.12 \triangBAD)\tabularnewline
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{scriptsize}
+\end{table}

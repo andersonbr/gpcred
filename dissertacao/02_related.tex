@@ -2,40 +2,40 @@
 \chapter{Trabalhos Relacionados}
 \label{cap::related}
 
-Como previamente apontado, um dos principais objetivos dessa dissertação é definir o conceito de credibilidade no contexto de classificação automática, portanto reservamos a 
+Como previamente apontado, um dos principais objetivos dessa dissertação é definir o conceito de credibilidade no contexto de classificação automática, portanto reservamos a
 Seção~\ref{sec::credibilidade} para mostrarmos como a credibilidade é vista e utilizada na literatura.
 Exploramos duas dimensões (ou fatores) para conseguirmos aproximar o valor da credibilidade de um exemplo presente no treinamento: os seus atributos e os seus relacionamentos.
 Discutimos sobre os atributos na Seção~\ref{sec::supervised} e sobre os relacionamentos na Seção~\ref{sec::classificacaografos}.
-Finalmente, a Seção~\ref{sec::pg} aborda a Programação Genética, que empregamos para combinar as diversas métricas de credibilidade usadas. 
+Finalmente, a Seção~\ref{sec::pg} aborda a Programação Genética, que empregamos para combinar as diversas métricas de credibilidade usadas.
 
 
 \section{Credibilidade}
 \label{sec::credibilidade}
 
-Uma das primeiras pesquisas sobre a credibilidade data dos anos 50 (\cite{Hovland51}). Naquele tempo, existia um foco grande para a credibilidade de uma fonte, por exemplo, uma pessoa que emitia uma mensagem no rádio. Observava-se a relação entre a credibilidade da fonte e os receptores da mensagem passada pela mesma. Era uma época bem próxima a Segunda Guerra Mundial e a ênfase estava no estudo do uso da \textit{propaganda} como uma arma do governo dos Estados Unidos para ganhar o apoio das massas populares.
+Uma das primeiras pesquisas sobre a credibilidade data dos anos 50 (\cite{Hovland51}). Naquele tempo, existia um maior foco para a credibilidade de uma fonte, por exemplo, uma pessoa que emitia uma mensagem no rádio. Observava-se a relação entre a credibilidade da fonte e os receptores da mensagem passada pela mesma. Era uma época bem próxima a Segunda Guerra Mundial e a ênfase estava no estudo do uso da \textit{propaganda} como uma arma do governo dos Estados Unidos para ganhar o apoio das massas populares.
 
-Na Ciência da Computação, o termo credibilidade apareceu pela primeira vez em \cite{Tseng99}, no qual foi estudado o 
+Na Ciência da Computação, o termo credibilidade apareceu pela primeira vez em \cite{Tseng99}, no qual foi estudado o
 que se entendia por credibilidade de computadores do ponto de vista dos humanos.
-Eles destacaram que, embora houvessem outras dimensões~\footnote{Como já mostramos, ``dimensões'' e ``fatores'' são termos que aparecem com frequência em vários trabalhos relacionados a credibilidade e possuem o mesmo significado.} para o cálculo da credibilidade de um objeto, duas componentes são principais: a fidelidade (foi usado o termo inglês \textit{trustworthiness}) e a perícia (do termo inglês \textit{expertise}).
+Eles destacaram que, embora existissem outras dimensões~\footnote{Como já mostramos, ``dimensões'' e ``fatores'' são termos que aparecem com frequência em vários trabalhos relacionados a credibilidade e possuem o mesmo significado.} para o cálculo da credibilidade de um objeto, dois componentes são principais: a fidelidade (foi usado o termo inglês \textit{trustworthiness}) e a perícia (do termo inglês \textit{expertise}).
 Um ponto interessante dessa pesquisa é que são mostrados exemplos de como a credibilidade é tratada em diversos cenários em que ela é crucial, desde a interação de humanos com uma máquina de calcular de bolso até a informação provida por páginas na \textit{Web}.
 Uma dessas situações, por exemplo, refere-se a um corretor ortográfico automático que teria sua credibilidade abalada se informasse que este texto não apresenta nenhum erro ortográfico e, posteriormente, algum erro fosse encontrado.
 
-A credibilidade se tornou um assunto multidisciplinar (\cite{Rieh07}) e alvo de muitas pesquisa relacionadas com a \textit{Web} e com as fontes de informação presentes na mesma (\cite{Sundar99}, \cite{Freeman04}, \cite{Flanagin07}, entre outros).
-Uma interessante definição de muitos trabalhos é que a credibilidade não é uma propriedade \textbf{exclusiva} da informação em si ou da fonte de informação, mas sim uma propriedade que é julgada pelo receptor daquela informação (\cite{Sundar99}, \cite{Freeman04}). Ou seja, uma mesma informação poderia ter uma credibilidade diferente dependendo de quem acessa aquela informação.
+A credibilidade se tornou um assunto multidisciplinar (\cite{Rieh07}) e alvo de muitas pesquisas relacionadas com a \textit{Web} e com as fontes de informação presentes na mesma (\cite{Sundar99}, \cite{Freeman04}, \cite{Flanagin07}, entre outros).
+Uma definição interessante de muitos trabalhos é que a credibilidade não é uma propriedade \textbf{exclusiva} da informação em si ou da fonte de informação, mas sim uma propriedade que é julgada pelo receptor daquela informação (\cite{Sundar99}, \cite{Freeman04}). Ou seja, uma mesma informação poderia ter uma credibilidade diferente dependendo de quem acessa aquela informação.
 
-Mesmo sabendo que a credibilidade apresenta um aspecto inerentemente subjetivo, os pesquisadores procuram definir medidas objetivas para quantificá-la. Isso foi feito ao estender as dimensões previamente conhecidas, fidelidade e perícia, a fim de se obter mais métricas para mensurar a credibilidade da informação contida na \textit{Web} (\cite{Flanagin07}). 
+Mesmo sabendo que a credibilidade apresenta um aspecto inerentemente subjetivo, os pesquisadores procuram definir medidas objetivas para quantificá-la. Isso foi feito ao estender as dimensões previamente conhecidas, fidelidade e perícia, a fim de se obter mais métricas para mensurar a credibilidade da informação contida na \textit{Web} (\cite{Flanagin07}).
 Inspirados por outros trabalhos que já haviam buscado no \textit{layout} de uma página uma opção para dimensões para credibilidade
  (\cite{Palmer00}, \cite{Fogg01}), \cite{Flanagin07} definiram a credibilidade de uma página como um valor composto de dimensões: o conteúdo, o \textit{design} e os patrocinadores da página. Um resultado interessante foi mostrar como propagandas comerciais podem afetar negativamente a credibilidade da informação contida na página e que, de forma geral, páginas conhecidas de notícias têm maior credibilidade que páginas de comércio eletrônico e que essas, por sua vez, têm maior credibilidade que páginas pessoais.
 
 Os fatores que afetam a credibilidade dependem fortemente do contexto da utilização e muitos trabalhos abordam domínios específicos.
-Destacamos os estudos que avaliam como usuários veem a informação contida na enciclopédia \textit{online} Wikipédia (\cite{Chesney06}, \cite{Lopes08}, \cite{Kubiszewski11}) e em páginas de saúde e medicina (\cite{Linderg98}, \cite{Eastin01}, \cite{Eysenbach02}, \cite{Rains09}). Por exemplo, em \cite{Eysenbach02} 
+Destacamos os estudos que avaliam como usuários veem a informação contida na enciclopédia \textit{online} Wikipédia (\cite{Chesney06}, \cite{Lopes08}, \cite{Kubiszewski11}) e em páginas de saúde e medicina (\cite{Linderg98}, \cite{Eastin01}, \cite{Eysenbach02}, \cite{Rains09}). Por exemplo, em \cite{Eysenbach02}
 identificou-se que, para que um usuário confie no conteúdo de uma página relacionada a saúde, ele analisa fatores como \textit{emails} informados, as credenciais e as qualificações dos médicos encontradas na página.
 
 O trabalho proposto aqui, em contraste com todos acima citados, considera a credibilidade do ponto de vista de um classificador ao invés do usuário. Ao construir um modelo de classificação, o classificador, da mesma forma que um usuário dos sistemas citados acima, pode considerar um exemplo mais crível que outros. Procuramos construir uma função matemática que seja capaz de capturar em um valor real a credibilidade de um exemplo contido no treinamento, de forma que exemplos com baixa credibilidade sejam menos influentes que exemplos com alta credibilidade.
 
 Como já mencionado, a credibilidade é uma característica definida por algumas dimensões que são relevantes ao problema. Para uma página \textit{Web}, esses fatores compreendem entre várias outras coisas o \textit{design} da página, seu patrocinador, além é claro, do conteúdo. No contexto de classificação, esses fatores têm que ser adaptados. Nesse trabalho, exploramos os dois fatores que consideramos os mais importantes: os atributos e os relacionamentos dos exemplos. Dessa forma, do mesmo modo que um usuário olha para o \textit{design} e o conteúdo de uma página para ponderar sobre a credibilidade da informação provida naquela fonte, um classificador se baseia nos atributos e nos relacionamentos de um exemplo de treinamento para considerar a informação contida nele mais importante ou não na construção de um modelo de classificação.
 
-%Realizando uma analogia com a \textit{Web}, os atributos de um exemplo seriam como o \textit{design} de uma página e os relacionamentos seriam como os \textit{links} contidos na mesma. Outros fatores relevantes para classificação podem ser incorporados em trabalhos futuros, como é o caso do tempo. Em \cite{Salles10}, os autores exploram a data de criação de documentos para poderem melhorar os modelos de classificação automática de textos criados. Da mesma forma, poderíamos explorar a informação temporal dos exemplos, quando presentes, para alcançar valores de credibilidade mais precisos para eles. 
+%Realizando uma analogia com a \textit{Web}, os atributos de um exemplo seriam como o \textit{design} de uma página e os relacionamentos seriam como os \textit{links} contidos na mesma. Outros fatores relevantes para classificação podem ser incorporados em trabalhos futuros, como é o caso do tempo. Em \cite{Salles10}, os autores exploram a data de criação de documentos para poderem melhorar os modelos de classificação automática de textos criados. Da mesma forma, poderíamos explorar a informação temporal dos exemplos, quando presentes, para alcançar valores de credibilidade mais precisos para eles.
 
 
 \section{Credibilidade dos Atributos}
@@ -46,64 +46,63 @@ Como já mencionado, a credibilidade é uma característica definida por algumas
 A primeira dimensão considerada para medir a credibilidade de um exemplo de treinamento é a de seus atributos. Como esse estudo iniciou-se na tarefa de classificação de documentos, uma linha de pesquisa com abordagem bem próxima a que propomos, é a \textit{Ponderação Supervisionada de Termos} (\textsc{STW} - \textit{Supervised Term Weighting}). Portanto, discutimos aqui alguns importantes trabalhos a respeito desse tema.
 
 Um dos primeiros trabalhos a pesquisar como a ponderação de termos pode trazer significativas melhorias nas tarefas relacionadas a recuperação de informação textuais foi~\cite{Salton88}.
-Eles definiram que três componentes são importantes ao levar em consideração uma métrica de ponderação de termos: um fator referente a frequência dos termos, um fator referente a frequência dos documentos nas classe e uma normalização necessária para que termos muito populares não oprimam outros mais raros.
-Foram estudadas algumas métricas para cada componente e foi apontado que a frequência de um termo (\textsc{TF}) e o inverso da frequência dos documentos nos quais o termo aparece (\textsc{IDF}) formaram a melhor combinação possível para se ponderar um termo em um documento. 
+Eles definiram que três componentes são importantes ao levar em consideração uma métrica de ponderação de termos: um fator referente a frequência dos termos, um fator referente a frequência dos documentos nas classes e uma normalização necessária para que termos muito populares não oprimam outros mais raros.
+Foram estudadas algumas métricas para cada componente e foi apontado que a frequência de um termo (\textsc{TF}) e o inverso da frequência dos documentos nos quais o termo aparece (\textsc{IDF}) formaram a melhor combinação possível para se ponderar um termo em um documento.
 Atualmente, essa métrica é amplamente utilizada também na classificação automática e comumente conhecida como \textsc{TFIDF}.
 
-A métrica \textsc{TFIDF} e suas diversas variações foram posteriormente classificadas como métricas de \textit{Ponderação não supervisionada de termos} (do inglês, \textit{Unsupervised Term Weighting} - \textsc{UTW}) por não levarem em consideração as classes às quais os exemplos de treinamento pertencem. Essa denominação foi usada pela primeira vez no trabalho de \cite{Debole03}, no qual foi definido também o termo \textit{Ponderação Supervisionada de termos} (\textit{Supervised Term Weighting} - \textsc{STW}). 
-Debole \& Sebastiani apontam a existência de três importantes fases às quais todos os classificadores são submetidos: 
+A métrica \textsc{TFIDF} e suas diversas variações foram posteriormente classificadas como métricas de \textit{Ponderação não supervisionada de termos} (do inglês, \textit{Unsupervised Term Weighting} - \textsc{UTW}) por não levarem em consideração as classes às quais os exemplos de treinamento pertencem. Essa denominação foi usada pela primeira vez no trabalho de \cite{Debole03}, no qual foi definido também o termo \textit{Ponderação Supervisionada de termos} (\textit{Supervised Term Weighting} - \textsc{STW}).
+Debole \& Sebastiani apontam a existência de três importantes fases às quais todos os classificadores são submetidos:
 \begin{enumerate}
-\item seleção de atributos (termos, no caso de classificação de documentos);
-\item ponderação de atributos (novamente termos para classificadores textuais);
-\item aprendizado do classificador.
+\item Seleção de atributos (termos, no caso de classificação de documentos);
+\item Ponderação de atributos (novamente termos para classificadores textuais);
+\item Aprendizado do classificador.
 \end{enumerate}
 Os autores perceberam que, tradicionalmente, apenas as fases 1 e 3 levam em conta a relação atributo-classe, e que a fase 2 também poderia utilizar essa importante relação, ao invés de usar métricas como \textsc{TFIDF}.
-%Tradicionalmente, métodos supervisionados de aprendizado afetam somente as fases 1 e 3 e nunca a fase 2. 
-O nome \textit{Supervised Term Weighting} vem exatamente da tentativa de realizar uma ponderação de termos supervisionada (com conhecimento da classe dos exemplos de treino) para classificação de documentos. Eles propõem que os pesos dos termos calculados na primeira fase (seleção) sejam ingredientes ativos na segunda fase (ponderação), ao invés de serem descartados como usualmente é feito. 
+%Tradicionalmente, métodos supervisionados de aprendizado afetam somente as fases 1 e 3 e nunca a fase 2.
+O nome \textit{Supervised Term Weighting} vem exatamente da tentativa de realizar uma ponderação de termos supervisionada (com conhecimento da classe dos exemplos de treino) para classificação de documentos. Eles propõem que os pesos dos termos calculados na primeira fase (seleção) sejam ingredientes ativos na segunda fase (ponderação), ao invés de serem descartados como usualmente é feito.
+
 Dessa forma, foram utilizadas as métricas $\chi^2$ e ganho de informação para selecionar e ponderar os termos dos documentos.
-Por fim, são testadas métricas que buscam capturar relações locais entre termos e classes, representadas como funções $f(t_k, c_k)$, e métricas globais, nas quais temos somente pesos referentes aos termos, $f(t_k)$. 
+Por fim, são testadas métricas que buscam capturar relações locais entre termos e classes, representadas como funções $f(t_k, c_k)$, e métricas globais, nas quais temos somente pesos referentes aos termos, $f(t_k)$.
 Destacamos que, de acordo com a denominação de métricas locais e globais, poderíamos ter uma versão local \textit{$TFIDF(t_k, c_k)$} que considera a frequência de termos somente em uma determinada classe (ou somente os documentos de uma determinada classe no cálculo do \textit{IDF}) e uma versão global \textit{$TFIDF(t_k)$} que é a mais comumente vista na literatura.
 %Ao contrário do que propomos nessa dissertação, Debole \& Sebastiani não exploram as interações entre métricas locais e globais conjuntamente, ou seja, eles não combinam as métricas estudadas.
-
-
 Essa abordagem se popularizou rapidamente, dando origem a vários outros trabalhos como \cite{Lan05}, \cite{Batal09} e \cite{Liu09}.
 %Mais recentemente, diversos trabalhos como \cite{Lan05}, \cite{Batal09} e \cite{Liu09} foram derivados de~\cite{Debole03}.
 
-%Lan et al. 
-\cite{Lan05} realiza experimentos seguindo o mesmo padrão introduzido por~\cite{Salton88}, onde são combinadas diferentes métricas dos três fatores previamente definidos: termos, documentos e normalização. 
-%Experimentos seguindo o mesmo padrão daqueles utilizados em Salton \& Buckley foram feitos, 
-Porém, dessa vez foram introduzidas algumas métricas que selecionavam e ponderavam os termos: $\chi^2$ e \textit{relevance frequency} (\textsc{RF}), sendo essa última criada no respectivo trabalho. Os experimentos realizados com o classificador \textsc{SVM} apontaram que a combinação de \textsc{TF} e \textsc{RF} foi a melhor entre as métricas combinadas, superando todas as combinações \textsc{UTW}. 
+%Lan et al.
+\cite{Lan05} realiza experimentos seguindo o mesmo padrão introduzido por~\cite{Salton88}, onde são combinadas diferentes métricas dos três fatores previamente definidos: termos, documentos e normalização.
+%Experimentos seguindo o mesmo padrão daqueles utilizados em Salton \& Buckley foram feitos,
+Porém, dessa vez foram introduzidas algumas métricas que selecionavam e ponderavam os termos: $\chi^2$ e \textit{relevance frequency} (\textsc{RF}), sendo essa última criada no respectivo trabalho. Os experimentos realizados com o classificador \textsc{SVM} apontaram que a combinação de \textsc{TF} e \textsc{RF} foi a melhor entre as métricas combinadas, superando todas as combinações \textsc{UTW}.
 
 %Batal \& Hauskrecht
 \cite{Batal09} fizeram experimentos similares aos anteriores, mas utilizaram o \textsc{KNN} ao invés do \textsc{SVM}. Seus resultados mostram que o emprego de métricas \textsc{STW} provê significativas melhoras na \textit{micro-$F_1$}, chegando a ter o \textsc{KNN} combinado com \textsc{STW} superando o \textsc{SVM} baseado em \textsc{TFIDF} em todos os testes.
 
-Já em \cite{Liu09}, temos um estudo focado em como 
+Já em \cite{Liu09}, temos um estudo focado em como
 %Liu et al.~
  a ponderação de termos pode melhorar a precisão e revocação em problemas em que existe desbalanceamento no número de exemplos das classes mais e menos populares. Foram empregados os classificadores \textit{Naïve Bayes} e \textsc{SVM} e avaliada a métrica $F_1$ para todas as classes das coleções. Foi observado que classes menos populares têm um aumento substancial da métrica $F_1$ ao utilizar métodos \textsc{STW}, o que resulta em um ganho substancial da métrica \textit{macro-$F_1$}.
 
-Por fim, além dos trabalhos relacionados a \textsc{STW}, destacamos o de \cite{Tang05}. 
-Nele, não existe um estudo da ponderação de termos, mas sim de como podemos melhor algoritmos de seleção de termos.
-Eles investigaram como diferentes métricas de seleção são sensíveis às características da base de dados explorada, sendo que algumas métricas criam um viés para o fato da existência de um certo termo em uma classe (baseadas em probabilidade como $P(t|c)$) enquanto outras tendem a se beneficiar da inexistência (baseadas em $P(\overline{t}|c)$). Os autores também estudam como algumas combinações de métricas de seleção podem se comportar melhor para bases de dados desbalanceadas. 
+Por fim, além dos trabalhos relacionados a \textsc{STW}, destacamos o de \cite{Tang05}.
+Nele, não existe um estudo da ponderação de termos, mas sim de como podemos melhorar algoritmos de seleção de termos.
+Eles investigaram como diferentes métricas de seleção são sensíveis às características da base de dados explorada, sendo que algumas métricas criam um viés para o fato da existência de um certo termo em uma classe (baseadas em probabilidade como $P(t|c)$) enquanto outras tendem a se beneficiar da inexistência (baseadas em $P(\overline{t}|c)$). Os autores também estudam como algumas combinações de métricas de seleção podem se comportar melhor para bases de dados desbalanceadas.
 %Entretanto, eles utilizaram as métricas de seleção apenas para seleção e nunca como pesos para os atributos.
 
-De maneira semelhante ao trabalho de \cite{Tang05}, defendemos que combinar as métricas de seleção pode resultar em uma solução mais robusta. Além disso, assim como feito pelos trabalhos relacionados a \textsc{STW}, acreditamos que a informação da classe dos exemplos de treinamento pode ser crucial e, portanto, deve ser empregado.
-Entretanto, diferentemente dos trabalhos apresentados aqui, não estamos interessados somente no problema de classificação de documentos, mas em classificação automática em geral. 
-Além disso, procuramos resolver com Programação Genética uma das limitações do trabalho de \cite{Tang05}. Eles realizaram algumas combinações simples e específicas, baseadas em multiplicação de métricas de seleção, mas não mostraram se outros tipo de combinações ou envolvendo mais duas métricas poderia resultar em melhores soluções. No Capítulo~\ref{cap::programacao_genetica}, mostramos as várias métricas que empregamos e como podemos combiná-las através de \textsc{PG}. 
+Tendo como base o trabalho de \cite{Tang05}, acreditamos que combinar as métricas de seleção pode resultar em uma solução mais robusta. Além disso, assim como feito pelos trabalhos relacionados a \textsc{STW}, acreditamos que a informação da classe dos exemplos de treinamento pode ser crucial e, portanto, deve ser empregado.
+Entretanto, diferentemente dos trabalhos apresentados aqui, não estamos interessados somente no problema de classificação de documentos, mas em classificação automática em geral.
+Além disso, procuramos resolver com Programação Genética uma das limitações do trabalho de \cite{Tang05}. Eles realizaram algumas combinações simples e específicas, baseadas em multiplicação de métricas de seleção, mas não mostraram se outros tipos de combinações ou envolvendo mais duas métricas poderia resultar em melhores soluções. No Capítulo~\ref{cap::programacao_genetica}, mostramos as várias métricas que empregamos e como podemos combiná-las através de \textsc{PG}.
 
 %Diferentemente dos trabalhos que utilizam \textsc{STW}, defendemos que, assim como feito em \cite{Tang05}, métricas locais, relacionadas a categoria (\textsc{IDF}, $\chi^2$, ganho de informação, entre outras), podem e devem ser combinadas, trazendo benefícios superiores aos já relatados na literatura. Não temos conhecimento de qualquer trabalho que explore maiores interações como combinações das métricas referentes às classes (globais) ou à frequência dos atributos (locais) para realização da ponderação. Procuramos realizar essas combinações empregando \textit{Programação genética}, como tratado no Capítulo~\ref{cap::programacao_genetica}. Exploramos um amplo conjunto de métricas locais e globais listadas e devidamente explicadas na Seção~\ref{sec::pg_cred_baseada_conteudo}.
 
 %Outro ponto importante é que não nos atemos somente a classificação de documentos. Procuramos realizar a ponderação de atributos, ao invés de nos prendermos à ponderação de termos, como os trabalhos vistos aqui. Logo, buscamos, sempre que possível, explorar a classificação automática em geral, como visto no Capítulo~\ref{cap::metodo}.
 
-% criando melhores métricas para ponderação de termos. 
+% criando melhores métricas para ponderação de termos.
 %endo que essas métricas são utilizadas apenas para seleção e não para servirem como pesos dos termos.
-%estacamos que em todos os trabalhos nessa seção somente foram feitas combinações de uma métrica de frequência, em geral \textsc{TF}, com uma métrica referente a coleção, 
-%textsc{IDF}, $\chi^2$, \textit{ganho de infomação}, entre outras. 
+%estacamos que em todos os trabalhos nessa seção somente foram feitas combinações de uma métrica de frequência, em geral \textsc{TF}, com uma métrica referente a coleção,
+%textsc{IDF}, $\chi^2$, \textit{ganho de infomação}, entre outras.
 
-%Recentemente, algumas pesquisas estão se voltando para o aperfeiçoamento de classificadores de documentos ao atribuir pesos para os termos contidos nos documentos (citar). 
+%Recentemente, algumas pesquisas estão se voltando para o aperfeiçoamento de classificadores de documentos ao atribuir pesos para os termos contidos nos documentos (citar).
 %Nomeclaturas recentes dividem a arte de atribuir pesos a termos em duas categorias distintas, em inglês chamadas de
-%\textsc{Supervised Term Weighting (STW)} e 
-%\textsc{Unsupervised Term Weighting (UTW)}. 
-%A diferença entre essas duas categorias é que a primeira utliza o conhecimento de pertinência a uma classe para os documentos de treino, enquanto o segundo não considera essa informação. 
+%\textsc{Supervised Term Weighting (STW)} e
+%\textsc{Unsupervised Term Weighting (UTW)}.
+%A diferença entre essas duas categorias é que a primeira utliza o conhecimento de pertinência a uma classe para os documentos de treino, enquanto o segundo não considera essa informação.
 %Métodos \textsc{UTW} típicos se baseiam primordialmente em informações sobre frequência de termos e de documentos, utilizando métricas como \textsc{TFIDF} e suas variantes. Em~\cite{Salton88}.
 
 %\section{Classificação Relacional}
@@ -112,39 +111,34 @@ Além disso, procuramos resolver com Programação Genética uma das limitaçõe
 
 Além dos atributos, exploramos também os relacionamentos existentes entre os exemplos para obtermos um cálculo da credibilidade mais aprimorado.
 Ao tomarmos uma característica existente entre duas entidades, podemos traçar um relacionamento entre as mesmas.
-Existem milhares de situações práticas nas quais podemos inferir algum relacionamento. Por exemplo, em uma empresa podemos traçar entre as pessoas o relacionamento de chefe/empregado, assim como dentro de uma universidade temos o relacionamento professor/aluno. 
+Existem milhares de situações práticas nas quais podemos inferir algum relacionamento. Por exemplo, em uma empresa podemos traçar entre as pessoas o relacionamento de chefe/empregado, assim como dentro de uma universidade temos o relacionamento professor/aluno.
 %Há alguns anos atrás, podiamos traçar também o relacionamento carrasco/escravo. -> pode colocar isso Gisele?
 
 Enfim, estudar os relacionamentos entre entidades de um determinado sistema sempre foi uma tarefa que despertou o interesse de várias áreas do conhecimento (\cite{Onody04}, \cite{Shen05}, \cite{Rubinov10}) e a principal motivação para criação da área de Redes Complexas (\cite{Newman03}).
 Uma área que também utiliza relacionamentos para a tarefa de classificação é chamada classificação relacional. %, que trata da utilização dos conceitos e métricas dessa área para a tarefa de classificação automática.
 
-Em suma, os algoritmos de classificação relacional se baseiam no conceito chamado homofilia (\cite{Blau77}, \cite{Mcpherson01})
-que diz que 
-exemplos similares tendem a se relacionar mais frequentemente e se comportar de maneira semelhante.
-Diversos trabalhos são inspirados nessa premissa. Por exemplo, em~\cite{Macskassy04}, temos descrito o método relacional de vizinhança, o qual avalia-se 
+Em suma, os algoritmos de classificação relacional se baseiam no conceito chamado homofilia (\cite{Blau77}, \cite{Mcpherson01}) que diz que exemplos similares tendem a se relacionar mais frequentemente e se comportar de maneira semelhante.
+Diversos trabalhos são inspirados nessa premissa. Por exemplo, em~\cite{Macskassy04}, temos descrito o método relacional de vizinhança, o qual avalia-se
 a classe de um dado exemplo levando em conta um certo número de vizinhos que ele possui. Mesmo sendo um método simples, ele se destaca com bons resultados.
-Existem várias métricas na literatura modeladas para calcular se duas entidades em um relacionamento são semelhantes, por exemplo, a similaridade de Adamic e Adar (\cite{Adamic03}) ou a de Jaccard (\cite{Jaccard01}).
+Existem várias métricas na literatura, modeladas para calcular se duas entidades em um relacionamento são semelhantes, por exemplo, a similaridade de Adamic e Adar (\cite{Adamic03}) ou a de Jaccard (\cite{Jaccard01}).
 
 Entretanto, alguns trabalhos se dedicaram exclusivamente a certos relacionamentos específicos.
-%Em um contexto mais específico ao que tratamos aqui, 
 Um relacionamento que é extremamente estudado na literatura por seus benefícios na área de Recuperação de Informação é o de citações.
-%Ele pode ser construído em entre os exemplos os contidos em uma base de dados, apenas relacionane um exemplo referência ou é referenciado por outro. 
 Métricas como o \textit{hubs} e \textit{authority} de Klienberg (\cite{Kleinberg99}) ou o PageRank (\cite{Page98}) se tornaram populares e amplamente usadas em máquinas de busca por explorarem esse relacionamento para construção de \textit{rankings} entre as entidades, considerando algumas mais confiáveis que outras.
-%Trabalhos como os de \cite{Guha04}, constroem redes de confiança entre as entidades baseado nas citações existentes entre elas.
 
 Além das métricas citadas acima, diversas outras podem ser usadas para mensurar o quão forte o relacionamento entre um exemplo de teste e os de treinamento é, auxiliando assim diretamente para capturarmos a credibilidade dos exemplos presentes no treino. Realizamos um estudo detalhado dessas e apresentamos na Seção~\ref{sec::pg_cred_baseada_grafos}.
 Destacamos que, novamente, temos o problema de apresentarmos um número muito grande de métricas e querermos combiná-las a fim de alcançarmos relações que a princípio não são diretas.
-Para tanto, mais uma vez, recorremos ao uso da Programação Genética, pelos mesmo motivos já apontados.
+Para tanto, mais uma vez, recorremos ao uso da Programação Genética, pelos mesmos motivos já apontados.
 
 %Recentemente, métodos mais complexos para tratar a classificação relacional foram propostos (\cite{Zhang08}, \cite{Lu03}).
 %Em \cite{Zhang08} temos a criação de um método baseado em otimizações lineares e funções de \textit{kernel} para explorar o grau de distribuição dos vértices em uma rede. Apontamos \cite{Lu03} como um estudo comparativo dos vários modelos de classificação relacional existentes na literatura.
 
-%Como já mencionado, nosso trabalho busca capturar a credibilidade depositada em um exemplo do treinamento. 
+%Como já mencionado, nosso trabalho busca capturar a credibilidade depositada em um exemplo do treinamento.
 %Acreditamos que utilizar as relações entre os exemplos pode nos fornecer fortes indícios que sustentem se podemos ou não confiar em um exemplo. É bastante intuitivo pensar que se um exemplo de teste está fortemente relacionado a um exemplo de treino, então esse exemplo de treino deve contribuir mais do que um exemplo sem nenhuma relação ao teste.
-%Portanto, para a avaliarmos a credibilidade de um exemplo baseado em seus relacionamentos, empregamos muitas das métricas provenientes da área de Redes Complexas. 
-%Algumas dessas métricas não são tão famosas para a tarefa de classificação, mas são muito usadas para a recuperação de informação, como PageRank (\cite{Page98}) e 
+%Portanto, para a avaliarmos a credibilidade de um exemplo baseado em seus relacionamentos, empregamos muitas das métricas provenientes da área de Redes Complexas.
+%Algumas dessas métricas não são tão famosas para a tarefa de classificação, mas são muito usadas para a recuperação de informação, como PageRank (\cite{Page98}) e
 %\textit{hubs} e \textit{authority} (\cite{Kleinberg99}). Outras procuram capturar a similaridade entre duas entidades em uma rede (\cite{Jaccard01}, \cite{Adamic03}).
-%Informações mais detalhadas de cada uma das métricas que utilizamos são encontradas na 
+%Informações mais detalhadas de cada uma das métricas que utilizamos são encontradas na
 %Seção~\ref{sec::pg_cred_baseada_grafos}.
 %Destacamos que, novamente, temos o problema de apresentarmos um número muito grande de métricas e querermos combiná-las a fim de alcançarmos relações que a princípio não são diretas.
 %Para tanto, mais uma vez, recorremos ao uso da Programação Genética, pelos mesmo motivos já apontados.
@@ -153,20 +147,19 @@ Para tanto, mais uma vez, recorremos ao uso da Programação Genética, pelos me
 \section{Programação Genética}
 \label{sec::pg}
 
-A Seleção Natural é um famoso processo idealizado por Charles Darwin no qual se baseia a teoria da evolução (\cite{Darwin1859}). Ao contrário do que se acreditava na época, Darwin propôs a teoria de que os seres vivos passavam por uma contínua adaptação ao ambiente, e que aqueles que se adequavam melhor às adversidades enfrentadas eram capazes de sobreviver e procriar, gerando proles que seriam tão aptas à sobrevivência quanto foram os seus pais. 
+A Seleção Natural é um famoso processo idealizado por Charles Darwin no qual se baseia a teoria da evolução (\cite{Darwin1859}). Ao contrário do que se acreditava na época, Darwin propôs a teoria de que os seres vivos passavam por uma contínua adaptação ao ambiente, e que aqueles que se adequavam melhor às adversidades enfrentadas eram capazes de sobreviver e procriar, gerando proles que seriam tão aptas à sobrevivência quanto foram os seus pais.
 Posteriormente, essa teoria foi amplamente aceita e, no campo da Computação, serviu como base para a criação da Computação Evolucionária (\cite{Goldberg89}).
 
-Entre os algoritmos pertencentes ao campo da Computação Evolucionaria, destacamos a Programação Genética (\textsc{PG}), por ser uma método fundamental para a realização dessa dissertação. \textsc{PG} consiste em uma técnica de aprendizado que utiliza o conceito de seleção natural para exploração do espaço de busca de soluções (\cite{Koza92}).
+Entre os algoritmos pertencentes ao campo da Computação Evolucionaria, destacamos a Programação Genética (\textsc{PG}), por ser um método fundamental para a realização dessa dissertação. \textsc{PG} consiste em uma técnica de aprendizado que utiliza o conceito de seleção natural para exploração do espaço de busca de soluções (\cite{Koza92}).
 Em suma, \textsc{PG} é um método para resolução de problemas que não requer que o usuário especifique previamente a forma ou estrutura da solução.
 Por exemplo, nesse trabalho, necessitamos de uma função matemática que seja capaz de representar a credibilidade proveniente de um exemplo do treinamento.
 Sabemos em alto nível o que queremos, e temos indícios de quais são as métricas que podemos utilizar para resolução desse problema. Entretanto, não sabemos qual é a forma mais correta para a função de credibilidade que captura a credibilidade dos exemplos. Detalhes de como um \textsc{PG} funciona e como o modelamos para a geração de funções de credibilidade são abordadas no Capítulo~\ref{cap::programacao_genetica}.
 
 Temos em \cite{Koza10} uma análise de vários trabalhos com problemas resolvidos pela utilização de \textsc{PG} com resultados iguais ou superiores aos obtidos por outras abordagens.
 Embora muito usado para evolução de programas propriamente ditos, com comandos como ``if'', ``while'', entre outros (\cite{Spector98}, \cite{Hauptman07} e \cite{Forrest09}),
-\textsc{PG} também é usado diretamente em problemas de classificação (\cite{cavaretta99}, \cite{kishore00}, \cite{freitas02}) e amplamente utilizado para geração de funções (\cite{Golubski02}, \cite{Freitas10}). 
+\textsc{PG} também é usado diretamente em problemas de classificação (\cite{cavaretta99}, \cite{kishore00}, \cite{freitas02}) e amplamente utilizado para geração de funções (\cite{Golubski02}, \cite{Freitas10}).
 Por exemplo, em~\cite{Freitas10}, temos a utilização de \textsc{PG} para criação de funções capazes de identificar registros duplicados em bases de dados. Foram utilizadas diferentes métricas para avaliar o grau de similaridade entre dois registros, a fim de gerar uma função capaz de detectar duplicação.
 
-%Decidimos pelo uso da abordagem com Programação Genética não apenas por seu eficiente mecanismo de otimização, mas também por ser flexível o suficiente para, de maneira fácil e elegante, representarmos as funções de credibilidade que queremos.
 Em nosso trabalho, a escolha da abordagem de evolução de funções de credibilidade com Programação Genética não foi feita devido apenas ao seu eficiente e robusto mecanismo de busca, mas também por ela ser flexível o suficiente para, de maneira fácil e elegante, representar as funções desejadas.
 
 
